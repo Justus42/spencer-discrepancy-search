@@ -167,6 +167,20 @@ ungeprüft. Nichts nach außen gemeldet.
 `mkdir -p build && gcc -O3 -march=native -o build/coset_tabu src/coset_tabu.c`, dann
 `python3 src/coset_ladder.py n R d K sekunden startwert [typ ...]` (Typ z. B. `11,9`). Eigener Pfad per `COSET_TABU_BIN`.
 
+## Stufenlauf Dimension 2, Länge 20, Radius 6 (23.11.2026, 4 Kerne, ca. 1 h Wall-Zeit)
+
+`src/run_stufen.py`: je Stufe Typen (10,10), (11,9), (12,8) x Startwerte 1–4 x 600 s. Logs: `runs/2026-11-23_stufen_K*.log.txt`.
+
+- **K=14 (56 Wörter): gelöst**, 2 von 12 Läufen: Typ (11,9), Startwerte 2 und 3. Wörter:
+  `runs/woerter_n20_R6_d2_K14_typ11-9_seed{2,3}.txt`, Matrizen `runs/matrix_n20_56w_*.txt` (28x20, `_pad` = 28x28).
+  Beide Prüfskripte, beide Treffer: Diskrepanz **8** (`check_disc.py` auf 28x20, `verify_spencer.py` auf 28x28).
+  Quotient 8/sqrt(28) = 1,512, kein Spencer-Rekord. Neuheit offen (siehe Gate-Prüfung oben).
+  Restzahlen der 10 Fehlläufe: (10,10) 34–48; (11,9) Startwert 1: 4, Startwert 4: 2; (12,8) 7–11.
+- **K=13 (52 Wörter): nicht gelöst**, 0 von 12 Läufen, je 600 s. Beste Restzahl unüberdeckter Syndrome
+  (Startwerte 1/2/3/4): (10,10) 48/70/47/47; (11,9) 5/2/6/7; (12,8) 22/22/22/22.
+- Stopp laut Regel bei der ersten Stufe ohne Lösung. K=12, 11, 10 nicht versucht.
+- Typ (11,9) ist durchgehend am besten; (10,10) und (12,8) nie nahe an einer Lösung bei K=13.
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17

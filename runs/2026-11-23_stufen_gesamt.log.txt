@@ -1,1 +1,2 @@
 Stufe K=14 (56 Woerter): 2 von 12 Laeufen geloest, 1801s
+Stufe K=13 (52 Woerter): 0 von 12 Laeufen geloest, 3602s
