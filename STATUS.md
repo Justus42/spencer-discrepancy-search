@@ -61,6 +61,11 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
 - Gieriges Verfahren plus Zerstören/Reparieren: verbessert den gierigen Start kaum.
 - Zufällige lineare [n,5]-Codes mit Einsvektor: Radius zu groß.
 - (15,4) mit 30 Wörtern: bleibt bei 466 unüberdeckten Punkten stehen.
+- 23.11.2026, Positivkontrolle für die Astra-Suche 20/6: Der 32-Wörter-Code aus `construct_32.py`
+  (n=15,17,19) hat Translationsstabilisator {0, 1}, ist also KEINE Vereinigung von Nebenklassen
+  eines dreidimensionalen D. Die Struktur D=<1,a,b> kann ihn nicht mit vier Nebenklassen finden;
+  Suche 20/6 nicht gestartet (Laufzeit der Kontrolle <1 s, siehe `runs/2026-11-23_positivkontrolle_19.md`).
+  Alle 6 Kontrollen in `controls/` mit beiden Prüfskripten erneut identisch bestätigt.
 
 ## Vorschläge aus der Astra-Abfrage (unbelegt, noch nicht getestet)
 
