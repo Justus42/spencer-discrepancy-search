@@ -241,6 +241,9 @@ Block 3 (Startwerte 9–12, je 1800 s, 22:39–23:09 UTC): **2 von 4 gelöst, 52
   Koordinaten); Folgecodes Länge 22/24/26 je 52 Wörter, Radius bestätigt, alle 6 Matrizen von beiden Prüfskripten Diskrepanz 8.
 - Startwert 9: nicht gelöst, beste Restzahl 2. Startwert 11: nicht gelöst, beste Restzahl 7.
 
+Block 4, erster Versuch (Startwerte 13–16, ab 23:11 UTC): durch Container-Neustart um ca. 23:36 UTC abgebrochen, ohne Ergebnis
+(nach 1303/1250/1286/936 s Laufzeit, beste Restzahl bis dahin 2/2/6/2; Teillogs `runs/*seed1[3-6]_abgebrochen.log.txt`).
+Zweiter Versuch von Block 4 gestartet 23:37 UTC.
 - Der frühere Lauf mit leeren Logs ist damit überschrieben (Logs der Startwerte 1–4 stammen jetzt aus Block 1).
 
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
