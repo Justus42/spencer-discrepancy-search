@@ -159,8 +159,8 @@ Wörter: `runs/woerter_n20_R6_d2_K15_*.txt`; Matrizen 30 x 20: `runs/matrix_n20_
 Beide Prüfskripte melden für alle drei Treffer dieselbe Diskrepanz **8** (`check_disc.py` auf 30x20,
 `verify_spencer.py` auf 30x30 mit Nullspalten; Quotient 8/sqrt(30) = 1,46, also KEIN Spencer-Rekord;
 dafür wären <= 40 Wörter nötig).
-**Gate-Prüfung 23.11.2026:** Treffer von Claude unabhängig bestätigt (Brute-Force-Radius in `coset_ladder.py`,
-`check_disc.py`, `verify_spencer.py`). Neuheit offen: Kéri-Tabelle K(20,6) = 24–64 (Stand 2011); Literatur danach
+**Gate-Prüfung 23.11.2026 (erstes Gate, 60 Wörter):** Treffer von Claude mit eigenem drittem Skript bestätigt
+(nicht im Repo), zusätzlich Brute-Force-Radius in `coset_ladder.py`, `check_disc.py`, `verify_spencer.py`. Neuheit offen: Kéri-Tabelle K(20,6) = 24–64 (Stand 2011); Literatur danach
 ungeprüft. Nichts nach außen gemeldet.
 
 **Bauen und Starten** (aus dem Repo-Wurzelordner; Logs liegen als `runs/*.log.txt`):
@@ -180,6 +180,21 @@ ungeprüft. Nichts nach außen gemeldet.
   (Startwerte 1/2/3/4): (10,10) 48/70/47/47; (11,9) 5/2/6/7; (12,8) 22/22/22/22.
 - Stopp laut Regel bei der ersten Stufe ohne Lösung. K=12, 11, 10 nicht versucht.
 - Typ (11,9) ist durchgehend am besten; (10,10) und (12,8) nie nahe an einer Lösung bei K=13.
+
+**Gate-Prüfung 23.11.2026 (zweites Gate, 56 Wörter, K=14, Typ (11,9), Startwerte 2 und 3):** Die 56 Wörter wurden von Claude
+mit eigenem drittem Skript bestätigt (nicht im Repo). Die Neuheitsprüfung läuft über Gemini; bis dahin gilt Neuheit als offen.
+
+## Lauf K=13, nur Typ (11,9), Startwerte 1–16 (gestartet 23.11.2026, 19:03 UTC)
+
+Länge 20, Radius 6, Dimension 2, K=13 (52 Wörter), je 1800 s, 4 parallel, harte Obergrenze 2,5 h (`src/run_k13_typ119.sh`).
+Logs: `runs/2026-11-23_K13_typ11-9_seed*.log.txt`. Kein K=12 ohne Freigabe. Auswertung auf Zuruf (Regel 4).
+
+## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
+
+Kein Startwert-Fehler im Code erkennbar: `coset_tabu.c` setzt das Zufallsgerät pro Startwert verschieden und würfelt die
+Startmitten neu. Kurzläufe (60 s, bei Last durch den Hauptlauf) mit Startwert 1 und 11 liefen verschieden (28 bzw. 39 offen,
+verschiedene Verläufe), erreichen die 22 in dieser Zeit also nicht. Echtes Plateau damit wahrscheinlich, aber nicht bewiesen:
+4 unabhängige Läufe von 600 s enden alle bei 22, kein Lauf darunter. Entscheidung offen (siehe Ergebnis unten, falls ergänzt).
 
 ## Nächste Gates
 
