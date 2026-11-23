@@ -64,7 +64,9 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
 
 ## Vorschläge aus der Astra-Abfrage (unbelegt, noch nicht getestet)
 
-Volltext: `notes/openrouter/astra_2026-11-23.md`. Subjektive Schätzung dort: 30 %, dass
+Volltext bis 23.12.2026 über die Bridge abrufbar (`batch_job`, Kennung
+`openrouter:batch-1795445676-GZZW2hUqsWh8LXiEFgzr`). Er liegt noch nicht im Repo, weil die
+Bridge dieses Repo nicht in ihrer Freigabeliste hat. Subjektive Schätzung dort: 30 %, dass
 mindestens eines der Ziele existiert.
 
 - **20/6:** fünf Nebenklassen eines dreidimensionalen linearen Codes D = <1, a, b>.
