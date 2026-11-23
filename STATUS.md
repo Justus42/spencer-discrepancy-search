@@ -102,10 +102,9 @@ Quellen: `notes/gemini/`. Von Claude nur stichprobenhaft geprüft, sonst unbeleg
   unter 64 muss nichtlinear sein. Die linearen Codes taugen als Startpunkt einer Suche.
 - **Die 32-Wörter-Codes sind zwingend nichtlinear** (Graham und Sloane 1985). Passt zum
   eigenen Fehlversuch mit linearen Codes.
-- **Dämpfer:** Maharaj (arXiv:2610.03760) gibt an, alle offenen Zellen mit q <= 4 per
-  Tabu-Suche auf Bahnen abgesucht zu haben, und meldet nur quaternäre Verbesserungen.
-  Im Paper nachgelesen: Binäre Zellen werden nicht eigens erwähnt, der Aufwand ist unklar.
-  Dagegen steht, dass K(20,3) im Oktober 2026 von Dritten verbessert wurde.
+- **Maharaj (arXiv:2610.03760) ist kein Dämpfer.** Korrektur 23.11.2026 (Angabe des Nutzers): Das Paper behandelt
+  quaternäre Preparata-Codes und sagt nichts über binäre Zellen. Die frühere Lesart (systematische Tabu-Suche über alle
+  offenen Zellen mit q <= 4) ist zurückgenommen. Offen bleibt nur, dass K(20,3) im Oktober 2026 von Dritten verbessert wurde.
 - Die Originalkonstruktion von Östergård und Kaikkonen (1998) war nicht einsehbar.
 
 ## Entscheidung 23.11.2026: Kontrolle neu gefasst, Zwischenziel ergänzt
@@ -186,6 +185,25 @@ ungeprüft. Nichts nach außen gemeldet.
 
 **Gate-Prüfung 23.11.2026 (zweites Gate, 56 Wörter, K=14, Typ (11,9), Startwerte 2 und 3):** Die 56 Wörter wurden von Claude
 mit eigenem drittem Skript bestätigt (nicht im Repo). Die Neuheitsprüfung läuft über Gemini; bis dahin gilt Neuheit als offen.
+
+## Neuheit K(20,6) <= 56 (Stand 23.11.2026, Neuheit weiter offen)
+
+- Gemini fand nichts unter 64.
+- Angabe des Nutzers, in dieser Sitzung von Claude nicht selbst nachgeprüft: `florath/covering-codes-lean` (nach Kéri,
+  Commit 16.09.2026) nennt für K(20,6) weiter 24–64. Kéri-Nachbarzellen schließen Standardkonstruktionen aus.
+- `fohn.app`: unbelegt.
+- Geminis ausführlicher Neuheitsbericht kommt als Datei, Platzhalter `notes/gemini/neuheit_2026-11-23.md`.
+
+## Normalität und Folgecodes aus den 56 Wörtern (23.11.2026)
+
+`src/normal_ext.py`, Brute-Force über alle 2^n Punkte. Beide 56er-Codes (K=14, Typ (11,9), Startwerte 2 und 3) sind
+**normal: Norm 13 = 2R+1 bei allen 20 Koordinaten**. Verdreifachen einer Koordinate (je Schritt Länge +2, Radius +1,
+gleiche 56 Wörter, selbstkomplementär; jedes Mal vorher Normalität nachgeprüft, immer dieselbe Koordinate):
+Länge 22 (R=7), 24 (R=8), 26 (R=9), jeweils Radius per Brute-Force bestätigt.
+Wörter `runs/woerter_ext56_typ11-9_seed{2,3}_n{22,24,26}_R{7,8,9}.txt`, Matrizen `runs/matrix_ext56_n*_*.txt`
+(28 x n, `_pad` = 28 x 28 für `verify_spencer.py`).
+**Alle 6 Matrizen: `check_disc.py` und `verify_spencer.py` melden exakt Diskrepanz 8** (Quotient 8/sqrt(28) = 1,512, kein
+Spencer-Rekord). Für die Tabelle der Überdeckungscodes wären das K(22,7), K(24,8), K(26,9) <= 56; Neuheit nicht geprüft.
 
 ## Lauf K=13, nur Typ (11,9), Startwerte 1–16 (gestartet 23.11.2026, 19:03 UTC)
 
