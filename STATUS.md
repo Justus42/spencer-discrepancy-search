@@ -67,6 +67,9 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
   Suche 20/6 nicht gestartet (Laufzeit der Kontrolle <1 s, siehe `runs/2026-11-23_positivkontrolle_19.md`).
   Alle 6 Kontrollen in `controls/` mit beiden Prüfskripten erneut identisch bestätigt.
 
+- 23.11.2026, Lauf n=20 R=6 d=2 K=13 Typ (11,9) Startwerte 1–16, je 1800 s: durch Container-Neustart verloren, keine Restzahlen
+  (Details im Abschnitt „Lauf K=13“).
+
 ## Vorschläge aus der Astra-Abfrage (unbelegt, noch nicht getestet)
 
 Volltext: `notes/openrouter/astra_2026-11-23.md`. Subjektive Schätzung dort: 30 %, dass
@@ -188,6 +191,13 @@ mit eigenem drittem Skript bestätigt (nicht im Repo). Die Neuheitsprüfung läu
 
 Länge 20, Radius 6, Dimension 2, K=13 (52 Wörter), je 1800 s, 4 parallel, harte Obergrenze 2,5 h (`src/run_k13_typ119.sh`).
 Logs: `runs/2026-11-23_K13_typ11-9_seed*.log.txt`. Kein K=12 ohne Freigabe. Auswertung auf Zuruf (Regel 4).
+
+**Ergebnis: Lauf abgebrochen, keine Auswertung möglich.** Beim Nachsehen um 21:28 UTC war der Container neu gestartet
+(Betriebszeit 0 Min., kein Prozess, keine Fertig-Marke). Es existieren nur die Logs der Startwerte 1–4, alle leer
+(0 Bytes, zuletzt geschrieben 19:03; der Treiber schreibt erst am Laufende). Startwerte 5–16 wurden nie gestartet.
+Es gibt also weder Treffer noch Restzahlen, kein Läufer hat seine 1800 s beendet; der Abbruchzeitpunkt ist unbekannt.
+Nicht neu gestartet (Anweisung: nichts Neues starten). Eintrag unter Fehlversuche: Lauf 23.11.2026, n=20 R=6 d=2 K=13
+Typ (11,9) Startwerte 1–16, je 1800 s: durch Container-Neustart verloren, Laufzeit unbekannt (< 2,4 h), kein Ergebnis.
 
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
 
