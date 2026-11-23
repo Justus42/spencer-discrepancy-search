@@ -98,5 +98,9 @@ if __name__ == "__main__":
     ts = [tuple(map(int, a.split(","))) for a in sys.argv[7:]] or list(types_for(n, d))
     for mult in ts:
         res, best, info = run(n, R, d, K, secs, seed, mult)
-        if res: print(f"n={n} R={R} d={d} K={K} typ={mult}: GELOEST, Woerter={res['nwords']}, selbstkompl={res['selfcompl']}, Radius(Brute-Force)={res['radius']}", flush=True)
+        if res:
+            fnw = f"runs/woerter_n{n}_R{R}_d{d}_K{K}_typ{'-'.join(map(str,mult))}_seed{seed}.txt"
+            with open(fnw, "w") as fw: fw.write(" ".join(map(str, sorted(res['words']))) + "\n")
+            print(f"[Woerter gespeichert: {fnw}]", flush=True)
+            print(f"n={n} R={R} d={d} K={K} typ={mult}: GELOEST, Woerter={res['nwords']}, selbstkompl={res['selfcompl']}, Radius(Brute-Force)={res['radius']}", flush=True)
         else: print(f"n={n} R={R} d={d} K={K} typ={mult}: nicht geloest, kleinste Restzahl unueberdeckt Syndrome={best}", flush=True)
