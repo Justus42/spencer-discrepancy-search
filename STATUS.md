@@ -217,6 +217,19 @@ Es gibt also weder Treffer noch Restzahlen, kein Läufer hat seine 1800 s beende
 Nicht neu gestartet (Anweisung: nichts Neues starten). Eintrag unter Fehlversuche: Lauf 23.11.2026, n=20 R=6 d=2 K=13
 Typ (11,9) Startwerte 1–16, je 1800 s: durch Container-Neustart verloren, Laufzeit unbekannt (< 2,4 h), kein Ergebnis.
 
+### Neustart in Blöcken (ab 21:34 UTC, `src/run_block.py`, Log läuft laufend, Fertig-Marke je Startwert)
+
+Block 1 (Startwerte 1–4, je 1800 s, 21:34–22:05 UTC): **2 von 4 gelöst, 52 Wörter (K=13) bei (20,6).**
+- Startwert 1: nicht gelöst, beste Restzahl 2. Startwert 2: nicht gelöst, beste Restzahl 2.
+- **Startwert 3 und 4: GELÖST**, 52 Wörter, selbstkomplementär, Radius per Brute-Force 6. Wörter
+  `runs/woerter_n20_R6_d2_K13_typ11-9_seed{3,4}.txt`, Matrizen `runs/matrix_n20_52w_typ11-9_seed{3,4}.txt` (26 x 20, `_pad` 26 x 26).
+- **Beide Prüfskripte, beide Treffer: Diskrepanz 8** (`check_disc.py` auf 26 x 20, `verify_spencer.py` auf 26 x 26;
+  Quotient 8/sqrt(26) = 1,569, kein Spencer-Rekord, dafür wären <= 40 Wörter nötig). Regel 1 erfüllt. Neuheit offen (Regel 3).
+- Normalität: beide 52er-Codes normal, Norm 13 bei allen 20 Koordinaten. Folgecodes (Koordinate verdreifacht): Länge 22 (R=7),
+  24 (R=8), 26 (R=9), je 52 Wörter, Radius per Brute-Force bestätigt (`runs/woerter_ext52_*`, `runs/matrix_ext52_*`).
+  Alle 6 Matrizen: beide Prüfskripte melden Diskrepanz 8.
+- Der frühere Lauf mit leeren Logs ist damit überschrieben (Logs der Startwerte 1–4 stammen jetzt aus Block 1).
+
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
 
 Kein Startwert-Fehler im Code erkennbar: `coset_tabu.c` setzt das Zufallsgerät pro Startwert verschieden und würfelt die
