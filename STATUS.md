@@ -131,6 +131,37 @@ erst beide Prüfskripte, dann Neuheit prüfen, dann entscheiden.
 **Abbruchregel für den Astra-Vorschlag.** Erreicht Dimension 3 weder 32 Wörter bei
 Länge 19 noch 64 bei Länge 20, wird sie verworfen. Weiter dann mit Dimension 1 und 2.
 
+## Ergebnis Leiter 23.11.2026 (Cloud, 4 Kerne, ca. 45 Min. Wall-Zeit)
+
+Kern `src/coset_tabu.c` (Walsh-Bewertung, ganzzahlig), Treiber `src/coset_ladder.py`. Logs: `runs/2026-11-23_leiter_*.log`.
+Nachprüfung jedes Treffers per Brute-Force über alle 2^n Punkte (Radius), selbstkomplementär.
+
+| Kontrolle | Ergebnis |
+|---|---|
+| A: Länge 19, R=6, 32 Wörter, d=1 | bestanden (5 s) |
+| A: dito d=2 (K=8), alle 9 Typen, je 20 s | 2 Typen gelöst: (12,7), (11,8) |
+| A: dito d=3 (K=4), alle 84 Typen, je 12 s | keiner gelöst (Restzahl >= 288 Syndrome) |
+| B: Länge 20, R=6, 64 Wörter, d=1 (K=32, 120 s) | NICHT gelöst (Rest 78): Suche bei 2^19 Syndromen zu schwach |
+| B: d=2 (K=16) | mehrere Typen gelöst |
+| B: d=3 (K=8), alle 97 Typen, je 15 s | 64 Typen gelöst |
+
+Kleinste Wortzahl bei Länge 20, R=6 (nur diese Stufen versucht):
+- d=3, K=7 (56 Wörter): alle 97 Typen, je 20 s, nicht gelöst (beste Restzahl 48, Typ (5,5,5,5)).
+- d=2, K=15 (60 Wörter): **gelöst** für Typ (11,9) (Seeds 2 und 3) und (12,8) (Seed 2); (13,7) nicht (Rest 12 nach 420 s).
+- d=2 weiter hinunter (K=14), d=1 unter 64: nicht versucht.
+
+Astra-Abbruchregel: d=3 erreicht 64 bei Länge 20, bleibt also im Spiel, ist bei Länge 19 aber nicht
+bis 32 gekommen und bei Länge 20 schlechter als d=2.
+
+**Treffer, Regel 3 erfüllt:** Überdeckung von (20,6) mit **60 Wörtern** (15 Nebenklassen eines 2-dim. D mit Einsvektor).
+Wörter: `runs/woerter_n20_R6_d2_K15_*.txt`; Matrizen 30 x 20: `runs/matrix_n20_60w_*.txt`
+(30x30 mit Nullspalten für den Verifier: `runs/matrix_n30pad_60w_*.txt`).
+Beide Prüfskripte melden für alle drei Treffer dieselbe Diskrepanz **8** (`check_disc.py` auf 30x20,
+`verify_spencer.py` auf 30x30 mit Nullspalten; Quotient 8/sqrt(30) = 1,46, also KEIN Spencer-Rekord;
+dafür wären <= 40 Wörter nötig).
+**Neuheit nicht geprüft.** Die Tabelle in `notes/` nennt K(20,6) <= 64, Stand von Claude nicht
+verifiziert. Nichts nach außen gemeldet. Stopp laut Auftrag.
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
