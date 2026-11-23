@@ -1,0 +1,547 @@
+Literaturrecherche zu binären
+Überdeckungscodes K(n, R)
+Die Auswertung der zugänglichen kodierungstheoretischen Fachliteratur bis Ende 2026 liefert
+für alle drei Teilfragen ein klares Bild aus belegbaren Primärresultaten und exakt abgrenzbaren
+Evidenzlücken. Zu Frage 1 lässt sich aus primären Fachquellen zwingend belegen, dass
+sämtliche binären Überdeckungscodes der Kardinalität 32 für die Parameter (15, 4), (17, 5), (19,
+6), (21, 7), (23, 8) und (25, 9) nichtlinear sein müssen und die obere Schranke 32 bis 2026
+ungeschlagen geblieben ist. [Aus zugänglichen Quellen nicht belegbar] bleiben hingegen die
+konkrete Konstruktionsvorschrift innerhalb von Östergård & Kaikkonen (1998) sowie die Frage,
+ob diese 32-Wort-Codes selbstkomplementär sind, da weder der Volltext des Artikels noch
+Gerzson Kéris Tabelle 2_tables.pdf mit den Konstruktionsschlüsseln im Vollzugriff vorlagen.
+Zu Frage 2 existieren nach 2011 veröffentlichte Verbesserungen auf der Seite der unteren
+Schranken: Dion Gijswijt und Sven Polak (2025/2026) hoben mittels semidefiniter
+Programmierung (SDP) zwei der fünf gesuchten Einträge auf K(18, 5) ≥ 28 (zuvor 27) und K(21,
+6) ≥ 34 (zuvor 33) an, während die unteren Schranken für K(20, 6), K(23, 7) und K(25, 8)
+unverändert blieben. Für die oberen Schranken (durchgehend 64) wurden nach 2011 keine
+Verbesserungen gefunden; alle fünf Werte von 64 werden bereits durch binäre lineare [n,
+6]-Codes realisiert. Zu Frage 3 dokumentiert Abschnitt 3 Funktionsprinzip, Anwendungsbereich
+und Primärquellen der Tabu-Suche (einschließlich Symmetriegruppen-Reduktion), der
+Blokhuis–Lam-Matrixmethode sowie der amalgamierten direkten Summe (ADS). Jede Aussage,
+die nicht unmittelbar durch eine vorliegende Quelle belegt werden kann, wird nachfolgend
+ausdrücklich entsprechend gekennzeichnet.
+
+1. Konstruktion und Selbstkomplementarität von K(2R
++ 7, R) ≤ 32 (Östergård–Kaikkonen 1998)
+1.1 Bibliografische Einordnung und Quellenlage
+Die zugrunde liegende Referenzarbeit ist der begutachtete Fachartikel von Patric R. J.
+Östergård und Markku K. Kaikkonen, „New upper bounds for binary covering codes“,
+erschienen in Discrete Mathematics, Band 178, Hefte 1–3, Seiten 165–179 (1998), DOI
+10.1016/S0012-365X(97)81825-0. In den bibliografischen Metadaten des Publikationsportals
+der Aalto-Universität ist der Beitrag mit den Schlagwörtern covering code, nonlinear code und
+tabu search erfasst. Aus den in Literaturdatenbanken indexierten Abstract-Passagen geht
+hervor, dass die neuen oberen Schranken für K(n, r) sowohl durch neue als auch durch
+bestehende Konstruktionen gewonnen wurden und die Arbeit eine aktualisierte Tabelle oberer
+Schranken für n ≤ 64 und r ≤ 12 enthält.
+Für die beiden Detailfragen besteht allerdings eine klare Zugriffsgrenze: Weder der Volltext von
+Östergård & Kaikkonen (1998) noch die Originaldatei 2_tables.pdf auf Gerzson Kéris
+SZTAKI-Server (die zu jedem Tabelleneintrag den zugehörigen Konstruktions- und
+Quellenschlüssel angibt) noch Kapitel 6 (Tabelle 6.1) der Monografie von Cohen, Honkala,
+Litsyn & Lobstein (1997) waren im Volltext zugänglich. Entsprechend lassen sich die
+strukturellen Randbedingungen der Parameterfamilie exakt aus unabhängigen Primärquellen
+absichern, während die Einzelkonstruktion im 1998er Artikel nicht direkt eingesehen werden
+konnte.
+
+1.2 Gesicherte mathematische Eigenschaften der Diagonale n = 2R + 7
+Die sechs genannten Parameterpaare bilden die Diagonale (n, R) = (2R + 7, R) für R = 4, 5, 6,
+7, 8, 9, die sich in Kéris Tabelle noch bis R = 10, also (27, 10), mit derselben oberen Schranke
+32 fortsetzt. In den älteren Standardwerken von Gérard D. Cohen, Antoine C. Lobstein und Neil
+J. A. Sloane („Further results on the covering radius of codes“, IEEE Transactions on
+Information Theory, IT-32, S. 680–694, 1986) sowie G. J. M. van Wee („Improved sphere
+bounds on the covering radius of codes“, IEEE Transactions on Information Theory, 34, S.
+237–245, 1988, für die Einträge (15, 4) und (17, 5)) lag die obere Schranke auf dieser
+Diagonale noch bei 56. Diese Schranke von 56 entstand durch die amalgamierte direkte
+Summe (5, 7)_1 \dot{\oplus} (7, 16)_1 = (11, 56)_2 und anschließende iterierte Verschmelzung
+mit dem normalen Wiederholungscode (3, 2)_1, was die Familie (2R + 7, 56)_R für alle R ≥ 2
+ergab. [Aus zugänglichen Quellen nicht belegbar]: Ob zwischen 1988 und 1998
+Zwischenverbesserungen zwischen 56 und 32 erzielt wurden (etwa in Tabelle 6.1 von Cohen et
+al. 1997), lässt sich ohne Einsicht in diese Tabelle nicht prüfen.
+Zwingend gesichert ist hingegen, dass kein binärer linearer Code die Schranken K(2R + 7, R)
+\le 32 erreichen kann. Ronald L. Graham und Neil J. A. Sloane („On the covering radius of
+codes“, IEEE Transactions on Information Theory, 31(3), S. 385–401, 1985, Theorem 22)
+bewiesen — gestützt auf rechnergestützte Nichtexistenzbeweise — die exakte Formel für den
+kleinsten Überdeckungsradius t_2[n, 5] eines binären linearen Codes der Dimension 5
+(Kardinalität 2^5 = 32):
+t_2[n, 5] = \left\lfloor \frac{n - 5}{2} \right\rfloor \quad \text{für alle } n \neq 6.
+Für n = 15, 17, 19, 21, 23, 25 (und ebenso n = 27) liefert diese Formel t_2[n, 5] = 5, 6, 7, 8, 9,
+10 (bzw. 11) — in jedem einzelnen Fall um genau 1 größer als der Zielradius R = 4, 5, 6, 7, 8, 9
+(bzw. 10). Tsonka Baicheva und Iliya Bouyukliev (Advances in Mathematics of Communications,
+4(3), S. 399–404, 2010) bestätigten unabhängig t_2[15, 5] = 5 (mit 47.604 linearen [15,
+5]-Codes vom Radius 5, jedoch keinem vom Radius 4). Jeder binäre Überdeckungscode der
+Größe 32 auf dieser Diagonale ist daher zwangsläufig nichtlinear.
+Auf der Ebene der bekannten Schranken zeigt der Abgleich mit dem aktuellen Stand von 2026
+eine bemerkenswerte Asymmetrie: In Tabelle 1 von Dion Gijswijt und Sven Polak (IEEE
+Transactions on Information Theory, 72(9), S. 6599–6614, 2026; arXiv:2504.01932), deren
+Vergleichswerte auf Kéris Tabellen beruhen, steht für sämtliche sechs Parameterpaare (15, 4)
+bis (25, 9) sowie für (27, 10) nach wie vor 32 als beste bekannte obere Schranke. Gleichzeitig
+verbesserten Gijswijt & Polak (2025/2026) die unteren Schranken für ausnahmslos alle
+Parameter dieser Diagonale jeweils um +1 gegenüber Kéris Tabelle.
+Parameter Kugelüberd Kéri (Stand Gijswijt & Gijswijt & Obere                        Beste         Minimaler
+(n, R)        eckung         2009/2011) Polak            Polak         Schranke bekannte linearer
+              \lceil 2^n /                  (2026) SDP (2026)          1986/1988 obere            Radius
+              V(n, R)                       (reell)      neue          (ADS)        Schranke t_2[n, 5]
+              \rceil                                     untere                     (2026)
+                                                         Schranke
+K(15, 4)      17             22–32          22,6403      23            56           32            5 (> 4)
+                                                                                    (nichtlinear)
+Parameter Kugelüberd Kéri (Stand Gijswijt & Gijswijt &     Obere     Beste         Minimaler
+(n, R)    eckung       2009/2011) Polak      Polak         Schranke bekannte       linearer
+          \lceil 2^n /            (2026) SDP (2026)        1986/1988 obere         Radius
+          V(n, R)                 (reell)    neue          (ADS)     Schranke      t_2[n, 5]
+          \rceil                             untere                  (2026)
+                                             Schranke
+K(17, 5)  14           19–32      19,2500    20            56         32            6 (> 5)
+                                                                      (nichtlinear)
+K(19, 6)   12          16–32       16,8119     17          56         32            7 (> 6)
+                                                                      (nichtlinear)
+K(21, 7)   11          14–32       14,9725     15          56         32            8 (> 7)
+                                                                      (nichtlinear)
+K(23, 8)   10          13–32       13,5670     14          56         32            9 (> 8)
+                                                                      (nichtlinear)
+K(25, 9)   9           12–32       12,4581     13          56         32            10 (> 9)
+                                                                      (nichtlinear)
+K(27, 10) 9             11–32      nicht      12          56          32            11 (> 10)
+(Ergänzung                         ausgewerte                         (nichtlinear)
+)                                  t
+Quellen der Tabellenwerte: Kugelüberdeckungsschranken exakt berechnet; Kéri-Basiswerte,
+SDP-Werte, neue untere und beste bekannte obere Schranken aus Gijswijt & Polak (2026),
+Tabellen 1, 5 und 6; Schranke 56 aus Cohen, Lobstein & Sloane (1986) sowie van Wee (1988);
+t_2[n, 5] aus Graham & Sloane (1985, Theorem 22) und Baicheva & Bouyukliev (2010).
+
+1.3 Explizite Konstruktion und Frage der Selbstkomplementarität
+[Aus zugänglichen Quellen nicht belegbar]: Welche konkrete explizite Konstruktion
+Östergård & Kaikkonen (1998) für die Schranken K(15, 4) ≤ 32, K(17, 5) ≤ 32, K(19, 6) ≤ 32,
+K(21, 7) ≤ 32, K(23, 8) ≤ 32 und K(25, 9) ≤ 32 im Originalartikel angeben — etwa ob ein
+einzelner normaler (15, 32)-Startcode mit Radius 4 per Tabu-Suche gefunden und anschließend
+über wiederholte amalgamierte direkte Summe (ADS) mit dem Wiederholungscode {000, 111}
+auf (15 + 2i, 32) mit Radius 4 + i fortgesetzt wurde, oder ob eine Matrix- bzw. stückweise
+konstante Konstruktion oder separate Suchen genutzt wurden —, lässt sich aus den
+vorliegenden Quellen nicht verifizieren. Zwar weisen die Metadaten des Artikels auf Tabu-Suche
+für nichtlineare Codes hin, und die allgemeine ADS-Theorie erzeugt genau den Diagonalschritt
+(n, M)_R \mapsto (n + 2, M)_{R+1} für normale Codes; eine Zuordnung genau dieses
+Mechanismus zu den sechs konkreten Tabelleneinträgen wäre ohne Einsicht in den Volltext von
+Östergård & Kaikkonen (1998) oder die Fußnotenschlüssel von 2_tables.pdf jedoch eine
+Vermutung.
+[Aus zugänglichen Quellen nicht belegbar]: Ebenso lässt sich aus den zugänglichen Quellen
+nicht belegen, ob die konkreten 32-Wort-Codes aus Östergård & Kaikkonen (1998)
+selbstkomplementär sind (Definition nach Kéri: Ein binärer Code C heißt selbstkomplementär,
+wenn mit jedem Codewort c \in C auch dessen bitweises Komplement \bar{c} zu C gehört). Ein
+nicht begutachteter Forenbeitrag auf der Plattform EinsteinArena zum
+Spencer-Diskrepanzproblem erwähnt die Rekordschranke K(17, 5) ≤ 32 von
+Östergård–Kaikkonen zwar im Zusammenhang mit antipodalen Überdeckungen, enthält jedoch
+keine Analyse und keinen Quellenbeleg zur Selbstkomplementarität der konkreten Codewörter.
+[Nicht direkt aus einer Quelle belegt – elementare mathematische Folgerung aus der
+zitierten ADS-Definition]: Sollten die längeren Codes für n = 17 bis 25 tatsächlich aus einem
+normalen (15, 32)-Startcode durch iterierte ADS mit B = {000, 111} (äquivalent zum zweifachen
+Wiederholen einer akzeptablen Koordinate) erzeugt worden sein, so bleibt bei der Abbildung (a,
+0) \mapsto (a, 0, 0, 0) und (a, 1) \mapsto (a, 1, 1, 1) die Selbstkomplementarität entlang der
+gesamten Kette genau dann erhalten, wenn bereits der Startcode selbstkomplementär ist. Für
+eine belastbare Klärung beider Punkte — explizite Konstruktionsvorschrift und
+Selbstkomplementarität — ist die direkte Einsicht in Discrete Mathematics 178 (1998), S.
+165–179, oder in Kéris Datei 2_tables.pdf erforderlich.
+
+2. Schranken nach 2011 für K(18, 5), K(20, 6), K(21, 6),
+K(23, 7) und K(25, 8)
+2.1 Datenstand von Kéris Tabelle und neue untere Schranken
+(2025/2026)
+Zunächst ist der tatsächliche Datenstand der Referenztabellen von Gerzson Kéri (Tables for
+Bounds on Covering Codes, MTA SZTAKI) festzuhalten: Zwar trägt die Übersichtsseite
+index.htm das letzte Update-Datum 21. November 2011 (Dateistempel 25. November 2011;
+letzte Änderungen an ternären und gemischten Tabellen am 24. November 2011), die Datei für
+binäre Überdeckungscodes 2_tables.pdf wurde jedoch zuletzt am 15. Oktober 2009 modifiziert,
+und der jüngste Änderungsprotokolleintrag zu binären Codes datiert auf den 6. Oktober 2009 für
+K(13, 4) ≥ 12.
+Ausgehend von dieser 2009/2011-Referenztabelle berechneten Dion Gijswijt und Sven Polak
+in „Semidefinite lower bounds for covering codes“ (arXiv:2504.01932, Erstfassung April 2025,
+Version v2 Juni 2026; veröffentlicht in IEEE Transactions on Information Theory, Band 72, Nr. 9,
+S. 6599–6614, 2026) den binären Parameterraum n ≤ 33 und R ≤ 10 mittels
+symmetriereduzierter semidefiniter Programmierung neu. Insgesamt erzielten sie 34 neue
+binäre ganzzahlige untere Schranken (Tabelle 1), darunter Verbesserungen bei zwei der fünf
+gesuchten Einträge aus Frage 2 sowie bei sämtlichen sechs Einträgen aus Frage 1.
+Für die fünf explizit angefragten Parameter aus Frage 2 ergibt sich im Detail der folgende
+Stand:
+Parameter Kéri (Stand Kugelüberd Gijswijt & Neue               Neue obere Aktueller Existenz
+(n, R)       2009/2011) eckung         Polak      untere       Schranke Stand         linearer
+                          \lceil 2^n / (2026) SDP Schranke nach 2011? (2026)          Codes (k =
+                          V(n, R)      (reell)    nach 2011?                          6 bzw. k =
+                          \rceil                                                      5)
+K(18, 5)     27–64        21           27,4903    Ja: ≥ 28     Nein        28–64      [18, 6]_5
+                                                  (+1)         (weiter 64)            existiert (M
+                                                                                      = 64); kein
+                                                                                      [18, 5]_5
+K(20, 6)     24–64        18           23,2979    Nein (\lceil Nein        24–64      [20, 6]_6
+                                                  23{,}2979 (weiter 64)               existiert (M
+                                                  \rceil = 24)                        = 64); kein
+                                                                                      [20, 5]_6
+K(21, 6)     33–64        26           33,2651    Ja: ≥ 34     Nein        34–64      [21, 6]_6
+Parameter Kéri (Stand Kugelüberd Gijswijt & Neue         Neue obere Aktueller              Existenz
+(n, R)    2009/2011) eckung        Polak      untere     Schranke Stand                    linearer
+                      \lceil 2^n / (2026) SDP Schranke nach 2011? (2026)                   Codes (k =
+                      V(n, R)      (reell)    nach 2011?                                   6 bzw. k =
+                      \rceil                                                               5)
+                                              (+1)       (weiter 64)                       existiert (M
+                                                                                           = 64); kein
+                                                                                           [21, 5]_6
+K(23, 7)      29–64       22          28,0646       Nein (\lceil Nein         29–64        [23, 6]_7
+                                                    28{,}0646 (weiter 64)                  existiert (M
+                                                    \rceil = 29)                           = 64); kein
+                                                                                           [23, 5]_7
+K(25, 8)      25–64       19          24,4924       Nein (\lceil Nein         25–64        [25, 6]_8
+                                                    24{,}4924 (weiter 64)                  existiert (M
+                                                    \rceil = 25)                           = 64); kein
+                                                                                           [25, 5]_8
+Quellen: SDP-Werte für alle fünf Zellen aus Gijswijt & Polak (2026), Tabellen 5 und 6; neue
+ganzzahlige untere Schranken sowie Bestätigung der oberen Schranke 64 für K(18, 5) und
+K(21, 6) aus Gijswijt & Polak (2026), Tabelle 1; für K(20, 6), K(23, 7) und K(25, 8) basiert der
+obere Vergleichswert 64 auf Kéris Tabelle bzw. den linearen [n, 6]-Codes ohne nachgewiesene
+Post-2011-Verbesserung; Kugelüberdeckungsschranken exakt berechnet; lineare Existenz- und
+Nichtexistenzaussagen aus Baicheva & Bouyukliev (2010) und Graham & Sloane (1985,
+Theorem 22).
+[Nicht direkt aus einer Quelle belegt – eigene arithmetische Überprüfung auf Basis der
+zitierten Formeln und Tabellenwerte]: Der selektive Erfolg der SDP-Methode bei genau K(18,
+5) und K(21, 6) korrespondiert mit der Teilbarkeitsstruktur der van-Wee-Ungleichung. Bei K(20,
+6) und K(23, 7) teilt R + 1 den Wert n + 1 exakt (7 \mid 21 bzw. 8 \mid 24), sodass die
+van-Wee-Ungleichung dort mit der Kugelüberdeckungsschranke zusammenfällt, und bei K(25,
+8) liegt mit n + 1 = 26 \equiv 8 \pmod 9 der kleinstmögliche Aufrundungsabstand vor. Umgekehrt
+gilt bei den beiden verbesserten Einträgen K(18, 5) und K(21, 6) jeweils n + 1 \equiv 1 \pmod{R
++ 1} (19 \equiv 1 \pmod 6 bzw. 22 \equiv 1 \pmod 7), wo die ganzzahligen Aufrundungen der
+Ungleichungen maximalen Spielraum bieten. Ferner lässt sich über die Standardmonotonien
+K(n, R) \ge K(n + 1, R + 1), K(n, R) \ge \lceil K(n + 1, R) / 2 \rceil und K(n, R) \ge K(n - 1, R)
+nachrechnen, dass auch die übrigen neuen Nachbarschranken aus Gijswijt & Polaks Tabelle 1
+(wie K(19, 6) ≥ 17, K(21, 7) ≥ 15, K(22, 7) ≥ 21, K(24, 8) ≥ 19 und K(26, 9) ≥ 17) keine
+Verschärfung für K(20, 6), K(23, 7) oder K(25, 8) erzwingen.
+
+2.2 Prüfung weiterer Literatur nach 2011 zu oberen und unteren
+Schranken
+Der Hintergrund der stabilen oberen Schranke 64 liegt zunächst in der linearen
+Kodierungstheorie: Tsonka Baicheva und Iliya Bouyukliev (Advances in Mathematics of
+Communications, 4(3), S. 399–404, 2010) bestimmten für alle n ≥ 18 den minimalen
+Überdeckungsradius binärer linearer Codes der Dimension 6 exakt zu t_2[n, 6] = \lfloor (n - 8)/2
+\rfloor. Damit existieren für sämtliche fünf Parameterpaare (18, 5), (20, 6), (21, 6), (23, 7) und
+(25, 8) bereits binäre lineare [n, 6]-Codes der Größe 64. Da binäre lineare Codes nur
+Zweierpotenzen als Kardinalität annehmen und nach Graham & Sloane (1985, Theorem 22)
+kein linearer [n, 5]-Code der Größe 32 einen dieser fünf Radien erreicht (t_2[n, 5] = 6, 7, 8, 9, 10
+für n = 18, 20, 21, 23, 25), kann jede Verbesserung der oberen Schranke unter 64 nur durch
+einen nichtlinearen Code gelingen.
+Neuere Arbeiten zu binären Überdeckungscodes nach 2011 adressieren andere
+Parameterbereiche und liefern für die fünf Zielzellen keine neuen oberen Schranken. Auf dem
+Gebiet der binären linearen Überdeckungscodes erzielten Alexander A. Davydov, Stefano
+Marcugini und Fernanda Pambianco („New Upper Bounds for Binary Linear Covering Codes“,
+arXiv:2511.02542, Nov. 2025; IEEE Transactions on Information Theory, 72(10), S. 7439–7454,
+Okt. 2026) sowie Stephen Wu („Covering 1024 syndromes with 50 columns“, arXiv:2608.27494,
+Aug. 2026) neue Schranken für die Längenfunktion \ell_2(r, R) bei kleinen Überdeckungsradien
+R = 2, 3, 4 (insbesondere R = 2 und asymptotische Überdeckungsdichten), was die fünf
+Zielparameter mit R = 5, 6, 7, 8 konstruktionsbedingt nicht betrifft. Ebenso beschränken sich die
+neueren Fortschritte von Wolfgang Haas (Discrete Mathematics 313, S. 2751–2762, 2013),
+Ying-Sian Wu & Jun-Yo Chen (Discrete Mathematics 347, 2024; arXiv:2203.16901) sowie
+Zachary DeVivo & Robert K. Hladky (arXiv:2409.14621, 2024) ausschließlich auf den
+Überdeckungsradius R = 1 (Hyperwürfel-Dominationszahl).
+Besonders aufschlussreich für den Stand der nichtlinearen oberen Schranken ist der
+Negativbefund aus einer aktuellen systematischen Computersuche: Tamal Maharaj
+(„Quaternary Preparata codes are quasi-perfect covering codes in the Hamming metric“,
+arXiv:2610.03760, Sept. 2026) führte eine Tabu-Suche im Stil Östergårds nach Codes aus
+Orbits vorgegebener Hamming-Isometriegruppen explizit über alle offenen Zellen von Kéris
+Tabellen mit q ≤ 4 durch, fand damit jedoch nur im quaternären Bereich (q = 4, etwa K_4(6, 2)
+\le 48) Verbesserungen und berichtete keinerlei neue binäre Schranken. Márk Marosi („New
+upper and lower bounds on covering codes K_q(n, R) for alphabets of size 5 ≤ q ≤ 21“,
+arXiv:2608.19872, Aug./Sept. 2026) beschränkte sich gezielt auf größere Alphabete (5 ≤ q ≤
+21). Auch neuere Arbeiten zu asymptotischen Überdeckungen mit affin transformierten
+Hamming-Bällen (Michael Jaber & Vinayak M. Kumar, arXiv:2606.07918, Juni 2026) liefern
+keine konkreten Schranken für 15 ≤ n ≤ 25; ebenso dokumentiert Andreas Florath
+(arXiv:2606.09600, Juni 2026) eine Lean-4-Formalisierung und Datenbank zertifizierter
+Schranken, ohne dass aus den zugänglichen Angaben neue Rekorde für die fünf gesuchten
+Parameter hervorgehen.
+[Nicht direkt aus einer Quelle belegt – methodischer Vollständigkeitsvorbehalt]: Da Kéris
+Website seit 2011 nicht mehr aktualisiert wird und Gijswijt & Polak (2026) Kéris Tabellen
+weiterhin als Referenz für die besten bekannten oberen Schranken verwenden, deutet die bis
+Ende 2026 gesichtete Literatur klar darauf hin, dass 64 für alle fünf Einträge ungeschlagen ist;
+die Existenz unindexierter oder unveröffentlichter Einzelfunde lässt sich methodisch jedoch nicht
+absolut ausschließen.
+
+3. Rekordliefernde Such- und Konstruktionsverfahren:
+Prinzip und Quellen
+Die oberen Schranken in den Standardtabellen für binäre Überdeckungscodes entstehen
+typischerweise aus dem Zusammenspiel dreier komplementärer Verfahren: stochastischer
+lokaler Suche (Tabu-Suche, bei größeren Codes mit vorgeschriebener Symmetriegruppe),
+algebraischer Suchraumkompression (Matrixmethode) und deterministischer Komposition
+normaler Startcodes (amalgamierte direkte Summe, ADS). Auf der Seite der unteren Schranken
+ist mit der symmetriereduzierten semidefiniten Programmierung ein starkes
+konvex-algebraisches Werkzeug hinzugekommen.
+
+3.1 Tabu-Suche und Symmetriegruppen-Reduktion (Orbitsuche)
+Bei der klassischen Tabu-Suche für Überdeckungscodes wird die Codegröße M = |C| für feste
+Parameter (n, R) vorgegeben — in der Praxis knapp unterhalb der bisherigen oberen Schranke.
+Ein zulässiger Zustand ist eine M-elementige Teilmenge C \subseteq \mathbb{F}_2^n; als
+Zielfunktion f(C) dient die Anzahl der durch C noch unüberdeckten Wörter. Der Algorithmus
+bewegt sich nach dem Prinzip des steilsten Abstiegs (steepest descent) in der Nachbarschaft
+des aktuellen Codes. In lokalen Minima akzeptiert er auch nicht-verbessernde Züge zum jeweils
+kostengünstigsten Nachbarn; um ein Zurückfallen in kürzlich besuchte Zustände zu verhindern,
+sperrt eine Tabu-Liste die Positionen zuletzt geänderter Codewörter für eine Listenlänge L,
+wobei Östergård als Faustregel L \approx \vert{}C\vert{}/10 angibt. Erreicht die Kostenfunktion
+f(C) = 0, ist ein gültiger Überdeckungscode gefunden.
+Da die unstrukturierte Tabu-Suche bei wachsender Codegröße rasch an Leistungsfähigkeit
+verliert, zeigten Östergård & Weakley, wie sich die Suche durch das Vorschreiben einer (nicht
+notwendig vollen) Automorphismengruppe G beschleunigen lässt. Der gesuchte Code wird
+dabei als Vereinigung von Bahnen (Orbits) unter einer vorgegebenen Gruppe G von
+Hamming-Isometrien angesetzt, sodass die Optimierung auf deutlich weniger Freiheitsgraden
+arbeitet. Das Verfahren stößt allerdings auch an Grenzen: Für große asymmetrische
+Überdeckungscodes schätzten Östergård & Seuranen (2004) das Vorschreiben von
+Automorphismen als wenig aussichtsreich ein, und in Maharajs systematischer Orbitsuche
+(2026) über alle offenen Zellen von Kéris Tabellen mit q ≤ 4 wurden ausschließlich für q = 4,
+nicht aber für q = 2 Verbesserungen erzielt.
+Zentrale Primärquellen und dokumentierte Rekorde:
+   ●​ P. R. J. Östergård (1995): „New multiple covering codes by tabu search“, The
+       Australasian Journal of Combinatorics, 12, S. 145–155 — 27 verbesserte obere
+       Schranken für binäre Mehrfachüberdeckungen; detaillierte Darstellung von
+       Kostenfunktion, Tabu-Listenlänge L \approx \vert{}C\vert{}/10 und Kopplung mit der
+       Matrixmethode.
+   ●​ P. R. J. Östergård (1997): „Constructing covering codes by tabu search“, Journal of
+       Combinatorial Designs, 5(1), S. 71–80 — Standardreferenz zur Konstruktion von
+       Überdeckungscodes per Tabu-Suche.
+   ●​ I. S. Honkala & P. R. J. Östergård (1997): „Applications in code design“, in: E. H. L.
+       Aarts & J. K. Lenstra (Hrsg.), Local Search in Combinatorial Optimization, Wiley, S.
+       121–136.
+   ●​ P. R. J. Östergård & M. K. Kaikkonen (1998): „New upper bounds for binary covering
+       codes“, Discrete Mathematics, 178(1–3), S. 165–179 — verschlagwortet mit covering
+       code, nonlinear code und tabu search; in Kéris Tabelle für R = 1 u. a. zitiert für K(25, 1) ≤
+       1.556.480 und K(27, 1) ≤ 5.767.168 (wobei aus dieser Tabelle nicht hervorgeht, welche
+       Einzelkonstruktion dort verwendet wurde).
+   ●​ P. R. J. Östergård & W. D. Weakley (1999): „Constructing covering codes with given
+       automorphisms“, Designs, Codes and Cryptography, 16(1), S. 65–73 — Orbitsuche mit
+       vorgeschriebener Automorphismengruppe; dokumentierte Rekorde im Abstract u. a.
+       K_2(13, 1) \le 736 und K_3(9, 1) \le 1356.
+   ●​ T. Maharaj (2026): „Quaternary Preparata codes are quasi-perfect covering codes in the
+       Hamming metric“, arXiv:2610.03760 — Tabu-Suche auf Isometrie-Orbits für q ≤ 4; neue
+       Rekorde für q = 4, keine für q = 2.
+3.2 Matrixmethode (Blokhuis–Lam-Konstruktion)
+Die Matrixmethode konstruiert (im Allgemeinen nichtlineare) Überdeckungscodes als
+Vereinigung von Nebenklassen (Cosets) eines linearen Codes. Ausgangspunkt sind eine k
+\times n-Matrix A über \mat[span_56](start_span)[span_56](end_span)hbb{F}_2 —
+typischerweise in systematischer Form A = [I_k \mid M] als Prüfmatrix eines linearen [n, n -
+k]-Codes — sowie eine kleine Syndrommenge S = \{s_1, \dots, s_p\}
+\[span_95](start_span)[span_95](end_span)[span_96](start_span)[span_96](end_span)[span_9
+7](start_span)[span_97](end_span)subseteq \mathbb{F}_2^k. Der konstruierte Code lautet:
+C(S) = \{x \in \mathbb{F}_2^n : A x^T \in S\}.
+Besitzt A vollen Rang k, so umfasst jede Nebenklasse 2^{n - k} Wörter und C(S) hat die
+Kardinalität \vert{}S\vert{} \cdot 2^{n - k}. Nach dem Kernsatz der Matrixkonstruktion ist der
+Überdeckungsradius von C(S) genau die kleinste ganze Zahl R, für die sich jeder Vektor aus
+\mathbb{F}_2^k als Summe eines Syndroms s \in S und einer Linearkombination von höchstens
+R Spalten der Matrix A schreiben lässt.
+Der praktische Vorteil liegt in einer drastischen Suchraumreduktion: Anstatt im 2^n-Raum nach
+einer großen unstrukturierten Codewortmenge zu suchen, optimiert man im kleineren
+Syndromraum \mathbb{F}_2^k die Spalten von M und die Menge S — ein Problem, das sich
+unmittelbar mit Tabu-Suche koppeln lässt. Je kleiner k gewählt wird, desto stärker ist die
+aufgeprägte Nebenklassenstruktur des resultierenden Codes. [Aus zugänglichen Quellen
+nicht belegbar]: Ob die Matrixmethode bei den sechs 32-Wort-Codes aus Östergård &
+Kaikkonen (1998) angewendet wurde, lässt sich aus den zugänglichen Quellen nicht
+verifizieren.
+Zentrale Primärquellen:
+   ●​ A. Blokhuis & C. W. H. Lam (1984): „More coverings by rook domains“, Journal of
+        Combinatorial Theory, Series A, 36(2), S. 240–244 — Einführung der Matrixmethode für
+        einfache Überdeckungen mit Radius R = 1.
+   ●​ H. O. Hämäläinen, I. S. Honkala, M. K. Kaikkonen & S. N. Litsyn (1993): „Bounds for
+        binary multiple covering codes“, Designs, Codes and Cryptography, 3, S. 251–275 —
+        Verallgemeinerung auf weitere Überdeckungstypen, einschließlich binärer
+        Mehrfachüberdeckungen.
+   ●​ P. R. J. Östergård (1995): „New multiple covering codes by tabu search“, The
+        Australasian Journal of Combinatorics, 12, S. 145–155 — Abschnitt 2.4 „A Matrix
+        Method“: explizite Kombination von A = [I \mid M] und Tabu-Suche zur Konstruktion
+        großer Mehrfachüberdeckungscodes.
+   ●​ G. D. Cohen, I. S. Honkala, S. N. Litsyn & A. C. Lobstein (1997): Covering Codes,
+        North-Holland Mathematical Library, Vol. 54, Abschnitt 3.5 (Matrix construction, S. 70).
+   ●​ A. A. Davydov: „New Constructions of Covering Codes“ — Darstellung beliebiger linearer
+        und nichtlinearer Ausgangscodes als Coset-Vereinigung C(s_1, \dots, s_p) und Ausbau
+        zu unendlichen Familien (im linearen Fall weitergeführt in Davydov, Marcugini &
+        Pambianco 2025/2026).
+
+3.3 Amalgamierte direkte Summe (Amalgamated Direct Sum, ADS)
+Im Unterschied zur Tabu-Suche ist die amalgamierte direkte Summe kein stochastisches
+Suchverfahren, sondern eine deterministische Kompositionskonstruktion, die zwei kürzere
+Codes effizienter verknüpft als die gewöhnliche direkte Summe. Grundlage ist die Normalität:
+Partitioniert man einen binären Code C der Länge n mit Überdeckungsradius R gemäß dem
+Bitwert an Koordinate i \in \{1, \dots, n\} in die Teilcodes C_0^{(i)} und C_1^{(i)}, so definiert man
+die Koordinatennorm durch:
+N^{(i)} = \max_{x \in \mathbb{F}_2^n} \Big( d\big(x, C_0^{(i)}\big) + d\big(x, C_1^{(i)}\big) \Big),
+\qquad N = \min_{1 \le i \le n} N^{(i)}.
+Der Code C heißt normal, wenn N \le 2R + 1 gilt; jede Koordinate i mit N^{(i)} = N heißt
+akzeptabel (bei normalen Codes gilt für sie also N^{(i)} \le 2R + 1). Insbesondere bewiesen
+Kilby & Sloane (1987), dass jeder binäre lineare Code der Dimension k ≤ 5 normal ist.
+Sind A ein normaler binärer Code der Länge n_A und mit Radius R_A (letzte Koordinate
+akzeptabel) sowie B ein normaler binärer Code der Länge n_B und mit Radius R_B (erste
+Koordinate akzeptabel), so verschmilzt ihre amalgamierte direkte Summe A \dot{\oplus} B
+beide akzeptablen Koordinaten zu einer gemeinsamen Position:
+A \dot{\oplus} B = \big\{(a, 0, b) : (a, 0) \in A,\, (0, b)
+\i[span_48](start_span)[span_48](end_span)n B\big\} \;\cup\; \big\{(a, 1, b) : (a, 1) \in A,\, (1, b)
+\in B\big\}.
+Der entstehende Code ist wiederum normal, besitzt die um 1 verkürzte Länge n_A + n_B - 1
+und einen Überdeckungsradius R \le R_A + R_B. Für lineare Codes gilt [n_A, k_A]_{R_A}
+\dot{\oplus} [n_B, k_B]_{R_B} \to [n_A + n_B - 1,\; k_A + k_B - 1]_R mit R \le R_A + R_B
+(gleiche Redundanz wie die direkte Summe bei kürzerer Länge). Im allgemeinen (auch
+nichtlinearen) Fall gilt, sofern mindestens einer der beiden Codes in der verschmolzenen
+Koordinate balanciert ist, für die Kardinalität |A
+[span_124](start_span)[span_124](end_span)\dot{\oplus} B| = |A| \cdot |B| / 2.
+Besonders wirkungsvoll für Rekordserien ist die iterierte ADS mit dem normalen, balancierten
+Wiederholungscode B = (3, 2)_1 = \{000, 111\} (äquivalent zum zweifachen Wiederholen einer
+akzeptablen Koordinate): Aus jedem normalen (n, M)_R-Code entsteht unmittelbar die gesamte
+unendliche Diagonalfamilie (n + 2i, M)_{R + i} für alle i ≥ 0 bei konstanter Codegröße M.
+Dokumentierte Familien dieser Art umfassen K(2R + 3, R) = 7 (aus (5, 7)_1), K(2R + 4, R) ≤ 12
+(aus (6, 12)_1), die 1986er Familie K(2R + 7, R) ≤ 56 (aus (5, 7)_1 \dot{\oplus} (7, 16)_1 = (11,
+56)_2) sowie die linearen Dimension-5- und Dimension-6-Serien.
+Zentrale Primärquellen:
+    ●​ R. L. Graham & N. J. A. Sloane (1985): „On the covering radius of codes“, IEEE
+       Transactions on Information Theory, 31(3), S. 385–401 — Einführung von Norm,
+       Normalität und ADS für lineare Codes (Theoreme 19 und 20).
+    ●​ G. D. Cohen, A. C. Lobstein & N. J. A. Sloane (1986): „Further results on the covering
+       radius of codes“, IEEE Transactions on Information Theory, IT-32(5), S. 680–694 —
+       Erweiterung der ADS auf nichtlineare Codes (Theorem 11) sowie Herleitung der
+       Diagonalserien mit Größen 7, 12, 56, 96 und 192.
+    ●​ K. E. Kilby & N. J. A. Sloane (1987): „On the covering radius problem for codes II.
+       Codes of low dimension; normal and abnormal codes“, SIAM Journal on Algebraic and
+       Discrete Methods, 8(4) — Normalität für alle linearen Codes der Dimension k ≤ 5
+       (Theoreme 13 und 18).
+    ●​ G. D. Cohen, I. S. Honkala, S. N. Litsyn & A. C. Lobstein (1997): Covering Codes,
+       North-Holland Mathematical Library, Vol. 54, Kapitel 4 (Normality, Abschnitt 4.1
+       Amalgamated direct sum, S. 85).
+    ●​ M. K. Kaikkonen & P. Rosendahl (2003): „New covering codes from an ADS-like
+       construction“, IEEE Transactions on Information Theory, 49(7), S. 1809–1812 —
+       ADS-ähnliche Verallgemeinerung (u. a. Konstruktion des linearen [51, 41]_2-Codes).
+    ●​ arXiv:math/0409171: Amalgamated direct sum (ADS) und Amalgamated semi-direct sum
+      (ASDS) normaler Codes inklusive der balancierten Kardinalitätsformel \vert{}A \dot{\oplus}
+      B\vert{} = \vert{}A\vert{} \cdot \vert{}B\vert{} / 2.
+
+3.4 Ergänzende rekordliefernde Verfahren im Umfeld
+Neben den drei angefragten Hauptmethoden haben vier weitere Verfahren maßgebliche
+Rekorde in den Standardtabellen für binäre und q-äre Überdeckungscodes beigesteuert:
+Verfahren             Zielrichtung             Kurzprinzip              Zentrale Quellen und
+                                                                        dokumentierte
+                                                                        Beispiele
+Stückweise konstante Obere Schranken           Partitionierung der n    Cohen, Lobstein &
+Codes (Piecewise                               Koordinaten in Blöcke Sloane (1986); Cohen
+Constant Codes)                                n_1 + \dots + n_p; der et al. (1997, Kap. 3.3,
+                                               Code ist invariant unter S. 64). Beispiele: K(5,
+                                               allen blockinternen      1) = 7, K(6, 1) = 12,
+                                               Permutationen und        K(11, 1) ≤ 192
+                                               durch                    (kombiniert mit
+                                               Blockgewichts-Vektore Steiner-System S(4, 5,
+                                               n definiert.             11)).
+Simulated Annealing Obere Schranken            Randomisiertes lokales Wille (1990; 1996,
+                                               Approximations- und IEEE Trans. Inform.
+                                               Optimierungsverfahren Theory 42(1), S.
+                                               für                      300–302); Cohen et al.
+                                               Überdeckungscodes. (1997, Kap. 3.8, S. 79).
+                                                                        Beispiele in Kéris
+                                                                        Tabelle: K(9, 1) ≤ 62,
+                                                                        K(10, 1) ≤ 120, K(12, 1)
+                                                                        ≤ 380.
+Fokussierte lokale    Obere Schranken (5 ≤ Wahl zufälliger              Marosi (2026,
+Suche                 q ≤ 15)                  unüberdeckter Wörter arXiv:2608.19872). 26
+(WalkSAT-Linie) &                              und exakte Bewertung neue obere Schranken
+LNS                                            aller                    für 5 ≤ q ≤ 15; keine
+                                               1-Koordinaten-Züge       binären
+                                               von Codewörtern im       Verbesserungen.
+                                               Abstand R + 1, ergänzt
+                                               durch Large
+                                               Neighbourhood Search.
+Semidefinite          Untere Schranken         Erweiterung der          Gijswijt (2005, Diss.
+Programmierung                                 Delsarte-/Kugelüberdec Univ. Amsterdam,
+(SDP) über                                     kungs-LP durch           arXiv:1007.0906);
+Terwilliger-Algebra                            Matrix-Cuts und          Gijswijt & Polak
+                                               Nebenbedingungen         (2025/2026, IEEE
+                                               aus der                  Trans. Inform. Theory
+                                               Lasserre-Hierarchie für 72(9), S. 6599–6614;
+                                               0-1-Programme;           arXiv:2504.01932).
+                                               Symmetriereduktion       Beispiele: K(18, 5) ≥
+                                               mittels                  28, K(21, 6) ≥ 34 sowie
+Verfahren                Zielrichtung             Kurzprinzip               Zentrale Quellen und
+                                                                            dokumentierte
+                                                                            Beispiele
+                                                    Terwilliger-Algebra auf alle sechs Parameter
+                                                    polynomiale Größe.      aus Frage 1.
+Insgesamt zeigt der Forschungsstand bis Ende 2026 im Parameterbereich 15 ≤ n ≤ 25 und 4 ≤
+R ≤ 9 eine klare Trennung: Während die semidefiniten Relaxationen von Gijswijt & Polak
+(2025/2026) die unteren Schranken bei acht der elf betrachteten Parameterpaare um jeweils +1
+verschärft haben, blieben die oberen Schranken (32 bzw. 64) unverändert. Da sowohl die
+32-Wort-Codes aus Frage 1 als auch jede Verbesserung unter 64 bei den fünf Parametern aus
+Frage 2 zwingend nichtlinear sein müssen, liegen potenzielle Fortschritte bei den oberen
+Schranken ausschließlich im Bereich nichtlinearer Konstruktionen und Suchverfahren. Für die
+beiden aus dem Volltext nicht verifizierbaren Detailpunkte aus Frage 1 (konkrete Konstruktion
+und Selbstkomplementarität der 32-Wort-Codes in Östergård & Kaikkonen 1998) bleibt die
+direkte Einsicht in den Originalartikel in Discrete Mathematics 178 (1998) sowie in die
+Quellenschlüssel von Kéris 2_tables.pdf erforderlich.
+
+Quellenangaben
+
+1. on the least covering radius of binary linear codes of dimension 6,
+https://www.moi.math.bas.bg/moiuser/~iliya/pdf_site/pdfTc_Il_AMC.pdf 2. On the Covering
+Radius of Codes* - Fan Chung Graham,
+https://fanchung.ucsd.edu/ron/papers/85_01_covering_radius.pdf 3. New upper bounds for
+binary covering codes - Aalto-yliopiston,
+https://research.aalto.fi/fi/publications/new-upper-bounds-for-binary-covering-codes/ 4. D.C.
+Gijswijt - TU Delft Research Portal, https://research.tudelft.nl/en/persons/dc-gijswijt 5. Patric R.
+J. Östergård - dblp, https://dblp.org/pid/o/PatricRJOstergard 6. New single-error-correcting
+codes (1996) | Patric R. J. Östergård | 18,
+https://scispace.com/papers/new-single-error-correcting-codes-2n1f7udfpu 7. Constructions for
+perfect mixed codes and other covering codes,
+https://www.semanticscholar.org/paper/Constructions-for-perfect-mixed-codes-and-other-Etzion-
+Greenberg/2ce332821b596c891f703c813ae31b5ea000151f 8. New Upper Bounds for Binary
+Linear Covering Codes | Request PDF,
+https://www.researchgate.net/publication/410762543_New_upper_bounds_for_binary_linear_co
+vering_codes 9. Covering Codes - PDF Free Download - EPDF,
+https://epdf.pub/covering-codes.html 10. Further Results on the Covering Radius of Codes - Neil
+Sloane, http://neilsloane.com/doc/Me127.pdf 11. résumé,
+https://www.lri.fr/~lobstein/resumeFurther.html 12. Covering codes, perfect codes, and codes
+from algebraic curves, https://pure.tue.nl/ws/files/1995874/353803.pdf 13. (PDF) On the
+covering radius of codes - ResearchGate,
+https://www.researchgate.net/publication/3084175_On_the_covering_radius_of_codes 14.
+Density of normal binary covering codes - arXiv, https://arxiv.org/pdf/math/0409171 15.
+Classification Results for Non-Mixed and Mixed Optimal Covering,
+https://old.sztaki.hu/~keri/codes/survey.pdf 16. Asymmetric binary covering codes,
+https://people.math.sc.edu/cooper/codes.pdf 17. Sven (Carel) Polak - Google Drive: Sign-in,
+https://sites.google.com/site/svenpolak/ 18. Nearly Perfect Covering Codes - arXiv,
+https://arxiv.org/html/2405.00258v1 19. New upper bounds on covering codes K_q(n,R) for
+alphabets of size,
+https://www.researchgate.net/publication/413133160_New_upper_bounds_on_covering_codes_
+K_qnR_for_alphabets_of_size_six_and_seven/fulltext/6a87e85641e81355774fd0cd/New-upper
+-bounds-on-covering-codes-K-qn-R-for-alphabets-of-size-six-and-seven.pdf?origin=scientificCo
+ntributions 20. [2511.02542] New upper bounds for binary linear covering codes,
+https://arxiv.org/abs/2511.02542 21. New Upper Bounds on the Minimal Domination Numbers of
+... - arXiv, https://arxiv.org/abs/2409.14621 22. 超立方體最小控制數下界的提升Improved Lower
+Bounds On The, https://www.math.ntu.edu.tw/~shing_tung/PDF/13th/Wu_1.pdf 23. Quaternary
+Preparata codes are quasi-perfect covering ... - arXiv, https://arxiv.org/pdf/2610.03760 24. New
+upper and lower bounds on covering codes K_q(n,R) for ... - arXiv,
+https://arxiv.org/abs/2608.19872 25. Formal Foundations and Proof-Carrying Certificates for
+q-ary ... - arXiv, https://arxiv.org/pdf/2606.09600 26. New Multiple Covering Codes by Tabu
+Search, https://ajc.maths.uq.edu.au/pdf/12/ajc-v12-p145.pdf 27. Classification of binary covering
+codes | Semantic Scholar,
+https://www.semanticscholar.org/paper/Classification-of-binary-covering-codes-%C3%96sterg%
+C3%A5rd-Weakley/2fc43542303523eee5e2e1d65b70360b292110c6 28. Constructing
+Asymmetric Covering - Codes by Tabu Search,
+https://combinatorialpress.com/article/jcmcc/Volume%20051/vol-051-paper%2011.pdf 29. Patric
+RJ Östergård's publications, https://users.aalto.fi/~pat/patric_pub.html 30. Solving the
+k-dominating set problem on very large-scale networks,
+https://www.researchgate.net/publication/343081878_Solving_the_k-dominating_set_problem_o
+n_very_large-scale_networks 31. New Binary Linear Codes - Combinatorial Press,
+https://combinatorialpress.com/article/ars/Volume%20056/volume-56-paper-10.pdf 32. William
+D. Weakley - DBLP, https://dblp.org/pid/22/2446 33. Classification of Binary Covering Codes -
+ResearchGate,
+https://www.researchgate.net/publication/2608734_Classification_of_Binary_Covering_Codes
+34. (PDF) New Constructions of Covering Codes - ResearchGate,
+https://www.researchgate.net/publication/220638196_New_Constructions_of_Covering_Codes
+35. On kernels of perfect codes - ResearchGate,
+https://www.researchgate.net/publication/220192561_On_kernels_of_perfect_codes 36. Aart
+Blokhuis - Google Scholar, https://scholar.google.com/citations?user=GElvLUUAAAAJ&hl=vi 37.
+Bounds for Binary Codes that are Multiple Coverings of the Farthest,
+https://epubs.siam.org/doi/10.1137/S0895480193252100 38. Bounds for binary multiple
+covering codes - MaRDI portal,
+https://portal.mardi4nfdi.de/wiki/Bounds_for_binary_multiple_covering_codes 39. Covering
+Codes, Volume 54 - 1st Edition - Elsevier Shop,
+https://shop.elsevier.com/books/covering-codes/cohen/978-0-444-82511-7 40. Normality of
+some binary linear codes, https://www.moi.math.bas.bg/oc2009/a1.pdf 41. Partial-Sum Queries
+in OLAP Data Cubes Using Covering Codes,
+https://www.computer.org/csdl/journal/tc/1998/12/t1326/13rRUy2YLS9 42. Covering codes with
+improved density - Institute for Advanced Study,
+https://www.ias.edu/sites/default/files/math/csdm/02-03/mkrivelevich_covering_codes_with_impr
+oved_density.pdf 43. Algorithm Specifications and Supporting Documentation (v1.5),
+https://cdn.jsdelivr.net/gh/ngcc-dev/ngcc-harness@dc66c6cb3c06e75bdea0048e21fa4e13c63f0
+0af/kem-16/kem-16-spec.pdf
+
