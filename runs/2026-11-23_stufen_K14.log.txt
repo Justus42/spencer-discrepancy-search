@@ -1,0 +1,14 @@
+n=20 R=6 d=2 K=14 typ=(10, 10) seed=1: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=48
+n=20 R=6 d=2 K=14 typ=(11, 9) seed=1: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=4
+n=20 R=6 d=2 K=14 typ=(12, 8) seed=1: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=8
+n=20 R=6 d=2 K=14 typ=(10, 10) seed=2: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=42
+[Woerter gespeichert: runs/woerter_n20_R6_d2_K14_typ11-9_seed2.txt]
+n=20 R=6 d=2 K=14 typ=(11, 9) seed=2: GELOEST, Woerter=56, selbstkompl=True, Radius(Brute-Force)=6
+n=20 R=6 d=2 K=14 typ=(12, 8) seed=2: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=7
+n=20 R=6 d=2 K=14 typ=(10, 10) seed=3: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=38
+[Woerter gespeichert: runs/woerter_n20_R6_d2_K14_typ11-9_seed3.txt]
+n=20 R=6 d=2 K=14 typ=(11, 9) seed=3: GELOEST, Woerter=56, selbstkompl=True, Radius(Brute-Force)=6
+n=20 R=6 d=2 K=14 typ=(12, 8) seed=3: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=11
+n=20 R=6 d=2 K=14 typ=(10, 10) seed=4: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=34
+n=20 R=6 d=2 K=14 typ=(11, 9) seed=4: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2
+n=20 R=6 d=2 K=14 typ=(12, 8) seed=4: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=11
