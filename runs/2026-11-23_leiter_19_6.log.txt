@@ -1,0 +1,93 @@
+n=19 R=6 d=2 K=8 typ=(18, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=9478
+n=19 R=6 d=2 K=8 typ=(15, 4): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=4992
+n=19 R=6 d=2 K=8 typ=(16, 3): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=4992
+n=19 R=6 d=2 K=8 typ=(17, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=9478
+n=19 R=6 d=2 K=8 typ=(12, 7): GELOEST, Woerter=32, selbstkompl=True, Radius(Brute-Force)=6
+n=19 R=6 d=2 K=8 typ=(11, 8): GELOEST, Woerter=32, selbstkompl=True, Radius(Brute-Force)=6
+n=19 R=6 d=2 K=8 typ=(14, 5): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1728
+n=19 R=6 d=2 K=8 typ=(13, 6): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1728
+n=19 R=6 d=2 K=8 typ=(10, 9): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=288
+n=19 R=6 d=3 K=4 typ=(17, 1, 1, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=11880
+n=19 R=6 d=3 K=4 typ=(16, 2, 1, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=10056
+n=19 R=6 d=3 K=4 typ=(15, 3, 1, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=7776
+n=19 R=6 d=3 K=4 typ=(16, 1, 1, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=11880
+n=19 R=6 d=3 K=4 typ=(15, 2, 2, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=10056
+n=19 R=6 d=3 K=4 typ=(14, 4, 1, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5616
+n=19 R=6 d=3 K=4 typ=(15, 2, 1, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=7776
+n=19 R=6 d=3 K=4 typ=(14, 3, 2, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5616
+n=19 R=6 d=3 K=4 typ=(14, 3, 1, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=7776
+n=19 R=6 d=3 K=4 typ=(14, 2, 2, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5616
+n=19 R=6 d=3 K=4 typ=(13, 5, 1, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5400
+n=19 R=6 d=3 K=4 typ=(13, 4, 2, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5616
+n=19 R=6 d=3 K=4 typ=(13, 4, 1, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5400
+n=19 R=6 d=3 K=4 typ=(13, 3, 3, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=3888
+n=19 R=6 d=3 K=4 typ=(13, 3, 2, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=3888
+n=19 R=6 d=3 K=4 typ=(13, 2, 2, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5508
+n=19 R=6 d=3 K=4 typ=(12, 6, 1, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5152
+n=19 R=6 d=3 K=4 typ=(12, 5, 2, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5152
+n=19 R=6 d=3 K=4 typ=(12, 4, 3, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1944
+n=19 R=6 d=3 K=4 typ=(12, 5, 1, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5400
+n=19 R=6 d=3 K=4 typ=(12, 4, 2, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1944
+n=19 R=6 d=3 K=4 typ=(12, 3, 3, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=3888
+n=19 R=6 d=3 K=4 typ=(11, 7, 1, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5020
+n=19 R=6 d=3 K=4 typ=(12, 3, 2, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1944
+n=19 R=6 d=3 K=4 typ=(11, 6, 2, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5152
+n=19 R=6 d=3 K=4 typ=(11, 6, 1, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5020
+n=19 R=6 d=3 K=4 typ=(11, 5, 3, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2592
+n=19 R=6 d=3 K=4 typ=(11, 5, 2, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2592
+n=19 R=6 d=3 K=4 typ=(11, 4, 4, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1944
+n=19 R=6 d=3 K=4 typ=(11, 4, 3, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2592
+n=19 R=6 d=3 K=4 typ=(11, 3, 3, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1296
+n=19 R=6 d=3 K=4 typ=(11, 4, 2, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1944
+n=19 R=6 d=3 K=4 typ=(10, 8, 1, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=4800
+n=19 R=6 d=3 K=4 typ=(10, 7, 2, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=4800
+n=19 R=6 d=3 K=4 typ=(10, 7, 1, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5020
+n=19 R=6 d=3 K=4 typ=(10, 6, 3, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1944
+n=19 R=6 d=3 K=4 typ=(10, 6, 2, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2448
+n=19 R=6 d=3 K=4 typ=(10, 5, 4, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1944
+n=19 R=6 d=3 K=4 typ=(10, 5, 3, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2592
+n=19 R=6 d=3 K=4 typ=(10, 5, 2, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1944
+n=19 R=6 d=3 K=4 typ=(10, 4, 4, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=816
+n=19 R=6 d=3 K=4 typ=(10, 4, 3, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=816
+n=19 R=6 d=3 K=4 typ=(10, 3, 3, 3): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1296
+n=19 R=6 d=3 K=4 typ=(9, 9, 1, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=4808
+n=19 R=6 d=3 K=4 typ=(9, 8, 2, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=4800
+n=19 R=6 d=3 K=4 typ=(9, 8, 1, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=4808
+n=19 R=6 d=3 K=4 typ=(9, 7, 3, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2592
+n=19 R=6 d=3 K=4 typ=(9, 7, 2, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2592
+n=19 R=6 d=3 K=4 typ=(9, 6, 4, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1944
+n=19 R=6 d=3 K=4 typ=(9, 6, 3, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2592
+n=19 R=6 d=3 K=4 typ=(9, 6, 2, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2448
+n=19 R=6 d=3 K=4 typ=(9, 5, 5, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1728
+n=19 R=6 d=3 K=4 typ=(9, 5, 4, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1728
+n=19 R=6 d=3 K=4 typ=(9, 5, 3, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=864
+n=19 R=6 d=3 K=4 typ=(9, 4, 4, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=816
+n=19 R=6 d=3 K=4 typ=(9, 4, 3, 3): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=864
+n=19 R=6 d=3 K=4 typ=(8, 8, 3, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2400
+n=19 R=6 d=3 K=4 typ=(8, 8, 2, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2624
+n=19 R=6 d=3 K=4 typ=(8, 7, 4, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2752
+n=19 R=6 d=3 K=4 typ=(8, 7, 3, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2592
+n=19 R=6 d=3 K=4 typ=(8, 7, 2, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2592
+n=19 R=6 d=3 K=4 typ=(8, 6, 5, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1944
+n=19 R=6 d=3 K=4 typ=(8, 6, 4, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=864
+n=19 R=6 d=3 K=4 typ=(8, 6, 3, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=864
+n=19 R=6 d=3 K=4 typ=(8, 5, 5, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1728
+n=19 R=6 d=3 K=4 typ=(8, 5, 4, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=864
+n=19 R=6 d=3 K=4 typ=(8, 5, 3, 3): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=864
+n=19 R=6 d=3 K=4 typ=(8, 4, 4, 3): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=432
+n=19 R=6 d=3 K=4 typ=(7, 7, 5, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1728
+n=19 R=6 d=3 K=4 typ=(7, 7, 4, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1728
+n=19 R=6 d=3 K=4 typ=(7, 7, 3, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=864
+n=19 R=6 d=3 K=4 typ=(7, 6, 6, 0): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1944
+n=19 R=6 d=3 K=4 typ=(7, 6, 5, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=1728
+n=19 R=6 d=3 K=4 typ=(7, 6, 4, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=864
+n=19 R=6 d=3 K=4 typ=(7, 6, 3, 3): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=864
+n=19 R=6 d=3 K=4 typ=(7, 5, 5, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=576
+n=19 R=6 d=3 K=4 typ=(7, 5, 4, 3): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=576
+n=19 R=6 d=3 K=4 typ=(7, 4, 4, 4): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=384
+n=19 R=6 d=3 K=4 typ=(6, 6, 6, 1): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=864
+n=19 R=6 d=3 K=4 typ=(6, 6, 5, 2): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=864
+n=19 R=6 d=3 K=4 typ=(6, 6, 4, 3): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=384
+n=19 R=6 d=3 K=4 typ=(6, 5, 5, 3): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=576
+n=19 R=6 d=3 K=4 typ=(6, 5, 4, 4): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=384
+n=19 R=6 d=3 K=4 typ=(5, 5, 5, 4): nicht geloest, kleinste Restzahl unueberdeckt Syndrome=384

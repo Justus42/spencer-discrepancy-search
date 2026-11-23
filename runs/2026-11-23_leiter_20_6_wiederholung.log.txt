@@ -1,0 +1,7 @@
+[Woerter gespeichert: runs/woerter_n20_R6_d2_K15_typ11-9_seed2.txt]
+n=20 R=6 d=2 K=15 typ=(11, 9): GELOEST, Woerter=60, selbstkompl=True, Radius(Brute-Force)=6
+[Woerter gespeichert: runs/woerter_n20_R6_d2_K15_typ12-8_seed2.txt]
+n=20 R=6 d=2 K=15 typ=(12, 8): GELOEST, Woerter=60, selbstkompl=True, Radius(Brute-Force)=6
+[Woerter gespeichert: runs/woerter_n20_R6_d2_K15_typ11-9_seed3.txt]
+n=20 R=6 d=2 K=15 typ=(11, 9): GELOEST, Woerter=60, selbstkompl=True, Radius(Brute-Force)=6
+fertig

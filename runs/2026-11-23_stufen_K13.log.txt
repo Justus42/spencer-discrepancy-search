@@ -1,0 +1,12 @@
+n=20 R=6 d=2 K=13 typ=(10, 10) seed=1: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=48
+n=20 R=6 d=2 K=13 typ=(11, 9) seed=1: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=5
+n=20 R=6 d=2 K=13 typ=(12, 8) seed=1: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=22
+n=20 R=6 d=2 K=13 typ=(10, 10) seed=2: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=70
+n=20 R=6 d=2 K=13 typ=(11, 9) seed=2: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=2
+n=20 R=6 d=2 K=13 typ=(12, 8) seed=2: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=22
+n=20 R=6 d=2 K=13 typ=(10, 10) seed=3: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=47
+n=20 R=6 d=2 K=13 typ=(11, 9) seed=3: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=6
+n=20 R=6 d=2 K=13 typ=(12, 8) seed=3: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=22
+n=20 R=6 d=2 K=13 typ=(10, 10) seed=4: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=47
+n=20 R=6 d=2 K=13 typ=(11, 9) seed=4: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=7
+n=20 R=6 d=2 K=13 typ=(12, 8) seed=4: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=22
