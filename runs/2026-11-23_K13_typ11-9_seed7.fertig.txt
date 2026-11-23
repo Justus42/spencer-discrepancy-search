@@ -1,0 +1,1 @@
+seed=7 nicht geloest, kleinste Restzahl=7
