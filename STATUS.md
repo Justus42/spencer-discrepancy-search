@@ -23,7 +23,7 @@ Komplemente den Würfel {0,1}^m überdecken. Ein selbstkomplementärer Überdeck
 | 25 | 8 | 50 | 9/5 = 1,8000 | 2,69 | 25–64 |
 | 23 | 7 | 50 | 9/5 = 1,8000 | 2,33 | 29–64 |
 | 20 | 6 | 40 | 8/sqrt(20) = 1,7889 | 2,31 | 24–64 |
-| 18 | 5 | 40 | 8/sqrt(20) = 1,7889 | 1,93 | 27–64 |
+| 18 | 5 | 40 | 8/sqrt(20) = 1,7889 | 1,93 | 28–64 |
 | 30 | 10 | 62 | 10/sqrt(31) = 1,7961 | 3,06 | 27–128 |
 
 Dichte = Wörter x Kugelvolumen / 2^m. Zum Vergleich bekannte Codes: (15,4)/32 hat 1,90,
@@ -64,9 +64,7 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
 
 ## Vorschläge aus der Astra-Abfrage (unbelegt, noch nicht getestet)
 
-Volltext bis 23.12.2026 über die Bridge abrufbar (`batch_job`, Kennung
-`openrouter:batch-1795445676-GZZW2hUqsWh8LXiEFgzr`). Er liegt noch nicht im Repo, weil die
-Bridge dieses Repo nicht in ihrer Freigabeliste hat. Subjektive Schätzung dort: 30 %, dass
+Volltext: `notes/openrouter/astra_2026-11-23.md`. Subjektive Schätzung dort: 30 %, dass
 mindestens eines der Ziele existiert.
 
 - **20/6:** fünf Nebenklassen eines dreidimensionalen linearen Codes D = <1, a, b>.
@@ -78,13 +76,34 @@ mindestens eines der Ziele existiert.
 
 ## Offen und unbelegt
 
-- Die Code-Tabelle (Kéri) ist von 2009. Neuere Schranken für die Zielzellen wurden nicht
-  gefunden, sind aber nicht ausgeschlossen. Literaturprompt für Gemini steht aus.
+- Ein Forenbeitrag auf „EinsteinArena“ zum selben Ansatz (Spencer-Konstante über
+  antipodale Überdeckungen) wird in Geminis Bericht erwähnt, aber ohne Link. Eine eigene
+  Suche fand ihn nicht.
 - Von den 41 offenen Pull Requests im Zielrepo war nur die erste Seite einsehbar (25).
 - Zeilenweise Nullen und gebrochene Einträge erhöhen das Budget pro Zeile nicht, außer in
   Paritätsfällen (n = 17, 19). Als Endspiel-Politur per LP bleiben sie möglich.
 
+## Literaturstand (Gemini, 23.11.2026)
+
+Quellen: `notes/gemini/`. Von Claude nur stichprobenhaft geprüft, sonst unbelegt übernommen.
+
+- **Zielzellen heute:** K(18,5) 28–64, K(20,6) 24–64, K(21,6) 34–64, K(23,7) 29–64,
+  K(25,8) 25–64 (untere Schranken per SDP, Gijswijt und Polak 2026). Kein Ziel ist
+  ausgeschlossen. Obere Schranken seit 2011 unverändert, soweit auffindbar.
+- **Die 64 wird von linearen [n,6]-Codes erreicht** (Baicheva und Bouyukliev 2010). Alles
+  unter 64 muss nichtlinear sein. Die linearen Codes taugen als Startpunkt einer Suche.
+- **Die 32-Wörter-Codes sind zwingend nichtlinear** (Graham und Sloane 1985). Passt zum
+  eigenen Fehlversuch mit linearen Codes.
+- **Dämpfer:** Maharaj (arXiv:2610.03760) gibt an, alle offenen Zellen mit q <= 4 per
+  Tabu-Suche auf Bahnen abgesucht zu haben, und meldet nur quaternäre Verbesserungen.
+  Im Paper nachgelesen: Binäre Zellen werden nicht eigens erwähnt, der Aufwand ist unklar.
+  Dagegen steht, dass K(20,3) im Oktober 2026 von Dritten verbessert wurde.
+- Die Originalkonstruktion von Östergård und Kaikkonen (1998) war nicht einsehbar.
+
 ## Nächste Gates
+
+Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
+Syndrome) und können in einer Cloud-Sitzung laufen. Die GPU wird erst für 25/8 wichtig.
 
 1. **Lokal einrichten.** Python und GPU-Bibliothek installieren, Grafikkarte testen, alle
    Dateien in `controls/` mit beiden Prüfskripten nachrechnen.
