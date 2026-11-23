@@ -105,6 +105,32 @@ Quellen: `notes/gemini/`. Von Claude nur stichprobenhaft geprüft, sonst unbeleg
   Dagegen steht, dass K(20,3) im Oktober 2026 von Dritten verbessert wurde.
 - Die Originalkonstruktion von Östergård und Kaikkonen (1998) war nicht einsehbar.
 
+## Entscheidung 23.11.2026: Kontrolle neu gefasst, Zwischenziel ergänzt
+
+Die erste Positivkontrolle war falsch gestellt: Sie fragte, ob ein bestimmter Code die
+gesuchte Struktur hat. Richtig ist die Frage, ob die Methode die bekannte **Größe**
+erreicht, mit welchem Code auch immer.
+
+**Leiter.** Für feste Länge und festen Radius werden Überdeckungen als Vereinigung von
+Nebenklassen eines linearen Codes D mit Einsvektor gesucht, für Dimension 1, 2 und 3.
+Dimension 1 ist der allgemeine selbstkomplementäre Code, Dimension 3 der Astra-Vorschlag.
+Protokolliert wird je Dimension die kleinste Wortzahl mit vollständiger Überdeckung.
+
+- **Kontrolle A, Länge 19, Radius 6:** 32 Wörter. Mit Dimension 1 muss das gelingen
+  (`controls/astra_19.txt` belegt die Existenz). Gelingt es nicht, ist die Suche zu schwach.
+- **Kontrolle B, Länge 20, Radius 6:** 64 Wörter. Ein solcher selbstkomplementärer Code
+  existiert sicher (der 19er-Code, verlängert um eine freie Koordinate).
+- **Danach** die Wortzahl bei Länge 20 senken.
+
+**Zwischenziel.** Jede Überdeckung mit weniger als 64 Wörtern bei (18,5), (20,6), (21,6),
+(23,7) oder (25,8) wäre für sich ein neuer Eintrag in den Tabellen der Überdeckungscodes
+(Stand der Tabellen laut Geminis Bericht, von Claude nicht vollständig geprüft). Ab 40
+Wörtern bei Länge 20 fällt zusätzlich der Spencer-Rekord. Für beides gilt Regel 3:
+erst beide Prüfskripte, dann Neuheit prüfen, dann entscheiden.
+
+**Abbruchregel für den Astra-Vorschlag.** Erreicht Dimension 3 weder 32 Wörter bei
+Länge 19 noch 64 bei Länge 20, wird sie verworfen. Weiter dann mit Dimension 1 und 2.
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
