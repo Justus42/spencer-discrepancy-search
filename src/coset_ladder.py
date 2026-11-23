@@ -6,7 +6,9 @@ Aufruf: coset_ladder.py n R d K sekunden seed [typ ...]   typ = Vielfachheiten, 
 import sys, subprocess, itertools, os, tempfile
 import numpy as np
 
-BIN = os.environ.get("COSET_TABU_BIN", "/tmp/claude-0/coset_tabu")
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Bauen: gcc -O3 -march=native -o build/coset_tabu src/coset_tabu.c
+BIN = os.environ.get("COSET_TABU_BIN", os.path.join(ROOT, "build", "coset_tabu"))
 
 def types_for(n, d):
     """Spaltentypen t in F2^(d-1); bis auf affine Gruppe: Vielfachheiten absteigend sortiert."""
@@ -102,5 +104,5 @@ if __name__ == "__main__":
             fnw = f"runs/woerter_n{n}_R{R}_d{d}_K{K}_typ{'-'.join(map(str,mult))}_seed{seed}.txt"
             with open(fnw, "w") as fw: fw.write(" ".join(map(str, sorted(res['words']))) + "\n")
             print(f"[Woerter gespeichert: {fnw}]", flush=True)
-            print(f"n={n} R={R} d={d} K={K} typ={mult}: GELOEST, Woerter={res['nwords']}, selbstkompl={res['selfcompl']}, Radius(Brute-Force)={res['radius']}", flush=True)
-        else: print(f"n={n} R={R} d={d} K={K} typ={mult}: nicht geloest, kleinste Restzahl unueberdeckt Syndrome={best}", flush=True)
+            print(f"n={n} R={R} d={d} K={K} typ={mult} seed={seed}: GELOEST, Woerter={res['nwords']}, selbstkompl={res['selfcompl']}, Radius(Brute-Force)={res['radius']}", flush=True)
+        else: print(f"n={n} R={R} d={d} K={K} typ={mult} seed={seed}: nicht geloest, kleinste Restzahl unueberdeckt Syndrome={best}", flush=True)
