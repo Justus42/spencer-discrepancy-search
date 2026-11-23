@@ -235,6 +235,12 @@ Block 2 (Startwerte 5–8, je 1800 s, 22:07–22:37 UTC): **2 von 4 gelöst, 52 
   bestätigt, alle 6 Matrizen von beiden Prüfskripten mit Diskrepanz 8 bestätigt.
 - Startwert 7: nicht gelöst, beste Restzahl 7. Startwert 8: nicht gelöst, beste Restzahl 2.
 
+Block 3 (Startwerte 9–12, je 1800 s, 22:39–23:09 UTC): **2 von 4 gelöst, 52 Wörter.**
+- Startwert 10 und 12: **GELÖST**, 52 Wörter, Radius per Brute-Force 6; Wörter `runs/woerter_n20_R6_d2_K13_typ11-9_seed{10,12}.txt`,
+  Matrizen `runs/matrix_n20_52w_typ11-9_seed{10,12}.txt`. Beide Prüfskripte: Diskrepanz 8. Beide Codes normal (Norm 13, alle
+  Koordinaten); Folgecodes Länge 22/24/26 je 52 Wörter, Radius bestätigt, alle 6 Matrizen von beiden Prüfskripten Diskrepanz 8.
+- Startwert 9: nicht gelöst, beste Restzahl 2. Startwert 11: nicht gelöst, beste Restzahl 7.
+
 - Der frühere Lauf mit leeren Logs ist damit überschrieben (Logs der Startwerte 1–4 stammen jetzt aus Block 1).
 
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
