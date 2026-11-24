@@ -1,0 +1,23 @@
+Klassen: 1024
+Traeger 11: 1024 Zeilen, Treffergroessen {67: 1024}
+Traeger 10: 5632 Zeilen, Treffergroessen {112: 5632}
+Traeger 9: 14080 Zeilen, Treffergroessen {40: 14080}
+Traeger 8: 21120 Zeilen, Treffergroessen {72: 21120}
+Traeger 7: 21120 Zeilen, Treffergroessen {16: 21120}
+Traeger 6: 14784 Zeilen, Treffergroessen {32: 14784}
+Traeger 5: 7392 Zeilen, Treffergroessen {0: 7392}
+  andere Spalte   Abstand 0: Schnitt  76, Anzahl 20
+  andere Spalte   Abstand 1: Schnitt  40, Anzahl 180
+  andere Spalte   Abstand 2: Schnitt  26, Anzahl 720
+  andere Spalte   Abstand 3: Schnitt  12, Anzahl 1680
+  andere Spalte   Abstand 4: Schnitt   6, Anzahl 2520
+  gleiche Spalte  Abstand 1: Schnitt  40, Anzahl 10
+  gleiche Spalte  Abstand 2: Schnitt  40, Anzahl 45
+  gleiche Spalte  Abstand 3: Schnitt  12, Anzahl 120
+  gleiche Spalte  Abstand 4: Schnitt  12, Anzahl 210
+  gleiche Spalte  Abstand 5: Schnitt   0, Anzahl 126
+Schnittgroessen gesamt: [0, 6, 12, 26, 40, 76]
+Budget 11*112-1024 = 208
+Traeger 11: jede Trefferm. in der Trefferm. jeder Zeile mit einem Eintrag weniger: True
+Traeger 9: jede Trefferm. in der Trefferm. jeder Zeile mit einem Eintrag weniger: True
+Traeger 7: jede Trefferm. in der Trefferm. jeder Zeile mit einem Eintrag weniger: True
