@@ -1,0 +1,10 @@
+Ordnung 20: 72 Matrizen gebaut, 3 verschiedene Invarianten-Schluessel (bekannt: 3 Klassen)
+  Klasse 1: Vertreter 'Goethals-Seidel', 56 Matrizen mit diesem Schluessel; disc = 6, disc der Transponierten = 6, Stichprobe gleicher Schluessel: [6]
+  Klasse 2: Vertreter 'Paley II (q=9)', 8 Matrizen mit diesem Schluessel; disc = 6, disc der Transponierten = 6, Stichprobe gleicher Schluessel: [6]
+  Klasse 3: Vertreter 'Paley I (q=19)', 8 Matrizen mit diesem Schluessel; disc = 6, disc der Transponierten = 6, Stichprobe gleicher Schluessel: [6]
+Test B Rekordkandidaten (Diskrepanz >= 8): keine (erwartet 6)
+Test B fertig (14 s)
+
+real	0m14.339s
+user	0m14.475s
+sys	0m0.086s
