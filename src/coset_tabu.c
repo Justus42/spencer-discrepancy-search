@@ -1,6 +1,8 @@
 /* Tabu-Suche: K Verschiebungen einer Menge S (Bild der Hamming-Kugel im Quotienten F2^m)
    muessen F2^m ueberdecken. Bewertung aller Ersetzungen exakt per Walsh-Transformation (ganzzahlig).
-   Aufruf: coset_tabu m n R K seed sekunden spaltenfile
+   Aufruf: coset_tabu m n R K seed sekunden spaltenfile [startfile]
+   startfile (optional, Warmstart): bis zu K Syndrome (ganze Zahlen < 2^m). Jeder Neustart beginnt mit diesen
+   Mitten; fehlende Plaetze (weniger als K Zahlen) werden zufaellig gefuellt.
    spaltenfile: n ganze Zahlen (Spalten h_i der Paritaetspruefmatrix, je m Bit).
    Ausgabe: Zeilen "best <unueberdeckt>" und bei Erfolg "SOLUTION c1 c2 ...". */
 #include <stdio.h>
@@ -33,6 +35,8 @@ int main(int argc,char**argv){
   m=atoi(argv[1]);n=atoi(argv[2]);R=atoi(argv[3]);K=atoi(argv[4]);
   uint64_t seed=strtoull(argv[5],0,10);double tmax=atof(argv[6]);
   FILE*f=fopen(argv[7],"r");for(int i=0;i<n;i++)if(fscanf(f,"%u",&H[i])!=1)return 3;fclose(f);
+  uint32_t warm[64];int nwarm=0;
+  if(argc>8){FILE*g=fopen(argv[8],"r");if(!g)return 4;unsigned v;while(nwarm<64&&fscanf(g,"%u",&v)==1)warm[nwarm++]=v;fclose(g);}
   rs[0]=seed*0x9E3779B97F4A7C15ULL+1;rs[1]=seed^0xD1B54A32D192ED03ULL;for(int i=0;i<20;i++)rnd();
   N=1u<<m;
   Sset=calloc(N,1);ball(0,R,0);
@@ -41,11 +45,12 @@ int main(int argc,char**argv){
   for(uint32_t s=0;s<N;s++)Sh[s]=Sset[s];wht64(Sh);
   uint8_t*cnt=calloc(N,1);uint32_t*c=malloc(4*K);int64_t*tabu=calloc(N,8);
   /* Abschnitt: |S| */
+  if(nwarm)fprintf(stderr,"Warmstart: %d von %d Mitten aus Datei\n",nwarm<K?nwarm:K,K);
   fprintf(stderr,"m=%d n=%d R=%d K=%d |S|=%u (%.4f von 2^m), untere Schranke K>=%.2f\n",m,n,R,K,Ssz,(double)Ssz/N,(double)N/Ssz);
   double t0=now();int64_t it=0,bestall=1<<30;
   for(int restart=0;;restart++){
     memset(cnt,0,N);
-    for(int j=0;j<K;j++){c[j]=rnd()&(N-1);for(uint32_t q=0;q<Ssz;q++)cnt[c[j]^Slist[q]]++;}
+    for(int j=0;j<K;j++){c[j]=(j<nwarm)?(warm[j]&(N-1)):(rnd()&(N-1));for(uint32_t q=0;q<Ssz;q++)cnt[c[j]^Slist[q]]++;}
     memset(tabu,0,8*(size_t)N);
     int64_t best=1<<30,since=0;
     for(;;it++){
