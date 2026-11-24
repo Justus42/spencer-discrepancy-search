@@ -67,6 +67,9 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
   Suche 20/6 nicht gestartet (Laufzeit der Kontrolle <1 s, siehe `runs/2026-11-23_positivkontrolle_19.md`).
   Alle 6 Kontrollen in `controls/` mit beiden Prüfskripten erneut identisch bestätigt.
 
+- 23.11.2026, Lauf n=20 R=6 d=2 K=13 Typ (11,9) Startwerte 1–16, je 1800 s: durch Container-Neustart verloren, keine Restzahlen
+  (Details im Abschnitt „Lauf K=13“).
+
 ## Vorschläge aus der Astra-Abfrage (unbelegt, noch nicht getestet)
 
 Volltext: `notes/openrouter/astra_2026-11-23.md`. Subjektive Schätzung dort: 30 %, dass
@@ -99,10 +102,9 @@ Quellen: `notes/gemini/`. Von Claude nur stichprobenhaft geprüft, sonst unbeleg
   unter 64 muss nichtlinear sein. Die linearen Codes taugen als Startpunkt einer Suche.
 - **Die 32-Wörter-Codes sind zwingend nichtlinear** (Graham und Sloane 1985). Passt zum
   eigenen Fehlversuch mit linearen Codes.
-- **Dämpfer:** Maharaj (arXiv:2610.03760) gibt an, alle offenen Zellen mit q <= 4 per
-  Tabu-Suche auf Bahnen abgesucht zu haben, und meldet nur quaternäre Verbesserungen.
-  Im Paper nachgelesen: Binäre Zellen werden nicht eigens erwähnt, der Aufwand ist unklar.
-  Dagegen steht, dass K(20,3) im Oktober 2026 von Dritten verbessert wurde.
+- **Maharaj (arXiv:2610.03760) ist kein Dämpfer.** Korrektur 23.11.2026 (Angabe des Nutzers): Das Paper behandelt
+  quaternäre Preparata-Codes und sagt nichts über binäre Zellen. Die frühere Lesart (systematische Tabu-Suche über alle
+  offenen Zellen mit q <= 4) ist zurückgenommen. Offen bleibt nur, dass K(20,3) im Oktober 2026 von Dritten verbessert wurde.
 - Die Originalkonstruktion von Östergård und Kaikkonen (1998) war nicht einsehbar.
 
 ## Entscheidung 23.11.2026: Kontrolle neu gefasst, Zwischenziel ergänzt
@@ -159,8 +161,8 @@ Wörter: `runs/woerter_n20_R6_d2_K15_*.txt`; Matrizen 30 x 20: `runs/matrix_n20_
 Beide Prüfskripte melden für alle drei Treffer dieselbe Diskrepanz **8** (`check_disc.py` auf 30x20,
 `verify_spencer.py` auf 30x30 mit Nullspalten; Quotient 8/sqrt(30) = 1,46, also KEIN Spencer-Rekord;
 dafür wären <= 40 Wörter nötig).
-**Gate-Prüfung 23.11.2026:** Treffer von Claude unabhängig bestätigt (Brute-Force-Radius in `coset_ladder.py`,
-`check_disc.py`, `verify_spencer.py`). Neuheit offen: Kéri-Tabelle K(20,6) = 24–64 (Stand 2011); Literatur danach
+**Gate-Prüfung 23.11.2026 (erstes Gate, 60 Wörter):** Treffer von Claude mit eigenem drittem Skript bestätigt
+(nicht im Repo), zusätzlich Brute-Force-Radius in `coset_ladder.py`, `check_disc.py`, `verify_spencer.py`. Neuheit offen: Kéri-Tabelle K(20,6) = 24–64 (Stand 2011); Literatur danach
 ungeprüft. Nichts nach außen gemeldet.
 
 **Bauen und Starten** (aus dem Repo-Wurzelordner; Logs liegen als `runs/*.log.txt`):
@@ -180,6 +182,128 @@ ungeprüft. Nichts nach außen gemeldet.
   (Startwerte 1/2/3/4): (10,10) 48/70/47/47; (11,9) 5/2/6/7; (12,8) 22/22/22/22.
 - Stopp laut Regel bei der ersten Stufe ohne Lösung. K=12, 11, 10 nicht versucht.
 - Typ (11,9) ist durchgehend am besten; (10,10) und (12,8) nie nahe an einer Lösung bei K=13.
+
+**Gate-Prüfung 23.11.2026 (zweites Gate, 56 Wörter, K=14, Typ (11,9), Startwerte 2 und 3):** Die 56 Wörter wurden von Claude
+mit eigenem drittem Skript bestätigt (nicht im Repo). Die Neuheitsprüfung läuft über Gemini; bis dahin gilt Neuheit als offen.
+
+## Neuheit K(20,6) <= 56 (Stand 23.11.2026, Neuheit weiter offen)
+
+- Gemini fand nichts unter 64.
+- Angabe des Nutzers, in dieser Sitzung von Claude nicht selbst nachgeprüft: `florath/covering-codes-lean` (nach Kéri,
+  Commit 16.09.2026) nennt für K(20,6) weiter 24–64. Kéri-Nachbarzellen schließen Standardkonstruktionen aus.
+- `fohn.app`: unbelegt.
+- Geminis ausführlicher Neuheitsbericht: Stand 24.11.2026 nicht im Repo angekommen (auf keinem Branch); Platzhalter
+  `notes/gemini/neuheit_2026-11-23.md` bleibt, bis die Datei vorliegt.
+
+## Normalität und Folgecodes aus den 56 Wörtern (23.11.2026)
+
+`src/normal_ext.py`, Brute-Force über alle 2^n Punkte. Beide 56er-Codes (K=14, Typ (11,9), Startwerte 2 und 3) sind
+**normal: Norm 13 = 2R+1 bei allen 20 Koordinaten**. Verdreifachen einer Koordinate (je Schritt Länge +2, Radius +1,
+gleiche 56 Wörter, selbstkomplementär; jedes Mal vorher Normalität nachgeprüft, immer dieselbe Koordinate):
+Länge 22 (R=7), 24 (R=8), 26 (R=9), jeweils Radius per Brute-Force bestätigt.
+Wörter `runs/woerter_ext56_typ11-9_seed{2,3}_n{22,24,26}_R{7,8,9}.txt`, Matrizen `runs/matrix_ext56_n*_*.txt`
+(28 x n, `_pad` = 28 x 28 für `verify_spencer.py`).
+**Alle 6 Matrizen: `check_disc.py` und `verify_spencer.py` melden exakt Diskrepanz 8** (Quotient 8/sqrt(28) = 1,512, kein
+Spencer-Rekord).
+**Korrektur 24.11.2026:** K(26,9) <= 56 und K(28,10) <= 56 stehen schon in der Tabelle (Östergård–Kaikkonen 1998); die
+56er-Folgecodes bei Länge 26 sind also nicht neu. Selbst nachgeprüft am 24.11.2026 in `florath/covering-codes-lean`,
+`reference-data/post-keri/non_mixed_covering_codes.csv` (Stand `main` beim Abruf), Zeilen q=2:
+
+| Zelle | Tabelle | eigene Codes |
+|---|---|---|
+| K(20,6) | 24–64 (obere: trivial) | 56, 52 |
+| K(22,7) | 21–64 (obere: trivial) | 56, 52 |
+| K(24,8) | 19–64 (obere: trivial) | 56, 52 |
+| K(26,9) | 17–56 (Östergård–Kaikkonen 1998) | 56 (nicht neu), 52 |
+| K(28,10) | 15–56 (Östergård–Kaikkonen 1998) | nicht erzeugt |
+
+Die 52er-Codes lägen in allen vier erzeugten Zellen unter dem Tabellenwert, auch bei K(26,9) (52 < 56). Das ist nur der
+Abgleich mit dieser einen Tabelle; Neuheit gilt erst nach Regel 3 als geprüft. Nichts nach außen gemeldet.
+
+## Lauf K=13, nur Typ (11,9), Startwerte 1–16 (gestartet 23.11.2026, 19:03 UTC)
+
+Länge 20, Radius 6, Dimension 2, K=13 (52 Wörter), je 1800 s, 4 parallel, harte Obergrenze 2,5 h (`src/run_k13_typ119.sh`).
+Logs: `runs/2026-11-23_K13_typ11-9_seed*.log.txt`. Kein K=12 ohne Freigabe. Auswertung auf Zuruf (Regel 4).
+
+**Ergebnis: Lauf abgebrochen, keine Auswertung möglich.** Beim Nachsehen um 21:28 UTC war der Container neu gestartet
+(Betriebszeit 0 Min., kein Prozess, keine Fertig-Marke). Es existieren nur die Logs der Startwerte 1–4, alle leer
+(0 Bytes, zuletzt geschrieben 19:03; der Treiber schreibt erst am Laufende). Startwerte 5–16 wurden nie gestartet.
+Es gibt also weder Treffer noch Restzahlen, kein Läufer hat seine 1800 s beendet; der Abbruchzeitpunkt ist unbekannt.
+Nicht neu gestartet (Anweisung: nichts Neues starten). Eintrag unter Fehlversuche: Lauf 23.11.2026, n=20 R=6 d=2 K=13
+Typ (11,9) Startwerte 1–16, je 1800 s: durch Container-Neustart verloren, Laufzeit unbekannt (< 2,4 h), kein Ergebnis.
+
+### Neustart in Blöcken (ab 21:34 UTC, `src/run_block.py`, Log läuft laufend, Fertig-Marke je Startwert)
+
+Block 1 (Startwerte 1–4, je 1800 s, 21:34–22:05 UTC): **2 von 4 gelöst, 52 Wörter (K=13) bei (20,6).**
+- Startwert 1: nicht gelöst, beste Restzahl 2. Startwert 2: nicht gelöst, beste Restzahl 2.
+- **Startwert 3 und 4: GELÖST**, 52 Wörter, selbstkomplementär, Radius per Brute-Force 6. Wörter
+  `runs/woerter_n20_R6_d2_K13_typ11-9_seed{3,4}.txt`, Matrizen `runs/matrix_n20_52w_typ11-9_seed{3,4}.txt` (26 x 20, `_pad` 26 x 26).
+- **Beide Prüfskripte, beide Treffer: Diskrepanz 8** (`check_disc.py` auf 26 x 20, `verify_spencer.py` auf 26 x 26;
+  Quotient 8/sqrt(26) = 1,569, kein Spencer-Rekord, dafür wären <= 40 Wörter nötig). Regel 1 erfüllt. Neuheit offen (Regel 3).
+- Normalität: beide 52er-Codes normal, Norm 13 bei allen 20 Koordinaten. Folgecodes (Koordinate verdreifacht): Länge 22 (R=7),
+  24 (R=8), 26 (R=9), je 52 Wörter, Radius per Brute-Force bestätigt (`runs/woerter_ext52_*`, `runs/matrix_ext52_*`).
+  Alle 6 Matrizen: beide Prüfskripte melden Diskrepanz 8.
+Block 2 (Startwerte 5–8, je 1800 s, 22:07–22:37 UTC): **2 von 4 gelöst, 52 Wörter.**
+- Startwert 5 und 6: **GELÖST**, 52 Wörter, Radius per Brute-Force 6; Wörter `runs/woerter_n20_R6_d2_K13_typ11-9_seed{5,6}.txt`,
+  Matrizen `runs/matrix_n20_52w_typ11-9_seed{5,6}.txt`. Beide Prüfskripte: Diskrepanz 8 (26 x 20 bzw. 26 x 26).
+  Beide Codes normal (Norm 13, alle 20 Koordinaten); Folgecodes Länge 22/24/26 (R=7/8/9), je 52 Wörter, Radius per Brute-Force
+  bestätigt, alle 6 Matrizen von beiden Prüfskripten mit Diskrepanz 8 bestätigt.
+- Startwert 7: nicht gelöst, beste Restzahl 7. Startwert 8: nicht gelöst, beste Restzahl 2.
+
+Block 3 (Startwerte 9–12, je 1800 s, 22:39–23:09 UTC): **2 von 4 gelöst, 52 Wörter.**
+- Startwert 10 und 12: **GELÖST**, 52 Wörter, Radius per Brute-Force 6; Wörter `runs/woerter_n20_R6_d2_K13_typ11-9_seed{10,12}.txt`,
+  Matrizen `runs/matrix_n20_52w_typ11-9_seed{10,12}.txt`. Beide Prüfskripte: Diskrepanz 8. Beide Codes normal (Norm 13, alle
+  Koordinaten); Folgecodes Länge 22/24/26 je 52 Wörter, Radius bestätigt, alle 6 Matrizen von beiden Prüfskripten Diskrepanz 8.
+- Startwert 9: nicht gelöst, beste Restzahl 2. Startwert 11: nicht gelöst, beste Restzahl 7.
+
+Block 4, erster Versuch (Startwerte 13–16, ab 23:11 UTC): durch Container-Neustart um ca. 23:36 UTC abgebrochen, ohne Ergebnis
+(nach 1303/1250/1286/936 s Laufzeit, beste Restzahl bis dahin 2/2/6/2; Teillogs `runs/*seed1[3-6]_abgebrochen.log.txt`).
+Zweiter Versuch von Block 4 gestartet 23:37 UTC.
+Block 4, zweiter Versuch (Startwerte 13–16, je 1800 s, 23:37–00:08 UTC): **0 von 4 gelöst.** Beste Restzahl je Startwert:
+13: 2, 14: 2, 15: 6, 16: 2.
+
+**Gesamtergebnis K=13, Typ (11,9), Startwerte 1–16, je 1800 s (Länge 20, R=6, d=2): 6 von 16 gelöst, 52 Wörter.**
+- Gelöst: Startwerte 3, 4, 5, 6, 10, 12. Alle sechs Treffer: Radius per Brute-Force 6, selbstkomplementär, beide Prüfskripte
+  Diskrepanz 8 (Quotient 8/sqrt(26) = 1,569, kein Spencer-Rekord), alle sechs normal (Norm 13, alle Koordinaten), Folgecodes für
+  Länge 22/24/26 (R=7/8/9) mit je 52 Wörtern von beiden Prüfskripten bestätigt (Diskrepanz 8).
+- Nicht gelöst, beste Restzahl: Startwert 1: 2, 2: 2, 7: 7, 8: 2, 9: 2, 11: 7, 13: 2, 14: 2, 15: 6, 16: 2.
+- Kein K=12 gestartet (nicht freigegeben). Neuheit der 52 Wörter bei (20,6) offen (Regel 3): Gemini-Bericht steht aus.
+
+**Gate-Prüfung 24.11.2026 (drittes Gate, 52 Wörter):** Die sechs 52er-Codes (Startwerte 3, 4, 5, 6, 10, 12) wurden vom
+Orchestrator-Claude mit eigenem Skript bestätigt (nicht im Repo): Radius 6, selbstkomplementär, normal, Länge 22 mit Radius 7,
+alle verschieden. Zusätzlich in dieser Sitzung nachgerechnet: die sechs Wortmengen sind paarweise disjunkt (kein gemeinsames Wort).
+
+- Der frühere Lauf mit leeren Logs ist damit überschrieben (Logs der Startwerte 1–4 stammen jetzt aus Block 1).
+
+## Warmstart und K=12 (24.11.2026)
+
+`src/coset_tabu.c` nimmt jetzt optional eine Datei mit Startmitten (Warmstart; jeder Neustart beginnt dort).
+`src/warm_prep.py` rechnet Wörter auf Nebenklassen-Syndrome zurück und streicht die Nebenklasse, deren Wegfall am wenigsten
+Syndrome aufdeckt. Treiber `src/run_warm.py` (laufendes Log, Fertig-Marken). Logs und Startdateien in `runs/warm/`.
+
+**Positivkontrolle K=13 aus den 56er-Codes** (je 1 Nebenklasse gestrichen: 8 bzw. 9 Syndrome offen), 8 Läufe je 900 s:
+**3 von 8 gelöst** (Startwert 2 nach 8 s, 3 nach 173 s, 6 nach 77 s). Ungelöst, beste Restzahl: Startwert 1: 3, 4: 5, 5: 6,
+7: 5, 8: 2. Vergleich Zufallsstart: 6 von 16 in 1800 s, davon 1 unter 900 s. Schwelle (>= 2 von 8) erreicht.
+Die drei Kontroll-Treffer (52 Wörter): beide Prüfskripte Diskrepanz 8.
+
+**K=12 (48 Wörter) ohne Suchlauf gefunden.** Beim Vorbereiten der Warmstarts zeigte sich: In den 52er-Codes der Startwerte
+5 und 6 ist je eine Nebenklasse überflüssig (ihr Wegfall deckt 0 Syndrome auf). Ohne sie bleiben 48 Wörter:
+- `runs/woerter_n20_R6_d2_K12_typ11-9_aus52seed{5,6}.txt`: je 48 Wörter, selbstkomplementär, Radius per Brute-Force 6,
+  die beiden Codes sind verschieden.
+- Matrizen `runs/matrix_n20_48w_typ11-9_aus52seed{5,6}.txt` (24 x 20, `_pad` 24 x 24). **Beide Prüfskripte, beide Codes:
+  Diskrepanz 8**, Quotient 8/sqrt(24) = 1,633. Kein Spencer-Rekord (dafür <= 40 Wörter nötig). Regel 1 erfüllt.
+- **Normal:** Norm 13 bei allen 20 Koordinaten. Folgecodes (Koordinate verdreifacht) Länge 22/24/26 mit R=7/8/9 und je
+  48 Wörtern, Radius per Brute-Force bestätigt (`runs/woerter_ext48_*`); für diese keine Prüfskripte gerechnet.
+- Tabellenabgleich (florath, siehe oben): K(20,6) 24–64, K(26,9) 17–56. 48 läge darunter. Neuheit nach Regel 3 offen.
+- Laut Anweisung nach dem Treffer gestoppt: Der geplante K=12-Suchlauf (16 x 1800 s) wurde **nicht** gestartet. Kein K=11.
+  Nicht geprüft: ob die übrigen 52er-Codes (auch die drei aus der Kontrolle) ebenfalls überflüssige Nebenklassen haben.
+
+## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
+
+Kein Startwert-Fehler im Code erkennbar: `coset_tabu.c` setzt das Zufallsgerät pro Startwert verschieden und würfelt die
+Startmitten neu. Kurzläufe (60 s, bei Last durch den Hauptlauf) mit Startwert 1 und 11 liefen verschieden (28 bzw. 39 offen,
+verschiedene Verläufe), erreichen die 22 in dieser Zeit also nicht. Echtes Plateau damit wahrscheinlich, aber nicht bewiesen:
+4 unabhängige Läufe von 600 s enden alle bei 22, kein Lauf darunter. Entscheidung offen (siehe Ergebnis unten, falls ergänzt).
 
 ## Nächste Gates
 

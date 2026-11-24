@@ -1,0 +1,34 @@
+m=18 n=20 R=6 K=13 |S|=58402 (0.2228 von 2^m), untere Schranke K>=4.49
+[0s it=0 r=0] unueberdeckt 7305
+[0s it=1 r=0] unueberdeckt 6045
+[0s it=3 r=0] unueberdeckt 4053
+[0s it=4 r=0] unueberdeckt 3820
+[0s it=5 r=0] unueberdeckt 1878
+[0s it=6 r=0] unueberdeckt 1452
+[0s it=7 r=0] unueberdeckt 1174
+[0s it=8 r=0] unueberdeckt 877
+[0s it=9 r=0] unueberdeckt 722
+[0s it=11 r=0] unueberdeckt 570
+[0s it=12 r=0] unueberdeckt 426
+[0s it=25 r=0] unueberdeckt 413
+[0s it=26 r=0] unueberdeckt 291
+[0s it=55 r=0] unueberdeckt 278
+[0s it=57 r=0] unueberdeckt 257
+[0s it=60 r=0] unueberdeckt 127
+[0s it=66 r=0] unueberdeckt 122
+[0s it=68 r=0] unueberdeckt 121
+[0s it=81 r=0] unueberdeckt 109
+[0s it=87 r=0] unueberdeckt 103
+[0s it=91 r=0] unueberdeckt 84
+[1s it=171 r=0] unueberdeckt 69
+[1s it=200 r=0] unueberdeckt 51
+[1s it=290 r=0] unueberdeckt 43
+[2s it=354 r=0] unueberdeckt 34
+[7s it=1415 r=0] unueberdeckt 30
+[17s it=3686 r=0] unueberdeckt 28
+[25s it=5398 r=0] unueberdeckt 23
+[61s it=13079 r=2] unueberdeckt 20
+[118s it=25291 r=5] unueberdeckt 12
+[382s it=82428 r=15] unueberdeckt 7
+[978s it=216149 r=38] unueberdeckt 0
+geloest nach 978.0s

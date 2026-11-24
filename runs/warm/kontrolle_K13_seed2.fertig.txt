@@ -1,0 +1,1 @@
+seed=2 start=runs/warm/start_K13_aus56_seed3.txt GELOEST (geloest nach 8.1s) Woerter=52 selbstkompl=True Radius(Brute-Force)=6 Datei=runs/woerter_n20_R6_d2_K13_typ11-9_kontrolle_K13_seed2.txt

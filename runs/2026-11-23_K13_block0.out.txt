@@ -1,0 +1,4 @@
+seed=1 nicht geloest, kleinste Restzahl=2
+seed=2 nicht geloest, kleinste Restzahl=2
+seed=3 GELOEST Woerter=52 selbstkompl=True Radius(Brute-Force)=6 Datei=runs/woerter_n20_R6_d2_K13_typ11-9_seed3.txt
+seed=4 GELOEST Woerter=52 selbstkompl=True Radius(Brute-Force)=6 Datei=runs/woerter_n20_R6_d2_K13_typ11-9_seed4.txt

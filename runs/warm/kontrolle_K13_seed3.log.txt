@@ -1,0 +1,7 @@
+Startdatei: runs/warm/start_K13_aus56_seed2.txt
+Warmstart: 13 von 13 Mitten aus Datei
+m=18 n=20 R=6 K=13 |S|=58402 (0.2228 von 2^m), untere Schranke K>=4.49
+[0s it=0 r=0] unueberdeckt 8
+[0s it=3 r=0] unueberdeckt 6
+[173s it=36065 r=12] unueberdeckt 0
+geloest nach 172.9s
