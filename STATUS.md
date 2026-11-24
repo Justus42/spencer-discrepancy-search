@@ -186,7 +186,7 @@ Beide Prüfskripte melden für alle drei Treffer dieselbe Diskrepanz **8** (`che
 `verify_spencer.py` auf 30x30 mit Nullspalten; Quotient 8/sqrt(30) = 1,46, also KEIN Spencer-Rekord;
 dafür wären <= 40 Wörter nötig).
 **Gate-Prüfung 23.11.2026 (erstes Gate, 60 Wörter):** Treffer von Claude mit eigenem drittem Skript bestätigt
-(nicht im Repo), zusätzlich Brute-Force-Radius in `coset_ladder.py`, `check_disc.py`, `verify_spencer.py`. Neuheit offen: Kéri-Tabelle K(20,6) = 24–64 (Stand 2011); Literatur danach
+(nicht im Repo; im Repo gegengerechnet: Radius `coset_ladder.py`, Diskrepanz beide Prüfskripte; das dritte Skript selbst nicht gegengerechnet), zusätzlich Brute-Force-Radius in `coset_ladder.py`, `check_disc.py`, `verify_spencer.py`. Neuheit offen: Kéri-Tabelle K(20,6) = 24–64 (Stand 2011); Literatur danach
 ungeprüft. Nichts nach außen gemeldet.
 
 **Bauen und Starten** (aus dem Repo-Wurzelordner; Logs liegen als `runs/*.log.txt`):
@@ -208,7 +208,7 @@ ungeprüft. Nichts nach außen gemeldet.
 - Typ (11,9) ist durchgehend am besten; (10,10) und (12,8) nie nahe an einer Lösung bei K=13.
 
 **Gate-Prüfung 23.11.2026 (zweites Gate, 56 Wörter, K=14, Typ (11,9), Startwerte 2 und 3):** Die 56 Wörter wurden von Claude
-mit eigenem drittem Skript bestätigt (nicht im Repo). Die Neuheitsprüfung läuft über Gemini; bis dahin gilt Neuheit als offen.
+mit eigenem drittem Skript bestätigt (nicht im Repo; im Repo gegengerechnet: Radius `coset_ladder.py`, Diskrepanz 8 beide Prüfskripte, Normalität `normal_ext.py`; das dritte Skript selbst nicht gegengerechnet). Die Neuheitsprüfung läuft über Gemini; bis dahin gilt Neuheit als offen.
 
 ## Neuheit K(20,6) <= 56 (Stand 23.11.2026, Neuheit weiter offen)
 
@@ -216,7 +216,7 @@ mit eigenem drittem Skript bestätigt (nicht im Repo). Die Neuheitsprüfung läu
 - Angabe des Nutzers, in dieser Sitzung von Claude nicht selbst nachgeprüft: `florath/covering-codes-lean` (nach Kéri,
   Commit 16.09.2026) nennt für K(20,6) weiter 24–64. Kéri-Nachbarzellen schließen Standardkonstruktionen aus.
 - `fohn.app`: unbelegt.
-- Geminis ausführlicher Neuheitsbericht: Stand 24.11.2026 nicht im Repo angekommen (auf keinem Branch); Platzhalter
+- Geminis ausführlicher Neuheitsbericht: Stand 24.11.2026 nicht im Repo angekommen (auf keinem Branch; nicht gegengerechnet, Text statt Rechnung); Platzhalter
   `notes/gemini/neuheit_2026-11-23.md` bleibt, bis die Datei vorliegt.
 
 ## Normalität und Folgecodes aus den 56 Wörtern (23.11.2026)
@@ -294,7 +294,7 @@ Block 4, zweiter Versuch (Startwerte 13–16, je 1800 s, 23:37–00:08 UTC): **0
 - Kein K=12 gestartet (nicht freigegeben). Neuheit der 52 Wörter bei (20,6) offen (Regel 3): Gemini-Bericht steht aus.
 
 **Gate-Prüfung 24.11.2026 (drittes Gate, 52 Wörter):** Die sechs 52er-Codes (Startwerte 3, 4, 5, 6, 10, 12) wurden vom
-Orchestrator-Claude mit eigenem Skript bestätigt (nicht im Repo): Radius 6, selbstkomplementär, normal, Länge 22 mit Radius 7,
+Orchestrator-Claude mit eigenem Skript bestätigt (nicht im Repo; im Repo gegengerechnet: Radius und Selbstkomplementarität `coset_ladder.py`, Normalität und Länge 22 `normal_ext.py`, Verschiedenheit die Sitzung vom 24.11. ohne abgelegtes Skript, siehe unten; das Orchestrator-Skript selbst nicht gegengerechnet): Radius 6, selbstkomplementär, normal, Länge 22 mit Radius 7,
 alle verschieden. Zusätzlich in dieser Sitzung nachgerechnet: die sechs Wortmengen sind paarweise disjunkt (kein gemeinsames Wort).
 
 - Der frühere Lauf mit leeren Logs ist damit überschrieben (Logs der Startwerte 1–4 stammen jetzt aus Block 1).
@@ -323,7 +323,7 @@ Die drei Kontroll-Treffer (52 Wörter): beide Prüfskripte Diskrepanz 8.
   Nicht geprüft: ob die übrigen 52er-Codes (auch die drei aus der Kontrolle) ebenfalls überflüssige Nebenklassen haben.
 
 **Gate-Prüfung 24.11.2026 (viertes Gate, 48 Wörter):** Die beiden 48er-Codes (aus 52er Startwert 5 und 6) wurden vom
-Orchestrator-Claude mit eigenem Skript bestätigt (nicht im Repo).
+Orchestrator-Claude mit eigenem Skript bestätigt (nicht im Repo; gegengerechnet in der Sitzung vom 24.11.: Radius, Normalität und Diskrepanz 8 (beide Prüfskripte) im Abschnitt „Warmstart und K=12“, der Streichbefund 6108 direkt darunter ohne abgelegtes Skript; das Orchestrator-Skript selbst nicht gegengerechnet).
 - **Befund:** Streichen jeder einzelnen der 12 Nebenklassen lässt in beiden Codes **exakt 6108 Punkte** von F2^20 offen
   (= 1527 Syndrome, je 4 Punkte). In dieser Sitzung nachgerechnet (Brute-Force über alle 2^20 Punkte, alle 12 Streichungen,
   beide Codes: 12 x 6108). Keine Nebenklasse ist überflüssig; der billige Weg zu K=11 ist damit zu.
@@ -470,7 +470,7 @@ die Spaltenauswahl wandert mit Q in beiden Hälften gleich mit (Vorzeichen ände
 
 ## Gate-Prüfung 24.11.2026 (sechstes Gate): Hadamard-Tests bestätigt, Test A vollständig
 
-Vom Orchestrator-Claude mit eigenen Skripten gerechnet (nicht im Repo, kein Code aus `src/`):
+Vom Orchestrator-Claude mit eigenen Skripten gerechnet (nicht im Repo, kein Code aus `src/`; gegengerechnet: Diskrepanz der Dateien `controls/had*` in Teil A mit `exakt_disc` und beiden Prüfskripten, die 60 McKay-Matrizen mit `src/pruefe_mckay.py`; die 53 Dateien in `runs/hadamard/` und die 30 780 Gegenbeispiele nicht gegengerechnet, nur vom eigenen Lauf mit `hadamard_tests.py` geprüft):
 
 - `controls/had24_1p3_paley12.txt` und `controls/had24_2p2_paley12.txt`: Diskrepanz 8, Spalten orthogonal.
 - Test B: die drei Dateien `controls/had20_klasse*.txt` sind Hadamard-Matrizen, Diskrepanz 6, Transponierte 6.
@@ -660,6 +660,8 @@ Nicht vergleichbar: „12 / 50 / 8 Matrizen exakt geprüft“ (Astra 1, Sol 1, S
 **Grenzen.** Die Beweise in den Modellantworten sind **ungeprüft**; der Auftragstext an die Modelle liegt **nicht im Repo**. Die Aussage gilt nur für die von den 16 Generatoren gelieferten Matrizen, nicht für die Zielzellen;
 kein Ausschluss einer Zelle. Neuheit nicht berührt. Nichts nach außen gemeldet, nichts gemergt.
 
+Überholt (Stand 23.11.), es gilt der Beschluss vom 24.11.
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
@@ -673,6 +675,18 @@ Syndrome) und können in einer Cloud-Sitzung laufen. Die GPU wird erst für 25/8
 3. **Strukturierte Suche** nach den beiden Vorschlägen oben, erst 25/8, dann 20/6.
 4. **Bei einem Treffer:** beide Prüfskripte, dann Neuheit prüfen, dann Entscheidung über
    einen Pull Request. Nichts vorher nach außen melden.
+
+## Prüfrahmen (24.11.2026, Cloud, Protokoll `notes/laeufe/2026-11-24_pruefrahmen.md`)
+
+Kein Ergebnis hat sich geändert; `src/check_disc.py`, `verifiers/verify_spencer.py`, `src/exakt_disc.c` unverändert.
+- **Prüfsummen:** `verifiers/SHA256SUMS` für die drei Dateien (Wert wie vom Orchestrator erwartet, `sha256sum -c` OK). Regel 8 in `CLAUDE.md`.
+- **Wrapper:** `verifiers/pruefe_matrix.py` (Original rechteckig, Nullauffüllung im Temp-Ordner, drei getrennte Prozesse, Fehlercode bei Abweichung; zweiter Modus `--paar`, dritter `--alle-pads`).
+  Alle 54 `_pad`-Dateien in `controls/` und `runs/` sind genau Original plus Nullen, 0 Abweichungen. Regel 1 wird über den Wrapper geprüft (`CLAUDE.md`).
+- **Testsuite:** `verifiers/test_verifiers.py` (7 s). Alle 12 Soll-Diskrepanzen aus dem Abschnitt „Gesichert“ und den Hadamard-Abschnitten stimmen, keine Abweichung. Defektdateien `verifiers/defekt/` aus `ctrl_8`:
+  alle vier Programme lehnen alle vier ab (der Vortest bestätigt, auch die leere Datei). Bekannte Unterschiede als erwartetes Verhalten festgehalten, nicht behoben.
+- **Quellen:** `controls/QUELLEN.md`. florath-Datei: SHA-256 selbst bestätigt; Commit-Datum 16.09.2026 nur Angabe des Orchestrators. `had24_mckay_hex.txt`: Prüfsumme bestätigt, Original nicht erneut abrufbar.
+  `L2026_17x17.txt`: Prüfsumme bestätigt, **Quelle nicht rekonstruierbar**.
+- **Fehlversuche dieser Sitzung (Regel 5):** GitHub-Schnittstelle für `florath/covering-codes-lean` (Commit-Daten): HTTP 403, nicht umgangen; Abruf `users.cecs.anu.edu.au/~bdm/data/had24.txt`: Proxy-Sperre 403 (Tunnel); je Sekunden.
 
 ## Dateien
 

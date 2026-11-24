@@ -1,0 +1,3 @@
+a23faab48bf9718632db38fb26e29a1d65357059971bbae32d43b5035884c8d4  src/check_disc.py
+edc28cc128b43142263bee8f62c2ef79191e0c4ccd4ed679c9d82a2b1098d2c7  verifiers/verify_spencer.py
+3f5ffb0de846a021db14c23ba05e6a8dd24f84bd8a83712983895ef600ab35eb  src/exakt_disc.c

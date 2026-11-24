@@ -12,6 +12,10 @@ etwas außerhalb dieses Ordners installierst oder veränderst.
 
 1. Ein Ergebnis gilt erst, wenn `src/check_disc.py` und `verifiers/verify_spencer.py`
    exakt dieselbe Diskrepanz melden. Die beiden Skripte teilen keinen Code und bleiben getrennt.
+   Regel 1 wird künftig über den Wrapper geprüft: `python3 verifiers/pruefe_matrix.py MATRIX`
+   (beliebig rechteckig, ganzzahlig; füllt selbst mit Nullen auf, startet beide Skripte und `exakt_disc`
+   als getrennte Prozesse, endet bei Abweichung mit Fehlercode). Die Kette prüft sich selbst mit
+   `python3 verifiers/test_verifiers.py` (unter 5 Minuten).
 2. Vor jeder Suche auf neuen Parametern: eine bekannte Matrix aus `controls/` derselben
    Größenordnung reproduzieren.
 3. Suchcode und Prüfcode nie vermischen. Prüfskripte rechnen nur mit ganzen Zahlen oder Brüchen.
@@ -25,5 +29,8 @@ etwas außerhalb dieses Ordners installierst oder veränderst.
 5. Jeden Fehlversuch mit Parametern und Laufzeit in `STATUS.md` unter „Fehlversuche“ eintragen.
 6. Auf einem eigenen Branch arbeiten und nur auf Anweisung nach `main` zusammenführen.
 7. Nichts nach außen melden (keine Pull Requests an fremde Repos, keine Posts).
+8. Die drei Prüfdateien `src/check_disc.py`, `verifiers/verify_spencer.py` und `src/exakt_disc.c` ändert nur
+   ein eigener PR, der nichts anderes enthält und `verifiers/SHA256SUMS` mitzieht. Jede Sitzung führt vor einem
+   Treffer-Bericht `sha256sum -c verifiers/SHA256SUMS` aus und schreibt das Ergebnis ins Protokoll.
 
 Sprache: Deutsch, kurz.
