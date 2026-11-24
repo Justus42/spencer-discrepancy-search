@@ -1,0 +1,15 @@
+[controls/ctrl_8.txt ohne Nullspalte] 8 x 7: disc = 5, x bis auf Vorzeichen: 64
+  kritisch: 56; von 1 Zeile: 56, 2 Zeilen: 0, 3 Zeilen: 0, mehr: 0
+  Zeile: allein getragene x | verschiedene D | |D| | größtes h_j
+    0:    7 |    7 | [1] | 1
+    1:    7 |    7 | [1] | 1
+    2:    7 |    7 | [1] | 1
+    3:    7 |    7 | [1] | 1
+    4:    7 |    7 | [1] | 1
+    5:    7 |    7 | [1] | 1
+    6:    7 |    7 | [1] | 1
+    7:    7 |    7 | [1] | 1
+  D <-> x eindeutig (Anzahl x = Anzahl D, je Zeile): True
+  Bedingung von Schritt 3, 2*h_j <= Anzahl D (je Zeile, alle j): True
+  Behauptung h_j <= 28: True
+  Stichproben: 2000, Gegenbeispiele (disc(B) > 5): 0, größte disc(B) = 13/4

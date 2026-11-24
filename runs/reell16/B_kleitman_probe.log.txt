@@ -1,0 +1,14 @@
+n=3 D=1: größte Menge 2, Formel 2, gleich
+n=3 D=2: größte Menge 4, Formel 4, gleich
+n=4 D=1: größte Menge 2, Formel 2, gleich
+n=4 D=2: größte Menge 5, Formel 5, gleich
+n=4 D=3: größte Menge 8, Formel 8, gleich
+n=5 D=1: größte Menge 2, Formel 2, gleich
+n=5 D=2: größte Menge 6, Formel 6, gleich
+n=5 D=3: größte Menge 10, Formel 10, gleich
+n=5 D=4: größte Menge 16, Formel 16, gleich
+n=6 D=1: größte Menge 2, Formel 2, gleich
+n=6 D=2: größte Menge 7, Formel 7, gleich
+n=6 D=3: größte Menge 12, Formel 12, gleich
+n=6 D=4: größte Menge 22, Formel 22, gleich
+n=6 D=5: abgebrochen nach 600 s (Zeitgrenze), nicht ausgewertet; Fall D=n-1 danach aus dem Skript genommen

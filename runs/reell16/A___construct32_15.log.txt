@@ -1,0 +1,23 @@
+[construct_32 n=15] 16 x 15: disc = 7, x bis auf Vorzeichen: 16384
+  kritisch: 7168; von 1 Zeile: 1344, 2 Zeilen: 5376, 3 Zeilen: 448, mehr: 0
+  Zeile: allein getragene x | verschiedene D | |D| | größtes h_j
+    0:   84 |   84 | [4] | 28
+    1:   84 |   84 | [4] | 28
+    2:   84 |   84 | [4] | 28
+    3:   84 |   84 | [4] | 28
+    4:   84 |   84 | [4] | 28
+    5:   84 |   84 | [4] | 28
+    6:   84 |   84 | [4] | 28
+    7:   84 |   84 | [4] | 28
+    8:   84 |   84 | [4] | 28
+    9:   84 |   84 | [4] | 28
+   10:   84 |   84 | [4] | 28
+   11:   84 |   84 | [4] | 28
+   12:   84 |   84 | [4] | 28
+   13:   84 |   84 | [4] | 28
+   14:   84 |   84 | [4] | 28
+   15:   84 |   84 | [4] | 28
+  D <-> x eindeutig (Anzahl x = Anzahl D, je Zeile): True
+  Bedingung von Schritt 3, 2*h_j <= Anzahl D (je Zeile, alle j): True
+  Behauptung h_j <= 28: True
+  Stichproben: 2000, Gegenbeispiele (disc(B) > 7): 0, größte disc(B) = 31/6

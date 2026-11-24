@@ -1,0 +1,24 @@
+== controls/ctrl_16.txt
+matrix 16 x 16, entries in {-1,0,1}: exact discrepancy = 7
+=== controls/ctrl_16.txt ===
+Dimension        : 16 x 16 (aktive Spalten: 15, kgV L=1)
+Exakte Diskrepanz: 7
+Quotient D/sqrt(n): 1.75000000  (exakt D^2/n = 49/16)
+Vergleich 5/sqrt8: unter Rekord (< 5/sqrt(8))  (Rekord D^2/n = 25/8)
+Minimal-Vektoren : 28672 von 65536
+== controls/ctrl_8.txt
+matrix 8 x 8, entries in {-1,0,1}: exact discrepancy = 5
+=== controls/ctrl_8.txt ===
+Dimension        : 8 x 8 (aktive Spalten: 7, kgV L=1)
+Exakte Diskrepanz: 5
+Quotient D/sqrt(n): 1.76776695  (exakt D^2/n = 25/8)
+Vergleich 5/sqrt8: GLEICHSTAND (= 5/sqrt(8))  (Rekord D^2/n = 25/8)
+Minimal-Vektoren : 224 von 256
+== /tmp/claude-0/-home-user-spencer-discrepancy-search/b5383c3c-2561-538b-a258-7c39257bd531/scratchpad/c32_15.txt
+matrix 16 x 15, entries in {-1,0,1}: exact discrepancy = 7
+Traceback (most recent call last):
+  File "/home/user/spencer-discrepancy-search/verifiers/verify_spencer.py", line 283, in <module>
+    main()
+    ~~~~^^
+  File "/home/user/spencer-discrepancy-search/verifiers/verify_spencer.py", line 277, in main
+    res = verify_matrix(mat, chunk_bits=args.chunk_bits, skip_zero_cols=not args.no_zero_skip)
