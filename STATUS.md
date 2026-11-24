@@ -192,7 +192,8 @@ mit eigenem drittem Skript bestätigt (nicht im Repo). Die Neuheitsprüfung läu
 - Angabe des Nutzers, in dieser Sitzung von Claude nicht selbst nachgeprüft: `florath/covering-codes-lean` (nach Kéri,
   Commit 16.09.2026) nennt für K(20,6) weiter 24–64. Kéri-Nachbarzellen schließen Standardkonstruktionen aus.
 - `fohn.app`: unbelegt.
-- Geminis ausführlicher Neuheitsbericht kommt als Datei, Platzhalter `notes/gemini/neuheit_2026-11-23.md`.
+- Geminis ausführlicher Neuheitsbericht: Stand 24.11.2026 nicht im Repo angekommen (auf keinem Branch); Platzhalter
+  `notes/gemini/neuheit_2026-11-23.md` bleibt, bis die Datei vorliegt.
 
 ## Normalität und Folgecodes aus den 56 Wörtern (23.11.2026)
 
@@ -203,7 +204,21 @@ Länge 22 (R=7), 24 (R=8), 26 (R=9), jeweils Radius per Brute-Force bestätigt.
 Wörter `runs/woerter_ext56_typ11-9_seed{2,3}_n{22,24,26}_R{7,8,9}.txt`, Matrizen `runs/matrix_ext56_n*_*.txt`
 (28 x n, `_pad` = 28 x 28 für `verify_spencer.py`).
 **Alle 6 Matrizen: `check_disc.py` und `verify_spencer.py` melden exakt Diskrepanz 8** (Quotient 8/sqrt(28) = 1,512, kein
-Spencer-Rekord). Für die Tabelle der Überdeckungscodes wären das K(22,7), K(24,8), K(26,9) <= 56; Neuheit nicht geprüft.
+Spencer-Rekord).
+**Korrektur 24.11.2026:** K(26,9) <= 56 und K(28,10) <= 56 stehen schon in der Tabelle (Östergård–Kaikkonen 1998); die
+56er-Folgecodes bei Länge 26 sind also nicht neu. Selbst nachgeprüft am 24.11.2026 in `florath/covering-codes-lean`,
+`reference-data/post-keri/non_mixed_covering_codes.csv` (Stand `main` beim Abruf), Zeilen q=2:
+
+| Zelle | Tabelle | eigene Codes |
+|---|---|---|
+| K(20,6) | 24–64 (obere: trivial) | 56, 52 |
+| K(22,7) | 21–64 (obere: trivial) | 56, 52 |
+| K(24,8) | 19–64 (obere: trivial) | 56, 52 |
+| K(26,9) | 17–56 (Östergård–Kaikkonen 1998) | 56 (nicht neu), 52 |
+| K(28,10) | 15–56 (Östergård–Kaikkonen 1998) | nicht erzeugt |
+
+Die 52er-Codes lägen in allen vier erzeugten Zellen unter dem Tabellenwert, auch bei K(26,9) (52 < 56). Das ist nur der
+Abgleich mit dieser einen Tabelle; Neuheit gilt erst nach Regel 3 als geprüft. Nichts nach außen gemeldet.
 
 ## Lauf K=13, nur Typ (11,9), Startwerte 1–16 (gestartet 23.11.2026, 19:03 UTC)
 
@@ -253,6 +268,10 @@ Block 4, zweiter Versuch (Startwerte 13–16, je 1800 s, 23:37–00:08 UTC): **0
   Länge 22/24/26 (R=7/8/9) mit je 52 Wörtern von beiden Prüfskripten bestätigt (Diskrepanz 8).
 - Nicht gelöst, beste Restzahl: Startwert 1: 2, 2: 2, 7: 7, 8: 2, 9: 2, 11: 7, 13: 2, 14: 2, 15: 6, 16: 2.
 - Kein K=12 gestartet (nicht freigegeben). Neuheit der 52 Wörter bei (20,6) offen (Regel 3): Gemini-Bericht steht aus.
+
+**Gate-Prüfung 24.11.2026 (drittes Gate, 52 Wörter):** Die sechs 52er-Codes (Startwerte 3, 4, 5, 6, 10, 12) wurden vom
+Orchestrator-Claude mit eigenem Skript bestätigt (nicht im Repo): Radius 6, selbstkomplementär, normal, Länge 22 mit Radius 7,
+alle verschieden. Zusätzlich in dieser Sitzung nachgerechnet: die sechs Wortmengen sind paarweise disjunkt (kein gemeinsames Wort).
 
 - Der frühere Lauf mit leeren Logs ist damit überschrieben (Logs der Startwerte 1–4 stammen jetzt aus Block 1).
 
