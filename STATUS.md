@@ -345,6 +345,17 @@ Bräuchte (25,8) ähnlich viele Schritte wie (20,6), wären das 8–55 h je Lauf
 standen noch 31 500 (Typ 13,12) bzw. 16 070 (Typ 14,11) Syndrome offen. Der Ryzen 9800X3D (96 MB L3-Cache) und die
 GPU sind nicht gemessen. Keine Suche gestartet.
 
+## Kontrolle Skalierung (22,7), Dimension 2, K=13 (52 Wörter), Zufallsstart (ab 24.11.2026, 06:35 UTC)
+
+Quotient F2^20, |S| = 266 080 (25,4 %), untere Schranke K >= 3,94. Existenz von 52 und 48 Wörtern bei (22,7) ist durch die
+Folgecodes belegt (nicht notwendig als Nebenklassen eines solchen D). Typen (13,9), (12,10), (11,11), je Startwerte 1–8,
+je 1800 s, Blöcke zu 4. Treiber `src/run_gen.py`, Aufruf `src/run_skal22.sh typ von bis`; Logs `runs/skal22/`.
+Gegentest vorab: Der normale Kern reproduziert die Warmstart-Kontrolle K=13 Startwert 2 (Startdatei aus 56er Startwert 3)
+mit derselben Lösung nach Schritt 2011, der Messmodus ändert also nichts.
+
+- Block 1, Typ (13,9), Startwerte 1–4 (06:35–07:05 UTC): **0 von 4 gelöst.** Beste Restzahl: 7 / 2 / 6 / 7.
+  Je ca. 62 000 Schritte in 1800 s (ca. 29 ms je Schritt bei 4 parallel; zum Vergleich (20,6): ca. 386 000).
+
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
 
 Kein Startwert-Fehler im Code erkennbar: `coset_tabu.c` setzt das Zufallsgerät pro Startwert verschieden und würfelt die
