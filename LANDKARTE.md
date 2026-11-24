@@ -53,6 +53,21 @@ bei N = 18 schon `ctrl_17` mit 7/√18 = 1,650 über dem Tabellenwert.
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Quotient | 1,225 | 1,134 | 1,768 | 1,667 | 0,949 | 1,336 | 1,750 | 1,698 | 1,179 | 1,606 | 1,565 | 1,528 | 1,492 | 1,460 | 1,633 | 1,400 | 1,569 | 1,155 | 1,512 | 1,300 | 1,461 | 1,257 | 1,414 |
 
+## Nötige Dichte, Schranke für reelle Matrizen
+
+Für reelle n x n-Matrizen in [-1,1] (auch mit Nullen aufgefüllte) mit disc > 5√(n/8) müssen 2n Kappen den Würfel {±1}^n überdecken; jede Kappe hat
+Durchmesser ≤ D (D größte ganze Zahl mit 8(n−D)² > 25n). Mit dem Satz von Kleitman (**Literatur, hier unbelegt**) fasst eine Kappe höchstens Kl Punkte.
+Nötige Dichte 2n·Kl/2^n ≥ 1. Unter 1: Für dieses n schlägt keine reelle Matrix den Rekord (Belegart `e`, bedingt auf Kleitman). Dichte ≥ 1 sagt nichts.
+Programm `src/dichte_schranke.py`, Protokoll `notes/laeufe/2026-11-24_reell16.md`.
+
+| n | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| D | 2 | 3 | 4 | 5 | 5 | 6 | 7 | 8 | 8 | 9 | 10 | 11 | 12 | 12 | 13 | 14 | 15 | 16 |
+| nötige Dichte | **0,562** | **0,633** | 1,094 | 1,203 | **0,785** | 1,200 | 1,292 | 1,777 | 1,229 | 1,306 | 1,733 | 1,829 | 2,306 | 1,645 | 1,724 | 2,142 | 2,235 | 2,694 |
+
+Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Lokal um `ctrl_16` / `ctrl_8` (Zeilen im L1-Abstand ≤ 2) gibt es ebenfalls nichts über 7 bzw. 5
+(`notes/laeufe/2026-11-24_reell16.md`, Schritt 3).
+
 ## Einzelheiten zu den Zeilen
 
 - **32-Wörter-Codes:** N = 16, 17, 19 aus `controls/` (beide Prüfskripte, disc 7); N = 21, 23 nur Radius per Brute-Force (STATUS).

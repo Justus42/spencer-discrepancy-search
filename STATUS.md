@@ -81,6 +81,8 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
 - 24.11.2026, Bahnen unter 5er-Zyklen plus Komplement, n=20 R=6, nur volle Bahnen, Tabu `src/bahnen_tabu.c`: K=6 (60 Wörter)
   ungelöst: Zufallsstart Startwerte 1–4 je 600 s (Restzahl 122/96/104/94 Punkte) und Warmstart aus den vier K=7-Lösungen je 600 s
   (94/116/116/118). Stopp; K=5, K=4 nicht versucht, Variante 3 volle Bahnen + 5 feste Paare ungeprüft. Protokoll `notes/laeufe/2026-11-24_bahnen5.md`.
+- 24.11.2026, Kleitman-Probe (`src/kleitman_probe.py`, exakte Clique-Suche im Würfel): n=6, D=5 nach 600 s (Zeitgrenze) nicht fertig, nicht
+  ausgewertet; Fall D = n−1 aus dem Skript genommen. n = 3–6 mit D ≤ n−2 (13 Fälle) lieferten die Formel. Kein Einfluss auf Teil B.
 - 24.11.2026, Hadamard-Tests (Abschnitt „Hadamard-Bauregel und Tests“):
   - Download der Sloane-Bibliothek (Ordnung 24, 60 Klassen) nicht möglich: `neilsloane.com` nicht auflösbar, `https://` über den Proxy 403.
     Test A läuft deshalb nur auf konstruierbaren Klassen (53 von 60).
@@ -598,6 +600,22 @@ sigma (k Zyklen der Länge 5): Vereinigung voller Bahnen (10 Wörter) und fester
 - **Teil D:** vollständige Aufzählung K=4 bei n=20 geschätzt auf **ca. 280 CPU-h** (31 Klassen × 12 091 × ca. 11 000 Blätter,
   ca. 240 µs je Blatt, Stichprobe), nicht gestartet.
 
+## Ansatz 4: reelle Einträge um ctrl_16 (24.11.2026, Cloud, nur Prüfcode, ca. 13 Min. Rechenzeit)
+
+Protokoll `notes/laeufe/2026-11-24_reell16.md`, Programme `src/pruefe_reell16.py`, `src/dichte_schranke.py`, Logs `runs/reell16/`. Rechnungen des
+Orchestrators vom 24.11. (eigene Skripte außerhalb des Repos) mit eigenem Programm neu gerechnet, **keine Abweichung**.
+
+- **Lokal um ctrl_16: vollständig durchgerechnet.** 16 x 15 ohne Nullspalte (auch `construct_32.py` n=15): 7168 von 16 384 x kritisch (disc 7), davon von
+  1 / 2 / 3 Zeilen getragen 1344 / 5376 / 448; je Zeile 84 verschiedene D (|D| = 4), jede Spalte in höchstens 28. Gegenprobe `ctrl_8` (8 x 7): 56 von 64,
+  alle allein getragen, je Zeile 7 D, jede Spalte in höchstens 1. Beide Prüfskripte melden für `ctrl_16` 7 und für `ctrl_8` 5.
+- **Folgerung (im Protokoll ausgeschrieben, kein Fehler gefunden):** Keine reelle 16 x 16-Matrix in [-1,1]^(16x16), deren Zeilen je höchstens L1-Abstand 2
+  von ctrl_16 haben (einschließlich 16. Eintrag), hat Diskrepanz über 7 (< 5√2 = 7,0711). Nötig wäre nur h_j ≤ 42; vorhanden ist 28. Analog für `ctrl_8`:
+  nichts über 5. Gilt nicht für größere Abstände und sagt nichts über andere Startmatrizen.
+- **Freie Suche (Ansatz 4 jenseits der Nachbarschaft): nicht versucht.**
+- **Dichteschranke je n** (Teil B, bedingt auf den **unbelegten** Satz von Kleitman): Dichte 2n·Kl/2^n für n = 8…25 wie erwartet
+  (0,562 0,633 1,094 1,203 0,785 1,200 1,292 1,777 1,229 1,306 1,733 1,829 2,306 1,645 1,724 2,142 2,235 2,694); unter 1 bei n = 8, 9, 12:
+  dort schlägt keine reelle Matrix (auch aufgefüllt) den Rekordquotienten. Bei Dichte ≥ 1 folgt nichts. Zeile in `LANDKARTE.md`.
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
@@ -622,6 +640,7 @@ Syndrome) und können in einer Cloud-Sitzung laufen. Die GPU wird erst für 25/8
 - `src/pruefe_mckay.py`: Gegenrechnung der 60 McKay-Matrizen. `src/streichtest.py`: Prüfcode, überflüssige Nebenklassen.
 - `src/hadamard_tests.py`: exakte Diskrepanz (Meet-in-the-middle, int8), Kontrollen, Test A/B, Überdeckungsradius, Nachprüfung der Gegenbeispiele für Test C. Kein Suchcode.
 - `src/pruefstand.c`: Gegenbeispielsuche (Teil B). `src/zirkulant.c`, `src/zirkulant_pruef.py`, `src/zirkulant_qualitaet.py`, `src/run_zirkulant.py`: Teil C.
+- `src/pruefe_reell16.py`, `src/dichte_schranke.py`, `src/kleitman_probe.py`: Prüfcode zu Ansatz 4 (Polieren um ctrl_16, Dichteschranke, Kleitman-Probe).
 - `LANDKARTE.md`: Übersicht Familien x N.
 - `src/exakt_disc.c`: Prüfcode, exakte Diskrepanz per Gray-Code (auch mit gestrichenen Spalten, `-s k`). `src/gegenrechnung_a.py`: Teil A.
 - `src/bahnen_zaehl.c`, `src/bahnen_gegen10.py`, `src/bahnen_pruef.py`, `src/bahnen_aut.py`: Prüfcode Bahnen unter 5er-Zyklen. `src/bahnen_tabu.c`: Suchcode dazu.
