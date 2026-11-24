@@ -33,18 +33,22 @@ Dass es 60 verschiedene Klassen sind, ist Angabe der Quelle.
 
 ## controls/L2026_17x17.txt, 17 x 17, Diskrepanz 7
 
+Nachtrag 24.11.2026 (Sitzung Status-Umzug, Protokoll `notes/laeufe/2026-11-24_status_umzug.md`). Quelle jetzt **selbst geprüft**.
+
 | Angabe | Wert | Prüfstand |
 |---|---|---|
 | SHA-256 der Datei | `1494954b636824220856508d98d4de139135f66e14015ead0fe9e04fa85d39ed` | **selbst bestätigt** |
-| URL | **Quelle nicht rekonstruierbar** | |
-| Abrufdatum | **Quelle nicht rekonstruierbar** | |
+| Repo | `teorth/optimizationproblems` | selbst geprüft |
+| Datei, Abschnitt | `constants/10c.md`, „Certificate for the $7/\sqrt{17}$ lower bound“ (Matrix im Textblock, Zeilen 288–304) | selbst geprüft |
+| Referenz | [L2026] Li, Youhua. „17 by 17 sign-matrix certificate for C10c, submitted to this repository (2026).“ | selbst geprüft (Zeile 437 der Seite) |
+| Commit laut Auftrag | `83e93c372e2e4889b12e5ada3a7c3422521e7baf`, 23.11.2026 15:56:20 −0800 (Autor Terence Tao) | selbst geprüft (Git-Abruf); SHA-256 von `constants/10c.md` dort `16d585513824abda8b59577956e9571f00dab805238ce879105d4a0c2bc0c36a` |
+| Vergleich | 17 x 17, **0 abweichende Einträge** gegen die Repo-Datei | selbst gerechnet |
+| Abruf | 24.11.2026 | |
 
-Was sich belegen lässt, und nur das:
-- Die Datei kam am 23.11.2026 mit dem ersten Übergabe-Commit `1d1248b` (16:05 +0100) ins Repo. Keine frühere Fassung, kein anderer Branch enthält sie.
-- STATUS.md nennt als Herkunft nur „veröffentlichtes Zertifikat aus dem Repo“ (seit demselben Commit unverändert). Welches Repo gemeint ist, steht nirgends:
-  README.md nennt `teorth/optimizationproblems` als Zielrepo der Konstante, verbindet die Datei aber nicht damit.
-- Weder in STATUS.md, in `notes/`, in `runs/` noch in der Git-Geschichte (alle Branches, Suche nach „L2026“ in allen Änderungen) steht eine URL, ein Pfad,
-  ein Commit oder ein Abrufdatum. Der Dateiname „L2026“ ist ebenfalls nirgends erklärt.
-- Inhalt belegt: beide Prüfskripte und `exakt_disc` melden Diskrepanz 7 (`verifiers/test_verifiers.py`).
+**Abweichung zur Angabe des Orchestrators (gemeldet, nicht geglättet):** Commit `83e93c3` ändert `constants/10c.md` nicht. Der Abschnitt und die
+Referenz [L2026] stehen schon seit Commit `bedad0f9db7de4c8645c5eb93a848ec0e5f38bf2` (18.07.2026, Autor Youhua Li, „an improved lower bound of 10c constant“),
+mit derselben Matrix (0 Abweichungen); letzte Änderung der Seite vor `83e93c3` ist `8f39d99` (21.11.2026), ebenfalls 0 Abweichungen.
+Das passt dazu, dass die Datei schon am 23.11.2026, 16:05 +0100 (15:05 UTC, also vor `83e93c3` mit 23:56 UTC) in dieses Repo kam (Commit `1d1248b`).
+`83e93c3` ist also eine Fassung, in der die Matrix steht, nicht ihre Erstveröffentlichung.
 
-Nichts geraten. Wer die Quelle kennt (vermutlich der Auftraggeber der Übergabe-Sitzung), trägt sie hier ein.
+Frühere Fassung dieses Abschnitts (Stand Prüfrahmen, „Quelle nicht rekonstruierbar“): siehe Git-Geschichte dieser Datei.
