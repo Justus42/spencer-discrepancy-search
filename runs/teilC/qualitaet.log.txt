@@ -1,0 +1,12 @@
+n=8: 14 Klassen exakt; max exakt 2, u_max 2; u > exakt in 0 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 9, 2: 5}
+n=8 mit Rand: 14 Klassen exakt; max exakt 2, u_max 2; u > exakt in 0 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 8, 2: 6}
+n=10: 26 Klassen exakt; max exakt 2, u_max 2; u > exakt in 0 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 16, 2: 10}
+n=10 mit Rand: 26 Klassen exakt; max exakt 2, u_max 2; u > exakt in 0 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 8, 2: 18}
+n=12: 88 Klassen exakt; max exakt 4, u_max 4; u > exakt in 0 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 45, 2: 37, 4: 6}
+n=12 mit Rand: 88 Klassen exakt; max exakt 4, u_max 4; u > exakt in 0 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 37, 2: 42, 4: 9}
+n=14: 130 Klassen exakt; max exakt 4, u_max 4; u > exakt in 0 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 62, 2: 62, 4: 6}
+n=14 mit Rand: 130 Klassen exakt; max exakt 4, u_max 4; u > exakt in 0 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 31, 2: 86, 4: 13}
+n=16: 357 Klassen exakt; max exakt 4, u_max 4; u > exakt in 1 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 147, 2: 180, 4: 30}
+n=16 mit Rand: 357 Klassen exakt; max exakt 4, u_max 4; u > exakt in 2 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 111, 2: 191, 4: 55}
+n=18: 1346 Klassen exakt; max exakt 4, u_max 4; u > exakt in 26 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 526, 2: 714, 4: 106}
+n=18 mit Rand: 1346 Klassen exakt; max exakt 4, u_max 4; u > exakt in 26 Klassen, u < exakt (Fehler) in 0; Verteilung exakt {0: 263, 2: 802, 4: 281}

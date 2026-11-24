@@ -1,0 +1,10 @@
+## Kontrolle n=7 mit Rand, d=5
+n=7 mit rand d=5: klassen 5, ueberlebende 1, beste obere schranke u_max 3 (3 vertreter), zeit 0.0 s, tabu-schritte 17604
+verteilung u: 1:1 3:3
+b 5
+ueberlebende b u=5 exakt=5
+## Gegenprobe n=7 ohne Rand, d=5
+n=7 d=5: klassen 5, ueberlebende 0, beste obere schranke u_max 3 (2 vertreter), zeit 0.0 s, tabu-schritte 6007
+verteilung u: 1:3 3:2
+top 1 u=3 exakt=3
+top 3 u=3 exakt=3

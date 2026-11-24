@@ -549,6 +549,17 @@ Vorab reproduziert: alle 9 Dateien in `controls/` (8, 5, 5, 7, 7, 7, 7, 6, 8, 8 
 
 Gegenproben mit `check_disc.py`: Konferenz 14 und 18 (auch `verify_spencer.py`), 6 zufällige Paare aus 1, 4 zufällige Tripel aus 2: alle gleich.
 
+## Teil B und C (24.11.2026, Cloud, 4 Kerne), laufend
+
+**Teil B, Prüfstand:** `src/pruefstand.c` (Suchcode, Tabu-Suche). Kontrollen bestanden: `ctrl_8` 5, `had24_1p3_paley12` 8, McKay-Hadamard 24 6,
+darunter jeweils kein Gegenbeispiel; Zusatz 12 Matrizen x 3 Startwerte, immer das exakte Optimum in < 0,01 s (`runs/teilB/`).
+
+**Teil C, zirkulante Matrizen:** `src/zirkulant.c` (Suchcode: Klassen-Aufzählung, Filter, Abstieg), exakte Prüfung mit `build/exakt_disc`
+über `src/zirkulant_pruef.py`, Treiber `src/run_zirkulant.py`, Blockprotokoll `runs/teilC/blocklog.txt`.
+Kontrollen: Klassenzahl n = 3–15 gleich einer unabhängigen Bahnen-Zählung; Hamming-Rekord wiedergefunden (n=7 mit Rand, d=5: genau 1 Überlebender,
+erste Zeile Bits {0,1,3}, exakt 5; ohne Rand keiner); Abstiegsschranke u gegen exakte Werte aller Klassen n = 8–18 (mit/ohne Rand): nie zu klein, u_max = exaktes Maximum.
+- Block 1 (14:57 UTC, < 1 Min.): n=18, 20, 21, 23, 24 ohne Rand: 0 Überlebende (Tabelle unten, wenn fertig).
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
