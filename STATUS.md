@@ -88,6 +88,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Hadamard 20 ohne 2 Spalten (1140 Fälle) | alle exakt 6 | voll | A: Gegenrechnung des Prüfvermerks, Teil A |
 | Hadamard 24 ohne 3 Spalten (242 880 Fälle) | alle exakt 7 | voll | A: Gegenrechnung des Prüfvermerks, Teil A |
 | Doppelung Ordnung 40, H aus 3 Klassen, 1+3 und 2+2, gleiche Zeilenausrichtung (30 780 Auswahlen) | disc ≤ 8, nötig 12 | Gegenbeispiel (zweimal nachgerechnet) | A: Hadamard-Bauregel und Tests (Test C); L: 2026-11-24_status_umzug |
+| Paley-Doppelung 24 x 20 plus eine Spalte | disc bleibt ≤ 8, nötig 9 | Gegenbeispiel je Fall | L: 2026-11-24_spaltenanbau |
 | Paley-Konferenzmatrizen Ordnung 6, 10, 14, 18 | disc 3, 3, 5, 5 | voll | A: Gegenrechnung des Prüfvermerks, Teil A |
 | Zirkulante ±1-Matrizen n = 18–31 (10 Ordnungen), mit Rand n = 18–26 | beste disc 4–7, 0 Überlebende | Gegenbeispiel je Klasse, Bester exakt | L: 2026-11-24_zirkulant; A: Teil B, C, D |
 | Bahnen aus 5er-Zyklen plus Komplement, n=15, R=4 | mindestens 40 Wörter (525 Vierermengen) | voll | L: 2026-11-24_bahnen5 |
@@ -146,7 +147,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - Beweise in den Rundlauf-Antworten ungeprüft (L: 2026-11-24_rundlauf). Auftragstext jetzt in `notes/rundlauf_2026-11-24_auftrag.md`.
 - n=25 unter 5er-Symmetrie nicht gestartet (L: 2026-11-24_bahnen5).
 - Vollständige Aufzählung K=4 bei n=20 (ca. 280 CPU-h) nicht gestartet (L: 2026-11-24_bahnen5).
-- Variante 3 (volle Bahnen plus 5 feste Paare) ungeprüft (A: Fehlversuche).
+- Variante mit 3 vollen Bahnen plus 5 festen Paaren ungeprüft (A: Fehlversuche).
 - Nächster Schritt: Ideensammlung (Literatur, Methodentransfer).
 
 ## Prüfrahmen
