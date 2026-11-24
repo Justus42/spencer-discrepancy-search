@@ -10,7 +10,9 @@
  * (Aenderung = -Gewinn(b)). Bester Zug, Zufall bei Gleichstand. Entfernte Bahn 2-9 Schritte tabu.
  * Stillstand (30 000 Schritte ohne Verbesserung) -> Neustart aus Zufall (Zeilenzahl genau T).
  *
- * Aufruf: bahnen3_tabu P.txt L T sekunden seed_von seed_bis ausgabepraefix
+ * Aufruf: bahnen3_tabu P.txt L T sekunden seed_von seed_bis ausgabepraefix [stichprobe]
+ *   stichprobe > 0: keine Gewinnpflege; Gewinn nur fuer alle festen Zeilen und 'stichprobe' zufaellige Dreierbahnen
+ *   unter den Ueberdeckern von p berechnet (schneller je Schritt, schwaechere Auswahl). 0 (Standard): exakt gepflegt.
  *   Je Startwert ein Thread. Log laufend nach stdout. Treffer: praefix_seed<s>.txt (je Bahn: Vertreterwort Gewicht).
  * Bauen: gcc -O3 -march=native -fopenmp -o build/bahnen3_tabu src/bahnen3_tabu.c
  */
@@ -33,6 +35,7 @@ static int *bid; static uint32_t *rep;
 static uint64_t *M;
 static double sek;
 static int T;
+static int STICH = 0;   /* 0: Gewinne exakt gepflegt (wie bahnen_tabu.c); >0: Gewinn nur fuer STICH zufaellige Kandidaten berechnet */
 static const char *praefix;
 
 static uint32_t kan(uint32_t x) { return (x >> (N - 1)) & 1 ? x ^ ((1u << N) - 1) : x; }
@@ -43,15 +46,16 @@ static inline uint64_t rnd(uint64_t *s) { uint64_t x = *s; x ^= x << 13; x ^= x 
 
 typedef struct {
     int S[MAXS], ns, wsum; uint8_t *in; uint8_t *cnt; uint64_t *U1;
-    int *gain; int *ulist, *upos, nu; long long f; int *tabu; uint64_t rs;
+    int *gain; int *ulist, *upos, nu; long long f; int *tabu; uint64_t rs; uint64_t *U0; int *kand;
 } Zust;
 
 static void bit_set(uint64_t *b, int q) { b[q >> 6] |= 1ULL << (q & 63); }
 static void bit_clr(uint64_t *b, int q) { b[q >> 6] &= ~(1ULL << (q & 63)); }
-static void u_add(Zust *z, int q) { z->upos[q] = z->nu; z->ulist[z->nu++] = q; }
-static void u_del(Zust *z, int q) { int i = z->upos[q], l = z->ulist[--z->nu]; z->ulist[i] = l; z->upos[l] = i; z->upos[q] = -1; }
+static void u_add(Zust *z, int q) { z->upos[q] = z->nu; z->ulist[z->nu++] = q; z->U0[q >> 6] |= 1ULL << (q & 63); }
+static void u_del(Zust *z, int q) { int i = z->upos[q], l = z->ulist[--z->nu]; z->ulist[i] = l; z->upos[l] = i; z->upos[q] = -1; z->U0[q >> 6] &= ~(1ULL << (q & 63)); }
 
 static void gain_row(Zust *z, int q, int d) {
+    if (STICH) return;
     const uint64_t *r = M + (size_t)q * W;
     for (int v = 0; v < W; v++) { uint64_t x = r[v]; while (x) { int b = v * 64 + __builtin_ctzll(x); x &= x - 1; z->gain[b] += d; } }
 }
@@ -91,7 +95,7 @@ static void aufbau(Zust *z) { /* cnt, U1, Liste, f, gain aus z->S (wie bahnen_ta
         const uint64_t *r = M + (size_t)a * W;
         for (int v = 0; v < W; v++) { uint64_t x = r[v]; while (x) { int q = v * 64 + __builtin_ctzll(x); x &= x - 1; if (z->cnt[q] < 255) z->cnt[q]++; } }
     }
-    z->nu = 0; z->f = 0; memset(z->gain, 0, sizeof(int) * NT);
+    z->nu = 0; z->f = 0; memset(z->gain, 0, sizeof(int) * NT); memset(z->U0, 0, sizeof(uint64_t) * W);
     for (int q = 0; q < NT; q++) {
         z->upos[q] = -1;
         if (z->cnt[q] == 0) { u_add(z, q); z->f += wt(q); gain_row(z, q, wt(q)); }
@@ -112,7 +116,7 @@ static void start(Zust *z) {
 
 static void lauf(int seed) {
     Zust z; z.rs = 0x9E3779B97F4A7C15ULL ^ ((uint64_t)seed * 0x100000001B3ULL); for (int i = 0; i < 10; i++) rnd(&z.rs);
-    z.in = malloc(NT); z.cnt = malloc(NT); z.U1 = malloc(sizeof(uint64_t) * W); z.gain = malloc(sizeof(int) * NT);
+    z.in = malloc(NT); z.cnt = malloc(NT); z.U1 = malloc(sizeof(uint64_t) * W); z.gain = malloc(sizeof(int) * NT); z.U0 = calloc(W, sizeof(uint64_t)); z.kand = malloc(sizeof(int) * NT);
     z.ulist = malloc(sizeof(int) * NT); z.upos = malloc(sizeof(int) * NT); z.tabu = calloc(NT, sizeof(int));
     double t0 = jetzt(), tlog = t0;
     start(&z);
@@ -133,8 +137,21 @@ static void lauf(int seed) {
         int cb[TOPT + TOPT1], cg[TOPT + TOPT1], n3 = 0, n1 = 0;
         int *b3 = cb, *g3 = cg, *b1 = cb + TOPT, *g1 = cg + TOPT;
         const uint64_t *rp = M + (size_t)p * W;
+        int nk = 0;
         for (int v = 0; v < W; v++) { uint64_t x = rp[v]; while (x) { int b = v * 64 + __builtin_ctzll(x); x &= x - 1;
             if (z.in[b] || z.tabu[b] > step) continue;
+            z.kand[nk++] = b;
+        } }
+        if (STICH) { /* feste Zeilen (Ids < NF, vorne) immer, von den Dreierbahnen eine Zufallsstichprobe */
+            int k1 = 0; while (k1 < nk && z.kand[k1] < NF) k1++;
+            int m3 = nk - k1;
+            if (m3 > STICH) {
+                for (int i = 0; i < STICH; i++) { int j = i + (int)(rnd(&z.rs) % (m3 - i)); int t = z.kand[k1 + i]; z.kand[k1 + i] = z.kand[k1 + j]; z.kand[k1 + j] = t; }
+                nk = k1 + STICH;
+            }
+            for (int i = 0; i < nk; i++) z.gain[z.kand[i]] = (int)wpc(z.U0, M + (size_t)z.kand[i] * W, 0);
+        }
+        for (int i = 0; i < nk; i++) { int b = z.kand[i]; {
             int g = z.gain[b];
             int *bb = b < NF ? b1 : b3, *gg = b < NF ? g1 : g3, *nn = b < NF ? &n1 : &n3, cap = b < NF ? TOPT1 : TOPT;
             if (*nn < cap) { int j = (*nn)++; while (j > 0 && gg[j - 1] < g) { gg[j] = gg[j - 1]; bb[j] = bb[j - 1]; j--; } gg[j] = g; bb[j] = b; }
@@ -185,7 +202,8 @@ static void lauf(int seed) {
 }
 
 int main(int argc, char **argv) {
-    if (argc < 8) { fprintf(stderr, "Aufruf: P.txt L T sekunden seed_von seed_bis praefix\n"); return 1; }
+    if (argc < 8) { fprintf(stderr, "Aufruf: P.txt L T sekunden seed_von seed_bis praefix [stichprobe]\n"); return 1; }
+    if (argc > 8) STICH = atoi(argv[8]);
     int L = atoi(argv[2]); T = atoi(argv[3]); sek = atof(argv[4]);
     int s0 = atoi(argv[5]), s1 = atoi(argv[6]); praefix = argv[7];
     FILE *fp = fopen(argv[1], "r");
@@ -216,8 +234,8 @@ int main(int argc, char **argv) {
     #pragma omp parallel for schedule(dynamic, 64)
     for (int p = 0; p < NT; p++) { uint64_t *r = M + (size_t)p * W; for (int i = 0; i < nm; i++) { int o = bid[kan(rep[p] ^ mask[i])]; r[o >> 6] |= 1ULL << (o & 63); } }
     long long ones = 0; for (size_t i = 0; i < (size_t)NT * W; i++) ones += __builtin_popcountll(M[i]);
-    printf("Element Zeile %d: %d feste Zeilen, %d Dreierbahnen, %d Bahnen; T=%d Zeilen (%d Woerter); Matrix %.2f GB, mittlere Zeile %.0f, Aufbau %.1f s\n",
-           L, NF, NT - NF, NT, T, 2 * T, (double)NT * W * 8 / 1e9, (double)ones / NT, jetzt() - t0);
+    printf("Stichprobe %d; Element Zeile %d: %d feste Zeilen, %d Dreierbahnen, %d Bahnen; T=%d Zeilen (%d Woerter); Matrix %.2f GB, mittlere Zeile %.0f, Aufbau %.1f s\n",
+           STICH, L, NF, NT - NF, NT, T, 2 * T, (double)NT * W * 8 / 1e9, (double)ones / NT, jetzt() - t0);
     fflush(stdout);
     int ns = s1 - s0 + 1;
     #pragma omp parallel for schedule(dynamic, 1) num_threads(ns < 4 ? ns : 4)
