@@ -1,0 +1,2 @@
+runs/bahnen3/teil4/kontrolle_T24_seed4.txt: 24 Zeilenpaare (24 laut Gewichten), 48 Woerter, selbstkomplementaer, Ueberdeckungsradius 6 (Breitensuche ueber 2^20 Punkte)
+Matrix 24 x 20 geschrieben: runs/bahnen3/teil4/kontrolle_T24_seed4_matrix.txt

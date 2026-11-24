@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 24.11.2026 (nach Rundlauf Ansatz 3). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 25.11.2026 (nach Bahnen unter der 3-Sylowgruppe). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -23,6 +23,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Hadamard ohne 1 Spalte (alle Spalten, alle Klassen) |  |  |  |  |  |  | |  |  |  |  | 1,565 e |
 | Hadamard 20 ohne 2 / 24 ohne 3 Spalten (alle Paare/Tripel) |  |  |  |  |  |  | |  |  |  |  | 1,342 e |
 | Bahnen unter 5er-Zyklen plus Komplement (n=15: 40 Wörter, alle 525 Vierermengen, `bahn15_40w`) |  |  |  |  |  |  | |  |  |  |  | 1,565 e |
+| Bahnen unter der 3-Sylowgruppe P des 48ers (n=20, R=6; 40 Wörter = Rekord 1,789 ausgeschlossen, voll) | | | | | | | | | | | | – (voll) |
 | Paley-Konferenzmatrizen | 1,225 e |  |  |  | 0,949 e | 1,336 e | |  |  | 1,179 e |  |  |
 | zirkulant n x n (Teil C, alle Klassen) |  | 1,134 e |  |  |  |  | |  |  | 0,943 e |  | 1,342 e |
 | zirkulant + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Teil C) |  |  | 1,768 e |  |  |  | |  |  |  | 0,918 e |  |
@@ -44,6 +45,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Doppelung [[H,H],[H,-H]], H Hadamard 20, Bauregel 1+3/2+2 (40 x 36) |  |  |  |  |  |  |  |  |  |  |  |  | ≤1,265 g |
 | Paley-12-Doppelung, Bauregel 1+3 und 2+2 (24 x 20) |  |  |  | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Überdeckungscodes aus Nebenklassen-Suche (48/52/56/60 Wörter bei (20,6), 52 bei (22,7), 64 bei (18,5)) |  |  |  | 1,633 e |  | 1,569 e |  | 1,512 e |  | 1,461 e |  | 1,414 e |  |
+| Bahnen unter der 3-Sylowgruppe P des 48ers (n=20, R=6; unter P 48 Wörter optimal, ≤ 46 ausgeschlossen, voll) |  |  |  | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Nebenklassen-Suche, nicht erreichte Ziele |  |  |  |  |  |  |  |  |  | (1,643) s |  | (1,591) s |  |
 | zirkulant n x n (Teil C, alle Klassen) | 1,091 e |  | 1,460 e | 1,225 e | 1,400 e | 1,177 e |  |  | 1,300 e | 1,095 e | 1,257 e |  |  |
 | zirkulant + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Teil C) | 1,309 e | 1,492 e |  | 1,429 e | 1,200 e | 1,373 e | 1,155 e |  |  |  |  |  |  |
@@ -91,6 +93,11 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Lokal um `ctrl_16` / `ctrl_8` (
   `runs/teilA/zusatz_ohne_eine_spalte.log.txt`; ohne 2/3 Spalten: `runs/teilA/a1*`, `a2*` (alle 1140 bzw. 242 880 Fälle).
 - **Bahnen unter 5er-Zyklen plus Komplement:** `controls/bahn15_40w.txt` (20 x 15, beide Prüfskripte 7), Aufzählung vollständig
   (`notes/laeufe/2026-11-24_bahnen5.md`); bei n=20 nur 70 Wörter gefunden (60 Wörter: Suche erfolglos, 40: nicht versucht).
+- **Bahnen unter der 3-Sylowgruppe P des 48ers:** P (Ordnung 9, nicht zyklisch, Normalteiler von Aut = 576) auf den 2^19 Zeilenpaaren,
+  Bahnen 8/160/58 200. Vollständige Zählung: nur Bahnen der Größe 1/3 Minimum genau 24 Zeilen (19 008 Lösungen, 48er dabei); mit
+  Neunerbahnen keine Überdeckung mit ≤ 23 Zeilen. Also kein P-invarianter Code mit 40, 42, 44 oder 46 Wörtern (Rekord bräuchte 40).
+  Nur ein Element der Ordnung 3 (⟨g⟩, 174 848 Bahnen): Tabu-Kontrolle (48 Wörter) nicht bestanden (1 von 4 bzw. 0 von 4), < 48 ungeprüft.
+  Protokoll `notes/laeufe/2026-11-25_bahnen3.md`.
 - **Doppelung Ordnung 40:** Test C in STATUS, alle 30 780 Spaltenauswahlen mit Gegenbeispiel max ≤ 8, Rekord bräuchte 12.
   Nur gleiche Zeilenausrichtung in beiden Hälften geprüft.
 - **Paley-12-Doppelung:** `controls/had24_1p3_paley12.txt`, `had24_2p2_paley12.txt`, beide Prüfskripte disc 8.

@@ -1,0 +1,65 @@
+Stichprobe 0; Element Zeile 1: 128 feste Zeilen, 174720 Dreierbahnen, 174848 Bahnen; T=24 Zeilen (48 Woerter); Matrix 3.82 GB, mittlere Zeile 52484, Aufbau 5.6 s
+[seed 2] Start f=25751, 10 Bahnen, 24 Zeilen (Start 0.3 s)
+[seed 1] Start f=29297, 10 Bahnen, 24 Zeilen (Start 0.4 s)
+[seed 3] Start f=30626, 8 Bahnen, 24 Zeilen (Start 0.4 s)
+[seed 4] Start f=40428, 8 Bahnen, 24 Zeilen (Start 0.5 s)
+[seed 3] t=60s Schritt 1488 f=2444 bester=1193 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=60s Schritt 4192 f=1572 bester=849 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 1] t=60s Schritt 5120 f=842 bester=493 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 4] t=60s Schritt 1552 f=1332 bester=860 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=120s Schritt 8416 f=1847 bester=710 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 1] t=120s Schritt 10480 f=960 bester=493 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 4] t=120s Schritt 3104 f=2783 bester=860 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 3] t=121s Schritt 3056 f=2231 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 1] t=180s Schritt 15024 f=1124 bester=493 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 2] t=180s Schritt 13040 f=1999 bester=706 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 3] t=181s Schritt 4640 f=1476 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 4] t=181s Schritt 4576 f=2425 bester=860 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 1] t=240s Schritt 19168 f=1307 bester=493 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 2] t=240s Schritt 18688 f=986 bester=602 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 3] t=241s Schritt 6192 f=2546 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 4] t=241s Schritt 6192 f=2048 bester=835 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=300s Schritt 24112 f=1107 bester=488 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 1] t=300s Schritt 23232 f=1012 bester=493 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 3] t=301s Schritt 7744 f=1244 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 4] t=302s Schritt 7696 f=1744 bester=835 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=360s Schritt 28128 f=957 bester=488 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 1] t=361s Schritt 28896 f=1061 bester=493 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 3] t=362s Schritt 9216 f=2587 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 4] t=362s Schritt 9168 f=2751 bester=835 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=421s Schritt 33136 f=1234 bester=488 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 1] t=421s Schritt 34832 f=1654 bester=493 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 3] t=422s Schritt 10752 f=2450 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 4] t=422s Schritt 10624 f=2144 bester=835 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=481s Schritt 37664 f=2065 bester=488 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 1] t=481s Schritt 36528 f=1583 bester=493 Neustarts=1 Bahnen=8 Zeilen=24
+[seed 3] t=482s Schritt 12352 f=2376 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 4] t=483s Schritt 12128 f=2622 bester=835 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=541s Schritt 41520 f=2385 bester=488 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 1] t=542s Schritt 38032 f=2171 bester=493 Neustarts=1 Bahnen=8 Zeilen=24
+[seed 3] t=542s Schritt 13760 f=2601 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 4] t=543s Schritt 13600 f=2481 bester=835 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=601s Schritt 47184 f=893 bester=488 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 1] t=602s Schritt 39424 f=2739 bester=493 Neustarts=1 Bahnen=8 Zeilen=24
+[seed 3] t=603s Schritt 15184 f=1988 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 4] t=603s Schritt 14944 f=2439 bester=835 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=661s Schritt 52608 f=1252 bester=488 Neustarts=1 Bahnen=10 Zeilen=24
+[seed 1] t=662s Schritt 40832 f=1811 bester=493 Neustarts=1 Bahnen=8 Zeilen=24
+[seed 3] t=663s Schritt 16656 f=1586 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 4] t=663s Schritt 16592 f=2027 bester=835 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=721s Schritt 56880 f=1774 bester=488 Neustarts=1 Bahnen=10 Zeilen=24
+[seed 1] t=723s Schritt 42384 f=1220 bester=493 Neustarts=1 Bahnen=8 Zeilen=24
+[seed 4] t=724s Schritt 18064 f=1443 bester=790 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 3] t=724s Schritt 18352 f=2507 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=781s Schritt 61808 f=1899 bester=488 Neustarts=1 Bahnen=10 Zeilen=24
+[seed 1] t=783s Schritt 43904 f=3127 bester=493 Neustarts=1 Bahnen=8 Zeilen=24
+[seed 4] t=784s Schritt 20416 f=1008 bester=758 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 3] t=784s Schritt 19760 f=2584 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 2] t=842s Schritt 66112 f=1205 bester=488 Neustarts=1 Bahnen=10 Zeilen=24
+[seed 1] t=843s Schritt 45408 f=2109 bester=493 Neustarts=1 Bahnen=8 Zeilen=24
+[seed 4] t=844s Schritt 26512 f=1273 bester=487 Neustarts=0 Bahnen=10 Zeilen=24
+[seed 3] t=844s Schritt 21216 f=2126 bester=509 Neustarts=0 Bahnen=8 Zeilen=24
+[seed 4] NICHT geloest nach 900.1 s, Schritte 30912, Neustarts 0, beste Restzahl 487 Zeilenpaare; beste Bahnen: 88644/3 61920/3 189199/3 52270/3 1875/3 282281/3 92343/1 179957/3 77979/1 463782/1
+[seed 1] NICHT geloest nach 900.1 s, Schritte 46864, Neustarts 1, beste Restzahl 493 Zeilenpaare; beste Bahnen: 214189/3 280475/3 199228/3 259961/3 51692/3 78728/1 122631/3 28707/3 93274/1 464742/1
+[seed 2] NICHT geloest nach 900.2 s, Schritte 72640, Neustarts 1, beste Restzahl 449 Zeilenpaare; beste Bahnen: 260159/3 103856/3 78759/1 283418/3 116740/3 94025/1 199510/3 34414/3 64194/3 78938/1
+[seed 3] NICHT geloest nach 900.5 s, Schritte 22624, Neustarts 0, beste Restzahl 326 Zeilenpaare; beste Bahnen: 280788/3 64284/3 73125/3 43315/3 87450/3 101998/3 281579/3 116305/3

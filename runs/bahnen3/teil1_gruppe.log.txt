@@ -1,0 +1,12 @@
+Matrix 24 x 20, |S| = 48, |G| = 576 (Elemente aus build/bahnen3_aut, jedes nachgeprueft, Gruppentafel abgeschlossen)
+Elementordnungen: {1: 1, 2: 87, 3: 8, 4: 216, 6: 120, 8: 144}
+8 Elemente der Ordnung 3; Zyklentypen (Spalten | 24 Zeilenpaare):
+  8 Elemente: Spalten {3: 6, 1: 2} | Zeilenpaare {3: 6, 1: 6}
+Untergruppen der Ordnung 9: 1
+gewaehlte P: nicht zyklisch (alle 8 Nicht-Eins-Elemente Ordnung 3): True
+|N_G(P)| = 576
+Bahnen von P auf 2^19 Zeilenpaaren: {1: 8, 3: 160, 9: 58200}, Punktklassen gesamt 58368
+48er: 24 verschiedene Zeilenpaare in 8 Bahnen, Bahngroessen [3, 3, 3, 3, 3, 3, 3, 3], Zeilen je Bahn [3, 3, 3, 3, 3, 3, 3, 3]
+48er = Vereinigung dieser Bahnen: True
+48er: Ueberdeckungsradius per Breitensuche ueber 2^20 Punkte = 6
+Element fuer Teil 4 (erste Zeile != Eins in der Datei): ((0, 1, 3, 5, 8, 2, 7, 10, 9, 4, 6, 12, 14, 17, 11, 16, 19, 18, 13, 15), (1, 1, -1, -1, -1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, 1, -1, 1))

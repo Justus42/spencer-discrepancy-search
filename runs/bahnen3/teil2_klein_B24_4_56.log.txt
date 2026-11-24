@@ -1,0 +1,21 @@
+Bahnen von P auf 524288 Zeilenpaaren: Groesse 1: 8, Groesse 3: 160, Groesse 9: 58200, andere: 0; Punktklassen 58368
+Kugel 60460 Woerter; Ueberdeckungsmatrix 58368 x 58368, asymmetrische Eintraege: 0 (7.1 s)
+Punktklassen der Groesse 1 (8): Neunerbahnen als Ueberdecker 6700..6700, kleine Bahnen 56..56
+Punktklassen der Groesse 3 (160): Neunerbahnen als Ueberdecker 16389..17576, kleine Bahnen 29..56
+Punktklassen der Groesse 9 (58200): Neunerbahnen als Ueberdecker 15216..39824, kleine Bahnen 29..84
+Punktklassen ohne kleinen Ueberdecker: 0
+verschiedene kleine Masken: 55712
+Matrix controls/had24_1p3_paley12.txt: 24 Zeilen in 8 Bahnen, Groessen: 3 3 3 3 3 3 3 3; Zeilen der Bahnen zusammen 24; offene Punktklassen danach: 0 -> UEBERDECKUNG
+48er-Bahnen (Vertreter/Gewicht): 0/3 238034/3 92343/3 119017/3 2047/3 239149/3 94024/3 120598/3
+zaehle B=24 max9=0: erste Verzweigung Punktklasse 77976 (Groesse 1), 56 Kandidaten, Bereich [4, 56)
+  Fortschritt: 1 / 52 erste Zweige fertig (zuletzt i=7), Knoten 1781914556, 164 s
+  Fortschritt: 5 / 52 erste Zweige fertig (zuletzt i=8), Knoten 3376851035, 314 s
+  Fortschritt: 9 / 52 erste Zweige fertig (zuletzt i=15), Knoten 4565587156, 416 s
+  Fortschritt: 13 / 52 erste Zweige fertig (zuletzt i=17), Knoten 5481399445, 500 s
+  Fortschritt: 21 / 52 erste Zweige fertig (zuletzt i=24), Knoten 6484525959, 606 s
+  Fortschritt: 29 / 52 erste Zweige fertig (zuletzt i=32), Knoten 7209939726, 683 s
+  Fortschritt: 39 / 52 erste Zweige fertig (zuletzt i=42), Knoten 7816476906, 743 s
+  Fortschritt: 52 / 52 erste Zweige fertig (zuletzt i=53), Knoten 8119809030, 778 s
+ERGEBNIS B=24 max9=0 Bereich [4, 56) von 56: Ueberdeckungen (alle Bahnmengen, auch nicht minimale) nach Neunerbahnen und Zeilen:
+  0 Neunerbahnen, 24 Zeilen (48 Woerter): 19008
+Knoten 8119809030, Laufzeit 778.1 s
