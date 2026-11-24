@@ -1,0 +1,4 @@
+seed=5 nicht geloest, kleinste Restzahl=6
+seed=6 GELOEST (geloest nach 76.7s) Woerter=52 selbstkompl=True Radius(Brute-Force)=6 Datei=runs/woerter_n20_R6_d2_K13_typ11-9_kontrolle_K13_seed6.txt
+seed=7 nicht geloest, kleinste Restzahl=5
+seed=8 nicht geloest, kleinste Restzahl=2

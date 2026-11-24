@@ -275,6 +275,29 @@ alle verschieden. Zusätzlich in dieser Sitzung nachgerechnet: die sechs Wortmen
 
 - Der frühere Lauf mit leeren Logs ist damit überschrieben (Logs der Startwerte 1–4 stammen jetzt aus Block 1).
 
+## Warmstart und K=12 (24.11.2026)
+
+`src/coset_tabu.c` nimmt jetzt optional eine Datei mit Startmitten (Warmstart; jeder Neustart beginnt dort).
+`src/warm_prep.py` rechnet Wörter auf Nebenklassen-Syndrome zurück und streicht die Nebenklasse, deren Wegfall am wenigsten
+Syndrome aufdeckt. Treiber `src/run_warm.py` (laufendes Log, Fertig-Marken). Logs und Startdateien in `runs/warm/`.
+
+**Positivkontrolle K=13 aus den 56er-Codes** (je 1 Nebenklasse gestrichen: 8 bzw. 9 Syndrome offen), 8 Läufe je 900 s:
+**3 von 8 gelöst** (Startwert 2 nach 8 s, 3 nach 173 s, 6 nach 77 s). Ungelöst, beste Restzahl: Startwert 1: 3, 4: 5, 5: 6,
+7: 5, 8: 2. Vergleich Zufallsstart: 6 von 16 in 1800 s, davon 1 unter 900 s. Schwelle (>= 2 von 8) erreicht.
+Die drei Kontroll-Treffer (52 Wörter): beide Prüfskripte Diskrepanz 8.
+
+**K=12 (48 Wörter) ohne Suchlauf gefunden.** Beim Vorbereiten der Warmstarts zeigte sich: In den 52er-Codes der Startwerte
+5 und 6 ist je eine Nebenklasse überflüssig (ihr Wegfall deckt 0 Syndrome auf). Ohne sie bleiben 48 Wörter:
+- `runs/woerter_n20_R6_d2_K12_typ11-9_aus52seed{5,6}.txt`: je 48 Wörter, selbstkomplementär, Radius per Brute-Force 6,
+  die beiden Codes sind verschieden.
+- Matrizen `runs/matrix_n20_48w_typ11-9_aus52seed{5,6}.txt` (24 x 20, `_pad` 24 x 24). **Beide Prüfskripte, beide Codes:
+  Diskrepanz 8**, Quotient 8/sqrt(24) = 1,633. Kein Spencer-Rekord (dafür <= 40 Wörter nötig). Regel 1 erfüllt.
+- **Normal:** Norm 13 bei allen 20 Koordinaten. Folgecodes (Koordinate verdreifacht) Länge 22/24/26 mit R=7/8/9 und je
+  48 Wörtern, Radius per Brute-Force bestätigt (`runs/woerter_ext48_*`); für diese keine Prüfskripte gerechnet.
+- Tabellenabgleich (florath, siehe oben): K(20,6) 24–64, K(26,9) 17–56. 48 läge darunter. Neuheit nach Regel 3 offen.
+- Laut Anweisung nach dem Treffer gestoppt: Der geplante K=12-Suchlauf (16 x 1800 s) wurde **nicht** gestartet. Kein K=11.
+  Nicht geprüft: ob die übrigen 52er-Codes (auch die drei aus der Kontrolle) ebenfalls überflüssige Nebenklassen haben.
+
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
 
 Kein Startwert-Fehler im Code erkennbar: `coset_tabu.c` setzt das Zufallsgerät pro Startwert verschieden und würfelt die

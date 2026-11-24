@@ -1,0 +1,1 @@
+seed=5 start=runs/warm/start_K13_aus56_seed2.txt nicht geloest, kleinste Restzahl=6
