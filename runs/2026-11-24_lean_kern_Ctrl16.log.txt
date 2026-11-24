@@ -1,0 +1,5 @@
+Tue Nov 24 19:44:17 UTC 2026
+== timeout 1200 lake build Kern.Ctrl16 (decide +kernel)
+exit 137
+wall 117.039 s, user 0.093 s, sys 0.084 s
+Tue Nov 24 19:46:14 UTC 2026

@@ -1,0 +1,8 @@
+Stufe Hamming7, n = 7, P = 4, Start 20:07:19 UTC
+  ok     Kern/Swar7/Q                     0.4 s 
+  ok     Kern/Hamming7/Q                  0.4 s 
+  ok     Kern/Hamming7/Teil0              0.4 s 
+  ok     Kern/Swar7/Teil0                 0.3 s 
+  ok     Kern/Swar7                       0.3 s 
+  ok     Kern/Hamming7                    0.3 s 
+Stufe Hamming7 fertig, 1.6 s Wand, Ende 20:07:21 UTC

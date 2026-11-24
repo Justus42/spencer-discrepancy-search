@@ -1,0 +1,13 @@
+Tue Nov 24 19:54:33 UTC 2026
+== timeout 1200 lake build Kern.Ctrl16 (decide +kernel, SWAR-Bloecke, s=8)
+✔ [3/9] Built Kern.Swar15.Q (295ms)
+✔ [4/9] Built Ueberdeckung.Daten.Ctrl16 (374ms)
+✔ [5/9] Built Kern.Ctrl16.Q (241ms)
+✔ [6/9] Built Kern.Swar15.Teil0 (26s)
+✔ [7/9] Built Kern.Swar15 (259ms)
+✔ [8/9] Built Kern.Ctrl16.Teil0 (37s)
+✔ [9/9] Built Kern.Ctrl16 (502ms)
+Build completed successfully (9 jobs).
+exit 0
+wall 38.848 s, user 58.650 s, sys 10.670 s
+Tue Nov 24 19:55:12 UTC 2026

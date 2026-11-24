@@ -1,0 +1,36 @@
+Tue Nov 24 19:55:42 UTC 2026
+== timeout 1200 lake build Kern.Had24_1p3 (decide +kernel, SWAR-Bloecke s=8, 4096 Bloecke + swar_ok 2^20)
+✔ [3/23] Built Kern.Swar20.Q (287ms)
+✔ [4/23] Built Ueberdeckung.Daten.Had24_1p3 (782ms)
+✖ [5/23] Building Kern.Swar20.Teil5 (63s)
+error: Lean exited with code 137
+✖ [6/23] Building Kern.Swar20.Teil7 (90s)
+error: Lean exited with code 137
+✖ [7/23] Building Kern.Swar20.Teil6 (134s)
+error: Lean exited with code 137
+✖ [8/23] Building Kern.Swar20.Teil4 (196s)
+error: Lean exited with code 137
+✖ [9/23] Building Kern.Swar20.Teil3 (156s)
+error: Lean exited with code 137
+✔ [10/23] Built Kern.Had24_1p3.Q (985ms)
+✖ [11/23] Building Kern.Swar20.Teil2 (147s)
+error: Lean exited with code 137
+✖ [12/23] Building Kern.Swar20.Teil1 (127s)
+error: Lean exited with code 137
+✖ [13/23] Building Kern.Swar20.Teil0 (117s)
+error: Lean exited with code 137
+✖ [14/23] Building Kern.Had24_1p3.Teil7 (136s)
+error: Lean exited with code 137
+✖ [15/23] Building Kern.Had24_1p3.Teil6 (136s)
+error: Lean exited with code 137
+✖ [16/23] Building Kern.Had24_1p3.Teil5 (171s)
+error: Lean exited with code 137
+✖ [17/23] Building Kern.Had24_1p3.Teil4 (175s)
+error: Lean exited with code 137
+✖ [18/23] Building Kern.Had24_1p3.Teil3 (160s)
+error: Lean exited with code 137
+✖ [20/23] Building Kern.Had24_1p3.Teil2 (167s)
+error: Lean exited with code 137
+✖ [21/23] Building Kern.Had24_1p3.Teil1 (160s)
+error: Lean exited with code 137
+Tue Nov 24 20:06:12 UTC 2026 Lauf von Hand abgebrochen (pkill) nach ca. 10 Min.: alle Teildateien mit Exit 137 (Speichermangel), siehe Protokoll.

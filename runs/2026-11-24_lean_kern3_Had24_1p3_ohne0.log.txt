@@ -1,0 +1,5 @@
+Stufe Had24_1p3_ohne0, n = 20, P = 4, Start 20:24:19 UTC
+  ok     Kern/Had24_1p3_ohne0             0.6 s 
+Stufe Had24_1p3_ohne0 fertig, 1.1 s Wand, Ende 20:24:20 UTC
+exit 0
+Tue Nov 24 20:24:20 UTC 2026

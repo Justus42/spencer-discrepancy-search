@@ -1,0 +1,60 @@
+Tue Nov 24 19:41:38 UTC 2026
+rm -rf .lake; lake build (alle Saetze, native_decide), dann lake env lean Achsen.lean
+✔ [2/14] Built Ueberdeckung.Daten.Hamming7 (260ms)
+✔ [3/14] Built Ueberdeckung.Daten.Ctrl16 (421ms)
+✔ [4/14] Built Ueberdeckung.Daten.Had24_1p3_ohne0 (507ms)
+✔ [5/14] Built Ueberdeckung.Basis (679ms)
+✔ [6/14] Built Ueberdeckung.Daten.Had24_1p3 (545ms)
+✔ [7/14] Built Ueberdeckung.Daten.Had24_2p2 (566ms)
+✔ [8/14] Built Ueberdeckung.Saetze.Hamming7 (466ms)
+✔ [9/14] Built Ueberdeckung.Saetze.Had24_1p3_ohne0 (794ms)
+✔ [10/14] Built Ueberdeckung.Saetze.Ctrl16 (3.3s)
+✔ [11/14] Built Ueberdeckung.Saetze.Had24_2p2 (117s)
+✔ [12/14] Built Ueberdeckung.Saetze.Had24_1p3 (117s)
+✔ [13/14] Built Ueberdeckung (229ms)
+Build completed successfully (14 jobs).
+exit 0
+wall 119.100 s, user 239.447 s, sys 0.995 s
+== Achsen
+'Ueberdeckung.pruefe_iff' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.code_iff_matrix' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Hamming7.hauptsatz' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Hamming7.pruefe_1._native.native_decide.ax_1_1]
+'Ueberdeckung.Hamming7.nicht_radius0' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Hamming7.pruefe_nicht_0._native.native_decide.ax_1_1]
+'Ueberdeckung.Ctrl16.hauptsatz' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Ctrl16.pruefe_4._native.native_decide.ax_1_1]
+'Ueberdeckung.Ctrl16.nicht_radius3' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Ctrl16.pruefe_nicht_3._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_1p3_ohne0.nicht_radius6' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_1p3_ohne0.pruefe_nicht_6._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_1p3.form' does not depend on any axioms
+'Ueberdeckung.Had24_1p3.woerter' does not depend on any axioms
+'Ueberdeckung.Had24_1p3.radius6' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_1p3.pruefe_6._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_1p3.hauptsatz' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_1p3.pruefe_6._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_1p3.nicht_radius5' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_1p3.pruefe_nicht_5._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_2p2.form' does not depend on any axioms
+'Ueberdeckung.Had24_2p2.woerter' does not depend on any axioms
+'Ueberdeckung.Had24_2p2.radius6' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_2p2.pruefe_6._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_2p2.hauptsatz' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_2p2.pruefe_6._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_2p2.nicht_radius5' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_2p2.pruefe_nicht_5._native.native_decide.ax_1_1]
+exit 0
+wall 0.302 s, user 0.224 s, sys 0.081 s
+Tue Nov 24 19:43:38 UTC 2026

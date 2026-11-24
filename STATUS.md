@@ -75,6 +75,11 @@ Eigene bessere Werte außerhalb dieser Tabelle (m > B(8) = 20, also kein Rekordw
 - **Neuheitsprüfung (Regel 3 offen):** Tabellenabgleich florath siehe oben. Gemini fand nichts unter 64; EinsteinArena-Thread 273 nennt
   K(20,6) „known 24..64“, keinen Code unter 64; `Mapika/coldcase` nur q ≥ 5 (A: Neuheit K(20,6) <= 56; A: Offen und unbelegt).
   Originalkonstruktion Östergård–Kaikkonen 1998 nicht einsehbar (A: Literaturstand). Nichts nach außen gemeldet.
+- **K(20,6) ≤ 48 in Lean bewiesen (24.11.2026):** Lean 4.30.0-rc2, nur Kernbibliothek, `lean/`. Satz: jedes x < 2^20 liegt im Abstand ≤ 6
+  von einer Zeile von M oder −M (`had24_1p3_paley12` und `had24_2p2_paley12`); Radius 5 abgelehnt; Prüfschleife als korrekt bewiesen, ohne `sorry`.
+  Zwei Wege: `native_decide` (je 2 Min.) und `decide +kernel` (10,4 bzw. 5,8 Min., Achsen nur `propext`, `Quot.sound`). Kontrollen Hamming [7,4], `ctrl_16`,
+  Negativkontrolle (48er ohne ein Paar) wie erwartet. Grenzen: Lean liest die Kontrolldatei nicht selbst (Erzeuger + Prüfsumme), Reduktion auf die
+  Diskrepanz nicht formalisiert, Neuheit offen. L: 2026-11-24_lean
 
 ## Negativbefunde
 
@@ -139,6 +144,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
   - Sol 7, tieferes Ziel 4 (`sieb.py --ziel 4 --zeit 0.05 --max-sek 120`): an der Zeitgrenze bei 9 137 von 17 920 Matrizen abgebrochen, alle bis dahin ohne Treffer; Datei verworfen, Familienwert deshalb mit Stichprobe exakt belegt.
   - Sieb mit 0,05 s je Matrix bleibt bei Sol 4 in 7 von 2 174 Fällen über dem exakten Wert (7 statt 5): zu kurze Zeit, nur Suchcode; die exakte Rechnung entscheidet.
 - 24.11.2026, Status-Umzug: Commit-Daten über github.com (`.patch`) Proxy 403, statt dessen Git-Abruf; erster Lauf `offene_zellen.py` am CSV-Kopf gescheitert (Spalte `q`), je Sekunden.
+- 24.11.2026, Lean-Zertifikat: Kernel-Prüfung zweimal Speichermangel (einfache Schleife am Stück 117 s; 8 x 512 Blocksätze über `lake build` ca. 10 Min.), Namenskonflikt beim Neubau 2 Min.; `lakecache.blob.core.windows.net` Proxy 403 (L: 2026-11-24_lean).
 
 ## Offene Punkte
 

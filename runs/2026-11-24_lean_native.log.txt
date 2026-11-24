@@ -1,0 +1,29 @@
+Tue Nov 24 19:37:37 UTC 2026
+Lean (version 4.30.0-rc2, x86_64-unknown-linux-gnu, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)
+== lake build Ueberdeckung.Saetze.Hamming7
+Build completed successfully (4 jobs).
+exit 0
+wall 0.153 s, user 0.028 s, sys 0.031 s
+== lake build Ueberdeckung.Saetze.Ctrl16
+Build completed successfully (4 jobs).
+exit 0
+wall 0.157 s, user 0.052 s, sys 0.012 s
+== lake build Ueberdeckung.Saetze.Had24_1p3_ohne0
+✔ [3/4] Built Ueberdeckung.Daten.Had24_1p3_ohne0 (413ms)
+✔ [4/4] Built Ueberdeckung.Saetze.Had24_1p3_ohne0 (726ms)
+Build completed successfully (4 jobs).
+exit 0
+wall 1.260 s, user 1.197 s, sys 0.144 s
+== lake build Ueberdeckung.Saetze.Had24_1p3
+✔ [3/4] Built Ueberdeckung.Daten.Had24_1p3 (428ms)
+✔ [4/4] Built Ueberdeckung.Saetze.Had24_1p3 (115s)
+Build completed successfully (4 jobs).
+exit 0
+wall 115.498 s, user 114.309 s, sys 0.210 s
+== lake build Ueberdeckung.Saetze.Had24_2p2
+✔ [3/4] Built Ueberdeckung.Daten.Had24_2p2 (405ms)
+✔ [4/4] Built Ueberdeckung.Saetze.Had24_2p2 (114s)
+Build completed successfully (4 jobs).
+exit 0
+wall 114.887 s, user 113.723 s, sys 0.190 s
+Tue Nov 24 19:41:29 UTC 2026
