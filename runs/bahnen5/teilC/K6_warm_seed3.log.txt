@@ -8,3 +8,23 @@ n=20 R=6 K=6: 104856 volle Bahnen, 8 Paare, Kugel 60460, Matrix 1.37 GB, mittler
   Wegfall Bahn 123316 deckt 8860 Punkte auf
 gestrichen: Bahn 5459 (612 Punkte)
 [seed 3] Start f=612 (Warmstart)
+[seed 3] t=30s Schritt 5056 f=558 bester=152 Neustarts=0
+[seed 3] t=61s Schritt 10176 f=872 bester=152 Neustarts=0
+[seed 3] t=91s Schritt 15424 f=434 bester=152 Neustarts=0
+[seed 3] t=121s Schritt 19968 f=964 bester=134 Neustarts=0
+[seed 3] t=151s Schritt 25856 f=540 bester=122 Neustarts=0
+[seed 3] t=181s Schritt 32256 f=422 bester=122 Neustarts=0
+[seed 3] t=211s Schritt 38976 f=374 bester=122 Neustarts=0
+[seed 3] t=241s Schritt 44608 f=212 bester=116 Neustarts=0
+[seed 3] t=272s Schritt 50496 f=372 bester=116 Neustarts=0
+[seed 3] t=302s Schritt 57280 f=494 bester=116 Neustarts=0
+[seed 3] t=332s Schritt 65024 f=352 bester=116 Neustarts=0
+[seed 3] t=362s Schritt 71488 f=866 bester=116 Neustarts=1
+[seed 3] t=392s Schritt 77568 f=444 bester=116 Neustarts=1
+[seed 3] t=422s Schritt 84288 f=314 bester=116 Neustarts=1
+[seed 3] t=453s Schritt 92736 f=412 bester=116 Neustarts=1
+[seed 3] t=483s Schritt 100672 f=284 bester=116 Neustarts=1
+[seed 3] t=513s Schritt 108352 f=414 bester=116 Neustarts=1
+[seed 3] t=543s Schritt 115264 f=418 bester=116 Neustarts=2
+[seed 3] t=573s Schritt 122240 f=388 bester=116 Neustarts=2
+[seed 3] NICHT geloest nach 600.2 s, Schritte 127744, Neustarts 2, beste Restzahl 116 Punkte; beste Bahnen: 51486 123749 46288 101704 49003 166599

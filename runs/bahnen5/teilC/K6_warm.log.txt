@@ -1,1 +1,50 @@
 Start 16:27:06 UTC
+Ende 16:37:24 UTC
+== Start aus K7 seed 1
+n=20 R=6 K=6: 104856 volle Bahnen, 8 Paare, Kugel 60460, Matrix 1.37 GB, mittlere Zeile 46120, Aufbau 17.4 s
+  Wegfall Bahn 52258 deckt 7282 Punkte auf
+  Wegfall Bahn 193131 deckt 3750 Punkte auf
+  Wegfall Bahn 110925 deckt 1520 Punkte auf
+  Wegfall Bahn 196055 deckt 6742 Punkte auf
+  Wegfall Bahn 116765 deckt 3602 Punkte auf
+  Wegfall Bahn 41391 deckt 3092 Punkte auf
+  Wegfall Bahn 52177 deckt 1682 Punkte auf
+gestrichen: Bahn 110925 (1520 Punkte)
+[seed 1] Start f=1520 (Warmstart)
+[seed 1] NICHT geloest nach 600.0 s, Schritte 133248, Neustarts 3, beste Restzahl 94 Punkte; beste Bahnen: 52746 125408 43639 130394 193404 37297
+== Start aus K7 seed 2
+n=20 R=6 K=6: 104856 volle Bahnen, 8 Paare, Kugel 60460, Matrix 1.37 GB, mittlere Zeile 46120, Aufbau 17.5 s
+  Wegfall Bahn 59873 deckt 5214 Punkte auf
+  Wegfall Bahn 36575 deckt 3444 Punkte auf
+  Wegfall Bahn 41198 deckt 1830 Punkte auf
+  Wegfall Bahn 5479 deckt 720 Punkte auf
+  Wegfall Bahn 128555 deckt 9910 Punkte auf
+  Wegfall Bahn 167992 deckt 5282 Punkte auf
+  Wegfall Bahn 56402 deckt 3114 Punkte auf
+gestrichen: Bahn 5479 (720 Punkte)
+[seed 2] Start f=720 (Warmstart)
+[seed 2] NICHT geloest nach 600.2 s, Schritte 118912, Neustarts 3, beste Restzahl 116 Punkte; beste Bahnen: 100173 178884 127067 37788 11665 179707
+== Start aus K7 seed 3
+n=20 R=6 K=6: 104856 volle Bahnen, 8 Paare, Kugel 60460, Matrix 1.37 GB, mittlere Zeile 46120, Aufbau 17.6 s
+  Wegfall Bahn 34404 deckt 6924 Punkte auf
+  Wegfall Bahn 121843 deckt 1152 Punkte auf
+  Wegfall Bahn 195169 deckt 3662 Punkte auf
+  Wegfall Bahn 60755 deckt 3472 Punkte auf
+  Wegfall Bahn 5459 deckt 612 Punkte auf
+  Wegfall Bahn 168893 deckt 1164 Punkte auf
+  Wegfall Bahn 123316 deckt 8860 Punkte auf
+gestrichen: Bahn 5459 (612 Punkte)
+[seed 3] Start f=612 (Warmstart)
+[seed 3] NICHT geloest nach 600.2 s, Schritte 127744, Neustarts 2, beste Restzahl 116 Punkte; beste Bahnen: 51486 123749 46288 101704 49003 166599
+== Start aus K7 seed 4
+n=20 R=6 K=6: 104856 volle Bahnen, 8 Paare, Kugel 60460, Matrix 1.37 GB, mittlere Zeile 46120, Aufbau 17.0 s
+  Wegfall Bahn 194679 deckt 1312 Punkte auf
+  Wegfall Bahn 109480 deckt 8952 Punkte auf
+  Wegfall Bahn 35539 deckt 4300 Punkte auf
+  Wegfall Bahn 62696 deckt 3632 Punkte auf
+  Wegfall Bahn 59255 deckt 3342 Punkte auf
+  Wegfall Bahn 3124 deckt 4364 Punkte auf
+  Wegfall Bahn 164267 deckt 530 Punkte auf
+gestrichen: Bahn 164267 (530 Punkte)
+[seed 4] Start f=530 (Warmstart)
+[seed 4] NICHT geloest nach 600.3 s, Schritte 146048, Neustarts 3, beste Restzahl 118 Punkte; beste Bahnen: 181296 107474 34865 57036 43567 51138
