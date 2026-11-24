@@ -355,6 +355,7 @@ mit derselben Lösung nach Schritt 2011, der Messmodus ändert also nichts.
 
 - Block 1, Typ (13,9), Startwerte 1–4 (06:35–07:05 UTC): **0 von 4 gelöst.** Beste Restzahl: 7 / 2 / 6 / 7.
   Je ca. 62 000 Schritte in 1800 s (ca. 29 ms je Schritt bei 4 parallel; zum Vergleich (20,6): ca. 386 000).
+- Block 2, Typ (13,9), Startwerte 5–8 (07:05–07:35 UTC): **0 von 4 gelöst.** Beste Restzahl: 2 / 2 / 3 / **1**.
 
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
 
