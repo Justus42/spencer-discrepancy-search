@@ -1,0 +1,1 @@
+seed=6 GELOEST (1686s it=57794 r=9) Woerter=52 selbstkompl=True Radius(Brute-Force)=7 Datei=runs/skal22/woerter_n22_R7_d2_K13_typ12-10_seed6.txt

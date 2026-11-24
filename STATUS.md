@@ -360,6 +360,9 @@ mit derselben Lösung nach Schritt 2011, der Messmodus ändert also nichts.
   (28 330 Schritte), 2 nach 84 s (3 012), 4 nach 377 s (13 429). Startwert 3: beste Restzahl 8. Alle drei selbstkomplementär,
   Radius per Brute-Force 7. Wörter `runs/skal22/woerter_n22_R7_d2_K13_typ12-10_seed{1,2,4}.txt`, Matrizen
   `runs/skal22/matrix_n22_52w_typ12-10_seed{1,2,4}.txt` (26 x 22, `_pad` 26 x 26). **Beide Prüfskripte, alle drei: Diskrepanz 8.**
+- Block 4, Typ (12,10), Startwerte 5–8 (08:06–08:36 UTC): **3 von 4 gelöst**, 52 Wörter: Startwert 5 nach 604 s (20 365 Schritte),
+  6 nach 1686 s (57 794), 8 nach 50 s (1 720). Startwert 7: beste Restzahl 8. Selbstkomplementär, Radius per Brute-Force 7.
+  Wörter/Matrizen wie oben mit `seed{5,6,8}`. **Beide Prüfskripte, alle drei: Diskrepanz 8.** Die sechs (12,10)-Codes sind paarweise verschieden.
 
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
 
