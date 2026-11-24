@@ -8,3 +8,9 @@ verschiedene kleine Masken: 55712
 Matrix controls/had24_1p3_paley12.txt: 24 Zeilen in 8 Bahnen, Groessen: 3 3 3 3 3 3 3 3; Zeilen der Bahnen zusammen 24; offene Punktklassen danach: 0 -> UEBERDECKUNG
 48er-Bahnen (Vertreter/Gewicht): 0/3 238034/3 92343/3 119017/3 2047/3 239149/3 94024/3 120598/3
 zaehle B=24 max9=0: erste Verzweigung Punktklasse 77976 (Groesse 1), 56 Kandidaten, Bereich [0, 4)
+  Fortschritt: 1 / 4 erste Zweige fertig (zuletzt i=3), Knoten 2191239556, 189 s
+  Fortschritt: 3 / 4 erste Zweige fertig (zuletzt i=1), Knoten 3095577237, 336 s
+  Fortschritt: 4 / 4 erste Zweige fertig (zuletzt i=0), Knoten 3720973043, 539 s
+ERGEBNIS B=24 max9=0 Bereich [0, 4) von 56: Ueberdeckungen (alle Bahnmengen, auch nicht minimale) nach Neunerbahnen und Zeilen:
+  keine
+Knoten 3720973043, Laufzeit 539.3 s
