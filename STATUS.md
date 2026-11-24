@@ -533,6 +533,22 @@ bleibt die Stufe dort ungelöst, folgen die übrigen Typen (Abweichung von der R
 Kein neuer Wert, kein Rekordkandidat. Die Methode (d=2, Zufallsstart, 300–1800 s) reicht bei (18,5) nur bis zum bekannten Wert 64; bei (21,6) und (23,7) kommt sie
 in dieser Laufzeit nicht einmal an 64 bzw. 60 Wörter heran. Schrittzahl je Lauf: ca. 280 000 (18,5), 67 000 (21,6), 30 000 (23,7). Nichts nach außen gemeldet.
 
+## Gegenrechnung des Prüfvermerks, Teil A (24.11.2026, Cloud, eigener Code)
+
+Eigenes exaktes Programm `src/exakt_disc.c` (Prüfcode: Gray-Code über alle 2^(n-1) Vorzeichenvektoren, int8, nur ganze Zahlen,
+jeder Zeuge im Programm und noch einmal in Python nachgerechnet), Treiber `src/gegenrechnung_a.py`. Logs und Zeugen in `runs/teilA/`.
+Vorab reproduziert: alle 9 Dateien in `controls/` (8, 5, 5, 7, 7, 7, 7, 6, 8, 8 wie bekannt).
+
+1. **Hadamard 20 ohne zwei Spalten:** 3 Klassen und Transponierte, je alle 190 Paare: **alle 1140 Fälle exakt 6** (1 s). Bestätigt.
+2. **Hadamard 24 ohne drei Spalten:** 60 McKay-Klassen und Transponierte, je alle 2024 Tripel: **alle 242 880 Fälle exakt 7**
+   (nicht nur höchstens 7; 5 Min. auf 4 Kernen). Zeugen gespeichert: `runs/teilA/a2_zeugen_24x21.txt.gz`, unabhängig in Python
+   nachgerechnet (größter Betrag 7, 0 Abweichungen). Bestätigt.
+3. **Paley-Konferenzmatrizen:** Ordnung 14: 5 (Rekord bräuchte 7), Ordnung 18: 5 (bräuchte 9), zusätzlich Ordnung 6: 3, Ordnung 10
+   (GF(9)): 3 (bräuchte 7). Konferenzeigenschaft geprüft. Bestätigt; Ordnung 10 neu gerechnet, kein Kandidat.
+4. **Normalität `controls/had24_1p3_paley12.txt`:** 48 Wörter, Radius 6, **Norm 13 in allen 20 Koordinaten**. Bestätigt.
+
+Gegenproben mit `check_disc.py`: Konferenz 14 und 18 (auch `verify_spencer.py`), 6 zufällige Paare aus 1, 4 zufällige Tripel aus 2: alle gleich.
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
@@ -556,4 +572,5 @@ Syndrome) und können in einer Cloud-Sitzung laufen. Die GPU wird erst für 25/8
 - `src/construct_48.py`: Paley-12-Doppelung, Bauregel 1+3 und 2+2 (Teil B), schreibt `controls/had24_*`.
 - `src/pruefe_mckay.py`: Gegenrechnung der 60 McKay-Matrizen. `src/streichtest.py`: Prüfcode, überflüssige Nebenklassen.
 - `src/hadamard_tests.py`: exakte Diskrepanz (Meet-in-the-middle, int8), Kontrollen, Test A/B, Überdeckungsradius, Nachprüfung der Gegenbeispiele für Test C. Kein Suchcode.
+- `src/exakt_disc.c`: Prüfcode, exakte Diskrepanz per Gray-Code (auch mit gestrichenen Spalten, `-s k`). `src/gegenrechnung_a.py`: Teil A.
 - `src/gegenbeispiel40.c`: Suchcode für Test C (Tabu-Suche auf Vorzeichenvektoren). Bauen: `gcc -O3 -march=native -o build/gegenbeispiel40 src/gegenbeispiel40.c`.

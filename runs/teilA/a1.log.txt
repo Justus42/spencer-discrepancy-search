@@ -1,0 +1,10 @@
+had20_klasse1: 190 Paare, Diskrepanz-Verteilung {6: 190}, Zeugen nachgerechnet, Fehler 0
+had20_klasse1 transponiert: 190 Paare, Diskrepanz-Verteilung {6: 190}, Zeugen nachgerechnet, Fehler 0
+had20_klasse2: 190 Paare, Diskrepanz-Verteilung {6: 190}, Zeugen nachgerechnet, Fehler 0
+had20_klasse2 transponiert: 190 Paare, Diskrepanz-Verteilung {6: 190}, Zeugen nachgerechnet, Fehler 0
+had20_klasse3: 190 Paare, Diskrepanz-Verteilung {6: 190}, Zeugen nachgerechnet, Fehler 0
+had20_klasse3 transponiert: 190 Paare, Diskrepanz-Verteilung {6: 190}, Zeugen nachgerechnet, Fehler 0
+
+real	0m0.969s
+user	0m1.272s
+sys	0m0.036s

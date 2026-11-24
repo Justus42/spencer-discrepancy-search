@@ -1,0 +1,7 @@
+48 Wörter, Länge 20, Überdeckungsradius 6 (2R+1 = 13)
+Norm je Koordinate: [13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13]
+normal (alle Normen <= 2R+1): True
+
+real	0m1.284s
+user	0m0.967s
+sys	0m0.670s
