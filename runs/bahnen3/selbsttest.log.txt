@@ -1,0 +1,33 @@
+  (b) Paare von Neunerbahnen: paare() 424261070, alle Paare durchprobiert 424261070
+SELBSTTEST seed=1 k=12 b2=5: GLEICH
+  (b) Paare von Neunerbahnen: paare() 123529183, alle Paare durchprobiert 123529183
+SELBSTTEST seed=2 k=20 b2=4: GLEICH
+  (b) Paare von Neunerbahnen: paare() 31799654, alle Paare durchprobiert 31799654
+SELBSTTEST seed=4 k=30 b2=3: GLEICH
+  (b) Paare von Neunerbahnen: paare() 16352980, alle Paare durchprobiert 16352980
+SELBSTTEST seed=5 k=40 b2=5: GLEICH
+  (a) Gewicht 6: phaseB 423, Durchprobieren 423
+  (a) Gewicht 7: phaseB 3384, Durchprobieren 3384
+SELBSTTEST seed=6 k=3 b2=7: GLEICH
+  (a) Gewicht 3: phaseB 1, Durchprobieren 1
+  (a) Gewicht 4: phaseB 30, Durchprobieren 30
+  (a) Gewicht 5: phaseB 291, Durchprobieren 291
+  (a) Gewicht 6: phaseB 2075, Durchprobieren 2075
+SELBSTTEST seed=7 k=4 b2=6: GLEICH
+  (a) Gewicht 3: phaseB 1, Durchprobieren 1
+  (a) Gewicht 4: phaseB 9, Durchprobieren 9
+  (a) Gewicht 5: phaseB 35, Durchprobieren 35
+  (a) Gewicht 6: phaseB 473, Durchprobieren 473
+  (a) Gewicht 7: phaseB 3715, Durchprobieren 3715
+  (a) Gewicht 8: phaseB 14273, Durchprobieren 14273
+SELBSTTEST seed=8 k=5 b2=8: GLEICH
+  (a) Gewicht 1: phaseB 1, Durchprobieren 1
+  (a) Gewicht 2: phaseB 7, Durchprobieren 7
+  (a) Gewicht 3: phaseB 54, Durchprobieren 54
+  (a) Gewicht 4: phaseB 495, Durchprobieren 495
+  (a) Gewicht 5: phaseB 2193, Durchprobieren 2193
+  (a) Gewicht 6: phaseB 10681, Durchprobieren 10681
+  (a) Gewicht 7: phaseB 64084, Durchprobieren 64084
+  (a) Gewicht 8: phaseB 238869, Durchprobieren 238869
+  (a) Gewicht 9: phaseB 928016, Durchprobieren 928016
+SELBSTTEST seed=9 k=2 b2=9: GLEICH

@@ -1,0 +1,13 @@
+Tue Nov 24 23:23:17 UTC 2026
+src/check_disc.py: OK
+verifiers/verify_spencer.py: OK
+src/exakt_disc.c: OK
+Matrix runs/bahnen3/teil4/kontrolle_T24_seed4_matrix.txt: 24 x 20, aufgefuellt 24 x 24
+  check_disc      Diskrepanz 8  (0.6 s)
+  verify_spencer  Diskrepanz 8  (0.6 s)
+  exakt_disc      Diskrepanz 8  (0.6 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+
+real	0m0.593s
+user	0m1.079s
+sys	0m0.106s

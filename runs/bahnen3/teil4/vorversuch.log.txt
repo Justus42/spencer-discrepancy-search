@@ -1,0 +1,5 @@
+Vorversuche Tabu (Funktionstest, keine Kontrolle), T=24, Element Zeile 1 der P-Datei:
+- exakte Gewinnpflege, Startwerte 1-4, je 90 s: 2176-7968 Schritte (20-90/s), beste Restzahl 493, 710, 509, 860 Zeilenpaare
+- Stichprobe 1000, Startwerte 1-2, je 120 s (gleichzeitig mit dem naechsten Lauf): ~30 000 Schritte (250/s), beste Restzahl 683, 558
+- Stichprobe 4000, Startwerte 3-4, je 120 s: ~8 500 Schritte (70/s), beste Restzahl 626, 1020
+Wahl fuer die Kontrolle: Stichprobe 1000.
