@@ -112,4 +112,146 @@ theorem code_iff_matrix (n r : Nat) (M : List (List Int)) :
     obtain ⟨z, hz, hd⟩ := H x hx
     exact ⟨wort z, ⟨z, hz, rfl⟩, by rw [abstand_wort]; exact hd⟩
 
+/-! ## Blockweise Prüfung (für den Kernel-Versuch: je Block ein eigener Satz) -/
+
+/-- Gilt `f` auf jedem Block `{b * 2^s + y | y < 2^s}` für alle `b < 2^(n-s)`, so gilt `f` unterhalb `2^n`. -/
+theorem alle_aus_bloecken (n s : Nat) (f : Nat → Bool) (hs : s ≤ n)
+    (h : ∀ b, b < 2 ^ (n - s) → alleUnter s (fun y => f (b * 2 ^ s + y)) = true) :
+    ∀ x, x < 2 ^ n → f x = true := by
+  intro x hx
+  have hp : 0 < 2 ^ s := Nat.pow_pos (by decide)
+  have hn : 2 ^ n = 2 ^ (n - s) * 2 ^ s := by rw [← Nat.pow_add, Nat.sub_add_cancel hs]
+  have hb : x / 2 ^ s < 2 ^ (n - s) := by
+    rw [Nat.div_lt_iff_lt_mul hp, ← hn]; exact hx
+  have hy : x % 2 ^ s < 2 ^ s := Nat.mod_lt _ hp
+  have := (alleUnter_iff s _).1 (h _ hb) _ hy
+  rwa [show x / 2 ^ s * 2 ^ s + x % 2 ^ s = x by
+    rw [Nat.mul_comm]; exact Nat.div_add_mod x (2 ^ s)] at this
+
+/-- Sammelschritt: aus `P b` für alle `b < k` und `P k` folgt `P b` für alle `b < k + 1`. -/
+theorem bis_succ {P : Nat → Prop} {k : Nat} (h : ∀ b, b < k → P b) (hk : P k) :
+    ∀ b, b < k + 1 → P b := by
+  intro b hb
+  rcases Nat.lt_succ_iff_lt_or_eq.1 hb with h' | rfl
+  · exact h b h'
+  · exact hk
+
+theorem bis_null {P : Nat → Prop} : ∀ b, b < 0 → P b := fun _ h => absurd h (Nat.not_lt_zero _)
+
+/-! ## Rechenform für den Kernel: XOR und Bitzählung -/
+
+/-- Anzahl der Einsen in den unteren `k` Bits von `v`. -/
+def einsen : Nat → Nat → Nat
+  | 0, _ => 0
+  | k + 1, v => v % 2 + einsen k (v / 2)
+
+theorem einsen_xor (k x y : Nat) : einsen k (x ^^^ y) = abstandR k x y := by
+  induction k generalizing x y with
+  | zero => rfl
+  | succ k ih =>
+    simp only [einsen, abstandR, Nat.xor_div_two, ih]
+    congr 1
+    have h1 := @Nat.xor_mod_two_eq_one x y
+    rcases Nat.mod_two_eq_zero_or_one x with hx | hx <;>
+      rcases Nat.mod_two_eq_zero_or_one y with hy | hy <;>
+      rcases Nat.mod_two_eq_zero_or_one (x ^^^ y) with hz | hz <;>
+      simp_all
+
+/-- Gibt es in `W` ein Wort im Abstand höchstens `r` von `x`? -/
+def nahe (n r x : Nat) : List Nat → Bool
+  | [] => false
+  | c :: W => Nat.ble (einsen n (x ^^^ c)) r || nahe n r x W
+
+theorem nahe_iff (n r x : Nat) (W : List Nat) :
+    nahe n r x W = true ↔ ∃ c ∈ W, abstand n x c ≤ r := by
+  induction W with
+  | nil => simp [nahe]
+  | cons c W ih =>
+    simp only [nahe, Bool.or_eq_true, Nat.ble_eq, ih, einsen_xor, abstandR_eq_abstand, List.mem_cons]
+    constructor
+    · rintro (h | ⟨d, hd, h⟩)
+      · exact ⟨c, Or.inl rfl, h⟩
+      · exact ⟨d, Or.inr hd, h⟩
+    · rintro ⟨d, (rfl | hd), h⟩
+      · exact Or.inl h
+      · exact Or.inr ⟨d, hd, h⟩
+
+/-- Block `b` der Größe `2^s` mit der Kernel-Rechenform. -/
+def blockK (n r s b : Nat) (W : List Nat) : Bool :=
+  alleUnter s (fun y => nahe n r (b * 2 ^ s + y) W)
+
+/-- Bestehen alle Blöcke, gilt die Überdeckungsaussage. -/
+theorem aus_bloecken (n r s : Nat) (W : List Nat) (hs : s ≤ n)
+    (h : ∀ b, b < 2 ^ (n - s) → blockK n r s b W = true) :
+    ∀ x, x < 2 ^ n → ∃ c ∈ W, abstand n x c ≤ r := fun x hx =>
+  (nahe_iff n r x W).1 (alle_aus_bloecken n s (fun x => nahe n r x W) hs h x hx)
+
+/-! ## Schnelle Bitzählung (SWAR) für den Kernel
+
+`swar` benutzt nur Kernel-beschleunigte Operationen (`Nat.land`, `Nat.shiftRight`, `Nat.add`, `Nat.mul`) mit rohen
+Zahlliteralen. Ihre Richtigkeit wird nicht allgemein bewiesen, sondern durch Nachrechnen aller
+Werte `v < 2^m` gegen `einsen m` im Kernel (`swar_aus_bloecken`). -/
+
+/-- Bitzählung nach dem SWAR-Verfahren (für Zahlen unter `2^32` gedacht). -/
+def swar (v : Nat) : Nat :=
+  let a := Nat.add (Nat.land v (nat_lit 0x55555555)) (Nat.land (Nat.shiftRight v (nat_lit 1)) (nat_lit 0x55555555))
+  let b := Nat.add (Nat.land a (nat_lit 0x33333333)) (Nat.land (Nat.shiftRight a (nat_lit 2)) (nat_lit 0x33333333))
+  let c := Nat.land (Nat.add b (Nat.shiftRight b (nat_lit 4))) (nat_lit 0x0F0F0F0F)
+  Nat.land (Nat.shiftRight (Nat.mul c (nat_lit 0x01010101)) (nat_lit 24)) (nat_lit 0xFF)
+
+/-- Block `b` der Größe `2^s` für den Vergleich `swar = einsen m`. -/
+def swarBlock (m s b : Nat) : Bool :=
+  alleUnter s (fun y => Nat.beq (swar (b * 2 ^ s + y)) (einsen m (b * 2 ^ s + y)))
+
+theorem swar_aus_bloecken (m s : Nat) (hs : s ≤ m) (h : ∀ b, b < 2 ^ (m - s) → swarBlock m s b = true) :
+    ∀ v, v < 2 ^ m → swar v = einsen m v := fun v hv =>
+  Nat.eq_of_beq_eq_true (alle_aus_bloecken m s (fun v => Nat.beq (swar v) (einsen m v)) hs h v hv)
+
+/-- Wie `nahe`, aber mit `swar` und `Nat.xor`. -/
+def naheS (r x : Nat) : List Nat → Bool
+  | [] => false
+  | c :: W => Nat.ble (swar (Nat.xor x c)) r || naheS r x W
+
+theorem naheS_iff {n r x : Nat} {W : List Nat} (hswar : ∀ v, v < 2 ^ n → swar v = einsen n v)
+    (hx : x < 2 ^ n) (hW : ∀ c ∈ W, c < 2 ^ n) :
+    naheS r x W = true ↔ ∃ c ∈ W, abstand n x c ≤ r := by
+  induction W with
+  | nil => simp [naheS]
+  | cons c W ih =>
+    have hc := hW c (List.mem_cons_self ..)
+    have he : swar (Nat.xor x c) = abstand n x c := by
+      show swar (x ^^^ c) = abstand n x c
+      rw [hswar _ (Nat.xor_lt_two_pow hx hc), einsen_xor, abstandR_eq_abstand]
+    simp only [naheS, Bool.or_eq_true, Nat.ble_eq, he, ih (fun d hd => hW d (List.mem_cons_of_mem _ hd)),
+      List.mem_cons]
+    constructor
+    · rintro (h | ⟨d, hd, h⟩)
+      · exact ⟨c, Or.inl rfl, h⟩
+      · exact ⟨d, Or.inr hd, h⟩
+    · rintro ⟨d, (rfl | hd), h⟩
+      · exact Or.inl h
+      · exact Or.inr ⟨d, hd, h⟩
+
+/-- Block `b` der Größe `2^s` mit `naheS`. -/
+def blockS (r s b : Nat) (W : List Nat) : Bool :=
+  alleUnter s (fun y => naheS r (b * 2 ^ s + y) W)
+
+theorem aus_bloeckenS {n : Nat} (hswar : ∀ v, v < 2 ^ n → swar v = einsen n v) (r s : Nat) (W : List Nat)
+    (hs : s ≤ n) (hW : ∀ c ∈ W, c < 2 ^ n)
+    (h : ∀ b, b < 2 ^ (n - s) → blockS r s b W = true) :
+    ∀ x, x < 2 ^ n → ∃ c ∈ W, abstand n x c ≤ r := fun x hx =>
+  (naheS_iff hswar hx hW).1 (alle_aus_bloecken n s (fun x => naheS r x W) hs h x hx)
+
+/-! ## Zusammensetzen vieler Blocksätze (Baum statt Kette, damit die Schachtelung flach bleibt) -/
+
+theorem baum_blatt (P : Nat → Prop) (o : Nat) (h : P o) : ∀ j, j < 1 → P (o + j) := by
+  intro j hj; rw [show j = 0 by omega, Nat.add_zero]; exact h
+
+theorem baum_knoten (P : Nat → Prop) (o k : Nat) (h1 : ∀ j, j < k → P (o + j))
+    (h2 : ∀ j, j < k → P (o + k + j)) : ∀ j, j < k + k → P (o + j) := by
+  intro j hj
+  by_cases h : j < k
+  · exact h1 j h
+  · have := h2 (j - k) (by omega); rwa [Nat.add_assoc, Nat.add_sub_cancel' (by omega)] at this
+
 end Ueberdeckung

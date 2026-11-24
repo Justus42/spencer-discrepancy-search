@@ -11,6 +11,9 @@ theorem form : matrix.length = 24 ∧ ∀ z ∈ matrix, z.length = 20 ∧ ∀ e 
 /-- 48 Wörter (Zeilen und Komplemente), paarweise verschieden. -/
 theorem woerter : (code matrix).length = 48 ∧ (code matrix).Nodup := by decide
 
+/-- Die vom Erzeuger geschriebene Wortliste ist genau `code matrix`. -/
+theorem woerter_eq : code matrix = woerter := by decide
+
 /-- Prüfschleife, Radius 6. -/
 theorem pruefe_6 : pruefe 20 6 (code matrix) = true := by native_decide
 

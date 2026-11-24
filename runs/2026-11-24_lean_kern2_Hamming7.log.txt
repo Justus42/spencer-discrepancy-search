@@ -1,0 +1,13 @@
+Tue Nov 24 19:54:27 UTC 2026
+== timeout 1200 lake build Kern.Hamming7 (decide +kernel, SWAR-Bloecke)
+✔ [3/9] Built Ueberdeckung.Daten.Hamming7 (270ms)
+✔ [4/9] Built Kern.Swar7.Q (252ms)
+✔ [5/9] Built Kern.Hamming7.Q (212ms)
+✔ [6/9] Built Kern.Swar7.Teil0 (271ms)
+✔ [7/9] Built Kern.Hamming7.Teil0 (312ms)
+✔ [8/9] Built Kern.Swar7 (222ms)
+✔ [9/9] Built Kern.Hamming7 (270ms)
+Build completed successfully (9 jobs).
+exit 0
+wall 1.157 s, user 1.419 s, sys 0.514 s
+Tue Nov 24 19:54:28 UTC 2026

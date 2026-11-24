@@ -7,8 +7,11 @@ Prüft vor dem Schreiben:
     --ohne-nullspalten (die werden gestrichen); danach nur noch ±1,
   * Zeilenzahl gleich --zeilen und Länge gleich --laenge (nach dem Streichen, vor --ohne-zeile).
 
-Schreibt lean/Ueberdeckung/Daten/<Modul>.lean. Die Matrix wird unverändert übernommen (Einträge als ganze
-Zahlen); Wörter, Komplemente und Abstände bildet erst Lean (`Ueberdeckung.code`). Erzeugte Dateien nie von Hand ändern.
+Schreibt lean/Ueberdeckung/Daten/<Modul>.lean mit
+  * `matrix`: die Matrix unverändert (Einträge als ganze Zahlen),
+  * `woerter`: die Wortliste (erst die Zeilen, dann ihre Komplemente = Zeilen von -M; Bit j = 1 genau dann, wenn
+    Eintrag j = -1). Lean beweist `code matrix = woerter` selbst (Sätze `woerter_eq`), die Liste ist also nur eine Abkürzung.
+Erzeugte Dateien nie von Hand ändern.
 
 Aufruf:  python3 lean/erzeuge.py DATEI --sha256 HEX --zeilen N --laenge M --modul NAME
                                 [--ohne-nullspalten] [--ohne-zeile I]
@@ -95,12 +98,20 @@ def main():
     ]
     rumpf = ["  [%s]%s" % (", ".join(str(e) for e in z), "," if i + 1 < len(zeilen) else "")
              for i, z in enumerate(zeilen)]
-    fuss = ["]", "", "end Ueberdeckung.%s" % a.modul, ""]
+    def wort(z):
+        return sum(1 << j for j, e in enumerate(z) if e == -1)
+    ws = [wort(z) for z in zeilen] + [wort([-e for e in z]) for z in zeilen]
+    fuss = ["]", "",
+            "/-- Wortliste: Zeilen, dann Komplemente (Lean prüft `code matrix = woerter`). -/",
+            "def woerter : List Nat := [",
+            "  " + ", ".join(str(w) for w in ws),
+            "]", "", "end Ueberdeckung.%s" % a.modul, ""]
     ziel = os.path.join(HIER, "Ueberdeckung", "Daten", a.modul + ".lean")
     os.makedirs(os.path.dirname(ziel), exist_ok=True)
     with open(ziel, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(kopf + rumpf + fuss))
-    print("geschrieben: %s (%d Zeilen, Länge %d)" % (os.path.relpath(ziel, os.path.dirname(HIER)), len(zeilen), len(zeilen[0])))
+    print("geschrieben: %s (%d Zeilen, Länge %d, %d Wörter, %d verschieden)"
+          % (os.path.relpath(ziel, os.path.dirname(HIER)), len(zeilen), len(zeilen[0]), len(ws), len(set(ws))))
 
 
 if __name__ == "__main__":

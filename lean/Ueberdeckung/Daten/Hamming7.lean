@@ -20,4 +20,9 @@ def matrix : List (List Int) := [
   [1, -1, 1, -1, 1, -1, 1]
 ]
 
+/-- Wortliste: Zeilen, dann Komplemente (Lean prüft `code matrix = woerter`). -/
+def woerter : List Nat := [
+  108, 79, 64, 28, 37, 6, 9, 42, 19, 48, 63, 99, 90, 121, 118, 85
+]
+
 end Ueberdeckung.Hamming7
