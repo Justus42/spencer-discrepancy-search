@@ -295,9 +295,19 @@ def test_b(rng):
 
 
 # ---------------------------------------------------------------- Ordnung 24 (Test A)
-def sammle24(rng, zeit_s):
+def lade_bekannte24():
+    import glob
+    out = {}
+    for f in sorted(glob.glob("runs/hadamard/h24_klasse*.txt")):
+        H = np.loadtxt(f, dtype=np.int64)
+        pruefe_hadamard(H)
+        out[schluessel(H)] = [("geladen " + os.path.basename(f), H)]
+    return out
+
+
+def sammle24(rng, zeit_s, bekannt=None):
     t0 = time.time()
-    klassen = {}
+    klassen = dict(bekannt) if bekannt else {}
 
     def aufnehmen(name, H):
         pruefe_hadamard(H)
@@ -329,13 +339,19 @@ def sammle24(rng, zeit_s):
     return klassen
 
 
-def test_a(rng, zeit_s):
+def test_a(rng, zeit_s, merge=False):
     t0 = time.time()
-    klassen = sammle24(rng, zeit_s)
+    bekannt = lade_bekannte24() if merge else {}
+    klassen = sammle24(rng, zeit_s, bekannt)
     os.makedirs("runs/hadamard", exist_ok=True)
-    print(f"Ordnung 24: {len(klassen)} verschiedene Invarianten-Schluessel gefunden (bekannt: 60 Klassen)")
+    print(f"Ordnung 24: {len(klassen)} verschiedene Invarianten-Schluessel gefunden (bekannt: 60 Klassen); "
+          f"davon neu in diesem Lauf: {len(klassen) - len(bekannt)}")
     tabelle = []
-    for nr, (key, liste) in enumerate(sorted(klassen.items(), key=lambda kv: kv[0]), 1):
+    nr = len(bekannt)
+    for key, liste in sorted(klassen.items(), key=lambda kv: kv[0]):
+        if key in bekannt:
+            continue
+        nr += 1
         name, H = liste[0]
         H = normiere(H)
         schreibe(f"runs/hadamard/h24_klasse{nr:02d}.txt", H)
@@ -353,7 +369,7 @@ def test_a(rng, zeit_s):
             if "spalten_" + tag in zeile:
                 extra += f"; ohne eine Spalte ({tag}): {sorted(set(zeile['spalten_' + tag]))} max {max(zeile['spalten_' + tag])}"
         print(f"  Klasse {nr:2d} ({name}, {len(liste)} Matrizen): disc {d}, Transponierte {dT}, Stichprobe {zeile['gleich']}{extra}")
-    maxd = max(max(z["disc"], z["discT"]) for z in tabelle)
+    maxd = max([max(z["disc"], z["discT"]) for z in tabelle] or [0])
     rekord = [z for z in tabelle for tag in ("H", "HT") if "spalten_" + tag in z and max(z["spalten_" + tag]) >= 9]
     from collections import Counter
     print("Verteilung der vollen Diskrepanz (Matrix):", dict(Counter(z["disc"] for z in tabelle)),
@@ -371,6 +387,6 @@ if __name__ == "__main__":
     elif cmd == "klassen20":
         test_b(rng)
     elif cmd == "klassen24":
-        test_a(rng, float(sys.argv[3]) if len(sys.argv) > 3 else 120.0)
+        test_a(rng, float(sys.argv[3]) if len(sys.argv) > 3 else 120.0, merge=(len(sys.argv) > 4 and sys.argv[4] == 'merge'))
     else:
         print(__doc__)
