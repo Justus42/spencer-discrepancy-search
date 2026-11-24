@@ -1,0 +1,13 @@
+runs/2026-11-24_testC_klasse1_muster13_T10.log.txt: nachgerechnet 3420, fehlend 0, Fehler 0, max 10, min 10, OK
+runs/2026-11-24_testC_klasse1_muster13_T8.log.txt: nachgerechnet 3420, fehlend 0, Fehler 0, max 8, min 8, OK
+runs/2026-11-24_testC_klasse1_muster22_T10.log.txt: nachgerechnet 6840, fehlend 0, Fehler 0, max 10, min 10, OK
+runs/2026-11-24_testC_klasse1_muster22_T8.log.txt: nachgerechnet 6840, fehlend 0, Fehler 0, max 8, min 8, OK
+runs/2026-11-24_testC_klasse2_muster13_T10.log.txt: nachgerechnet 3420, fehlend 0, Fehler 0, max 10, min 10, OK
+runs/2026-11-24_testC_klasse2_muster13_T8.log.txt: nachgerechnet 3420, fehlend 0, Fehler 0, max 8, min 8, OK
+runs/2026-11-24_testC_klasse2_muster22_T10.log.txt: nachgerechnet 6840, fehlend 0, Fehler 0, max 10, min 10, OK
+runs/2026-11-24_testC_klasse2_muster22_T8.log.txt: nachgerechnet 6840, fehlend 0, Fehler 0, max 8, min 8, OK
+runs/2026-11-24_testC_klasse3_muster13_T10.log.txt: nachgerechnet 3420, fehlend 0, Fehler 0, max 10, min 10, OK
+runs/2026-11-24_testC_klasse3_muster13_T8.log.txt: nachgerechnet 3420, fehlend 0, Fehler 0, max 8, min 8, OK
+runs/2026-11-24_testC_klasse3_muster22_T10.log.txt: nachgerechnet 6840, fehlend 0, Fehler 0, max 10, min 10, OK
+runs/2026-11-24_testC_klasse3_muster22_T8.log.txt: nachgerechnet 6840, fehlend 0, Fehler 0, max 8, min 8, OK
+GESAMT T=10: 30780 Vektoren, T=8: 30780 Vektoren, ALLE OK

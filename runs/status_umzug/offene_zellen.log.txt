@@ -1,0 +1,57 @@
+CSV <scratch>/florath.csv: 70828 Bytes, SHA-256 5efaf8d94a3ef15e9efc052233259697fc5f0b5e51389bcc5c8c108b6c3ad1d6 (gleich controls/QUELLEN.md)
+
+d=7: B=15, Woerter hoechstens 2B=30
+  (7,0): FEHLT in der Tabelle
+  (9,1): 62-62, Dichte 0,59, geschlossen
+  (11,2): 37-44, Dichte 0,98, geschlossen
+  (13,3): 28-42, Dichte 1,38, offen
+  (15,4): 23-32, Dichte 1,78, offen
+
+d=8: B=20, Woerter hoechstens 2B=40
+  (8,0): FEHLT in der Tabelle
+  (10,1): 107-120, Dichte 0,43, geschlossen
+  (12,2): 62-78, Dichte 0,77, geschlossen
+  (14,3): 44-64, Dichte 1,15, geschlossen
+  (16,4): 34-64, Dichte 1,54, offen
+  (18,5): 28-64, Dichte 1,93, offen
+  (20,6): 24-64, Dichte 2,31, offen
+
+d=9: B=25, Woerter hoechstens 2B=50
+  (9,0): FEHLT in der Tabelle
+  (11,1): 180-192, Dichte 0,29, geschlossen
+  (13,2): 101-128, Dichte 0,56, geschlossen
+  (15,3): 70-112, Dichte 0,88, geschlossen
+  (17,4): 52-112, Dichte 1,23, geschlossen
+  (19,5): 40-64, Dichte 1,59, offen
+  (21,6): 34-64, Dichte 1,96, offen
+  (23,7): 29-64, Dichte 2,33, offen
+  (25,8): 25-64, Dichte 2,69, offen
+
+d=10: B=31, Woerter hoechstens 2B=62
+  (10,0): FEHLT in der Tabelle
+  (12,1): 348-380, Dichte 0,20, geschlossen
+  (14,2): 170-248, Dichte 0,40, geschlossen
+  (16,3): 115-192, Dichte 0,66, geschlossen
+  (18,4): 83-192, Dichte 0,96, geschlossen
+  (20,5): 62-128, Dichte 1,28, offen
+  (22,6): 49-128, Dichte 1,63, offen
+  (24,7): 41-128, Dichte 1,98, offen
+  (26,8): 36-128, Dichte 2,34, offen
+  (28,9): 30-128, Dichte 2,70, offen
+  (30,10): 27-128, Dichte 3,06, offen
+
+d=11: B=38, Woerter hoechstens 2B=76
+  (11,0): FEHLT in der Tabelle
+  (13,1): 607-704, Dichte 0,13, geschlossen
+  (15,2): 310-384, Dichte 0,28, geschlossen
+  (17,3): 187-320, Dichte 0,48, geschlossen
+  (19,4): 128-256, Dichte 0,73, geschlossen
+  (21,5): 95-256, Dichte 1,01, geschlossen
+  (23,6): 73-224, Dichte 1,32, offen
+  (25,7): 60-224, Dichte 1,64, offen
+  (27,8): 50-224, Dichte 1,99, offen
+  (29,9): 43-224, Dichte 2,33, offen
+  (31,10): 37-224, Dichte 2,69, offen
+  (33,11): FEHLT in der Tabelle
+
+Offene Zellen gesamt: 20
