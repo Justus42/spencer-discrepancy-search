@@ -66,6 +66,8 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
   eines dreidimensionalen D. Die Struktur D=<1,a,b> kann ihn nicht mit vier Nebenklassen finden;
   Suche 20/6 nicht gestartet (Laufzeit der Kontrolle <1 s, siehe `runs/2026-11-23_positivkontrolle_19.md`).
   Alle 6 Kontrollen in `controls/` mit beiden Prüfskripten erneut identisch bestätigt.
+- 24.11.2026, Rundgang (18,5), d=2, Zufallsstart, je 300 s, Startwerte 1–4: K=15 (60 Wörter) in allen drei Typen ungelöst
+  ((11,7) Restzahl 36–38, (10,8) 48–57, (9,9) 76–90), 12 Läufe à 300 s = 15 Min. K=16: (9,9) und (10,8) ungelöst (je 4 x 300 s), (11,7) gelöst.
 
 - 23.11.2026, Lauf n=20 R=6 d=2 K=13 Typ (11,9) Startwerte 1–16, je 1800 s: durch Container-Neustart verloren, keine Restzahlen
   (Details im Abschnitt „Lauf K=13“).
@@ -487,6 +489,10 @@ bleibt die Stufe dort ungelöst, folgen die übrigen Typen (Abweichung von der R
 **(18,5), je 300 s, 4 Startwerte je Typ:**
 - K=16 (64 Wörter, Kontrolle): (9,9) 0 von 4 (Restzahl 20/22/21/18), (10,8) 0 von 4 (10/13/20/28), **(11,7) 4 von 4 gelöst**
   (32 s, 30 s, 125 s, 191 s). Wörter 64, selbstkomplementär, Radius per Brute-Force 5. Kontrolle bestanden.
+
+- K=15 (60 Wörter): **0 von 12**. (11,7): Restzahl 36/37/37/38; (10,8): 48/57/52/55; (9,9): 81/90/76/79. Stopp laut Anweisung:
+  kleinste Stufe mit Lösung K=16 (64 Wörter, keine Verbesserung gegenüber der Tabelle). K=14 bis K=10 nicht versucht, Rekord (K=10) nicht erreicht.
+  Der bekannte untere Rand der Suche liegt hier also bei 64 (die Tabelle K(18,5) nennt 28–64).
 
 <!-- RUNDGANG-ENDE -->
 

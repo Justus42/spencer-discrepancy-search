@@ -1,0 +1,31 @@
+n=18 R=5 d=2 K=15 typ=(10, 8) seed=1 secs=300
+m=16 n=18 R=5 K=15 |S|=12049 (0.1839 von 2^m), untere Schranke K>=5.44
+[0s it=0 r=0] unueberdeckt 2430
+[0s it=1 r=0] unueberdeckt 1868
+[0s it=2 r=0] unueberdeckt 1299
+[0s it=3 r=0] unueberdeckt 814
+[0s it=4 r=0] unueberdeckt 704
+[0s it=5 r=0] unueberdeckt 517
+[0s it=6 r=0] unueberdeckt 416
+[0s it=8 r=0] unueberdeckt 334
+[0s it=9 r=0] unueberdeckt 211
+[0s it=10 r=0] unueberdeckt 210
+[0s it=14 r=0] unueberdeckt 201
+[0s it=34 r=0] unueberdeckt 187
+[0s it=48 r=0] unueberdeckt 162
+[0s it=54 r=0] unueberdeckt 157
+[0s it=141 r=0] unueberdeckt 115
+[0s it=201 r=0] unueberdeckt 93
+[0s it=358 r=0] unueberdeckt 91
+[0s it=373 r=0] unueberdeckt 85
+[1s it=465 r=0] unueberdeckt 81
+[1s it=466 r=0] unueberdeckt 80
+[1s it=650 r=0] unueberdeckt 76
+[1s it=655 r=0] unueberdeckt 74
+[1s it=761 r=0] unueberdeckt 67
+[1s it=763 r=0] unueberdeckt 63
+[53s it=45247 r=8] unueberdeckt 59
+[142s it=128442 r=22] unueberdeckt 58
+[142s it=128453 r=22] unueberdeckt 51
+[142s it=128456 r=22] unueberdeckt 48
+Zeitlimit, best=48, it=285904

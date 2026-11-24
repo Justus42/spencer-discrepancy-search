@@ -1,0 +1,1 @@
+seed=3 nicht geloest, kleinste Restzahl=52 (Zeitlimit, best=52, it=295120)

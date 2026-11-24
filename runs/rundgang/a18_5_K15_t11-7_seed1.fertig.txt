@@ -1,0 +1,1 @@
+seed=1 nicht geloest, kleinste Restzahl=36 (Zeitlimit, best=36, it=277760)

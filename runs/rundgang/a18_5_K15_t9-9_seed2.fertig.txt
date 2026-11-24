@@ -1,0 +1,1 @@
+seed=2 nicht geloest, kleinste Restzahl=90 (Zeitlimit, best=90, it=289664)
