@@ -1,0 +1,41 @@
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T9.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+  0: gleich, d=5, Schnitt 0
+  1: andere, d=4, Schnitt 6
+  2: andere, d=3, Schnitt 12
+  3: gleich, d=3, Schnitt 12
+  4: gleich, d=4, Schnitt 12
+  5: andere, d=2, Schnitt 26
+  6: andere, d=1, Schnitt 40
+  7: gleich, d=1, Schnitt 40
+  8: gleich, d=2, Schnitt 40
+  9: andere, d=0, Schnitt 76
+== Typ 9 (andere Spalte, d=0, Schnitt 76): a = Zeile 5120, Vertreter Zeile 4608
+   Stabilisator {a,b}: 400000 Elemente angewandt (Grenze 200000 je Fall), 5630 Kandidaten, 23 Bahnen
+   dritte Zeile: 23 Bahnvertreter
+   Bahn 0/23 (Profil 1,0): 0 Aufgaben, Zeit bisher 190.9 s
+   [192 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 23573, zuletzt Nr. 1048576
+   Bahn 1/23 (Profil 1,1): 23573 Aufgaben, Zeit bisher 191.2 s
+   Bahn 2/23 (Profil 1,1): 20388 Aufgaben, Zeit bisher 191.5 s
+   Bahn 3/23 (Profil 1,1): 18920 Aufgaben, Zeit bisher 191.8 s
+   Bahn 4/23 (Profil 2,1): 45764 Aufgaben, Zeit bisher 192.5 s
+   Bahn 5/23 (Profil 2,2): 126373 Aufgaben, Zeit bisher 194.5 s
+   Bahn 6/23 (Profil 2,2): 43755 Aufgaben, Zeit bisher 195.2 s
+   Bahn 7/23 (Profil 3,2): 38473 Aufgaben, Zeit bisher 195.9 s
+   Bahn 8/23 (Profil 4,1): 108392 Aufgaben, Zeit bisher 197.7 s
+   Bahn 9/23 (Profil 4,2): 137090 Aufgaben, Zeit bisher 200.0 s
+   Bahn 10/23 (Profil 5,2): 105825 Aufgaben, Zeit bisher 202.4 s
+   Bahn 11/23 (Profil 5,3): 23924 Aufgaben, Zeit bisher 203.0 s
+   Bahn 12/23 (Profil 5,5): 34576 Aufgaben, Zeit bisher 203.8 s
+   Bahn 13/23 (Profil 5,5): 13995 Aufgaben, Zeit bisher 204.4 s
+   Bahn 14/23 (Profil 6,5): 49563 Aufgaben, Zeit bisher 205.5 s
+   Bahn 15/23 (Profil 6,6): 43150 Aufgaben, Zeit bisher 206.5 s
+   Bahn 18/23 (Profil 8,5): 20808 Aufgaben, Zeit bisher 207.1 s
+   Bahn 19/23 (Profil 8,6): 35046 Aufgaben, Zeit bisher 207.8 s
+   Bahn 20/23 (Profil 9,6): 0 Aufgaben, Zeit bisher 207.9 s
+   Aufgaben (Tiefe 5): 889615 gesamt, 889615 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:23 4:8688 5:889615 6:86523; max. Tiefe 6; Zeit 207.9 s
+   Typ 9: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 208.5 s

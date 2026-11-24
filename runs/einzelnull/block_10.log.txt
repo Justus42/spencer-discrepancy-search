@@ -123,3 +123,33 @@ Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
 ENDE: Loesungen 0 (Nullen verteilt: 0), ABBRUCH (Zeit), Gesamtzeit 769.0 s
 ### Blockzeit um in Typ 8
 ### Block Ende 2026-11-24 22:27:23 UTC, fertig: fertig 0 fertig 1 fertig 2 fertig 3 fertig 4 fertig 5 fertig 6 fertig 7 
+### Block Start 2026-11-24 22:27:56 UTC, Traeger 10, Grenze 1500 s
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 1081537 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T8.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 8 (gleiche Spalte, d=2, Schnitt 40): a = Zeile 5120, Vertreter Zeile 5504
+   Stabilisator {a,b}: 322560 Elemente angewandt (Grenze 200000 je Fall), 5590 Kandidaten, 20 Bahnen
+   dritte Zeile: 20 Bahnvertreter
+   [157 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 92921 von 190543, zuletzt Nr. 11627256
+   [217 s] Aufgaben erledigt (dieser Lauf) 23191, insgesamt 23191 von 281448, zuletzt Nr. 18897550
+   [277 s] Aufgaben erledigt (dieser Lauf) 48154, insgesamt 48154 von 281448, zuletzt Nr. 18922521
+   [337 s] Aufgaben erledigt (dieser Lauf) 90099, insgesamt 90099 von 281448, zuletzt Nr. 18964466
+   [397 s] Aufgaben erledigt (dieser Lauf) 219117, insgesamt 219117 von 281448, zuletzt Nr. 19093483
+   Aufgaben (Tiefe 5): 2624711 gesamt, 1543174 in diesem Lauf erledigt, 1081537 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:10 4:5229 5:1543174 6:15852112; max. Tiefe 6; Zeit 422.6 s
+   Typ 8: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 423.2 s
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T9.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 9 (andere Spalte, d=0, Schnitt 76): a = Zeile 5120, Vertreter Zeile 4608
+   Stabilisator {a,b}: 400000 Elemente angewandt (Grenze 200000 je Fall), 5630 Kandidaten, 23 Bahnen
+   dritte Zeile: 23 Bahnvertreter
+   [192 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 23573, zuletzt Nr. 1048576
+   Aufgaben (Tiefe 5): 889615 gesamt, 889615 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:23 4:8688 5:889615 6:86523; max. Tiefe 6; Zeit 207.9 s
+   Typ 9: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 208.5 s
+### Block Ende 2026-11-24 22:38:28 UTC, fertig: fertig 0 fertig 1 fertig 2 fertig 3 fertig 4 fertig 5 fertig 6 fertig 7 fertig 8 fertig 9 

@@ -63,3 +63,8 @@ Folgerung: Es genügen Zeilen mit Träger 10, 8, 6. Mindestens 6 Zeilen mit Trä
 
 - Block 1 (22:02–22:27 UTC, 25 Min.): Typen 0–7 vollständig, 0 Lösungen (Typ 5: 3,42 Mio. Aufgaben, 219 s; Typ 6: 156 s;
   Typ 7: 204 s). Typ 8: 1 081 537 von 1 179 160 Aufgaben, Abbruch Zeit. Max. Tiefe 7. Log `runs/einzelnull/block_10.log.txt`.
+- Block 2 (22:28–22:38 UTC): Typ 8 fertig (2 624 711 Aufgaben, davon 1 543 174 in Block 2), Typ 9 fertig (889 615 Aufgaben, 208 s).
+- **Ergebnis Träger 10: alle 10 Typen vollständig, 0 Lösungen.** Belegart: vollständig durchgerechnet (Suchcode mit
+  Symmetriereduktion, Kontrollen oben). Rechenzeit ca. 36 Min. auf 4 Kernen. Erledigte Aufgaben je Typ: `erl_10_zaehlung.txt`.
+  (Hinweis: In Block 1 zeigte Typ 8 „1 179 160 gesamt“, weil nach dem Abbruch nicht alle Bahnen gezählt wurden.)
+- Fortsetzungsdateien `erl_*.txt` ab jetzt nicht mehr im Repo (77 MB in Commit 2faa929 schon enthalten).
