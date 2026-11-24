@@ -76,6 +76,7 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
   (Details im Abschnitt „Lauf K=13“).
 - 24.11.2026, Kontrolle n=22 R=7 d=2 K=13, Zufallsstart, je 1800 s, Cloud 4 Kerne: Typ (13,9) Startwerte 1–8 alle ungelöst
   (Restzahlen 7, 2, 6, 7, 2, 2, 3, 1); Typ (12,10) Startwerte 3 und 7 ungelöst (Restzahl 8, 8). Details im Abschnitt „Kontrolle Skalierung“.
+- 24.11.2026, zirkulante Matrizen n = 18–31 (Teil C): alle Klassen, 0 Überlebende, beste Diskrepanz 4–7 (Schwellen 8–11), ca. 40 Min.
 - 24.11.2026, Hadamard-Tests (Abschnitt „Hadamard-Bauregel und Tests“):
   - Download der Sloane-Bibliothek (Ordnung 24, 60 Klassen) nicht möglich: `neilsloane.com` nicht auflösbar, `https://` über den Proxy 403.
     Test A läuft deshalb nur auf konstruierbaren Klassen (53 von 60).
@@ -549,18 +550,32 @@ Vorab reproduziert: alle 9 Dateien in `controls/` (8, 5, 5, 7, 7, 7, 7, 6, 8, 8 
 
 Gegenproben mit `check_disc.py`: Konferenz 14 und 18 (auch `verify_spencer.py`), 6 zufällige Paare aus 1, 4 zufällige Tripel aus 2: alle gleich.
 
-## Teil B und C (24.11.2026, Cloud, 4 Kerne), laufend
+## Teil B, C, D (24.11.2026, Cloud, 4 Kerne, 14:40–15:50 UTC)
 
-**Teil B, Prüfstand:** `src/pruefstand.c` (Suchcode, Tabu-Suche). Kontrollen bestanden: `ctrl_8` 5, `had24_1p3_paley12` 8, McKay-Hadamard 24 6,
-darunter jeweils kein Gegenbeispiel; Zusatz 12 Matrizen x 3 Startwerte, immer das exakte Optimum in < 0,01 s (`runs/teilB/`).
+**Teil B, Prüfstand:** `src/pruefstand.c` (Suchcode, Tabu-Suche): Matrix rein, Vorzeichenvektor mit kleinem Maximum
+(Gegenbeispiel) oder „kein Gegenbeispiel gefunden“ raus. Kontrollen bestanden: `ctrl_8` 5, `had24_1p3_paley12` 8,
+McKay-Hadamard 24 6, darunter jeweils kein Gegenbeispiel; Zusatz 12 Matrizen x 3 Startwerte, immer das exakte
+Optimum in < 0,01 s (`runs/teilB/`).
 
-**Teil C, zirkulante Matrizen:** `src/zirkulant.c` (Suchcode: Klassen-Aufzählung, Filter, Abstieg), exakte Prüfung mit `build/exakt_disc`
-über `src/zirkulant_pruef.py`, Treiber `src/run_zirkulant.py`, Blockprotokoll `runs/teilC/blocklog.txt`.
-Kontrollen: Klassenzahl n = 3–15 gleich einer unabhängigen Bahnen-Zählung; Hamming-Rekord wiedergefunden (n=7 mit Rand, d=5: genau 1 Überlebender,
-erste Zeile Bits {0,1,3}, exakt 5; ohne Rand keiner); Abstiegsschranke u gegen exakte Werte aller Klassen n = 8–18 (mit/ohne Rand): nie zu klein, u_max = exaktes Maximum.
-- Block 1 (14:57 UTC, < 1 Min.): n=18, 20, 21, 23, 24 ohne Rand: 0 Überlebende.
-- Block 2 (14:58–15:01 UTC): n=25, 26 ohne Rand, n=18–26 mit Rand: 0 Überlebende.
-- Block 3 (15:01–15:18 UTC): n=29, 31: 0 Überlebende. n=30 folgt in zwei Hälften (`-T 1/2`, `-T 2/2`).
+**Teil C, zirkulante ±1-Matrizen, vollständig:** Protokoll `notes/laeufe/2026-11-24_zirkulant.md`, Rohlog `runs/teilC/blocklog.txt`.
+`src/zirkulant.c` (Suchcode: Klassen bis auf Verschiebung, Komplement, Multiplikatoren; Filter; Abstieg), exakte Prüfung mit
+`build/exakt_disc` über `src/zirkulant_pruef.py`, Treiber `src/run_zirkulant.py`.
+Kontrollen: Klassenzahl n = 3–15 gleich unabhängiger Zählung; **Hamming-Rekord als geränderte zirkulante Matrix n = 7
+wiedergefunden** (einziger Überlebender, exakt 5); Abstiegsschranke gegen alle Klassen n = 8–18 exakt geprüft.
+
+| n | 18 | 20 | 21 | 23 | 24 | 25 | 26 | 29 | 30 | 31 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Klassen | 1 346 | 3 760 | 4 434 | 8 385 | 47 462 | 33 781 | 108 330 | 331 185 | 2 251 816 | 1 155 735 |
+| Überlebende ohne / mit Rand | 0 / 0 | 0 / 0 | 0 / 0 | 0 / 0 | 0 / 0 | 0 / 0 | 0 / 0 | 0 / – | 0 / – | 0 / – |
+| beste disc ohne Rand (exakt) | 4 | 6 | 5 | 7 | 6 | 7 | 6 | 7 | 6 | 7 |
+| beste disc mit Rand (exakt) | 4 | 6 | 7 | 7 | 6 | 7 | 6 | – | – | – |
+| Schwelle d ohne / mit Rand | 8 / 8 | 8 / 10 | 9 / 9 | 9 / 9 | 10 / 10 | 9 / 11 | 10 / 10 | 11 | 10 | 11 |
+
+**Kein Überlebender, kein Kandidat.** Bester Quotient 7/√22 = 1,492 (n = 21 mit Rand). Gesamtlaufzeit ca. 40 Min.
+
+**Teil D:** `LANDKARTE.md` (Familien x N, bester Quotient mit Belegart exakt / Gegenbeispiel je Fall / Suche erfolglos).
+Zusatz dafür: Hadamard 20 und 24 ohne **eine** Spalte, alle Klassen und Transponierten, exakt 7
+(`runs/teilA/zusatz_ohne_eine_spalte.log.txt`).
 
 ## Nächste Gates
 
@@ -585,5 +600,7 @@ Syndrome) und können in einer Cloud-Sitzung laufen. Die GPU wird erst für 25/8
 - `src/construct_48.py`: Paley-12-Doppelung, Bauregel 1+3 und 2+2 (Teil B), schreibt `controls/had24_*`.
 - `src/pruefe_mckay.py`: Gegenrechnung der 60 McKay-Matrizen. `src/streichtest.py`: Prüfcode, überflüssige Nebenklassen.
 - `src/hadamard_tests.py`: exakte Diskrepanz (Meet-in-the-middle, int8), Kontrollen, Test A/B, Überdeckungsradius, Nachprüfung der Gegenbeispiele für Test C. Kein Suchcode.
+- `src/pruefstand.c`: Gegenbeispielsuche (Teil B). `src/zirkulant.c`, `src/zirkulant_pruef.py`, `src/zirkulant_qualitaet.py`, `src/run_zirkulant.py`: Teil C.
+- `LANDKARTE.md`: Übersicht Familien x N.
 - `src/exakt_disc.c`: Prüfcode, exakte Diskrepanz per Gray-Code (auch mit gestrichenen Spalten, `-s k`). `src/gegenrechnung_a.py`: Teil A.
 - `src/gegenbeispiel40.c`: Suchcode für Test C (Tabu-Suche auf Vorzeichenvektoren). Bauen: `gcc -O3 -march=native -o build/gegenbeispiel40 src/gegenbeispiel40.c`.
