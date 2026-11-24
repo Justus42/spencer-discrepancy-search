@@ -515,7 +515,23 @@ bleibt die Stufe dort ungelöst, folgen die übrigen Typen (Abweichung von der R
 - K=15, Typ (13,10): 0 von 4, Restzahl 5045/5101/5174/4777 (je ca. 30 700 Schritte), viel schlechter als (12,11).
   **(23,7): K=15 (60 Wörter) in beiden Typen ungelöst (0 von 8, je 1800 s).** Stopp laut Anweisung, K=14 bis K=12 nicht versucht, Rekord (K=12) nicht erreicht.
 
-<!-- RUNDGANG-ENDE -->
+**Treffer-Prüfung (einzige Treffer des Rundgangs: die vier Kontrollen (18,5) K=16, Typ (11,7), Startwerte 1–4)**, Dateien `runs/rundgang/treffer/`:
+- Brute-Force-Radius 5 (im Treiber), selbstkomplementär, 64 Wörter, 16 Nebenklassen.
+- Beide Prüfskripte, alle vier: `check_disc.py` auf 32 x 18 und `verify_spencer.py` auf 32 x 32 (Nullspalten): **exakt Diskrepanz 8** (Quotient 8/sqrt(32) = 1,414, kein Rekord).
+- Normalität (`normal_ext.py`): alle vier normal, Norm 11 = 2R+1 bei allen 18 Koordinaten; Folgecodes Länge 20/22/24 (R=6/7/8), je 64 Wörter, Radius per Brute-Force bestätigt.
+- Streichtest (`src/streichtest.py`, neu, Prüfcode): Streichen jeder einzelnen der 16 Nebenklassen lässt 568–1188 Punkte offen; **keine Nebenklasse überflüssig**, in keinem der vier Codes.
+- Neuheit: 64 Wörter bei (18,5) sind der bekannte Tabellenwert, kein neuer Eintrag.
+
+**Ergebnis des Rundgangs (Laufzeit 10:08–12:25 UTC, ca. 2 h 17 Min., unter der Obergrenze von 3 h):**
+
+| Zelle | Kontrolle K=16 | tiefste gelöste Stufe | erste Stufe ohne Lösung | Rekordstufe |
+|---|---|---|---|---|
+| (18,5) | bestanden, nur Typ (11,7) | K=16 (64 Wörter) | K=15, alle 3 Typen, 12 Läufe | K=10 nicht erreicht |
+| (21,6) | **nicht bestanden**, 12 Läufe | keine | K=16 | K=12 nicht erreicht |
+| (23,7) | nicht gefahren (Anweisung: ab K=15) | keine | K=15, beide Typen, 8 Läufe | K=12 nicht erreicht |
+
+Kein neuer Wert, kein Rekordkandidat. Die Methode (d=2, Zufallsstart, 300–1800 s) reicht bei (18,5) nur bis zum bekannten Wert 64; bei (21,6) und (23,7) kommt sie
+in dieser Laufzeit nicht einmal an 64 bzw. 60 Wörter heran. Schrittzahl je Lauf: ca. 280 000 (18,5), 67 000 (21,6), 30 000 (23,7). Nichts nach außen gemeldet.
 
 ## Nächste Gates
 
@@ -538,5 +554,6 @@ Syndrome) und können in einer Cloud-Sitzung laufen. Die GPU wird erst für 25/8
 - `src/search_lns.py`, `src/greedy_full.py`: Suche auf dem Quotientenwürfel.
 - `src/construct_32.py`: Konstruktion der 32-Wörter-Codes.
 - `src/construct_48.py`: Paley-12-Doppelung, Bauregel 1+3 und 2+2 (Teil B), schreibt `controls/had24_*`.
+- `src/pruefe_mckay.py`: Gegenrechnung der 60 McKay-Matrizen. `src/streichtest.py`: Prüfcode, überflüssige Nebenklassen.
 - `src/hadamard_tests.py`: exakte Diskrepanz (Meet-in-the-middle, int8), Kontrollen, Test A/B, Überdeckungsradius, Nachprüfung der Gegenbeispiele für Test C. Kein Suchcode.
 - `src/gegenbeispiel40.c`: Suchcode für Test C (Tabu-Suche auf Vorzeichenvektoren). Bauen: `gcc -O3 -march=native -o build/gegenbeispiel40 src/gegenbeispiel40.c`.

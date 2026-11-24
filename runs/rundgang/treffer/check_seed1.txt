@@ -1,0 +1,2 @@
+matrix 32 x 18, entries in {-1,0,1}: exact discrepancy = 8
+as a 32 x 32 matrix this gives C_10c >= 8/sqrt(32) = 1.414214   (current record 5/sqrt(8) = 1.767767)

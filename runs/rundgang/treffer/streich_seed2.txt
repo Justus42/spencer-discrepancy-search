@@ -1,0 +1,3 @@
+64 Woerter, 16 Nebenklassen, ohne Streichung offen: 0
+offene Punkte je gestrichener Nebenklasse: [844, 856, 804, 1112, 976, 732, 712, 1188, 852, 828, 752, 716, 816, 972, 684, 860]
+ueberfluessige Nebenklassen: 0
