@@ -310,6 +310,41 @@ Orchestrator-Claude mit eigenem Skript bestätigt (nicht im Repo).
   kein Spencer-Rekord. Tabellenabgleich (florath): K(22,7) 21–64, K(24,8) 19–64, K(26,9) 17–56; 48 läge jeweils darunter.
   Neuheit nach Regel 3 offen.
 
+## Machbarkeit (25,8), Dimension 2, K=12 (48 Wörter), keine Suche (24.11.2026)
+
+Quotient F2^23 (m = 25 - 2), also 2^23 = 8 388 608 Syndrome; Bild der Kugel |S| = 1 730 099 (20,6 % von 2^23, beide Typen),
+untere Schranke K >= 4,85. Messmodus im Kern per Compile-Schalter (normaler Lauf unverändert): `-DMESS=200` bricht nach
+200 Schritten ab und meldet die Zeit je Schritt, `-DUEBERLAUF` prüft zusätzlich jede Addition, Subtraktion und
+Multiplikation der Walsh-Bewertung mit `__builtin_*_overflow` und merkt sich den größten Betrag. Treiber `src/mess_schritt.py`,
+Ausgaben `runs/mess258/`.
+
+**64-Bit-Überlauf: ausgeschlossen (Beweis plus Messung).**
+1. Erste Walsh-Transformation auf der Loch-Indikatorfunktion a in {0,1}: jeder Zwischenwert ist eine ±-Summe von Einträgen
+   von a, also Betrag <= Zahl der Löcher <= 2^23.
+2. Ŝ (Walsh-Transformierte der Kugel-Indikatorfunktion, einmal vorab): Betrag <= |S| < 2^21, Zwischenwerte ebenso.
+3. Produkt B(s) = â(s)·Ŝ(s): Betrag < 2^23 · 2^21 = 2^44.
+4. Zweite Transformation: jeder Zwischenwert ist eine ±-Summe von Werten B(s), also Betrag <= Σ|B(s)|. Nach Cauchy-Schwarz
+   und Parseval (Σ â² = 2^23 · Löcher, Σ Ŝ² = 2^23 · |S|) gilt Σ|B| <= 2^23 · sqrt(Löcher · |S|) < 2^23 · sqrt(2^23 · 2^21) = 2^45.
+   Endwert = 2^23 · (Löcher in x+S) <= 2^23 · |S| < 2^44.
+5. Alle Werte < 2^45, Grenze von int64 ist 2^63: Reserve 2^18. Zähler `cnt` (8 Bit) hält höchstens K = 12.
+Messung (je 200 Schritte, beide Typen): größter Betrag 1 820 873 195 520 (2^40,73) bei (13,12), 1 845 862 858 752 (2^40,75)
+bei (14,11); kein Überlauf-Flag gesetzt.
+
+**Zeit je Schritt (200 Schritte, Startwert 1, ohne Vorbereitung; Vorbereitung je 0,07–0,10 s):**
+
+| Typ | allein (1 Lauf) | 4 Läufe gleichzeitig |
+|---|---|---|
+| (13,12) | 0,475 s | 0,581 / 0,582 s (Startwerte 1, 2) |
+| (14,11) | 0,504 s | 0,570 / 0,588 s (Startwerte 3, 4) |
+
+**Einordnung (Rechnung, keine Messung auf dem PC):** Bei (20,6), m = 18, 4 parallel: ca. 4,7 ms je Schritt
+(z. B. 386 528 Schritte in 1800 s); die sechs K=13-Treffer brauchten 48 408 bis 342 182 Schritte. Bei (25,8) sind es
+ca. 120-mal mehr Zeit je Schritt (32-mal mehr Syndrome, Rest Speicher: 2 x 64 MB Arbeitsfelder passen nicht in den Cache).
+1800 s ergeben nur ca. 3 100 Schritte; der Neustart nach 3 000 Schritten ohne Verbesserung käme also höchstens einmal.
+Bräuchte (25,8) ähnlich viele Schritte wie (20,6), wären das 8–55 h je Lauf auf einem Cloud-Kern. Nach 200 Schritten
+standen noch 31 500 (Typ 13,12) bzw. 16 070 (Typ 14,11) Syndrome offen. Der Ryzen 9800X3D (96 MB L3-Cache) und die
+GPU sind nicht gemessen. Keine Suche gestartet.
+
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
 
 Kein Startwert-Fehler im Code erkennbar: `coset_tabu.c` setzt das Zufallsgerät pro Startwert verschieden und würfelt die
