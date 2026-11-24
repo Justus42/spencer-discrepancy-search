@@ -1,0 +1,9 @@
+n=10: 102 volle Bahnen, 2 feste Paare
+R=2: Mengen mit hoechstens 3 vollen Bahnen + allen Paaren, die ueberdecken: 0
+R=2: 4-Mengen voller Bahnen (ohne Paare), die ueberdecken: 682
+R=3: Mengen mit hoechstens 1 vollen Bahnen + allen Paaren, die ueberdecken: 0
+R=3: 2-Mengen voller Bahnen (ohne Paare), die ueberdecken: 505
+
+real	0m0.980s
+user	0m1.269s
+sys	0m0.043s

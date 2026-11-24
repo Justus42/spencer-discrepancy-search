@@ -22,6 +22,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Hadamard voll (Ordnung 20: 3 Klassen, 24: 60 Klassen, je mit Transponierten) |  |  |  |  |  |  |  |  |  |  | 1,342 e |
 | Hadamard ohne 1 Spalte (alle Spalten, alle Klassen) |  |  |  |  |  |  |  |  |  |  | 1,565 e |
 | Hadamard 20 ohne 2 / 24 ohne 3 Spalten (alle Paare/Tripel) |  |  |  |  |  |  |  |  |  |  | 1,342 e |
+| Bahnen unter 5er-Zyklen plus Komplement (n=15: 40 Wörter, alle 525 Vierermengen, `bahn15_40w`) |  |  |  |  |  |  |  |  |  |  | 1,565 e |
 | Paley-Konferenzmatrizen | 1,225 e |  |  |  | 0,949 e | 1,336 e |  |  | 1,179 e |  |  |
 | zirkulant n x n (Teil C, alle Klassen) |  | 1,134 e |  |  |  |  |  |  | 0,943 e |  | 1,342 e |
 | zirkulant + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Teil C) |  |  | 1,768 e |  |  |  |  |  |  | 0,918 e |  |
@@ -57,6 +58,8 @@ bei N = 18 schon `ctrl_17` mit 7/√18 = 1,650 über dem Tabellenwert.
 - **32-Wörter-Codes:** N = 16, 17, 19 aus `controls/` (beide Prüfskripte, disc 7); N = 21, 23 nur Radius per Brute-Force (STATUS).
 - **Hadamard:** volle Matrizen `controls/had20_klasse*.txt`, McKay-60 (`controls/had24_mckay_hex.txt`); ohne 1 Spalte:
   `runs/teilA/zusatz_ohne_eine_spalte.log.txt`; ohne 2/3 Spalten: `runs/teilA/a1*`, `a2*` (alle 1140 bzw. 242 880 Fälle).
+- **Bahnen unter 5er-Zyklen plus Komplement:** `controls/bahn15_40w.txt` (20 x 15, beide Prüfskripte 7), Aufzählung vollständig
+  (`notes/laeufe/2026-11-24_bahnen5.md`); bei n=20 nur 70 Wörter gefunden (60 Wörter: Suche erfolglos, 40: nicht versucht).
 - **Doppelung Ordnung 40:** Test C in STATUS, alle 30 780 Spaltenauswahlen mit Gegenbeispiel max ≤ 8, Rekord bräuchte 12.
   Nur gleiche Zeilenausrichtung in beiden Hälften geprüft.
 - **Paley-12-Doppelung:** `controls/had24_1p3_paley12.txt`, `had24_2p2_paley12.txt`, beide Prüfskripte disc 8.

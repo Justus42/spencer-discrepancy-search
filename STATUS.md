@@ -40,6 +40,7 @@ Suche bewegt sich nicht). Reihenfolge der Versuche: 25/8 zuerst, dann 20/6.
 | `ctrl_17.txt` | 17x17 | 7 | eigene Suche, Code (17,5) mit 32 Wörtern |
 | `L2026_17x17.txt` | 17x17 | 7 | veröffentlichtes Zertifikat aus dem Repo |
 | `astra_19.txt` | 19x19 | 7 | Konstruktion `src/construct_32.py` |
+| `bahn15_40w.txt` (+ `_pad` 20x20) | 20x15 | 7 | 4 volle Bahnen unter 5er-Zyklen + Komplement (Teil A, 24.11.2026) |
 
 `src/construct_32.py` liefert selbstkomplementäre 32-Wörter-Codes für jede ungerade Länge
 n = 2R+7 >= 15. Per Brute-Force bestätigt für n = 15, 17, 19, 21, 23. Die Konstruktion
@@ -77,6 +78,9 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
 - 24.11.2026, Kontrolle n=22 R=7 d=2 K=13, Zufallsstart, je 1800 s, Cloud 4 Kerne: Typ (13,9) Startwerte 1–8 alle ungelöst
   (Restzahlen 7, 2, 6, 7, 2, 2, 3, 1); Typ (12,10) Startwerte 3 und 7 ungelöst (Restzahl 8, 8). Details im Abschnitt „Kontrolle Skalierung“.
 - 24.11.2026, zirkulante Matrizen n = 18–31 (Teil C): alle Klassen, 0 Überlebende, beste Diskrepanz 4–7 (Schwellen 8–11), ca. 40 Min.
+- 24.11.2026, Bahnen unter 5er-Zyklen plus Komplement, n=20 R=6, nur volle Bahnen, Tabu `src/bahnen_tabu.c`: K=6 (60 Wörter)
+  ungelöst: Zufallsstart Startwerte 1–4 je 600 s (Restzahl 122/96/104/94 Punkte) und Warmstart aus den vier K=7-Lösungen je 600 s
+  (94/116/116/118). Stopp; K=5, K=4 nicht versucht, Variante 3 volle Bahnen + 5 feste Paare ungeprüft. Protokoll `notes/laeufe/2026-11-24_bahnen5.md`.
 - 24.11.2026, Hadamard-Tests (Abschnitt „Hadamard-Bauregel und Tests“):
   - Download der Sloane-Bibliothek (Ordnung 24, 60 Klassen) nicht möglich: `neilsloane.com` nicht auflösbar, `https://` über den Proxy 403.
     Test A läuft deshalb nur auf konstruierbaren Klassen (53 von 60).
@@ -577,6 +581,23 @@ wiedergefunden** (einziger Überlebender, exakt 5); Abstiegsschranke gegen alle 
 Zusatz dafür: Hadamard 20 und 24 ohne **eine** Spalte, alle Klassen und Transponierten, exakt 7
 (`runs/teilA/zusatz_ohne_eine_spalte.log.txt`).
 
+## Bahnen unter 5er-Zyklen plus Komplement (24.11.2026, Cloud, 4 Kerne, ca. 37 Min. Rechenzeit)
+
+Protokoll `notes/laeufe/2026-11-24_bahnen5.md`, Logs `runs/bahnen5/`. Selbstkomplementäre Codes der Länge n = 5k, invariant unter
+sigma (k Zyklen der Länge 5): Vereinigung voller Bahnen (10 Wörter) und fester Paare.
+
+- **Teil A, Angaben des Orchestrators vollständig nachgerechnet, keine Abweichung:** n=10 (102 Bahnen, 2 Paare; R=2: nichts aus ≤ 3
+  Bahnen + Paaren, 682 Vierermengen; R=3: nichts aus 1 Bahn + Paaren, 505 Paare; C-Programm und unabhängige Python-Gegenprobe),
+  n=15, R=4 (3276 Bahnen, 4 Paare; nichts mit 30–38 Wörtern; **525 Vierermengen**, alle einzeln per Breitensuche geprüft, Liste unter
+  dem Normalisator geschlossen, 3 Klassen 25 + 200 + 300). `controls/bahn15_40w.txt`: **beide Prüfskripte Diskrepanz 7** (7/√20 = 1,565).
+  A3: Gruppenordnungen wie angegeben, sobald Nullspalten entfernt sind (mit Nullspalte bei `ctrl_8`, `ctrl_16` das Doppelte);
+  keine durch 5 teilbar.
+- **Teil B:** Suchcode `src/bahnen_tabu.c`, Prüfcode getrennt `src/bahnen_pruef.py`. Kontrolle (15,4) K=4: **8 von 8** in ≤ 4,6 s.
+- **Teil C, n=20, R=6:** Anker (40er-Code × {00000, 11111}, 80 Wörter) Radius 6 bestätigt. K=8 4/4, **K=7 (70 Wörter) 4/4**,
+  K=6 0/8 (Zufall und Warmstart, Restzahl ≥ 94). Kleinste gelöste Stufe K=7 ≥ 6: **Ansatz beendet**, n=25 nicht gestartet.
+- **Teil D:** vollständige Aufzählung K=4 bei n=20 geschätzt auf **ca. 280 CPU-h** (31 Klassen × 12 091 × ca. 11 000 Blätter,
+  ca. 240 µs je Blatt, Stichprobe), nicht gestartet.
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
@@ -603,4 +624,6 @@ Syndrome) und können in einer Cloud-Sitzung laufen. Die GPU wird erst für 25/8
 - `src/pruefstand.c`: Gegenbeispielsuche (Teil B). `src/zirkulant.c`, `src/zirkulant_pruef.py`, `src/zirkulant_qualitaet.py`, `src/run_zirkulant.py`: Teil C.
 - `LANDKARTE.md`: Übersicht Familien x N.
 - `src/exakt_disc.c`: Prüfcode, exakte Diskrepanz per Gray-Code (auch mit gestrichenen Spalten, `-s k`). `src/gegenrechnung_a.py`: Teil A.
+- `src/bahnen_zaehl.c`, `src/bahnen_gegen10.py`, `src/bahnen_pruef.py`, `src/bahnen_aut.py`: Prüfcode Bahnen unter 5er-Zyklen. `src/bahnen_tabu.c`: Suchcode dazu.
+  `src/bahnen_schaetz.c`, `src/bahnen_schaetz_filter.py`: Aufwandsschätzung. Bauen: `gcc -O3 -march=native -fopenmp -o build/<name> src/<name>.c`.
 - `src/gegenbeispiel40.c`: Suchcode für Test C (Tabu-Suche auf Vorzeichenvektoren). Bauen: `gcc -O3 -march=native -o build/gegenbeispiel40 src/gegenbeispiel40.c`.

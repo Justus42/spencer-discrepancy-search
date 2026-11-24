@@ -1,0 +1,19 @@
+matrix 20 x 15, entries in {-1,0,1}: exact discrepancy = 7
+as a 20 x 20 matrix this gives C_10c >= 7/sqrt(20) = 1.565248   (current record 5/sqrt(8) = 1.767767)
+
+real	0m0.127s
+user	0m0.393s
+sys	0m0.031s
+=== controls/bahn15_40w_pad.txt ===
+Dimension        : 20 x 20 (aktive Spalten: 15, kgV L=1)
+Exakte Diskrepanz: 7
+Quotient D/sqrt(n): 1.56524758  (exakt D^2/n = 49/20)
+Vergleich 5/sqrt8: unter Rekord (< 5/sqrt(8))  (Rekord D^2/n = 25/8)
+Minimal-Vektoren : 398592 von 1048576
+Zeuge x*         : [1, 1, 1, 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1]
+Laufzeit         : 0.013 s
+
+
+real	0m0.140s
+user	0m0.381s
+sys	0m0.032s

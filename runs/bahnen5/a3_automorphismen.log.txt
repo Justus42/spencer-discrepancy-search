@@ -1,0 +1,21 @@
+controls/ctrl_8.txt: 8 x 8, |S| = 16, Gruppenordnung 5376, durch 5 teilbar: False -> kein Automorphismus der Ordnung 5
+controls/ctrl_16.txt: 16 x 16, |S| = 32, Gruppenordnung 10752, durch 5 teilbar: False -> kein Automorphismus der Ordnung 5
+controls/ctrl_17.txt: 17 x 17, |S| = 32, Gruppenordnung 4608, durch 5 teilbar: False -> kein Automorphismus der Ordnung 5
+controls/L2026_17x17.txt: 17 x 17, |S| = 32, Gruppenordnung 4608, durch 5 teilbar: False -> kein Automorphismus der Ordnung 5
+controls/astra_19.txt: 19 x 19, |S| = 32, Gruppenordnung 129024, durch 5 teilbar: False -> kein Automorphismus der Ordnung 5
+controls/had24_1p3_paley12.txt: 24 x 20, |S| = 48, Gruppenordnung 576, durch 5 teilbar: False -> kein Automorphismus der Ordnung 5
+controls/had24_2p2_paley12.txt: 24 x 20, |S| = 48, Gruppenordnung 576, durch 5 teilbar: False -> kein Automorphismus der Ordnung 5
+controls/bahn15_40w.txt: 20 x 15, |S| = 40, Gruppenordnung 120, durch 5 teilbar: True -> Automorphismus der Ordnung 5 existiert
+
+real	0m0.143s
+user	0m0.388s
+sys	0m0.016s
+--- Gegenprobe: Nullspalten entfernt (Vorzeichen einer Nullspalte wirkt trivial auf S) ---
+ctrl_8: Nullspalten [7], Ordnung ohne Nullspalten 2688, durch 5 teilbar: False
+ctrl_16: Nullspalten [15], Ordnung ohne Nullspalten 5376, durch 5 teilbar: False
+ctrl_17: Nullspalten [], Ordnung ohne Nullspalten 4608, durch 5 teilbar: False
+L2026_17x17: Nullspalten [], Ordnung ohne Nullspalten 4608, durch 5 teilbar: False
+astra_19: Nullspalten [], Ordnung ohne Nullspalten 129024, durch 5 teilbar: False
+had24_1p3_paley12: Nullspalten [], Ordnung ohne Nullspalten 576, durch 5 teilbar: False
+had24_2p2_paley12: Nullspalten [], Ordnung ohne Nullspalten 576, durch 5 teilbar: False
+bahn15_40w: Nullspalten [], Ordnung ohne Nullspalten 120, durch 5 teilbar: True

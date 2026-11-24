@@ -1,0 +1,15 @@
+Start 16:06:38 UTC
+n=20 R=6 K=8: 104856 volle Bahnen, 8 Paare, Kugel 60460, Matrix 1.37 GB, mittlere Zeile 46120, Aufbau 4.7 s
+[seed 2] Start f=14544 (Zufall)
+[seed 4] Start f=13114 (Zufall)
+[seed 3] Start f=22158 (Zufall)
+[seed 4] GELOEST nach 0.1 s, Schritt 4, Neustarts 0 -> runs/bahnen5/teilC/treffer_n20_K8_seed4.txt
+[seed 1] Start f=28768 (Zufall)
+[seed 2] GELOEST nach 0.2 s, Schritt 22, Neustarts 0 -> runs/bahnen5/teilC/treffer_n20_K8_seed2.txt
+[seed 3] GELOEST nach 0.2 s, Schritt 36, Neustarts 0 -> runs/bahnen5/teilC/treffer_n20_K8_seed3.txt
+[seed 1] GELOEST nach 1.5 s, Schritt 1236, Neustarts 0 -> runs/bahnen5/teilC/treffer_n20_K8_seed1.txt
+Ende 16:06:44 UTC
+runs/bahnen5/teilC/treffer_n20_K8_seed1.txt: 8 Vertreter, 80 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=6 -> OK (Ziel R=6)
+runs/bahnen5/teilC/treffer_n20_K8_seed2.txt: 8 Vertreter, 80 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=6 -> OK (Ziel R=6)
+runs/bahnen5/teilC/treffer_n20_K8_seed3.txt: 8 Vertreter, 80 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=6 -> OK (Ziel R=6)
+runs/bahnen5/teilC/treffer_n20_K8_seed4.txt: 8 Vertreter, 80 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=6 -> OK (Ziel R=6)

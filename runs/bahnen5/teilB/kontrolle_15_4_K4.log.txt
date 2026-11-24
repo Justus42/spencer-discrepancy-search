@@ -1,0 +1,28 @@
+Start 16:06:00 UTC
+n=15 R=4 K=4: 3276 volle Bahnen, 4 Paare, Kugel 1941, Matrix 0.00 GB, mittlere Zeile 1541, Aufbau 0.0 s
+[seed 1] Start f=1056 (Zufall)
+[seed 3] Start f=3638 (Zufall)
+[seed 2] Start f=4496 (Zufall)
+[seed 4] Start f=2472 (Zufall)
+[seed 3] GELOEST nach 0.3 s, Schritt 3836, Neustarts 0 -> runs/bahnen5/teilB/treffer_n15_K4_seed3.txt
+[seed 5] Start f=4882 (Zufall)
+[seed 5] GELOEST nach 0.4 s, Schritt 4702, Neustarts 0 -> runs/bahnen5/teilB/treffer_n15_K4_seed5.txt
+[seed 6] Start f=2684 (Zufall)
+[seed 4] GELOEST nach 0.7 s, Schritt 8800, Neustarts 0 -> runs/bahnen5/teilB/treffer_n15_K4_seed4.txt
+[seed 7] Start f=2956 (Zufall)
+[seed 7] GELOEST nach 0.6 s, Schritt 8126, Neustarts 0 -> runs/bahnen5/teilB/treffer_n15_K4_seed7.txt
+[seed 8] Start f=4726 (Zufall)
+[seed 8] GELOEST nach 1.0 s, Schritt 12683, Neustarts 0 -> runs/bahnen5/teilB/treffer_n15_K4_seed8.txt
+[seed 6] GELOEST nach 2.8 s, Schritt 35139, Neustarts 1 -> runs/bahnen5/teilB/treffer_n15_K4_seed6.txt
+[seed 1] GELOEST nach 4.3 s, Schritt 59052, Neustarts 2 -> runs/bahnen5/teilB/treffer_n15_K4_seed1.txt
+[seed 2] GELOEST nach 4.6 s, Schritt 63104, Neustarts 3 -> runs/bahnen5/teilB/treffer_n15_K4_seed2.txt
+Ende 16:06:05 UTC
+runs/bahnen5/teilB/treffer_n15_K4_seed1.txt: 4 Vertreter, 40 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=4 -> OK (Ziel R=4)
+runs/bahnen5/teilB/treffer_n15_K4_seed2.txt: 4 Vertreter, 40 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=4 -> OK (Ziel R=4)
+runs/bahnen5/teilB/treffer_n15_K4_seed3.txt: 4 Vertreter, 40 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=4 -> OK (Ziel R=4)
+runs/bahnen5/teilB/treffer_n15_K4_seed4.txt: 4 Vertreter, 40 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=4 -> OK (Ziel R=4)
+runs/bahnen5/teilB/treffer_n15_K4_seed5.txt: 4 Vertreter, 40 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=4 -> OK (Ziel R=4)
+runs/bahnen5/teilB/treffer_n15_K4_seed6.txt: 4 Vertreter, 40 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=4 -> OK (Ziel R=4)
+runs/bahnen5/teilB/treffer_n15_K4_seed7.txt: 4 Vertreter, 40 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=4 -> OK (Ziel R=4)
+runs/bahnen5/teilB/treffer_n15_K4_seed8.txt: 4 Vertreter, 40 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=4 -> OK (Ziel R=4)
+Treffer in der 525er-Liste: 8 von 8 ; verschiedene Treffer: 8

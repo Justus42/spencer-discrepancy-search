@@ -1,0 +1,46 @@
+Start 16:07:11 UTC
+n=20 R=6 K=7: 104856 volle Bahnen, 8 Paare, Kugel 60460, Matrix 1.37 GB, mittlere Zeile 46120, Aufbau 4.5 s
+[seed 2] Start f=26226 (Zufall)
+[seed 1] Start f=33768 (Zufall)
+[seed 4] Start f=28146 (Zufall)
+[seed 3] Start f=41148 (Zufall)
+[seed 1] t=30s Schritt 21312 f=62 bester=12 Neustarts=0
+[seed 3] t=30s Schritt 19328 f=250 bester=2 Neustarts=0
+[seed 4] t=30s Schritt 23296 f=14 bester=4 Neustarts=0
+[seed 2] t=30s Schritt 29824 f=40 bester=4 Neustarts=0
+[seed 3] GELOEST nach 51.2 s, Schritt 32600, Neustarts 1 -> runs/bahnen5/teilC/treffer_n20_K7_seed3.txt
+[seed 4] t=60s Schritt 43712 f=50 bester=2 Neustarts=1
+[seed 2] t=60s Schritt 56064 f=24 bester=4 Neustarts=1
+[seed 1] t=60s Schritt 41536 f=82 bester=12 Neustarts=1
+[seed 4] t=90s Schritt 67072 f=80 bester=2 Neustarts=2
+[seed 1] t=90s Schritt 63488 f=50 bester=10 Neustarts=1
+[seed 2] t=90s Schritt 77824 f=120 bester=4 Neustarts=2
+[seed 2] t=120s Schritt 102784 f=90 bester=4 Neustarts=3
+[seed 4] t=120s Schritt 92480 f=10 bester=2 Neustarts=2
+[seed 1] t=120s Schritt 83200 f=270 bester=10 Neustarts=2
+[seed 4] t=150s Schritt 113792 f=144 bester=2 Neustarts=3
+[seed 2] t=150s Schritt 124864 f=100 bester=4 Neustarts=4
+[seed 1] t=150s Schritt 99712 f=20 bester=10 Neustarts=2
+[seed 2] t=180s Schritt 149504 f=110 bester=4 Neustarts=4
+[seed 1] t=180s Schritt 120000 f=130 bester=10 Neustarts=3
+[seed 4] t=180s Schritt 137472 f=52 bester=2 Neustarts=4
+[seed 4] GELOEST nach 207.9 s, Schritt 158944, Neustarts 4 -> runs/bahnen5/teilC/treffer_n20_K7_seed4.txt
+[seed 2] t=210s Schritt 174720 f=70 bester=4 Neustarts=5
+[seed 1] t=210s Schritt 140288 f=32 bester=10 Neustarts=4
+[seed 2] t=240s Schritt 201856 f=40 bester=4 Neustarts=6
+[seed 1] t=240s Schritt 161792 f=170 bester=10 Neustarts=4
+[seed 2] t=270s Schritt 224832 f=40 bester=4 Neustarts=7
+[seed 1] t=271s Schritt 182144 f=20 bester=10 Neustarts=4
+[seed 1] GELOEST nach 285.1 s, Schritt 192260, Neustarts 5 -> runs/bahnen5/teilC/treffer_n20_K7_seed1.txt
+[seed 2] t=300s Schritt 241408 f=170 bester=4 Neustarts=7
+[seed 2] t=330s Schritt 260224 f=80 bester=4 Neustarts=8
+[seed 2] t=361s Schritt 279232 f=70 bester=4 Neustarts=9
+[seed 2] t=391s Schritt 298432 f=130 bester=2 Neustarts=9
+[seed 2] t=421s Schritt 319552 f=132 bester=2 Neustarts=10
+[seed 2] t=451s Schritt 351040 f=50 bester=2 Neustarts=10
+[seed 2] GELOEST nach 458.1 s, Schritt 354989, Neustarts 11 -> runs/bahnen5/teilC/treffer_n20_K7_seed2.txt
+Ende 16:14:54 UTC
+runs/bahnen5/teilC/treffer_n20_K7_seed1.txt: 7 Vertreter, 70 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=6 -> OK (Ziel R=6)
+runs/bahnen5/teilC/treffer_n20_K7_seed2.txt: 7 Vertreter, 70 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=6 -> OK (Ziel R=6)
+runs/bahnen5/teilC/treffer_n20_K7_seed3.txt: 7 Vertreter, 70 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=6 -> OK (Ziel R=6)
+runs/bahnen5/teilC/treffer_n20_K7_seed4.txt: 7 Vertreter, 70 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=6 -> OK (Ziel R=6)

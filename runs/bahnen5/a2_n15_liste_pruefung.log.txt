@@ -1,0 +1,13 @@
+525 Zeilen, 525 verschiedene Bahnmengen, davon nicht ueberdeckend/fehlerhaft: 0
+  Abschluss unter Blockdrehung: Bilder ausserhalb der Liste: 0
+  Abschluss unter Blocktausch: Bilder ausserhalb der Liste: 0
+  Abschluss unter Blockzyklus: Bilder ausserhalb der Liste: 0
+  Abschluss unter Multiplikator2: Bilder ausserhalb der Liste: 0
+  Abschluss unter Verschiebung: Bilder ausserhalb der Liste: 0
+
+real	0m17.916s
+user	0m16.977s
+sys	0m1.079s
+runs/bahnen5/bahn15_40w_vertreter.txt: 4 Vertreter, 40 Woerter, selbstkomplementaer=True, Ueberdeckungsradius=4 -> OK (Ziel R=4)
+Beispiel 1296 245 3263 6124 in der Liste: True
+Klassen der 525 Loesungen unter den Normalisator-Erzeugern: 3 Groessen [25, 200, 300]
