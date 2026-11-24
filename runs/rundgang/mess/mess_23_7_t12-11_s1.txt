@@ -1,0 +1,23 @@
+typ=(12, 11) seed=1 binary=coset_tabu_mess
+m=21 n=23 R=7 K=15 |S|=377984 (0.1802 von 2^m), untere Schranke K>=5.55
+[0s it=0 r=0] unueberdeckt 95840
+[0s it=1 r=0] unueberdeckt 76030
+[0s it=2 r=0] unueberdeckt 55000
+[0s it=3 r=0] unueberdeckt 54536
+[0s it=4 r=0] unueberdeckt 39210
+[0s it=5 r=0] unueberdeckt 24793
+[0s it=6 r=0] unueberdeckt 17318
+[1s it=8 r=0] unueberdeckt 11887
+[1s it=11 r=0] unueberdeckt 8743
+[1s it=12 r=0] unueberdeckt 7864
+[1s it=17 r=0] unueberdeckt 6877
+[1s it=18 r=0] unueberdeckt 6383
+[1s it=22 r=0] unueberdeckt 5326
+[1s it=24 r=0] unueberdeckt 4872
+[1s it=25 r=0] unueberdeckt 4821
+[7s it=117 r=0] unueberdeckt 4316
+[8s it=126 r=0] unueberdeckt 4005
+[8s it=127 r=0] unueberdeckt 3498
+[8s it=132 r=0] unueberdeckt 3083
+[10s it=164 r=0] unueberdeckt 2999
+MESS m=21 n=23 R=7 K=15 |S|=377984 Schritte=200 Zeit=11.91s je_Schritt=0.0596s Vorbereitung=0.02s

@@ -68,6 +68,8 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
   Alle 6 Kontrollen in `controls/` mit beiden Prüfskripten erneut identisch bestätigt.
 - 24.11.2026, Rundgang (18,5), d=2, Zufallsstart, je 300 s, Startwerte 1–4: K=15 (60 Wörter) in allen drei Typen ungelöst
   ((11,7) Restzahl 36–38, (10,8) 48–57, (9,9) 76–90), 12 Läufe à 300 s = 15 Min. K=16: (9,9) und (10,8) ungelöst (je 4 x 300 s), (11,7) gelöst.
+- 24.11.2026, Rundgang (21,6), d=2, K=16 (64 Wörter, Kontrolle), Zufallsstart, je 900 s, Startwerte 1–4: (11,10) Restzahl 1416–1739, (12,9) 1402–1464,
+  (13,8) 480–960; alle 12 Läufe ungelöst (3 x 15 Min.).
 
 - 23.11.2026, Lauf n=20 R=6 d=2 K=13 Typ (11,9) Startwerte 1–16, je 1800 s: durch Container-Neustart verloren, keine Restzahlen
   (Details im Abschnitt „Lauf K=13“).
@@ -497,6 +499,15 @@ bleibt die Stufe dort ungelöst, folgen die übrigen Typen (Abweichung von der R
 **(21,6), je 900 s, 4 Startwerte je Typ (Quotient F2^19):**
 - K=16 (64 Wörter, Kontrolle), Typ (11,10): 0 von 4, Restzahl 1416/1540/1739/1624 (je ca. 66 800 Schritte). Weit von einer Lösung entfernt.
 - K=16, Typ (12,9): 0 von 4, Restzahl 1464/1402/1432/1416 (je ca. 68 000 Schritte). Typ (13,8) folgt.
+
+- K=16, Typ (13,8): 0 von 4, Restzahl 480/736/960/712 (je ca. 66 000 Schritte); bester der drei Typen, aber weit von 0.
+  **Kontrolle (21,6) K=16 nicht bestanden: 0 von 12 Läufen (je 900 s) in allen drei Typen.** Stopp laut Anweisung, K=15 und tiefer nicht versucht,
+  Rekord (K=12) nicht erreicht. Hinweis (kein Befund): Dichte bei K=16 ist 2,5; (22,7) K=13 (3,5) und (20,6) K=14 (3,2) wurden gelöst. Unbekannt, ob die
+  bekannten 64 Wörter bei (21,6) überhaupt als Vereinigung von Nebenklassen eines 2-dim. D mit Einsvektor vorliegen.
+
+**(23,7), Quotient F2^21, Schrittzeit gemessen** (`build/coset_tabu_mess`, `-DMESS=200`, K=15, 4 Läufe gleichzeitig, `runs/rundgang/mess/`):
+0,058–0,063 s je Schritt, beide Typen (12,11) und (13,10), Vorbereitung 0,02 s; |S| = 377 984 bzw. 374 288. Das sind ca. 29 000 Schritte in 1800 s
+(bei (22,7): 62 000; bei (20,6): 386 000). Dichte bei K=15: 2,8.
 
 <!-- RUNDGANG-ENDE -->
 
