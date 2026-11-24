@@ -472,6 +472,24 @@ Vom Orchestrator-Claude mit eigenen Skripten gerechnet (nicht im Repo, kein Code
 **Stand der Hadamard-Route:** abgeschlossen ohne Rekordkandidat (Ordnung 20 voll, Ordnung 24 ohne eine Spalte,
 Bauregel bei Ordnung 40 mit gleicher Zeilenausrichtung). Die Konstruktion der 48 Wörter bei (20,6) ohne Suche steht.
 
+## Gegenrechnung McKay-60 (24.11.2026)
+
+`src/pruefe_mckay.py` (nutzt `exakte_disc` und `pruefe_hadamard` aus `src/hadamard_tests.py`, kein Suchcode) liest
+`controls/had24_mckay_hex.txt`: 60 Matrizen, alle Hadamard (H·H^T = 24·I), paarweise verschieden, **alle 60 Diskrepanz 6, alle
+60 Transponierten ebenfalls 6** (59 s, `runs/2026-11-24_mckay60_gegenrechnung.log.txt`). Erwartung erfüllt. Ordnung 24 bleibt ohne Rekordkandidat.
+
+## Rundgang Nebenklassen-Suche, Dimension 2, Zufallsstart (ab 24.11.2026, 10:08 UTC, Cloud 4 Kerne, Obergrenze 3 h = bis 13:08 UTC)
+
+Treiber `src/run_gen.py` (Aufruf wie bei „Kontrolle Skalierung“), Logs und Wörter in `runs/rundgang/`, Blockprotokoll `runs/rundgang/blocklog.txt`.
+Je Block: 4 Startwerte parallel, nach jedem Block STATUS, Commit, Push. Je Stufe wird mit dem bisher besten Typ begonnen;
+bleibt die Stufe dort ungelöst, folgen die übrigen Typen (Abweichung von der Reihenfolge der Anweisung, spart Zeit; „Stufe ohne Lösung“ heißt weiter: alle Typen ungelöst).
+
+**(18,5), je 300 s, 4 Startwerte je Typ:**
+- K=16 (64 Wörter, Kontrolle): (9,9) 0 von 4 (Restzahl 20/22/21/18), (10,8) 0 von 4 (10/13/20/28), **(11,7) 4 von 4 gelöst**
+  (32 s, 30 s, 125 s, 191 s). Wörter 64, selbstkomplementär, Radius per Brute-Force 5. Kontrolle bestanden.
+
+<!-- RUNDGANG-ENDE -->
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17

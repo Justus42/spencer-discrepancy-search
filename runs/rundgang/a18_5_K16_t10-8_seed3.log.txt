@@ -1,0 +1,27 @@
+n=18 R=5 d=2 K=16 typ=(10, 8) seed=3 secs=300
+m=16 n=18 R=5 K=16 |S|=12049 (0.1839 von 2^m), untere Schranke K>=5.44
+[0s it=0 r=0] unueberdeckt 1336
+[0s it=1 r=0] unueberdeckt 1023
+[0s it=2 r=0] unueberdeckt 717
+[0s it=3 r=0] unueberdeckt 362
+[0s it=4 r=0] unueberdeckt 286
+[0s it=5 r=0] unueberdeckt 178
+[0s it=7 r=0] unueberdeckt 168
+[0s it=20 r=0] unueberdeckt 165
+[0s it=21 r=0] unueberdeckt 130
+[0s it=28 r=0] unueberdeckt 124
+[0s it=30 r=0] unueberdeckt 118
+[0s it=33 r=0] unueberdeckt 105
+[0s it=36 r=0] unueberdeckt 89
+[0s it=52 r=0] unueberdeckt 88
+[0s it=57 r=0] unueberdeckt 85
+[0s it=60 r=0] unueberdeckt 83
+[0s it=84 r=0] unueberdeckt 69
+[0s it=105 r=0] unueberdeckt 65
+[1s it=592 r=0] unueberdeckt 53
+[1s it=980 r=0] unueberdeckt 49
+[1s it=1014 r=0] unueberdeckt 46
+[1s it=1017 r=0] unueberdeckt 41
+[3s it=2457 r=0] unueberdeckt 30
+[153s it=154152 r=26] unueberdeckt 20
+Zeitlimit, best=20, it=298976

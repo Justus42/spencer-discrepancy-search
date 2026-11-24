@@ -1,0 +1,12 @@
+typ=(9, 9) seed=1 nicht geloest, kleinste Restzahl=20 (Zeitlimit, best=20, it=275504)
+typ=(9, 9) seed=2 nicht geloest, kleinste Restzahl=22 (Zeitlimit, best=22, it=284416)
+typ=(9, 9) seed=3 nicht geloest, kleinste Restzahl=21 (Zeitlimit, best=21, it=282432)
+typ=(9, 9) seed=4 nicht geloest, kleinste Restzahl=18 (Zeitlimit, best=18, it=279584)
+typ=(10, 8) seed=1 nicht geloest, kleinste Restzahl=10 (Zeitlimit, best=10, it=298096)
+typ=(10, 8) seed=2 nicht geloest, kleinste Restzahl=13 (Zeitlimit, best=13, it=299888)
+typ=(10, 8) seed=3 nicht geloest, kleinste Restzahl=20 (Zeitlimit, best=20, it=298976)
+typ=(10, 8) seed=4 nicht geloest, kleinste Restzahl=28 (Zeitlimit, best=28, it=296784)
+typ=(11, 7) seed=1 GELOEST (125s it=123353 r=20) Woerter=64 selbstkompl=True Radius(Brute-Force)=5 Datei=runs/rundgang/woerter_n18_R5_d2_K16_typ11-7_seed1.txt
+typ=(11, 7) seed=2 GELOEST (191s it=183848 r=30) Woerter=64 selbstkompl=True Radius(Brute-Force)=5 Datei=runs/rundgang/woerter_n18_R5_d2_K16_typ11-7_seed2.txt
+typ=(11, 7) seed=3 GELOEST (32s it=31830 r=5) Woerter=64 selbstkompl=True Radius(Brute-Force)=5 Datei=runs/rundgang/woerter_n18_R5_d2_K16_typ11-7_seed3.txt
+typ=(11, 7) seed=4 GELOEST (30s it=29279 r=4) Woerter=64 selbstkompl=True Radius(Brute-Force)=5 Datei=runs/rundgang/woerter_n18_R5_d2_K16_typ11-7_seed4.txt
