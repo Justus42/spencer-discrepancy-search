@@ -33,3 +33,9 @@ m=18 n=20 R=6 K=13 |S|=58402 (0.2228 von 2^m), untere Schranke K>=4.49
 [1s it=300 r=0] unueberdeckt 56
 [1s it=312 r=0] unueberdeckt 21
 [5s it=1040 r=0] unueberdeckt 17
+[32s it=7121 r=1] unueberdeckt 15
+[285s it=62287 r=12] unueberdeckt 9
+[758s it=161746 r=30] unueberdeckt 8
+[972s it=205939 r=38] unueberdeckt 7
+[1335s it=280473 r=51] unueberdeckt 6
+Zeitlimit, best=6, it=372304

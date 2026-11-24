@@ -244,6 +244,16 @@ Block 3 (Startwerte 9–12, je 1800 s, 22:39–23:09 UTC): **2 von 4 gelöst, 52
 Block 4, erster Versuch (Startwerte 13–16, ab 23:11 UTC): durch Container-Neustart um ca. 23:36 UTC abgebrochen, ohne Ergebnis
 (nach 1303/1250/1286/936 s Laufzeit, beste Restzahl bis dahin 2/2/6/2; Teillogs `runs/*seed1[3-6]_abgebrochen.log.txt`).
 Zweiter Versuch von Block 4 gestartet 23:37 UTC.
+Block 4, zweiter Versuch (Startwerte 13–16, je 1800 s, 23:37–00:08 UTC): **0 von 4 gelöst.** Beste Restzahl je Startwert:
+13: 2, 14: 2, 15: 6, 16: 2.
+
+**Gesamtergebnis K=13, Typ (11,9), Startwerte 1–16, je 1800 s (Länge 20, R=6, d=2): 6 von 16 gelöst, 52 Wörter.**
+- Gelöst: Startwerte 3, 4, 5, 6, 10, 12. Alle sechs Treffer: Radius per Brute-Force 6, selbstkomplementär, beide Prüfskripte
+  Diskrepanz 8 (Quotient 8/sqrt(26) = 1,569, kein Spencer-Rekord), alle sechs normal (Norm 13, alle Koordinaten), Folgecodes für
+  Länge 22/24/26 (R=7/8/9) mit je 52 Wörtern von beiden Prüfskripten bestätigt (Diskrepanz 8).
+- Nicht gelöst, beste Restzahl: Startwert 1: 2, 2: 2, 7: 7, 8: 2, 9: 2, 11: 7, 13: 2, 14: 2, 15: 6, 16: 2.
+- Kein K=12 gestartet (nicht freigegeben). Neuheit der 52 Wörter bei (20,6) offen (Regel 3): Gemini-Bericht steht aus.
+
 - Der frühere Lauf mit leeren Logs ist damit überschrieben (Logs der Startwerte 1–4 stammen jetzt aus Block 1).
 
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
