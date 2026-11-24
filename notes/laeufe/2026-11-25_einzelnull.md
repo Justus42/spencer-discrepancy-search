@@ -83,3 +83,31 @@ Folgerung: Es genügen Zeilen mit Träger 10, 8, 6. Mindestens 6 Zeilen mit Trä
   schon Typ 1 (bei Träger 10 in 0,1 s fertig) braucht > 25 Min., Typen 5–9 wären um Größenordnungen teurer.
   **Ergebnis gemischt: Suche erfolglos (nicht vollständig).** Vollständig ist nur Typ 0.
 - Idee für später: zuerst die höchstens 5 Zeilen mit Träger 8/6 als Bahnvertreter festlegen, dann nur Träger 10 mit Restbudget.
+
+## Teil 4 (neu nach Nachtrag 24.11., 23:10): P1 und Leiter bei (13,3)
+
+- **P1 nachgerechnet** (Prüfcode `src/p1_pruef14.c`, 58 s): alle 57 344 Zeilen mit einer Null (n = 14, d = 7), beide
+  Paritätshälften, alle 14 Streichkoordinaten = 1 605 632 Fälle: je Zeile und Hälfte 378 Klassen, Treffermenge immer genau
+  B(c,3) ∪ B(~c,3) im 13-Würfel (c = Zeile ohne Streichkoordinate, Null durch ±1 ersetzt), **0 Abweichungen**.
+  Log `runs/einzelnull/p1_pruef14.log.txt`.
+- Leiter (Suchcode `src/sc13_tabu.c`, Treiber `src/run_sc13.sh`, Prüfcode `src/sc_pruef.py`), Zufallsstart, je Stufe
+  4 Startwerte parallel, je höchstens 600 s; 23:30–23:54 UTC. Log `runs/sc13/leiter.log.txt`.
+
+  | Wörter | gelöst | Zeit bis Lösung bzw. Restzahl |
+  |---|---|---|
+  | 48 (Kontrolle) | 4 von 4 | 0,0–0,7 s |
+  | 44 (Kontrolle) | 4 von 4 | 2–244 s |
+  | 42 | 1 von 4 | Startwert 4 nach 126 s; sonst Rest 76–144 (bester 8) |
+  | 40 | 0 von 4 | Rest 160–196 (bester 16); **Stopp** |
+
+- Alle 9 gefundenen Codes mit `sc_pruef.py`: komplement-abgeschlossen, Radius 3. `sha256sum -c verifiers/SHA256SUMS`: alle OK
+  (`runs/sc13/sha256.log.txt`). 42er als 21 x 13-Matrix (`runs/sc13/w42_s4_matrix.txt`): alle 3 Prüfprogramme disc 7
+  (Quotient 7/√21 = 1,528, kein Rekord, gleich der Tabellenschranke K(13,3) ≤ 42). 30/28 Wörter nicht versucht (Stopp bei 40).
+
+## Ergebnis
+
+- Teil 1: alle Angaben bestätigt. Teil 2: Kontrolle bestanden; bei n = 8 haben 55 680 von 57 600 Lösungen verteilte Nullen.
+- Teil 3, Träger 10: **Es gibt keine 11 x 11-Matrix, deren Zeilen je genau eine Null und sonst ±1 haben, mit Diskrepanz ≥ 6.**
+  Belegart: vollständig durchgerechnet (Suchcode mit Symmetriereduktion; kein Zertifikat). Gilt nur für Einträge in {-1,0,1}.
+- Teil 3, gemischt (Träger 10/8/6): Suche erfolglos, nicht fertig (Typ 0 vollständig, Typ 1 fast, Typen 2–9 nicht).
+- Teil 4: P1 bestätigt; (13,3) selbstkomplementär: 42 Wörter erreicht, 40 nicht. Kein Rekord.

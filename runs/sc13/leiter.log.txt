@@ -1,0 +1,49 @@
+### Block Start 2026-11-24 23:30:28 UTC
+m=13 R=3 P=24 (48 Woerter) seed=1: GELOEST, Rest 0 Punkte (bester 0), 74678 Schritte, 0.7 s
+m=13 R=3 P=24 (48 Woerter) seed=2: GELOEST, Rest 0 Punkte (bester 0), 43257 Schritte, 0.4 s
+m=13 R=3 P=24 (48 Woerter) seed=3: GELOEST, Rest 0 Punkte (bester 0), 23953 Schritte, 0.2 s
+m=13 R=3 P=24 (48 Woerter) seed=4: GELOEST, Rest 0 Punkte (bester 0), 1142 Schritte, 0.0 s
+48 Woerter, verschieden 48, Laenge 13, komplement-abgeschlossen: True
+Ueberdeckungsradius 3 (gefordert <= 3): OK
+Matrix 24 x 13 nach runs/sc13/w48_s1_matrix.txt, Diskrepanz-Erwartung >= 7
+48 Woerter, verschieden 48, Laenge 13, komplement-abgeschlossen: True
+Ueberdeckungsradius 3 (gefordert <= 3): OK
+Matrix 24 x 13 nach runs/sc13/w48_s2_matrix.txt, Diskrepanz-Erwartung >= 7
+48 Woerter, verschieden 48, Laenge 13, komplement-abgeschlossen: True
+Ueberdeckungsradius 3 (gefordert <= 3): OK
+Matrix 24 x 13 nach runs/sc13/w48_s3_matrix.txt, Diskrepanz-Erwartung >= 7
+48 Woerter, verschieden 48, Laenge 13, komplement-abgeschlossen: True
+Ueberdeckungsradius 3 (gefordert <= 3): OK
+Matrix 24 x 13 nach runs/sc13/w48_s4_matrix.txt, Diskrepanz-Erwartung >= 7
+### Stufe 48: geloest
+m=13 R=3 P=22 (44 Woerter) seed=1: GELOEST, Rest 0 Punkte (bester 0), 28165156 Schritte, 244.4 s
+m=13 R=3 P=22 (44 Woerter) seed=2: GELOEST, Rest 0 Punkte (bester 0), 1106377 Schritte, 9.6 s
+m=13 R=3 P=22 (44 Woerter) seed=3: GELOEST, Rest 0 Punkte (bester 0), 253744 Schritte, 2.2 s
+m=13 R=3 P=22 (44 Woerter) seed=4: GELOEST, Rest 0 Punkte (bester 0), 2202090 Schritte, 19.0 s
+44 Woerter, verschieden 44, Laenge 13, komplement-abgeschlossen: True
+Ueberdeckungsradius 3 (gefordert <= 3): OK
+Matrix 22 x 13 nach runs/sc13/w44_s1_matrix.txt, Diskrepanz-Erwartung >= 7
+44 Woerter, verschieden 44, Laenge 13, komplement-abgeschlossen: True
+Ueberdeckungsradius 3 (gefordert <= 3): OK
+Matrix 22 x 13 nach runs/sc13/w44_s2_matrix.txt, Diskrepanz-Erwartung >= 7
+44 Woerter, verschieden 44, Laenge 13, komplement-abgeschlossen: True
+Ueberdeckungsradius 3 (gefordert <= 3): OK
+Matrix 22 x 13 nach runs/sc13/w44_s3_matrix.txt, Diskrepanz-Erwartung >= 7
+44 Woerter, verschieden 44, Laenge 13, komplement-abgeschlossen: True
+Ueberdeckungsradius 3 (gefordert <= 3): OK
+Matrix 22 x 13 nach runs/sc13/w44_s4_matrix.txt, Diskrepanz-Erwartung >= 7
+### Stufe 44: geloest
+m=13 R=3 P=21 (42 Woerter) seed=1: ungeloest, Rest 124 Punkte (bester 8), 66823168 Schritte, 600.0 s
+m=13 R=3 P=21 (42 Woerter) seed=2: ungeloest, Rest 144 Punkte (bester 8), 67016704 Schritte, 600.0 s
+m=13 R=3 P=21 (42 Woerter) seed=3: ungeloest, Rest 76 Punkte (bester 8), 66659328 Schritte, 600.0 s
+m=13 R=3 P=21 (42 Woerter) seed=4: GELOEST, Rest 0 Punkte (bester 0), 14476889 Schritte, 126.3 s
+42 Woerter, verschieden 42, Laenge 13, komplement-abgeschlossen: True
+Ueberdeckungsradius 3 (gefordert <= 3): OK
+Matrix 21 x 13 nach runs/sc13/w42_s4_matrix.txt, Diskrepanz-Erwartung >= 7
+### Stufe 42: geloest
+m=13 R=3 P=20 (40 Woerter) seed=1: ungeloest, Rest 160 Punkte (bester 16), 64173056 Schritte, 600.0 s
+m=13 R=3 P=20 (40 Woerter) seed=2: ungeloest, Rest 166 Punkte (bester 16), 64356352 Schritte, 600.0 s
+m=13 R=3 P=20 (40 Woerter) seed=3: ungeloest, Rest 196 Punkte (bester 16), 64504832 Schritte, 600.0 s
+m=13 R=3 P=20 (40 Woerter) seed=4: ungeloest, Rest 186 Punkte (bester 16), 64665600 Schritte, 600.0 s
+### Stufe 40: OHNE Loesung, Stopp
+### Block Ende 2026-11-24 23:54:34 UTC

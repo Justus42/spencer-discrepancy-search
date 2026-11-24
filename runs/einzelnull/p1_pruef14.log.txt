@@ -1,0 +1,8 @@
+Zeilen: 57344, Faelle (Zeile x Haelfte x Streichkoordinate): 1605632
+Klassenzahl je Zeile und Haelfte != 378: 0
+Abweichungen (keine antipodale Kugel vom Radius 3): 0
+Kandidat aus der Zeile passte nicht (volle Suche noetig): 0
+
+real	0m58.399s
+user	0m58.108s
+sys	0m0.004s

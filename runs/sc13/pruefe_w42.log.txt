@@ -1,0 +1,5 @@
+Matrix runs/sc13/w42_s4_matrix.txt: 21 x 13, aufgefuellt 21 x 21
+  check_disc      Diskrepanz 7  (0.2 s)
+  verify_spencer  Diskrepanz 7  (0.2 s)
+  exakt_disc      Diskrepanz 7  (0.2 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 7 (= erwartet)
