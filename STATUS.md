@@ -70,6 +70,7 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
   ((11,7) Restzahl 36–38, (10,8) 48–57, (9,9) 76–90), 12 Läufe à 300 s = 15 Min. K=16: (9,9) und (10,8) ungelöst (je 4 x 300 s), (11,7) gelöst.
 - 24.11.2026, Rundgang (21,6), d=2, K=16 (64 Wörter, Kontrolle), Zufallsstart, je 900 s, Startwerte 1–4: (11,10) Restzahl 1416–1739, (12,9) 1402–1464,
   (13,8) 480–960; alle 12 Läufe ungelöst (3 x 15 Min.).
+- 24.11.2026, Rundgang (23,7), d=2, K=15 (60 Wörter), Zufallsstart, je 1800 s, Startwerte 1–4: (12,11) Restzahl 640–680, (13,10) 4777–5174; alle 8 Läufe ungelöst (2 x 30 Min.).
 
 - 23.11.2026, Lauf n=20 R=6 d=2 K=13 Typ (11,9) Startwerte 1–16, je 1800 s: durch Container-Neustart verloren, keine Restzahlen
   (Details im Abschnitt „Lauf K=13“).
@@ -511,6 +512,8 @@ bleibt die Stufe dort ungelöst, folgen die übrigen Typen (Abweichung von der R
 
 **(23,7), je 1800 s, 4 Startwerte je Typ:**
 - K=15 (60 Wörter), Typ (12,11): 0 von 4, Restzahl 680/680/680/640 (je ca. 30 300 Schritte). Typ (13,10) folgt.
+- K=15, Typ (13,10): 0 von 4, Restzahl 5045/5101/5174/4777 (je ca. 30 700 Schritte), viel schlechter als (12,11).
+  **(23,7): K=15 (60 Wörter) in beiden Typen ungelöst (0 von 8, je 1800 s).** Stopp laut Anweisung, K=14 bis K=12 nicht versucht, Rekord (K=12) nicht erreicht.
 
 <!-- RUNDGANG-ENDE -->
 
