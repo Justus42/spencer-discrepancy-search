@@ -58,3 +58,8 @@ Folgerung: Es genügen Zeilen mit Träger 10, 8, 6. Mindestens 6 Zeilen mit Trä
 
   Beispiel n = 10, K = 8 (`kontrolle10_K8_beispiel.txt`): alle 3 Prüfprogramme disc 5.
 - Aufwand ohne `-3` (nur Typ 5: 231 410 Aufgaben, 400 in 21 s) wäre ~3–4 h je Typ gewesen; mit `-3` Typ 5 Teilmessung: 30 von 40 Bahnen in ~2 Min.
+
+## Teil 3: Blöcke Träger 10
+
+- Block 1 (22:02–22:27 UTC, 25 Min.): Typen 0–7 vollständig, 0 Lösungen (Typ 5: 3,42 Mio. Aufgaben, 219 s; Typ 6: 156 s;
+  Typ 7: 204 s). Typ 8: 1 081 537 von 1 179 160 Aufgaben, Abbruch Zeit. Max. Tiefe 7. Log `runs/einzelnull/block_10.log.txt`.

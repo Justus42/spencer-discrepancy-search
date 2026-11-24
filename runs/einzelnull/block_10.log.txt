@@ -1,0 +1,125 @@
+### Block Start 2026-11-24 22:02:23 UTC, Traeger 10, Grenze 1500 s
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T0.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 0 (gleiche Spalte, d=5, Schnitt 0): a = Zeile 5120, Vertreter Zeile 5616
+   Stabilisator {a,b}: 115200 Elemente angewandt (Grenze 200000 je Fall), 0 Kandidaten, 0 Bahnen
+   dritte Zeile: 0 Bahnvertreter
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe:; max. Tiefe 0; Zeit 0.2 s
+   Typ 0: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 1.0 s
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T1.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 1 (andere Spalte, d=4, Schnitt 6): a = Zeile 5120, Vertreter Zeile 5088
+   Stabilisator {a,b}: 5760 Elemente angewandt (Grenze 200000 je Fall), 1200 Kandidaten, 7 Bahnen
+   dritte Zeile: 7 Bahnvertreter
+   [1 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 66, zuletzt Nr. 2097153
+   Aufgaben (Tiefe 5): 164 gesamt, 164 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:7 4:126 5:164; max. Tiefe 5; Zeit 0.5 s
+   Typ 1: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 1.3 s
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T2.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 2 (andere Spalte, d=3, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5056
+   Stabilisator {a,b}: 8640 Elemente angewandt (Grenze 200000 je Fall), 3306 Kandidaten, 21 Bahnen
+   dritte Zeile: 21 Bahnvertreter
+   [3 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 1366, zuletzt Nr. 1048576
+   Aufgaben (Tiefe 5): 280532 gesamt, 280532 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:21 4:2492 5:280532 6:2797; max. Tiefe 6; Zeit 7.1 s
+   Typ 2: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 7.7 s
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T3.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 3 (gleiche Spalte, d=3, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5568
+   Stabilisator {a,b}: 120960 Elemente angewandt (Grenze 200000 je Fall), 3472 Kandidaten, 6 Bahnen
+   dritte Zeile: 6 Bahnvertreter
+   [36 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 2761, zuletzt Nr. 0
+   Aufgaben (Tiefe 5): 120852 gesamt, 120852 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:6 4:973 5:120852; max. Tiefe 5; Zeit 36.8 s
+   Typ 3: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 37.4 s
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T4.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 4 (gleiche Spalte, d=4, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5600
+   Stabilisator {a,b}: 69120 Elemente angewandt (Grenze 200000 je Fall), 3806 Kandidaten, 12 Bahnen
+   dritte Zeile: 12 Bahnvertreter
+   [24 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 1292, zuletzt Nr. 1048576
+   [84 s] Aufgaben erledigt (dieser Lauf) 13189, insgesamt 13189 von 41677, zuletzt Nr. 11547524
+   Aufgaben (Tiefe 5): 346863 gesamt, 346863 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:12 4:2128 5:346863 6:11494819; max. Tiefe 6; Zeit 102.0 s
+   Typ 4: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 102.8 s
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T5.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 5 (andere Spalte, d=2, Schnitt 26): a = Zeile 5120, Vertreter Zeile 4992
+   Stabilisator {a,b}: 20160 Elemente angewandt (Grenze 200000 je Fall), 5152 Kandidaten, 40 Bahnen
+   dritte Zeile: 40 Bahnvertreter
+   [10 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 5764, zuletzt Nr. 1048577
+   [70 s] Aufgaben erledigt (dieser Lauf) 20008, insgesamt 20008 von 98357, zuletzt Nr. 24137253
+   [130 s] Aufgaben erledigt (dieser Lauf) 27299, insgesamt 27299 von 110738, zuletzt Nr. 26241698
+   [190 s] Aufgaben erledigt (dieser Lauf) 20719, insgesamt 20719 von 184302, zuletzt Nr. 37769454
+   Aufgaben (Tiefe 5): 3417058 gesamt, 3417058 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:40 4:12448 5:3417058 6:13509969; max. Tiefe 6; Zeit 219.1 s
+   Typ 5: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 219.8 s
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T6.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 6 (andere Spalte, d=1, Schnitt 40): a = Zeile 5120, Vertreter Zeile 4864
+   Stabilisator {a,b}: 80640 Elemente angewandt (Grenze 200000 je Fall), 5485 Kandidaten, 36 Bahnen
+   dritte Zeile: 36 Bahnvertreter
+   [38 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 11301, zuletzt Nr. 1048577
+   [98 s] Aufgaben erledigt (dieser Lauf) 55356, insgesamt 55356 von 138646, zuletzt Nr. 18929726
+   Aufgaben (Tiefe 5): 3188572 gesamt, 3188572 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:36 4:14307 5:3188572 6:4826303; max. Tiefe 6; Zeit 156.0 s
+   Typ 6: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 156.6 s
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T7.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 7 (gleiche Spalte, d=1, Schnitt 40): a = Zeile 5120, Vertreter Zeile 5376
+   Stabilisator {a,b}: 400000 Elemente angewandt (Grenze 200000 je Fall), 5502 Kandidaten, 10 Bahnen
+   dritte Zeile: 10 Bahnvertreter
+   [189 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 12159, zuletzt Nr. 0
+   Aufgaben (Tiefe 5): 644714 gesamt, 644714 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:10 4:4293 5:644714 6:455993; max. Tiefe 6; Zeit 203.9 s
+   Typ 7: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 204.6 s
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T8.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 8 (gleiche Spalte, d=2, Schnitt 40): a = Zeile 5120, Vertreter Zeile 5504
+   Stabilisator {a,b}: 322560 Elemente angewandt (Grenze 200000 je Fall), 5590 Kandidaten, 20 Bahnen
+   dritte Zeile: 20 Bahnvertreter
+   [155 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 12611, zuletzt Nr. 1048576
+   [215 s] Aufgaben erledigt (dieser Lauf) 16628, insgesamt 16628 von 142158, zuletzt Nr. 8405235
+   [275 s] Aufgaben erledigt (dieser Lauf) 39548, insgesamt 39548 von 142158, zuletzt Nr. 8428153
+   [335 s] Aufgaben erledigt (dieser Lauf) 64160, insgesamt 64160 von 142158, zuletzt Nr. 8452767
+   [395 s] Aufgaben erledigt (dieser Lauf) 91654, insgesamt 91654 von 142158, zuletzt Nr. 8480260
+   [455 s] Aufgaben erledigt (dieser Lauf) 2945, insgesamt 2945 von 141943, zuletzt Nr. 9440127
+   [515 s] Aufgaben erledigt (dieser Lauf) 27450, insgesamt 27450 von 141943, zuletzt Nr. 9464633
+   [575 s] Aufgaben erledigt (dieser Lauf) 50575, insgesamt 50575 von 141943, zuletzt Nr. 9487758
+   [635 s] Aufgaben erledigt (dieser Lauf) 73928, insgesamt 73928 von 141943, zuletzt Nr. 9511111
+   [695 s] Aufgaben erledigt (dieser Lauf) 100861, insgesamt 100861 von 141943, zuletzt Nr. 9538046
+   [755 s] Aufgaben erledigt (dieser Lauf) 83809, insgesamt 83809 von 174939, zuletzt Nr. 10569561
+   Aufgaben (Tiefe 5): 1179160 gesamt, 1081537 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+   Knoten je Tiefe: 3:12 4:3576 5:1081541 6:47268075 7:81097; max. Tiefe 7; Zeit 768.4 s
+   Typ 8: NICHT fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), ABBRUCH (Zeit), Gesamtzeit 769.0 s
+### Blockzeit um in Typ 8
+### Block Ende 2026-11-24 22:27:23 UTC, fertig: fertig 0 fertig 1 fertig 2 fertig 3 fertig 4 fertig 5 fertig 6 fertig 7 
