@@ -1,0 +1,11 @@
+Start 16:15:27 UTC
+n=20 R=6 K=6: 104856 volle Bahnen, 8 Paare, Kugel 60460, Matrix 1.37 GB, mittlere Zeile 46120, Aufbau 4.2 s
+[seed 4] Start f=34358 (Zufall)
+[seed 2] Start f=39288 (Zufall)
+[seed 3] Start f=52158 (Zufall)
+[seed 1] Start f=84628 (Zufall)
+[seed 3] NICHT geloest nach 600.0 s, Schritte 116288, Neustarts 2, beste Restzahl 104 Punkte; beste Bahnen: 188189 58889 60156 100719 37266 188898
+[seed 2] NICHT geloest nach 600.1 s, Schritte 124352, Neustarts 2, beste Restzahl 96 Punkte; beste Bahnen: 172114 7979 169095 101064 191416 128514
+[seed 1] NICHT geloest nach 600.1 s, Schritte 128384, Neustarts 2, beste Restzahl 122 Punkte; beste Bahnen: 62654 114770 60292 168829 36371 39384
+[seed 4] NICHT geloest nach 600.3 s, Schritte 117760, Neustarts 1, beste Restzahl 94 Punkte; beste Bahnen: 109492 112125 63047 172303 183425 34610
+Ende 16:25:31 UTC
