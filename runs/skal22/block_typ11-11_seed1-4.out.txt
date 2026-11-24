@@ -1,0 +1,5 @@
+typ=(11, 11) seed=1 GELOEST (361s it=11459 r=1) Woerter=52 selbstkompl=True Radius(Brute-Force)=7 Datei=runs/skal22/woerter_n22_R7_d2_K13_typ11-11_seed1.txt
+typ=(11, 11) seed=2 GELOEST (40s it=1230 r=0) Woerter=52 selbstkompl=True Radius(Brute-Force)=7 Datei=runs/skal22/woerter_n22_R7_d2_K13_typ11-11_seed2.txt
+typ=(11, 11) seed=3 GELOEST (198s it=6524 r=1) Woerter=52 selbstkompl=True Radius(Brute-Force)=7 Datei=runs/skal22/woerter_n22_R7_d2_K13_typ11-11_seed3.txt
+typ=(11, 11) seed=4 GELOEST (389s it=12362 r=1) Woerter=52 selbstkompl=True Radius(Brute-Force)=7 Datei=runs/skal22/woerter_n22_R7_d2_K13_typ11-11_seed4.txt
+FERTIG 08:43:23

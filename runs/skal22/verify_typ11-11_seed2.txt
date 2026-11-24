@@ -1,0 +1,9 @@
+=== runs/skal22/matrix_n22_52w_typ11-11_seed2_pad.txt ===
+Dimension        : 26 x 26 (aktive Spalten: 22, kgV L=1)
+Exakte Diskrepanz: 8
+Quotient D/sqrt(n): 1.56892908  (exakt D^2/n = 32/13)
+Vergleich 5/sqrt8: unter Rekord (< 5/sqrt(8))  (Rekord D^2/n = 25/8)
+Minimal-Vektoren : 7421376 von 67108864
+Zeuge x*         : [1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1]
+Laufzeit         : 1.792 s
+
