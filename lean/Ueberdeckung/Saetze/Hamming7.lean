@@ -9,7 +9,7 @@ namespace Ueberdeckung.Hamming7
 theorem form : matrix.length = 8 ∧ ∀ z ∈ matrix, z.length = 7 ∧ ∀ e ∈ z, e = 1 ∨ e = -1 := by decide
 
 /-- 16 Wörter (Zeilen und Komplemente), paarweise verschieden. -/
-theorem woerter : (code matrix).length = 16 ∧ (code matrix).Nodup := by decide
+theorem anzahl_woerter : (code matrix).length = 16 ∧ (code matrix).Nodup := by decide
 
 /-- Die vom Erzeuger geschriebene Wortliste ist genau `code matrix`. -/
 theorem woerter_eq : code matrix = woerter := by decide

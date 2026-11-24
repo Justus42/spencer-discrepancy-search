@@ -1,0 +1,59 @@
+Tue Nov 24 20:27:08 UTC 2026
+Zweiter Versuch nach Umbenennung woerter -> anzahl_woerter (erster: Namenskonflikt). rm .lake/build/lib/lean/Ueberdeckung*, lake build, Achsen.lean
+✔ [2/14] Built Ueberdeckung.Daten.Hamming7 (330ms)
+✔ [3/14] Built Ueberdeckung.Daten.Had24_1p3_ohne0 (644ms)
+✔ [4/14] Built Ueberdeckung.Daten.Had24_1p3 (642ms)
+✔ [5/14] Built Ueberdeckung.Basis (996ms)
+✔ [6/14] Built Ueberdeckung.Daten.Had24_2p2 (593ms)
+✔ [7/14] Built Ueberdeckung.Daten.Ctrl16 (415ms)
+✔ [8/14] Built Ueberdeckung.Saetze.Hamming7 (587ms)
+✔ [9/14] Built Ueberdeckung.Saetze.Had24_1p3_ohne0 (1.1s)
+✔ [10/14] Built Ueberdeckung.Saetze.Ctrl16 (3.5s)
+✔ [11/14] Built Ueberdeckung.Saetze.Had24_1p3 (120s)
+✔ [12/14] Built Ueberdeckung.Saetze.Had24_2p2 (121s)
+✔ [13/14] Built Ueberdeckung (289ms)
+Build completed successfully (14 jobs).
+exit 0
+wall 123.148 s, user 248.307 s, sys 1.603 s
+== Achsen
+'Ueberdeckung.pruefe_iff' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.code_iff_matrix' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Hamming7.hauptsatz' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Hamming7.pruefe_1._native.native_decide.ax_1_1]
+'Ueberdeckung.Hamming7.nicht_radius0' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Hamming7.pruefe_nicht_0._native.native_decide.ax_1_1]
+'Ueberdeckung.Ctrl16.hauptsatz' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Ctrl16.pruefe_4._native.native_decide.ax_1_1]
+'Ueberdeckung.Ctrl16.nicht_radius3' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Ctrl16.pruefe_nicht_3._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_1p3_ohne0.nicht_radius6' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_1p3_ohne0.pruefe_nicht_6._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_1p3.form' does not depend on any axioms
+'Ueberdeckung.Had24_1p3.anzahl_woerter' does not depend on any axioms
+'Ueberdeckung.Had24_1p3.radius6' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_1p3.pruefe_6._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_1p3.hauptsatz' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_1p3.pruefe_6._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_1p3.nicht_radius5' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_1p3.pruefe_nicht_5._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_2p2.form' does not depend on any axioms
+'Ueberdeckung.Had24_2p2.anzahl_woerter' does not depend on any axioms
+'Ueberdeckung.Had24_2p2.radius6' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_2p2.pruefe_6._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_2p2.hauptsatz' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_2p2.pruefe_6._native.native_decide.ax_1_1]
+'Ueberdeckung.Had24_2p2.nicht_radius5' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.Had24_2p2.pruefe_nicht_5._native.native_decide.ax_1_1]
+exit 0
+Tue Nov 24 20:29:12 UTC 2026

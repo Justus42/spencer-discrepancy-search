@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 24.11.2026 (abends, nach Rundlauf Ansatz 3). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 24.11.2026 (abends, nach Lean-Zertifikat K(20,6) ≤ 48). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 
 ## Ziel
 
@@ -93,6 +93,11 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
   - Kreuzprobe `check_disc.py` / `verify_spencer.py` auf einer 31 x 30-Matrix (Astra 8, exakt 6): beide Skripte nach je 200 s Zeitgrenze abgebrochen, nicht gerechnet (443 s verloren).
   - Sol 7, tieferes Ziel 4 (`sieb.py --ziel 4 --zeit 0.05 --max-sek 120`): an der Zeitgrenze bei 9 137 von 17 920 Matrizen abgebrochen, alle bis dahin ohne Treffer; Datei verworfen, Familienwert deshalb mit Stichprobe exakt belegt.
   - Sieb mit 0,05 s je Matrix bleibt bei Sol 4 in 7 von 2 174 Fällen über dem exakten Wert (7 statt 5): zu kurze Zeit, nur Suchcode; die exakte Rechnung entscheidet.
+
+- 24.11.2026, Lean-Zertifikat (Protokoll `notes/laeufe/2026-11-24_lean.md`): Kernel-Prüfung mit der einfachen Schleife am Stück für `ctrl_16`
+  nach 117 s Speichermangel (16 GB); Kernel-Prüfung `had24_1p3` mit 8 Dateien à 512 Blocksätzen über `lake build` nach ca. 10 Min. Speichermangel
+  (je Blocksatz ca. 25 MB festgehalten, `lake` startet mehr als 4 Prozesse); Namenskonflikt `woerter` beim Neubau (2 Min.). Alle behoben, siehe unten.
+  `lakecache.blob.core.windows.net` nicht erreichbar (Proxy 403), Mathlib nicht gebaut.
 
 ## Vorschläge aus der Astra-Abfrage (unbelegt, noch nicht getestet)
 
@@ -662,6 +667,31 @@ kein Ausschluss einer Zelle. Neuheit nicht berührt. Nichts nach außen gemeldet
 
 Überholt (Stand 23.11.), es gilt der Beschluss vom 24.11.
 
+## Lean-Zertifikat K(20,6) ≤ 48, Stufe A ohne Mathlib (24.11.2026, Cloud, 4 Kerne, Protokoll `notes/laeufe/2026-11-24_lean.md`)
+
+Lean 4.30.0-rc2 (wie `florath/covering-codes-lean`), nur Kernbibliothek, Ordner `lean/` (Anleitung `lean/README.md`).
+`lean/erzeuge.py` prüft SHA-256 und Form der Kontrolldatei und schreibt Matrix und Wortliste als Lean-Datei; Lean beweist
+`code matrix = woerter` selbst. Korrektheit der Prüfschleife bewiesen (`pruefe_iff`, `code_iff_matrix`), ohne `sorry`, ohne eigene Axiome.
+**Hauptsatz** (je Ziel): `∀ x, x < 2^20 → ∃ z ∈ matrix ++ matrix.map (List.map (fun e => -e)), abstandZeile 20 x z ≤ 6`
+(Abstand als Anzahl der Stellen j < 20, an denen Bit j von x nicht zu „Eintrag j = −1“ passt).
+
+| Stufe | Datensatz | Wörter | Radius ja | Radius nein | native_decide | decide +kernel |
+|---|---|---|---|---|---|---|
+| a) | Hamming [7,4] (`ctrl_8` ohne Nullspalte) | 16 | 1 | 0 | 0,6 s | 1,6 s |
+| b) | `ctrl_16` ohne Nullspalte | 32 | 4 | 3 | 3,5 s | 21 s |
+| c) | `had24_1p3_paley12` ohne Zeilenpaar 0 | 46 | — | 6 | 1,1 s | 1,1 s |
+| Ziel | `had24_1p3_paley12` | 48 | **6** | 5 | 120 s | 624 s |
+| Ziel | `had24_2p2_paley12` | 48 | **6** | 5 | 121 s | 349 s |
+
+**K(20,6) ≤ 48 ist damit in Lean bewiesen, auch allein durch den Kernel** (`#print axioms`: nur `propext`, `Quot.sound`;
+die native Fassung zusätzlich das Hilfsaxiom von `native_decide`). Alle Werte gleich der eigenen numpy-Gegenrechnung und dem Vortest
+des Vergleichs-Chats (SHA-256 der Datei gleich). Kernel-Fassung: SWAR-Bitzählung, für alle Werte unter 2^20 im Kernel gegen die
+einfache Zählung nachgerechnet; 4 096 Blocksätze zu 2^8 Punkten, Binärbaum, 64 Dateien, `lean/pruefe_kern.py` (höchstens 4 Prozesse).
+Gegenproben (falsche Behauptungen) in beiden Fassungen abgelehnt. Regel 8: `sha256sum -c verifiers/SHA256SUMS` OK; Regel 1: beide Matrizen
+Diskrepanz 8 in allen drei Programmen. Prüfsummen der erzeugten Dateien: `lean/SHA256SUMS`, `lean/SHA256SUMS_KERN`.
+Grenzen: Lean liest die Kontrolldatei nicht selbst (Bindung über Erzeuger und Prüfsumme); die Reduktion auf die Diskrepanz ist nicht formalisiert;
+Neuheit weiter offen. Nicht Teil dieses Auftrags: Einbau in `florath/covering-codes-lean`, Familie (2R+8, R).
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
@@ -704,4 +734,5 @@ Kein Ergebnis hat sich geändert; `src/check_disc.py`, `verifiers/verify_spencer
 - `src/exakt_disc.c`: Prüfcode, exakte Diskrepanz per Gray-Code (auch mit gestrichenen Spalten, `-s k`). `src/gegenrechnung_a.py`: Teil A.
 - `src/bahnen_zaehl.c`, `src/bahnen_gegen10.py`, `src/bahnen_pruef.py`, `src/bahnen_aut.py`: Prüfcode Bahnen unter 5er-Zyklen. `src/bahnen_tabu.c`: Suchcode dazu.
   `src/bahnen_schaetz.c`, `src/bahnen_schaetz_filter.py`: Aufwandsschätzung. Bauen: `gcc -O3 -march=native -fopenmp -o build/<name> src/<name>.c`.
+- `lean/`: Lean-Zertifikat (Überdeckung), `erzeuge.py` (Daten), `erzeuge_kern.py` (Kernel-Dateien), `pruefe_kern.py` (Kernel-Prüfung), `README.md`.
 - `src/gegenbeispiel40.c`: Suchcode für Test C (Tabu-Suche auf Vorzeichenvektoren). Bauen: `gcc -O3 -march=native -o build/gegenbeispiel40 src/gegenbeispiel40.c`.

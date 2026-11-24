@@ -1,0 +1,136 @@
+Stufe Had24_2p2, n = 20, P = 4, Start 20:18:29 UTC
+  ok     Kern/Swar20/Q                    0.0 s übersprungen (schon gebaut)
+  ok     Kern/Had24_2p2/Q                 0.4 s 
+  ok     Kern/Had24_2p2/Teil0            18.4 s 
+  ok     Kern/Had24_2p2/Teil1            18.6 s 
+  ok     Kern/Had24_2p2/Teil2            21.0 s 
+  ok     Kern/Had24_2p2/Teil3            19.8 s 
+  ok     Kern/Had24_2p2/Teil4            19.4 s 
+  ok     Kern/Had24_2p2/Teil5            20.3 s 
+  ok     Kern/Had24_2p2/Teil6            18.3 s 
+  ok     Kern/Had24_2p2/Teil7            17.7 s 
+  ok     Kern/Had24_2p2/Teil8            21.4 s 
+  ok     Kern/Had24_2p2/Teil9            21.8 s 
+  ok     Kern/Had24_2p2/Teil10           21.0 s 
+  ok     Kern/Had24_2p2/Teil11           23.7 s 
+  ok     Kern/Had24_2p2/Teil12           19.1 s 
+  ok     Kern/Had24_2p2/Teil13           20.9 s 
+  ok     Kern/Had24_2p2/Teil14           17.6 s 
+  ok     Kern/Had24_2p2/Teil15           20.2 s 
+  ok     Kern/Had24_2p2/Teil16           17.7 s 
+  ok     Kern/Had24_2p2/Teil17           17.0 s 
+  ok     Kern/Had24_2p2/Teil18           21.1 s 
+  ok     Kern/Had24_2p2/Teil19           21.5 s 
+  ok     Kern/Had24_2p2/Teil20           20.4 s 
+  ok     Kern/Had24_2p2/Teil21           19.4 s 
+  ok     Kern/Had24_2p2/Teil22           23.1 s 
+  ok     Kern/Had24_2p2/Teil23           23.2 s 
+  ok     Kern/Had24_2p2/Teil24           20.4 s 
+  ok     Kern/Had24_2p2/Teil25           21.0 s 
+  ok     Kern/Had24_2p2/Teil26           21.7 s 
+  ok     Kern/Had24_2p2/Teil27           24.0 s 
+  ok     Kern/Had24_2p2/Teil28           20.1 s 
+  ok     Kern/Had24_2p2/Teil29           20.3 s 
+  ok     Kern/Had24_2p2/Teil30           20.8 s 
+  ok     Kern/Had24_2p2/Teil31           21.1 s 
+  ok     Kern/Had24_2p2/Teil32           19.6 s 
+  ok     Kern/Had24_2p2/Teil33           18.7 s 
+  ok     Kern/Had24_2p2/Teil34           19.1 s 
+  ok     Kern/Had24_2p2/Teil35           17.5 s 
+  ok     Kern/Had24_2p2/Teil36           20.9 s 
+  ok     Kern/Had24_2p2/Teil37           21.5 s 
+  ok     Kern/Had24_2p2/Teil38           19.8 s 
+  ok     Kern/Had24_2p2/Teil39           19.5 s 
+  ok     Kern/Had24_2p2/Teil40           21.3 s 
+  ok     Kern/Had24_2p2/Teil41           22.1 s 
+  ok     Kern/Had24_2p2/Teil42           18.7 s 
+  ok     Kern/Had24_2p2/Teil43           20.0 s 
+  ok     Kern/Had24_2p2/Teil44           20.2 s 
+  ok     Kern/Had24_2p2/Teil45           22.0 s 
+  ok     Kern/Had24_2p2/Teil46           18.5 s 
+  ok     Kern/Had24_2p2/Teil47           21.2 s 
+  ok     Kern/Had24_2p2/Teil48           18.9 s 
+  ok     Kern/Had24_2p2/Teil49           18.8 s 
+  ok     Kern/Had24_2p2/Teil50           21.3 s 
+  ok     Kern/Had24_2p2/Teil51           20.4 s 
+  ok     Kern/Had24_2p2/Teil52           20.0 s 
+  ok     Kern/Had24_2p2/Teil53           21.2 s 
+  ok     Kern/Had24_2p2/Teil54           21.9 s 
+  ok     Kern/Had24_2p2/Teil55           22.3 s 
+  ok     Kern/Had24_2p2/Teil56           20.2 s 
+  ok     Kern/Had24_2p2/Teil57           20.0 s 
+  ok     Kern/Had24_2p2/Teil58           20.6 s 
+  ok     Kern/Had24_2p2/Teil59           21.0 s 
+  ok     Kern/Had24_2p2/Teil60           19.6 s 
+  ok     Kern/Had24_2p2/Teil61           20.5 s 
+  ok     Kern/Had24_2p2/Teil62           20.4 s 
+  ok     Kern/Had24_2p2/Teil63           22.0 s 
+  ok     Kern/Swar20/Teil0                0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil1                0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil2                0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil3                0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil4                0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil5                0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil6                0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil7                0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil8                0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil9                0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil10               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil11               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil12               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil13               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil14               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil15               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil16               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil17               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil18               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil19               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil20               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil21               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil22               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil23               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil24               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil25               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil26               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil27               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil28               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil29               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil30               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil31               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil32               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil33               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil34               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil35               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil36               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil37               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil38               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil39               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil40               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil41               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil42               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil43               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil44               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil45               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil46               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil47               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil48               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil49               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil50               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil51               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil52               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil53               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil54               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil55               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil56               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil57               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil58               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil59               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil60               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil61               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil62               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20/Teil63               0.0 s übersprungen (schon gebaut)
+  ok     Kern/Swar20                      0.0 s übersprungen (schon gebaut)
+  ok     Kern/Had24_2p2                  11.5 s 
+Stufe Had24_2p2 fertig, 349.1 s Wand, Ende 20:24:18 UTC
+exit 0
+Tue Nov 24 20:24:19 UTC 2026

@@ -9,7 +9,7 @@ namespace Ueberdeckung.Had24_1p3_ohne0
 theorem form : matrix.length = 23 ∧ ∀ z ∈ matrix, z.length = 20 ∧ ∀ e ∈ z, e = 1 ∨ e = -1 := by decide
 
 /-- 46 Wörter (Zeilen und Komplemente), paarweise verschieden. -/
-theorem woerter : (code matrix).length = 46 ∧ (code matrix).Nodup := by decide
+theorem anzahl_woerter : (code matrix).length = 46 ∧ (code matrix).Nodup := by decide
 
 /-- Die vom Erzeuger geschriebene Wortliste ist genau `code matrix`. -/
 theorem woerter_eq : code matrix = woerter := by decide

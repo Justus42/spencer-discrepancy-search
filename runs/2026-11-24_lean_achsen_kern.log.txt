@@ -1,0 +1,15 @@
+Tue Nov 24 20:24:37 UTC 2026
+== lake env lean AchsenKern.lean
+'Ueberdeckung.Kern.Swar20.swar_ok' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Hamming7.hauptsatz_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Hamming7.nicht_radius0_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Ctrl16.hauptsatz_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Ctrl16.nicht_radius3_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Had24_1p3_ohne0.nicht_radius6_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Had24_1p3.radius6_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Had24_1p3.hauptsatz_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Had24_1p3.nicht_radius5_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Had24_2p2.radius6_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Had24_2p2.hauptsatz_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Had24_2p2.nicht_radius5_kern' depends on axioms: [propext, Quot.sound]
+exit 0
