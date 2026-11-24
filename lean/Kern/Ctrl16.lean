@@ -1,11 +1,12 @@
 -- ERZEUGT von lean/erzeuge_kern.py. Nicht von Hand ändern.
 import Kern.Ctrl16.Teil0
+import Kern.Ctrl16.Teil1
 import Kern.Swar15
 
 namespace Ueberdeckung.Kern.Ctrl16
 open Ueberdeckung
 
-
+theorem n_0_128 : ∀ j, j < 128 → Q (0 + j) := baum_knoten Q 0 64 n_0_64 n_64_64
 
 end Ueberdeckung.Kern.Ctrl16
 

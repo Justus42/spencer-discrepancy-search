@@ -1,0 +1,10 @@
+Stufe Ctrl16, n = 15, P = 4, Start 20:07:21 UTC
+  ok     Kern/Swar15/Q                    0.3 s 
+  ok     Kern/Ctrl16/Q                    0.4 s 
+  ok     Kern/Ctrl16/Teil0               19.8 s 
+  ok     Kern/Ctrl16/Teil1               17.8 s 
+  ok     Kern/Swar15/Teil0               13.1 s 
+  ok     Kern/Swar15/Teil1               13.0 s 
+  ok     Kern/Swar15                      0.4 s 
+  ok     Kern/Ctrl16                      0.4 s 
+Stufe Ctrl16 fertig, 21.2 s Wand, Ende 20:07:42 UTC

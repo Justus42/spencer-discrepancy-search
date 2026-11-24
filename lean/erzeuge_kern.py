@@ -2,8 +2,9 @@
 """Erzeugt die Lean-Dateien für Teil 5 (Kernel-Variante, `decide +kernel`) unter lean/Kern/.
 
 Kein Rechnen, nur Textbausteine: je Block ein Satz `Q b` mit `decide +kernel`, zusammengesetzt als Binärbaum
-(`baum_blatt`, `baum_knoten` aus Ueberdeckung/Basis.lean). Die Blöcke liegen auf mehrere Dateien verteilt, damit
-`lake` sie parallel prüft und jeder Lean-Prozess wenig Speicher braucht. Erzeugte Dateien nie von Hand ändern.
+(`baum_blatt`, `baum_knoten` aus Ueberdeckung/Basis.lean). Die Blöcke liegen auf Dateien zu höchstens 64 Blöcken verteilt:
+jeder Blocksatz hält im Lean-Prozess etwa 25 MB fest (gemessen 24.11.2026), 64 Blöcke also etwa 2,4 GB.
+Geprüft werden die Dateien mit `pruefe_kern.sh` (höchstens 4 Lean-Prozesse gleichzeitig), nicht mit `lake build`. Erzeugte Dateien nie von Hand ändern.
 
 Aufruf aus lean/:  python3 -I erzeuge_kern.py
 """
@@ -13,14 +14,14 @@ HIER = os.path.dirname(os.path.abspath(__file__))
 KOPF = "-- ERZEUGT von lean/erzeuge_kern.py. Nicht von Hand ändern.\n"
 
 # Bitzahl m -> (Blockexponent s, Anzahl Teildateien)
-SWAR = {7: (7, 1), 15: (8, 1), 20: (8, 8)}
+SWAR = {7: (7, 1), 15: (8, 2), 20: (8, 64)}
 # Modul, Länge n, Radius ja (oder None), Radius nein, Blockexponent s, Teildateien
 DATEN = [
     ("Hamming7", 7, 1, 0, 7, 1),
-    ("Ctrl16", 15, 4, 3, 8, 1),
+    ("Ctrl16", 15, 4, 3, 8, 2),
     ("Had24_1p3_ohne0", 20, None, 6, None, 0),
-    ("Had24_1p3", 20, 6, 5, 8, 8),
-    ("Had24_2p2", 20, 6, 5, 8, 8),
+    ("Had24_1p3", 20, 6, 5, 8, 64),
+    ("Had24_2p2", 20, 6, 5, 8, 64),
 ]
 
 

@@ -27,8 +27,17 @@ Je Datensatz `Ueberdeckung/Saetze/<Name>.lean` (Beispiel `Had24_1p3`):
 Die Matrix steht wörtlich in `Ueberdeckung/Daten/<Name>.lean`, erzeugt von `erzeuge.py` (prüft SHA-256 und Form der Quelle).
 Erzeugte Dateien nie von Hand ändern.
 
-Die Sätze in `Ueberdeckung/Saetze/` nutzen `native_decide` (vertraut dem Lean-Compiler, Achse `Lean.ofReduceBool`).
-`Kern/<Name>.lean` beweist dieselben Sätze mit `decide +kernel` (nur der Kernel rechnet, keine Zusatzachse); Ergebnisse siehe unten.
+Die Sätze in `Ueberdeckung/Saetze/` nutzen `native_decide`: Lean vertraut dem Compiler. `#print axioms` zeigt dafür ein von
+`native_decide` selbst angelegtes Hilfsaxiom (`…_native.native_decide.ax_1_1`, früher hieß das `Lean.ofReduceBool`).
+
+`Kern/<Name>.lean` beweist dieselben Aussagen (`hauptsatz_kern`, `radius…_kern`, `nicht_radius…_kern`) mit `decide +kernel`:
+nur der Lean-Kernel rechnet, kein Compiler, kein Hilfsaxiom. Damit das in Minuten statt Stunden geht:
+- Bitzählung `swar` aus rohen, im Kernel beschleunigten Zahloperationen. Sie ist nicht allgemein bewiesen, sondern für alle
+  `v < 2^m` im Kernel gegen die einfache Zählung `einsen m` nachgerechnet (`Kern.Swar<m>.swar_ok`).
+- Die `2^n` Punkte in Blöcke zu `2^8` zerlegt, je Block ein Satz; die Blocksätze werden als Binärbaum zusammengesetzt
+  (`baum_blatt`, `baum_knoten`) und auf 8 Dateien verteilt, damit `lake` sie parallel prüft.
+- Alle Hilfssätze (`alle_aus_bloecken`, `einsen_xor`, `naheS_iff`, `aus_bloeckenS`) sind in `Basis.lean` bewiesen.
+Die Kern-Dateien schreibt `erzeuge_kern.py` (nur Textbausteine). Erzeugte Dateien nie von Hand ändern.
 
 ## Reproduktion (Linux, aus dem Repo-Wurzelordner)
 
