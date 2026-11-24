@@ -63,3 +63,6 @@
 2026-11-24 15:18:23 UTC   verteilung u: 1:296410 3:128178 5:714526 7:16621
 2026-11-24 15:18:27 UTC ERGEBNIS n31 d=11: Überlebende 0, u_max 7 (2000 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 7 = u_max, also beste Diskrepanz aller Klassen genau 7; Laufzeit 826 s
 2026-11-24 15:20:34 UTC START n30 Teil 1/2 d=10
+2026-11-24 15:28:41 UTC   n=30 d=10: klassen 962162, ueberlebende 0, beste obere schranke u_max 6 (2000 vertreter, gekappt), zeit 486.3 s, tabu-schritte 913885427
+2026-11-24 15:28:41 UTC   verteilung u: 0:258754 2:420040 4:277576 6:5792
+2026-11-24 15:28:41 UTC   rc=0
