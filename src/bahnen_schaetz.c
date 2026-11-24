@@ -76,7 +76,10 @@ int main(int argc, char **argv) {
     #pragma omp parallel for schedule(dynamic, 64)
     for (int p = 0; p < NT; p++) { uint64_t *r = M + (size_t)p * W; for (int i = 0; i < nm; i++) { int o = bid[rep[p] ^ mask[i]]; r[o >> 6] |= 1ULL << (o & 63); } }
     int *gr = malloc(sizeof(int) * NT);
-    for (int p = 0; p < NT; p++) { int c = 0; for (int o = 0; o < NF; o++) c += (M[(size_t)p * W + (o >> 6)] >> (o & 63)) & 1; gr[p] = c; }
+    for (int p = 0; p < NT; p++) { int c = 0; const uint64_t *r = M + (size_t)p * W;
+        for (int w = 0; w < (NF >> 6); w++) c += __builtin_popcountll(r[w]);
+        if (NF & 63) c += __builtin_popcountll(r[NF >> 6] & ((1ULL << (NF & 63)) - 1));
+        gr[p] = c; }
     ord = malloc(sizeof(int) * NT); for (int i = 0; i < NT; i++) ord[i] = i;
     /* nach gr sortieren (Zaehlsort) */
     { int mx = 0; for (int p = 0; p < NT; p++) if (gr[p] > mx) mx = gr[p];

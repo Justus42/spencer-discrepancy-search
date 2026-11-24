@@ -1,0 +1,40 @@
+Start 16:38:06 UTC
+n=20 R=6 K=4: 104856 volle Bahnen, Aufbau 4.1 s; Punkt-Bahn {0,1..1} wird von 12091 vollen Bahnen ueberdeckt (min. Zeile 12091)
+Klassen aller vollen Bahnen unter N0: 99; Klassen der 12091 Ueberdecker von {0,1..1}: 31
+Klasse  0: Vertreter       1, Klassengroesse     4, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 3.3393 s, Knoten Ebene 3/4 je Teilbaum 1 / 11344
+Klasse  1: Vertreter       3, Klassengroesse     8, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 3.0098 s, Knoten Ebene 3/4 je Teilbaum 1 / 11476
+Klasse  2: Vertreter       7, Klassengroesse     8, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 3.6971 s, Knoten Ebene 3/4 je Teilbaum 1 / 10844
+Klasse  3: Vertreter      15, Klassengroesse     4, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.6550 s, Knoten Ebene 3/4 je Teilbaum 1 / 11175
+Klasse  4: Vertreter      33, Klassengroesse    30, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.6913 s, Knoten Ebene 3/4 je Teilbaum 1 / 10888
+Klasse  5: Vertreter      35, Klassengroesse   120, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.5931 s, Knoten Ebene 3/4 je Teilbaum 1 / 12042
+Klasse  6: Vertreter      39, Klassengroesse   120, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 3.0938 s, Knoten Ebene 3/4 je Teilbaum 1 / 10955
+Klasse  7: Vertreter      47, Klassengroesse    60, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 3.2264 s, Knoten Ebene 3/4 je Teilbaum 1 / 11396
+Klasse  8: Vertreter      63, Klassengroesse    12, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 3.0042 s, Knoten Ebene 3/4 je Teilbaum 1 / 11075
+Klasse  9: Vertreter      99, Klassengroesse    60, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 3.5054 s, Knoten Ebene 3/4 je Teilbaum 1 / 10235
+Klasse 10: Vertreter     101, Klassengroesse    60, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.5113 s, Knoten Ebene 3/4 je Teilbaum 1 / 10784
+Klasse 11: Vertreter     103, Klassengroesse   120, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.3246 s, Knoten Ebene 3/4 je Teilbaum 1 / 10840
+Klasse 12: Vertreter     107, Klassengroesse   120, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.8940 s, Knoten Ebene 3/4 je Teilbaum 1 / 11051
+Klasse 13: Vertreter     111, Klassengroesse   120, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 1.9823 s, Knoten Ebene 3/4 je Teilbaum 1 / 11388
+Klasse 14: Vertreter     231, Klassengroesse    60, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 3.0249 s, Knoten Ebene 3/4 je Teilbaum 1 / 10225
+Klasse 15: Vertreter     235, Klassengroesse    60, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 1.9011 s, Knoten Ebene 3/4 je Teilbaum 1 / 10245
+Klasse 16: Vertreter    1057, Klassengroesse   100, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.3465 s, Knoten Ebene 3/4 je Teilbaum 1 / 11196
+Klasse 17: Vertreter    1059, Klassengroesse   600, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 3.2247 s, Knoten Ebene 3/4 je Teilbaum 1 / 10616
+Klasse 18: Vertreter    1063, Klassengroesse   600, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 1.3502 s, Knoten Ebene 3/4 je Teilbaum 1 / 11356
+Klasse 19: Vertreter    1071, Klassengroesse   300, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 1.5714 s, Knoten Ebene 3/4 je Teilbaum 1 / 11490
+Klasse 20: Vertreter    1123, Klassengroesse   600, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 1.6606 s, Knoten Ebene 3/4 je Teilbaum 1 / 12058
+Klasse 21: Vertreter    1125, Klassengroesse   600, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.9044 s, Knoten Ebene 3/4 je Teilbaum 1 / 12010
+Klasse 22: Vertreter    1127, Klassengroesse  1200, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.2506 s, Knoten Ebene 3/4 je Teilbaum 1 / 11392
+Klasse 23: Vertreter    1131, Klassengroesse  1200, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 1.5332 s, Knoten Ebene 3/4 je Teilbaum 1 / 10863
+Klasse 24: Vertreter    3171, Klassengroesse   200, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.2769 s, Knoten Ebene 3/4 je Teilbaum 1 / 11190
+Klasse 25: Vertreter    3173, Klassengroesse   600, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 1.1832 s, Knoten Ebene 3/4 je Teilbaum 1 / 11348
+Klasse 26: Vertreter   33825, Klassengroesse   125, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 4.6743 s, Knoten Ebene 3/4 je Teilbaum 1 / 11177
+Klasse 27: Vertreter   33827, Klassengroesse  1000, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.8518 s, Knoten Ebene 3/4 je Teilbaum 1 / 9924
+Klasse 28: Vertreter   33831, Klassengroesse  1000, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.5204 s, Knoten Ebene 3/4 je Teilbaum 1 / 9829
+Klasse 29: Vertreter   33891, Klassengroesse  1500, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 3.9907 s, Knoten Ebene 3/4 je Teilbaum 1 / 11256
+Klasse 30: Vertreter   33893, Klassengroesse  1500, Kinder 12091, Stichprobe 2: mittlere Teilbaumzeit 2.9804 s, Knoten Ebene 3/4 je Teilbaum 1 / 11662
+Hochrechnung K=4: mit Symmetrie (Ebene 1 nur Klassenvertreter) 1000811 CPU-s = 278.00 CPU-h; ohne Symmetrie 103781.79 CPU-h; Ebene-2-Knoten 374821; Messzeit 166 s; Loesungen in Stichproben 0
+Ende 16:40:56 UTC
+volle Bahnen: 104856 ; Bahnen je Paar: [12091, 12091, 12091, 12091, 12091, 12091, 12091, 12091]
+Maskengewichte (Zahl ueberdeckter Paare) -> Bahnen: {0: 48000, 1: 31400, 2: 12864, 3: 10800, 4: 1760, 5: 32, 6: 0, 7: 0, 8: 0}
+(a,b)-Paare (Ebene 2, ohne Symmetrie): 1.462e+08, davon mit Paar-Filter zulaessig: 1.462e+08 (100.0000%)
+(a,b,c)-Blaetter ohne Symmetrie: 1.772e+12, davon mit Paar-Filter noetig: 1.584e+12 (89.3566%)
