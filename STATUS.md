@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 23.11.2026. Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 24.11.2026. Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 
 ## Ziel
 
@@ -297,6 +297,18 @@ Die drei Kontroll-Treffer (52 Wörter): beide Prüfskripte Diskrepanz 8.
 - Tabellenabgleich (florath, siehe oben): K(20,6) 24–64, K(26,9) 17–56. 48 läge darunter. Neuheit nach Regel 3 offen.
 - Laut Anweisung nach dem Treffer gestoppt: Der geplante K=12-Suchlauf (16 x 1800 s) wurde **nicht** gestartet. Kein K=11.
   Nicht geprüft: ob die übrigen 52er-Codes (auch die drei aus der Kontrolle) ebenfalls überflüssige Nebenklassen haben.
+
+**Gate-Prüfung 24.11.2026 (viertes Gate, 48 Wörter):** Die beiden 48er-Codes (aus 52er Startwert 5 und 6) wurden vom
+Orchestrator-Claude mit eigenem Skript bestätigt (nicht im Repo).
+- **Befund:** Streichen jeder einzelnen der 12 Nebenklassen lässt in beiden Codes **exakt 6108 Punkte** von F2^20 offen
+  (= 1527 Syndrome, je 4 Punkte). In dieser Sitzung nachgerechnet (Brute-Force über alle 2^20 Punkte, alle 12 Streichungen,
+  beide Codes: 12 x 6108). Keine Nebenklasse ist überflüssig; der billige Weg zu K=11 ist damit zu.
+- **Kein Versuch auf K=11** (Anweisung).
+- **Folgecodes Länge 22/24/26 (R=7/8/9), je 48 Wörter, beide Prüfskripte:** Matrizen `runs/matrix_ext48_n{22,24,26}_typ11-9_aus52seed{5,6}.txt`
+  (24 x n; `_pad` = 24 x 24 bei n=22). `check_disc.py` und `verify_spencer.py` melden für **alle 6 Matrizen exakt Diskrepanz 8**
+  (Ausgaben `runs/ext48/`, Skript `runs/ext48/pruefe.sh`, 67 s auf 4 Kernen). Regel 1 erfüllt. Quotient höchstens 8/sqrt(24) = 1,633,
+  kein Spencer-Rekord. Tabellenabgleich (florath): K(22,7) 21–64, K(24,8) 19–64, K(26,9) 17–56; 48 läge jeweils darunter.
+  Neuheit nach Regel 3 offen.
 
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
 

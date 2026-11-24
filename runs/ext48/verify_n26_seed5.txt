@@ -1,0 +1,9 @@
+=== runs/matrix_ext48_n26_typ11-9_aus52seed5.txt ===
+Dimension        : 24 x 26 (aktive Spalten: 26, kgV L=1)
+Exakte Diskrepanz: 8
+Quotient D/sqrt(n): 1.56892908  (exakt D^2/n = 32/13)
+Vergleich 5/sqrt8: unter Rekord (< 5/sqrt(8))  (Rekord D^2/n = 25/8)
+Minimal-Vektoren : 8281952 von 67108864
+Zeuge x*         : [1, 1, 1, -1, -1, 1, 1, 1, 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, -1, -1, -1, -1, -1]
+Laufzeit         : 25.410 s
+

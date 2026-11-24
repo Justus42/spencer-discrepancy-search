@@ -1,0 +1,2 @@
+matrix 24 x 24, entries in {-1,0,1}: exact discrepancy = 8
+as a 24 x 24 matrix this gives C_10c >= 8/sqrt(24) = 1.632993   (current record 5/sqrt(8) = 1.767767)
