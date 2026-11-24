@@ -1,0 +1,1 @@
+seed=3 nicht geloest, kleinste Restzahl=8 (Zeitlimit, best=8, it=63760)

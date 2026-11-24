@@ -356,6 +356,10 @@ mit derselben Lösung nach Schritt 2011, der Messmodus ändert also nichts.
 - Block 1, Typ (13,9), Startwerte 1–4 (06:35–07:05 UTC): **0 von 4 gelöst.** Beste Restzahl: 7 / 2 / 6 / 7.
   Je ca. 62 000 Schritte in 1800 s (ca. 29 ms je Schritt bei 4 parallel; zum Vergleich (20,6): ca. 386 000).
 - Block 2, Typ (13,9), Startwerte 5–8 (07:05–07:35 UTC): **0 von 4 gelöst.** Beste Restzahl: 2 / 2 / 3 / **1**.
+- Block 3, Typ (12,10), Startwerte 1–4 (07:35–08:05 UTC): **3 von 4 gelöst**, 52 Wörter bei (22,7): Startwert 1 nach 799 s
+  (28 330 Schritte), 2 nach 84 s (3 012), 4 nach 377 s (13 429). Startwert 3: beste Restzahl 8. Alle drei selbstkomplementär,
+  Radius per Brute-Force 7. Wörter `runs/skal22/woerter_n22_R7_d2_K13_typ12-10_seed{1,2,4}.txt`, Matrizen
+  `runs/skal22/matrix_n22_52w_typ12-10_seed{1,2,4}.txt` (26 x 22, `_pad` 26 x 26). **Beide Prüfskripte, alle drei: Diskrepanz 8.**
 
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
 
