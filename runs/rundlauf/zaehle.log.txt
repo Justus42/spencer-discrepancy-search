@@ -1,0 +1,20 @@
+astra_4: 1024 Matrizen (erwartet 1024), Formen {(20, 20): 1024} (erwartet (20, 20)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.1 s -> OK
+astra_3: 1176 Matrizen (erwartet 1176), Formen {(25, 21): 1176} (erwartet (25, 21)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.2 s -> OK
+astra_5: 2346 Matrizen (erwartet 2346), Formen {(25, 23): 2346} (erwartet (25, 23)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.1 s -> OK
+astra_6: 2160 Matrizen (erwartet 2160), Formen {(20, 18): 2160} (erwartet (20, 18)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.0 s -> OK
+astra_7: 1568 Matrizen (erwartet 1568), Formen {(25, 25): 1568} (erwartet (25, 25)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.1 s -> OK
+astra_1: 4356 Matrizen (erwartet 4356), Formen {(25, 23): 4356} (erwartet (25, 23)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.3 s -> OK
+astra_8: 1024 Matrizen (erwartet 1024), Formen {(31, 30): 1024} (erwartet (31, 30)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.2 s -> OK
+astra_2: 59049 Matrizen (erwartet 59049), Formen {(15, 15): 59049} (erwartet (15, 15)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.4 s -> OK
+sol_4: 7920 Matrizen (erwartet 7920), Formen {(25, 25): 7920} (erwartet (25, 25)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.3 s -> OK
+sol_5: 6144 Matrizen (erwartet 6144), Formen {(25, 25): 6144} (erwartet (25, 25)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.1 s -> OK
+sol_2: 71280 Matrizen (erwartet 71280), Formen {(20, 20): 71280} (erwartet (20, 20)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.9 s -> OK
+sol_3: 8192 Matrizen (erwartet 8192), Formen {(25, 23): 8192} (erwartet (25, 23)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.9 s -> OK
+sol_1: 153664 Matrizen (erwartet 153664), Formen {(15, 15): 153664} (erwartet (15, 15)), Einträge nicht +-1: 0, doppelte Namen: 0, 1.5 s -> OK
+sol_7: 17920 Matrizen (erwartet 17920), Formen {(31, 28): 17920} (erwartet (31, 28)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.7 s -> OK
+sol_8: 10000 Matrizen (erwartet 10000), Formen {(31, 30): 10000} (erwartet (31, 30)), Einträge nicht +-1: 0, doppelte Namen: 0, 0.9 s -> OK
+sol_6: 40680 Matrizen (erwartet 40680), Formen {(31, 26): 40680} (erwartet (31, 26)), Einträge nicht +-1: 0, doppelte Namen: 0, 1.4 s -> OK
+
+real	0m2.282s
+user	0m7.827s
+sys	0m0.069s
