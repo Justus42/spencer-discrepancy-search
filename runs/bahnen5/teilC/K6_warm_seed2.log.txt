@@ -1,0 +1,10 @@
+n=20 R=6 K=6: 104856 volle Bahnen, 8 Paare, Kugel 60460, Matrix 1.37 GB, mittlere Zeile 46120, Aufbau 17.5 s
+  Wegfall Bahn 59873 deckt 5214 Punkte auf
+  Wegfall Bahn 36575 deckt 3444 Punkte auf
+  Wegfall Bahn 41198 deckt 1830 Punkte auf
+  Wegfall Bahn 5479 deckt 720 Punkte auf
+  Wegfall Bahn 128555 deckt 9910 Punkte auf
+  Wegfall Bahn 167992 deckt 5282 Punkte auf
+  Wegfall Bahn 56402 deckt 3114 Punkte auf
+gestrichen: Bahn 5479 (720 Punkte)
+[seed 2] Start f=720 (Warmstart)
