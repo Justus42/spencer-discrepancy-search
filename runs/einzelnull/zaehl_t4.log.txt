@@ -1,0 +1,24 @@
+T=2
+   Zaehlvorlauf: 59241 Aufgaben in Tiefe 4, davon 0 schon erledigt
+   Aufgaben (Tiefe 4): 59241 gesamt, 3 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+T=3
+   Zaehlvorlauf: 82868 Aufgaben in Tiefe 4, davon 0 schon erledigt
+   Aufgaben (Tiefe 4): 82868 gesamt, 6 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+T=4
+   Zaehlvorlauf: 80292 Aufgaben in Tiefe 4, davon 0 schon erledigt
+   Aufgaben (Tiefe 4): 80292 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+T=5
+   Zaehlvorlauf: 231410 Aufgaben in Tiefe 4, davon 0 schon erledigt
+   Aufgaben (Tiefe 4): 231410 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+T=6
+   Zaehlvorlauf: 280064 Aufgaben in Tiefe 4, davon 0 schon erledigt
+   Aufgaben (Tiefe 4): 280064 gesamt, 3 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+T=7
+   Zaehlvorlauf: 281181 Aufgaben in Tiefe 4, davon 0 schon erledigt
+   Aufgaben (Tiefe 4): 281181 gesamt, 11 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+T=8
+   Zaehlvorlauf: 289334 Aufgaben in Tiefe 4, davon 0 schon erledigt
+   Aufgaben (Tiefe 4): 289334 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+T=9
+   Zaehlvorlauf: 290501 Aufgaben in Tiefe 4, davon 0 schon erledigt
+   Aufgaben (Tiefe 4): 290501 gesamt, 30 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit

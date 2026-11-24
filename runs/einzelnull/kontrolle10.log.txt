@@ -1,0 +1,28 @@
+K=6 ohne Symmetrie
+n=10 d=5 K=6 Traeger=9: 2560 Zeilen (davon 2560 Typzeilen), 512 Klassen, maxgr=92, Budget B=40
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 0.0 s
+K=6 mit -y -3
+   Typ 0: fertig, Loesungen 0
+   Typ 1: fertig, Loesungen 0
+   Typ 2: fertig, Loesungen 0
+   Typ 3: fertig, Loesungen 0
+   Typ 4: fertig, Loesungen 0
+   Typ 5: fertig, Loesungen 0
+   Typ 6: fertig, Loesungen 0
+   Typ 7: fertig, Loesungen 0
+   Typ 8: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 65.2 s
+K=7 ohne Symmetrie
+zu viele Aufgaben je Bahn (47781812)
+n=10 d=5 K=7 Traeger=9: 2560 Zeilen (davon 2560 Typzeilen), 512 Klassen, maxgr=92, Budget B=132
+K=7 mit -y -3
+   Typ 0: fertig, Loesungen 0
+   Typ 1: fertig, Loesungen 0
+   Typ 2: fertig, Loesungen 0
+   Typ 3: fertig, Loesungen 0
+   Typ 4: fertig, Loesungen 0
+   Typ 5: fertig, Loesungen 0
+   Typ 6: fertig, Loesungen 0
+   Typ 7: fertig, Loesungen 0
+   Typ 8: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 63.7 s

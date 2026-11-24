@@ -31,3 +31,30 @@ Folgerung: Es genügen Zeilen mit Träger 10, 8, 6. Mindestens 6 Zeilen mit Trä
   sonst 0. Python aus der vollen Liste mit derselben Rangordnung: 12 und 36. Logs `teil2*.log.txt`.
 - Beispiel mit verteilten Nullen `runs/einzelnull/n8_verteilt.txt`: alle 3 Prüfprogramme disc 5 (Quotient 1,768 = Rekord, keine
   Verbesserung, aber andere Struktur als Hamming plus Nullspalte). Regel 2: `ctrl_8`, `ctrl_9` reproduziert (je 5).
+
+## Teil 3: Verfahren (Suchcode `src/einzelnull_such.c`, Treiber `src/run_einzelnull.sh`)
+
+- Verzweigung am unüberdeckten Punkt mit den wenigsten lebenden Zeilen, Geschwister-Ausschluss.
+- Verlust einer Zeile = (112 − |H|) + Überlappung mit dem Überdeckten; Summe ≤ 208. Schranke 1: Summe der r kleinsten
+  aktuellen Verluste. Schranke 2 (`-b 4`): Punkte ohne gemeinsame lebende Zeile brauchen verschiedene Zeilen, ihre
+  Mindestverluste addieren sich (Faktor 3,5 schneller bei Typ 5, gleiche Ergebnisse in allen Kontrollen).
+- Symmetrie (`-y`): Paartyp = (gleiche Nullspalte?, Abstand modulo Komplement), 10 Typen nach Schnitt geordnet. Für jeden
+  Typ t: a = (0,1,…,1), zweite Zeile = Vertreter, alle Paare von Träger-10-Zeilen haben Typ ≤ t (t ist das Maximum der Lösung).
+- Dritte Zeile (`-3`): Bahnvertreter unter dem Stabilisator von {a, Vertreter} (Elemente per Aufzählung, jedes geprüft;
+  Teilmenge der Gruppe gibt feinere Bahnen, bleibt vollständig). Kanonisch: dritte Zeile = Zeile mit größtem Profil
+  (sortiertes Paar ihrer Typen zu a und Vertreter), alle weiteren Träger-10-Zeilen haben Profil ≤ diesem.
+- Zulässig, weil jede Lösung mindestens 6 Zeilen mit Träger 10 hat (Programm prüft: 112 + 10·72 < 1024).
+- Kontrollen derselben Programmfassung: n = 8, d = 5, K = 8 findet Lösungen (Typ 0: 2, Typ 1: 6); K = 7 keine.
+  Mit Überlappung (Budget > 0), mit und ohne Symmetrie (`runs/einzelnull/kontrolle_klein.log.txt`, `kontrolle10.log.txt`):
+
+  | n, d, K | Budget | ohne Symmetrie | mit `-y -3` |
+  |---|---|---|---|
+  | 8, 3, 3 | 46 | 0 (vollständig) | 0 |
+  | 8, 3, 4 | 104 | 487 424 | 11 Vertreter |
+  | 9, 4, 4 | 40 | 0 | 0 |
+  | 9, 4, 5 | 114 | 0 | 0 |
+  | 10, 5, 6 | 40 | 0 | 0 |
+  | 10, 5, 8 | 224 | 1072 gefunden (Zeitgrenze) | 48 Vertreter |
+
+  Beispiel n = 10, K = 8 (`kontrolle10_K8_beispiel.txt`): alle 3 Prüfprogramme disc 5.
+- Aufwand ohne `-3` (nur Typ 5: 231 410 Aufgaben, 400 in 21 s) wäre ~3–4 h je Typ gewesen; mit `-3` Typ 5 Teilmessung: 30 von 40 Bahnen in ~2 Min.

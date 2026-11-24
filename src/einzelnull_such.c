@@ -57,7 +57,12 @@ static FILE *erl_f = NULL, *out_f = NULL;
 static long long n_loes = 0, n_loes_verteilt = 0;
 static long long knoten_tiefe[MAXK + 1];
 static int max_tiefe = 0;
-static long long aufg_gesamt = -1, aufg_erledigt_jetzt = 0;
+static long long aufg_gesamt = -1, aufg_erledigt_jetzt = 0, erl_vorher = 0;
+static int zaehlmodus = 0;
+static long long id_basis = 0;
+static int schranke2 = 0;      /* 0 aus, sonst max. Zahl der Punkte */
+static long long maxaufg = -1; /* nur Aufgaben < maxaufg (Messung) */
+static double letzte_meldung = 0;
 
 static double jetzt(void) { struct timespec ts; clock_gettime(CLOCK_MONOTONIC, &ts); return ts.tv_sec + 1e-9 * ts.tv_nsec; }
 static inline int pc(uint64_t v) { return __builtin_popcountll(v); }
@@ -160,7 +165,7 @@ typedef struct {
     int *verl[MAXK + 1];
     uint64_t cov[MAXK + 1][MAXW];
     int gew[MAXK + 1];
-    int *cnt;
+    int *cnt, *ml;
     char *excl;
     long long knoten[MAXK + 1];
     int maxt;
@@ -173,6 +178,7 @@ static int B_total;
 static int typgrenze;  /* -1: keine */
 
 static void loesung(int *gew, int k) {
+    if (zaehlmodus) return;
     int verteilt = 0, z0 = -1;
     for (int i = 0; i < k; i++) { int z = zero_col(gew[i]); if (z0 < 0) z0 = z; else if (z != z0) verteilt = 1; }
     #pragma omp critical
@@ -206,6 +212,7 @@ static void knoten(Faden *F, int k, int verlust, int *L, int nL) {
     int r = K - k;
     int rest = B_total - verlust;
     if (rest < 0) return;
+    int pref[MAXK + 2];
     /* Verluste und Filter */
     int *L2 = F->liste[k], *V2 = F->verl[k], n2 = 0;
     for (int i = 0; i < nL; i++) {
@@ -228,19 +235,44 @@ static void knoten(Faden *F, int k, int verlust, int *L, int nL) {
             memset(hist, 0, sizeof(int) * (maxv + 1));
             for (int i = 0; i < n2; i++) hist[V2[i]]++;
             long long sum = 0; int take = need;
-            for (int v = 0; v <= maxv && take > 0; v++) { int t = hist[v] < take ? hist[v] : take; sum += (long long)t * v; take -= t; }
+            int pi = 0; pref[0] = 0;
+            for (int v = 0; v <= maxv && take > 0; v++) { int t = hist[v] < take ? hist[v] : take; for (int q = 0; q < t; q++) { pi++; pref[pi] = pref[pi - 1] + v; } sum += (long long)t * v; take -= t; }
             /* gain gesamt = need*maxgr - sum muss >= u */
             if ((long long)need * maxgr - sum < u) return;
         }
     }
     /* Punktzählung */
-    int *cnt = F->cnt;
+    int *cnt = F->cnt, *ml = F->ml;
     memset(cnt, 0, sizeof(int) * P);
+    for (int i = 0; i < P; i++) ml[i] = 1 << 29;
     for (int i = 0; i < n2; i++) {
         const uint64_t *h = Hb + (size_t)L2[i] * W;
+        int l = V2[i];
         for (int w = 0; w < W; w++) {
             uint64_t v = h[w] & ~cov[w];
-            while (v) { int b = __builtin_ctzll(v); cnt[w * 64 + b]++; v &= v - 1; }
+            while (v) { int b = __builtin_ctzll(v); int x = w * 64 + b; cnt[x]++; if (l < ml[x]) ml[x] = l; v &= v - 1; }
+        }
+    }
+    /* Schranke 2: Punkte ohne gemeinsame lebende Zeile brauchen verschiedene Zeilen */
+    if (schranke2 && rest < 4096) {
+        uint64_t M[MAXW];
+        for (int w = 0; w < W; w++) M[w] = cov[w];
+        int nmax = r < n2 ? r : n2;   /* pref[0..nmax] gueltig */
+        long long summe = 0;
+        for (int j = 1; ; j++) {
+            int bx = -1, bm = -1;
+            for (int w = 0; w < W; w++) { uint64_t v = ~M[w]; while (v) { int b = __builtin_ctzll(v); int x = w * 64 + b; if (ml[x] > bm) { bm = ml[x]; bx = x; } v &= v - 1; } }
+            if (bx < 0) break;
+            if (bm >= (1 << 29)) return;          /* Punkt ohne lebende Zeile */
+            if (j > r) return;                    /* mehr als r Zeilen noetig */
+            summe += bm;
+            int rr = r - j; if (rr > nmax) rr = nmax;
+            if (summe + pref[rr] > rest) return;
+            for (int i = 0; i < n2; i++) {
+                const uint64_t *h = Hb + (size_t)L2[i] * W;
+                if (h[bx >> 6] >> (bx & 63) & 1) for (int w = 0; w < W; w++) M[w] |= h[w];
+            }
+            if (j >= schranke2) break;
         }
     }
     int best = -1, bc = 1 << 30;
@@ -260,11 +292,13 @@ static void knoten(Faden *F, int k, int verlust, int *L, int nL) {
         if (stopflag || gefunden_stop) break;
         int c = cand[ci];
         /* Teilbaum-Aufgabe? */
+        if (k + 1 == teiltiefe && zaehlmodus) { F->split_idx++; excl[c] = 1; continue; }
         if (k + 1 == teiltiefe) {
             long long idx = F->split_idx++;
-            if (idx != F->ticket) { excl[c] = 1; continue; }
+            if (idx != F->ticket || (maxaufg >= 0 && idx >= maxaufg)) { excl[c] = 1; continue; }
             /* eigene Aufgabe */
-            if (erledigt && idx < erl_max && (erledigt[idx >> 3] >> (idx & 7) & 1)) {
+            long long gid = id_basis + idx;
+            if (erledigt && gid < erl_max && (erledigt[gid >> 3] >> (gid & 7) & 1)) {
                 #pragma omp atomic capture
                 F->ticket = next_ticket++;
                 excl[c] = 1; continue;
@@ -283,11 +317,18 @@ static void knoten(Faden *F, int k, int verlust, int *L, int nL) {
         knoten(F, k + 1, verlust + cv[ci], Lk, nk);
         if (k + 1 == teiltiefe) {
             if (!stopflag && !gefunden_stop) {
-                long long idx = F->ticket;
+                long long idx = id_basis + F->ticket;
                 #pragma omp critical
                 {
                     aufg_erledigt_jetzt++;
                     if (erl_f) { fprintf(erl_f, "%lld\n", idx); fflush(erl_f); }
+                    double tn = jetzt();
+                    if (tn - letzte_meldung > 60) {
+                        letzte_meldung = tn;
+                        printf("   [%.0f s] Aufgaben erledigt (dieser Lauf) %lld, insgesamt %lld von %lld, zuletzt Nr. %lld\n",
+                               tn - t0, aufg_erledigt_jetzt, aufg_erledigt_jetzt + erl_vorher, aufg_gesamt, idx);
+                        fflush(stdout);
+                    }
                 }
             }
             #pragma omp atomic capture
@@ -300,6 +341,200 @@ static void knoten(Faden *F, int k, int verlust, int *L, int nL) {
 }
 
 static void dfs(Faden *F, int k, int verlust, int *L, int nL, int tiefe_abs) { (void)tiefe_abs; knoten(F, k, verlust, L, nL); }
+
+static int dritte = 0, bahn_von = -1, bahn_bis = -1;
+static int profgrenze = 1 << 30, prof_a = -1, prof_b = -1;
+
+static int profil(int a, int b, int r) {
+    int x = ptyp[(size_t)a * ntyp + r], y = ptyp[(size_t)b * ntyp + r];
+    return x > y ? (x << 6) | y : (y << 6) | x;
+}
+
+static int uf_find(int *p, int x) { while (p[x] != x) { p[x] = p[p[x]]; x = p[x]; } return x; }
+
+/* Elemente der vorzeichenbehafteten Permutationsgruppe, die {a,b} (modulo Vorzeichen) festlassen.
+ * (gR)_j = s_j R_{pi(j)}. Rekursiv; jedes gefundene Element wird sofort auf alle Kandidaten angewandt (Union-Find),
+ * hoechstens maxel Elemente (Teilmenge der Gruppe gibt feinere Bahnen, also immer noch vollstaendig). */
+static int g_pi[MAXN], g_s[MAXN], g_used[MAXN];
+static long long g_cnt;
+static int *g_uf, *g_kand_idx, g_maxel = 200000;
+static const int8_t *g_a, *g_b, *g_ta, *g_tb;
+static int g_e1, g_e2;
+static int8_t (*g_tmp);
+
+static int g_tmp_index(int z, int bits);
+static void g_anwenden(void) {
+    g_cnt++;
+    /* Kontrolle: g bildet {a,b} modulo Vorzeichen auf sich ab */
+    for (int q = 0; q < 2; q++) {
+        const int8_t *src = q ? g_b : g_a;
+        int8_t e[MAXN]; for (int j = 0; j < n; j++) e[j] = g_s[j] * src[g_pi[j]];
+        int ok = 0;
+        for (int t2 = 0; t2 < 2 && !ok; t2++) for (int sg = -1; sg <= 1 && !ok; sg += 2) {
+            const int8_t *tg = t2 ? g_b : g_a; int gl = 1;
+            for (int j = 0; j < n; j++) if (e[j] != sg * tg[j]) { gl = 0; break; }
+            if (gl) ok = 1;
+        }
+        if (!ok) { fprintf(stderr, "Gruppenelement falsch!\n"); exit(1); }
+    }
+    for (int r = 0; r < ntyp; r++) {
+        if (g_kand_idx[r] < 0) continue;
+        int8_t e[MAXN]; memset(e, 0, MAXN);
+        for (int j = 0; j < n; j++) e[j] = g_s[j] * ent[r][g_pi[j]];
+        int s0 = 0; for (int j = 0; j < n; j++) if (e[j]) { s0 = e[j]; break; }
+        for (int j = 0; j < n; j++) e[j] *= s0;
+        /* Index finden: Typzeilen nach (Nullspalte, Bits) adressiert */
+        int z = -1; for (int j = 0; j < n; j++) if (!e[j]) { z = j; break; }
+        int bits = 0, k = 0, first = 1;
+        for (int j = 0; j < n; j++) if (j != z) { if (first) { first = 0; continue; } if (e[j] < 0) bits |= 1 << k; k++; }
+        int img = g_tmp_index(z, bits);
+        if (g_kand_idx[img] < 0) { fprintf(stderr, "Bild kein Kandidat!\n"); exit(1); }
+        int x = uf_find(g_uf, g_kand_idx[r]), y = uf_find(g_uf, g_kand_idx[img]);
+        if (x != y) g_uf[x > y ? x : y] = x < y ? x : y;
+    }
+}
+
+static void g_rek(int j) {
+    if (g_cnt >= g_maxel) return;
+    if (j == n) { g_anwenden(); return; }
+    for (int q = 0; q < n; q++) {
+        if (g_used[q]) continue;
+        for (int sj = -1; sj <= 1; sj += 2) {
+            /* (g a)_j = sj * a_q muss e1 * ta_j sein; (g b)_j = sj * b_q muss e2 * tb_j sein */
+            if (sj * g_a[q] != g_e1 * g_ta[j]) continue;
+            if (sj * g_b[q] != g_e2 * g_tb[j]) continue;
+            g_pi[j] = q; g_s[j] = sj; g_used[q] = 1;
+            g_rek(j + 1);
+            g_used[q] = 0;
+            if (g_cnt >= g_maxel) return;
+        }
+    }
+}
+
+/* Typzeile aus (Nullspalte z, Bits der Eintraege nach dem ersten) */
+static int *g_index_tab;
+static int g_tmp_index(int z, int bits) { return g_index_tab[z * (1 << (n - 2)) + bits]; }
+
+static int *dritte_bahnen(int a, int b, int t, int *nb) {
+    if (!g_index_tab) {
+        g_index_tab = malloc(sizeof(int) * n * (1 << (n - 2)));
+        for (int r = 0; r < ntyp; r++) {
+            int z = zero_col(r), bits = 0, k = 0, first = 1;
+            for (int j = 0; j < n; j++) if (j != z) { if (first) { first = 0; continue; } if (ent[r][j] < 0) bits |= 1 << k; k++; }
+            g_index_tab[z * (1 << (n - 2)) + bits] = r;
+        }
+    }
+    g_kand_idx = malloc(sizeof(int) * ntyp);
+    int nk = 0;
+    for (int r = 0; r < ntyp; r++) {
+        g_kand_idx[r] = -1;
+        if (r == a || r == b) continue;
+        if (ptyp[(size_t)a * ntyp + r] > t || ptyp[(size_t)b * ntyp + r] > t) continue;
+        g_kand_idx[r] = nk++;
+    }
+    g_uf = malloc(sizeof(int) * nk);
+    for (int i = 0; i < nk; i++) g_uf[i] = i;
+    long long ges = 0;
+    for (int sw = 0; sw < 2; sw++) for (int e2 = -1; e2 <= 1; e2 += 2) {
+        g_a = ent[a]; g_b = ent[b];
+        g_ta = sw ? ent[b] : ent[a]; g_tb = sw ? ent[a] : ent[b];
+        g_e1 = 1; g_e2 = e2;
+        memset(g_used, 0, sizeof g_used);
+        g_cnt = 0;
+        g_rek(0);
+        ges += g_cnt;
+    }
+    int *rep = malloc(sizeof(int) * nk), nr = 0;
+    int *inv = malloc(sizeof(int) * nk);
+    for (int r = 0; r < ntyp; r++) if (g_kand_idx[r] >= 0) inv[g_kand_idx[r]] = r;
+    /* Profil muss in der Bahn konstant sein (Kontrolle) */
+    for (int i = 0; i < nk; i++) {
+        int root = uf_find(g_uf, i);
+        if (profil(a, b, inv[i]) != profil(a, b, inv[root])) { fprintf(stderr, "Profil nicht bahninvariant!\n"); exit(1); }
+        if (root == i) rep[nr++] = inv[i];
+    }
+    /* nach Profil absteigend sortieren (grosse Profile zuerst? nein: kleine zuerst, die sind schnell) */
+    for (int i = 1; i < nr; i++) { int x = rep[i], px = profil(a, b, x), j = i - 1; while (j >= 0 && profil(a, b, rep[j]) > px) { rep[j + 1] = rep[j]; j--; } rep[j + 1] = x; }
+    printf("   Stabilisator {a,b}: %lld Elemente angewandt (Grenze %d je Fall), %d Kandidaten, %d Bahnen\n", ges, g_maxel, nk, nr);
+    free(inv); free(g_uf); free(g_kand_idx);
+    *nb = nr;
+    return rep;
+}
+
+static void lauf_start(int *start, int nstart) {
+    int nthr = omp_get_max_threads();
+    int *L0 = malloc(sizeof(int) * nrows), n0 = 0;
+    for (int r = 0; r < nrows; r++) {
+        int ok = 1;
+        for (int s = 0; s < nstart; s++) {
+            if (r == start[s]) ok = 0;
+            else if (typgrenze >= 0 && istyp(r) && ptyp[(size_t)start[s] * ntyp + r] > typgrenze) ok = 0;
+        }
+        if (ok && istyp(r) && profgrenze < (1 << 30) && profil(prof_a, prof_b, r) > profgrenze) ok = 0;
+        if (ok) L0[n0++] = r;
+    }
+    next_ticket = nthr;
+    aufg_gesamt = -1; aufg_erledigt_jetzt = 0;
+    {
+        Faden *F = calloc(1, sizeof(Faden));
+        for (int k = 0; k <= K; k++) { F->liste[k] = malloc(sizeof(int) * nrows); F->verl[k] = malloc(sizeof(int) * nrows); }
+        F->cnt = malloc(sizeof(int) * P); F->ml = malloc(sizeof(int) * P);
+        F->excl = calloc(nrows, 1);
+        int verl = 0;
+        for (int s = 0; s < nstart; s++) {
+            const uint64_t *h = Hb + (size_t)start[s] * W;
+            int sc = 0; for (int w = 0; w < W; w++) sc += pc(h[w] & F->cov[0][w]);
+            verl += maxgr - gr[start[s]] + sc;
+            for (int w = 0; w < W; w++) F->cov[0][w] |= h[w];
+            F->gew[s] = start[s];
+        }
+        if (P < 64) F->cov[0][0] |= ~0ULL << P;
+        if (nstart) memcpy(F->cov[nstart], F->cov[0], sizeof F->cov[0]);
+        double zz = zeitlimit; zeitlimit = 1e18; zaehlmodus = 1;
+        int aa = alle; alle = 1;
+        long long nl = n_loes, nv = n_loes_verteilt;
+        knoten(F, nstart, verl, L0, n0);
+        n_loes = nl; n_loes_verteilt = nv; alle = aa;
+        zaehlmodus = 0; zeitlimit = zz;
+        aufg_gesamt = F->split_idx;
+        if (aufg_gesamt >= (1LL << 20)) { fprintf(stderr, "zu viele Aufgaben je Bahn (%lld)\n", aufg_gesamt); exit(1); }
+        erl_vorher = 0;
+        if (erledigt) for (long long i = 0; i < aufg_gesamt; i++) { long long id = id_basis + i; if (erledigt[id >> 3] >> (id & 7) & 1) erl_vorher++; }
+        if (!dritte) { printf("   Zaehlvorlauf: %lld Aufgaben in Tiefe %d, davon %lld schon erledigt\n", aufg_gesamt, teiltiefe, erl_vorher); fflush(stdout); }
+        for (int k = 0; k <= K; k++) { free(F->liste[k]); free(F->verl[k]); }
+        free(F->cnt); free(F->ml); free(F->excl); free(F);
+    }
+    if (aufg_gesamt > 0 && erl_vorher == aufg_gesamt) { free(L0); return; }
+    #pragma omp parallel
+    {
+        Faden *F = calloc(1, sizeof(Faden));
+        for (int k = 0; k <= K; k++) { F->liste[k] = malloc(sizeof(int) * nrows); F->verl[k] = malloc(sizeof(int) * nrows); }
+        F->cnt = malloc(sizeof(int) * P); F->ml = malloc(sizeof(int) * P);
+        F->excl = calloc(nrows, 1);
+        F->ticket = omp_get_thread_num();
+        int verl = 0;
+        for (int s = 0; s < nstart; s++) {
+            const uint64_t *h = Hb + (size_t)start[s] * W;
+            int sc = 0; for (int w = 0; w < W; w++) sc += pc(h[w] & F->cov[0][w]);
+            verl += maxgr - gr[start[s]] + sc;
+            for (int w = 0; w < W; w++) F->cov[0][w] |= h[w];
+            F->gew[s] = start[s];
+        }
+        if (P < 64) F->cov[0][0] |= ~0ULL << P;
+        if (nstart) memcpy(F->cov[nstart], F->cov[0], sizeof F->cov[0]);
+        #pragma omp barrier
+        knoten(F, nstart, verl, L0, n0);
+        #pragma omp critical
+        {
+            for (int k = 0; k <= K; k++) knoten_tiefe[k] += F->knoten[k];
+            if (F->maxt > max_tiefe) max_tiefe = F->maxt;
+        }
+        for (int k = 0; k <= K; k++) { free(F->liste[k]); free(F->verl[k]); }
+        free(F->cnt); free(F->ml); free(F->excl); free(F);
+    }
+    if (zeitlimit < 1e17 && jetzt() - t0 > zeitlimit) stopflag = 1;
+    free(L0);
+}
 
 int main(int argc, char **argv) {
     n = 11; d = 6; K = 11;
@@ -318,6 +553,11 @@ int main(int argc, char **argv) {
         else if (!strcmp(argv[i], "-r")) erl_name = argv[++i];
         else if (!strcmp(argv[i], "-o")) out_name = argv[++i];
         else if (!strcmp(argv[i], "-a")) alle = 1;
+        else if (!strcmp(argv[i], "-b")) schranke2 = atoi(argv[++i]);
+        else if (!strcmp(argv[i], "-3")) dritte = 1;
+        else if (!strcmp(argv[i], "-G")) g_maxel = atoi(argv[++i]);
+        else if (!strcmp(argv[i], "-B")) { bahn_von = atoi(argv[++i]); bahn_bis = atoi(argv[++i]); }
+        else if (!strcmp(argv[i], "-m")) maxaufg = atoll(argv[++i]);
         else { fprintf(stderr, "unbekannt: %s\n", argv[i]); return 2; }
     }
     W = (1 << (n - 1)) / 64; if (W < 1) W = 1; P = 1 << (n - 1);
@@ -363,73 +603,50 @@ int main(int argc, char **argv) {
     long long loes_vor = 0;
     for (int tt = typ_von; tt <= typ_bis; tt++) {
         double ts = jetzt();
-        int start[2], nstart = 0;
+        int start[3], nstart = 0;
         typgrenze = -1;
+        int rep = -1;
         if (sym) {
             int8_t e[MAXN]; memset(e, 0, MAXN);
             if (typ_same[tt]) { for (int j = 1; j < n; j++) e[j] = 1; for (int j = n - typ_d[tt]; j < n; j++) e[j] = -1; }
             else { e[0] = 1; e[1] = 0; for (int j = 2; j < n; j++) e[j] = 1; for (int j = n - typ_d[tt]; j < n; j++) e[j] = -1; }
-            int rep = finde_zeile(e);
+            rep = finde_zeile(e);
             if (rep < 0 || ptyp[(size_t)a_row * ntyp + rep] != tt) { fprintf(stderr, "Vertreter falsch\n"); return 1; }
             start[0] = a_row; start[1] = rep; nstart = 2;
             typgrenze = tt;
             printf("== Typ %d (%s, d=%d, Schnitt %d): a = Zeile %d, Vertreter Zeile %d\n", tt, typ_same[tt] ? "gleiche Spalte" : "andere Spalte", typ_d[tt], typ_inter[tt], a_row, rep);
         }
-        /* Startliste */
-        int *L0 = malloc(sizeof(int) * nrows), n0 = 0;
-        for (int r = 0; r < nrows; r++) {
-            int ok = 1;
-            for (int s = 0; s < nstart; s++) {
-                if (r == start[s]) ok = 0;
-                else if (typgrenze >= 0 && istyp(r) && ptyp[(size_t)start[s] * ntyp + r] > typgrenze) ok = 0;
-            }
-            if (ok) L0[n0++] = r;
-        }
-        next_ticket = nthr;
         memset(knoten_tiefe, 0, sizeof knoten_tiefe);
         max_tiefe = 0;
-        aufg_gesamt = -1; aufg_erledigt_jetzt = 0;
-        long long split_max = 0;
-        #pragma omp parallel
-        {
-            Faden *F = calloc(1, sizeof(Faden));
-            for (int k = 0; k <= K; k++) { F->liste[k] = malloc(sizeof(int) * nrows); F->verl[k] = malloc(sizeof(int) * nrows); }
-            F->cnt = malloc(sizeof(int) * P);
-            F->excl = calloc(nrows, 1);
-            F->ticket = omp_get_thread_num();
-            memset(F->cov[0], 0, sizeof F->cov[0]);
-            int verl = 0;
-            for (int s = 0; s < nstart; s++) {
-                const uint64_t *h = Hb + (size_t)start[s] * W;
-                int sc = 0; for (int w = 0; w < W; w++) sc += pc(h[w] & F->cov[0][w]);
-                verl += maxgr - gr[start[s]] + sc;
-                for (int w = 0; w < W; w++) F->cov[0][w] |= h[w];
-                F->gew[s] = start[s];
-            }
-            /* ungenutzte Bits (P < 64) als ueberdeckt markieren */
-            if (P < 64) F->cov[0][0] |= ~0ULL << P;
-            if (nstart) memcpy(F->cov[nstart], F->cov[0], sizeof F->cov[0]);
-            /* Hilfsfeld fuer Tiefen ab nstart: knoten() nutzt cov[k] */
-            #pragma omp barrier
-            /* bei Teilung muss teiltiefe > nstart sein */
-            knoten(F, nstart, verl, L0, n0);
-            #pragma omp critical
-            {
-                for (int k = 0; k <= K; k++) knoten_tiefe[k] += F->knoten[k];
-                if (F->maxt > max_tiefe) max_tiefe = F->maxt;
-                if (F->split_idx > split_max) split_max = F->split_idx;
+        long long g_ges = 0, g_jetzt = 0, g_vorher = 0;
+        int nbahn = 1, *bahnrep = NULL;
+        if (sym && dritte) {
+            bahnrep = dritte_bahnen(a_row, rep, tt, &nbahn);
+            printf("   dritte Zeile: %d Bahnvertreter\n", nbahn);
+            fflush(stdout);
+        }
+        for (int bi = 0; bi < nbahn; bi++) {
+            if (stopflag || gefunden_stop) break;
+            if (bahn_von >= 0 && (bi < bahn_von || bi > bahn_bis)) continue;
+            profgrenze = 1 << 30;
+            if (bahnrep) { start[2] = bahnrep[bi]; nstart = 3; profgrenze = profil(a_row, rep, bahnrep[bi]); prof_a = a_row; prof_b = rep; }
+            id_basis = (long long)bi << 20;
+            lauf_start(start, nstart);
+            g_ges += aufg_gesamt; g_jetzt += aufg_erledigt_jetzt; g_vorher += erl_vorher;
+            if (bahnrep && (bi % 20 == 0 || aufg_gesamt > 1000)) {
+                printf("   Bahn %d/%d (Profil %d,%d): %lld Aufgaben, Zeit bisher %.1f s\n", bi, nbahn, profgrenze >> 6, profgrenze & 63, aufg_gesamt, jetzt() - ts);
+                fflush(stdout);
             }
         }
-        if (zeitlimit < 1e17 && jetzt() - t0 > zeitlimit) stopflag = 1;
-        printf("   Aufgaben (Tiefe %d): %lld gesamt, %lld in diesem Lauf erledigt; Loesungen bisher %lld (verteilt %lld)%s\n",
-               teiltiefe, split_max, aufg_erledigt_jetzt, n_loes, n_loes_verteilt, stopflag ? " ABBRUCH Zeit" : "");
+        free(bahnrep);
+        printf("   Aufgaben (Tiefe %d): %lld gesamt, %lld in diesem Lauf erledigt, %lld vorher; Loesungen bisher %lld (verteilt %lld)%s\n",
+               teiltiefe, g_ges, g_jetzt, g_vorher, n_loes, n_loes_verteilt, stopflag ? " ABBRUCH Zeit" : "");
         printf("   Knoten je Tiefe:");
         for (int k = 0; k <= K; k++) if (knoten_tiefe[k]) printf(" %d:%lld", k, knoten_tiefe[k]);
         printf("; max. Tiefe %d; Zeit %.1f s\n", max_tiefe, jetzt() - ts);
-        printf("   Typ %d: %s, Loesungen %lld\n", tt, stopflag ? "NICHT fertig" : (gefunden_stop ? "Loesung gefunden (Stopp)" : "fertig"), n_loes - loes_vor);
+        printf("   Typ %d: %s, Loesungen %lld\n", tt, stopflag ? "NICHT fertig" : (gefunden_stop ? "Loesung gefunden (Stopp)" : (bahn_von >= 0 ? "Teilbereich fertig" : "fertig")), n_loes - loes_vor);
         fflush(stdout);
         loes_vor = n_loes;
-        free(L0);
         if (stopflag || gefunden_stop) break;
         if (!sym) break;
     }

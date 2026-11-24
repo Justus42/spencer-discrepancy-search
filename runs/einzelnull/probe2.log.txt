@@ -1,0 +1,12 @@
+== Typ 3 (gleiche Spalte, d=3, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5568
+   Aufgaben (Tiefe 4): 4823 gesamt, 4819 in diesem Lauf erledigt; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+   Knoten je Tiefe: 2:1 3:19 4:4823 5:822798 6:9460459; max. Tiefe 6; Zeit 44.3 s
+== Typ 5 (andere Spalte, d=2, Schnitt 26): a = Zeile 5120, Vertreter Zeile 4992
+   Aufgaben (Tiefe 4): 150 gesamt, 146 in diesem Lauf erledigt; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+   Knoten je Tiefe: 2:1 3:1 4:150 5:66959 6:4107226 7:26648; max. Tiefe 7; Zeit 44.3 s
+== Typ 7 (gleiche Spalte, d=1, Schnitt 40): a = Zeile 5120, Vertreter Zeile 5376
+   Aufgaben (Tiefe 4): 858 gesamt, 854 in diesem Lauf erledigt; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+   Knoten je Tiefe: 2:1 3:2 4:858 5:326250 6:2696185 7:7712; max. Tiefe 7; Zeit 44.4 s
+== Typ 9 (andere Spalte, d=0, Schnitt 76): a = Zeile 5120, Vertreter Zeile 4608
+   Aufgaben (Tiefe 4): 2692 gesamt, 2688 in diesem Lauf erledigt; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+   Knoten je Tiefe: 2:1 3:5 4:2692 5:1013451 6:2561191; max. Tiefe 6; Zeit 44.4 s
