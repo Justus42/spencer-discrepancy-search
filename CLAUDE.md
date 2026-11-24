@@ -24,7 +24,9 @@ etwas außerhalb dieses Ordners installierst oder veränderst.
    - In einer Cloud-Sitzung: Der Container kann jederzeit neu starten, laufende Prozesse und
      nicht gepushte Dateien gehen dann verloren (so geschehen am 23.11.2026, zweimal). Deshalb
      in Blöcken von höchstens 30 Minuten rechnen, im Vordergrund warten, Logs laufend
-     schreiben, nach jedem Block `STATUS.md` aktualisieren, committen und pushen. Am Ende ohne
+     schreiben, nach jedem Block das eigene Laufprotokoll in `notes/laeufe/` aktualisieren,
+     committen und pushen. `STATUS.md` erst am Ende ändern, vorher `main` holen: je Ansatz
+     höchstens fünf Zeilen plus Verweis aufs Laufprotokoll, Fehlversuche als Einzeiler. Am Ende ohne
      Zuruf auswerten. Während ein Block mit Zeitlimit läuft, nichts anderes rechnen.
 5. Jeden Fehlversuch mit Parametern und Laufzeit in `STATUS.md` unter „Fehlversuche“ eintragen.
 6. Auf einem eigenen Branch arbeiten und nur auf Anweisung nach `main` zusammenführen.
