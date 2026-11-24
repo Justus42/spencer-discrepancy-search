@@ -509,6 +509,9 @@ bleibt die Stufe dort ungelöst, folgen die übrigen Typen (Abweichung von der R
 0,058–0,063 s je Schritt, beide Typen (12,11) und (13,10), Vorbereitung 0,02 s; |S| = 377 984 bzw. 374 288. Das sind ca. 29 000 Schritte in 1800 s
 (bei (22,7): 62 000; bei (20,6): 386 000). Dichte bei K=15: 2,8.
 
+**(23,7), je 1800 s, 4 Startwerte je Typ:**
+- K=15 (60 Wörter), Typ (12,11): 0 von 4, Restzahl 680/680/680/640 (je ca. 30 300 Schritte). Typ (13,10) folgt.
+
 <!-- RUNDGANG-ENDE -->
 
 ## Nächste Gates
