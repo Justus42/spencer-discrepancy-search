@@ -1,0 +1,14 @@
+Bahnen von P auf 524288 Zeilenpaaren: Groesse 1: 8, Groesse 3: 160, Groesse 9: 58200, andere: 0; Punktklassen 58368
+Kugel 60460 Woerter; Ueberdeckungsmatrix 58368 x 58368, asymmetrische Eintraege: 0 (7.2 s)
+Punktklassen der Groesse 1 (8): Neunerbahnen als Ueberdecker 6700..6700, kleine Bahnen 56..56
+Punktklassen der Groesse 3 (160): Neunerbahnen als Ueberdecker 16389..17576, kleine Bahnen 29..56
+Punktklassen der Groesse 9 (58200): Neunerbahnen als Ueberdecker 15216..39824, kleine Bahnen 29..84
+Punktklassen ohne kleinen Ueberdecker: 0
+verschiedene kleine Masken: 55712
+Matrix controls/had24_1p3_paley12.txt: 24 Zeilen in 8 Bahnen, Groessen: 3 3 3 3 3 3 3 3; Zeilen der Bahnen zusammen 24; offene Punktklassen danach: 0 -> UEBERDECKUNG
+48er-Bahnen (Vertreter/Gewicht): 0/3 238034/3 92343/3 119017/3 2047/3 239149/3 94024/3 120598/3
+neun1 B=20 Bereich [0, 58200) von 58200
+  Fortschritt: 58200 / 58200 fertig (zuletzt i=58191), Knoten 348733662, 30 s
+ERGEBNIS neun1 B=20 Bereich [0, 58200) von 58200: Ueberdeckungen (alle Bahnmengen, auch nicht minimale) nach Neunerbahnen und Zeilen:
+  keine
+Knoten 348733662, Laufzeit 30.3 s
