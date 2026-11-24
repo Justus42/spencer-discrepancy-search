@@ -379,13 +379,101 @@ def test_a(rng, zeit_s, merge=False):
     print(f"Test A fertig ({time.time() - t0:.0f} s)")
 
 
+def ueberdeckungsradius(A):
+    """Brute-Force ueber alle 2^m Punkte: groesster Abstand zu den Zeilen von A und ihren Komplementen
+    (Bit 1 = Eintrag -1). Nach der Reduktion gilt disc >= m - 2R genau dann, wenn dieser Radius <= R."""
+    A = np.asarray(A)
+    z, m = A.shape
+    w = [sum(1 << j for j in range(m) if A[i, j] == -1) for i in range(z)]
+    w = np.array(w + [x ^ ((1 << m) - 1) for x in w], dtype=np.uint32)
+    pts = np.arange(1 << m, dtype=np.uint32)
+    dmin = np.full(1 << m, 255, dtype=np.uint8)
+    for x in w:
+        dmin = np.minimum(dmin, np.bitwise_count(pts ^ x).astype(np.uint8))
+    return len(w), int(dmin.max())
+
+
+# ---------------------------------------------------------------- Test C: Nachpruefung der Gegenbeispiele
+def auswahlen40(muster):
+    """Alle Auswahlen des Musters: 13 = links 1 + rechts 3 mit Ueberlappung, 22 = 2+2 mit Ueberlappung 1.
+    Schluessel wie in der Ausgabe von gegenbeispiel40.c."""
+    out = []
+    if muster == 13:
+        for l in range(20):
+            for r in itertools.combinations(range(20), 3):
+                if l in r:
+                    out.append(((l,), r))
+    else:
+        for l in itertools.combinations(range(20), 2):
+            for r in itertools.combinations(range(20), 2):
+                if len(set(l) & set(r)) == 1:
+                    out.append((l, r))
+    return out
+
+
+def pruefe_gegenbeispiele(hdatei, muster, logdatei, T):
+    """Rechnet jeden Treffer der C-Suche ganzzahlig nach und prueft, dass jede Auswahl abgedeckt ist."""
+    H = np.loadtxt(hdatei, dtype=np.int64)
+    pruefe_hadamard(H)
+    M = doubling(H)
+    erwartet = {}
+    for l, r in auswahlen40(muster):
+        erwartet[(",".join(map(str, l)), ",".join(map(str, r)))] = (l, r)
+    gesehen, offen, falsch, maxbetrag = {}, [], [], []
+    for zeile in open(logdatei):
+        t = zeile.split()
+        if not t or t[0] != "SEL":
+            continue
+        key = (t[2], t[3])
+        if key in gesehen:
+            falsch.append(("doppelt", key))
+        gesehen[key] = t[4]
+        if t[4] == "offen":
+            offen.append(key)
+        elif t[4] == "gefunden":
+            if key not in erwartet:
+                falsch.append(("unbekannte Auswahl", key))
+                continue
+            l, r = erwartet[key]
+            A = streiche(M, list(l), list(r))
+            assert A.shape == (40, 36)
+            bits = t[5]
+            if len(bits) != 36 or set(bits) - {"0", "1"}:
+                falsch.append(("x ungueltig", key))
+                continue
+            x = np.array([1 - 2 * int(b) for b in bits], dtype=np.int64)
+            m = int(np.abs(A @ x).max())
+            maxbetrag.append(m)
+            if m > T:
+                falsch.append((f"max|Ax| = {m} > {T}", key))
+    fehlt = [k for k in erwartet if k not in gesehen]
+    ok = (not falsch) and (not fehlt) and (not offen)
+    print(f"{hdatei} Muster {muster}: erwartet {len(erwartet)} Auswahlen, in der Ausgabe {len(gesehen)}, "
+          f"nachgerechnet mit max|Ax| <= {T}: {len(maxbetrag)}, offen {len(offen)}, fehlend {len(fehlt)}, falsch {len(falsch)}; "
+          f"groesster gefundener Betrag {max(maxbetrag) if maxbetrag else None}, kleinster {min(maxbetrag) if maxbetrag else None}")
+    for f in falsch[:5]:
+        print("  FALSCH:", f)
+    for k in offen[:10]:
+        print("  OFFEN:", k)
+    for k in fehlt[:10]:
+        print("  FEHLT:", k)
+    return ok
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
-    rng = random.Random(int(sys.argv[2]) if len(sys.argv) > 2 else 1)
+    rng = random.Random(int(sys.argv[2]) if len(sys.argv) > 2 and sys.argv[2].isdigit() else 1)
     if cmd == "kontrolle":
         kontrolle()
     elif cmd == "klassen20":
         test_b(rng)
+    elif cmd == "radius":
+        for f in sys.argv[2:]:
+            n, r = ueberdeckungsradius(np.loadtxt(f, dtype=np.int64))
+            print(f"{f}: {n} Woerter, Ueberdeckungsradius {r}")
+    elif cmd == "pruefe_c":
+        ok = pruefe_gegenbeispiele(sys.argv[2], int(sys.argv[3]), sys.argv[4], int(sys.argv[5]))
+        sys.exit(0 if ok else 1)
     elif cmd == "klassen24":
         test_a(rng, float(sys.argv[3]) if len(sys.argv) > 3 else 120.0, merge=(len(sys.argv) > 4 and sys.argv[4] == 'merge'))
     else:

@@ -1,0 +1,12 @@
+ENDE muster 13 T 8 auswahlen 3420 gefunden 3420 offen 0 sekunden 19.1
+controls/had20_klasse1.txt Muster 13: erwartet 3420 Auswahlen, in der Ausgabe 3420, nachgerechnet mit max|Ax| <= 8: 3420, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 8, kleinster 8
+ENDE muster 22 T 8 auswahlen 6840 gefunden 6840 offen 0 sekunden 33.4
+controls/had20_klasse1.txt Muster 22: erwartet 6840 Auswahlen, in der Ausgabe 6840, nachgerechnet mit max|Ax| <= 8: 6840, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 8, kleinster 8
+ENDE muster 13 T 8 auswahlen 3420 gefunden 3420 offen 0 sekunden 18.9
+controls/had20_klasse2.txt Muster 13: erwartet 3420 Auswahlen, in der Ausgabe 3420, nachgerechnet mit max|Ax| <= 8: 3420, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 8, kleinster 8
+ENDE muster 22 T 8 auswahlen 6840 gefunden 6840 offen 0 sekunden 34.7
+controls/had20_klasse2.txt Muster 22: erwartet 6840 Auswahlen, in der Ausgabe 6840, nachgerechnet mit max|Ax| <= 8: 6840, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 8, kleinster 8
+ENDE muster 13 T 8 auswahlen 3420 gefunden 3420 offen 0 sekunden 17.9
+controls/had20_klasse3.txt Muster 13: erwartet 3420 Auswahlen, in der Ausgabe 3420, nachgerechnet mit max|Ax| <= 8: 3420, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 8, kleinster 8
+ENDE muster 22 T 8 auswahlen 6840 gefunden 6840 offen 0 sekunden 32.8
+controls/had20_klasse3.txt Muster 22: erwartet 6840 Auswahlen, in der Ausgabe 6840, nachgerechnet mit max|Ax| <= 8: 6840, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 8, kleinster 8

@@ -1,0 +1,6 @@
+controls/had20_klasse1.txt Muster 13: erwartet 3420 Auswahlen, in der Ausgabe 3420, nachgerechnet mit max|Ax| <= 10: 3420, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 10, kleinster 10
+controls/had20_klasse1.txt Muster 22: erwartet 6840 Auswahlen, in der Ausgabe 6840, nachgerechnet mit max|Ax| <= 10: 6840, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 10, kleinster 10
+controls/had20_klasse2.txt Muster 13: erwartet 3420 Auswahlen, in der Ausgabe 3420, nachgerechnet mit max|Ax| <= 10: 3420, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 10, kleinster 10
+controls/had20_klasse2.txt Muster 22: erwartet 6840 Auswahlen, in der Ausgabe 6840, nachgerechnet mit max|Ax| <= 10: 6840, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 10, kleinster 10
+controls/had20_klasse3.txt Muster 13: erwartet 3420 Auswahlen, in der Ausgabe 3420, nachgerechnet mit max|Ax| <= 10: 3420, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 10, kleinster 10
+controls/had20_klasse3.txt Muster 22: erwartet 6840 Auswahlen, in der Ausgabe 6840, nachgerechnet mit max|Ax| <= 10: 6840, offen 0, fehlend 0, falsch 0; groesster gefundener Betrag 10, kleinster 10
