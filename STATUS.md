@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 23.11.2026. Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 24.11.2026. Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 
 ## Ziel
 
@@ -69,6 +69,8 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
 
 - 23.11.2026, Lauf n=20 R=6 d=2 K=13 Typ (11,9) Startwerte 1–16, je 1800 s: durch Container-Neustart verloren, keine Restzahlen
   (Details im Abschnitt „Lauf K=13“).
+- 24.11.2026, Kontrolle n=22 R=7 d=2 K=13, Zufallsstart, je 1800 s, Cloud 4 Kerne: Typ (13,9) Startwerte 1–8 alle ungelöst
+  (Restzahlen 7, 2, 6, 7, 2, 2, 3, 1); Typ (12,10) Startwerte 3 und 7 ungelöst (Restzahl 8, 8). Details im Abschnitt „Kontrolle Skalierung“.
 
 ## Vorschläge aus der Astra-Abfrage (unbelegt, noch nicht getestet)
 
@@ -297,6 +299,93 @@ Die drei Kontroll-Treffer (52 Wörter): beide Prüfskripte Diskrepanz 8.
 - Tabellenabgleich (florath, siehe oben): K(20,6) 24–64, K(26,9) 17–56. 48 läge darunter. Neuheit nach Regel 3 offen.
 - Laut Anweisung nach dem Treffer gestoppt: Der geplante K=12-Suchlauf (16 x 1800 s) wurde **nicht** gestartet. Kein K=11.
   Nicht geprüft: ob die übrigen 52er-Codes (auch die drei aus der Kontrolle) ebenfalls überflüssige Nebenklassen haben.
+
+**Gate-Prüfung 24.11.2026 (viertes Gate, 48 Wörter):** Die beiden 48er-Codes (aus 52er Startwert 5 und 6) wurden vom
+Orchestrator-Claude mit eigenem Skript bestätigt (nicht im Repo).
+- **Befund:** Streichen jeder einzelnen der 12 Nebenklassen lässt in beiden Codes **exakt 6108 Punkte** von F2^20 offen
+  (= 1527 Syndrome, je 4 Punkte). In dieser Sitzung nachgerechnet (Brute-Force über alle 2^20 Punkte, alle 12 Streichungen,
+  beide Codes: 12 x 6108). Keine Nebenklasse ist überflüssig; der billige Weg zu K=11 ist damit zu.
+- **Kein Versuch auf K=11** (Anweisung).
+- **Folgecodes Länge 22/24/26 (R=7/8/9), je 48 Wörter, beide Prüfskripte:** Matrizen `runs/matrix_ext48_n{22,24,26}_typ11-9_aus52seed{5,6}.txt`
+  (24 x n; `_pad` = 24 x 24 bei n=22). `check_disc.py` und `verify_spencer.py` melden für **alle 6 Matrizen exakt Diskrepanz 8**
+  (Ausgaben `runs/ext48/`, Skript `runs/ext48/pruefe.sh`, 67 s auf 4 Kernen). Regel 1 erfüllt. Quotient höchstens 8/sqrt(24) = 1,633,
+  kein Spencer-Rekord. Tabellenabgleich (florath): K(22,7) 21–64, K(24,8) 19–64, K(26,9) 17–56; 48 läge jeweils darunter.
+  Neuheit nach Regel 3 offen.
+
+## Machbarkeit (25,8), Dimension 2, K=12 (48 Wörter), keine Suche (24.11.2026)
+
+Quotient F2^23 (m = 25 - 2), also 2^23 = 8 388 608 Syndrome; Bild der Kugel |S| = 1 730 099 (20,6 % von 2^23, beide Typen),
+untere Schranke K >= 4,85. Messmodus im Kern per Compile-Schalter (normaler Lauf unverändert): `-DMESS=200` bricht nach
+200 Schritten ab und meldet die Zeit je Schritt, `-DUEBERLAUF` prüft zusätzlich jede Addition, Subtraktion und
+Multiplikation der Walsh-Bewertung mit `__builtin_*_overflow` und merkt sich den größten Betrag. Treiber `src/mess_schritt.py`,
+Ausgaben `runs/mess258/`.
+
+**64-Bit-Überlauf: ausgeschlossen (Beweis plus Messung).**
+1. Erste Walsh-Transformation auf der Loch-Indikatorfunktion a in {0,1}: jeder Zwischenwert ist eine ±-Summe von Einträgen
+   von a, also Betrag <= Zahl der Löcher <= 2^23.
+2. Ŝ (Walsh-Transformierte der Kugel-Indikatorfunktion, einmal vorab): Betrag <= |S| < 2^21, Zwischenwerte ebenso.
+3. Produkt B(s) = â(s)·Ŝ(s): Betrag < 2^23 · 2^21 = 2^44.
+4. Zweite Transformation: jeder Zwischenwert ist eine ±-Summe von Werten B(s), also Betrag <= Σ|B(s)|. Nach Cauchy-Schwarz
+   und Parseval (Σ â² = 2^23 · Löcher, Σ Ŝ² = 2^23 · |S|) gilt Σ|B| <= 2^23 · sqrt(Löcher · |S|) < 2^23 · sqrt(2^23 · 2^21) = 2^45.
+   Endwert = 2^23 · (Löcher in x+S) <= 2^23 · |S| < 2^44.
+5. Alle Werte < 2^45, Grenze von int64 ist 2^63: Reserve 2^18. Zähler `cnt` (8 Bit) hält höchstens K = 12.
+Messung (je 200 Schritte, beide Typen): größter Betrag 1 820 873 195 520 (2^40,73) bei (13,12), 1 845 862 858 752 (2^40,75)
+bei (14,11); kein Überlauf-Flag gesetzt.
+
+**Zeit je Schritt (200 Schritte, Startwert 1, ohne Vorbereitung; Vorbereitung je 0,07–0,10 s):**
+
+| Typ | allein (1 Lauf) | 4 Läufe gleichzeitig |
+|---|---|---|
+| (13,12) | 0,475 s | 0,581 / 0,582 s (Startwerte 1, 2) |
+| (14,11) | 0,504 s | 0,570 / 0,588 s (Startwerte 3, 4) |
+
+**Einordnung (Rechnung, keine Messung auf dem PC):** Bei (20,6), m = 18, 4 parallel: ca. 4,7 ms je Schritt
+(z. B. 386 528 Schritte in 1800 s); die sechs K=13-Treffer brauchten 48 408 bis 342 182 Schritte. Bei (25,8) sind es
+ca. 120-mal mehr Zeit je Schritt (32-mal mehr Syndrome, Rest Speicher: 2 x 64 MB Arbeitsfelder passen nicht in den Cache).
+1800 s ergeben nur ca. 3 100 Schritte; der Neustart nach 3 000 Schritten ohne Verbesserung käme also höchstens einmal.
+Bräuchte (25,8) ähnlich viele Schritte wie (20,6), wären das 8–55 h je Lauf auf einem Cloud-Kern. Nach 200 Schritten
+standen noch 31 500 (Typ 13,12) bzw. 16 070 (Typ 14,11) Syndrome offen. Der Ryzen 9800X3D (96 MB L3-Cache) und die
+GPU sind nicht gemessen. Keine Suche gestartet.
+
+## Kontrolle Skalierung (22,7), Dimension 2, K=13 (52 Wörter), Zufallsstart (ab 24.11.2026, 06:35 UTC)
+
+Quotient F2^20, |S| = 266 080 (25,4 %), untere Schranke K >= 3,94. Existenz von 52 und 48 Wörtern bei (22,7) ist durch die
+Folgecodes belegt (nicht notwendig als Nebenklassen eines solchen D). Typen (13,9), (12,10), (11,11), je Startwerte 1–8,
+je 1800 s, Blöcke zu 4. Treiber `src/run_gen.py`, Aufruf `src/run_skal22.sh typ von bis`; Logs `runs/skal22/`.
+Gegentest vorab: Der normale Kern reproduziert die Warmstart-Kontrolle K=13 Startwert 2 (Startdatei aus 56er Startwert 3)
+mit derselben Lösung nach Schritt 2011, der Messmodus ändert also nichts.
+
+- Block 1, Typ (13,9), Startwerte 1–4 (06:35–07:05 UTC): **0 von 4 gelöst.** Beste Restzahl: 7 / 2 / 6 / 7.
+  Je ca. 62 000 Schritte in 1800 s (ca. 29 ms je Schritt bei 4 parallel; zum Vergleich (20,6): ca. 386 000).
+- Block 2, Typ (13,9), Startwerte 5–8 (07:05–07:35 UTC): **0 von 4 gelöst.** Beste Restzahl: 2 / 2 / 3 / **1**.
+- Block 3, Typ (12,10), Startwerte 1–4 (07:35–08:05 UTC): **3 von 4 gelöst**, 52 Wörter bei (22,7): Startwert 1 nach 799 s
+  (28 330 Schritte), 2 nach 84 s (3 012), 4 nach 377 s (13 429). Startwert 3: beste Restzahl 8. Alle drei selbstkomplementär,
+  Radius per Brute-Force 7. Wörter `runs/skal22/woerter_n22_R7_d2_K13_typ12-10_seed{1,2,4}.txt`, Matrizen
+  `runs/skal22/matrix_n22_52w_typ12-10_seed{1,2,4}.txt` (26 x 22, `_pad` 26 x 26). **Beide Prüfskripte, alle drei: Diskrepanz 8.**
+- Block 4, Typ (12,10), Startwerte 5–8 (08:06–08:36 UTC): **3 von 4 gelöst**, 52 Wörter: Startwert 5 nach 604 s (20 365 Schritte),
+  6 nach 1686 s (57 794), 8 nach 50 s (1 720). Startwert 7: beste Restzahl 8. Selbstkomplementär, Radius per Brute-Force 7.
+  Wörter/Matrizen wie oben mit `seed{5,6,8}`. **Beide Prüfskripte, alle drei: Diskrepanz 8.** Die sechs (12,10)-Codes sind paarweise verschieden.
+- Block 5, Typ (11,11), Startwerte 1–4 (08:36–08:43 UTC): **4 von 4 gelöst**, 52 Wörter: nach 361 s (11 459 Schritte), 40 s (1 230),
+  198 s (6 524), 389 s (12 362). Selbstkomplementär, Radius per Brute-Force 7. Wörter `runs/skal22/woerter_n22_R7_d2_K13_typ11-11_seed{1..4}.txt`,
+  Matrizen `runs/skal22/matrix_n22_52w_typ11-11_seed{1..4}.txt` (26 x 22, `_pad` 26 x 26). **Beide Prüfskripte, alle vier: Diskrepanz 8.**
+- Block 6, Typ (11,11), Startwerte 5–8 (08:43–08:53 UTC): **4 von 4 gelöst**, 52 Wörter: nach 255 s (8 049 Schritte), 592 s (19 355),
+  87 s (2 738), 45 s (1 380). Selbstkomplementär, Radius per Brute-Force 7. **Beide Prüfskripte, alle vier: Diskrepanz 8.**
+
+**Gesamtergebnis Skalierung (22,7), K=13, Zufallsstart, je 1800 s: 14 von 24 gelöst.**
+
+| Typ | gelöst | Zeit bis Lösung | beste Restzahl der Fehlläufe |
+|---|---|---|---|
+| (13,9) | 0 von 8 | – | 7, 2, 6, 7, 2, 2, 3, 1 |
+| (12,10) | 6 von 8 | 50–1686 s | 8, 8 (Startwerte 3, 7) |
+| (11,11) | 8 von 8 | 40–592 s | – |
+
+- Alle 14 Treffer: 52 Wörter, selbstkomplementär, Radius 7 per Brute-Force, paarweise verschieden; `check_disc.py` und
+  `verify_spencer.py` melden für alle 14 exakt Diskrepanz 8 (Quotient 8/sqrt(26) = 1,569, kein Spencer-Rekord). Regel 1 erfüllt.
+- Die Methode skaliert damit von 2^18 auf 2^20 Syndrome: Bei (20,6) gelangen mit dem besten Typ (11,9) 6 von 16 in 1800 s, bei
+  (22,7) mit dem besten Typ (11,11) 8 von 8, trotz ca. 6-mal weniger Schritten je Lauf. Der ausgewogene Typ ist hier am besten,
+  der unausgewogenste (13,9) löst nie (bei (20,6) war es umgekehrt: (10,10) schlecht, (11,9) gut).
+- Neuheit: 52 lag schon über die Folgecodes vor (K(22,7) Tabelle 21–64). Nach Regel 3 offen. Kein K=12 bei (22,7) gestartet.
+
 
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
 

@@ -1,0 +1,1 @@
+seed=5 GELOEST (604s it=20365 r=2) Woerter=52 selbstkompl=True Radius(Brute-Force)=7 Datei=runs/skal22/woerter_n22_R7_d2_K13_typ12-10_seed5.txt

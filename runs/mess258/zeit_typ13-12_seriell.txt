@@ -1,0 +1,29 @@
+typ=(13, 12) seed=1 binary=coset_tabu_mess
+m=23 n=25 R=8 K=12 |S|=1730099 (0.2062 von 2^m), untere Schranke K>=4.85
+[1s it=0 r=0] unueberdeckt 378834
+[1s it=1 r=0] unueberdeckt 355761
+[1s it=2 r=0] unueberdeckt 293058
+[2s it=3 r=0] unueberdeckt 270436
+[2s it=4 r=0] unueberdeckt 202002
+[2s it=5 r=0] unueberdeckt 159836
+[3s it=6 r=0] unueberdeckt 132926
+[4s it=9 r=0] unueberdeckt 132525
+[4s it=10 r=0] unueberdeckt 107104
+[5s it=11 r=0] unueberdeckt 94393
+[7s it=16 r=0] unueberdeckt 89807
+[7s it=17 r=0] unueberdeckt 88507
+[8s it=19 r=0] unueberdeckt 85662
+[11s it=28 r=0] unueberdeckt 84954
+[12s it=29 r=0] unueberdeckt 78418
+[13s it=32 r=0] unueberdeckt 73881
+[13s it=33 r=0] unueberdeckt 72716
+[14s it=34 r=0] unueberdeckt 71592
+[15s it=36 r=0] unueberdeckt 70763
+[16s it=39 r=0] unueberdeckt 70721
+[17s it=40 r=0] unueberdeckt 64568
+[19s it=44 r=0] unueberdeckt 61699
+[19s it=45 r=0] unueberdeckt 58044
+[20s it=46 r=0] unueberdeckt 48314
+[32s it=69 r=0] unueberdeckt 40257
+[34s it=73 r=0] unueberdeckt 31500
+MESS m=23 n=25 R=8 K=12 |S|=1730099 Schritte=200 Zeit=95.07s je_Schritt=0.4753s Vorbereitung=0.07s

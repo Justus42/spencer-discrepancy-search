@@ -1,0 +1,5 @@
+typ=(13, 9) seed=1 nicht geloest, kleinste Restzahl=7 (Zeitlimit, best=7, it=61872)
+typ=(13, 9) seed=2 nicht geloest, kleinste Restzahl=2 (Zeitlimit, best=2, it=62096)
+typ=(13, 9) seed=3 nicht geloest, kleinste Restzahl=6 (Zeitlimit, best=6, it=61872)
+typ=(13, 9) seed=4 nicht geloest, kleinste Restzahl=7 (Zeitlimit, best=7, it=62080)
+FERTIG 07:05:23

@@ -1,0 +1,5 @@
+typ=(12, 10) seed=5 GELOEST (604s it=20365 r=2) Woerter=52 selbstkompl=True Radius(Brute-Force)=7 Datei=runs/skal22/woerter_n22_R7_d2_K13_typ12-10_seed5.txt
+typ=(12, 10) seed=6 GELOEST (1686s it=57794 r=9) Woerter=52 selbstkompl=True Radius(Brute-Force)=7 Datei=runs/skal22/woerter_n22_R7_d2_K13_typ12-10_seed6.txt
+typ=(12, 10) seed=7 nicht geloest, kleinste Restzahl=8 (Zeitlimit, best=8, it=61248)
+typ=(12, 10) seed=8 GELOEST (50s it=1720 r=0) Woerter=52 selbstkompl=True Radius(Brute-Force)=7 Datei=runs/skal22/woerter_n22_R7_d2_K13_typ12-10_seed8.txt
+FERTIG 08:36:26

@@ -1,0 +1,39 @@
+typ=(14, 11) seed=1 binary=coset_tabu_ueberlauf
+m=23 n=25 R=8 K=12 |S|=1730099 (0.2062 von 2^m), untere Schranke K>=4.85
+[1s it=0 r=0] unueberdeckt 384590
+[2s it=1 r=0] unueberdeckt 334119
+[3s it=2 r=0] unueberdeckt 245067
+[4s it=3 r=0] unueberdeckt 210630
+[5s it=4 r=0] unueberdeckt 175290
+[5s it=5 r=0] unueberdeckt 173806
+[6s it=6 r=0] unueberdeckt 150369
+[8s it=8 r=0] unueberdeckt 119775
+[9s it=9 r=0] unueberdeckt 117005
+[10s it=10 r=0] unueberdeckt 87908
+[12s it=12 r=0] unueberdeckt 82341
+[13s it=13 r=0] unueberdeckt 61140
+[15s it=16 r=0] unueberdeckt 60561
+[17s it=19 r=0] unueberdeckt 59846
+[19s it=21 r=0] unueberdeckt 48791
+[20s it=22 r=0] unueberdeckt 44767
+[21s it=24 r=0] unueberdeckt 44542
+[23s it=26 r=0] unueberdeckt 44158
+[27s it=32 r=0] unueberdeckt 43562
+[30s it=35 r=0] unueberdeckt 42937
+[30s it=36 r=0] unueberdeckt 42673
+[36s it=43 r=0] unueberdeckt 40342
+[38s it=46 r=0] unueberdeckt 39427
+[40s it=48 r=0] unueberdeckt 37891
+[56s it=70 r=0] unueberdeckt 34838
+[60s it=75 r=0] unueberdeckt 34570
+[63s it=79 r=0] unueberdeckt 34567
+[68s it=87 r=0] unueberdeckt 34456
+[86s it=110 r=0] unueberdeckt 31657
+[89s it=113 r=0] unueberdeckt 30334
+[92s it=117 r=0] unueberdeckt 29010
+[107s it=138 r=0] unueberdeckt 27600
+[110s it=142 r=0] unueberdeckt 26646
+[127s it=162 r=0] unueberdeckt 26071
+[129s it=164 r=0] unueberdeckt 16070
+MESS m=23 n=25 R=8 K=12 |S|=1730099 Schritte=200 Zeit=156.22s je_Schritt=0.7811s Vorbereitung=0.10s
+UEBERLAUF maxabs=1845862858752 (2^40.75) ueberlauf=0
