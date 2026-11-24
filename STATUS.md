@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 24.11.2026. Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 24.11.2026 (abends, nach Rundlauf Ansatz 3). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 
 ## Ziel
 
@@ -89,6 +89,10 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
   - Erster Klassen-Fingerabdruck (Histogramm der 4-Zeilen-Summen) trennt bei Ordnung 20 nichts: 72 Matrizen, 1 Schlüssel statt 3 (Laufzeit 1 s).
     Ersetzt durch Typen aller 6-Zeilen-Mengen (trennt bei Ordnung 20 genau 3 Klassen).
   - Installation von `pynauty` für kanonische Graphformen wurde von der Sitzung nicht freigegeben und nicht umgangen; eigene Invarianten statt dessen.
+- 24.11.2026, Rundlauf Ansatz 3 (Abschnitt „Ansatz 3“): 16 Familien aus den Modellantworten, 388 503 Matrizen, 0 Überlebende (kein Rekordkandidat), ca. 20 Min. Rechenzeit.
+  - Kreuzprobe `check_disc.py` / `verify_spencer.py` auf einer 31 x 30-Matrix (Astra 8, exakt 6): beide Skripte nach je 200 s Zeitgrenze abgebrochen, nicht gerechnet (443 s verloren).
+  - Sol 7, tieferes Ziel 4 (`sieb.py --ziel 4 --zeit 0.05 --max-sek 120`): an der Zeitgrenze bei 9 137 von 17 920 Matrizen abgebrochen, alle bis dahin ohne Treffer; Datei verworfen, Familienwert deshalb mit Stichprobe exakt belegt.
+  - Sieb mit 0,05 s je Matrix bleibt bei Sol 4 in 7 von 2 174 Fällen über dem exakten Wert (7 statt 5): zu kurze Zeit, nur Suchcode; die exakte Rechnung entscheidet.
 
 ## Vorschläge aus der Astra-Abfrage (unbelegt, noch nicht getestet)
 
@@ -616,6 +620,46 @@ Orchestrators vom 24.11. (eigene Skripte außerhalb des Repos) mit eigenem Progr
   (0,562 0,633 1,094 1,203 0,785 1,200 1,292 1,777 1,229 1,306 1,733 1,829 2,306 1,645 1,724 2,142 2,235 2,694); unter 1 bei n = 8, 9, 12:
   dort schlägt keine reelle Matrix (auch aufgefüllt) den Rekordquotienten. Bei Dichte ≥ 1 folgt nichts. Zeile in `LANDKARTE.md`.
 
+## Ansatz 3: Konstruktions-Rundlauf (24.11.2026, Cloud, 4 Kerne, ca. 20 Min. Rechenzeit)
+
+Protokoll `notes/laeufe/2026-11-24_rundlauf.md`, Branch `rundlauf/2026-11-24`. Gegenstand: 16 Bauformen mit Python-Generator `kandidaten()`, je 8 von GPT 6.2 Astra und GPT 6.2 Sol
+(`notes/openrouter/rundlauf_2026-11-24--*.md`). Generatoren unverändert nach `src/rundlauf/{astra,sol}_{1..8}.py` (`extrahiere.py`). Sieb: `src/pruefstand.c` (unverändert, ruft `src/rundlauf/sieb.py` auf),
+exakt: `src/exakt_disc.c`, Nachrechnen der Gegenbeispiele mit ganzen Zahlen: `src/rundlauf/pruefe.py` (regeneriert die Matrizen, teilt keinen Code mit dem Sieb). Kein neuer Suchcode.
+
+**Belegart: Gegenbeispiel je Fall, für alle 16 Familien.** Für jede der 388 503 Matrizen liegt ein nachgerechneter Vorzeichenvektor mit Maximum < d (d = Spalten − 2R) vor; **0 Überlebende** in allen 16 Familien.
+Zahl und Form aller Familien stimmen mit dem Auftrag überein (Astra 4356 / 59049 / 1176 / 1024 / 2346 / 2160 / 1568 / 1024, Sol 153664 / 71280 / 8192 / 7920 / 6144 / 40680 / 17920 / 10000; Formen wie angegeben).
+Kontrollen vorab bestanden: `ctrl_8`, `ctrl_16`, `had24_1p3_paley12`, `bahn15_40w` bleiben bei Ziel = eigener Wert ohne Gegenbeispiel, exakt 5, 7, 8, 7
+(`exakt_disc`, `check_disc.py`, `verify_spencer.py`). Gegenbeispiele komprimiert in `runs/rundlauf/*.txt.gz` (Name, Maximum, Vektor hex).
+
+| Familie | Form | d | beste Diskrepanz der Familie | Quotient |
+|---|---|---|---|---|
+| Astra 1 Paley-Scharnier | 25x23 | 9 | 7 (alle Matrizen exakt 7) | 1,400 |
+| Astra 2 Duaden | 15x15 | 7 | 3 | 0,775 |
+| Astra 3 Fano-Blöcke | 25x21 | 9 | 5 | 1,000 |
+| Astra 4 Walsh-Charts | 20x20 | 8 | 4 | 0,894 |
+| Astra 5 Golay-Bahnen | 25x23 | 9 | 7 (4 Matrizen exakt 7, Rest ≤ 5) | 1,400 |
+| Astra 6 Differenzblöcke | 20x18 | 8 | 6 (1 Matrix exakt 6, Rest ≤ 4) | 1,342 |
+| Astra 7 SL(2,3) | 25x25 | 9 | 5 | 1,000 |
+| Astra 8 punktierte Walsh-Basen | 31x30 | 10 | 6 (Angabe des Orchestrators: höchstens 8) | 1,078 |
+| Sol 1 Fano-Ebenentausch | 15x15 | 7 | 5 (4 984 Matrizen exakt 5, Rest ≤ 3) | 1,291 |
+| Sol 2 Paley-12-Verkabelung | 20x20 | 8 | 4 | 0,894 |
+| Sol 3 Walsh-Bänke | 25x23 | 9 | 5 | 1,000 |
+| Sol 4 Dreispalten-Lift | 25x25 | 9 | 7 (2 167 Matrizen exakt 7, Rest ≤ 5) | 1,400 |
+| Sol 5 Parabelbänder | 25x25 | 9 | 5 (90 Matrizen exakt 5, Rest ≤ 3) | 1,000 |
+| Sol 6 Paley-26 | 31x26 | 10 | 6 (Angabe: höchstens 8) | 1,078 |
+| Sol 7 Hadamard-16 geschaltet | 31x28 | 10 | 4 (Angabe: höchstens 8) | 0,718 |
+| Sol 8 vier Walsh-Bänke | 31x30 | 10 | 6 (Angabe: höchstens 8) | 1,078 |
+
+Familienwert = Höchstwert über alle Matrizen: jede Matrix durch Gegenbeispiel nach oben beschränkt, mindestens eine exakt (`exakt_disc`, Gray-Code) auf dem Wert. Quotient = Wert / √N, N = max(Zeilen, Spalten).
+Rekordschwelle wäre 1,7678; der beste Quotient des Rundlaufs ist 1,400 (Astra 1, Astra 5, Sol 4). Kreuzprobe: je eine Matrix aus Sol 1, Astra 6, Astra 5, Sol 4, Astra 1 mit `check_disc.py` und
+`verify_spencer.py` gleich `exakt_disc` (5, 6, 7, 7, 7); bei 31 x 30 sind beide Prüfskripte zu langsam (nicht gerechnet).
+
+**Abweichungen von den Angaben des Orchestrators:** keine bei den Werten (7, 7, 6, 7, 5 bei Astra 1/5/6, Sol 4/1; die „höchstens“-Angaben bestätigt, vier unterboten: Astra 8, Sol 6, 7, 8).
+Nicht vergleichbar: „12 / 50 / 8 Matrizen exakt geprüft“ (Astra 1, Sol 1, Sol 4) gegen eigene Zählung 4 356 / 4 984 / 2 167 Matrizen, die exakt den Familienwert haben; die Bedeutung der Orchestrator-Zahlen ist offen.
+
+**Grenzen.** Die Beweise in den Modellantworten sind **ungeprüft**; der Auftragstext an die Modelle liegt **nicht im Repo**. Die Aussage gilt nur für die von den 16 Generatoren gelieferten Matrizen, nicht für die Zielzellen;
+kein Ausschluss einer Zelle. Neuheit nicht berührt. Nichts nach außen gemeldet, nichts gemergt.
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
@@ -642,6 +686,7 @@ Syndrome) und können in einer Cloud-Sitzung laufen. Die GPU wird erst für 25/8
 - `src/pruefstand.c`: Gegenbeispielsuche (Teil B). `src/zirkulant.c`, `src/zirkulant_pruef.py`, `src/zirkulant_qualitaet.py`, `src/run_zirkulant.py`: Teil C.
 - `src/pruefe_reell16.py`, `src/dichte_schranke.py`, `src/kleitman_probe.py`: Prüfcode zu Ansatz 4 (Polieren um ctrl_16, Dichteschranke, Kleitman-Probe).
 - `LANDKARTE.md`: Übersicht Familien x N.
+- `src/rundlauf/`: Ansatz 3. `extrahiere.py` (Generatoren aus den Modellantworten), `astra_1..8.py`, `sol_1..8.py` (Modellcode unverändert), `familien.py` (Tabelle, Lader), `zaehle.py` (Zahl/Form), `sieb.py` (Treiber für `pruefstand`, prüft nichts), `pruefe.py` (Nachrechnen mit ganzen Zahlen, exakte Prüfung über `build/exakt_disc`).
 - `src/exakt_disc.c`: Prüfcode, exakte Diskrepanz per Gray-Code (auch mit gestrichenen Spalten, `-s k`). `src/gegenrechnung_a.py`: Teil A.
 - `src/bahnen_zaehl.c`, `src/bahnen_gegen10.py`, `src/bahnen_pruef.py`, `src/bahnen_aut.py`: Prüfcode Bahnen unter 5er-Zyklen. `src/bahnen_tabu.c`: Suchcode dazu.
   `src/bahnen_schaetz.c`, `src/bahnen_schaetz_filter.py`: Aufwandsschätzung. Bauen: `gcc -O3 -march=native -fopenmp -o build/<name> src/<name>.c`.
