@@ -494,6 +494,10 @@ bleibt die Stufe dort ungelöst, folgen die übrigen Typen (Abweichung von der R
   kleinste Stufe mit Lösung K=16 (64 Wörter, keine Verbesserung gegenüber der Tabelle). K=14 bis K=10 nicht versucht, Rekord (K=10) nicht erreicht.
   Der bekannte untere Rand der Suche liegt hier also bei 64 (die Tabelle K(18,5) nennt 28–64).
 
+**(21,6), je 900 s, 4 Startwerte je Typ (Quotient F2^19):**
+- K=16 (64 Wörter, Kontrolle), Typ (11,10): 0 von 4, Restzahl 1416/1540/1739/1624 (je ca. 66 800 Schritte). Weit von einer Lösung entfernt;
+  die übrigen Typen (12,9), (13,8) folgen.
+
 <!-- RUNDGANG-ENDE -->
 
 ## Nächste Gates

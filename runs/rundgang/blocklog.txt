@@ -22,3 +22,7 @@ typ=(9, 9) seed=1 nicht geloest, kleinste Restzahl=81 (Zeitlimit, best=81, it=28
 typ=(9, 9) seed=2 nicht geloest, kleinste Restzahl=90 (Zeitlimit, best=90, it=289664)
 typ=(9, 9) seed=3 nicht geloest, kleinste Restzahl=76 (Zeitlimit, best=76, it=288896)
 typ=(9, 9) seed=4 nicht geloest, kleinste Restzahl=79 (Zeitlimit, best=79, it=288080)
+typ=(11, 10) seed=1 nicht geloest, kleinste Restzahl=1416 (Zeitlimit, best=1416, it=66752)
+typ=(11, 10) seed=2 nicht geloest, kleinste Restzahl=1540 (Zeitlimit, best=1540, it=67040)
+typ=(11, 10) seed=3 nicht geloest, kleinste Restzahl=1739 (Zeitlimit, best=1739, it=66784)
+typ=(11, 10) seed=4 nicht geloest, kleinste Restzahl=1624 (Zeitlimit, best=1624, it=66848)
