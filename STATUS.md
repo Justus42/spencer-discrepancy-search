@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 24.11.2026 (abends, nach Status-Umzug). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 25.11.2026 (nach Bahnen unter der 3-Sylowgruppe des 48ers). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 Vollständige frühere Fassung: `notes/verlauf/STATUS_2026-11-24_vollstaendig.md` (Archiv, eingefroren). Übersicht Familien x N:
 `LANDKARTE.md`. Arbeitsregeln: `CLAUDE.md`. Herkunft externer Dateien: `controls/QUELLEN.md`. Laufprotokolle: `notes/laeufe/`.
 Fundstellen in den Tabellen: „A: …“ = Überschrift im Archiv, „L: …“ = `notes/laeufe/…`, „K“ = `LANDKARTE.md`,
@@ -98,6 +98,8 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Zirkulante ±1-Matrizen n = 18–31 (10 Ordnungen), mit Rand n = 18–26 | beste disc 4–7, 0 Überlebende | Gegenbeispiel je Klasse, Bester exakt | L: 2026-11-24_zirkulant; A: Teil B, C, D |
 | Bahnen aus 5er-Zyklen plus Komplement, n=15, R=4 | mindestens 40 Wörter (525 Vierermengen) | voll | L: 2026-11-24_bahnen5 |
 | Bahnen aus 5er-Zyklen plus Komplement, n=20, R=6 | 70 Wörter gefunden, 60 nicht | Suche | L: 2026-11-24_bahnen5 |
+| Bahnen unter der 3-Sylowgruppe P (Ordnung 9) des 48ers, n=20, R=6 | Minimum 48 Wörter (≤ 46 ausgeschlossen); nur Größe 1/3: 19 008 Lösungen | voll | L: 2026-11-25_bahnen3 |
+| Bahnen unter einem Element der Ordnung 3 des 48ers, n=20, R=6 | Tabu-Kontrolle 48 Wörter nicht bestanden (1/4, 0/4), < 48 ungeprüft | Suche | L: 2026-11-25_bahnen3 |
 | Rundlauf Ansatz 3 (16 Familien, 388 503 Matrizen) | 0 Überlebende, bester Quotient 1,400 | Gegenbeispiel | L: 2026-11-24_rundlauf; A: Ansatz 3 |
 | Reelle Einträge um `ctrl_16` (Zeilen im L1-Abstand ≤ 2) | nichts über 7 | voll | L: 2026-11-24_reell16 |
 | Reelle Matrizen n = 8, 9, 12 (Dichte < 1) | nichts über dem Rekord | voll, bedingt auf Kleitman (unbelegt) | L: 2026-11-24_reell16; K |
@@ -131,6 +133,8 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - 24.11.2026, Bahnen unter 5er-Zyklen plus Komplement, n=20 R=6, nur volle Bahnen, Tabu `src/bahnen_tabu.c`: K=6 (60 Wörter)
   ungelöst: Zufallsstart Startwerte 1–4 je 600 s (Restzahl 122/96/104/94 Punkte) und Warmstart aus den vier K=7-Lösungen je 600 s
   (94/116/116/118). Stopp; K=5, K=4 nicht versucht, Variante 3 volle Bahnen + 5 feste Paare ungeprüft. Protokoll `notes/laeufe/2026-11-24_bahnen5.md`.
+- 25.11.2026, Bahnen ⟨g⟩ (Ordnung 3) des 48ers, Tabu `src/bahnen3_tabu.c`, T=24 (48 Wörter), Startwerte 1–4 je 900 s: Kontrolle nicht bestanden
+  (Stichprobe 1000: 1 von 4; exakt: 0 von 4, Restzahl 326–493), keine Leiter. Python-Gruppensuche zu langsam (abgebrochen, C statt dessen). L: 2026-11-25_bahnen3.
 - 24.11.2026, Kleitman-Probe (`src/kleitman_probe.py`, exakte Clique-Suche im Würfel): n=6, D=5 nach 600 s (Zeitgrenze) nicht fertig, nicht
   ausgewertet; Fall D = n−1 aus dem Skript genommen. n = 3–6 mit D ≤ n−2 (13 Fälle) lieferten die Formel. Kein Einfluss auf Teil B.
 - 24.11.2026, Hadamard-Tests (Abschnitt „Hadamard-Bauregel und Tests“):
@@ -151,6 +155,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - Meldung von K(20,6) ≤ 48 (und der Familie): Entscheidung am 27.11.2026 (`notes/zweitmeinung_2026-11-24_auftrag.md`).
 - Literaturbeleg für den Satz von Kleitman fehlt; die Dichteschranke hängt daran (L: 2026-11-24_reell16).
 - Beweise in den Rundlauf-Antworten ungeprüft (L: 2026-11-24_rundlauf). Auftragstext jetzt in `notes/rundlauf_2026-11-24_auftrag.md`.
+- 3-Sylowgruppe: 19 008 Lösungen (24 Zeilen) nicht nach G-Klassen sortiert; ⟨g⟩ mit < 48 Wörtern ungeprüft (L: 2026-11-25_bahnen3).
 - n=25 unter 5er-Symmetrie nicht gestartet (L: 2026-11-24_bahnen5).
 - Vollständige Aufzählung K=4 bei n=20 (ca. 280 CPU-h) nicht gestartet (L: 2026-11-24_bahnen5).
 - Variante mit 3 vollen Bahnen plus 5 festen Paaren ungeprüft (A: Fehlversuche).
@@ -178,6 +183,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - `LANDKARTE.md`: Übersicht Familien x N.
 - `src/rundlauf/`: Ansatz 3. `extrahiere.py` (Generatoren aus den Modellantworten), `astra_1..8.py`, `sol_1..8.py` (Modellcode unverändert), `familien.py` (Tabelle, Lader), `zaehle.py` (Zahl/Form), `sieb.py` (Treiber für `pruefstand`, prüft nichts), `pruefe.py` (Nachrechnen mit ganzen Zahlen, exakte Prüfung über `build/exakt_disc`).
 - `src/exakt_disc.c`: Prüfcode, exakte Diskrepanz per Gray-Code (auch mit gestrichenen Spalten, `-s k`). `src/gegenrechnung_a.py`: Teil A.
+- `src/bahnen3_aut.c`, `src/bahnen3_gruppe.py`, `src/bahnen3_zaehl.c`, `src/bahnen3_pruef.py`: Prüfcode 3-Sylowgruppe des 48ers. `src/bahnen3_tabu.c`: Suchcode dazu.
 - `src/bahnen_zaehl.c`, `src/bahnen_gegen10.py`, `src/bahnen_pruef.py`, `src/bahnen_aut.py`: Prüfcode Bahnen unter 5er-Zyklen. `src/bahnen_tabu.c`: Suchcode dazu.
   `src/bahnen_schaetz.c`, `src/bahnen_schaetz_filter.py`: Aufwandsschätzung. Bauen: `gcc -O3 -march=native -fopenmp -o build/<name> src/<name>.c`.
 - `src/gegenbeispiel40.c`: Suchcode für Test C (Tabu-Suche auf Vorzeichenvektoren). Bauen: `gcc -O3 -march=native -o build/gegenbeispiel40 src/gegenbeispiel40.c`.
