@@ -1,0 +1,27 @@
+astra_1: Ziele [7, 8, 9], Zeiten [0.05, 0.5, 0.5]; neu 4356, gesamt 4356 von 4356, 58.0 s
+astra_2: Ziele [4, 7], Zeiten [0.05, 0.5]; neu 59049, gesamt 59049 von 59049, 18.6 s
+astra_3: Ziele [6, 9], Zeiten [0.05, 0.5]; neu 1176, gesamt 1176 von 1176, 0.5 s
+astra_4: Ziele [5, 8], Zeiten [0.05, 0.5]; neu 1024, gesamt 1024 von 1024, 0.4 s
+astra_5: Ziele [7, 8, 9], Zeiten [0.05, 0.5, 0.5]; neu 2346, gesamt 2346 von 2346, 0.9 s
+astra_6: Ziele [6, 7, 8], Zeiten [0.05, 0.5, 0.5]; neu 2160, gesamt 2160 von 2160, 0.7 s
+astra_7: Ziele [6, 9], Zeiten [0.05, 0.5]; neu 1568, gesamt 1568 von 1568, 0.6 s
+astra_8: Ziele [9, 10], Zeiten [0.05, 0.5]; neu 1024, gesamt 1024 von 1024, 0.5 s
+sol_1: Ziele [5, 6, 7], Zeiten [0.05, 0.5, 0.5]; neu 153664, gesamt 153664 von 153664, 111.9 s
+sol_2: Ziele [5, 8], Zeiten [0.05, 0.5]; neu 71280, gesamt 71280 von 71280, 23.1 s
+sol_3: Ziele [6, 9], Zeiten [0.05, 0.5]; neu 8192, gesamt 8192 von 8192, 3.0 s
+sol_4: Ziele [7, 8, 9], Zeiten [0.05, 0.5, 0.5]; neu 7920, gesamt 7920 von 7920, 34.1 s
+sol_5: Ziele [6, 9], Zeiten [0.05, 0.5]; neu 6144, gesamt 6144 von 6144, 2.0 s
+sol_6: Ziele [9, 10], Zeiten [0.05, 0.5]; neu 40680, gesamt 40680 von 40680, 13.7 s
+sol_7: Ziele [9, 10], Zeiten [0.05, 0.5]; neu 17920, gesamt 17920 von 17920, 6.1 s
+sol_8: Ziele [9, 10], Zeiten [0.05, 0.5]; neu 10000, gesamt 10000 von 10000, 3.6 s
+astra_4: Ziele [4], Zeiten [0.05]; neu 1024, gesamt 1024 von 1024, 0.6 s
+astra_8: Ziele [8], Zeiten [0.05]; neu 1024, gesamt 1024 von 1024, 0.5 s
+sol_5: Ziele [5], Zeiten [0.05]; neu 6144, gesamt 6144 von 6144, 3.3 s
+sol_8: Ziele [8], Zeiten [0.05]; neu 10000, gesamt 10000 von 10000, 3.8 s
+sol_7: Ziele [8], Zeiten [0.05]; neu 17920, gesamt 17920 von 17920, 6.6 s
+sol_6: Ziele [8], Zeiten [0.05]; neu 40680, gesamt 40680 von 40680, 14.0 s
+astra_8: Ziele [6], Zeiten [0.05]; neu 1024, gesamt 1024 von 1024, 0.7 s
+sol_8: Ziele [6], Zeiten [0.05]; neu 10000, gesamt 10000 von 10000, 5.5 s
+sol_7: Ziele [6], Zeiten [0.05]; neu 17920, gesamt 17920 von 17920, 6.9 s
+sol_6: Ziele [6], Zeiten [0.05]; neu 40680, gesamt 40680 von 40680, 26.5 s
+sol_7: Ziele [4], Zeiten [0.05]; neu 9137, gesamt 9137 von 17920, 120.0 s

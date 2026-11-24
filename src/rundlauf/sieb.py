@@ -52,12 +52,13 @@ def main():
     ap.add_argument("--zeit", type=float, default=0.3, help="Sekunden je Stufe 1; spätere Stufen das Zehnfache")
     ap.add_argument("--max-sek", type=float, default=0)
     ap.add_argument("--prozesse", type=int, default=4)
+    ap.add_argument("--ziel", type=int, default=0, help="nur diese eine Stufe (Maximum < ZIEL), Ausgabe in FAMILIE.zielZIEL.teil.txt; Zeit = --zeit")
     a = ap.parse_args()
     k = a.familie
-    ziele = stufen(k)
+    ziele = [a.ziel] if a.ziel else stufen(k)
     zeiten = [a.zeit * (1 if i == 0 else 10) for i in range(len(ziele))]
     os.makedirs(AUSGABE, exist_ok=True)
-    pfad = os.path.join(AUSGABE, "probe_" + k + ".txt") if a.probe else os.path.join(AUSGABE, k + ".teil.txt")
+    pfad = os.path.join(AUSGABE, "probe_" + k + ".txt") if a.probe else os.path.join(AUSGABE, k + (f".ziel{a.ziel}" if a.ziel else "") + ".teil.txt")
     fertig = 0
     if os.path.exists(pfad) and not a.probe:
         with open(pfad, "rb") as f:

@@ -1,0 +1,29 @@
+# Kontrollen vorab (24.11.2026): pruefstand mit Ziel = bekannte Diskrepanz (kein Gegenbeispiel darf kommen), dann exakt_disc, check_disc.py, verify_spencer.py
+== ctrl_8, erwartet 5
+kein Gegenbeispiel gefunden (kein x mit max < 5 in 3 s)
+matrix 8 x 8: disc 5, zeuge 0
+matrix 8 x 8, entries in {-1,0,1}: exact discrepancy = 5
+verify_spencer.py auf controls/ctrl_8.txt:
+Exakte Diskrepanz: 5
+GEGENBEISPIEL max 5 < 6
+== ctrl_16, erwartet 7
+kein Gegenbeispiel gefunden (kein x mit max < 7 in 3 s)
+matrix 16 x 16: disc 7, zeuge 2
+matrix 16 x 16, entries in {-1,0,1}: exact discrepancy = 7
+verify_spencer.py auf controls/ctrl_16.txt:
+Exakte Diskrepanz: 7
+GEGENBEISPIEL max 7 < 8
+== had24_1p3_paley12, erwartet 8
+kein Gegenbeispiel gefunden (kein x mit max < 8 in 3 s)
+matrix 24 x 20: disc 8, zeuge c36
+matrix 24 x 20, entries in {-1,0,1}: exact discrepancy = 8
+verify_spencer.py auf controls/had24_1p3_paley12_pad.txt:
+Exakte Diskrepanz: 8
+GEGENBEISPIEL max 8 < 9
+== bahn15_40w, erwartet 7
+kein Gegenbeispiel gefunden (kein x mit max < 7 in 3 s)
+matrix 20 x 15: disc 7, zeuge 1e
+matrix 20 x 15, entries in {-1,0,1}: exact discrepancy = 7
+verify_spencer.py auf controls/bahn15_40w_pad.txt:
+Exakte Diskrepanz: 7
+GEGENBEISPIEL max 7 < 8
