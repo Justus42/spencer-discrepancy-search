@@ -1,0 +1,42 @@
+Tue Nov 24 20:28:41 UTC 2026
+== had24_1p3_paley12: 24 x 20, Einträge nur ±1
+Schritt 1: disc (Brute-Force 2^20) = 8
+Schritt 1: Max 8, genau eine Maximalzeile: über alle x = 9936, bis auf Vorzeichen = 4968
+Schritt 1: Prüfvermerk 4968 -> bis auf globales Vorzeichen
+Schritt 2: Zeuge runs/spaltenanbau/zeuge_had24_1p3_paley12.txt: x = 1 1 -1 -1 1 1 -1 -1 -1 1 1 -1 1 1 1 1 1 1 1 1
+Schritt 2: Ax = [8, -6, 0, 2, 2, 4, 0, -6, -4, 4, 6, 6, -6, -4, -2, 4, 4, 2, 6, -4, -6, -6, 0, 0]
+Schritt 2: Zeile i0 = [0] (0-basiert), Max 8 einmal, Rest <= 6: OK
+Schritt 3: Spalte b (Zeile 0..23) | max bei s=+1 | max bei s=-1 | kleineres
+  0: ----++-++-----++-++--+-+ | 7 | 9 | 7 OK
+  1: +-++++-+-+---++++++-+--- | 9 | 7 | 7 OK
+  2: -++--+-+++-+-++--+-++--+ | 7 | 9 | 7 OK
+  3: +-+++++----+-+---+--++++ | 9 | 7 | 7 OK
+  4: +-+--++-+++-+-+++-----+- | 9 | 7 | 7 OK
+  5: ---+-++++--++---+--+-+-+ | 7 | 9 | 7 OK
+  6: -+-+++-----+-+++-+--++++ | 7 | 9 | 7 OK
+  7: +-++-+-+-+-++++++-+++-+- | 9 | 7 | 7 OK
+  8: +-++++++-+-+-+-+-+++--+- | 9 | 7 | 7 OK
+  9: +++---++-+-+---++-+++--+ | 9 | 7 | 7 OK
+== had24_2p2_paley12: 24 x 20, Einträge nur ±1
+Schritt 1: disc (Brute-Force 2^20) = 8
+Schritt 1: Max 8, genau eine Maximalzeile: über alle x = 12096, bis auf Vorzeichen = 6048
+Schritt 1: Prüfvermerk 6048 -> bis auf globales Vorzeichen
+Schritt 2: Zeuge runs/spaltenanbau/zeuge_had24_2p2_paley12.txt: x = -1 1 -1 -1 -1 -1 1 1 1 1 -1 -1 1 1 1 1 1 1 1 1
+Schritt 2: Ax = [6, 4, 2, 4, 0, -6, -6, -4, 2, 6, 0, 4, -6, 8, 2, 4, 4, -6, 2, -4, -2, -6, -4, -4]
+Schritt 2: Zeile i0 = [13] (0-basiert), Max 8 einmal, Rest <= 6: OK
+Schritt 3: Spalte b (Zeile 0..23) | max bei s=+1 | max bei s=-1 | kleineres
+  0: -++-+-++++++++--+-++-+++ | 9 | 7 | 7 OK
+  1: ++-++++-+-++-+--+--+---+ | 9 | 7 | 7 OK
+  2: -+-+-++++-+--+-++---++-+ | 9 | 7 | 7 OK
+  3: +-++++-----++-+---+----+ | 7 | 9 | 7 OK
+  4: ++-+--++++--+-+-++--+-+- | 7 | 9 | 7 OK
+  5: --++-+++++--+++-+--+-+++ | 9 | 7 | 7 OK
+  6: ---+-+--+----++--+-+---- | 9 | 7 | 7 OK
+  7: -++-++----++-++---+-+--+ | 9 | 7 | 7 OK
+  8: ++-+----+++--++--++-+-+- | 9 | 7 | 7 OK
+  9: -+---+-+--++-+-++-++-+++ | 9 | 7 | 7 OK
+ERGEBNIS: alles OK
+
+real	0m1.271s
+user	0m1.450s
+sys	0m0.118s
