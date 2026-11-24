@@ -1,0 +1,10 @@
+name = "ueberdeckung"
+defaultTargets = ["Ueberdeckung"]
+
+# Basis, erzeugte Daten und Sätze mit native_decide
+[[lean_lib]]
+name = "Ueberdeckung"
+
+# Teil 5: dieselben Sätze mit decide +kernel; einzeln bauen, z. B. lake build Kern.Hamming7
+[[lean_lib]]
+name = "Kern"
