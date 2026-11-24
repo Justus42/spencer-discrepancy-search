@@ -1,0 +1,116 @@
+### Block Start 2026-11-24 22:43:02 UTC, Traeger 10,8,6, Grenze 1500 s
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T0.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 0 (gleiche Spalte, d=5, Schnitt 0): a = Zeile 5120, Vertreter Zeile 5616
+   Stabilisator {a,b}: 115200 Elemente angewandt (Grenze 200000 je Fall), 0 Kandidaten, 0 Bahnen
+   dritte Zeile: 0 Bahnvertreter
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe:; max. Tiefe 0; Zeit 0.2 s
+   Typ 0: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 1.2 s
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T1.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 1 (andere Spalte, d=4, Schnitt 6): a = Zeile 5120, Vertreter Zeile 5088
+   Stabilisator {a,b}: 5760 Elemente angewandt (Grenze 200000 je Fall), 1200 Kandidaten, 7 Bahnen
+   dritte Zeile: 7 Bahnvertreter
+zu viele Aufgaben je Bahn (1651679)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T2.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 2 (andere Spalte, d=3, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5056
+   Stabilisator {a,b}: 8640 Elemente angewandt (Grenze 200000 je Fall), 3306 Kandidaten, 21 Bahnen
+   dritte Zeile: 21 Bahnvertreter
+zu viele Aufgaben je Bahn (1450419)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T3.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 3 (gleiche Spalte, d=3, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5568
+   Stabilisator {a,b}: 120960 Elemente angewandt (Grenze 200000 je Fall), 3472 Kandidaten, 6 Bahnen
+   dritte Zeile: 6 Bahnvertreter
+zu viele Aufgaben je Bahn (2872261)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T4.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 4 (gleiche Spalte, d=4, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5600
+   Stabilisator {a,b}: 69120 Elemente angewandt (Grenze 200000 je Fall), 3806 Kandidaten, 12 Bahnen
+   dritte Zeile: 12 Bahnvertreter
+zu viele Aufgaben je Bahn (1838907)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T5.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 5 (andere Spalte, d=2, Schnitt 26): a = Zeile 5120, Vertreter Zeile 4992
+   Stabilisator {a,b}: 20160 Elemente angewandt (Grenze 200000 je Fall), 5152 Kandidaten, 40 Bahnen
+   dritte Zeile: 40 Bahnvertreter
+   [17 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 422811, zuletzt Nr. 0
+zu viele Aufgaben je Bahn (2571250)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T6.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 6 (andere Spalte, d=1, Schnitt 40): a = Zeile 5120, Vertreter Zeile 4864
+   Stabilisator {a,b}: 80640 Elemente angewandt (Grenze 200000 je Fall), 5485 Kandidaten, 36 Bahnen
+   dritte Zeile: 36 Bahnvertreter
+   [45 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 116988, zuletzt Nr. 0
+zu viele Aufgaben je Bahn (2268571)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T7.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 7 (gleiche Spalte, d=1, Schnitt 40): a = Zeile 5120, Vertreter Zeile 5376
+   Stabilisator {a,b}: 400000 Elemente angewandt (Grenze 200000 je Fall), 5502 Kandidaten, 10 Bahnen
+   dritte Zeile: 10 Bahnvertreter
+   [193 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 969451, zuletzt Nr. 3
+   [253 s] Aufgaben erledigt (dieser Lauf) 585531, insgesamt 585531 von 969451, zuletzt Nr. 585530
+   [313 s] Aufgaben erledigt (dieser Lauf) 245022, insgesamt 245022 von 1033585, zuletzt Nr. 1293599
+   [373 s] Aufgaben erledigt (dieser Lauf) 1032580, insgesamt 1032580 von 1033585, zuletzt Nr. 2081155
+zu viele Aufgaben je Bahn (1262373)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T8.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 8 (gleiche Spalte, d=2, Schnitt 40): a = Zeile 5120, Vertreter Zeile 5504
+   Stabilisator {a,b}: 322560 Elemente angewandt (Grenze 200000 je Fall), 5590 Kandidaten, 20 Bahnen
+   dritte Zeile: 20 Bahnvertreter
+   [161 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 189472, zuletzt Nr. 0
+zu viele Aufgaben je Bahn (2884177)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T9.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 9 (andere Spalte, d=0, Schnitt 76): a = Zeile 5120, Vertreter Zeile 4608
+   Stabilisator {a,b}: 400000 Elemente angewandt (Grenze 200000 je Fall), 5630 Kandidaten, 23 Bahnen
+   dritte Zeile: 23 Bahnvertreter
+   [200 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 640149, zuletzt Nr. 1048576
+   [260 s] Aufgaben erledigt (dieser Lauf) 159652, insgesamt 159652 von 1026118, zuletzt Nr. 2256803
+   [320 s] Aufgaben erledigt (dieser Lauf) 211390, insgesamt 211390 von 999143, zuletzt Nr. 3357117
+   [380 s] Aufgaben erledigt (dieser Lauf) 286536, insgesamt 286536 von 574399, zuletzt Nr. 4480839
+zu viele Aufgaben je Bahn (1609116)
+### Block Ende 2026-11-24 23:03:04 UTC, fertig: fertig 0 

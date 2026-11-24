@@ -497,7 +497,7 @@ static void lauf_start(int *start, int nstart) {
         n_loes = nl; n_loes_verteilt = nv; alle = aa;
         zaehlmodus = 0; zeitlimit = zz;
         aufg_gesamt = F->split_idx;
-        if (aufg_gesamt >= (1LL << 20)) { fprintf(stderr, "zu viele Aufgaben je Bahn (%lld)\n", aufg_gesamt); exit(1); }
+        if (aufg_gesamt >= (1LL << 24)) { fprintf(stderr, "zu viele Aufgaben je Bahn (%lld)\n", aufg_gesamt); exit(1); }
         erl_vorher = 0;
         if (erledigt) for (long long i = 0; i < aufg_gesamt; i++) { long long id = id_basis + i; if (erledigt[id >> 3] >> (id & 7) & 1) erl_vorher++; }
         if (!dritte) { printf("   Zaehlvorlauf: %lld Aufgaben in Tiefe %d, davon %lld schon erledigt\n", aufg_gesamt, teiltiefe, erl_vorher); fflush(stdout); }
@@ -574,7 +574,7 @@ int main(int argc, char **argv) {
     }
     if (B_total < 0) { printf("Budget negativ: keine Loesung (Zaehlargument). Fertig, vollstaendig.\n"); return 0; }
     if (erl_name) {
-        erl_max = 1LL << 32;
+        erl_max = 1LL << 34;
         erledigt = calloc(erl_max / 8, 1);
         FILE *f = fopen(erl_name, "r");
         long long v, c = 0;
@@ -630,7 +630,7 @@ int main(int argc, char **argv) {
             if (bahn_von >= 0 && (bi < bahn_von || bi > bahn_bis)) continue;
             profgrenze = 1 << 30;
             if (bahnrep) { start[2] = bahnrep[bi]; nstart = 3; profgrenze = profil(a_row, rep, bahnrep[bi]); prof_a = a_row; prof_b = rep; }
-            id_basis = (long long)bi << 20;
+            id_basis = (long long)bi << 24;
             lauf_start(start, nstart);
             g_ges += aufg_gesamt; g_jetzt += aufg_erledigt_jetzt; g_vorher += erl_vorher;
             if (bahnrep && (bi % 20 == 0 || aufg_gesamt > 1000)) {

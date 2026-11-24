@@ -68,3 +68,12 @@ Folgerung: Es genügen Zeilen mit Träger 10, 8, 6. Mindestens 6 Zeilen mit Trä
   Symmetriereduktion, Kontrollen oben). Rechenzeit ca. 36 Min. auf 4 Kernen. Erledigte Aufgaben je Typ: `erl_10_zaehlung.txt`.
   (Hinweis: In Block 1 zeigte Typ 8 „1 179 160 gesamt“, weil nach dem Abbruch nicht alle Bahnen gezählt wurden.)
 - Fortsetzungsdateien `erl_*.txt` ab jetzt nicht mehr im Repo (77 MB in Commit 2faa929 schon enthalten).
+
+## Teil 3: Blöcke gemischt (Träger 10, 8, 6)
+
+- Kontrolle gemischt n = 10, d = 5 (Träger 9, 8, 6): K = 7 ohne Symmetrie nichts gefunden (Zeitgrenze 150 s), mit `-y -3`
+  vollständig 0; K = 8 beide finden Lösungen (beide nur mit Träger 9). Eine Kontrolle, die Träger 8/6 erzwingt, fehlt.
+  `runs/einzelnull/kontrolle_gemischt.log.txt`.
+- Block 3 (22:43–23:03 UTC): Typ 0 fertig (0 Aufgaben). Typen 1–9 abgebrochen: mehr als 2^20 Aufgaben je Bahn (Programm
+  beendet sich absichtlich, Nummernraum). Nichts als fertig gewertet; Teilfortschritt verworfen. Nummernraum auf 2^24 je
+  Bahn erweitert, n = 8-Kontrolle danach unverändert (8 Lösungen).

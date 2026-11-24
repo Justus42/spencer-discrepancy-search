@@ -1,0 +1,16 @@
+K=7 ohne Sym
+n=10 d=5 K=7 Traeger=9: 15040 Zeilen (davon 2560 Typzeilen), 512 Klassen, maxgr=92, Budget B=132
+  Traeger 9: 2560 Zeilen, je 92 Klassen
+  Traeger 8: 5760 Zeilen, je 36 Klassen
+  Traeger 6: 6720 Zeilen, je 16 Klassen
+ENDE: Loesungen 0 (Nullen verteilt: 0), ABBRUCH (Zeit), Gesamtzeit 150.1 s
+K=7 mit -y -3
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 30.2 s
+K=8 ohne Sym
+n=10 d=5 K=8 Traeger=9: 15040 Zeilen (davon 2560 Typzeilen), 512 Klassen, maxgr=92, Budget B=224
+  Traeger 9: 2560 Zeilen, je 92 Klassen
+  Traeger 8: 5760 Zeilen, je 36 Klassen
+  Traeger 6: 6720 Zeilen, je 16 Klassen
+ENDE: Loesungen 1 (Nullen verteilt: 0), Stopp bei erster Loesung, Gesamtzeit 1.1 s
+K=8 mit -y -3
+ENDE: Loesungen 1 (Nullen verteilt: 1), Stopp bei erster Loesung, Gesamtzeit 9.5 s
