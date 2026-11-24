@@ -1,0 +1,11 @@
+  nach Konstruktionen: 52 Schluessel (105 s)
+  Ergaenzungen: 196; Schluessel gesamt 53 (301 s)
+Ordnung 24: 53 verschiedene Invarianten-Schluessel gefunden (bekannt: 60 Klassen); davon neu in diesem Lauf: 1
+  Klasse 53 (Ergaenzung aus 8 Zeilen, 1 Matrizen): disc 6, Transponierte 6, Stichprobe [6]
+Verteilung der vollen Diskrepanz (Matrix): {6: 1} (Transponierte): {6: 1}
+Test A: groesste volle Diskrepanz 6 ; Rekordkandidaten (24x23 mit Diskrepanz >= 9): keine
+Test A fertig (347 s)
+
+real	5m47.017s
+user	5m27.690s
+sys	0m15.120s

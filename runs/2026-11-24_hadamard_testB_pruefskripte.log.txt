@@ -1,0 +1,15 @@
+== had20_klasse1
+matrix 20 x 20, entries in {-1,0,1}: exact discrepancy = 6
+Dimension        : 20 x 20 (aktive Spalten: 20, kgV L=1)
+Exakte Diskrepanz: 6
+Quotient D/sqrt(n): 1.34164079  (exakt D^2/n = 9/5)
+== had20_klasse2
+matrix 20 x 20, entries in {-1,0,1}: exact discrepancy = 6
+Dimension        : 20 x 20 (aktive Spalten: 20, kgV L=1)
+Exakte Diskrepanz: 6
+Quotient D/sqrt(n): 1.34164079  (exakt D^2/n = 9/5)
+== had20_klasse3
+matrix 20 x 20, entries in {-1,0,1}: exact discrepancy = 6
+Dimension        : 20 x 20 (aktive Spalten: 20, kgV L=1)
+Exakte Diskrepanz: 6
+Quotient D/sqrt(n): 1.34164079  (exakt D^2/n = 9/5)

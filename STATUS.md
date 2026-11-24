@@ -71,6 +71,12 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
   (Details im Abschnitt „Lauf K=13“).
 - 24.11.2026, Kontrolle n=22 R=7 d=2 K=13, Zufallsstart, je 1800 s, Cloud 4 Kerne: Typ (13,9) Startwerte 1–8 alle ungelöst
   (Restzahlen 7, 2, 6, 7, 2, 2, 3, 1); Typ (12,10) Startwerte 3 und 7 ungelöst (Restzahl 8, 8). Details im Abschnitt „Kontrolle Skalierung“.
+- 24.11.2026, Hadamard-Tests (Abschnitt „Hadamard-Bauregel und Tests“):
+  - Download der Sloane-Bibliothek (Ordnung 24, 60 Klassen) nicht möglich: `neilsloane.com` nicht auflösbar, `https://` über den Proxy 403.
+    Test A läuft deshalb nur auf konstruierbaren Klassen (53 von 60).
+  - Erster Klassen-Fingerabdruck (Histogramm der 4-Zeilen-Summen) trennt bei Ordnung 20 nichts: 72 Matrizen, 1 Schlüssel statt 3 (Laufzeit 1 s).
+    Ersetzt durch Typen aller 6-Zeilen-Mengen (trennt bei Ordnung 20 genau 3 Klassen).
+  - Installation von `pynauty` für kanonische Graphformen wurde von der Sitzung nicht freigegeben und nicht umgangen; eigene Invarianten statt dessen.
 
 ## Vorschläge aus der Astra-Abfrage (unbelegt, noch nicht getestet)
 
@@ -86,9 +92,9 @@ mindestens eines der Ziele existiert.
 
 ## Offen und unbelegt
 
-- Ein Forenbeitrag auf „EinsteinArena“ zum selben Ansatz (Spencer-Konstante über
-  antipodale Überdeckungen) wird in Geminis Bericht erwähnt, aber ohne Link. Eine eigene
-  Suche fand ihn nicht.
+- Der Forenbeitrag auf „EinsteinArena“ ist **belegt** (Thread 273, FableCover, 21.09.2026), Inhalt laut Prüfvermerk in
+  `notes/gemini/neuheit_2026-11-24_kurz.md`: gleiche Reduktion, nur n <= 20, K(20,6) als „known 24..64“, kein Code unter 64 gemeldet.
+  (Angabe des Orchestrator-Claude, in dieser Sitzung nicht erneut abgerufen.) `Mapika/coldcase` hat laut Prüfvermerk nur Ergebnisse für q >= 5, keine binären.
 - Von den 41 offenen Pull Requests im Zielrepo war nur die erste Seite einsehbar (25).
 - Zeilenweise Nullen und gebrochene Einträge erhöhen das Budget pro Zeile nicht, außer in
   Paritätsfällen (n = 17, 19). Als Endspiel-Politur per LP bleiben sie möglich.
@@ -394,6 +400,58 @@ Startmitten neu. Kurzläufe (60 s, bei Last durch den Hauptlauf) mit Startwert 1
 verschiedene Verläufe), erreichen die 22 in dieser Zeit also nicht. Echtes Plateau damit wahrscheinlich, aber nicht bewiesen:
 4 unabhängige Läufe von 600 s enden alle bei 22, kein Lauf darunter. Entscheidung offen (siehe Ergebnis unten, falls ergänzt).
 
+## Gate-Prüfung 24.11.2026 (fünftes Gate) und Angaben des Orchestrator-Claude
+
+Von dieser Sitzung **nicht** nachgeprüft, nur übernommen (kein Skript möglich oder außerhalb des Repos):
+- Kontrolle (22,7) bestätigt, 3 von 14 Treffern mit eigenem Skript des Orchestrators geprüft; (25,8) blind zurückgestellt (Entscheidung, kein Lauf).
+  Im Repo selbst liegen für alle 14 Treffer beide Prüfskripte vor (Abschnitt „Kontrolle Skalierung“).
+- Zielrepo `teorth/optimizationproblems`, Seite `constants/10c.md`, Commit vom 23.11.2026: Rekord unverändert 5/sqrt(8), die Seite beschreibt dieselbe Reduktion.
+- Literatur: Reis, Song, arXiv:2609.34471 existiert (Orchestrator geprüft, Prüfvermerk `hadamard_2026-11-24_deep-research.md`); Solé u. a. 2021, hal-03240109 **ungeprüft**
+  (Abruf blockiert). Mit Hadamard-Matrizen der Ordnung 20/24 sind die Zahlen dort nicht übernommen.
+
+Selbst nachgerechnet in dieser Sitzung (siehe nächster Abschnitt): der Strukturbefund mit den Zählungen 660/1980 und 1320/2970/66.
+
+## Hadamard-Bauregel und Tests (24.11.2026, Cloud, Python/numpy ganzzahlig, C für die Gegenbeispielsuche)
+
+**Bauregel (Teil B, ohne Suche).** `src/construct_48.py`: H = Paley-Matrix der Ordnung 12 (q=11), M = [[H,H],[H,-H]] (24 x 24).
+Links Spalte 0, rechts Spalten 0,1,2 streichen (1+3, Überlappung) gibt 24 x 20; ebenso 2+2 mit links {0,1}, rechts {0,2} (Überlappung 1).
+Dateien `controls/had24_1p3_paley12.txt` und `controls/had24_2p2_paley12.txt` (24 x 20), `_pad` (24 x 24, Nullspalten, für `verify_spencer.py`).
+**`check_disc.py` und `verify_spencer.py` melden für beide Matrizen exakt Diskrepanz 8** (Regel 1 erfüllt). Quotient 8/sqrt(24) = 1,633, kein Spencer-Rekord.
+Brute-Force über alle 2^20 Punkte (`hadamard_tests.py radius`): beide ergeben 48 Wörter (24 Zeilen + Komplemente) mit Überdeckungsradius 6, also (20,6) mit 48 Wörtern
+**ohne Suche konstruierbar** (`runs/2026-11-24_construct48_radius.log.txt`). Neuheit offen (Regel 3), Stand wie oben: Tabelle 24–64.
+
+**Kontrollen (`src/hadamard_tests.py kontrolle`, 244 s, `runs/2026-11-24_hadamard_kontrolle.log.txt`), alle bestanden:**
+- Sylvester 8 ohne je eine Spalte: Diskrepanz 5 in allen 8 Fällen (volle Matrix 4). Paley 12 voll 4, M voll 6.
+- 1+3 aus M: 660 Fälle mit Überlappung = Diskrepanz 8, 1980 ohne = 6. 2+2: Überlappung 1 = 8 (1320), Überlappung 0 = 6 (2970), Überlappung 2 = 6 (66).
+  0+4: 495 Fälle immer 6. 1+1: verschiedene Spalten 8 (132), gleiche Spalte 6 (12). Das bestätigt den Strukturbefund des Orchestrators vollständig.
+- Gegenprobe gegen `check_disc.py` an 6 Stichproben: gleich.
+
+**Test B (Ordnung 20, volle Matrix; `runs/2026-11-24_hadamard_testB.log.txt`, 14 s):** 72 gebaute Matrizen (Paley I q=19, Paley II q=9, Goethals–Seidel n=5,
+zufällige Ergänzungen aus 4–7 Zeilen) fallen in genau **3 Klassen** (Schlüssel = Typenverteilung der 6-Zeilen-Mengen; bekannt sind 3). Alle drei: Diskrepanz **6**, auch
+die Transponierten (erwartet 6). Beide Prüfskripte bestätigen 6 (`runs/2026-11-24_hadamard_testB_pruefskripte.log.txt`). Vertreter `controls/had20_klasse{1,2,3}.txt`
+(Klasse 1 = Goethals–Seidel-Vertreter, 2 = Paley II, 3 = Paley I). Kein Rekordkandidat (8 nötig).
+
+**Test A (Ordnung 24; `runs/2026-11-24_hadamard_testA.log.txt`, `..._lauf2.log.txt`):** Sloane-Bibliothek nicht erreichbar (siehe Fehlversuche), deshalb nur konstruierbare Klassen:
+Paley I (q=23), Doppelung [[A, P·A],[A, -P·A]] mit A = Paley 12 und 60 zufälligen Zeilenpermutationen P (plus P = id), 60 Goethals–Seidel-Matrizen n=6 und zufällige
+Ergänzungen von 4–8 vorgegebenen Zeilen (215 + 196 Stück; gierig mit Neustart). Ergebnis: **53 verschiedene Klassen** (Lauf 1: 52 in 413 s, Lauf 2 mit anderem Startwert: 1 neue in 347 s;
+verschiedene Schlüssel bedeuten sicher verschiedene Klassen). **Alle 53: volle Diskrepanz 6, ihre Transponierten ebenfalls 6; keine mit 8.** Damit entfällt die Spaltenstreichung,
+Rekordschwelle (24 x 23 mit Diskrepanz 9, nur aus 8 möglich, denn disc ändert sich beim Streichen einer Spalte um höchstens 1) wird nirgends erreicht.
+**Lücke:** 7 der 60 Klassen sind nicht erfasst; dass eine davon Diskrepanz 8 hat, ist nicht ausgeschlossen. Dafür wäre die Bibliothek nötig. Je Schlüssel stimmten bis zu 3 Stichproben überein.
+Matrizen: `runs/hadamard/h24_klasse01..53.txt`.
+
+**Test C (Ordnung 40, M = [[H,H],[H,-H]], H aus den 3 Klassen der Ordnung 20, 40 x 36, Rekord bei Diskrepanz 12):** Suchcode `src/gegenbeispiel40.c` (Tabu-Suche), Prüfung getrennt
+und ganzzahlig in `hadamard_tests.py pruefe_c` (zählt die Auswahlen selbst und rechnet jedes x nach). „Muster“ gelesen als: Klasse x Bauregel-Typ, über **alle** Spaltenauswahlen
+(1+3 mit Überlappung: 3420 je Klasse; 2+2 mit Überlappung 1: 6840 je Klasse; zusammen 30 780). Das genügt für alle Äquivalenzen, weil sich jede Auswahl in M(H^T) oder nach
+Zeilen-/Spaltenoperationen auf eine in M(H') mit H' aus den 3 Klassen zurückführen lässt: Ist H = P·H'·Q mit vorzeichenbehafteten Permutationsmatrizen, so ist M(H) = (I⊗P)·M(H')·(I⊗Q),
+die Spaltenauswahl wandert mit Q in beiden Hälften gleich mit (Vorzeichen ändern die Diskrepanz nicht). Die Transponierte von H liegt wieder in einer der 3 Klassen. (Argument, nicht per Skript geprüft.)
+- **T = 10 (Gegenbeispiel = Vorzeichenvektor mit allen |(Ax)_i| <= 10, also Diskrepanz <= 10 < 12):** für **alle 30 780 Auswahlen gefunden und ganzzahlig nachgerechnet**, 0 offen, 0 fehlend,
+  0 falsch (je Klasse und Muster 0,0–0,1 s; `runs/2026-11-24_testC_*_T10.log.txt`, Prüfung `runs/2026-11-24_testC_block1_pruefung.log.txt`).
+- Zusatz T = 8: ebenfalls für alle 30 780 Auswahlen gefunden und nachgerechnet (je Muster 18–35 s; `runs/2026-11-24_testC_zusatz_T8.log.txt`). Diskrepanz also schon <= 8, weit unter 12.
+- **Ergebnis: Die Bauregel überträgt sich nicht auf Ordnung 40.** Alle Muster erledigt; Punkt 10 (kein Gegenbeispiel) trat nicht ein, ein Plan für 2^36 Vektoren ist nicht nötig.
+  Gesamtzeit Test C: wenige Minuten statt 60 Minuten Budget, kein Block über 30 Minuten.
+- **Grenze der Aussage:** getestet ist nur H' = H (gleiche Zeilenausrichtung in beiden Hälften). Die 48er-Codes aus der Suche haben laut Prüfvermerk die Form [[U,W],[U,-W]] mit
+  U, W aus möglicherweise verschiedenen Hadamard-Matrizen der Ordnung 12. Zeilenausrichtungen P in [[H, P·H],[H, -P·H]] bei Ordnung 40 sind nicht getestet (20! Möglichkeiten).
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
@@ -414,3 +472,6 @@ Syndrome) und können in einer Cloud-Sitzung laufen. Die GPU wird erst für 25/8
 - `verifiers/verify_spencer.py`: Prüfskript 2 (Gemini), unabhängig geschrieben.
 - `src/search_lns.py`, `src/greedy_full.py`: Suche auf dem Quotientenwürfel.
 - `src/construct_32.py`: Konstruktion der 32-Wörter-Codes.
+- `src/construct_48.py`: Paley-12-Doppelung, Bauregel 1+3 und 2+2 (Teil B), schreibt `controls/had24_*`.
+- `src/hadamard_tests.py`: exakte Diskrepanz (Meet-in-the-middle, int8), Kontrollen, Test A/B, Überdeckungsradius, Nachprüfung der Gegenbeispiele für Test C. Kein Suchcode.
+- `src/gegenbeispiel40.c`: Suchcode für Test C (Tabu-Suche auf Vorzeichenvektoren). Bauen: `gcc -O3 -march=native -o build/gegenbeispiel40 src/gegenbeispiel40.c`.

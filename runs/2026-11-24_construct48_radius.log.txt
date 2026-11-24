@@ -1,0 +1,2 @@
+controls/had24_1p3_paley12.txt: 48 Woerter, Ueberdeckungsradius 6
+controls/had24_2p2_paley12.txt: 48 Woerter, Ueberdeckungsradius 6
