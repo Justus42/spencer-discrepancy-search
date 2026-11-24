@@ -18,3 +18,39 @@
 2026-11-24 14:57:42 UTC   n=24 d=10: klassen 47462, ueberlebende 0, beste obere schranke u_max 6 (76 vertreter), zeit 16.4 s, tabu-schritte 41374849
 2026-11-24 14:57:42 UTC   verteilung u: 0:14574 2:23509 4:9303 6:76
 2026-11-24 14:57:42 UTC ERGEBNIS n24 d=10: Überlebende 0, u_max 6 (76 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 6 = u_max, also beste Diskrepanz aller Klassen genau 6; Laufzeit 16 s
+2026-11-24 14:58:07 UTC START n25 d=9: 25 9 -o /home/user/spencer-discrepancy-search/runs/teilC/n25
+2026-11-24 14:58:28 UTC   n=25 d=9: klassen 33781, ueberlebende 0, beste obere schranke u_max 7 (86 vertreter), zeit 20.6 s, tabu-schritte 42272209
+2026-11-24 14:58:28 UTC   verteilung u: 1:9880 3:9241 5:14574 7:86
+2026-11-24 14:58:28 UTC ERGEBNIS n25 d=9: Überlebende 0, u_max 7 (86 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 7 = u_max, also beste Diskrepanz aller Klassen genau 7; Laufzeit 21 s
+2026-11-24 14:58:28 UTC START n26 d=10: 26 10 -o /home/user/spencer-discrepancy-search/runs/teilC/n26
+2026-11-24 14:59:08 UTC   n=26 d=10: klassen 108330, ueberlebende 0, beste obere schranke u_max 6 (354 vertreter), zeit 40.6 s, tabu-schritte 98974159
+2026-11-24 14:59:08 UTC   verteilung u: 0:32592 2:47476 4:27908 6:354
+2026-11-24 14:59:09 UTC ERGEBNIS n26 d=10: Überlebende 0, u_max 6 (354 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 6 = u_max, also beste Diskrepanz aller Klassen genau 6; Laufzeit 41 s
+2026-11-24 14:59:09 UTC START n18_rand d=8: 18 8 -o /home/user/spencer-discrepancy-search/runs/teilC/n18_rand -r
+2026-11-24 14:59:10 UTC   n=18 mit rand d=8: klassen 1346, ueberlebende 0, beste obere schranke u_max 4 (301 vertreter), zeit 1.2 s, tabu-schritte 1342659
+2026-11-24 14:59:10 UTC   verteilung u: 0:257 2:788 4:301
+2026-11-24 14:59:10 UTC ERGEBNIS n18_rand d=8: Überlebende 0, u_max 4 (301 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 4 = u_max, also beste Diskrepanz aller Klassen genau 4; Laufzeit 1 s
+2026-11-24 14:59:10 UTC START n20_rand d=10: 20 10 -o /home/user/spencer-discrepancy-search/runs/teilC/n20_rand -r
+2026-11-24 14:59:14 UTC   n=20 mit rand d=10: klassen 3760, ueberlebende 0, beste obere schranke u_max 6 (5 vertreter), zeit 4.1 s, tabu-schritte 3544862
+2026-11-24 14:59:14 UTC   verteilung u: 0:911 2:1874 4:970 6:5
+2026-11-24 14:59:14 UTC ERGEBNIS n20_rand d=10: Überlebende 0, u_max 6 (5 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 6 = u_max, also beste Diskrepanz aller Klassen genau 6; Laufzeit 4 s
+2026-11-24 14:59:14 UTC START n21_rand d=9: 21 9 -o /home/user/spencer-discrepancy-search/runs/teilC/n21_rand -r
+2026-11-24 14:59:20 UTC   n=21 mit rand d=9: klassen 4434, ueberlebende 0, beste obere schranke u_max 7 (23 vertreter), zeit 6.2 s, tabu-schritte 5381791
+2026-11-24 14:59:20 UTC   verteilung u: 1:1 3:1657 5:2753 7:23
+2026-11-24 14:59:20 UTC ERGEBNIS n21_rand d=9: Überlebende 0, u_max 7 (23 Vertreter), exakt geprüft 3, größte exakte Diskrepanz darunter 7 = u_max, also beste Diskrepanz aller Klassen genau 7; Laufzeit 6 s
+2026-11-24 14:59:20 UTC START n23_rand d=9: 23 9 -o /home/user/spencer-discrepancy-search/runs/teilC/n23_rand -r
+2026-11-24 14:59:31 UTC   n=23 mit rand d=9: klassen 8385, ueberlebende 0, beste obere schranke u_max 7 (68 vertreter), zeit 11.3 s, tabu-schritte 10181490
+2026-11-24 14:59:31 UTC   verteilung u: 1:1 3:1902 5:6414 7:68
+2026-11-24 14:59:32 UTC ERGEBNIS n23_rand d=9: Überlebende 0, u_max 7 (68 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 7 = u_max, also beste Diskrepanz aller Klassen genau 7; Laufzeit 11 s
+2026-11-24 14:59:32 UTC START n24_rand d=10: 24 10 -o /home/user/spencer-discrepancy-search/runs/teilC/n24_rand -r
+2026-11-24 14:59:49 UTC   n=24 mit rand d=10: klassen 47462, ueberlebende 0, beste obere schranke u_max 6 (205 vertreter), zeit 17.6 s, tabu-schritte 46958346
+2026-11-24 14:59:49 UTC   verteilung u: 0:9809 2:22320 4:15128 6:205
+2026-11-24 14:59:49 UTC ERGEBNIS n24_rand d=10: Überlebende 0, u_max 6 (205 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 6 = u_max, also beste Diskrepanz aller Klassen genau 6; Laufzeit 18 s
+2026-11-24 14:59:49 UTC START n25_rand d=11: 25 11 -o /home/user/spencer-discrepancy-search/runs/teilC/n25_rand -r
+2026-11-24 15:00:10 UTC   n=25 mit rand d=11: klassen 33781, ueberlebende 0, beste obere schranke u_max 7 (402 vertreter), zeit 20.7 s, tabu-schritte 41060666
+2026-11-24 15:00:10 UTC   verteilung u: 1:1 3:5179 5:28199 7:402
+2026-11-24 15:00:10 UTC ERGEBNIS n25_rand d=11: Überlebende 0, u_max 7 (402 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 7 = u_max, also beste Diskrepanz aller Klassen genau 7; Laufzeit 21 s
+2026-11-24 15:00:10 UTC START n26_rand d=10: 26 10 -o /home/user/spencer-discrepancy-search/runs/teilC/n26_rand -r
+2026-11-24 15:01:00 UTC   n=26 mit rand d=10: klassen 108330, ueberlebende 0, beste obere schranke u_max 6 (886 vertreter), zeit 49.9 s, tabu-schritte 116135225
+2026-11-24 15:01:00 UTC   verteilung u: 0:16250 2:45368 4:45826 6:886
+2026-11-24 15:01:00 UTC ERGEBNIS n26_rand d=10: Überlebende 0, u_max 6 (886 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 6 = u_max, also beste Diskrepanz aller Klassen genau 6; Laufzeit 50 s
