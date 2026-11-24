@@ -1,4 +1,4 @@
-# Prüfvermerk zur Gemini-Recherche und zwei Ansätze (24.11.2026, 22:20 Uhr; ergänzt 22:35 und 22:50 Uhr)
+# Prüfvermerk zur Gemini-Recherche und zwei Ansätze (24.11.2026, 22:20 Uhr; ergänzt 22:35, 22:50 und 23:10 Uhr)
 
 Gegenstand: Gemini Deep Research „Untere Schranken der Spencer-Konstante C_10c, binäre Überdeckungscodes und
 Methodentransfer“ (22 Seiten, von Justus am 24.11. um 21:57 gebracht). Prüfer: Orchestrator-Claude.
@@ -243,3 +243,27 @@ Ungeprüft (Sols Beweise, lang): gemischte Träger bei n = 11 bis auf drei Profi
 Träger 8, oder je eine mit Träger 8 und 6, Rest Träger 10); Familie n = 3k+2 für k ≥ 8 ausgeschlossen, k = 4 bis 7
 offen; reelle Zeilen nicht zeilenweise durch ternäre dominiert (Gegenbeispiel mit vier Einträgen ½). Auftrag A,
 Teil 3 (gemischte Träger) entscheidet die drei Profile unabhängig.
+
+## J. Sols zweite Antwort (24.11.2026, 22:56; geprüft 23:10)
+
+Frage: `notes/rueckfrage2_2026-11-24_auftrag.md`. Antwort: `notes/openrouter/rueckfrage2_2026-11-24--openai-gpt-6.2-sol.md`
+(0,14 US-$). Sol hat für n = 14 weder Ausschluss noch Konstruktion, liefert aber wieder eine Umkodierung.
+
+**Kernaussage P1, nachgerechnet** (`notes/orchestrator/2026-11-24_abend/sol2_check.py`: 120 Zufallszeilen, beide
+Paritäten, alle 14 Streichkoordinaten = 3360 Fälle, 0 Abweichungen; je Zeile und Hälfte 378 Klassen): Bei n = 14 ist die
+Treffermenge einer Zeile mit einer Null auf jeder der beiden Paritätshälften genau eine antipodale Kugel vom Radius 3 im
+13-Würfel. Also gilt:
+
+- **14 Zeilen mit je einer Null überdecken nur, wenn es einen selbstkomplementären Code bei (13,3) mit 28 Wörtern gibt**
+  (sogar zwei gekoppelte, je Parität einen). Umgekehrt liefert ein solcher Code schon die Lösung mit fester Nullspalte.
+  Verteilte Nullen bringen bei n = 14 also nichts über die Zelle (13,3) hinaus; allgemein geben N Zeilen 2N Wörter
+  bei (13,3). Die Zelle steht in STATUS als offen (28–42) und ist bei uns nie gesucht worden.
+- **Gesamtbild verteilte Nullen:** ungerades n: Zelle (n−1, r) mit Paaren, die bis auf eine Koordinate komplementär
+  sind (laut P12 für jede Zeilenzahl; nachgerechnet nur für n = 11 und 17, Abschnitt I). Gerades n: die
+  selbstkomplementäre Zelle (n−1, r) selbst. Der Hebel aus C3 ist damit auf bekannte Zellen zurückgeführt.
+  Übrig bleibt als kleine Lockerung die Paarbedingung „komplementär bis auf eine Koordinate“ bei (16,4) und (18,5).
+- **Auftrag A, Teil 4** (Tabu-Suche n = 14 mit verteilten Nullen) ist dadurch überholt. Ersatz: selbstkomplementäre
+  Codes bei (13,3), Leiter abwärts, Ziel 30 und 28 Wörter (Würfel 2^13, Sekundenarbeit je Lauf).
+
+Ungeprüft: P2 bis P8 (Schnitte für n = 14, u. a. Paartyp e = 0 verboten, höchstens 10 Paare vom gefalteten Abstand 2 je
+Parität), P9 bis P11 (K(16,4) ≥ 31 per Exzess; schwächer als die Tabelle mit 34, für uns ohne Wirkung).
