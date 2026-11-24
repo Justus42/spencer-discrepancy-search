@@ -452,6 +452,26 @@ die Spaltenauswahl wandert mit Q in beiden Hälften gleich mit (Vorzeichen ände
 - **Grenze der Aussage:** getestet ist nur H' = H (gleiche Zeilenausrichtung in beiden Hälften). Die 48er-Codes aus der Suche haben laut Prüfvermerk die Form [[U,W],[U,-W]] mit
   U, W aus möglicherweise verschiedenen Hadamard-Matrizen der Ordnung 12. Zeilenausrichtungen P in [[H, P·H],[H, -P·H]] bei Ordnung 40 sind nicht getestet (20! Möglichkeiten).
 
+## Gate-Prüfung 24.11.2026 (sechstes Gate): Hadamard-Tests bestätigt, Test A vollständig
+
+Vom Orchestrator-Claude mit eigenen Skripten gerechnet (nicht im Repo, kein Code aus `src/`):
+
+- `controls/had24_1p3_paley12.txt` und `controls/had24_2p2_paley12.txt`: Diskrepanz 8, Spalten orthogonal.
+- Test B: die drei Dateien `controls/had20_klasse*.txt` sind Hadamard-Matrizen, Diskrepanz 6, Transponierte 6.
+- Test A, die 53 Dateien in `runs/hadamard/`: alle Hadamard-Matrizen, alle Diskrepanz 6.
+- Test C: alle 30 780 Gegenbeispiele aus den Logs nachgerechnet, größter Betrag 10, jede Auswahl mit Überlappung 1.
+- **Test A ist damit vollständig.** Die Lücke von 7 Klassen ist geschlossen: `controls/had24_mckay_hex.txt` enthält alle
+  60 Klassen der Ordnung 24 aus Brendan McKays Sammlung (users.cecs.anu.edu.au/~bdm/data/hadamard.html, Datei
+  `had24.txt`; je Zeile eine Matrix, 24 Hexadezimalzahlen, eine je Matrixzeile, Bit 0 bedeutet -1). Die Datei kam
+  über einen Webabruf mit Textwiedergabe; alle 60 Zeilen ergeben gültige, paarweise verschiedene Hadamard-Matrizen
+  (H·H^T = 24·I geprüft). Dass es 60 verschiedene Klassen sind, ist Angabe der Quelle und nicht selbst geprüft.
+  **Alle 60 haben Diskrepanz 6, die Transponierten ebenfalls.** Jede 24 x 23-Untermatrix hat also höchstens 7,
+  die Rekordschwelle 9 wird bei Ordnung 24 nicht erreicht. `pynauty` wird nicht gebraucht.
+- Offen für die nächste Sitzung: die 60 Matrizen mit `src/hadamard_tests.py` gegenrechnen.
+
+**Stand der Hadamard-Route:** abgeschlossen ohne Rekordkandidat (Ordnung 20 voll, Ordnung 24 ohne eine Spalte,
+Bauregel bei Ordnung 40 mit gleicher Zeilenausrichtung). Die Konstruktion der 48 Wörter bei (20,6) ohne Suche steht.
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
