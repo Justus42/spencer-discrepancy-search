@@ -18,6 +18,13 @@
  *   bahnen3_zaehl P.txt matrix.txt info
  *   bahnen3_zaehl P.txt matrix.txt zaehle B max9 [von bis [liste.txt]]   (von/bis: Bereich der ersten Verzweigung)
  *   bahnen3_zaehl P.txt matrix.txt pruefe w1 w2 ...                      (Woerter; ihre Bahnen ueberdecken?)
+ *   bahnen3_zaehl P.txt matrix.txt selbsttest seed k b2   Kontrolle von phaseB und paare() auf k Zufallspunkten
+ *   bahnen3_zaehl P.txt matrix.txt neun1 B [von bis [liste]]  genau eine Neunerbahn: je Neunerbahn o (Index von..bis-1)
+ *       Phase B (kleine Bahnen, Budget B-9) auf den von o offen gelassenen Punkten.
+ *   bahnen3_zaehl P.txt matrix.txt neun2 B [von bis [liste]]  genau zwei Neunerbahnen: alle kleinen Mengen S mit Gewicht
+ *       <= B-18 (Index von..bis-1); p = erster offener Punkt; o1 laeuft ueber die Neunerbahnen, die p ueberdecken;
+ *       o2 muss den Rest R ueberdecken (Kandidaten durch UND der Zeilen von 64 Probepunkten, dann volle Pruefung),
+ *       und o2 ist keine p-Ueberdeckerin mit Id <= o1 (jedes Paar genau einmal).
  * Bauen: gcc -O3 -march=native -fopenmp -o build/bahnen3_zaehl src/bahnen3_zaehl.c
  */
 #include <stdio.h>
@@ -161,9 +168,54 @@ static void phaseA(Faden *f, int n9, int w, int b, const uint64_t *U, const uint
     }
 }
 
+/* Zahl der ungeordneten Paare {o1, o2} von Neunerbahnen, die alle Punkte in U ueberdecken (jedes Paar genau einmal):
+ * p = erster Punkt von U in statischer Ordnung; o1 laeuft ueber die p-Ueberdecker; o2 deckt R = U \ cov(o1)
+ * und ist keine p-Ueberdeckerin mit Id <= o1. Fuer Liste: kleine Menge S (sl, sn) und Gewicht wz. */
+static long paare(Faden *f, const uint64_t *U, const int *sl, int sn, int wz) {
+    int p = -1; for (int k = 0; k < NT; k++) if (tst(U, ordn[k])) { p = ordn[k]; break; }
+    long tot = 0;
+    if (p < 0) return (long)N9 * (N9 - 1) / 2;
+    uint64_t *R = f->Ubuf + (size_t)(MAXT + 1) * W;
+    const uint64_t *rp = M + (size_t)p * W;
+    long vorher = 0;
+    int probe[64];
+    int W9a = NS >> 6;
+    for (int o1 = NS; o1 < NT; o1++) {
+        if (!tst(rp, o1)) continue;
+        vorher++;
+        const uint64_t *r1 = M + (size_t)o1 * W;
+        int leer = 1;
+        for (int u = 0; u < W; u++) { R[u] = U[u] & ~r1[u]; if (R[u]) leer = 0; }
+        f->knoten++;
+        if (leer) { tot += N9 - vorher; continue; }
+        int np = 0;
+        for (int kk = 0; kk < NT && np < 64; kk++) if (tst(R, ordn[kk])) probe[np++] = ordn[kk];
+        for (int v = W9a; v < W; v++) {
+            uint64_t x = ~0ULL;
+            if (v == W9a && (NS & 63)) x &= ~((1ULL << (NS & 63)) - 1);
+            if (v == W - 1 && (NT & 63)) x &= (1ULL << (NT & 63)) - 1;
+            for (int j = 0; j < np && x; j++) x &= M[(size_t)probe[j] * W + v];
+            while (x) {
+                int o2 = v * 64 + __builtin_ctzll(x); x &= x - 1;
+                if (tst(rp, o2) && o2 <= o1) continue;
+                const uint64_t *r2 = M + (size_t)o2 * W; int ok = 1;
+                for (int u = 0; u < W; u++) if (R[u] & ~r2[u]) { ok = 0; break; }
+                if (!ok) continue;
+                tot++;
+                if (liste) {
+                    #pragma omp critical(liste)
+                    { fprintf(liste, "2 %d:", wz); for (int k = 0; k < sn; k++) fprintf(liste, " %u/%d", rep[sl[k]], gew[sl[k]]);
+                      fprintf(liste, " %u/9 %u/9\n", rep[o1], rep[o2]); }
+                }
+            }
+        }
+    }
+    return tot;
+}
+
 static Faden *neuer_faden(void) {
     Faden *f = calloc(1, sizeof(Faden));
-    f->Ubuf = malloc(sizeof(uint64_t) * W * (MAXT + 2));
+    f->Ubuf = malloc(sizeof(uint64_t) * W * (MAXT + 2));  /* Ebene MAXT+1: Rest R in paare() */
     f->Abuf = malloc(sizeof(uint64_t) * W * (MAXT + 2));
     return f;
 }
@@ -309,6 +361,113 @@ int main(int argc, char **argv) {
         }
         int off = 0; for (int v = 0; v < W; v++) off += __builtin_popcountll(U[v]);
         printf("pruefe: %d Bahnen, %d Zeilen, offene Punktklassen %d -> %s\n", ni, rz, off, off ? "KEINE Ueberdeckung" : "UEBERDECKUNG");
+        return 0;
+    }
+
+    if (!strcmp(argv[3], "selbsttest")) {
+        /* Zufaellige Punktmenge Q (k <= 64 Punkte): (a) phaseB (kleine Bahnen, Budget b2) gegen Durchprobieren aller
+         * kleinen Mengen mit Gewicht <= b2; (b) paare() gegen alle ungeordneten Paare von Neunerbahnen. */
+        unsigned long long sd = strtoull(argv[4], 0, 10) * 0x9E3779B97F4A7C15ULL + 12345; int k = atoi(argv[5]), b2 = atoi(argv[6]);
+        uint64_t *U = calloc(W, sizeof(uint64_t)); int Q[64], nq = 0;
+        while (nq < k) { sd ^= sd << 13; sd ^= sd >> 7; sd ^= sd << 17; int q = (int)(sd % NT); if (!tst(U, q)) { setb(U, q); Q[nq++] = q; } }
+        Faden *f = neuer_faden();
+        uint64_t AS[3] = { 0, 0, 0 }; for (int o = 0; o < NS; o++) setb(AS, o);
+        memcpy(f->Ubuf, U, sizeof(uint64_t) * W);
+        f->tiefe = 0; phaseB(f, 0, 0, b2, f->Ubuf, AS, 0);
+        u128 brute[64] = { 0 };
+        int st[64], sp = 0;
+        void rek(int ab, int w) {
+            /* deckt st[0..sp) alle Q? */
+            int ok = 1;
+            for (int j = 0; j < nq && ok; j++) { int c = 0; for (int t = 0; t < sp; t++) if (tst(M + (size_t)Q[j] * W, st[t])) { c = 1; break; } if (!c) ok = 0; }
+            if (ok) brute[w]++;
+            for (int o = ab; o < NS; o++) if (w + gew[o] <= b2) { st[sp++] = o; rek(o + 1, w + gew[o]); sp--; }
+        }
+        rek(0, 0);
+        int gleich = 1;
+        for (int w = 0; w <= b2; w++) {
+            char x1[64], x2[64]; druck128(f->cnt[0][w], x1); druck128(brute[w], x2);
+            printf("  (a) Gewicht %d: phaseB %s, Durchprobieren %s\n", w, x1, x2);
+            if (f->cnt[0][w] != brute[w]) gleich = 0;
+        }
+        long pz = paare(f, U, NULL, 0, 0);
+        uint64_t *mk = malloc(sizeof(uint64_t) * N9);
+        for (int o = 0; o < N9; o++) { uint64_t m = 0; for (int j = 0; j < nq; j++) if (tst(M + (size_t)Q[j] * W, NS + o)) m |= 1ULL << j; mk[o] = m; }
+        uint64_t voll = nq == 64 ? ~0ULL : (1ULL << nq) - 1; long bp = 0;
+        #pragma omp parallel for reduction(+:bp) schedule(dynamic, 64)
+        for (int a = 0; a < N9; a++) for (int c = a + 1; c < N9; c++) if ((mk[a] | mk[c]) == voll) bp++;
+        printf("  (b) Paare von Neunerbahnen: paare() %ld, alle Paare durchprobiert %ld\n", pz, bp);
+        printf("SELBSTTEST seed=%s k=%d b2=%d: %s\n", argv[4], k, b2, (gleich && pz == bp) ? "GLEICH" : "ABWEICHUNG");
+        return (gleich && pz == bp) ? 0 : 1;
+    }
+
+    if (!strcmp(argv[3], "neun1") || !strcmp(argv[3], "neun2")) {
+        int zwei = !strcmp(argv[3], "neun2");
+        B = atoi(argv[4]);
+        int nth = omp_get_max_threads();
+        Faden **F = malloc(sizeof(Faden *) * nth);
+        for (int i = 0; i < nth; i++) F[i] = neuer_faden();
+        uint64_t *ALL = calloc(W, sizeof(uint64_t)); for (int p = 0; p < NT; p++) setb(ALL, p);
+        uint64_t AS[3] = { 0, 0, 0 }; for (int o = 0; o < NS; o++) setb(AS, o);
+        /* neun2: alle kleinen Mengen S mit Gewicht <= B-18 aufzaehlen */
+        int nS = 0, (*Sl)[8] = NULL, *Sn = NULL, *Sw = NULL;
+        int ntot = N9;
+        if (zwei) {
+            int b2 = B - 18; if (b2 < 0) b2 = -1;
+            int cap = 1 << 20; Sl = malloc(sizeof(int[8]) * cap); Sn = malloc(sizeof(int) * cap); Sw = malloc(sizeof(int) * cap);
+            int st[8], sp = 0;
+            /* iterativ: Mengen aufsteigender Ids, Gewicht <= b2 */
+            void rek(int ab, int w) {
+                if (nS >= cap) { fprintf(stderr, "zu viele kleine Mengen\n"); exit(1); }
+                memcpy(Sl[nS], st, sizeof st); Sn[nS] = sp; Sw[nS] = w; nS++;
+                for (int o = ab; o < NS; o++) if (w + gew[o] <= b2 && sp < 8) { st[sp++] = o; rek(o + 1, w + gew[o]); sp--; }
+            }
+            if (b2 >= 0) rek(0, 0);
+            ntot = nS;
+            printf("neun2 B=%d: %d kleine Mengen mit Gewicht <= %d\n", B, nS, b2);
+        }
+        int von = 0, bis = ntot;
+        if (argc > 6) { von = atoi(argv[5]); bis = atoi(argv[6]); if (bis > ntot) bis = ntot; }
+        if (argc > 7) liste = fopen(argv[7], "w");
+        printf("%s B=%d Bereich [%d, %d) von %d\n", argv[3], B, von, bis, ntot); fflush(stdout);
+        long fertig = 0; double tlog = jetzt();
+        #pragma omp parallel for schedule(dynamic, 1)
+        for (int i = von; i < bis; i++) {
+            Faden *f = F[omp_get_thread_num()];
+            uint64_t *U2 = f->Ubuf;
+            if (!zwei) {
+                int o = NS + i;
+                if (B >= 9) {
+                    const uint64_t *ro = M + (size_t)o * W;
+                    for (int u = 0; u < W; u++) U2[u] = ALL[u] & ~ro[u];
+                    f->tiefe = 0; f->wahl[f->tiefe++] = o;
+                    phaseB(f, 1, 9, B - 9, U2, AS, 1);
+                }
+            } else {
+                memcpy(U2, ALL, sizeof(uint64_t) * W);
+                for (int k = 0; k < Sn[i]; k++) { const uint64_t *ro = M + (size_t)Sl[i][k] * W; for (int u = 0; u < W; u++) U2[u] &= ~ro[u]; }
+                f->cnt[2][18 + Sw[i]] += paare(f, U2, Sl[i], Sn[i], 18 + Sw[i]);
+            }
+            #pragma omp critical(fortschritt)
+            {
+                fertig++;
+                if (jetzt() - tlog > 60 || fertig == bis - von) {
+                    tlog = jetzt();
+                    long kn = 0; for (int k = 0; k < nth; k++) kn += F[k]->knoten;
+                    printf("  Fortschritt: %ld / %d fertig (zuletzt i=%d), Knoten %ld, %.0f s\n", fertig, bis - von, i, kn, jetzt() - t0);
+                    fflush(stdout);
+                }
+            }
+        }
+        printf("ERGEBNIS %s B=%d Bereich [%d, %d) von %d: Ueberdeckungen (alle Bahnmengen, auch nicht minimale) nach Neunerbahnen und Zeilen:\n", argv[3], B, von, bis, ntot);
+        int irgend = 0;
+        for (int k = 0; k <= 2; k++) for (int w = 0; w <= B; w++) {
+            u128 s2 = 0; for (int t = 0; t < nth; t++) s2 += F[t]->cnt[k][w];
+            if (s2) { char buf[64]; druck128(s2, buf); printf("  %d Neunerbahnen, %d Zeilen (%d Woerter): %s\n", k, w, 2 * w, buf); irgend = 1; }
+        }
+        if (!irgend) printf("  keine\n");
+        { long kn = 0; for (int k = 0; k < nth; k++) kn += F[k]->knoten; printf("Knoten %ld, Laufzeit %.1f s\n", kn, jetzt() - t0); }
+        if (liste) fclose(liste);
         return 0;
     }
 
