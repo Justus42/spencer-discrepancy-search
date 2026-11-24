@@ -66,3 +66,7 @@
 2026-11-24 15:28:41 UTC   n=30 d=10: klassen 962162, ueberlebende 0, beste obere schranke u_max 6 (2000 vertreter, gekappt), zeit 486.3 s, tabu-schritte 913885427
 2026-11-24 15:28:41 UTC   verteilung u: 0:258754 2:420040 4:277576 6:5792
 2026-11-24 15:28:41 UTC   rc=0
+2026-11-24 15:28:54 UTC START n30 Teil 2/2 d=10
+2026-11-24 15:39:31 UTC   n=30 d=10: klassen 1289654, ueberlebende 0, beste obere schranke u_max 6 (2000 vertreter, gekappt), zeit 636.7 s, tabu-schritte 1200795928
+2026-11-24 15:39:31 UTC   verteilung u: 0:371923 2:537576 4:373075 6:7080
+2026-11-24 15:39:31 UTC   rc=0
