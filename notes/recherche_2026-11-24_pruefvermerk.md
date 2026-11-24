@@ -1,4 +1,4 @@
-# Prüfvermerk zur Gemini-Recherche und zwei Ansätze (24.11.2026, 22:20 Uhr; ergänzt 22:35 Uhr)
+# Prüfvermerk zur Gemini-Recherche und zwei Ansätze (24.11.2026, 22:20 Uhr; ergänzt 22:35 und 22:50 Uhr)
 
 Gegenstand: Gemini Deep Research „Untere Schranken der Spencer-Konstante C_10c, binäre Überdeckungscodes und
 Methodentransfer“ (22 Seiten, von Justus am 24.11. um 21:57 gebracht). Prüfer: Orchestrator-Claude.
@@ -216,3 +216,30 @@ nach `notes/openrouter/`; Beweise und Zeilenlisten daraus gelten erst nach eigen
 - D1 bis D3 mit eigenem Code gegenrechnen (kurze Sonnet-Sitzung nach Vorlage `src/bahnen_zaehl.c`), dann als
   Negativbefund mit Belegart „voll“ in STATUS und LANDKARTE.
 - Sols Antwort prüfen.
+
+## I. Sols Antwort (24.11.2026, 22:29; geprüft 22:50)
+
+Datei: `notes/openrouter/rueckfrage_2026-11-24--openai-gpt-6.2-sol.md` (0,20 US-$, 32 369 Tokens Denken).
+
+**Kernaussage, nachgerechnet:** Bei ungeradem n ist die Treffermenge einer Zeile mit einer Null dasselbe wie zwei
+gewöhnliche Kugeln vom Radius r im (n−1)-Würfel: je Klasse den Vertreter geraden Gewichts nehmen, die Zeile in ihrer
+Nullspalte gerade ergänzen, dann eine gemeinsame Koordinate streichen. Die Lage der Null spielt keine Rolle mehr.
+Mit `notes/orchestrator/2026-11-24_abend/sol_check.py` geprüft: n = 11, alle 5632 Zeilen, 0 Abweichungen; n = 17,
+Stichprobe 300 Zeilen, 0 Abweichungen. Nur wenn die Null in der gestrichenen Spalte steht, sind die zwei Zentren
+voll komplementär (512 von 5632), sonst komplementär bis auf eine Koordinate.
+
+Folgen:
+- **n = 11 mit je einer Null ist ausgeschlossen.** 11 Zeilen gäben 22 Kugeln vom Radius 2 im 10-Würfel, also
+  K(10,2) ≤ 22. Die Tabelle hat K(10,2) ≥ 24 (so auch Thread 273). Belegart: Umkodierung nachgerechnet, Schranke aus
+  der Tabelle. Sol beweist zusätzlich K(10,2) ≥ 23 von Hand (Exzessargument); die Rechnung 55·208 = 11 440 < 12·1002
+  = 12 024 stimmt, die beiden Blockzahlen (K_7: 5, K_9: 8) habe ich nicht eigens nachgerechnet.
+- **n = 17 mit je einer Null** ist gleichwertig zu 34 Kugeln bei (16,4), also K(16,4) ≤ 34 mit Paaren, die bis auf
+  eine Koordinate komplementär sind. Die Tabelle hat K(16,4) ≥ 34: nur bei Gleichheit möglich. Verteilte Nullen sind
+  damit bei ungeradem n keine neue Familie, sondern eine gelockerte Paarbedingung in der Zelle (n−1, r).
+- **n = 14** (gerade) ist von der Umkodierung nicht erfasst und bleibt offen.
+- Korrektur zu C3 oben: Der „neue Hebel“ trägt bei n = 11 nicht und bei n = 17 nur am Rand der Tabellenschranke.
+
+Ungeprüft (Sols Beweise, lang): gemischte Träger bei n = 11 bis auf drei Profile ausgeschlossen (2 oder 3 Zeilen mit
+Träger 8, oder je eine mit Träger 8 und 6, Rest Träger 10); Familie n = 3k+2 für k ≥ 8 ausgeschlossen, k = 4 bis 7
+offen; reelle Zeilen nicht zeilenweise durch ternäre dominiert (Gegenbeispiel mit vier Einträgen ½). Auftrag A,
+Teil 3 (gemischte Träger) entscheidet die drei Profile unabhängig.
