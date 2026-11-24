@@ -15,7 +15,7 @@
  *     für disc der Klasse. Häufigkeiten von u und die Vertreter mit größtem u werden ausgegeben.
  * Überlebende und Vertreter mit größtem u werden danach exakt geprüft (build/exakt_disc, Prüfcode).
  *
- * Aufruf: zirkulant n d [-r] [-p THREADS] [-o PRAEFIX] [-b BUDGET] [-a]   (-a: alle Klassen mit u nach PRAEFIX_alle.txt)
+ * Aufruf: zirkulant n d [-r] [-p THREADS] [-o PRAEFIX] [-b BUDGET] [-a] [-T k/m]   (-T: nur Teil k von m des Bereichs; -a: alle Klassen mit u nach PRAEFIX_alle.txt)
  * Ausgabe: Zusammenfassung auf stdout; PRAEFIX_ueberlebende.txt, PRAEFIX_top.txt (Vertreter hex, u).
  * Bauen: gcc -O3 -march=native -pthread -o build/zirkulant src/zirkulant.c
  */
@@ -35,7 +35,7 @@ static uint32_t maske;
 static int nmult, mults[MAXN];
 static uint32_t mtab[MAXN][4][256];     /* Multiplikator-Bildtabellen je Byte */
 
-static uint64_t naechster_block = 0, bloecke;
+static uint64_t naechster_block = 0, bloecke, block_ende;
 static pthread_mutex_t mx = PTHREAD_MUTEX_INITIALIZER;
 static FILE *f_ueb, *f_alle;
 static long g_klassen = 0, g_ueb = 0, g_hist[2 * MAXN + 2];
@@ -141,7 +141,7 @@ static void *arbeiter(void *arg) {
     int umax = -1; uint32_t top[TOPMAX]; int ntop = 0;
     for (;;) {
         uint64_t b = __atomic_fetch_add(&naechster_block, 1, __ATOMIC_RELAXED);
-        if (b >= bloecke) break;
+        if (b >= block_ende) break;
         uint64_t lo = b << 16, hi = lo + (1ULL << 16);
         if (hi > (1ULL << n)) hi = 1ULL << n;
         for (uint64_t aa = lo; aa < hi; aa++) {
@@ -176,7 +176,7 @@ static int ggt(int a, int b) { while (b) { int t = a % b; a = b; b = t; } return
 
 int main(int argc, char **argv) {
     if (argc < 3) { fprintf(stderr, "Aufruf: zirkulant n d [-r] [-p THREADS] [-o PRAEFIX] [-b BUDGET]\n"); return 2; }
-    int alle = 0;
+    int alle = 0, teil = 1, teile = 1;
     n = atoi(argv[1]); d = atoi(argv[2]);
     for (int i = 3; i < argc; i++) {
         if (!strcmp(argv[i], "-r")) rand_ = 1;
@@ -184,6 +184,7 @@ int main(int argc, char **argv) {
         else if (!strcmp(argv[i], "-o") && i + 1 < argc) praefix = argv[++i];
         else if (!strcmp(argv[i], "-b") && i + 1 < argc) budget = atoi(argv[++i]);
         else if (!strcmp(argv[i], "-a")) alle = 1;
+        else if (!strcmp(argv[i], "-T") && i + 1 < argc) { if (sscanf(argv[++i], "%d/%d", &teil, &teile) != 2) return 2; }
         else { fprintf(stderr, "unbekannt: %s\n", argv[i]); return 2; }
     }
     if (n < 2 || n > 31) { fprintf(stderr, "2 <= n <= 31\n"); return 2; }
@@ -204,6 +205,9 @@ int main(int argc, char **argv) {
     f_ueb = fopen(fn, "w");
     if (alle) { snprintf(fn, sizeof fn, "%s_alle.txt", praefix); f_alle = fopen(fn, "w"); }
     bloecke = ((1ULL << n) + 65535) >> 16;
+    /* -T k/m: nur Teil k von m des Bereichs (Aufteilung in Blöcke für Cloud-Zeitlimits) */
+    naechster_block = bloecke * (uint64_t)(teil - 1) / teile;
+    block_ende = bloecke * (uint64_t)teil / teile;
     struct timespec t0, t1; clock_gettime(CLOCK_MONOTONIC, &t0);
     pthread_t th[64];
     for (int i = 0; i < nthreads; i++) pthread_create(&th[i], 0, arbeiter, 0);

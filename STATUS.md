@@ -559,7 +559,8 @@ darunter jeweils kein Gegenbeispiel; Zusatz 12 Matrizen x 3 Startwerte, immer da
 Kontrollen: Klassenzahl n = 3–15 gleich einer unabhängigen Bahnen-Zählung; Hamming-Rekord wiedergefunden (n=7 mit Rand, d=5: genau 1 Überlebender,
 erste Zeile Bits {0,1,3}, exakt 5; ohne Rand keiner); Abstiegsschranke u gegen exakte Werte aller Klassen n = 8–18 (mit/ohne Rand): nie zu klein, u_max = exaktes Maximum.
 - Block 1 (14:57 UTC, < 1 Min.): n=18, 20, 21, 23, 24 ohne Rand: 0 Überlebende.
-- Block 2 (14:58–15:01 UTC): n=25, 26 ohne Rand, n=18–26 mit Rand: 0 Überlebende. Block 3 (29, 31) und 4 (30) folgen.
+- Block 2 (14:58–15:01 UTC): n=25, 26 ohne Rand, n=18–26 mit Rand: 0 Überlebende.
+- Block 3 (15:01–15:18 UTC): n=29, 31: 0 Überlebende. n=30 folgt in zwei Hälften (`-T 1/2`, `-T 2/2`).
 
 ## Nächste Gates
 
