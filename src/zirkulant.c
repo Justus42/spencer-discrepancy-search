@@ -35,7 +35,7 @@ static uint32_t maske;
 static int nmult, mults[MAXN];
 static uint32_t mtab[MAXN][4][256];     /* Multiplikator-Bildtabellen je Byte */
 
-static uint64_t naechster_block = 0, bloecke, block_ende;
+static uint64_t naechster_block = 0, bloecke, g_teil = 0, g_teile = 1;
 static pthread_mutex_t mx = PTHREAD_MUTEX_INITIALIZER;
 static FILE *f_ueb, *f_alle;
 static long g_klassen = 0, g_ueb = 0, g_hist[2 * MAXN + 2];
@@ -140,9 +140,9 @@ static void *arbeiter(void *arg) {
     long kl = 0, ue = 0, hist[2 * MAXN + 2] = {0}, zaehler = 0;
     int umax = -1; uint32_t top[TOPMAX]; int ntop = 0;
     for (;;) {
-        uint64_t b = __atomic_fetch_add(&naechster_block, 1, __ATOMIC_RELAXED);
-        if (b >= block_ende) break;
-        uint64_t lo = b << 16, hi = lo + (1ULL << 16);
+        uint64_t b = __atomic_fetch_add(&naechster_block, 1, __ATOMIC_RELAXED) * g_teile + g_teil;
+        if (b >= bloecke) break;
+        uint64_t lo = b << 12, hi = lo + (1ULL << 12);
         if (hi > (1ULL << n)) hi = 1ULL << n;
         for (uint64_t aa = lo; aa < hi; aa++) {
             uint32_t a = (uint32_t)aa;
@@ -204,10 +204,9 @@ int main(int argc, char **argv) {
     snprintf(fn, sizeof fn, "%s_ueberlebende.txt", praefix);
     f_ueb = fopen(fn, "w");
     if (alle) { snprintf(fn, sizeof fn, "%s_alle.txt", praefix); f_alle = fopen(fn, "w"); }
-    bloecke = ((1ULL << n) + 65535) >> 16;
+    bloecke = ((1ULL << n) + 4095) >> 12;
     /* -T k/m: nur Teil k von m des Bereichs (Aufteilung in Blöcke für Cloud-Zeitlimits) */
-    naechster_block = bloecke * (uint64_t)(teil - 1) / teile;
-    block_ende = bloecke * (uint64_t)teil / teile;
+    g_teil = teil - 1; g_teile = teile;   /* Blöcke abwechselnd verteilt */
     struct timespec t0, t1; clock_gettime(CLOCK_MONOTONIC, &t0);
     pthread_t th[64];
     for (int i = 0; i < nthreads; i++) pthread_create(&th[i], 0, arbeiter, 0);
