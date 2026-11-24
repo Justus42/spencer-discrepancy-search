@@ -1,0 +1,53 @@
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T1.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+  0: gleich, d=5, Schnitt 0
+  1: andere, d=4, Schnitt 6
+  2: andere, d=3, Schnitt 12
+  3: gleich, d=3, Schnitt 12
+  4: gleich, d=4, Schnitt 12
+  5: andere, d=2, Schnitt 26
+  6: andere, d=1, Schnitt 40
+  7: gleich, d=1, Schnitt 40
+  8: gleich, d=2, Schnitt 40
+  9: andere, d=0, Schnitt 76
+== Typ 1 (andere Spalte, d=4, Schnitt 6): a = Zeile 5120, Vertreter Zeile 5088
+   Stabilisator {a,b}: 5760 Elemente angewandt (Grenze 200000 je Fall), 1200 Kandidaten, 7 Bahnen
+   dritte Zeile: 7 Bahnvertreter
+   [11 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 1651679, zuletzt Nr. 0
+   [71 s] Aufgaben erledigt (dieser Lauf) 543500, insgesamt 543500 von 1651679, zuletzt Nr. 543499
+   [131 s] Aufgaben erledigt (dieser Lauf) 1203052, insgesamt 1203052 von 1651679, zuletzt Nr. 1203051
+   Bahn 0/7 (Profil 1,0): 1651679 Aufgaben, Zeit bisher 172.6 s
+   [191 s] Aufgaben erledigt (dieser Lauf) 25312, insgesamt 25312 von 2999686, zuletzt Nr. 16802527
+   [251 s] Aufgaben erledigt (dieser Lauf) 315369, insgesamt 315369 von 2999686, zuletzt Nr. 17092585
+   [311 s] Aufgaben erledigt (dieser Lauf) 753287, insgesamt 753287 von 2999686, zuletzt Nr. 17530502
+   [371 s] Aufgaben erledigt (dieser Lauf) 1343332, insgesamt 1343332 von 2999686, zuletzt Nr. 18120549
+   [431 s] Aufgaben erledigt (dieser Lauf) 2052878, insgesamt 2052878 von 2999686, zuletzt Nr. 18830093
+   [491 s] Aufgaben erledigt (dieser Lauf) 2940478, insgesamt 2940478 von 2999686, zuletzt Nr. 19717693
+   Bahn 1/7 (Profil 1,1): 2999686 Aufgaben, Zeit bisher 493.8 s
+   [551 s] Aufgaben erledigt (dieser Lauf) 155309, insgesamt 155309 von 3019164, zuletzt Nr. 33709740
+   [611 s] Aufgaben erledigt (dieser Lauf) 537988, insgesamt 537988 von 3019164, zuletzt Nr. 34092417
+   [671 s] Aufgaben erledigt (dieser Lauf) 1099859, insgesamt 1099859 von 3019164, zuletzt Nr. 34654290
+   [731 s] Aufgaben erledigt (dieser Lauf) 1754233, insgesamt 1754233 von 3019164, zuletzt Nr. 35308664
+   [791 s] Aufgaben erledigt (dieser Lauf) 2530566, insgesamt 2530566 von 3019164, zuletzt Nr. 36084997
+   Bahn 2/7 (Profil 1,1): 3019164 Aufgaben, Zeit bisher 822.5 s
+   [851 s] Aufgaben erledigt (dieser Lauf) 37345, insgesamt 37345 von 3018460, zuletzt Nr. 50368991
+   [911 s] Aufgaben erledigt (dieser Lauf) 349861, insgesamt 349861 von 3018460, zuletzt Nr. 50681508
+   [971 s] Aufgaben erledigt (dieser Lauf) 797184, insgesamt 797184 von 3018460, zuletzt Nr. 51128833
+   [1031 s] Aufgaben erledigt (dieser Lauf) 1391272, insgesamt 1391272 von 3018460, zuletzt Nr. 51722919
+   [1091 s] Aufgaben erledigt (dieser Lauf) 2103906, insgesamt 2103906 von 3018460, zuletzt Nr. 52435553
+   [1151 s] Aufgaben erledigt (dieser Lauf) 2959696, insgesamt 2959696 von 3018460, zuletzt Nr. 53291343
+   Bahn 3/7 (Profil 1,1): 3018460 Aufgaben, Zeit bisher 1154.1 s
+   [1211 s] Aufgaben erledigt (dieser Lauf) 151459, insgesamt 151459 von 2909190, zuletzt Nr. 67260322
+   [1272 s] Aufgaben erledigt (dieser Lauf) 386474, insgesamt 386474 von 2909190, zuletzt Nr. 67495338
+   [1332 s] Aufgaben erledigt (dieser Lauf) 869349, insgesamt 869349 von 2909190, zuletzt Nr. 67978213
+   [1392 s] Aufgaben erledigt (dieser Lauf) 1460769, insgesamt 1460769 von 2909190, zuletzt Nr. 68569632
+   [1452 s] Aufgaben erledigt (dieser Lauf) 2186734, insgesamt 2186734 von 2909190, zuletzt Nr. 69295597
+   Bahn 4/7 (Profil 1,1): 2909190 Aufgaben, Zeit bisher 1499.2 s
+   Aufgaben (Tiefe 5): 13598179 gesamt, 13585003 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+   Knoten je Tiefe: 3:5 4:9782 5:13585006 6:2570783; max. Tiefe 6; Zeit 1499.2 s
+   Typ 1: NICHT fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), ABBRUCH (Zeit), Gesamtzeit 1500.1 s

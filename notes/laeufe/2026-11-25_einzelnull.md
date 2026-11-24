@@ -77,3 +77,9 @@ Folgerung: Es genügen Zeilen mit Träger 10, 8, 6. Mindestens 6 Zeilen mit Trä
 - Block 3 (22:43–23:03 UTC): Typ 0 fertig (0 Aufgaben). Typen 1–9 abgebrochen: mehr als 2^20 Aufgaben je Bahn (Programm
   beendet sich absichtlich, Nummernraum). Nichts als fertig gewertet; Teilfortschritt verworfen. Nummernraum auf 2^24 je
   Bahn erweitert, n = 8-Kontrolle danach unverändert (8 Lösungen).
+- Block 4 (23:04–23:29 UTC): Typ 1 nicht fertig: 13 585 003 von 13 598 179 gezählten Aufgaben (gezählt nur bis zum Abbruch,
+  5 bis 6 von 7 Bahnen), 0 Lösungen. Knoten: Tiefe 5 13,6 Mio., Tiefe 6 2,6 Mio., max. Tiefe 6.
+- **Abbruch der gemischten Fassung** nach ca. 45 Min. Rechenzeit: Die 21 120 Zeilen mit Träger 8 stehen in jeder Knotenliste;
+  schon Typ 1 (bei Träger 10 in 0,1 s fertig) braucht > 25 Min., Typen 5–9 wären um Größenordnungen teurer.
+  **Ergebnis gemischt: Suche erfolglos (nicht vollständig).** Vollständig ist nur Typ 0.
+- Idee für später: zuerst die höchstens 5 Zeilen mit Träger 8/6 als Bahnvertreter festlegen, dann nur Träger 10 mit Restbudget.
