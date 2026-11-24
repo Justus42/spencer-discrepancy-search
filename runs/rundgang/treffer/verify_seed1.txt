@@ -1,0 +1,6 @@
+Quotient D/sqrt(n): 1.41421356  (exakt D^2/n = 2)
+Vergleich 5/sqrt8: unter Rekord (< 5/sqrt(8))  (Rekord D^2/n = 25/8)
+Minimal-Vektoren : 1055981568 von 4294967296
+Zeuge x*         : [1, 1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Laufzeit         : 0.177 s
+

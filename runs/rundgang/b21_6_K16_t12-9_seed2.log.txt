@@ -1,0 +1,43 @@
+n=21 R=6 d=2 K=16 typ=(12, 9) seed=2 secs=900
+m=19 n=21 R=6 K=16 |S|=79976 (0.1525 von 2^m), untere Schranke K>=6.56
+[0s it=0 r=0] unueberdeckt 27082
+[0s it=1 r=0] unueberdeckt 21386
+[0s it=2 r=0] unueberdeckt 17128
+[0s it=4 r=0] unueberdeckt 16380
+[0s it=5 r=0] unueberdeckt 13702
+[0s it=6 r=0] unueberdeckt 11866
+[0s it=7 r=0] unueberdeckt 11779
+[0s it=8 r=0] unueberdeckt 8952
+[0s it=9 r=0] unueberdeckt 8228
+[0s it=10 r=0] unueberdeckt 6472
+[0s it=11 r=0] unueberdeckt 5441
+[0s it=18 r=0] unueberdeckt 5137
+[0s it=21 r=0] unueberdeckt 4339
+[0s it=24 r=0] unueberdeckt 4161
+[0s it=28 r=0] unueberdeckt 4092
+[0s it=32 r=0] unueberdeckt 3837
+[1s it=62 r=0] unueberdeckt 3385
+[2s it=111 r=0] unueberdeckt 3371
+[4s it=315 r=0] unueberdeckt 3121
+[4s it=316 r=0] unueberdeckt 3085
+[4s it=318 r=0] unueberdeckt 3031
+[5s it=341 r=0] unueberdeckt 2991
+[5s it=382 r=0] unueberdeckt 2968
+[12s it=902 r=0] unueberdeckt 2691
+[12s it=904 r=0] unueberdeckt 2404
+[26s it=1980 r=0] unueberdeckt 2360
+[26s it=1990 r=0] unueberdeckt 2216
+[26s it=1991 r=0] unueberdeckt 2152
+[110s it=8509 r=1] unueberdeckt 2056
+[110s it=8529 r=1] unueberdeckt 1884
+[295s it=23037 r=4] unueberdeckt 1814
+[377s it=29457 r=5] unueberdeckt 1809
+[389s it=30291 r=5] unueberdeckt 1782
+[394s it=30624 r=5] unueberdeckt 1764
+[394s it=30631 r=5] unueberdeckt 1706
+[395s it=30712 r=5] unueberdeckt 1698
+[411s it=31806 r=5] unueberdeckt 1668
+[412s it=31872 r=5] unueberdeckt 1466
+[412s it=31873 r=5] unueberdeckt 1450
+[412s it=31876 r=5] unueberdeckt 1402
+Zeitlimit, best=1402, it=68368

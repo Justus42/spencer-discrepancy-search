@@ -66,6 +66,11 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
   eines dreidimensionalen D. Die Struktur D=<1,a,b> kann ihn nicht mit vier Nebenklassen finden;
   Suche 20/6 nicht gestartet (Laufzeit der Kontrolle <1 s, siehe `runs/2026-11-23_positivkontrolle_19.md`).
   Alle 6 Kontrollen in `controls/` mit beiden Prüfskripten erneut identisch bestätigt.
+- 24.11.2026, Rundgang (18,5), d=2, Zufallsstart, je 300 s, Startwerte 1–4: K=15 (60 Wörter) in allen drei Typen ungelöst
+  ((11,7) Restzahl 36–38, (10,8) 48–57, (9,9) 76–90), 12 Läufe à 300 s = 15 Min. K=16: (9,9) und (10,8) ungelöst (je 4 x 300 s), (11,7) gelöst.
+- 24.11.2026, Rundgang (21,6), d=2, K=16 (64 Wörter, Kontrolle), Zufallsstart, je 900 s, Startwerte 1–4: (11,10) Restzahl 1416–1739, (12,9) 1402–1464,
+  (13,8) 480–960; alle 12 Läufe ungelöst (3 x 15 Min.).
+- 24.11.2026, Rundgang (23,7), d=2, K=15 (60 Wörter), Zufallsstart, je 1800 s, Startwerte 1–4: (12,11) Restzahl 640–680, (13,10) 4777–5174; alle 8 Läufe ungelöst (2 x 30 Min.).
 
 - 23.11.2026, Lauf n=20 R=6 d=2 K=13 Typ (11,9) Startwerte 1–16, je 1800 s: durch Container-Neustart verloren, keine Restzahlen
   (Details im Abschnitt „Lauf K=13“).
@@ -472,6 +477,62 @@ Vom Orchestrator-Claude mit eigenen Skripten gerechnet (nicht im Repo, kein Code
 **Stand der Hadamard-Route:** abgeschlossen ohne Rekordkandidat (Ordnung 20 voll, Ordnung 24 ohne eine Spalte,
 Bauregel bei Ordnung 40 mit gleicher Zeilenausrichtung). Die Konstruktion der 48 Wörter bei (20,6) ohne Suche steht.
 
+## Gegenrechnung McKay-60 (24.11.2026)
+
+`src/pruefe_mckay.py` (nutzt `exakte_disc` und `pruefe_hadamard` aus `src/hadamard_tests.py`, kein Suchcode) liest
+`controls/had24_mckay_hex.txt`: 60 Matrizen, alle Hadamard (H·H^T = 24·I), paarweise verschieden, **alle 60 Diskrepanz 6, alle
+60 Transponierten ebenfalls 6** (59 s, `runs/2026-11-24_mckay60_gegenrechnung.log.txt`). Erwartung erfüllt. Ordnung 24 bleibt ohne Rekordkandidat.
+
+## Rundgang Nebenklassen-Suche, Dimension 2, Zufallsstart (ab 24.11.2026, 10:08 UTC, Cloud 4 Kerne, Obergrenze 3 h = bis 13:08 UTC)
+
+Treiber `src/run_gen.py` (Aufruf wie bei „Kontrolle Skalierung“), Logs und Wörter in `runs/rundgang/`, Blockprotokoll `runs/rundgang/blocklog.txt`.
+Je Block: 4 Startwerte parallel, nach jedem Block STATUS, Commit, Push. Je Stufe wird mit dem bisher besten Typ begonnen;
+bleibt die Stufe dort ungelöst, folgen die übrigen Typen (Abweichung von der Reihenfolge der Anweisung, spart Zeit; „Stufe ohne Lösung“ heißt weiter: alle Typen ungelöst).
+
+**(18,5), je 300 s, 4 Startwerte je Typ:**
+- K=16 (64 Wörter, Kontrolle): (9,9) 0 von 4 (Restzahl 20/22/21/18), (10,8) 0 von 4 (10/13/20/28), **(11,7) 4 von 4 gelöst**
+  (32 s, 30 s, 125 s, 191 s). Wörter 64, selbstkomplementär, Radius per Brute-Force 5. Kontrolle bestanden.
+
+- K=15 (60 Wörter): **0 von 12**. (11,7): Restzahl 36/37/37/38; (10,8): 48/57/52/55; (9,9): 81/90/76/79. Stopp laut Anweisung:
+  kleinste Stufe mit Lösung K=16 (64 Wörter, keine Verbesserung gegenüber der Tabelle). K=14 bis K=10 nicht versucht, Rekord (K=10) nicht erreicht.
+  Der bekannte untere Rand der Suche liegt hier also bei 64 (die Tabelle K(18,5) nennt 28–64).
+
+**(21,6), je 900 s, 4 Startwerte je Typ (Quotient F2^19):**
+- K=16 (64 Wörter, Kontrolle), Typ (11,10): 0 von 4, Restzahl 1416/1540/1739/1624 (je ca. 66 800 Schritte). Weit von einer Lösung entfernt.
+- K=16, Typ (12,9): 0 von 4, Restzahl 1464/1402/1432/1416 (je ca. 68 000 Schritte). Typ (13,8) folgt.
+
+- K=16, Typ (13,8): 0 von 4, Restzahl 480/736/960/712 (je ca. 66 000 Schritte); bester der drei Typen, aber weit von 0.
+  **Kontrolle (21,6) K=16 nicht bestanden: 0 von 12 Läufen (je 900 s) in allen drei Typen.** Stopp laut Anweisung, K=15 und tiefer nicht versucht,
+  Rekord (K=12) nicht erreicht. Hinweis (kein Befund): Dichte bei K=16 ist 2,5; (22,7) K=13 (3,5) und (20,6) K=14 (3,2) wurden gelöst. Unbekannt, ob die
+  bekannten 64 Wörter bei (21,6) überhaupt als Vereinigung von Nebenklassen eines 2-dim. D mit Einsvektor vorliegen.
+
+**(23,7), Quotient F2^21, Schrittzeit gemessen** (`build/coset_tabu_mess`, `-DMESS=200`, K=15, 4 Läufe gleichzeitig, `runs/rundgang/mess/`):
+0,058–0,063 s je Schritt, beide Typen (12,11) und (13,10), Vorbereitung 0,02 s; |S| = 377 984 bzw. 374 288. Das sind ca. 29 000 Schritte in 1800 s
+(bei (22,7): 62 000; bei (20,6): 386 000). Dichte bei K=15: 2,8.
+
+**(23,7), je 1800 s, 4 Startwerte je Typ:**
+- K=15 (60 Wörter), Typ (12,11): 0 von 4, Restzahl 680/680/680/640 (je ca. 30 300 Schritte). Typ (13,10) folgt.
+- K=15, Typ (13,10): 0 von 4, Restzahl 5045/5101/5174/4777 (je ca. 30 700 Schritte), viel schlechter als (12,11).
+  **(23,7): K=15 (60 Wörter) in beiden Typen ungelöst (0 von 8, je 1800 s).** Stopp laut Anweisung, K=14 bis K=12 nicht versucht, Rekord (K=12) nicht erreicht.
+
+**Treffer-Prüfung (einzige Treffer des Rundgangs: die vier Kontrollen (18,5) K=16, Typ (11,7), Startwerte 1–4)**, Dateien `runs/rundgang/treffer/`:
+- Brute-Force-Radius 5 (im Treiber), selbstkomplementär, 64 Wörter, 16 Nebenklassen.
+- Beide Prüfskripte, alle vier: `check_disc.py` auf 32 x 18 und `verify_spencer.py` auf 32 x 32 (Nullspalten): **exakt Diskrepanz 8** (Quotient 8/sqrt(32) = 1,414, kein Rekord).
+- Normalität (`normal_ext.py`): alle vier normal, Norm 11 = 2R+1 bei allen 18 Koordinaten; Folgecodes Länge 20/22/24 (R=6/7/8), je 64 Wörter, Radius per Brute-Force bestätigt.
+- Streichtest (`src/streichtest.py`, neu, Prüfcode): Streichen jeder einzelnen der 16 Nebenklassen lässt 568–1188 Punkte offen; **keine Nebenklasse überflüssig**, in keinem der vier Codes.
+- Neuheit: 64 Wörter bei (18,5) sind der bekannte Tabellenwert, kein neuer Eintrag.
+
+**Ergebnis des Rundgangs (Laufzeit 10:08–12:25 UTC, ca. 2 h 17 Min., unter der Obergrenze von 3 h):**
+
+| Zelle | Kontrolle K=16 | tiefste gelöste Stufe | erste Stufe ohne Lösung | Rekordstufe |
+|---|---|---|---|---|
+| (18,5) | bestanden, nur Typ (11,7) | K=16 (64 Wörter) | K=15, alle 3 Typen, 12 Läufe | K=10 nicht erreicht |
+| (21,6) | **nicht bestanden**, 12 Läufe | keine | K=16 | K=12 nicht erreicht |
+| (23,7) | nicht gefahren (Anweisung: ab K=15) | keine | K=15, beide Typen, 8 Läufe | K=12 nicht erreicht |
+
+Kein neuer Wert, kein Rekordkandidat. Die Methode (d=2, Zufallsstart, 300–1800 s) reicht bei (18,5) nur bis zum bekannten Wert 64; bei (21,6) und (23,7) kommt sie
+in dieser Laufzeit nicht einmal an 64 bzw. 60 Wörter heran. Schrittzahl je Lauf: ca. 280 000 (18,5), 67 000 (21,6), 30 000 (23,7). Nichts nach außen gemeldet.
+
 ## Nächste Gates
 
 Gate 2 und die strukturierte Suche für 20/6 brauchen keine Grafikkarte (nur 2^17
@@ -493,5 +554,6 @@ Syndrome) und können in einer Cloud-Sitzung laufen. Die GPU wird erst für 25/8
 - `src/search_lns.py`, `src/greedy_full.py`: Suche auf dem Quotientenwürfel.
 - `src/construct_32.py`: Konstruktion der 32-Wörter-Codes.
 - `src/construct_48.py`: Paley-12-Doppelung, Bauregel 1+3 und 2+2 (Teil B), schreibt `controls/had24_*`.
+- `src/pruefe_mckay.py`: Gegenrechnung der 60 McKay-Matrizen. `src/streichtest.py`: Prüfcode, überflüssige Nebenklassen.
 - `src/hadamard_tests.py`: exakte Diskrepanz (Meet-in-the-middle, int8), Kontrollen, Test A/B, Überdeckungsradius, Nachprüfung der Gegenbeispiele für Test C. Kein Suchcode.
 - `src/gegenbeispiel40.c`: Suchcode für Test C (Tabu-Suche auf Vorzeichenvektoren). Bauen: `gcc -O3 -march=native -o build/gegenbeispiel40 src/gegenbeispiel40.c`.

@@ -1,0 +1,1 @@
+seed=4 nicht geloest, kleinste Restzahl=1624 (Zeitlimit, best=1624, it=66848)

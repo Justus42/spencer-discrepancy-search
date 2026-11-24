@@ -1,0 +1,1 @@
+seed=1 GELOEST (125s it=123353 r=20) Woerter=64 selbstkompl=True Radius(Brute-Force)=5 Datei=runs/rundgang/woerter_n18_R5_d2_K16_typ11-7_seed1.txt

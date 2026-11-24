@@ -1,0 +1,1 @@
+seed=4 nicht geloest, kleinste Restzahl=28 (Zeitlimit, best=28, it=296784)

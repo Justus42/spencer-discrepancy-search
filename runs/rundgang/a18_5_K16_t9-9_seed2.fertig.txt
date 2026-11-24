@@ -1,0 +1,1 @@
+seed=2 nicht geloest, kleinste Restzahl=22 (Zeitlimit, best=22, it=284416)

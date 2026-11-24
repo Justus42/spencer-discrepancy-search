@@ -1,0 +1,1 @@
+seed=1 nicht geloest, kleinste Restzahl=81 (Zeitlimit, best=81, it=287136)

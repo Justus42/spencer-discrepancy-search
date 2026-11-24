@@ -1,0 +1,5 @@
+n=18 Woerter=64 Radius=5
+Norm je Koordinate: [11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11]  normal (alle <= 11): True
+n=20 Woerter=64 Radius(Brute-Force)=6 (Soll 6) selbstkomplementaer=True
+n=22 Woerter=64 Radius(Brute-Force)=7 (Soll 7) selbstkomplementaer=True
+n=24 Woerter=64 Radius(Brute-Force)=8 (Soll 8) selbstkomplementaer=True
