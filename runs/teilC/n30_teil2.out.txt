@@ -1,0 +1,3 @@
+n=30 d=10: klassen 1289654, ueberlebende 0, beste obere schranke u_max 6 (2000 vertreter, gekappt), zeit 636.7 s, tabu-schritte 1200795928
+verteilung u: 0:371923 2:537576 4:373075 6:7080
+rc=0

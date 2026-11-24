@@ -1,0 +1,5 @@
+242880 Zeugen gelesen, größter Betrag 7, Abweichungen/über 7: 0
+
+real	0m10.138s
+user	0m10.372s
+sys	0m0.020s

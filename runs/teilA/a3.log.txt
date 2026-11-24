@@ -1,0 +1,4 @@
+Paley-Konferenzmatrix Ordnung 6 (q=5): konferenz=True, symmetrisch=True, Diskrepanz 3 (Zeuge nachgerechnet: 3), Rekord bräuchte >= 5
+Paley-Konferenzmatrix Ordnung 10 (q=9): konferenz=True, symmetrisch=True, Diskrepanz 3 (Zeuge nachgerechnet: 3), Rekord bräuchte >= 7
+Paley-Konferenzmatrix Ordnung 14 (q=13): konferenz=True, symmetrisch=True, Diskrepanz 5 (Zeuge nachgerechnet: 5), Rekord bräuchte >= 7
+Paley-Konferenzmatrix Ordnung 18 (q=17): konferenz=True, symmetrisch=True, Diskrepanz 5 (Zeuge nachgerechnet: 5), Rekord bräuchte >= 9

@@ -1,0 +1,23 @@
+n18: u_max 4, bester exakt 4 (erste Zeile 17), Datei runs/teilC/beste/n18_17.txt
+n18_rand: u_max 4, bester exakt 4 (erste Zeile 17), Datei runs/teilC/beste/n18_rand_17.txt
+n20: u_max 6, bester exakt 6 (erste Zeile 1953), Datei runs/teilC/beste/n20_1953.txt
+n20_rand: u_max 6, bester exakt 6 (erste Zeile 1953), Datei runs/teilC/beste/n20_rand_1953.txt
+n21: u_max 7, bester exakt 5 (erste Zeile 538b), Datei runs/teilC/beste/n21_538b.txt
+n21_rand: u_max 7, bester exakt 7 (erste Zeile 4acf), Datei runs/teilC/beste/n21_rand_4acf.txt
+n23: u_max 7, bester exakt 7 (erste Zeile 48eb), Datei runs/teilC/beste/n23_48eb.txt
+n23_rand: u_max 7, bester exakt 7 (erste Zeile 2b67), Datei runs/teilC/beste/n23_rand_2b67.txt
+n24: u_max 6, bester exakt 6 (erste Zeile 4527), Datei runs/teilC/beste/n24_4527.txt
+n24_rand: u_max 6, bester exakt 6 (erste Zeile 4527), Datei runs/teilC/beste/n24_rand_4527.txt
+n25: u_max 7, bester exakt 7 (erste Zeile 2a6f), Datei runs/teilC/beste/n25_2a6f.txt
+n25_rand: u_max 7, bester exakt 7 (erste Zeile 2a6f), Datei runs/teilC/beste/n25_rand_2a6f.txt
+n26: u_max 6, bester exakt 6 (erste Zeile 4d43), Datei runs/teilC/beste/n26_4d43.txt
+n26_rand: u_max 6, bester exakt 6 (erste Zeile 4d43), Datei runs/teilC/beste/n26_rand_4d43.txt
+n29: u_max 7, bester exakt 7 (erste Zeile 4d43), Datei runs/teilC/beste/n29_4d43.txt
+n30: u_max 6, bester exakt 6 (erste Zeile ab1b), Datei runs/teilC/beste/n30_ab1b.txt
+n31: u_max 7, bester exakt 7 (erste Zeile 21413), Datei runs/teilC/beste/n31_21413.txt
+n18_17: matrix 18 x 18, entries in {-1,0,1}: exact discrepancy = 4
+n18_rand_17: matrix 19 x 19, entries in {-1,0,1}: exact discrepancy = 4
+n20_1953: matrix 20 x 20, entries in {-1,0,1}: exact discrepancy = 6
+n20_rand_1953: matrix 21 x 21, entries in {-1,0,1}: exact discrepancy = 6
+n21_538b: matrix 21 x 21, entries in {-1,0,1}: exact discrepancy = 5
+n21_rand_4acf: matrix 22 x 22, entries in {-1,0,1}: exact discrepancy = 7
