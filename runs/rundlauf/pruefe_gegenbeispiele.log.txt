@@ -1,0 +1,16 @@
+astra_1: 4356/4356 Zeilen nachgerechnet (erwartet 4356), Schwelle 9, Verteilung Maximum {7: 4356}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 0.3 s
+astra_2: 59049/59049 Zeilen nachgerechnet (erwartet 59049), Schwelle 7, Verteilung Maximum {3: 59049}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 1.0 s
+astra_3: 1176/1176 Zeilen nachgerechnet (erwartet 1176), Schwelle 9, Verteilung Maximum {5: 1176}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 0.1 s
+astra_4: 1024/1024 Zeilen nachgerechnet (erwartet 1024), Schwelle 8, Verteilung Maximum {4: 1024}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 0.1 s
+astra_5: 2346/2346 Zeilen nachgerechnet (erwartet 2346), Schwelle 9, Verteilung Maximum {5: 2342, 7: 4}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 0.1 s
+astra_6: 2160/2160 Zeilen nachgerechnet (erwartet 2160), Schwelle 8, Verteilung Maximum {4: 2159, 6: 1}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 0.1 s
+astra_7: 1568/1568 Zeilen nachgerechnet (erwartet 1568), Schwelle 9, Verteilung Maximum {5: 1568}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 0.1 s
+astra_8: 1024/1024 Zeilen nachgerechnet (erwartet 1024), Schwelle 10, Verteilung Maximum {8: 1024}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 0.2 s
+sol_1: 153664/153664 Zeilen nachgerechnet (erwartet 153664), Schwelle 7, Verteilung Maximum {3: 148680, 5: 4984}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 2.7 s
+sol_2: 71280/71280 Zeilen nachgerechnet (erwartet 71280), Schwelle 8, Verteilung Maximum {4: 71280}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 1.8 s
+sol_3: 8192/8192 Zeilen nachgerechnet (erwartet 8192), Schwelle 9, Verteilung Maximum {5: 8192}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 0.9 s
+sol_4: 7920/7920 Zeilen nachgerechnet (erwartet 7920), Schwelle 9, Verteilung Maximum {5: 5746, 7: 2174}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 0.4 s
+sol_5: 6144/6144 Zeilen nachgerechnet (erwartet 6144), Schwelle 9, Verteilung Maximum {5: 6144}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 0.2 s
+sol_6: 40680/40680 Zeilen nachgerechnet (erwartet 40680), Schwelle 10, Verteilung Maximum {6: 510, 8: 40170}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 1.9 s
+sol_7: 17920/17920 Zeilen nachgerechnet (erwartet 17920), Schwelle 10, Verteilung Maximum {8: 17920}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 1.2 s
+sol_8: 10000/10000 Zeilen nachgerechnet (erwartet 10000), Schwelle 10, Verteilung Maximum {8: 10000}, ohne Gegenbeispiel (NONE) 0, Abweichungen [], 1.1 s
