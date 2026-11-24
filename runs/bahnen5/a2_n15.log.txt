@@ -1,0 +1,30 @@
+16:01:26
+n=15 R=4: 3276 volle Bahnen, 4 feste Paare
+Kugel 1941 Woerter, Ueberdeckungsmatrix asymmetrische Eintraege: 0
+volle Bahnen, die eine Punkt-Bahn ueberdecken: min 388, max 1669
+mit Paaren=1: offene Punkt-Bahnen vor der Wahl: 2000
+erste Verzweigung: Punkt-Bahn 3171, 1344 Kandidaten
+ERGEBNIS n=15 R=4 t=3 mitPaaren=1: 0 ueberdeckende 3-Mengen voller Bahnen
+
+real	0m0.218s
+user	0m0.796s
+sys	0m0.004s
+n=15 R=4: 3276 volle Bahnen, 4 feste Paare
+Kugel 1941 Woerter, Ueberdeckungsmatrix asymmetrische Eintraege: 0
+volle Bahnen, die eine Punkt-Bahn ueberdecken: min 388, max 1669
+mit Paaren=0: offene Punkt-Bahnen vor der Wahl: 3280
+erste Verzweigung: Punkt-Bahn 0, 388 Kandidaten
+ERGEBNIS n=15 R=4 t=4 mitPaaren=0: 525 ueberdeckende 4-Mengen voller Bahnen
+
+real	0m9.555s
+user	0m37.439s
+sys	0m0.008s
+n=15 R=4: 3276 volle Bahnen, 4 feste Paare
+Kugel 1941 Woerter, Ueberdeckungsmatrix asymmetrische Eintraege: 0
+volle Bahnen, die eine Punkt-Bahn ueberdecken: min 388, max 1669
+mit Paaren=0: offene Punkt-Bahnen vor der Wahl: 3280
+Vertreter 1296 -> Bahn 476 (kleinster Vertreter 1296, voll)
+Vertreter 245 -> Bahn 123 (kleinster Vertreter 245, voll)
+Vertreter 3263 -> Bahn 1419 (kleinster Vertreter 3263, voll)
+Vertreter 6124 -> Bahn 3256 (kleinster Vertreter 6124, voll)
+offene Punkt-Bahnen nach den Vertretern: 0 -> UEBERDECKUNG
