@@ -69,6 +69,8 @@ stammt aus einer Abfrage an GPT-6.2 Astra; die historische Zuordnung ist unbeleg
 
 - 23.11.2026, Lauf n=20 R=6 d=2 K=13 Typ (11,9) Startwerte 1–16, je 1800 s: durch Container-Neustart verloren, keine Restzahlen
   (Details im Abschnitt „Lauf K=13“).
+- 24.11.2026, Kontrolle n=22 R=7 d=2 K=13, Zufallsstart, je 1800 s, Cloud 4 Kerne: Typ (13,9) Startwerte 1–8 alle ungelöst
+  (Restzahlen 7, 2, 6, 7, 2, 2, 3, 1); Typ (12,10) Startwerte 3 und 7 ungelöst (Restzahl 8, 8). Details im Abschnitt „Kontrolle Skalierung“.
 
 ## Vorschläge aus der Astra-Abfrage (unbelegt, noch nicht getestet)
 
@@ -366,6 +368,24 @@ mit derselben Lösung nach Schritt 2011, der Messmodus ändert also nichts.
 - Block 5, Typ (11,11), Startwerte 1–4 (08:36–08:43 UTC): **4 von 4 gelöst**, 52 Wörter: nach 361 s (11 459 Schritte), 40 s (1 230),
   198 s (6 524), 389 s (12 362). Selbstkomplementär, Radius per Brute-Force 7. Wörter `runs/skal22/woerter_n22_R7_d2_K13_typ11-11_seed{1..4}.txt`,
   Matrizen `runs/skal22/matrix_n22_52w_typ11-11_seed{1..4}.txt` (26 x 22, `_pad` 26 x 26). **Beide Prüfskripte, alle vier: Diskrepanz 8.**
+- Block 6, Typ (11,11), Startwerte 5–8 (08:43–08:53 UTC): **4 von 4 gelöst**, 52 Wörter: nach 255 s (8 049 Schritte), 592 s (19 355),
+  87 s (2 738), 45 s (1 380). Selbstkomplementär, Radius per Brute-Force 7. **Beide Prüfskripte, alle vier: Diskrepanz 8.**
+
+**Gesamtergebnis Skalierung (22,7), K=13, Zufallsstart, je 1800 s: 14 von 24 gelöst.**
+
+| Typ | gelöst | Zeit bis Lösung | beste Restzahl der Fehlläufe |
+|---|---|---|---|
+| (13,9) | 0 von 8 | – | 7, 2, 6, 7, 2, 2, 3, 1 |
+| (12,10) | 6 von 8 | 50–1686 s | 8, 8 (Startwerte 3, 7) |
+| (11,11) | 8 von 8 | 40–592 s | – |
+
+- Alle 14 Treffer: 52 Wörter, selbstkomplementär, Radius 7 per Brute-Force, paarweise verschieden; `check_disc.py` und
+  `verify_spencer.py` melden für alle 14 exakt Diskrepanz 8 (Quotient 8/sqrt(26) = 1,569, kein Spencer-Rekord). Regel 1 erfüllt.
+- Die Methode skaliert damit von 2^18 auf 2^20 Syndrome: Bei (20,6) gelangen mit dem besten Typ (11,9) 6 von 16 in 1800 s, bei
+  (22,7) mit dem besten Typ (11,11) 8 von 8, trotz ca. 6-mal weniger Schritten je Lauf. Der ausgewogene Typ ist hier am besten,
+  der unausgewogenste (13,9) löst nie (bei (20,6) war es umgekehrt: (10,10) schlecht, (11,9) gut).
+- Neuheit: 52 lag schon über die Folgecodes vor (K(22,7) Tabelle 21–64). Nach Regel 3 offen. Kein K=12 bei (22,7) gestartet.
+
 
 ## Nebenfrage: Typ (12,8) bei K=13 immer exakt 22
 
