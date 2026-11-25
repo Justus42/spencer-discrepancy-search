@@ -1,0 +1,32 @@
+== S1/S2: Durchmesser, Abgeschlossenheit, |S u T| <= 4 an Zufalls-Kappen (reelle a als p/q)
+  20000 Kappen (nicht leer 11994), davon 6307 mit Dreiermenge; groesste Kappe 56 Punkte: alle Pruefungen bestanden
+== S3: groesste nach unten abgeschlossene Familie auf 10 Punkten mit |S u T| <= 4 (alle Paare), mit einer Dreiermenge, ohne Vierermenge
+  Cliquen von Dreiermengen mit {0,1,2}: 410; groesste Familie: 36 Mengen (ohne Vierermengen)
+  Beispiel einer groessten Dreiermengen-Familie: [[0, 1, 2]]
+  groesste Familie je Zahl der Dreiermengen: {1: 36, 2: 31, 3: 31, 4: 32, 5: 33, 6: 34, 7: 35, 8: 36}
+  Schranke Astra: 1 + 10 + 24 + 8 = 43; exaktes Maximum 36 <= 43: ja
+  Zweiermengen, die {0,1,2} treffen: 24 (Astra: 45 - 21 = 24)
+  S u {0,1,2,3} <= 4 Punkte  =>  S in {0,1,2,3}: True (Familie mit Vierermenge hat hoechstens 16 Mengen)
+== S4/S5: Kugeln im Klassenraum, Ueberschneidungen, Vereinigungsschranke
+  Klassen: 512 ; Groesse einer Radius-2-Kugel (Klassen): {56} (Astra: 56)
+  kleinster Schnitt zweier Kugeln gleicher Paritaet: 6 (Astra: >= 6); gefalteter Abstand dabei <= 4 und gerade: ja
+    verschiedene Paritaet gefalteter Abstand 1 : Schnittgroessen [20]
+    verschiedene Paritaet gefalteter Abstand 3 : Schnittgroessen [6]
+    verschiedene Paritaet gefalteter Abstand 5 : Schnittgroessen [0]
+    gleiche Paritaet gefalteter Abstand 2 : Schnittgroessen [20]
+    gleiche Paritaet gefalteter Abstand 4 : Schnittgroessen [6]
+  Vereinigungsschranke 56(10-e) + 43e - 6 max(8-e,0):
+    e =  0: 512 (= 512: kein Widerspruch, Sonderfall e = 0)
+    e =  1: 505 (< 512)
+    e =  2: 498 (< 512)
+    e =  3: 491 (< 512)
+    e =  4: 484 (< 512)
+    e =  5: 477 (< 512)
+    e =  6: 470 (< 512)
+    e =  7: 463 (< 512)
+    e =  8: 456 (< 512)
+    e =  9: 443 (< 512)
+    e = 10: 430 (< 512)
+== S6: Fall e = 0: lassen sich die 512 Klassen mit 10 Radius-2-Kugeln ueberdecken? (exakte Suche, zweites Programm: Python)
+  Knoten 63505, Zeit 5.0 s: keine Ueberdeckung mit 10 Kugeln
+ERGEBNIS: S1 bestaetigt, S3 bestaetigt, S5 bestaetigt, S6 bestaetigt

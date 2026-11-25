@@ -124,3 +124,25 @@ Nachvollzogen (Herleitung, nicht nur Zahlen): Bilanz m2 = 13: Σ_x B(x) = 24·10
 Überschuss Σ_U(B−1) ist höchstens 88 − 3D, die Mehrfachzählung kostet höchstens 11·D, zusammen höchstens 88 + 8D <= 320 (D <= 29), während jede der 24·11 Paarungen (kleine Kugel, fremde Zeile mit passendem
 Vorzeichen, Abstand <= 6) mindestens 15 Punkte beisteuert. Schritte stimmen; die Zahlen sind jetzt von einem zweiten Programm bestätigt.
 
+## Teil 5: Astras Ausschluss reeller 10 × 10-Matrizen (nur lesen und urteilen, mit kleinen Rechnungen)
+
+Prüfskript `verifiers/pruef_ideen/astra10.py` (nur ganze Zahlen; reelle a als p/q), C-Gegenstück `src/pruef_ideen/ueberdeckung10.c` für S6; Logs `runs/pruef_ideen/astra10/`.
+Schwelle t0 = 5·sqrt(10/8), t0² = 31,25; Kappe von Zeile a: P = {x : a·x > t0}, überdeckte Klassen {x, −x} genau die Klassen der Punkte von P.
+
+| Schritt Astras | Prüfung | Ergebnis |
+|---|---|---|
+| S1 Durchmesser der Kappe <= 4 (a·(x+y) <= 2(10 − d), > 11,18) | Herleitung nachvollzogen; 20 000 Zufallskappen (reelle a, auch dünn besetzt, fast ±1, mit wenigen kleinen Einträgen): Durchmesser nie > 4 | stimmt |
+| S2 Fehlermengen nach unten abgeschlossen, \|S ∪ T\| <= 4 für alle Paare (Durchmesserschranke auf S und T∖S) | Herleitung nachvollzogen (T∖S ⊆ T liegt wieder in der Familie, Abstand \|S\| + \|T∖S\| = \|S ∪ T\|); dieselben Kappen: 6307 mit Dreiermenge, alle Eigenschaften erfüllt | stimmt |
+| S3 „enthält die Kappe eine Dreiermenge (keine Vierermenge), so höchstens 1 + 10 + 24 + 8 = 43 Punkte" | exakt aufgezählt: alle 410 Dreiermengen-Familien mit {0,1,2}, jeweils alle zulässigen Zweiermengen; Zweiermengen, die {0,1,2} treffen: 24 (= 45 − 21); **größte Familie 36 Mengen** (eine Dreiermenge plus alle 24 Zweiermengen, die sie treffen, plus 10 Einer und ∅); alle 6307 Zufallskappen mit Dreiermenge hatten <= 36 Punkte | **gilt (43 ist eine gültige, aber nicht scharfe Schranke; exakt 36)** |
+| Enthält die Kappe eine Vierermenge, liegen alle Mengen darin (<= 16 Punkte) | Aufzählung \|S ∪ Q\| <= 4 ⇒ S ⊆ Q | stimmt |
+| ohne Dreiermenge liegt die Kappe in der Radius-2-Kugel um das Vorzeichenmuster von a (56 Klassen) | trivial (alle Fehlermengen <= 2); Kugelgröße in Klassen: 56 | stimmt |
+| Kugeln gleicher Gewichtsparität: gefalteter Abstand <= 4, Schnitt >= 6 | Durchzählen aller 512 × 511/2 Paare: gleiche Parität gefalteter Abstand 2 → 20, 4 → 6; (verschiedene Parität: 1 → 20, 3 → 6, 5 → 0) | stimmt, kleinster Schnitt 6 |
+| Vereinigung <= 56(10−e) + 43e − 6·max(8−e,0) <= 505 < 512 für e >= 1 | e = 1..10: 505, 498, 491, 484, 477, 470, 463, 456, 443, 430, alle < 512; Folgerung aus der sequenziellen Zählung (höchstens zwei Kugeln, die erste je Parität, verlieren nichts) nachvollzogen | stimmt |
+| e = 0: „Radius-2-Code mit höchstens 20 Wörtern, Widerspruch zu K(10,2) >= 24" | Die Schranke aus der Tabelle ist **nicht nötig**: exakte Tiefensuche (zwei Programme, C und Python, beide 63 505 Knoten, 0,1 s bzw. 5 s): **zehn Radius-2-Kugeln überdecken die 512 Klassen nicht**; Positivkontrolle: mit 16 Kugeln findet dasselbe C-Programm eine Überdeckung (3 s); K = 11 nach 100 s nicht entschieden (nicht benötigt) | stimmt, jetzt ohne Tabelle |
+
+**Urteil: schlüssig.** Jeder Schritt ist nachvollzogen und mit einer Rechnung belegt; keine Lücke gefunden. Die Abhängigkeit von „K(10,2) >= 24 aus der Tabelle" entfällt, weil der Fall e = 0
+direkt durch Aufzählung erledigt ist (zehn Kugeln reichen nicht); die Schranke 43 gilt, exakt sind 36. Vorbehalt: Die Vollständigkeit der Tiefensuche beruht auf drei Argumenten (Translationssymmetrie:
+erste Kugel um Klasse 0; Verzweigung über die kleinste unüberdeckte Klasse; Zuwachsschranke), die ich im Code geprüft, aber nicht formal bewiesen habe; das Python- und das C-Programm
+haben denselben Suchbaum (gleiche Knotenzahl). Die Aussage gilt für reelle Einträge in [−1,1], genau 10 Zeilen, Schwelle disc/√10 > 5/√8.
+Für die Landkarte: n = 10 reell wie n = 8, 9, 12 als ausgeschlossen kennzeichnen (Belegart: Herleitung + Aufzählung, ein Programm je Sprache).
+
