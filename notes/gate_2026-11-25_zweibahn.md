@@ -46,7 +46,7 @@ Nebenbefund: Eine reine Zählschranke entscheidet keinen der Fälle. Zwei volle 
 
 ## Einordnung
 
-Die Bauart von `ctrl_16` trägt nicht über q = 7 hinaus. In allen acht Zellen von (20,6) bis (30,10) scheitern zwei volle
+Die Bauart von `ctrl_16` trägt nicht über q = 7 hinaus. In allen acht Typen von (20,6) bis (30,10) scheitern zwei volle
 Bahnen schon an den Punkten, die kein festes Wort erreicht. Die Dichte an der Längenobergrenze (2,7 bei (25,8), 3,1 bei
 (30,10)) hilft dieser Bauart also nicht.
 
