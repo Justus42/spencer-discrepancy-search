@@ -29,6 +29,9 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Paley-Konferenzmatrizen | 1,225 e |  |  |  | 0,949 e | 1,336 e | |  |  | 1,179 e |  |  |
 | zirkulant n x n (Teil C, alle Klassen) |  | 1,134 e |  |  |  |  | |  |  | 0,943 e |  | 1,342 e |
 | zirkulant + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Teil C) |  |  | 1,768 e |  |  |  | |  |  |  | 0,918 e |  |
+| Gruppenmatrizen nichtzyklisch n x n (Auftrag G, alle Klassen; 10 Gruppen der Ordnung 18, 20, 21, 25) |  |  |  |  |  |  |  |  |  | 0,943 e |  | 1,342 e |
+| Gruppenmatrizen nichtzyklisch + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Auftrag G, Ordnung 18 und 21) |  |  |  |  |  |  |  |  |  |  | 0,918 e |  |
+| Gruppenmatrizen nichtzyklisch ohne 2 Spalten, n x (n-2) (Auftrag G) |  |  |  |  |  |  |  |  |  | ≤1,414 g |  | 1,342 e |
 | Rundlauf Astra 2 Duaden (15x15, 59 049 Matrizen) | | | | | | | 0,775 e | | | | | |
 | Rundlauf Sol 1 Fano-Ebenentausch (15x15, 153 664) | | | | | | | 1,291 e | | | | | |
 | Rundlauf Astra 4 Walsh-Charts (20x20, 1 024) | | | | | | | | | | | | 0,894 e |
@@ -52,6 +55,9 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Nebenklassen-Suche, nicht erreichte Ziele |  |  |  |  |  |  |  |  |  | (1,643) s |  | (1,591) s |  |
 | zirkulant n x n (Teil C, alle Klassen) | 1,091 e |  | 1,460 e | 1,225 e | 1,400 e | 1,177 e |  |  | 1,300 e | 1,095 e | 1,257 e |  |  |
 | zirkulant + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Teil C) | 1,309 e | 1,492 e |  | 1,429 e | 1,200 e | 1,373 e | 1,155 e |  |  |  |  |  |  |
+| Gruppenmatrizen nichtzyklisch n x n (Auftrag G, alle Klassen; 10 Gruppen der Ordnung 18, 20, 21, 25) | 1,091 e |  |  |  | 1,400 e |  |  |  |  |  |  |  |  |
+| Gruppenmatrizen nichtzyklisch + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Auftrag G, Ordnung 18 und 21) |  | 1,492 e |  |  |  |  |  |  |  |  |  |  |  |
+| Gruppenmatrizen nichtzyklisch ohne 2 Spalten, n x (n-2) (Auftrag G) | ≤1,527 g |  |  |  | 1,400 e |  |  |  |  |  |  |  |  |
 | Rundlauf Astra 1 Paley-Scharnier (25x23, 4 356) | | | | | 1,400 e | | | | | | | | |
 | Rundlauf Astra 3 Fano-Blöcke (25x21, 1 176) | | | | | 1,000 e | | | | | | | | |
 | Rundlauf Astra 5 Golay-Bahnen (25x23, 2 346) | | | | | 1,400 e | | | | | | | | |
@@ -125,6 +131,13 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Lokal um `ctrl_16` / `ctrl_8` (
   Nur ein Element der Ordnung 3 (⟨g⟩, 174 848 Bahnen): Tabu-Kontrolle (48 Wörter) nicht bestanden (1 von 4 bzw. 0 von 4), < 48 ungeprüft.
   Protokoll `notes/laeufe/2026-11-25_bahnen3.md`.
 - **Nebenklassen-Leiter unter 48 bei (20,6) (Auftrag L, 25.11.2026):** Kern ⟨1,a⟩, Typ (11,9). Kleinste erreichte Wortzahl weiter **48** (Quotient 1,633 e); der eine Treffer aus K=12-Zufallsstart (`runs/woerter_n20_R6_d2_K12_typ11-9_k12_seed5.txt`, disc 8 mit drei Programmen) ist kein neuer 48er, sondern zur Paley-Doppelung 1+3 gleichwertig (Gate: `notes/gate_2026-11-25_leiter48.md`). K=12 aus Zufallsstart: 1 von 16 Läufen à 1800 s (Kontrolle nicht bestanden), K=11 (44 Wörter, N = 22, 1,706) nicht versucht. Protokoll `notes/laeufe/2026-11-25_leiter48.md`.
+- **Gruppenmatrizen über nichtzyklischen Gruppen (Auftrag G, 25.11.2026):** Protokoll `notes/laeufe/2026-11-25_gruppen.md`, Programm `src/gruppenmatrix.c`
+  (Prüfcode `src/gruppen_erzeuge.py`, `src/gruppen_pruef.py`), Tafeln und Logs `runs/gruppen/`, beste Matrizen `runs/gruppen/beste/` (beide Prüfskripte und `exakt_disc` gleich).
+  A[g][h] = f(g^-1 h); alle Klassen bis auf Links-/Rechtsmultiplikation, Automorphismen und Komplement (nicht f(x^-1)). Kein Überlebender in keiner der zehn Gruppen
+  (Z3xZ6, D9, S3xZ3, (Z3xZ3):Z2; Z2xZ10, D10, Dic5, F20; Z7:Z3; Z5xZ5). Größte Diskrepanz exakt: Ordnung 18: 4 (mit Rand N = 19: 4); Ordnung 20: 6;
+  Z7:Z3: 5, mit Rand (N = 22) 7; Z5xZ5: 7. Zwei Spalten gestrichen (nur Klassen mit u >= d-2): Ordnung 20 exakt 6, Z5xZ5 exakt 7; bei Ordnung 18 und 21 ist die Menge leer,
+  die Schranke u_max + 2 gibt höchstens 6 bzw. 7 (Zeichen `≤ … g`, nicht exakt bestimmt). Kein Wert liegt über dem zyklischen Wert gleicher Ordnung. Nicht gerechnet:
+  Ordnung 24 (14 nichtzyklische Gruppen, Schwelle 10) und vier gestrichene Spalten bei Ordnung 25.
 - **Doppelung Ordnung 40:** Test C in STATUS, alle 30 780 Spaltenauswahlen mit Gegenbeispiel max ≤ 8, Rekord bräuchte 12.
   Nur gleiche Zeilenausrichtung in beiden Hälften geprüft.
 - **Paley-12-Doppelung:** `controls/had24_1p3_paley12.txt`, `had24_2p2_paley12.txt`, beide Prüfskripte disc 8.
