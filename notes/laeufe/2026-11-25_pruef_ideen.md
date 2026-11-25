@@ -35,13 +35,14 @@ Negativkontrollen des Prüfers: Streichen eines Kernelements macht jedes Zertifi
 | **Klasse 2, 3 gestrichen, 2 Ersatzzeilen (560 Tripel)** | Lochzahl 967 (448), 987 (112): wie erwartet. **560 von 560 bestätigt**; Kerngröße 6 (477) oder 7 (83) | `klasse2_r3_k2_zertifikate.txt`, `klasse2_r3_k2_pruefung.log.txt` |
 | Klasse 2, 2 gestrichen, 2 Ersatzzeilen / 1 Ersatzzeile | Lochzahl 554 (112 Paare), 578 (8): beide verteilbar mit zwei Zeilen (Kontrolle); mit einer Zeile 120 von 120 Zertifikate | `klasse2_*` |
 | **Klasse 1, 4 gestrichen, 3 Ersatzzeilen (1820 Fälle)** | Lochzahlen 1476 (784), 1484 (896), 1508 (112), 1512 (28): wie erwartet. **1820 von 1820 Zertifikate bestätigt**; Kerngröße 12 bis 21 | `klasse1_r4_k3_zertifikate_final.txt`, `klasse1_r4_k3_pruefung.log.txt` |
+| Klasse 2 (`loesung111`), 4 gestrichen, 3 Ersatzzeilen (1820 Fälle; Zusatz, nicht verlangt) | Lochzahlen 1476 (1120), 1492 (672), 1512 (28); **1820 von 1820 Zertifikate bestätigt**; Kerngröße 13 bis 20; kein Fall verteilbar | `klasse2_r4_k3_zertifikate.txt`, `klasse2_r4_k3_pruefung.log.txt` |
 
 Beobachtungen:
 - Die Zertifikate sind kleiner als im Vortest (6 bis 7 Klassen statt 7 bis 10), weil je Tripel 60 Neustarts mit Ausdünnen laufen.
 - Beim 4-gegen-3-Fall fand der erste Lauf für Index 1223 (gestrichen 3, 6, 9, 13) keinen Kern, weil ein Neustart die Teilmengengrenze von 95 Löchern erreichte und der
   Code irrtümlich abbrach. Fehler im eigenen Suchcode behoben (jetzt weiter mit dem nächsten Neustart), Index 1223 mit 200 Neustarts nachgerechnet (Kern 15), die Zeile in
   `klasse1_r4_k3_zertifikate_final.txt` ersetzt. `klasse1_r4_k3_zertifikate.txt` ist der Rohstand mit der Zeile „VERTEILBAR“. Keine Abweichung der Aussage.
-- Sicht der Aussage: ausgeschlossen ist, dass 13 Zeilen (bzw. 12 bei 4/3) mit einer der beiden 32er-Klassen gemeinsam sind. Nicht gerechnet: 4/3 für Klasse 2; 5 gestrichene.
+- Sicht der Aussage: ausgeschlossen ist, dass 13 Zeilen (bzw. 12 bei 4/3) mit einer der beiden 32er-Klassen gemeinsam sind. Nicht gerechnet: 5 gestrichene Zeilen gegen 4 Ersatzzeilen.
 
 ## Teil 2: ganze Spalte neu wählen (`src/pruef_ideen/spalte.c`, Belege `runs/pruef_ideen/spalte/`)
 
