@@ -1,0 +1,8 @@
+c_k12_t12-13 seed 1: ZEITGRENZE nach 570.4 s, beste Restzahl 5280, 13454 Iterationen, 42 Runden, 1 Neustarts
+runs/zerlegung/c_k12_t12-13_seed1.paar.txt: K=12, Typ (12,13), d=9: offene Klassen 5280 von 8388608
+c_k12_t12-13 seed 2: ZEITGRENZE nach 570.2 s, beste Restzahl 5280, 12623 Iterationen, 39 Runden, 1 Neustarts
+runs/zerlegung/c_k12_t12-13_seed2.paar.txt: K=12, Typ (12,13), d=9: offene Klassen 5280 von 8388608
+c_k12_t12-13 seed 3: ZEITGRENZE nach 570.0 s, beste Restzahl 5280, 14549 Iterationen, 46 Runden, 2 Neustarts
+runs/zerlegung/c_k12_t12-13_seed3.paar.txt: K=12, Typ (12,13), d=9: offene Klassen 5280 von 8388608
+c_k12_t12-13 seed 4: ZEITGRENZE nach 570.2 s, beste Restzahl 5280, 13556 Iterationen, 41 Runden, 1 Neustarts
+runs/zerlegung/c_k12_t12-13_seed4.paar.txt: K=12, Typ (12,13), d=9: offene Klassen 5280 von 8388608
