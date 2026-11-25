@@ -1,0 +1,8 @@
+s2c18-5_k12_t9-9 seed 1: ZEITGRENZE nach 300.0 s, beste Restzahl 1, 285658 Iterationen, 918 Runden, 41 Neustarts
+runs/leiter_n/s2c18-5_k12_t9-9_seed1.paar.txt: K=12, Typ (9,9), d=8: offene Klassen 1 von 65536
+s2c18-5_k12_t9-9 seed 2: ZEITGRENZE nach 300.0 s, beste Restzahl 1, 311571 Iterationen, 1005 Runden, 45 Neustarts
+runs/leiter_n/s2c18-5_k12_t9-9_seed2.paar.txt: K=12, Typ (9,9), d=8: offene Klassen 1 von 65536
+s2c18-5_k12_t9-9 seed 3: ZEITGRENZE nach 300.0 s, beste Restzahl 1, 290706 Iterationen, 943 Runden, 42 Neustarts
+runs/leiter_n/s2c18-5_k12_t9-9_seed3.paar.txt: K=12, Typ (9,9), d=8: offene Klassen 1 von 65536
+s2c18-5_k12_t9-9 seed 4: ZEITGRENZE nach 300.0 s, beste Restzahl 1, 304961 Iterationen, 986 Runden, 44 Neustarts
+runs/leiter_n/s2c18-5_k12_t9-9_seed4.paar.txt: K=12, Typ (9,9), d=8: offene Klassen 1 von 65536
