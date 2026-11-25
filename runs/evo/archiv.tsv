@@ -71,3 +71,7 @@ Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
 18	p016	p007	B	20	6	23	2	600	1241	Ziel 23 Paare, Doppelungsform 11+1, volle Nachbarschaft, Neustart vom Bestpunkt
 18	p016	p007	B	20	6	23	3	600	1241	Ziel 23 Paare, Doppelungsform 11+1, volle Nachbarschaft, Neustart vom Bestpunkt
 18	p016	p007	B	20	6	23	4	600	1241	Ziel 23 Paare, Doppelungsform 11+1, volle Nachbarschaft, Neustart vom Bestpunkt
+19	p017	p015	A	20	6	23	1	600	704	Ziel 23 Paare, blind, ohne Neustart
+19	p017	p015	A	20	6	23	2	600	713	Ziel 23 Paare, blind, ohne Neustart
+19	p017	p015	A	20	6	23	3	600	704	Ziel 23 Paare, blind, ohne Neustart
+19	p017	p015	A	20	6	23	4	600	707	Ziel 23 Paare, blind, ohne Neustart

@@ -1,5 +1,5 @@
-/* p018 -- Insel A, blind. Elter: p015.
- * Geaendert: Rauschen 1 % statt 5 % (Anteil zufaelliger Zuege zu einer zufaelligen offenen Klasse).
+/* p018 -- Insel A, blind. Elter: p017.
+ * Geaendert: Rauschen 1 % statt 5 % (Anteil zufaelliger Zuege zu einer zufaelligen offenen Klasse). Kein Neustart wie p017.
  * Warum: laengeres Tabu (mehr Abwechslung, p014) schadete; weniger Zufall soll die Suche schaerfer machen.
  * Aufruf: p018 m R PAARE STARTWERT SEKUNDEN AUSGABEDATEI   (Suchcode; blind, liest keine Dateien)
  */
@@ -11,7 +11,7 @@
 
 #define RAUSCHEN 0.01
 #define GLATT 0
-#define STAG 120.0
+#define STAG 1e9
 #define STOER 6
 
 typedef uint32_t u32;
