@@ -1,0 +1,6 @@
+2026-11-25 18:46:00 UTC  Runde 10  p009 (Elter p008, Insel S)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=1115  (600 s)   [Selbstauskunft: ENDE best=1115 it=983808 t_best=315.6 t=600.0 bumps=412651 neustarts=13]
+  Startwert 2: offen=917  (600 s)   [Selbstauskunft: ENDE best=917 it=988160 t_best=269.2 t=600.1 bumps=407871 neustarts=17]
+  Startwert 3: offen=1217  (600 s)   [Selbstauskunft: ENDE best=1217 it=989440 t_best=9.9 t=600.1 bumps=419138 neustarts=11]
+  Startwert 4: offen=1155  (600 s)   [Selbstauskunft: ENDE best=1155 it=990208 t_best=442.9 t=600.1 bumps=416519 neustarts=12]
+2026-11-25 18:56:00 UTC  Runde 10 fertig

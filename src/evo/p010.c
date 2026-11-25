@@ -1,7 +1,7 @@
-/* p010 -- Insel A (Zuege auf Wortebene), blind. Elter: p004.
- * Geaendert: Gewichte ohne Glaettung (wie p002) und Neustart aus Zufall nach 30 s ohne lokalen Fortschritt (Gewichte 1, Tabu leer).
- * Warum: Saat-Insel p008 (gleiche Zuege, Start im 48er) kam bei 23 Paaren auf 1148 und lief dabei weit vom Saatpunkt weg;
- *   Gegenprobe, ob der Start ueberhaupt zaehlt.
+/* p010 -- Insel A (Zuege auf Wortebene), blind. Elter: p009 (Saat-Insel).
+ * Geaendert: Zufallsstart statt Saat (liest keine Datei); sonst gleich: Gewichte ohne Glaettung, nach 30 s ohne lokalen Fortschritt
+ *   Neustart vom bisher besten Punkt mit 6 Stoerbits.
+ * Warum: Gegenprobe, ob die Saat bei 23 Paaren zaehlt; p008/p009 liefen weit vom Saatpunkt weg (p009: 917).
  * Aufruf: p010 m R PAARE STARTWERT SEKUNDEN AUSGABEDATEI   (Suchcode; blind, liest keine Dateien)
  */
 #include <stdio.h>
@@ -13,6 +13,7 @@
 #define RAUSCHEN 0.05
 #define GLATT 0
 #define STAG 30.0
+#define STOER 6
 
 typedef uint32_t u32;
 typedef int32_t v8i __attribute__((vector_size(32)));
@@ -137,8 +138,9 @@ int main(int argc, char **argv) {
         if ((it & 255) == 0) {
             double t = jetzt();
             if (t - t0 > sek) break;
-            if (t - tlokal > STAG) {   /* Neustart aus Zufall */
-                for (int i = 0; i < K; i++) w[i] = (u32)rnd() & FULL;
+            if (t - tlokal > STAG) {   /* Neustart vom Bestpunkt mit Stoerung */
+                memcpy(w, best, K * sizeof(u32));
+                for (int q = 0; q < STOER; q++) w[rnd() % K] ^= 1u << (rnd() % m);
                 for (long q = 0; q < N; q++) wt[q] = 1;
                 memset(tabu, 0, K * m * sizeof(int64_t));
                 alles_neu();
