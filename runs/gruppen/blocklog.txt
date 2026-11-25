@@ -21,3 +21,64 @@ Block 1 (Teil 1 a/b), Kontrollen zyklische Tafeln
 2026-11-25 10:36:31 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z25.grp n=25 |H|=500 (Automorphismen 20) d=9: klassen 33781, ueberlebende 0, beste obere schranke u_max 7 (86 vertreter), zeit 14.3 s, tabu-schritte 42272209
 2026-11-25 10:36:31 UTC   verteilung u: 1:9880 3:9241 5:14574 7:86
 2026-11-25 10:36:31 UTC ERGEBNIS z25 d=9: Überlebende 0, u_max 7 (86 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 7 (Vertreter ['2a6f']) = u_max, also beste Diskrepanz aller Klassen genau 7; Laufzeit 14 s
+=== Block 2: Teil 2 volle Matrizen, 10 nichtzyklische Gruppen + Rand ===
+2026-11-25 10:37:28 UTC START z3xz6 d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z3xz6.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/z3xz6 -a
+2026-11-25 10:37:29 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z3xz6.grp n=18 |H|=864 (Automorphismen 48) d=8: klassen 300, ueberlebende 0, beste obere schranke u_max 4 (36 vertreter), zeit 0.1 s, tabu-schritte 221129
+2026-11-25 10:37:29 UTC   verteilung u: 0:120 2:144 4:36
+2026-11-25 10:37:29 UTC ERGEBNIS z3xz6 d=8: Überlebende 0, u_max 4 (36 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 4 (Vertreter ['5']) = u_max, also beste Diskrepanz aller Klassen genau 4; Laufzeit 0 s
+2026-11-25 10:37:29 UTC START d9 d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/d9.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/d9 -a
+2026-11-25 10:37:29 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/d9.grp n=18 |H|=972 (Automorphismen 54) d=8: klassen 224, ueberlebende 0, beste obere schranke u_max 4 (9 vertreter), zeit 0.2 s, tabu-schritte 178079
+2026-11-25 10:37:29 UTC   verteilung u: 0:80 2:135 4:9
+2026-11-25 10:37:29 UTC ERGEBNIS d9 d=8: Überlebende 0, u_max 4 (9 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 4 (Vertreter ['9']) = u_max, also beste Diskrepanz aller Klassen genau 4; Laufzeit 0 s
+2026-11-25 10:37:29 UTC START s3xz3 d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/s3xz3.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/s3xz3 -a
+2026-11-25 10:37:29 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/s3xz3.grp n=18 |H|=216 (Automorphismen 12) d=8: klassen 894, ueberlebende 0, beste obere schranke u_max 4 (71 vertreter), zeit 0.3 s, tabu-schritte 679025
+2026-11-25 10:37:29 UTC   verteilung u: 0:340 2:483 4:71
+2026-11-25 10:37:29 UTC ERGEBNIS s3xz3 d=8: Überlebende 0, u_max 4 (71 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 4 (Vertreter ['3']) = u_max, also beste Diskrepanz aller Klassen genau 4; Laufzeit 0 s
+2026-11-25 10:37:29 UTC START z3z3_z2 d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z3z3_z2.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/z3z3_z2 -a
+2026-11-25 10:37:29 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z3z3_z2.grp n=18 |H|=7776 (Automorphismen 432) d=8: klassen 94, ueberlebende 0, beste obere schranke u_max 4 (8 vertreter), zeit 0.1 s, tabu-schritte 68519
+2026-11-25 10:37:29 UTC   verteilung u: 0:38 2:48 4:8
+2026-11-25 10:37:29 UTC ERGEBNIS z3z3_z2 d=8: Überlebende 0, u_max 4 (8 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 4 (Vertreter ['3']) = u_max, also beste Diskrepanz aller Klassen genau 4; Laufzeit 0 s
+2026-11-25 10:37:29 UTC START z3xz6_rand d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z3xz6.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/z3xz6_rand -a -r
+2026-11-25 10:37:29 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z3xz6.grp n=18 |H|=864 (Automorphismen 48) mit rand d=8: klassen 300, ueberlebende 0, beste obere schranke u_max 4 (90 vertreter), zeit 0.1 s, tabu-schritte 290184
+2026-11-25 10:37:29 UTC   verteilung u: 0:61 2:149 4:90
+2026-11-25 10:37:29 UTC ERGEBNIS z3xz6_rand d=8: Überlebende 0, u_max 4 (90 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 4 (Vertreter ['5']) = u_max, also beste Diskrepanz aller Klassen genau 4; Laufzeit 0 s
+2026-11-25 10:37:29 UTC START d9_rand d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/d9.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/d9_rand -a -r
+2026-11-25 10:37:29 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/d9.grp n=18 |H|=972 (Automorphismen 54) mit rand d=8: klassen 224, ueberlebende 0, beste obere schranke u_max 4 (12 vertreter), zeit 0.1 s, tabu-schritte 224787
+2026-11-25 10:37:29 UTC   verteilung u: 0:39 2:173 4:12
+2026-11-25 10:37:29 UTC ERGEBNIS d9_rand d=8: Überlebende 0, u_max 4 (12 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 4 (Vertreter ['9']) = u_max, also beste Diskrepanz aller Klassen genau 4; Laufzeit 0 s
+2026-11-25 10:37:29 UTC START s3xz3_rand d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/s3xz3.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/s3xz3_rand -a -r
+2026-11-25 10:37:30 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/s3xz3.grp n=18 |H|=216 (Automorphismen 12) mit rand d=8: klassen 894, ueberlebende 0, beste obere schranke u_max 4 (171 vertreter), zeit 0.3 s, tabu-schritte 877153
+2026-11-25 10:37:30 UTC   verteilung u: 0:173 2:550 4:171
+2026-11-25 10:37:30 UTC ERGEBNIS s3xz3_rand d=8: Überlebende 0, u_max 4 (171 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 4 (Vertreter ['3']) = u_max, also beste Diskrepanz aller Klassen genau 4; Laufzeit 0 s
+2026-11-25 10:37:30 UTC START z3z3_z2_rand d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z3z3_z2.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/z3z3_z2_rand -a -r
+2026-11-25 10:37:30 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z3z3_z2.grp n=18 |H|=7776 (Automorphismen 432) mit rand d=8: klassen 94, ueberlebende 0, beste obere schranke u_max 4 (14 vertreter), zeit 0.1 s, tabu-schritte 90893
+2026-11-25 10:37:30 UTC   verteilung u: 0:19 2:61 4:14
+2026-11-25 10:37:30 UTC ERGEBNIS z3z3_z2_rand d=8: Überlebende 0, u_max 4 (14 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 4 (Vertreter ['3']) = u_max, also beste Diskrepanz aller Klassen genau 4; Laufzeit 0 s
+2026-11-25 10:37:30 UTC START z2xz10 d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z2xz10.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/z2xz10 -a
+2026-11-25 10:37:30 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z2xz10.grp n=20 |H|=480 (Automorphismen 24) d=8: klassen 1455, ueberlebende 0, beste obere schranke u_max 6 (2 vertreter), zeit 0.4 s, tabu-schritte 1030952
+2026-11-25 10:37:30 UTC   verteilung u: 0:627 2:705 4:121 6:2
+2026-11-25 10:37:30 UTC ERGEBNIS z2xz10 d=8: Überlebende 0, u_max 6 (2 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 6 (Vertreter ['d35']) = u_max, also beste Diskrepanz aller Klassen genau 6; Laufzeit 0 s
+2026-11-25 10:37:30 UTC START d10 d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/d10.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/d10 -a
+2026-11-25 10:37:30 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/d10.grp n=20 |H|=800 (Automorphismen 40) d=8: klassen 949, ueberlebende 0, beste obere schranke u_max 6 (1 vertreter), zeit 0.2 s, tabu-schritte 664869
+2026-11-25 10:37:30 UTC   verteilung u: 0:423 2:477 4:48 6:1
+2026-11-25 10:37:30 UTC ERGEBNIS d10 d=8: Überlebende 0, u_max 6 (1 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 6 (Vertreter ['845d']) = u_max, also beste Diskrepanz aller Klassen genau 6; Laufzeit 0 s
+2026-11-25 10:37:30 UTC START dic5 d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/dic5.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/dic5 -a
+2026-11-25 10:37:31 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/dic5.grp n=20 |H|=800 (Automorphismen 40) d=8: klassen 949, ueberlebende 0, beste obere schranke u_max 6 (1 vertreter), zeit 0.2 s, tabu-schritte 747137
+2026-11-25 10:37:31 UTC   verteilung u: 0:346 2:505 4:97 6:1
+2026-11-25 10:37:31 UTC ERGEBNIS dic5 d=8: Überlebende 0, u_max 6 (1 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 6 (Vertreter ['845d']) = u_max, also beste Diskrepanz aller Klassen genau 6; Laufzeit 0 s
+2026-11-25 10:37:31 UTC START f20 d=8: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/f20.grp 8 -o /home/user/spencer-discrepancy-search/runs/gruppen/f20 -a
+2026-11-25 10:37:31 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/f20.grp n=20 |H|=400 (Automorphismen 20) d=8: klassen 1504, ueberlebende 0, beste obere schranke u_max 6 (1 vertreter), zeit 0.5 s, tabu-schritte 1263740
+2026-11-25 10:37:31 UTC   verteilung u: 0:479 2:892 4:132 6:1
+2026-11-25 10:37:31 UTC ERGEBNIS f20 d=8: Überlebende 0, u_max 6 (1 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 6 (Vertreter ['843e']) = u_max, also beste Diskrepanz aller Klassen genau 6; Laufzeit 0 s
+2026-11-25 10:37:31 UTC START f21 d=9: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/f21.grp 9 -o /home/user/spencer-discrepancy-search/runs/gruppen/f21 -a
+2026-11-25 10:37:32 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/f21.grp n=21 |H|=882 (Automorphismen 42) d=9: klassen 1352, ueberlebende 0, beste obere schranke u_max 5 (224 vertreter), zeit 0.7 s, tabu-schritte 1677046
+2026-11-25 10:37:32 UTC   verteilung u: 1:406 3:722 5:224
+2026-11-25 10:37:32 UTC ERGEBNIS f21 d=9: Überlebende 0, u_max 5 (224 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 5 (Vertreter ['b']) = u_max, also beste Diskrepanz aller Klassen genau 5; Laufzeit 1 s
+2026-11-25 10:37:32 UTC START f21_rand d=9: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/f21.grp 9 -o /home/user/spencer-discrepancy-search/runs/gruppen/f21_rand -a -r
+2026-11-25 10:37:33 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/f21.grp n=21 |H|=882 (Automorphismen 42) mit rand d=9: klassen 1352, ueberlebende 0, beste obere schranke u_max 7 (2 vertreter), zeit 0.8 s, tabu-schritte 1634173
+2026-11-25 10:37:33 UTC   verteilung u: 1:1 3:636 5:713 7:2
+2026-11-25 10:37:33 UTC ERGEBNIS f21_rand d=9: Überlebende 0, u_max 7 (2 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 7 (Vertreter ['45d8']) = u_max, also beste Diskrepanz aller Klassen genau 7; Laufzeit 1 s
+2026-11-25 10:37:33 UTC START z5xz5 d=9: /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z5xz5.grp 9 -o /home/user/spencer-discrepancy-search/runs/gruppen/z5xz5 -a
+2026-11-25 10:37:34 UTC   gruppe /home/user/spencer-discrepancy-search/runs/gruppen/tafeln/z5xz5.grp n=25 |H|=12000 (Automorphismen 480) d=9: klassen 1662, ueberlebende 0, beste obere schranke u_max 7 (4 vertreter), zeit 1.1 s, tabu-schritte 2084330
+2026-11-25 10:37:34 UTC   verteilung u: 1:517 3:669 5:472 7:4
+2026-11-25 10:37:34 UTC ERGEBNIS z5xz5 d=9: Überlebende 0, u_max 7 (4 Vertreter), exakt geprüft 2, größte exakte Diskrepanz darunter 7 (Vertreter ['8d2f']) = u_max, also beste Diskrepanz aller Klassen genau 7; Laufzeit 1 s
