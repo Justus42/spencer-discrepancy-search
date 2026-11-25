@@ -1,0 +1,18 @@
+Start aus runs/spann/start/h13_ohne0.txt: 23 Elemente, Kosten 1297
+Problem runs/spann/probleme/h13.txt: |G|=2048, Nebenklassen 256, Punkte 524288, k=23, seed 1, Zeit 900 s; Startkosten 1297
+  60 s: Schritte 23488, Kosten 3606, beste 1058
+  120 s: Schritte 47296, Kosten 3788, beste 1058
+  180 s: Schritte 71040, Kosten 3636, beste 1027
+  240 s: Schritte 94080, Kosten 3484, beste 1027
+  300 s: Schritte 117120, Kosten 3110, beste 945
+  361 s: Schritte 141376, Kosten 1733, beste 945
+  421 s: Schritte 164992, Kosten 2699, beste 945
+  481 s: Schritte 187456, Kosten 4195, beste 945
+  541 s: Schritte 209408, Kosten 2468, beste 945
+  601 s: Schritte 232640, Kosten 2549, beste 945
+  661 s: Schritte 257280, Kosten 3475, beste 945
+  721 s: Schritte 281792, Kosten 3851, beste 945
+  781 s: Schritte 306560, Kosten 4298, beste 945
+  841 s: Schritte 330880, Kosten 4168, beste 945
+ENDE: Kosten 3344, beste 945, Schritte 354560, 900.2 s
+BESTE 945 offen: 1449 1776 16 914 453 1335 1228 99 1866 1540 1695 1398 440 892 686 1247 270 166 963 1579 25 637 1829

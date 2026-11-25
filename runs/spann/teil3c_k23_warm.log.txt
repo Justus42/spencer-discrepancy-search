@@ -1,0 +1,8 @@
+teil3_h13_k23_wh13_ohne2.log.txt: ENDE: Kosten 4101, beste 989, Schritte 355776, 900.0 s
+teil3_h13_k23_wh13_ohne1.log.txt: ENDE: Kosten 3089, beste 955, Schritte 354240, 900.0 s
+teil3_h13_k23_wh13_ohne3.log.txt: ENDE: Kosten 3891, beste 916, Schritte 356544, 900.1 s
+teil3_h13_k23_wh13_ohne0.log.txt: ENDE: Kosten 3344, beste 945, Schritte 354560, 900.2 s
+teil3_h13_k23_wh13_P2.log.txt: ENDE: Kosten 3525, beste 970, Schritte 365376, 900.0 s
+teil3_h13_k23_wh13_P0.log.txt: ENDE: Kosten 1772, beste 926, Schritte 364096, 900.1 s
+teil3_h13_k23_wh13_P1.log.txt: ENDE: Kosten 3468, beste 952, Schritte 365760, 900.1 s
+teil3_h13_k23_wh13_P3.log.txt: ENDE: Kosten 4419, beste 942, Schritte 363520, 900.2 s
