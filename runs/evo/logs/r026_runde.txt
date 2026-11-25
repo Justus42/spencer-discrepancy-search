@@ -1,0 +1,6 @@
+2026-11-25 21:23:09 UTC  Runde 26  p016 (Elter p007, Insel B)  m=15 R=4 Paare=15  Startwerte: 1 2 3 4  je 300 s
+  Startwert 1: offen=707  (300 s)   [Selbstauskunft: ENDE best=707 it=3381248 t_best=0.0 t=300.0 bumps=741065 neustarts=9]
+  Startwert 2: offen=707  (300 s)   [Selbstauskunft: ENDE best=707 it=3446016 t_best=0.0 t=300.0 bumps=750659 neustarts=9]
+  Startwert 3: offen=707  (300 s)   [Selbstauskunft: ENDE best=707 it=3365632 t_best=0.0 t=300.0 bumps=735639 neustarts=9]
+  Startwert 4: offen=707  (300 s)   [Selbstauskunft: ENDE best=707 it=3369728 t_best=0.0 t=300.0 bumps=734473 neustarts=9]
+2026-11-25 21:28:09 UTC  Runde 26 fertig

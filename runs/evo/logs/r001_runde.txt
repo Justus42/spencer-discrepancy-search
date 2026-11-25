@@ -1,0 +1,8 @@
+2026-11-25 17:21:27 UTC  Runde 1  p001 (Elter -, Insel A)  m=15 R=4 Paare=16  Startwerte: 1 2 3 4  je 300 s
+  Startwert 1: offen=0  (41 s)   [Selbstauskunft: ENDE best=0 it=736047 t_best=41.3 t=41.3]
+  Startwert 2: offen=0  (0 s)   [Selbstauskunft: ENDE best=0 it=4082 t_best=0.3 t=0.3]
+  Startwert 3: offen=0  (37 s)   [Selbstauskunft: ENDE best=0 it=667401 t_best=36.6 t=36.6]
+  Startwert 4: offen=0  (12 s)   [Selbstauskunft: ENDE best=0 it=211198 t_best=12.3 t=12.3]
+2026-11-25 17:22:09 UTC  Runde 1 fertig
+
+[exited with code 1]

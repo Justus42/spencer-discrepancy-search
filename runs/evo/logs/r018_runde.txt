@@ -1,0 +1,6 @@
+2026-11-25 20:04:44 UTC  Runde 18  p016 (Elter p007, Insel B)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=1241  (600 s)   [Selbstauskunft: ENDE best=1241 it=935168 t_best=477.0 t=600.0 bumps=333467 neustarts=15]
+  Startwert 2: offen=1241  (600 s)   [Selbstauskunft: ENDE best=1241 it=938752 t_best=594.4 t=600.1 bumps=336628 neustarts=15]
+  Startwert 3: offen=1241  (600 s)   [Selbstauskunft: ENDE best=1241 it=942336 t_best=587.1 t=600.1 bumps=335961 neustarts=15]
+  Startwert 4: offen=1241  (600 s)   [Selbstauskunft: ENDE best=1241 it=932864 t_best=186.8 t=600.0 bumps=327425 neustarts=16]
+2026-11-25 20:14:44 UTC  Runde 18 fertig

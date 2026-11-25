@@ -1,0 +1,6 @@
+2026-11-25 19:07:43 UTC  Runde 12  p011 (Elter p009, Insel S)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=1129  (600 s)   [Selbstauskunft: ENDE best=1129 it=960512 t_best=96.1 t=600.1 bumps=405441 neustarts=12]
+  Startwert 2: offen=1217  (600 s)   [Selbstauskunft: ENDE best=1217 it=944896 t_best=529.0 t=600.0 bumps=404876 neustarts=8]
+  Startwert 3: offen=1139  (600 s)   [Selbstauskunft: ENDE best=1139 it=956160 t_best=50.7 t=600.1 bumps=402118 neustarts=12]
+  Startwert 4: offen=1271  (600 s)   [Selbstauskunft: ENDE best=1271 it=960000 t_best=342.4 t=600.1 bumps=403356 neustarts=12]
+2026-11-25 19:17:43 UTC  Runde 12 fertig

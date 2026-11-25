@@ -1,0 +1,6 @@
+2026-11-25 19:18:04 UTC  Runde 13  p012 (Elter p011, Insel S)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=1120  (600 s)   [Selbstauskunft: ENDE best=1120 it=974336 t_best=272.7 t=600.1 bumps=409046 neustarts=13]
+  Startwert 2: offen=1240  (600 s)   [Selbstauskunft: ENDE best=1240 it=967168 t_best=246.2 t=600.1 bumps=413599 neustarts=9]
+  Startwert 3: offen=935  (600 s)   [Selbstauskunft: ENDE best=935 it=966656 t_best=473.2 t=600.1 bumps=401686 neustarts=15]
+  Startwert 4: offen=1091  (600 s)   [Selbstauskunft: ENDE best=1091 it=982528 t_best=552.5 t=600.1 bumps=417138 neustarts=10]
+2026-11-25 19:28:04 UTC  Runde 13 fertig

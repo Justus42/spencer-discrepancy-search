@@ -1,0 +1,6 @@
+2026-11-25 17:23:24 UTC  Runde 2  p002 (Elter p001, Insel A)  m=20 R=6 Paare=24  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=115  (600 s)   [Selbstauskunft: ENDE best=115 it=828928 t_best=45.5 t=600.1]
+  Startwert 2: offen=673  (600 s)   [Selbstauskunft: ENDE best=673 it=827136 t_best=134.4 t=600.1]
+  Startwert 3: offen=122  (600 s)   [Selbstauskunft: ENDE best=122 it=833024 t_best=29.4 t=600.0]
+  Startwert 4: offen=431  (600 s)   [Selbstauskunft: ENDE best=431 it=833792 t_best=108.3 t=600.1]
+2026-11-25 17:33:25 UTC  Runde 2 fertig

@@ -1,0 +1,6 @@
+2026-11-25 17:34:28 UTC  Runde 3  p003 (Elter p001, Insel A)  m=20 R=6 Paare=24  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=712  (600 s)   [Selbstauskunft: ENDE best=712 it=1572608 t_best=112.8 t=600.1]
+  Startwert 2: offen=152  (600 s)   [Selbstauskunft: ENDE best=152 it=1574656 t_best=75.5 t=600.0]
+  Startwert 3: offen=672  (600 s)   [Selbstauskunft: ENDE best=672 it=1606400 t_best=427.2 t=600.1]
+  Startwert 4: offen=665  (600 s)   [Selbstauskunft: ENDE best=665 it=1630976 t_best=347.4 t=600.0]
+2026-11-25 17:44:28 UTC  Runde 3 fertig

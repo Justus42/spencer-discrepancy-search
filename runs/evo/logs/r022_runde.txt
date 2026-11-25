@@ -1,0 +1,6 @@
+2026-11-25 20:41:36 UTC  Runde 22  p019 (Elter p018, Insel A)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=707  (600 s)   [Selbstauskunft: ENDE best=707 it=1187840 t_best=339.2 t=600.1 bumps=442513 neustarts=7]
+  Startwert 2: offen=709  (600 s)   [Selbstauskunft: ENDE best=709 it=1193216 t_best=509.9 t=600.1 bumps=473770 neustarts=5]
+  Startwert 3: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1157632 t_best=170.6 t=600.0 bumps=436012 neustarts=7]
+  Startwert 4: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1175552 t_best=63.5 t=600.0 bumps=419034 neustarts=8]
+2026-11-25 20:51:36 UTC  Runde 22 fertig

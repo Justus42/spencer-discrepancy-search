@@ -1,0 +1,6 @@
+2026-11-25 20:36:07 UTC  Runde 21  p018 (Elter p017, Insel A)  m=15 R=4 Paare=15  Startwerte: 1 2 3 4  je 300 s
+  Startwert 1: offen=233  (300 s)   [Selbstauskunft: ENDE best=233 it=6339328 t_best=0.1 t=300.0 bumps=3277689 neustarts=0]
+  Startwert 2: offen=233  (300 s)   [Selbstauskunft: ENDE best=233 it=6405120 t_best=0.2 t=300.0 bumps=3310232 neustarts=0]
+  Startwert 3: offen=233  (300 s)   [Selbstauskunft: ENDE best=233 it=6347264 t_best=0.1 t=300.0 bumps=3280760 neustarts=0]
+  Startwert 4: offen=233  (300 s)   [Selbstauskunft: ENDE best=233 it=6250240 t_best=0.2 t=300.0 bumps=3233855 neustarts=0]
+2026-11-25 20:41:07 UTC  Runde 21 fertig
