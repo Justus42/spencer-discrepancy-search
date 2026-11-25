@@ -1,0 +1,14 @@
+Woerter: 48
+Elemente gelesen: 576
+alle Elemente erhalten die 48 Woerter: ja
+abgeschlossen unter Verkettung (alle 576^2 Produkte): ja
+Gruppenordnung: 576
+Elementordnungen: 1:1 2:87 3:8 4:216 6:120 8:144
+Elemente der Ordnung 3 oder 9: 8 (davon Ordnung 9: 0)
+{1} + diese Elemente: 9 Elemente, abgeschlossen: True
+genau eine Untergruppe der Ordnung 9; zyklisch: False
+P Normalteiler in G: True
+Paare: 524288
+Bahnen nach Groesse: 1:8 3:160 9:58200  zusammen 58368
+48er: 24 Zeilenpaare in 8 Bahnen, Groessen [3, 3, 3, 3, 3, 3, 3, 3], Bahnen ganz enthalten: True
+Ueberdeckungsradius (max min Abstand ueber alle 2^20 Punkte): 6
