@@ -107,3 +107,7 @@ Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
 27	p023	p016	B	20	6	23	2	600	1310	Ziel 23 Paare, Doppelungsform 12+8, volle Nachbarschaft, Neustart vom Bestpunkt
 27	p023	p016	B	20	6	23	3	600	1310	Ziel 23 Paare, Doppelungsform 12+8, volle Nachbarschaft, Neustart vom Bestpunkt
 27	p023	p016	B	20	6	23	4	600	1310	Ziel 23 Paare, Doppelungsform 12+8, volle Nachbarschaft, Neustart vom Bestpunkt
+28	p024	p022	S	20	6	23	1	600	704	Ziel 23 Paare, Saat, volle Nachbarschaft, Doppelzuege mit Vorausschau (2 %)
+28	p024	p022	S	20	6	23	2	600	704	Ziel 23 Paare, Saat, volle Nachbarschaft, Doppelzuege mit Vorausschau (2 %)
+28	p024	p022	S	20	6	23	3	600	704	Ziel 23 Paare, Saat, volle Nachbarschaft, Doppelzuege mit Vorausschau (2 %)
+28	p024	p022	S	20	6	23	4	600	704	Ziel 23 Paare, Saat, volle Nachbarschaft, Doppelzuege mit Vorausschau (2 %)

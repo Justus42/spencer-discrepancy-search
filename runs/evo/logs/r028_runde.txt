@@ -1,0 +1,6 @@
+2026-11-25 21:39:25 UTC  Runde 28  p024 (Elter p022, Insel S)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1059072 t_best=243.8 t=600.0 bumps=499695 neustarts=0 doppelzuege=7066]
+  Startwert 2: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1060352 t_best=325.9 t=600.0 bumps=500687 neustarts=0 doppelzuege=7179]
+  Startwert 3: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1080320 t_best=344.5 t=600.1 bumps=510048 neustarts=0 doppelzuege=7165]
+  Startwert 4: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1049856 t_best=510.1 t=600.1 bumps=494940 neustarts=0 doppelzuege=6943]
+2026-11-25 21:49:25 UTC  Runde 28 fertig
