@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 25.11.2026 (nach Bahnen unter der 3-Sylowgruppe des 48ers). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 25.11.2026 (nach Gegenrechnung (15,4) unter Symmetrie). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 Vollständige frühere Fassung: `notes/verlauf/STATUS_2026-11-24_vollstaendig.md` (Archiv, eingefroren). Übersicht Familien x N:
 `LANDKARTE.md`. Arbeitsregeln: `CLAUDE.md`. Herkunft externer Dateien: `controls/QUELLEN.md`. Laufprotokolle: `notes/laeufe/`.
 Fundstellen in den Tabellen: „A: …“ = Überschrift im Archiv, „L: …“ = `notes/laeufe/…`, „K“ = `LANDKARTE.md`,
@@ -112,6 +112,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Nebenklassen-Suche d=2, (21,6) | Kontrolle 64 Wörter nicht erreicht (0 von 12) | Suche | A: Rundgang Nebenklassen-Suche |
 | Nebenklassen-Suche d=2, (23,7) | 60 Wörter nicht erreicht (0 von 8) | Suche | A: Rundgang Nebenklassen-Suche |
 | Freie Suche (15,4) mit 30 Wörtern | bleibt bei 466 offenen Punkten | Suche | A: Ziele; A: Fehlversuche |
+| (15,4) mit 30 Wörtern: Symmetrie der Ordnung 7 (Typ 7+7+1), 11 (Typ 11+1⁴), 13 (Typ 13+1+1) | keine; Ordnung 7 mit 32 Wörtern: 112 Lösungen (2 Klassen); `ctrl_16` ohne eine Zeile: immer 466 offen | voll (zwei unabhängige Programme, direkt nachgerechnet) | L: 2026-11-25_gegenrechnung15 |
 
 ## Fehlversuche
 
@@ -162,8 +163,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - Meldung von K(20,6) ≤ 48 (und der Familie): Entscheidung am 27.11.2026 (`notes/zweitmeinung_2026-11-24_auftrag.md`).
 - Satz von Kleitman: Zitat belegt (D. J. Kleitman, „On a combinatorial conjecture of Erdős“, J. Combin. Theory 1 (1966), 209–214;
   zwei unabhängige Fundstellen, 24.11.2026), Volltext nicht eingesehen (`notes/recherche_2026-11-24_pruefvermerk.md`, A1).
-- Zählungen des Orchestrators zu (15,4) nicht gegengerechnet: keine 30 Wörter unter Symmetrie der Ordnung 7 (Typ 7+7+1), 11, 13;
-  `ctrl_16` ohne eine Zeile lässt immer 466 Punkte offen (`notes/orchestrator/2026-11-24_abend/README.md`).
+- Unter den 112 Lösungen zu (15,4), Ordnung 7, 32 Wörter (alle disc 7, 16 x 15) sind 56 zu `ctrl_16` gleichwertig und 56 nicht (zweite Klasse); Hadamard-Klasse der zweiten nicht untersucht (L: 2026-11-25_gegenrechnung15).
 - Verteilte Nullen sind auf Zellen zurückgeführt (Umkodierung nach Sol; n = 11 und n = 14 für alle Zeilen nachgerechnet, n = 17
   Stichprobe): ungerades n gibt die Zelle (n−1, r) mit Paaren, die bis auf eine Koordinate komplementär sind; gerades n die
   selbstkomplementäre Zelle. Die gelockerte Paarbedingung bei (16,4) und (18,5) ist nicht gesucht (Prüfvermerk, Abschnitte I, J).
@@ -195,6 +195,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - `src/pruefe_mckay.py`: Gegenrechnung der 60 McKay-Matrizen. `src/streichtest.py`: Prüfcode, überflüssige Nebenklassen.
 - `src/hadamard_tests.py`: exakte Diskrepanz (Meet-in-the-middle, int8), Kontrollen, Test A/B, Überdeckungsradius, Nachprüfung der Gegenbeispiele für Test C. Kein Suchcode.
 - `src/pruefstand.c`: Gegenbeispielsuche (Teil B). `src/zirkulant.c`, `src/zirkulant_pruef.py`, `src/zirkulant_qualitaet.py`, `src/run_zirkulant.py`: Teil C.
+- `src/gegen15_sym.py`: Prüfcode, Gegenrechnung (15,4) unter Spaltensymmetrie Ordnung 7, 11, 13 (Teil 1–4, Gleichwertigkeit zu `ctrl_16`). Logs `runs/gegenrechnung15/`.
 - `src/pruefe_reell16.py`, `src/dichte_schranke.py`, `src/kleitman_probe.py`: Prüfcode zu Ansatz 4 (Polieren um ctrl_16, Dichteschranke, Kleitman-Probe).
 - `LANDKARTE.md`: Übersicht Familien x N.
 - `src/rundlauf/`: Ansatz 3. `extrahiere.py` (Generatoren aus den Modellantworten), `astra_1..8.py`, `sol_1..8.py` (Modellcode unverändert), `familien.py` (Tabelle, Lader), `zaehle.py` (Zahl/Form), `sieb.py` (Treiber für `pruefstand`, prüft nichts), `pruefe.py` (Nachrechnen mit ganzen Zahlen, exakte Prüfung über `build/exakt_disc`).
