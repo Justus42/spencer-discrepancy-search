@@ -83,3 +83,7 @@ Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
 21	p018	p017	A	15	4	15	2	300	233	Nebenziel (15,4) 15 Paare, Runde 3/5: p018 unveraendert, blind
 21	p018	p017	A	15	4	15	3	300	233	Nebenziel (15,4) 15 Paare, Runde 3/5: p018 unveraendert, blind
 21	p018	p017	A	15	4	15	4	300	233	Nebenziel (15,4) 15 Paare, Runde 3/5: p018 unveraendert, blind
+22	p019	p018	A	20	6	23	1	600	707	Ziel 23 Paare, blind, Neustart nach 60 s: schwaechste Zeile durch WHT-beste ersetzen
+22	p019	p018	A	20	6	23	2	600	709	Ziel 23 Paare, blind, Neustart nach 60 s: schwaechste Zeile durch WHT-beste ersetzen
+22	p019	p018	A	20	6	23	3	600	704	Ziel 23 Paare, blind, Neustart nach 60 s: schwaechste Zeile durch WHT-beste ersetzen
+22	p019	p018	A	20	6	23	4	600	704	Ziel 23 Paare, blind, Neustart nach 60 s: schwaechste Zeile durch WHT-beste ersetzen
