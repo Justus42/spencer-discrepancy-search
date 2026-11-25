@@ -1,0 +1,17 @@
+Problem runs/spann/probleme/h22.txt: |G|=2048, Nebenklassen 256, Punkte 524288, k=23, seed 4, Zeit 900 s; Startkosten 20806
+  60 s: Schritte 25472, Kosten 2903, beste 1059
+  120 s: Schritte 49152, Kosten 2943, beste 999
+  180 s: Schritte 73408, Kosten 4104, beste 999
+  240 s: Schritte 97984, Kosten 3932, beste 999
+  301 s: Schritte 122816, Kosten 3480, beste 999
+  361 s: Schritte 148224, Kosten 3616, beste 969
+  421 s: Schritte 174912, Kosten 2528, beste 969
+  481 s: Schritte 200384, Kosten 3235, beste 969
+  541 s: Schritte 225664, Kosten 3753, beste 969
+  601 s: Schritte 250816, Kosten 3251, beste 912
+  661 s: Schritte 276288, Kosten 2227, beste 912
+  721 s: Schritte 301696, Kosten 3505, beste 912
+  781 s: Schritte 326656, Kosten 3286, beste 912
+  841 s: Schritte 351808, Kosten 2152, beste 912
+ENDE: Kosten 2892, beste 912, Schritte 376320, 900.1 s
+BESTE 912 offen: 1464 1025 141 997 291 460 294 1812 692 1853 1088 633 351 2019 368 1270 410 618 1994 659 1582 1623 1279
