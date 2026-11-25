@@ -1,0 +1,8 @@
+teil3_h13_k24_s1.log.txt: ENDE: Kosten 0, beste 0, Schritte 96, 0.3 s
+teil3_h13_k24_s5.log.txt: ENDE: Kosten 0, beste 0, Schritte 156, 0.3 s
+teil3_h13_k24_s2.log.txt: ENDE: Kosten 0, beste 0, Schritte 343, 0.7 s
+teil3_h13_k24_s3.log.txt: ENDE: Kosten 0, beste 0, Schritte 522, 1.4 s
+teil3_h13_k24_s8.log.txt: ENDE: Kosten 0, beste 0, Schritte 73, 0.1 s
+teil3_h13_k24_s6.log.txt: ENDE: Kosten 0, beste 0, Schritte 514, 1.1 s
+teil3_h13_k24_s4.log.txt: ENDE: Kosten 0, beste 0, Schritte 1149, 2.4 s
+teil3_h13_k24_s7.log.txt: ENDE: Kosten 0, beste 0, Schritte 773, 1.9 s
