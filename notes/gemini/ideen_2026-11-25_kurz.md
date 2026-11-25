@@ -1,7 +1,7 @@
 # Gemini Deep Research vom 25.11.2026: Kurzfassung und Prüfvermerk
 
 Bericht: `notes/gemini/ideen_2026-11-25_deep-research.pdf` (19 Seiten, von Justus um 17:49 Uhr eingereicht). Prompt:
-`notes/gemini/ideen_2026-11-25_deep-research_prompt.md`. Prüfung durch den Orchestrator, 17:49 bis 18:00 Uhr (Zeiten aus `date`).
+`notes/gemini/ideen_2026-11-25_deep-research_prompt.md`. Prüfung durch den Orchestrator, 17:49 bis 17:59 Uhr (Zeiten aus `date`).
 Rechnungen: `notes/orchestrator/2026-11-25_gemini/` (einmal gerechnet, ein Programm, nicht gegengerechnet).
 Regel 4: Was hier nicht als „geprüft“ steht, ist eine Aussage Geminis und unbelegt.
 
