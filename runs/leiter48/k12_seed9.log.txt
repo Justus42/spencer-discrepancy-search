@@ -1,0 +1,33 @@
+Startdatei: None
+m=18 n=20 R=6 K=12 |S|=58402 (0.2228 von 2^m), untere Schranke K>=4.49
+[0s it=0 r=0] unueberdeckt 9577
+[0s it=1 r=0] unueberdeckt 7448
+[0s it=2 r=0] unueberdeckt 4645
+[0s it=3 r=0] unueberdeckt 2603
+[0s it=4 r=0] unueberdeckt 1760
+[0s it=5 r=0] unueberdeckt 1753
+[0s it=6 r=0] unueberdeckt 1653
+[0s it=7 r=0] unueberdeckt 1457
+[0s it=8 r=0] unueberdeckt 1371
+[0s it=11 r=0] unueberdeckt 1360
+[0s it=12 r=0] unueberdeckt 1343
+[0s it=14 r=0] unueberdeckt 1120
+[0s it=15 r=0] unueberdeckt 961
+[0s it=19 r=0] unueberdeckt 828
+[0s it=36 r=0] unueberdeckt 812
+[1s it=108 r=0] unueberdeckt 791
+[1s it=114 r=0] unueberdeckt 739
+[1s it=115 r=0] unueberdeckt 702
+[1s it=116 r=0] unueberdeckt 533
+[1s it=117 r=0] unueberdeckt 328
+[1s it=124 r=0] unueberdeckt 199
+[1s it=126 r=0] unueberdeckt 134
+[2s it=286 r=0] unueberdeckt 100
+[2s it=294 r=0] unueberdeckt 90
+[5s it=1301 r=0] unueberdeckt 84
+[6s it=1577 r=0] unueberdeckt 79
+[19s it=4120 r=0] unueberdeckt 36
+[23s it=4971 r=0] unueberdeckt 31
+[63s it=13129 r=2] unueberdeckt 18
+[900s it=181562 r=31] unueberdeckt 12
+Zeitlimit, best=12, it=362992
