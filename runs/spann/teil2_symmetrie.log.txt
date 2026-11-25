@@ -1,0 +1,19 @@
+runs/spann/probleme/ctrl16_r8.txt: 322560 verschiedene lineare Abbildungen von G (d=7); Bahnen auf G\0 (alle): [7, 21, 35, 64]; mit 12 Erzeugern: [7, 21, 35, 64]
+
+real	0m25.790s
+user	0m25.424s
+sys	0m0.091s
+runs/spann/probleme/l111_r8.txt: 225792 verschiedene lineare Abbildungen von G (d=7); Bahnen auf G\0 (alle): [1, 7, 7, 14, 98]; mit 12 Erzeugern: [1, 7, 7, 14, 98]
+controls/ctrl_16.txt: Erweiterungsrichtungen 127, Bahnen (300 Gruppenelemente): 4
+  Bahn Groesse 1, Vertreter y=40, mu: 28: 28, 32: 35, 37: 1
+  Bahn Groesse 14, Vertreter y=1, mu: 22: 1, 28: 12, 30: 30, 32: 20, 43: 1
+  Bahn Groesse 42, Vertreter y=3, mu: 22: 1, 28: 12, 30: 30, 32: 20, 43: 1
+  Bahn Groesse 70, Vertreter y=7, mu: 24: 1, 28: 12, 30: 32, 32: 18, 45: 1
+runs/gegenrechnung15/loesung111_16x15.txt: Erweiterungsrichtungen 127, Bahnen (300 Gruppenelemente): 5
+  Bahn Groesse 7, Vertreter y=1, mu: 24: 3, 28: 7, 30: 32, 32: 21, 41: 1
+  Bahn Groesse 7, Vertreter y=384, mu: 24: 3, 28: 7, 30: 32, 32: 21, 41: 1
+  Bahn Groesse 8, Vertreter y=128, mu: 27: 14, 31: 49, 44: 1
+  Bahn Groesse 49, Vertreter y=385, mu: 24: 1, 28: 12, 30: 32, 32: 18, 45: 1
+  Bahn Groesse 56, Vertreter y=129, mu: 27: 14, 31: 49, 44: 1
+runs/spann/probleme/ctrl16_r8.gen: 12 Erzeuger geprueft, jeder erhaelt die Musterfamilie (bis auf Translation), 100 Musterklassen
+runs/spann/probleme/l111_r8.gen: 12 Erzeuger geprueft, jeder erhaelt die Musterfamilie (bis auf Translation), 128 Musterklassen
