@@ -1,0 +1,25 @@
+Profil: genau 1 Zeilen mit Traeger 8, 2 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q1s2_T1.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+  0: gleich, d=5, Schnitt 0
+  1: andere, d=4, Schnitt 6
+  2: andere, d=3, Schnitt 12
+  3: gleich, d=3, Schnitt 12
+  4: gleich, d=4, Schnitt 12
+  5: andere, d=2, Schnitt 26
+  6: andere, d=1, Schnitt 40
+  7: gleich, d=1, Schnitt 40
+  8: gleich, d=2, Schnitt 40
+  9: andere, d=0, Schnitt 76
+== Typ 1 (andere Spalte, d=4, Schnitt 6): a = Zeile 5120, Vertreter Zeile 5088
+   Stabilisator {a,b}: 5760 Elemente angewandt (Grenze 200000 je Fall), 1200 Kandidaten, 7 Bahnen
+   dritte Zeile: 7 Bahnvertreter
+   Bahn 0/7 (Profil 1,0): 0 Aufgaben, Zeit bisher 0.6 s
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:7; max. Tiefe 3; Zeit 0.6 s
+   Typ 1: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 1.6 s

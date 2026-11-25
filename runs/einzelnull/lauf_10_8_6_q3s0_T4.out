@@ -1,0 +1,53 @@
+Profil: genau 3 Zeilen mit Traeger 8, 0 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q3s0_T4.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+  0: gleich, d=5, Schnitt 0
+  1: andere, d=4, Schnitt 6
+  2: andere, d=3, Schnitt 12
+  3: gleich, d=3, Schnitt 12
+  4: gleich, d=4, Schnitt 12
+  5: andere, d=2, Schnitt 26
+  6: andere, d=1, Schnitt 40
+  7: gleich, d=1, Schnitt 40
+  8: gleich, d=2, Schnitt 40
+  9: andere, d=0, Schnitt 76
+== Typ 4 (gleiche Spalte, d=4, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5600
+   Stabilisator {a,b}: 8000 Elemente angewandt (Grenze 4000 je Fall), 3806 Kandidaten, 12 Bahnen
+   dritte Zeile: 12 Bahnvertreter
+   [4 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 230636, zuletzt Nr. 1
+   Bahn 0/12 (Profil 0,0): 230636 Aufgaben, Zeit bisher 21.6 s
+   Bahn 1/12 (Profil 1,1): 570841 Aufgaben, Zeit bisher 63.5 s
+   [67 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 802529, zuletzt Nr. 33554432
+   Bahn 2/12 (Profil 1,1): 802529 Aufgaben, Zeit bisher 125.5 s
+   [128 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 571722, zuletzt Nr. 50331648
+   Bahn 3/12 (Profil 2,1): 571722 Aufgaben, Zeit bisher 185.9 s
+   [188 s] Aufgaben erledigt (dieser Lauf) 4586, insgesamt 4586 von 299426, zuletzt Nr. 67113449
+   Bahn 4/12 (Profil 2,1): 299426 Aufgaben, Zeit bisher 211.0 s
+   Bahn 6/12 (Profil 2,2): 348091 Aufgaben, Zeit bisher 239.3 s
+   [248 s] Aufgaben erledigt (dieser Lauf) 16485, insgesamt 16485 von 1939270, zuletzt Nr. 167788644
+   [308 s] Aufgaben erledigt (dieser Lauf) 354755, insgesamt 354755 von 1939270, zuletzt Nr. 168126912
+   [368 s] Aufgaben erledigt (dieser Lauf) 401346, insgesamt 401346 von 1939270, zuletzt Nr. 168173505
+   [428 s] Aufgaben erledigt (dieser Lauf) 856387, insgesamt 856387 von 1939270, zuletzt Nr. 168628546
+   [488 s] Aufgaben erledigt (dieser Lauf) 1316495, insgesamt 1316495 von 1939270, zuletzt Nr. 169088654
+   [548 s] Aufgaben erledigt (dieser Lauf) 1896483, insgesamt 1896483 von 1939270, zuletzt Nr. 169668620
+   Bahn 10/12 (Profil 4,4): 1939270 Aufgaben, Zeit bisher 550.8 s
+   [608 s] Aufgaben erledigt (dieser Lauf) 197904, insgesamt 197904 von 2137746, zuletzt Nr. 184747279
+   [668 s] Aufgaben erledigt (dieser Lauf) 209494, insgesamt 209494 von 2137746, zuletzt Nr. 184758869
+   [728 s] Aufgaben erledigt (dieser Lauf) 274022, insgesamt 274022 von 2137746, zuletzt Nr. 184823400
+   [788 s] Aufgaben erledigt (dieser Lauf) 360063, insgesamt 360063 von 2137746, zuletzt Nr. 184909438
+   [848 s] Aufgaben erledigt (dieser Lauf) 373526, insgesamt 373526 von 2137746, zuletzt Nr. 184922902
+   [909 s] Aufgaben erledigt (dieser Lauf) 410738, insgesamt 410738 von 2137746, zuletzt Nr. 184960116
+   [969 s] Aufgaben erledigt (dieser Lauf) 436946, insgesamt 436946 von 2137746, zuletzt Nr. 184986321
+   [1029 s] Aufgaben erledigt (dieser Lauf) 613138, insgesamt 613138 von 2137746, zuletzt Nr. 185162513
+   [1089 s] Aufgaben erledigt (dieser Lauf) 717555, insgesamt 717555 von 2137746, zuletzt Nr. 185266933
+   [1149 s] Aufgaben erledigt (dieser Lauf) 774998, insgesamt 774998 von 2137746, zuletzt Nr. 185324375
+   [1209 s] Aufgaben erledigt (dieser Lauf) 846820, insgesamt 846820 von 2137746, zuletzt Nr. 185396195
+   Bahn 11/12 (Profil 4,4): 2137746 Aufgaben, Zeit bisher 1258.3 s
+   Aufgaben (Tiefe 5): 6900261 gesamt, 5641619 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+   Knoten je Tiefe: 3:12 4:15359 5:5641623 6:33817950; max. Tiefe 6; Zeit 1258.3 s
+   Typ 4: NICHT fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), ABBRUCH (Zeit), Gesamtzeit 1259.1 s

@@ -103,7 +103,9 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Bahnen unter der 3-Sylowgruppe P (Ordnung 9) des 48ers, n=20, R=6 | Minimum 48 Wörter (≤ 46 ausgeschlossen); nur Größe 1/3: 19 008 Lösungen | voll | L: 2026-11-25_bahnen3 |
 | Bahnen unter einem Element der Ordnung 3 des 48ers, n=20, R=6 | Tabu-Kontrolle 48 Wörter nicht bestanden (1/4, 0/4), < 48 ungeprüft | Suche | L: 2026-11-25_bahnen3 |
 | Zeilen mit genau einer Null, n = 11, 11 Zeilen (Einträge {-1,0,1}) | disc 6 unmöglich (Rekord 1,809 ausgeschlossen); nur {-1,0,1}, nicht reell | voll | L: 2026-11-25_einzelnull |
-| Zeilen mit Träger 10, 8, 6 gemischt, n = 11 | disc 6 nicht gefunden, nur Typ 0 vollständig | Suche | L: 2026-11-25_einzelnull |
+| Zeilen mit genau einer Null, n = 11: Umkodierung auf zwei Radius-2-Kugeln im 10-Würfel nachgerechnet (5632 Zeilen, 0 Abw.) | Ausschluss auch über K(10,2) ≥ 24 | voll (Tabelle) | L: 2026-11-25_einzelnull |
+| Träger 10/8/6 gemischt, n = 11, Profile (q,s) mit Budget ≤ 48: (5,0) (4,0) (3,1) (2,1) (1,2) (0,2) | keine Lösung | voll | L: 2026-11-25_einzelnull |
+| Träger 10/8/6 gemischt, Profile (3,0) (2,0) (1,1) (1,0) (0,1) | nichts gefunden, (3,0) Typen 0–3 voll, Rest offen | Suche | L: 2026-11-25_einzelnull |
 | Selbstkomplementäre Codes (13,3) (= n = 14 mit einer Null je Zeile, P1 bestätigt) | 42 Wörter gefunden, 40 nicht (4 x 10 Min.) | Suche | L: 2026-11-25_einzelnull |
 | Rundlauf Ansatz 3 (16 Familien, 388 503 Matrizen) | 0 Überlebende, bester Quotient 1,400 | Gegenbeispiel | L: 2026-11-24_rundlauf; A: Ansatz 3 |
 | Reelle Einträge um `ctrl_16` (Zeilen im L1-Abstand ≤ 2) | nichts über 7 | voll | L: 2026-11-24_reell16 |
@@ -174,7 +176,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - n=25 unter 5er-Symmetrie nicht gestartet (L: 2026-11-24_bahnen5).
 - Vollständige Aufzählung K=4 bei n=20 (ca. 280 CPU-h) nicht gestartet (L: 2026-11-24_bahnen5).
 - Variante mit 3 vollen Bahnen plus 5 festen Paaren ungeprüft (A: Fehlversuche).
-- n = 11 gemischt (Träger 8/6): erst die ≤ 5 Zeilen mit Träger 8/6 als Bahnvertreter festlegen, dann Träger 10 (L: 2026-11-25_einzelnull).
+- n = 11 gemischt: Profile (3,0) ab Typ 4, (2,0), (1,1), (1,0), (0,1) offen; Fortsetzung `bash src/run_profile.sh SEK` (L: 2026-11-25_einzelnull).
 - Nächster Schritt: Ideensammlung (Literatur, Methodentransfer).
 
 ## Prüfrahmen
