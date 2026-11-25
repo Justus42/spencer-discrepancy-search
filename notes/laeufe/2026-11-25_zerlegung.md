@@ -120,3 +120,26 @@ Ergänzt: `--neustart R` = neuer Zufallsstart nach R Runden ohne Verbesserung. T
 `pruefe_matrix.py`: check_disc, verify_spencer, exakt_disc je **Diskrepanz 8** (`runs/zerlegung/k3_pruefe.log.txt`). Fingerabdruck
 (Abstandsprofile der 48 Wörter, Beträge der Zeilen-Skalarprodukte 0:108, 2:144, 4:24) gleich dem von 1+3 und 2+2; er trennt diese beiden
 nicht, Gleichwertigkeit der acht Treffer also offen. **K3 bestanden.** Schritt 4 beginnt.
+
+## Schritt 4: Ziele, `bash src/run_zerl_ziel.sh PRAEFIX K d SEK TYPEN…` (je Typ 4 Startwerte parallel, `--neustart 20`, Commit nach jedem Block)
+
+### (a) d = 8, K = 11 (44 Wörter, Zelle (20,6)), Typen (11,9), (13,7), (10,10), (12,8); 60 Min.
+
+K = 12-Probe je Typ (1 Startwert, ≤ 300 s, 18:30–18:35 UTC, `runs/zerlegung/a_k12.log.txt`): (10,10) **gelöst** nach 38,8 s (2 Neustarts;
+`pruefe_matrix.py` 8/8/8; das ist der Typ der 2+2-Doppelung); (12,8) Restzahl 180; (13,7) Restzahl 290 (je 300 s, nicht gelöst).
+
+| Typ | Block (UTC) | je Startwert | Ergebnis K = 11 | beste Restzahl (von 262 144) |
+|---|---|---|---|---|
+| (11,9) | 18:35–18:48 | 810 s, ca. 257 000 Iterationen, 27 Neustarts | nicht gelöst (0 von 4) | **1288** (alle vier Startwerte gleich) |
+| (13,7) | 18:48–19:02 | 810 s, ca. 206 000 Iterationen, 28 Neustarts | nicht gelöst (0 von 4) | **2698** (alle vier gleich) |
+| (10,10) | 19:03–19:16 | 810 s, ca. 304 000 Iterationen, 40 Neustarts | nicht gelöst (0 von 4) | **1063** (drei Startwerte; vierter 1116) |
+| (12,8) | 19:16–19:30 | 810 s, ca. 111 000 Iterationen, 13 Neustarts | nicht gelöst (0 von 4) | **1836** (alle vier gleich) |
+
+Ergebnis (a): **kein Code mit 44 Wörtern** in der Familie gefunden (Belegart: Suche erfolglos). Gleiche Restzahl über alle Startwerte deutet auf
+ein festes bestes Minimum der Suche je Typ hin. Der 1288-Zustand bei (11,9) ist kein Beinahe-Treffer (303 verschiedene offene y, 136 offene z).
+Rechenzeit (a): 5 + 4 · 13,5 = 59 Min.
+
+### (b) d = 8, K = 10 (40 Wörter, Rekord), dieselben Typen; gekürzt auf 20 Min.
+
+Begründung der Kürzung: Jede Lösung mit K = 10 gibt durch eine beliebige elfte Nebenklasse eine Lösung mit K = 11; die ist in (a) in keinem Typ
+gefunden. Daher je Typ nur 4 Startwerte zu 300 s.
