@@ -1,0 +1,8 @@
+a_k11_t12-8 seed 1: ZEITGRENZE nach 810.0 s, beste Restzahl 1836, 112967 Iterationen, 346 Runden, 13 Neustarts
+runs/zerlegung/a_k11_t12-8_seed1.paar.txt: K=11, Typ (12,8), d=8: offene Klassen 1836 von 262144
+a_k11_t12-8 seed 2: ZEITGRENZE nach 810.1 s, beste Restzahl 1836, 108640 Iterationen, 338 Runden, 13 Neustarts
+runs/zerlegung/a_k11_t12-8_seed2.paar.txt: K=11, Typ (12,8), d=8: offene Klassen 1836 von 262144
+a_k11_t12-8 seed 3: ZEITGRENZE nach 810.1 s, beste Restzahl 1836, 111738 Iterationen, 339 Runden, 12 Neustarts
+runs/zerlegung/a_k11_t12-8_seed3.paar.txt: K=11, Typ (12,8), d=8: offene Klassen 1836 von 262144
+a_k11_t12-8 seed 4: ZEITGRENZE nach 810.1 s, beste Restzahl 1836, 109704 Iterationen, 335 Runden, 13 Neustarts
+runs/zerlegung/a_k11_t12-8_seed4.paar.txt: K=11, Typ (12,8), d=8: offene Klassen 1836 von 262144
