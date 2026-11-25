@@ -170,7 +170,7 @@ Spalte (alle ±1): dieselbe Restzahl 1760 wie die lokale Suche in Schritt 2 (Pal
 Suche läuft also von selbst in die Paley-Struktur; die liegt bei d = 9 weit von einer Überdeckung.
 
 Abgleich: alle 56 Läufe aus Schritt 4 (Einzellogs je Typ) – beste Restzahl der Suche gleich der Nachzählung mit `zerl_offen.py`, 0 Abweichungen
-(`runs/zerlegung/abgleich_restzahlen.log.txt`). `sha256sum -c verifiers/SHA256SUMS` am Ende (20:52 UTC): alle drei OK (`runs/zerlegung/sha256_ende.log.txt`).
+(`runs/zerlegung/abgleich_restzahlen.log.txt`). `sha256sum -c verifiers/SHA256SUMS` am Ende (20:49 UTC): alle drei OK (`runs/zerlegung/sha256_ende.log.txt`).
 
 ## Zusammenfassung
 
@@ -179,7 +179,7 @@ Abgleich: alle 56 Läufe aus Schritt 4 (Einzellogs je Typ) – beste Restzahl de
 - Schritt 2 unentschieden (m2 = 12, 14); m2 = 10 als Kontrolle mit der Zählschranke über alle 880 Anforderungen ausgeschlossen.
 - Methodisch: Der Löser findet den 48er aus Zufallsstart in Sekunden (alte Nebenklassen-Suche 1 von 16 in 30 Min.); entscheidend waren dynamische
   Gewichte je offenem Paar und Tauschzüge zweier Zeilenwörter. Die Suche endet je Typ immer am selben besten Wert (z. B. 1288 bei (11,9), K = 11).
-- Rechenzeit (Blöcke, Wanduhr, 4 Kerne): etwa 3 h 20 Min. von 6 h; Sitzung 17:15–20:55 UTC.
+- Rechenzeit (Blöcke, Wanduhr, 4 Kerne): etwa 3 h 20 Min. von 6 h; Sitzung 17:15–20:52 UTC (Zeiten nach `date`).
 
 ## Fehlversuche (für STATUS.md)
 
