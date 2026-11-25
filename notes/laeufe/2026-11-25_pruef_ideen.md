@@ -57,3 +57,46 @@ Unabhängige Gegenprobe im selben Programm: direkte Zählung über die ganze Mat
 
 Rechenzeit 13 s (240 Fälle) bzw. 1 s (Kontrolle). Erwartung erfüllt, keine Abweichung.
 
+## Teil 3: kozyklische Matrizen (`src/pruef_ideen/kozyk.c`, Prüfer `verifiers/pruef_ideen/pruef_kozyk.py`, Belege `runs/pruef_ideen/kozyklisch/`)
+
+Aufbau: Gruppe E der Ordnung 2n mit zentraler Involution z, f ungerade, M[g][h] = f(g⁻¹h) über den Nebenklassenvertretern (kleinerer Index von {g, zg}), f(e) = +1:
+2^(n−1) Funktionen je Gruppe. Gruppen im Suchprogramm über Indexformeln (CYC, DIC = dizyklisch, DIH = dihedral, Direktprodukte), im Prüfer unabhängig als
+Matrizengruppen (monomiale 2×2-Matrizen über Einheitswurzeln, Matrixprodukt), mit Gruppengesetz-, Zentrums- und Elementordnungsprüfung (`gruppen_struktur_n8_bis_20.log.txt`).
+Gegenprobe der Zeilen: für je 3004 Funktionsnummern je Gruppe (alle 22 Gruppen) liefert das Suchprogramm genau dieselben Zeilen wie die Matrix des Prüfers
+(`zeilenvergleich.log.txt`; dabei auch der Maskenweg des Siebs gleich; Gray-Code-Fortschreibung gegen frischen Aufbau 5 Mio. Schritte ohne Abweichung).
+
+**Kontrollzahlen des eigenen Programms** (Sieb Stufe 2, Überlebende exakt mit `build/exakt_disc`; `kontrollzahlen.log.txt`): negazyklisch n = 8: **64 von 128** mit disc >= 4;
+n = 10: **270 von 512**; Z3 × Q8 (Williamson-Anordnung, n = 12): **336 von 2048** (darunter 96 Hadamard-Matrizen). Alle drei wie erwartet.
+
+**n = 18 und 20 (Ziel 8): je Funktion ein gespeichertes Gegenbeispiel x mit max_i |<M_i,x>| <= 6** (Dateien `GRUPPE_nN.shardS.bin.gz`, 3 Bytes je Funktion, Funktionsnummer = Position;
+die Prüfung liest sie und rechnet jede Funktion mit eigener Matrix nach).
+
+| Gruppe | n | Funktionen (f(e)=+1) | ohne Gegenbeispiel (<= 6) | ohne x mit max <= 4 (disc >= 6) | exakte disc dieser | Hadamard | Prüfung der Gegenbeispiele |
+|---|---|---|---|---|---|---|---|
+| Z36 | 18 | 131 072 | **0** | 4 338 | alle 6 | 0 | bestätigt |
+| Dic9 | 18 | 131 072 | **0** | 23 922 | alle 6 | 0 | bestätigt |
+| Z3 × Dic3 | 18 | 131 072 | **0** | 4 752 | alle 6 | 0 | bestätigt |
+| Z40 | 20 | 524 288 | **0** | 28 560 | alle 6 | 0 | bestätigt |
+| Z5 × Q8 | 20 | 524 288 | **0** | **3 240** | alle 6 | **480** | bestätigt |
+| Z5 × D4 | 20 | 524 288 | **0** | 0 | – | 0 | bestätigt |
+| Z5 × Z4 × Z2 (z = (0,2,0)) | 20 | 524 288 | **0** | 900 | alle 6 | 0 | bestätigt |
+| Dic10 | 20 | 524 288 | **0** | 55 400 | alle 6 | 5 600 | bestätigt |
+| D20 | 20 | 524 288 | **0** | 0 | – | 0 | bestätigt |
+
+Erwartungen erfüllt: 0 Überlebende bei Ziel 8, Z5 × Q8: 3240 Funktionen mit disc >= 6 darunter 480 Hadamard-Matrizen, Z40: 28 560 ohne Hadamard-Matrix.
+**Exakter Bestwert (`src/exakt_disc.c`): n = 18: 6 (Quotient 1,414), n = 20: 6 (1,342).** Beide Seiten gerechnet: die Überlebenden (Matrizen des Suchprogramms)
+und noch einmal alle Überlebenden mit den Matrizen des Prüfers, dazu je Gruppe 300 zufällige Nicht-Überlebende (alle mit disc <= 4, `-g 6`).
+Neue Zahlen (nicht im Vortest): n = 18: 4338 / 23 922 / 4752; n = 20: Dic10 55 400 (5 600 Hadamard), Z5 × Z4 × Z2 900, Z5 × D4 und D20 keine mit disc >= 6.
+Rechenzeit: n = 18, 20 zusammen etwa 4 Minuten Suche plus 4,5 Minuten Prüfung.
+
+**n = 26, 28, 30 (Ziel 10), Sieb ohne gespeicherte Gegenbeispiele** (Stufe 8, höchstens 20 000 Zufallsproben je Funktion; `ZUSAMMENFASSUNG.txt`):
+
+| n | Gruppen | Funktionen je Gruppe | Ergebnis |
+|---|---|---|---|
+| 26 | Z52, Dic13 | 33 554 432 | je Funktion ein x mit max <= 8 gefunden, **0 Überlebende** |
+| 28 | Z56, Z7×Q8, Z7×D4, Z7×Z4×Z2, Dic14, D28 | 134 217 728 | **0 Überlebende** in allen sechs |
+| 30 | Z60, **Dic15 vollständig** (536 870 912, im Vortest 80 %) | 536 870 912 | **0 Überlebende** in beiden |
+
+Rechenzeit insgesamt etwa 7 Minuten. Kontrolle des Siebs (Siebweg auf n = 20 erzwungen, Stufe 4 mit 20 000 Proben): Z5×Q8 4074 Überlebende (exakt 3240), Z40 63 109 (28 560), Dic10 108 401 (55 400),
+also Obermenge der exakten Überlebenden, wie es sein muss; Stufe 6: 0 Überlebende (`kontrolle_siebpfad.log.txt`). Für n = 26 bis 30 ist nur „disc <= 8" belegt (Quotient <= 1,569 / 1,512 / 1,461), kein exakter Bestwert.
+
