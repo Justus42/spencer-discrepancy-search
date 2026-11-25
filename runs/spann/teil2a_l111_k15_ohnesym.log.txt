@@ -1,0 +1,6 @@
+Wed Nov 25 10:46:46 UTC 2026
+Problem runs/spann/probleme/l111_r8.txt: d=7 |G|=128 Nebenklassen=128 min mu=12, k=15, Zeitlimit 590 s, Aufteilungstiefe 3, Threads 4, Symmetrie nein (0 Erzeuger)
+Aufgaben: 430 (0.0 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 33082991, Laufzeit 426.3 s
+Wed Nov 25 10:53:52 UTC 2026

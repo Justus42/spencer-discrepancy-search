@@ -1,0 +1,7 @@
+Wed Nov 25 10:45:34 UTC 2026
+Problem runs/spann/probleme/l111_r8.txt: d=7 |G|=128 Nebenklassen=128 min mu=12, k=15, Zeitlimit 1800 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 333375, Bahnen unter Gamma: 71; Groessen (absteigend): 56448 37632 28224 28224 28224 28224 9408 7056 7056 7056 7056 7056 7056 7056 6272 4704 4704 4704 4704 2352 2352 2352 2352 2352 2352 2352 2352 2352 1568 1176 1176 1176 1176 1176 1176 1176 1176 1176 1176 784 ...
+Aufgaben: 428 (0.4 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 321734, Laufzeit 5.5 s
+Wed Nov 25 10:45:39 UTC 2026
