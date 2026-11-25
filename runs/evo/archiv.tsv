@@ -31,3 +31,7 @@ Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
 8	p006	-	C	20	6	23	2	600	1573	Ziel 23 Paare, Insel C Wurzel: Zeile entfernen, global beste Zeile per WHT
 8	p006	-	C	20	6	23	3	600	1569	Ziel 23 Paare, Insel C Wurzel: Zeile entfernen, global beste Zeile per WHT
 8	p006	-	C	20	6	23	4	600	1683	Ziel 23 Paare, Insel C Wurzel: Zeile entfernen, global beste Zeile per WHT
+9	p001	-	A	15	4	15	1	300	233	Nebenziel (15,4) 15 Paare, bestes K1-Programm unveraendert (Auftrag), blind
+9	p001	-	A	15	4	15	2	300	233	Nebenziel (15,4) 15 Paare, bestes K1-Programm unveraendert (Auftrag), blind
+9	p001	-	A	15	4	15	3	300	233	Nebenziel (15,4) 15 Paare, bestes K1-Programm unveraendert (Auftrag), blind
+9	p001	-	A	15	4	15	4	300	233	Nebenziel (15,4) 15 Paare, bestes K1-Programm unveraendert (Auftrag), blind
