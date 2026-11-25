@@ -6,3 +6,5 @@ runs/spann_rang9/l111_r9_y129.fortschritt: Aufgaben 15735, bis 15735 gerechnet, 
 ENTSCHIEDEN: keine Loesung (lueckenlos, vollstaendig)
 runs/spann_rang9/ctrl16_r9_y7.fortschritt: Aufgaben 19420, bis 19420 gerechnet, Bereiche 7, Knoten 50899137, Sekunden 1309, Zeitlimit-Wiederholungen 0, Luecken [], Ueberlappungen [], Loesung False
 ENTSCHIEDEN: keine Loesung (lueckenlos, vollstaendig)
+runs/spann_rang9/l111_r9_y385.fortschritt: Aufgaben 20817, bis 20817 gerechnet, Bereiche 7, Knoten 55861696, Sekunden 1462, Zeitlimit-Wiederholungen 0, Luecken [], Ueberlappungen [], Loesung False
+ENTSCHIEDEN: keine Loesung (lueckenlos, vollstaendig)
