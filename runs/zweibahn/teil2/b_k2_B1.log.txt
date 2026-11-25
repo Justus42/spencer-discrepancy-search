@@ -1,0 +1,24 @@
+Wed Nov 25 07:10:15 UTC 2026
+# zweibahn_zaehl q=12 f=1 m=25 R=8 k=2 B=1 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:4 2:6 3:20 4:60 6:670 12:1397740  gesamt 1398500  (0.1 s)
+Kontrolle: Summe Groessen = 16777216, 2^(m-1) = 16777216
+erlaubte kurze Bahnen (Groesse <= 1): 4
+harte Klassen: 1005908 von 1398500  (0.1 s)
+Normalisator-Klassen voller Bahnen: 5339 (Erzeuger 9), Summe Klassengroessen 1397740 = 1397740 volle Bahnen
+(0.7 s)
+  Klasse 500/5339 A=902d Gewicht 96 Rest 476720 hart 371287 Kandidaten B 858154 harte ueberdeckt 0  (83.0 s)
+  Klasse 1000/5339 A=130ab Gewicht 384 Rest 307293 hart 224165 Kandidaten B 975225 harte ueberdeckt 0  (165.7 s)
+  Klasse 1500/5339 A=1f123 Gewicht 192 Rest 371219 hart 254297 Kandidaten B 918092 harte ueberdeckt 0  (248.2 s)
+  Klasse 2000/5339 A=2f099 Gewicht 384 Rest 360808 hart 246380 Kandidaten B 1047940 harte ueberdeckt 0  (332.7 s)
+  Klasse 2500/5339 A=4306b Gewicht 192 Rest 344862 hart 252996 Kandidaten B 1048296 harte ueberdeckt 0  (415.4 s)
+  Klasse 3000/5339 A=4d14b Gewicht 384 Rest 307942 hart 206852 Kandidaten B 982496 harte ueberdeckt 0  (494.7 s)
+  Klasse 3500/5339 A=5b163 Gewicht 384 Rest 279793 hart 188484 Kandidaten B 833723 harte ueberdeckt 0  (578.8 s)
+  Klasse 4000/5339 A=771a7 Gewicht 192 Rest 315449 hart 208869 Kandidaten B 982496 harte ueberdeckt 0  (663.1 s)
+  Klasse 4500/5339 A=b3167 Gewicht 384 Rest 311547 hart 190595 Kandidaten B 958750 harte ueberdeckt 0  (750.2 s)
+  Klasse 5000/5339 A=117133 Gewicht 384 Rest 418666 hart 291502 Kandidaten B 975225 harte ueberdeckt 0  (841.2 s)
+Blaetter (ungewichtet): 0
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 0, gewichtet 0
+Ueberdeckungen nach Zahl kurzer Paare (k=2 volle Bahnen, ungeordnet):
+SUMME Ueberdeckungen: 0
+Laufzeit 905.0 s
+Rueckgabe 0
