@@ -1,0 +1,8 @@
+a_k11_t13-7 seed 1: ZEITGRENZE nach 810.1 s, beste Restzahl 2698, 206195 Iterationen, 649 Runden, 29 Neustarts
+runs/zerlegung/a_k11_t13-7_seed1.paar.txt: K=11, Typ (13,7), d=8: offene Klassen 2698 von 262144
+a_k11_t13-7 seed 2: ZEITGRENZE nach 810.0 s, beste Restzahl 2698, 205189 Iterationen, 646 Runden, 28 Neustarts
+runs/zerlegung/a_k11_t13-7_seed2.paar.txt: K=11, Typ (13,7), d=8: offene Klassen 2698 von 262144
+a_k11_t13-7 seed 3: ZEITGRENZE nach 810.0 s, beste Restzahl 2698, 206015 Iterationen, 645 Runden, 28 Neustarts
+runs/zerlegung/a_k11_t13-7_seed3.paar.txt: K=11, Typ (13,7), d=8: offene Klassen 2698 von 262144
+a_k11_t13-7 seed 4: ZEITGRENZE nach 810.0 s, beste Restzahl 2698, 207412 Iterationen, 649 Runden, 28 Neustarts
+runs/zerlegung/a_k11_t13-7_seed4.paar.txt: K=11, Typ (13,7), d=8: offene Klassen 2698 von 262144
