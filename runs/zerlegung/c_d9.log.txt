@@ -1,0 +1,54 @@
+== 19:51:37 Block c_k12_t11-10
+c_k12_t11-10 seed 1: ZEITGRENZE nach 570.1 s, beste Restzahl 12957, 44079 Iterationen, 139 Runden, 5 Neustarts
+runs/zerlegung/c_k12_t11-10_seed1.paar.txt: K=12, Typ (11,10), d=9: offene Klassen 12957 von 524288
+c_k12_t11-10 seed 2: ZEITGRENZE nach 570.1 s, beste Restzahl 12957, 43677 Iterationen, 138 Runden, 4 Neustarts
+runs/zerlegung/c_k12_t11-10_seed2.paar.txt: K=12, Typ (11,10), d=9: offene Klassen 12957 von 524288
+c_k12_t11-10 seed 3: ZEITGRENZE nach 570.0 s, beste Restzahl 12957, 43425 Iterationen, 136 Runden, 4 Neustarts
+runs/zerlegung/c_k12_t11-10_seed3.paar.txt: K=12, Typ (11,10), d=9: offene Klassen 12957 von 524288
+c_k12_t11-10 seed 4: ZEITGRENZE nach 570.0 s, beste Restzahl 12957, 44063 Iterationen, 137 Runden, 4 Neustarts
+runs/zerlegung/c_k12_t11-10_seed4.paar.txt: K=12, Typ (11,10), d=9: offene Klassen 12957 von 524288
+== 20:01:10 Block c_k12_t12-9
+c_k12_t12-9 seed 1: ZEITGRENZE nach 570.6 s, beste Restzahl 11002, 28090 Iterationen, 85 Runden, 3 Neustarts
+runs/zerlegung/c_k12_t12-9_seed1.paar.txt: K=12, Typ (12,9), d=9: offene Klassen 11002 von 524288
+c_k12_t12-9 seed 2: ZEITGRENZE nach 570.1 s, beste Restzahl 11002, 27577 Iterationen, 88 Runden, 3 Neustarts
+runs/zerlegung/c_k12_t12-9_seed2.paar.txt: K=12, Typ (12,9), d=9: offene Klassen 11002 von 524288
+c_k12_t12-9 seed 3: ZEITGRENZE nach 570.1 s, beste Restzahl 11002, 27908 Iterationen, 84 Runden, 3 Neustarts
+runs/zerlegung/c_k12_t12-9_seed3.paar.txt: K=12, Typ (12,9), d=9: offene Klassen 11002 von 524288
+c_k12_t12-9 seed 4: ZEITGRENZE nach 570.1 s, beste Restzahl 11002, 27458 Iterationen, 84 Runden, 3 Neustarts
+runs/zerlegung/c_k12_t12-9_seed4.paar.txt: K=12, Typ (12,9), d=9: offene Klassen 11002 von 524288
+== 20:10:44 Block c_k12_t12-11
+c_k12_t12-11 seed 1: ZEITGRENZE nach 570.3 s, beste Restzahl 1760, 28749 Iterationen, 93 Runden, 4 Neustarts
+runs/zerlegung/c_k12_t12-11_seed1.paar.txt: K=12, Typ (12,11), d=9: offene Klassen 1760 von 2097152
+c_k12_t12-11 seed 2: ZEITGRENZE nach 570.1 s, beste Restzahl 1760, 28575 Iterationen, 92 Runden, 3 Neustarts
+runs/zerlegung/c_k12_t12-11_seed2.paar.txt: K=12, Typ (12,11), d=9: offene Klassen 1760 von 2097152
+c_k12_t12-11 seed 3: ZEITGRENZE nach 570.2 s, beste Restzahl 1760, 28849 Iterationen, 91 Runden, 3 Neustarts
+runs/zerlegung/c_k12_t12-11_seed3.paar.txt: K=12, Typ (12,11), d=9: offene Klassen 1760 von 2097152
+c_k12_t12-11 seed 4: ZEITGRENZE nach 570.4 s, beste Restzahl 1760, 28895 Iterationen, 93 Runden, 4 Neustarts
+runs/zerlegung/c_k12_t12-11_seed4.paar.txt: K=12, Typ (12,11), d=9: offene Klassen 1760 von 2097152
+== 20:20:17 Block c_k12_t13-10
+c_k12_t13-10 seed 1: ZEITGRENZE nach 570.0 s, beste Restzahl 26360, 27662 Iterationen, 86 Runden, 3 Neustarts
+runs/zerlegung/c_k12_t13-10_seed1.paar.txt: K=12, Typ (13,10), d=9: offene Klassen 26360 von 2097152
+c_k12_t13-10 seed 2: ZEITGRENZE nach 570.1 s, beste Restzahl 26360, 28590 Iterationen, 89 Runden, 4 Neustarts
+runs/zerlegung/c_k12_t13-10_seed2.paar.txt: K=12, Typ (13,10), d=9: offene Klassen 26360 von 2097152
+c_k12_t13-10 seed 3: ZEITGRENZE nach 570.0 s, beste Restzahl 26360, 27922 Iterationen, 87 Runden, 3 Neustarts
+runs/zerlegung/c_k12_t13-10_seed3.paar.txt: K=12, Typ (13,10), d=9: offene Klassen 26360 von 2097152
+c_k12_t13-10 seed 4: ZEITGRENZE nach 570.2 s, beste Restzahl 26360, 28433 Iterationen, 91 Runden, 4 Neustarts
+runs/zerlegung/c_k12_t13-10_seed4.paar.txt: K=12, Typ (13,10), d=9: offene Klassen 26360 von 2097152
+== 20:29:50 Block c_k12_t12-13
+c_k12_t12-13 seed 1: ZEITGRENZE nach 570.4 s, beste Restzahl 5280, 13454 Iterationen, 42 Runden, 1 Neustarts
+runs/zerlegung/c_k12_t12-13_seed1.paar.txt: K=12, Typ (12,13), d=9: offene Klassen 5280 von 8388608
+c_k12_t12-13 seed 2: ZEITGRENZE nach 570.2 s, beste Restzahl 5280, 12623 Iterationen, 39 Runden, 1 Neustarts
+runs/zerlegung/c_k12_t12-13_seed2.paar.txt: K=12, Typ (12,13), d=9: offene Klassen 5280 von 8388608
+c_k12_t12-13 seed 3: ZEITGRENZE nach 570.0 s, beste Restzahl 5280, 14549 Iterationen, 46 Runden, 2 Neustarts
+runs/zerlegung/c_k12_t12-13_seed3.paar.txt: K=12, Typ (12,13), d=9: offene Klassen 5280 von 8388608
+c_k12_t12-13 seed 4: ZEITGRENZE nach 570.2 s, beste Restzahl 5280, 13556 Iterationen, 41 Runden, 1 Neustarts
+runs/zerlegung/c_k12_t12-13_seed4.paar.txt: K=12, Typ (12,13), d=9: offene Klassen 5280 von 8388608
+== 20:39:25 Block c_k12_t11-14
+c_k12_t11-14 seed 1: ZEITGRENZE nach 570.5 s, beste Restzahl 5280, 11441 Iterationen, 34 Runden, 1 Neustarts
+runs/zerlegung/c_k12_t11-14_seed1.paar.txt: K=12, Typ (11,14), d=9: offene Klassen 5280 von 8388608
+c_k12_t11-14 seed 2: ZEITGRENZE nach 570.8 s, beste Restzahl 21560, 10380 Iterationen, 30 Runden, 1 Neustarts
+runs/zerlegung/c_k12_t11-14_seed2.paar.txt: K=12, Typ (11,14), d=9: offene Klassen 21560 von 8388608
+c_k12_t11-14 seed 3: ZEITGRENZE nach 570.3 s, beste Restzahl 55485, 10152 Iterationen, 30 Runden, 1 Neustarts
+runs/zerlegung/c_k12_t11-14_seed3.paar.txt: K=12, Typ (11,14), d=9: offene Klassen 55485 von 8388608
+c_k12_t11-14 seed 4: ZEITGRENZE nach 570.7 s, beste Restzahl 55328, 10768 Iterationen, 35 Runden, 1 Neustarts
+runs/zerlegung/c_k12_t11-14_seed4.paar.txt: K=12, Typ (11,14), d=9: offene Klassen 55328 von 8388608

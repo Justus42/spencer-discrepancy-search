@@ -1,0 +1,3 @@
+# ls: fest runs/zerlegung/eingaben/ctrl17_U9.txt (8 x 9), d=7, gesucht 8 x 8; Anforderungsvektoren 64 (alle kritischen, mit Vielfachheit), unerfuellbar 0; Punkte je Seite 256 / 128
+  Runde 1: Restzahl 0 (bisher bestes 0), Iterationen 7, Tauschzuege 1, 0.0 s
+LOESUNG nach 0.0 s, 7 Iterationen

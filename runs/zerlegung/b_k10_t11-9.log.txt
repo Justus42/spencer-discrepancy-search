@@ -1,0 +1,8 @@
+b_k10_t11-9 seed 1: ZEITGRENZE nach 300.0 s, beste Restzahl 3234, 82187 Iterationen, 264 Runden, 11 Neustarts
+runs/zerlegung/b_k10_t11-9_seed1.paar.txt: K=10, Typ (11,9), d=8: offene Klassen 3234 von 262144
+b_k10_t11-9 seed 2: ZEITGRENZE nach 300.0 s, beste Restzahl 3234, 82271 Iterationen, 267 Runden, 12 Neustarts
+runs/zerlegung/b_k10_t11-9_seed2.paar.txt: K=10, Typ (11,9), d=8: offene Klassen 3234 von 262144
+b_k10_t11-9 seed 3: ZEITGRENZE nach 300.0 s, beste Restzahl 3234, 82579 Iterationen, 268 Runden, 11 Neustarts
+runs/zerlegung/b_k10_t11-9_seed3.paar.txt: K=10, Typ (11,9), d=8: offene Klassen 3234 von 262144
+b_k10_t11-9 seed 4: ZEITGRENZE nach 300.0 s, beste Restzahl 3234, 83521 Iterationen, 263 Runden, 11 Neustarts
+runs/zerlegung/b_k10_t11-9_seed4.paar.txt: K=10, Typ (11,9), d=8: offene Klassen 3234 von 262144

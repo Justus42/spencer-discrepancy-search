@@ -1,0 +1,8 @@
+seed 1: ZEITGRENZE nach 600.1 s, beste Restzahl 22, 99478 Iterationen
+runs/zerlegung/k1_U_seed1.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 22 von 262144
+seed 2: ZEITGRENZE nach 600.0 s, beste Restzahl 22, 100071 Iterationen
+runs/zerlegung/k1_U_seed2.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 22 von 262144
+seed 3: ZEITGRENZE nach 600.1 s, beste Restzahl 22, 99201 Iterationen
+runs/zerlegung/k1_U_seed3.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 22 von 262144
+seed 4: ZEITGRENZE nach 600.0 s, beste Restzahl 22, 98851 Iterationen
+runs/zerlegung/k1_U_seed4.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 22 von 262144

@@ -1,0 +1,1 @@
+300 Faelle: {'beide_ja': 77, 'beide_nein': 223, 'abweichung': 0}

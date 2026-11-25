@@ -1,0 +1,4 @@
+# ls: fest runs/zerlegung/eingaben/paley12_U11.txt (12 x 11), d=9, gesucht 12 x 12; Anforderungsvektoren 880 (alle kritischen, mit Vielfachheit), unerfuellbar 0; Punkte je Seite 1024 / 2048
+  Runde 1: Restzahl 1760 (bisher bestes 1760), Iterationen 20152, Tauschzuege 17464, 640.8 s
+  Runde 2: Restzahl 1760 (bisher bestes 1760), Iterationen 38311, Tauschzuege 33180, 1200.4 s
+ZEITGRENZE nach 1200.4 s, beste Restzahl 1760, 38311 Iterationen
