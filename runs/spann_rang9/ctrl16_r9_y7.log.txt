@@ -1,0 +1,48 @@
+Problem runs/spann/probleme/ctrl16_r9_y7.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 600 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 19420 (8.7 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 0, Laufzeit 8.7 s
+BEREICH 0 0 von 19420 Aufgaben insgesamt: Knoten 0, OHNE_LOESUNG
+Problem runs/spann/probleme/ctrl16_r9_y7.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 19420 (8.0 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 1386348, Laufzeit 40.8 s
+BEREICH 0 50 von 19420 Aufgaben insgesamt: Knoten 1386348, OHNE_LOESUNG
+Problem runs/spann/probleme/ctrl16_r9_y7.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 19420 (8.0 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 3238298, Laufzeit 81.5 s
+BEREICH 50 250 von 19420 Aufgaben insgesamt: Knoten 3238298, OHNE_LOESUNG
+Problem runs/spann/probleme/ctrl16_r9_y7.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 19420 (8.0 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 9724868, Laufzeit 225.3 s
+BEREICH 250 1050 von 19420 Aufgaben insgesamt: Knoten 9724868, OHNE_LOESUNG
+Problem runs/spann/probleme/ctrl16_r9_y7.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 19420 (8.2 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 15158463, Laufzeit 348.3 s
+BEREICH 1050 3183 von 19420 Aufgaben insgesamt: Knoten 15158463, OHNE_LOESUNG
+Problem runs/spann/probleme/ctrl16_r9_y7.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 19420 (8.0 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 12139620, Laufzeit 297.1 s
+BEREICH 3183 6861 von 19420 Aufgaben insgesamt: Knoten 12139620, OHNE_LOESUNG
+Problem runs/spann/probleme/ctrl16_r9_y7.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 19420 (8.6 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 5539571, Laufzeit 187.5 s
+BEREICH 6861 14291 von 19420 Aufgaben insgesamt: Knoten 5539571, OHNE_LOESUNG
+Problem runs/spann/probleme/ctrl16_r9_y7.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 19420 (8.9 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 3711969, Laufzeit 127.8 s
+BEREICH 14291 19420 von 19420 Aufgaben insgesamt: Knoten 3711969, OHNE_LOESUNG
