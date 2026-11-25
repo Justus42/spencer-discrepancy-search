@@ -1,0 +1,8 @@
+s2c18-5_k16_t12-6 seed 1: LOESUNG nach 60.9 s, 13938 Iterationen, 44 Runden, 1 Neustarts
+runs/leiter_n/s2c18-5_k16_t12-6_seed1.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
+s2c18-5_k16_t12-6 seed 2: LOESUNG nach 14.9 s, 1934 Iterationen, 3 Runden, 0 Neustarts
+runs/leiter_n/s2c18-5_k16_t12-6_seed2.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
+s2c18-5_k16_t12-6 seed 3: LOESUNG nach 48.5 s, 9382 Iterationen, 26 Runden, 1 Neustarts
+runs/leiter_n/s2c18-5_k16_t12-6_seed3.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
+s2c18-5_k16_t12-6 seed 4: LOESUNG nach 8.2 s, 1244 Iterationen, 3 Runden, 0 Neustarts
+runs/leiter_n/s2c18-5_k16_t12-6_seed4.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
