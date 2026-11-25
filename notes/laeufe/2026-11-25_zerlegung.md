@@ -38,3 +38,37 @@ Tiefensuche auf K1: 60 s Zeitgrenze, steckt in den letzten drei Zeilen (16,9 Mio
 
 Test `dfs` gegen `brute` (`src/zerl_test_dfs.py 300 7`, K = 2–4, mf = 3–7, mg = 3–6, d zufällig): 300 Fälle, 77 lösbar, 223 nicht lösbar,
 **0 Abweichungen**; alle dfs-Lösungen mit `zerl_offen.py` bestätigt. Log `runs/zerlegung/test_dfs_seed7.log.txt`.
+
+### K1 (Positivkontrolle 48er), Treiber `bash src/run_zerl_k1.sh W|U`, je höchstens 600 s, Startwerte 1–4, 4 parallel
+
+Erste Fassung (nur Einzelzeilen-Züge, Gewichte; Logs `runs/zerlegung/k1_vorversion/`, 17:30–17:41 UTC): Richtung W gesucht 4 von 4 (15–47 s);
+**Richtung U gesucht 0 von 4** (je 600 s, Restzahl 22 in allen vier). Analyse der besten Zustände: U ist dort schon Hadamard-artig (alle 66
+Zeilen-Skalarprodukte ±1, Profil (5³,3⁶,1³) der offenen y), nur die Zuordnung der Zeilen zu W ist falsch; ein Einzelzeilen-Zug repariert keine
+Vertauschung. Ergänzt: **Tauschzüge** (Wörter zweier Zeilen tauschen), geprüft an jedem lokalen Minimum vor der Gewichtserhöhung; Bewertung
+nur über Punkte, an denen die Zeile etwas ändert; optionale Glättung (`--glatt`, Standard aus).
+
+Endfassung (17:52 UTC), Logs `runs/zerlegung/k1_W.log.txt`, `k1_U.log.txt`:
+
+| Richtung | gelöst | Zeit je Startwert | Soll |
+|---|---|---|---|
+| U fest (Paley-12 ohne Spalte 0), W 12 x 9 gesucht | **4 von 4** | 0,0 / 0,0 / 0,0 / 0,0 s (15–33 Iterationen) | ≥ 3 von 4 unter 10 Min. |
+| W fest (Paley-12 ohne Spalten 0,1,2), U 12 x 11 gesucht | **4 von 4** | 0,1 / 0,1 / 1,2 / 6,3 s | ≥ 3 von 4 unter 10 Min. |
+
+Alle 8 Lösungen mit `zerl_offen.py` nachgezählt (0 offen). Je eine (Startwert 4) zusätzlich direkt auf der Matrix gezählt und mit
+`pruefe_matrix.py` geprüft: check_disc, verify_spencer, exakt_disc je **Diskrepanz 8** (`runs/zerlegung/k1_pruefe.log.txt`). **K1 bestanden.**
+
+### K1b (zweite Positivkontrolle `ctrl_17`), Log `runs/zerlegung/k1b.log.txt`
+
+`zerl_offen.py zerlege controls/ctrl_17.txt`: genau zwei nichttriviale Kernelemente, Gewicht 8 (Spalten 7,8,10–14,16) und 9 (0–6,9,15); K = 8,
+Typ (9,8) (`runs/zerlegung/k1b_zerlegung.txt`, Paar `eingaben/paar_ctrl17.txt`). Prüfcode: 0 offene Klassen bei d = 7 (auch direkt auf der
+16 x 17-Matrix), 10 976 bei d = 8. Matrix aus dem Paar: `pruefe_matrix.py` 7/7/7; Zeilenmenge nach Rückordnung der Spalten gleich `ctrl_17`.
+Suche (je ≤ 600 s, Startwerte 1–4): U fest, W gesucht **4 von 4**; W fest, U gesucht **4 von 4**; je unter 0,1 s, alle 8 mit Prüfcode bestätigt. **Bestanden.**
+
+### K2 (Negativkontrolle, vollständig), Log `runs/zerlegung/k2.log.txt`
+
+U des 48ers ohne Zeile 0, 5 bzw. 11 (K = 11), d = 8, m2 = 9: `dfs` meldet je **KEINE LOESUNG (vollständig)** an der Wurzel (1 Knoten): der einzige
+maximale Anforderungsvektor ist (7,…,7) (die gestrichene Zeile als flaches y), offene z 256 > 11 · 10 = 110. Gegenprobe lokale Suche je 30 s:
+Restzahl 1448 / 1451 / 1464, keine Lösung. **Bestanden.** Grenze: K2 prüft nur die Wurzelschranke; die tiefere Logik der `dfs` ist durch den
+Vergleich mit `brute` (300 Fälle) geprüft.
+
+K1, K1b, K2 bestanden um 17:58 UTC (43 Min. Sitzungszeit). Schritt 2 beginnt.

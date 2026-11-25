@@ -1,0 +1,6 @@
+# ls: fest runs/zerlegung/eingaben/paley12_W9.txt (12 x 9) als rechte Haelfte, d=8, gesucht 12 x 11; Anforderungsvektoren 136 (alle kritischen, mit Vielfachheit), unerfuellbar 0; Punkte je Seite 256 / 1024
+  Runde 1: Restzahl 27 (bisher bestes 27), Iterationen 20070, 120.2 s
+  Runde 2: Restzahl 26 (bisher bestes 26), Iterationen 57677, 348.6 s
+  Runde 3: Restzahl 22 (bisher bestes 22), Iterationen 82420, 498.9 s
+  Runde 4: Restzahl 22 (bisher bestes 22), Iterationen 98851, 600.0 s
+ZEITGRENZE nach 600.0 s, beste Restzahl 22, 98851 Iterationen

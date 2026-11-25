@@ -1,0 +1,3 @@
+# ls: fest runs/zerlegung/eingaben/ctrl17_W8.txt (8 x 8) als rechte Haelfte, d=7, gesucht 8 x 9; Anforderungsvektoren 14 (alle kritischen, mit Vielfachheit), unerfuellbar 0; Punkte je Seite 128 / 256
+  Runde 1: Restzahl 0 (bisher bestes 0), Iterationen 5, Tauschzuege 1, 0.0 s
+LOESUNG nach 0.0 s, 5 Iterationen

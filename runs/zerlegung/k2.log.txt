@@ -1,0 +1,15 @@
+# dfs: fest runs/zerlegung/eingaben/paley12_U11_ohne_zeile0.txt (11 x 11), d=8, gesucht 11 x 9; Anforderungsvektoren 1 (nur maximale), unerfuellbar 0; Punkte je Seite 1024 / 256
+# Knoten je Tiefe: 1 0 0 0 0 0 0 0 0 0 0 0
+KEINE LOESUNG (vollstaendig) nach 0.0 s, 1 Knoten
+Rueckgabe 3
+# dfs: fest runs/zerlegung/eingaben/paley12_U11_ohne_zeile5.txt (11 x 11), d=8, gesucht 11 x 9; Anforderungsvektoren 1 (nur maximale), unerfuellbar 0; Punkte je Seite 1024 / 256
+# Knoten je Tiefe: 1 0 0 0 0 0 0 0 0 0 0 0
+KEINE LOESUNG (vollstaendig) nach 0.0 s, 1 Knoten
+Rueckgabe 3
+# dfs: fest runs/zerlegung/eingaben/paley12_U11_ohne_zeile11.txt (11 x 11), d=8, gesucht 11 x 9; Anforderungsvektoren 1 (nur maximale), unerfuellbar 0; Punkte je Seite 1024 / 256
+# Knoten je Tiefe: 1 0 0 0 0 0 0 0 0 0 0 0
+KEINE LOESUNG (vollstaendig) nach 0.0 s, 1 Knoten
+Rueckgabe 3
+ZEITGRENZE nach 30.0 s, beste Restzahl 1448, 18703 Iterationen
+ZEITGRENZE nach 30.0 s, beste Restzahl 1451, 19231 Iterationen
+ZEITGRENZE nach 30.0 s, beste Restzahl 1464, 18799 Iterationen

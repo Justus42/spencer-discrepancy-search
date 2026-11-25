@@ -1,0 +1,16 @@
+runs/zerlegung/k1_W_seed4.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+   direkt auf der 24 x 20-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+runs/zerlegung/k1_W_seed4.matrix.txt: 24 x 20
+Matrix runs/zerlegung/k1_W_seed4.matrix.txt: 24 x 20, aufgefuellt 24 x 24
+  check_disc      Diskrepanz 8  (0.7 s)
+  verify_spencer  Diskrepanz 8  (0.7 s)
+  exakt_disc      Diskrepanz 8  (0.7 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+runs/zerlegung/k1_U_seed4.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+   direkt auf der 24 x 20-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+runs/zerlegung/k1_U_seed4.matrix.txt: 24 x 20
+Matrix runs/zerlegung/k1_U_seed4.matrix.txt: 24 x 20, aufgefuellt 24 x 24
+  check_disc      Diskrepanz 8  (0.7 s)
+  verify_spencer  Diskrepanz 8  (0.7 s)
+  exakt_disc      Diskrepanz 8  (0.7 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8

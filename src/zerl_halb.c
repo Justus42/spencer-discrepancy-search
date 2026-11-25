@@ -158,6 +158,8 @@ static inline int64_t wzahl_offen_g(const u64 *X, const int64_t *g) { /* mit Gew
 }
 static int64_t *Wz = NULL;   /* dynamische Gewichte je (z,p), nur Verfahren "gewicht" */
 static int verfahren = 0;    /* 0 = Tabu, 1 = dynamische Gewichte */
+static int64_t glatt = 0;    /* Glaettung alle `glatt` Erhoehungen (0 = aus) */
+static int64_t erhoehungen = 0;
 
 /* ---------- Dateien ---------- */
 static int lies_matrix(const char *pfad, uint32_t *rows, int *k, int *m) {
@@ -223,6 +225,35 @@ static void schreibe_paar(const char *pfad, const uint32_t *U, int m1, const uin
 /* ---------- Tabu-Suche ueber Zeilenwoerter von G ---------- */
 static uint32_t cw[MAXK];
 static int64_t *CZ = NULL;
+/* je Zeile i: Punkte z, an denen der Wert der Zeile die Kosten aendert (cz nicht konstant ueber die Stufen), Werte minus Minimum */
+static int *relz = NULL, *nrel = NULL;
+static int64_t *relv = NULL, *relbase = NULL;
+static void baue_rel(void) {
+    free(relz); free(nrel); free(relv); free(relbase);
+    relz = malloc(sizeof(int) * (size_t)K * NZ); nrel = calloc(K, sizeof(int));
+    relv = malloc(sizeof(int64_t) * (size_t)K * NZ * L); relbase = calloc(K, sizeof(int64_t));
+    for (int i = 0; i < K; i++) {
+        for (int z = 0; z < NZ; z++) {
+            const int64_t *cz = CZ + ((size_t)i * NZ + z) * L;
+            int64_t mn = cz[0], mx = cz[0];
+            for (int l = 1; l < L; l++) { if (cz[l] < mn) mn = cz[l]; if (cz[l] > mx) mx = cz[l]; }
+            relbase[i] += mn;
+            if (mx > mn) {
+                int k = nrel[i]++;
+                relz[(size_t)i * NZ + k] = z << 1;
+                for (int l = 0; l < L; l++) relv[((size_t)i * NZ + k) * L + l] = cz[l] - mn;
+            }
+        }
+    }
+}
+static inline int64_t bewerte(int i, uint32_t c, int64_t grenze) {
+    int64_t s = relbase[i];
+    const int *rz = relz + (size_t)i * NZ;
+    const int64_t *rv = relv + (size_t)i * NZ * L;
+    int n = nrel[i];
+    for (int k = 0; k < n; k++) { s += rv[(size_t)k * L + lvlidx(c, (uint32_t)rz[k])]; if (s > grenze) return s; }
+    return s;
+}
 static int *tabu = NULL;
 
 static int64_t berechne_CZ(void) {
@@ -254,6 +285,7 @@ static int64_t berechne_CZ(void) {
             }
         }
     }
+    baue_rel();
     return tot;
 }
 
@@ -296,15 +328,13 @@ static int64_t tabu_phase(int64_t max_iter, int64_t stagnation, double ende, int
         if ((it & 15) == 0 && jetzt() > ende) break;
         int64_t bv = INT64_MAX; int bi = -1; uint32_t bc = 0; int ties = 0;
         for (int i = 0; i < K; i++) {
-            const int64_t *cz = CZ + (size_t)i * NZ * L;
             int nk = kandidaten(cw[i], kand);
             for (int a = 0; a < nk; a++) {
                 uint32_t c = kand[a];
                 if (c == cw[i]) continue;
                 int ist_tabu = tabu[(size_t)i * NZ + (c >> 1)] > it;
                 int64_t grenze = ist_tabu ? (bestc - 1 < bv ? bestc - 1 : bv) : bv;
-                int64_t s = 0;
-                for (int z = 0; z < NZ; z++) { s += cz[(size_t)z * L + lvlidx(c, (uint32_t)z << 1)]; if (s > grenze) break; }
+                int64_t s = bewerte(i, c, grenze);
                 if (s > grenze) continue;
                 if (s < bv) { bv = s; bi = i; bc = c; ties = 1; }
                 else if (s == bv) { ties++; if (rndi(ties) == 0) { bi = i; bc = c; } }
@@ -324,6 +354,26 @@ static int64_t tabu_phase(int64_t max_iter, int64_t stagnation, double ende, int
     return bestc;
 }
 
+/* gewichtete Kosten (Gewichte Wz) nach Tausch der Woerter der Zeilen i und j */
+static int64_t gew_kosten_tausch(int i, int j, int64_t grenze) {
+    static u64 X[1024];
+    int64_t s = 0;
+    for (int z = 0; z < NZ; z++) {
+        uint32_t zm = (uint32_t)z << 1;
+        memset(X, 0, sizeof(u64) * NW);
+        for (int k = 0; k < K; k++) {
+            uint32_t c = (k == i) ? cw[j] : (k == j) ? cw[i] : cw[k];
+            const u64 *M = T + ((size_t)k * L + lvlidx(c, zm)) * NW;
+            for (int w = 0; w < NW; w++) X[w] |= M[w];
+        }
+        s += wzahl_offen_g(X, Wz + (size_t)z * P);
+        if (s > grenze) return s;
+    }
+    return s;
+}
+static int tauschzuege = 1;
+static int64_t tausch_anzahl = 0;
+
 /* Verfahren "gewicht": dynamische Gewichte je offenem Paar (z,p) (Breakout). An einem lokalen Minimum (kein Zug senkt die
    gewichteten Kosten) wird das Gewicht jedes offenen Paars um seine Grundvielfachheit erhoeht. Ziel bleibt die wahre Restzahl 0. */
 static int64_t gewicht_phase(int64_t max_iter, int64_t stagnation, double ende, int64_t *iter_gesamt) {
@@ -340,26 +390,37 @@ static int64_t gewicht_phase(int64_t max_iter, int64_t stagnation, double ende, 
     if (cost == 0) return 0;
     for (int64_t it = 1; it <= max_iter; it++) {
         if ((it & 15) == 0 && jetzt() > ende) break;
-        int64_t cur = 0;
-        for (int z = 0; z < NZ; z++) cur += CZ[(size_t)z * L + lvlidx(cw[0], (uint32_t)z << 1)];
+        int64_t cur = bewerte(0, cw[0], INT64_MAX);
         int64_t bv = cur - 1; int bi = -1; uint32_t bc = 0; int ties = 0;
         for (int i = 0; i < K; i++) {
-            const int64_t *cz = CZ + (size_t)i * NZ * L;
             int nk = kandidaten(cw[i], kand);
             for (int a = 0; a < nk; a++) {
                 uint32_t c = kand[a];
                 if (c == cw[i]) continue;
                 if (tabu[(size_t)i * NZ + (c >> 1)] > it) continue;
-                int64_t s = 0;
-                for (int z = 0; z < NZ; z++) { s += cz[(size_t)z * L + lvlidx(c, (uint32_t)z << 1)]; if (s > bv) break; }
+                int64_t s = bewerte(i, c, bv);
                 if (s > bv) continue;
                 if (s < bv || bi < 0) { bv = s; bi = i; bc = c; ties = 1; }
                 else { ties++; if (rndi(ties) == 0) { bi = i; bc = c; } }
             }
         }
+        int ti = -1, tj = -1;
+        if (bi < 0 && tauschzuege) { /* lokales Minimum: Tausch zweier Zeilenwoerter pruefen */
+            int64_t tb = cur - 1; int tt = 0;
+            for (int i = 0; i < K; i++) for (int j = i + 1; j < K; j++) {
+                if (cw[i] == cw[j]) continue;
+                int64_t v = gew_kosten_tausch(i, j, tb);
+                if (v > tb) continue;
+                if (v < tb || ti < 0) { tb = v; ti = i; tj = j; tt = 1; }
+                else { tt++; if (rndi(tt) == 0) { ti = i; tj = j; } }
+            }
+        }
         if (bi >= 0) {
             tabu[(size_t)bi * NZ + (cw[bi] >> 1)] = (int)(it + 2 + rndi(4));
             cw[bi] = bc;
+        } else if (ti >= 0) {
+            uint32_t h = cw[ti]; cw[ti] = cw[tj]; cw[tj] = h;
+            tausch_anzahl++;
         } else {
             for (int z = 0; z < NZ; z++) {
                 uint32_t zm = (uint32_t)z << 1;
@@ -370,6 +431,8 @@ static int64_t gewicht_phase(int64_t max_iter, int64_t stagnation, double ende, 
                     while (x) { int b = __builtin_ctzll(x); Wz[(size_t)z * P + w * 64 + b] += Wt[w * 64 + b]; x &= x - 1; }
                 }
             }
+            if (glatt > 0 && ++erhoehungen % glatt == 0)
+                for (size_t q = 0; q < (size_t)NZ * P; q++) { int64_t b = Wt[q % P]; if (Wz[q] > b) Wz[q] -= b; }
         }
         cost = berechne_CZ();
         if (iter_gesamt) (*iter_gesamt)++;
@@ -517,6 +580,9 @@ int main(int argc, char **argv) {
     setvbuf(stdout, NULL, _IOLBF, 0);
     verfahren = strcmp(opt(argc, argv, "--verfahren", "gewicht"), "tabu") ? 1 : 0;
     int64_t stag = atoll(opt(argc, argv, "--stag", "20000"));
+    glatt = atoll(opt(argc, argv, "--glatt", "0"));
+    int stoer = atoi(opt(argc, argv, "--stoer", "2"));
+    tauschzuege = !flag(argc, argv, "--ohne-tausch");
 
     if (!strcmp(modus, "ls") || !strcmp(modus, "dfs") || !strcmp(modus, "brute")) {
         int k, m;
@@ -541,10 +607,10 @@ int main(int argc, char **argv) {
                 int64_t c = verfahren ? gewicht_phase(INT64_MAX, stag, zeitgrenze, &iters) : tabu_phase(INT64_MAX, stag, zeitgrenze, &iters);
                 runde++;
                 if (c < best) { best = c; memcpy(bestw, cw, sizeof bestw); }
-                printf("  Runde %ld: Restzahl %ld (bisher bestes %ld), Iterationen %ld, %.1f s\n", (long)runde, (long)c, (long)best, (long)iters, jetzt() - t0);
+                printf("  Runde %ld: Restzahl %ld (bisher bestes %ld), Iterationen %ld, Tauschzuege %ld, %.1f s\n", (long)runde, (long)c, (long)best, (long)iters, (long)tausch_anzahl, jetzt() - t0);
                 if (best == 0) break;
                 /* Stoerung: 2 zufaellige Zeilen neu */
-                for (int s = 0; s < 2; s++) cw[rndi(K)] = ((uint32_t)rndi(NZ)) << 1;
+                for (int s = 0; s < stoer; s++) cw[rndi(K)] = ((uint32_t)rndi(NZ)) << 1;
             }
             if (best == 0) {
                 printf("LOESUNG nach %.1f s, %ld Iterationen\n", jetzt() - t0, (long)iters);
