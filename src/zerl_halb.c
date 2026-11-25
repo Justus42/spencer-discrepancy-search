@@ -741,6 +741,8 @@ int main(int argc, char **argv) {
     if (!strcmp(modus, "alt")) {
         int KK = atoi(argv[2]), m1 = atoi(argv[3]), m2 = atoi(argv[4]); int dd = atoi(argv[5]);
         int64_t phase_stag = atoll(opt(argc, argv, "--phase", "300"));
+        int64_t neustart = atoll(opt(argc, argv, "--neustart", "0"));   /* Runden ohne Verbesserung bis zum Zufallsneustart (0 = nie) */
+        int64_t lauf_best = INT64_MAX, lauf_letzte = 0, neustarts = 0;
         uint32_t U[MAXK], W[MAXK];
         const char *start = opt(argc, argv, "--start", NULL);
         if (start) { int kk, a1, a2; lies_paar(start, U, W, &kk, &a1, &a2); }
@@ -757,6 +759,7 @@ int main(int argc, char **argv) {
             if (seite == 0) memcpy(W, cw, sizeof W); else memcpy(U, cw, sizeof U);
             runde++;
             if (c < best) { best = c; memcpy(bU, U, sizeof U); memcpy(bW, W, sizeof W); }
+            if (c < lauf_best) { lauf_best = c; lauf_letzte = runde; }
             if (jetzt() - letzte_meldung > 30 || c == 0) {
                 printf("  Runde %ld (%s frei): Restzahl %ld, bestes %ld, Anforderungsvektoren %d, Iterationen %ld, %.1f s\n",
                        (long)runde, seite ? "U" : "W", (long)c, (long)best, P, (long)iters, jetzt() - t0);
@@ -764,15 +767,20 @@ int main(int argc, char **argv) {
             }
             if (best == 0) break;
             seite ^= 1;
+            if (neustart > 0 && runde - lauf_letzte >= neustart) {
+                for (int i = 0; i < K; i++) { U[i] = (uint32_t)(rnd() & ((1u << m1) - 1)); W[i] = (uint32_t)(rnd() & ((1u << m2) - 1)); }
+                lauf_best = INT64_MAX; lauf_letzte = runde; neustarts++; seite = 0;
+                printf("  Neustart %ld nach Runde %ld (bestes bisher %ld), %.1f s\n", (long)neustarts, (long)runde, (long)best, jetzt() - t0);
+            }
         }
         char kopf[256];
         if (best == 0) {
-            printf("LOESUNG nach %.1f s, %ld Iterationen, %ld Runden\n", jetzt() - t0, (long)iters, (long)runde);
+            printf("LOESUNG nach %.1f s, %ld Iterationen, %ld Runden, %ld Neustarts\n", jetzt() - t0, (long)iters, (long)runde, (long)neustarts);
             snprintf(kopf, sizeof kopf, "zerl_halb alt K=%d (%d,%d) d=%d seed %lu", K, m1, m2, d, (unsigned long)seed);
             if (aus) schreibe_paar(aus, bU, m1, bW, m2, K, kopf);
             return 0;
         }
-        printf("ZEITGRENZE nach %.1f s, beste Restzahl %ld, %ld Iterationen, %ld Runden\n", jetzt() - t0, (long)best, (long)iters, (long)runde);
+        printf("ZEITGRENZE nach %.1f s, beste Restzahl %ld, %ld Iterationen, %ld Runden, %ld Neustarts\n", jetzt() - t0, (long)best, (long)iters, (long)runde, (long)neustarts);
         snprintf(kopf, sizeof kopf, "zerl_halb alt ungeloest, Restzahl %ld, K=%d (%d,%d) d=%d seed %lu", (long)best, K, m1, m2, d, (unsigned long)seed);
         if (aus) schreibe_paar(aus, bU, m1, bW, m2, K, kopf);
         return 1;

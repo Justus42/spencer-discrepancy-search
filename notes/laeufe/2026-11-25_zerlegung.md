@@ -102,3 +102,21 @@ Block Schritt 2 (18:04–18:24 UTC, `bash src/run_zerl_s2.sh 1200`, 4 parallel, 
 
 Ergebnis Schritt 2: **beide Fälle unentschieden** (Belegart: Suche erfolglos). Die Tiefensuche hängt in den letzten zwei, drei Zeilen; reine Zählung
 reicht nicht (Verhältnis höchstens 0,82 bzw. 0,67). Nicht weiter verfolgt (Auftrag: höchstens 30 Min. je Fall).
+
+## Schritt 3: abwechselnde Suche (`zerl_halb alt`), Treiber `src/run_zerl_alt.sh`
+
+Verfahren: Zufallsstart (U, W); Phase „U fest“: Gewichtssuche auf W mit der exakten Restzahl als Grundkosten (Anforderungsvektoren aus U mit
+Vielfachheit), bis 300 Iterationen ohne Verbesserung (`--phase`); dann „W fest“ ebenso für U; usw. Tauschzüge wie in K1.
+Vorversuch (`test_alt`, Startwerte 1–4, je ≤ 180 s, 18:25 UTC): 3 von 4 in 1,1–1,5 s gelöst; Startwert 3 hing ab Runde 2 bei Restzahl 228 (218 Runden).
+Ergänzt: `--neustart R` = neuer Zufallsstart nach R Runden ohne Verbesserung. Treffer `test_alt_seed1` mit `pruefe_matrix.py`: 8/8/8.
+
+### K3: K = 12, Typ (11,9), d = 8, Startwerte 1–8, je ≤ 900 s, `--neustart 20` (18:28–18:29 UTC), Log `runs/zerlegung/k3.log.txt`
+
+| Startwert | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|---|
+| Zeit bis Restzahl 0 | 1,2 s | 1,3 s | 20,7 s (1 Neustart) | 1,8 s | 1,0 s | 1,7 s | 24,3 s (1 Neustart) | 1,2 s |
+
+**8 von 8 gelöst** (Soll ≥ 4 von 8; alte Nebenklassen-Suche 1 von 16 zu 30 Min.). Alle 8 Paare: Prüfcode 0 offen; Matrix 24 x 20 mit
+`pruefe_matrix.py`: check_disc, verify_spencer, exakt_disc je **Diskrepanz 8** (`runs/zerlegung/k3_pruefe.log.txt`). Fingerabdruck
+(Abstandsprofile der 48 Wörter, Beträge der Zeilen-Skalarprodukte 0:108, 2:144, 4:24) gleich dem von 1+3 und 2+2; er trennt diese beiden
+nicht, Gleichwertigkeit der acht Treffer also offen. **K3 bestanden.** Schritt 4 beginnt.

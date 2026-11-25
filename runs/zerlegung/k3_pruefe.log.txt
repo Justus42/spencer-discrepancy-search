@@ -1,0 +1,17 @@
+seed 1:  check_disc Diskrepanz 8 (0.8 s); verify_spencer Diskrepanz 8 (0.8 s); exakt_disc Diskrepanz 8 (0.8 s);ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8;
+seed 2:  check_disc Diskrepanz 8 (0.7 s); verify_spencer Diskrepanz 8 (0.7 s); exakt_disc Diskrepanz 8 (0.7 s);ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8;
+seed 3:  check_disc Diskrepanz 8 (0.8 s); verify_spencer Diskrepanz 8 (0.8 s); exakt_disc Diskrepanz 8 (0.8 s);ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8;
+seed 4:  check_disc Diskrepanz 8 (0.7 s); verify_spencer Diskrepanz 8 (0.7 s); exakt_disc Diskrepanz 8 (0.7 s);ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8;
+seed 5:  check_disc Diskrepanz 8 (0.8 s); verify_spencer Diskrepanz 8 (0.8 s); exakt_disc Diskrepanz 8 (0.8 s);ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8;
+seed 6:  check_disc Diskrepanz 8 (0.8 s); verify_spencer Diskrepanz 8 (0.8 s); exakt_disc Diskrepanz 8 (0.8 s);ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8;
+seed 7:  check_disc Diskrepanz 8 (0.7 s); verify_spencer Diskrepanz 8 (0.7 s); exakt_disc Diskrepanz 8 (0.7 s);ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8;
+seed 8:  check_disc Diskrepanz 8 (0.8 s); verify_spencer Diskrepanz 8 (0.8 s); exakt_disc Diskrepanz 8 (0.8 s);ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8;
+seed 1: Fingerabdruck (Abstandsprofile der 48 Woerter, |Zeilen-Skalarprodukte|) gleich ['1p3', '2p2']; Skalarprodukte {0: 108, 2: 144, 4: 24}
+seed 2: Fingerabdruck (Abstandsprofile der 48 Woerter, |Zeilen-Skalarprodukte|) gleich ['1p3', '2p2']; Skalarprodukte {0: 108, 2: 144, 4: 24}
+seed 3: Fingerabdruck (Abstandsprofile der 48 Woerter, |Zeilen-Skalarprodukte|) gleich ['1p3', '2p2']; Skalarprodukte {0: 108, 2: 144, 4: 24}
+seed 4: Fingerabdruck (Abstandsprofile der 48 Woerter, |Zeilen-Skalarprodukte|) gleich ['1p3', '2p2']; Skalarprodukte {0: 108, 2: 144, 4: 24}
+seed 5: Fingerabdruck (Abstandsprofile der 48 Woerter, |Zeilen-Skalarprodukte|) gleich ['1p3', '2p2']; Skalarprodukte {0: 108, 2: 144, 4: 24}
+seed 6: Fingerabdruck (Abstandsprofile der 48 Woerter, |Zeilen-Skalarprodukte|) gleich ['1p3', '2p2']; Skalarprodukte {0: 108, 2: 144, 4: 24}
+seed 7: Fingerabdruck (Abstandsprofile der 48 Woerter, |Zeilen-Skalarprodukte|) gleich ['1p3', '2p2']; Skalarprodukte {0: 108, 2: 144, 4: 24}
+seed 8: Fingerabdruck (Abstandsprofile der 48 Woerter, |Zeilen-Skalarprodukte|) gleich ['1p3', '2p2']; Skalarprodukte {0: 108, 2: 144, 4: 24}
+1p3: {0: 108, 2: 144, 4: 24}  2p2: {0: 108, 2: 144, 4: 24}
