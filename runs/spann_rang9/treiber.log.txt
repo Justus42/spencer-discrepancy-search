@@ -41,3 +41,7 @@ ctrl16_r9_y40: 50-250 von 9276: OHNE_LOESUNG, Knoten 4653802, 137s
 ctrl16_r9_y40: 250-1050 von 9276: OHNE_LOESUNG, Knoten 12563897, 351s
 ctrl16_r9_y40: 1050-2418 von 9276: OHNE_LOESUNG, Knoten 21299294, 570s
 Blockende (verstrichen 1126s)
+ctrl16_r9_y40: 2418-3858 von 9276: OHNE_LOESUNG, Knoten 18803907, 510s
+ctrl16_r9_y40: 3858-5552 von 9276: OHNE_LOESUNG, Knoten 17567963, 465s
+ctrl16_r9_y40: 5552-7738 von 9276: OHNE_LOESUNG, Knoten 13106472, 354s
+Blockende (verstrichen 1329s)
