@@ -147,3 +147,30 @@ erste Kugel um Klasse 0; Verzweigung über die kleinste unüberdeckte Klasse; Zu
 haben denselben Suchbaum (gleiche Knotenzahl). Die Aussage gilt für reelle Einträge in [−1,1], genau 10 Zeilen, Schwelle disc/√10 > 5/√8.
 Für die Landkarte: n = 10 reell wie n = 8, 9, 12 als ausgeschlossen kennzeichnen (Belegart: Herleitung + Aufzählung, ein Programm je Sprache).
 
+## Ende: Zusammenfassung, Abweichungen, Prüfdateien
+
+- 25.11.2026 18:36 UTC (nach allen Läufen und nach den Nachträgen in `STATUS.md` und `LANDKARTE.md`): `sha256sum -c verifiers/SHA256SUMS`: `src/check_disc.py` OK, `verifiers/verify_spencer.py` OK, `src/exakt_disc.c` OK.
+  Keine der drei Prüfdateien verändert. `python3 verifiers/test_verifiers.py`: 11 Tests OK (8 s). `main` unverändert gegenüber dem Start (kein Merge nötig); nichts nach `main` zusammengeführt, nichts nach außen gemeldet.
+- Regel 1 für die besten kozyklischen Matrizen (disc 6, n = 18: Z36, Dic9, Z3×Dic3; n = 20: Z40, Z5×Q8 mit und ohne Hadamard, Dic10 Hadamard): `python3 verifiers/pruefe_matrix.py ... --erwartet 6`,
+  alle drei Programme (`check_disc`, `verify_spencer`, `exakt_disc`) disc 6, Rückgabecode 0 (`runs/pruef_ideen/kozyklisch/beste/`).
+- Rechenzeit (4 Kerne, alle Blöcke weit unter 30 Minuten): Teil 1 etwa 17 Min. Suche und 12 Min. Prüfung (davon 4/3 Klasse 1: 8 + 5 Min., Klasse 2 als Zusatz: 8 + 5 Min.), Teil 2 15 s,
+  Teil 3 etwa 4 + 7 Min. Suche und 5 Min. Prüfung, Teil 4 unter 10 s, Teil 5 unter 10 s (Python) bzw. 0,1 s (C) für die entscheidende Suche. Gesamt etwa 1 h 20 Min. Wanduhr, Obergrenze (5 h, Teil 1 höchstens 3 h) bei weitem nicht erreicht.
+
+### Abweichungen von den erwarteten Zahlen und sonstige Befunde
+
+Alle Erwartungen des Auftrags wurden bestätigt. Ausdrücklich zu nennen:
+1. **Zertifikatsgröße:** Im Vortest 7 bis 10 Klassen je Tripel, hier 6 oder 7 (60 Neustarts mit Ausdünnen). Aussage unverändert.
+2. **Schranke 43 (Astra):** gültig, aber nicht scharf; exakt 36 (Teil 5). Der Schluss bleibt, und er ruht nicht mehr auf `K(10,2) >= 24` (Fall e = 0 direkt durch Aufzählung erledigt).
+3. **Dic15, n = 30:** im Vortest nur zu 80 % gelaufen, hier vollständig (536 870 912 Funktionen, 0 Überlebende).
+4. **Neue Zahlen ohne Vorgabe** (nicht Abweichung, nur Zusatz): n = 18: 4338 / 23 922 / 4752 Funktionen mit disc 6; n = 20: Dic10 55 400 (5600 Hadamard), Z5 × Z4 × Z2 900, Z5 × D4 und D20 keine; exakter Bestwert n = 18 und n = 20: 6.
+   Zweite 32er-Klasse: 2 gestrichene Zeilen geben Lochzahl 554 / 578 (Klasse 1: 550 / 562); bei 4 gestrichenen 1476 / 1492 / 1512 (Klasse 1: 1476 / 1484 / 1508 / 1512). Nicht im Auftrag erwartet, kein Widerspruch.
+5. **Fehler im eigenen Suchcode (behoben):** `kern_r3.c` meldete bei 4/3, Index 1223 „VERTEILBAR", weil ein Neustart die Teilmengengrenze erreichte und abbrach; mit 200 Neustarts Kern aus 15 Klassen, Zeile ersetzt, Rohdatei bleibt zum Vergleich liegen.
+6. **Nicht gegengerechnet, weil nicht Gegenstand von Auftrag P** und deshalb weder bestätigt noch widerlegt: `tern_ls.c`-Kontrolle, CP-SAT/Glucose-Halbproblem, verschachtelte Hamming-Hälften (24 192 offene Klassen), Sols Schnitte zu K = 10 (Typ (11,9): „mindestens 6 Dreierzeilen" usw.),
+   Zerlegung d = 9 mit m2 = 12, 14. Diese stehen in `STATUS.md` nur als „Rechnung des Orchestrators, nicht gegengerechnet" bzw. als offen.
+7. **Grenzen der Aussagen:** (15,4): Die Zertifikate gelten für die Ersetzung von 3 Zeilen durch 2 und von 4 durch 3; mehr gestrichene Zeilen sind nicht gerechnet. Die Aussage „13 gemeinsame Zeilen" folgt aus 3/2, „12 gemeinsame" aus 4/3 (nur im Rahmen
+   von genau 15 Zeilen, die Ersatzzeilen beliebig in [−1,1]^15). Kozyklisch n = 26–30: nur „disc <= 8" mit einem Programm, keine Gegenbeispiele gespeichert. Teil 4 (Zählschranken): Herleitungen nachvollzogen und Zahlen bestätigt, aber nicht formal bewiesen.
+
+### Wo liegt was
+
+- `src/pruef_ideen/`: `kern_r3.c` (+ `lauf_kern.sh`), `spalte.c`, `kozyk.c` (+ `lauf_kozyk.sh`), `ueberdeckung10.c`. `verifiers/pruef_ideen/`: `pruef_kern.py`, `pruef_kozyk.py` (+ `lauf_pruef_kozyk.sh`), `zerlegung_zahlen.py`, `astra10.py`.
+- `runs/pruef_ideen/kern_r3/` (Zertifikate, Prüfprotokolle, Kontrollen), `spalte/`, `kozyklisch/` (Gegenbeispiele `*.bin.gz`, Zusammenfassung `ZUSAMMENFASSUNG.txt`, `beste/`), `zerlegung/`, `astra10/`.
