@@ -17,8 +17,8 @@ für d = 7, 8, 9, 10, 11. Zielzellen (m,R) mit erlaubter Wortzahl und bekannter 
 Paley-Hadamard-Matrix der Ordnung 12 mit gestrichenen Spalten). (25,8): 50 erlaubt, 25-64. (30,10): 62 erlaubt, 27-128.
 (37,13): 76 erlaubt, außerhalb der Tabellen.
 Schon ausgeschlossen oder erfolglos durchsucht: Hadamard-Matrizen der Ordnung 20 und 24 (auch mit gestrichenen Spalten),
-zirkulante und gruppenentwickelte Matrizen bis Ordnung 31, negazyklische und Williamson-artige Matrizen der Ordnung 18-30,
-Codes mit zyklischer Spaltensymmetrie der Ordnung 3, 5, 7, 11, 13, Codes im affinen Spann der bekannten guten Codes.
+zirkulante und gruppenentwickelte Matrizen bis Ordnung 31, negazyklische und Williamson-artige Matrizen der Ordnung 18-30
+(nur Vortest), Codes mit zyklischer Spaltensymmetrie der Ordnung 5, 7, 11, 13, Codes im affinen Spann der bekannten guten Codes.
 
 FRAGEN
 1. Herkunft der Tabellenwerte. Woher stammen K(15,4) <= 32, K(13,3) <= 42, K(16,4), K(18,5), K(20,6) <= 64,
@@ -39,7 +39,7 @@ FRAGEN
    erblicher und linearer Diskrepanz kleiner Beispiele? Gibt es irgendeine Familie mit asymptotischem Quotienten über 1?
    Was sagen Arbeiten zur unteren Schranke in Spencers Satz ("six standard deviations") über explizite Beispiele?
 5. Überdeckung durch Zylinder. Eine Zeile mit Nullen überdeckt eine Kugel in weniger Koordinaten mal einen Teilwürfel.
-   Bei n = 8 gibt es 55 680 perfekte Zerlegungen von Q8 in 16 solche "Doppelkugeln" mit verteilten Nullpositionen.
+   Bei n = 8 gibt es 55 680 Lösungsmatrizen, die Q8 perfekt in 16 solche "Doppelkugeln" mit verteilten Nullpositionen zerlegen.
    Unter welchem Namen ist das bekannt (diameter perfect codes nach Ahlswede-Aydinian-Khachatrian, Kacheln mit
    Antikodes, gemischte perfekte Codes)? Gibt es Ergebnisse für größere Parameter, die auf N = 15, 19 oder 20 passen?
 6. Methodentransfer. Welche Suchverfahren haben seit etwa 2015 Rekorde bei Überdeckungscodes, Überdeckungsdesigns
