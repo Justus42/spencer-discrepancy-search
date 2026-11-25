@@ -1,0 +1,2 @@
+runs/spann_rang9/l111_r9_y384.fortschritt: Aufgaben 7374, bis 7374 gerechnet, Bereiche 5, Knoten 30961395, Sekunden 688, Zeitlimit-Wiederholungen 0, Luecken [], Ueberlappungen [], Loesung False
+ENTSCHIEDEN: keine Loesung (lueckenlos, vollstaendig)
