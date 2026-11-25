@@ -34,5 +34,6 @@ etwas außerhalb dieses Ordners installierst oder veränderst.
 8. Die drei Prüfdateien `src/check_disc.py`, `verifiers/verify_spencer.py` und `src/exakt_disc.c` ändert nur
    ein eigener PR, der nichts anderes enthält und `verifiers/SHA256SUMS` mitzieht. Jede Sitzung führt vor einem
    Treffer-Bericht `sha256sum -c verifiers/SHA256SUMS` aus und schreibt das Ergebnis ins Protokoll.
+9. Jeder Ansatz trägt sein bestes Ergebnis in `LANDKARTE.md` ein, auch wenn es kein Rekord ist.
 
 Sprache: Deutsch, kurz.

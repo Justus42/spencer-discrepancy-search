@@ -86,7 +86,7 @@ Eigene Tabelle, weil N = 11, 13 in den Tabellen oben fehlen. Protokoll `notes/la
 ## Nötige Dichte, Schranke für reelle Matrizen
 
 Für reelle n x n-Matrizen in [-1,1] (auch mit Nullen aufgefüllte) mit disc > 5√(n/8) müssen 2n Kappen den Würfel {±1}^n überdecken; jede Kappe hat
-Durchmesser ≤ D (D größte ganze Zahl mit 8(n−D)² > 25n). Mit dem Satz von Kleitman (**Literatur, hier unbelegt**) fasst eine Kappe höchstens Kl Punkte.
+Durchmesser ≤ D (D größte ganze Zahl mit 8(n−D)² > 25n). Mit dem Satz von Kleitman (J. Combin. Theory 1 (1966), 209–214; Zitat belegt, Volltext nicht eingesehen) fasst eine Kappe höchstens Kl Punkte.
 Nötige Dichte 2n·Kl/2^n ≥ 1. Unter 1: Für dieses n schlägt keine reelle Matrix den Rekord (Belegart `e`, bedingt auf Kleitman). Dichte ≥ 1 sagt nichts.
 Programm `src/dichte_schranke.py`, Protokoll `notes/laeufe/2026-11-24_reell16.md`.
 
