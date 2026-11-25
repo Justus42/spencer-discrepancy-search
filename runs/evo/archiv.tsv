@@ -23,3 +23,7 @@ Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
 6	p007	p005	B	20	6	23	2	600	1284	Ziel 23 Paare, Doppelungsform 11+1 frei, Neustart nach 30 s
 6	p007	p005	B	20	6	23	3	600	1279	Ziel 23 Paare, Doppelungsform 11+1 frei, Neustart nach 30 s
 6	p007	p005	B	20	6	23	4	600	1276	Ziel 23 Paare, Doppelungsform 11+1 frei, Neustart nach 30 s
+7	p008	p004	S	20	6	23	1	600	1195	Ziel 23 Paare, Saat: 48er ohne Zeile S-1, Insel-A-Zuege, Gewichte ohne Glaettung, Neustart vom Saatpunkt
+7	p008	p004	S	20	6	23	2	600	1170	Ziel 23 Paare, Saat: 48er ohne Zeile S-1, Insel-A-Zuege, Gewichte ohne Glaettung, Neustart vom Saatpunkt
+7	p008	p004	S	20	6	23	3	600	1148	Ziel 23 Paare, Saat: 48er ohne Zeile S-1, Insel-A-Zuege, Gewichte ohne Glaettung, Neustart vom Saatpunkt
+7	p008	p004	S	20	6	23	4	600	1154	Ziel 23 Paare, Saat: 48er ohne Zeile S-1, Insel-A-Zuege, Gewichte ohne Glaettung, Neustart vom Saatpunkt
