@@ -1,0 +1,23 @@
+Zertifikate bestaetigt: 455, nicht bestaetigt: 0, Lochzahl weicht von Angabe ab: 0
+  Loecher 1476, Kerngroesse 13: 4 Streichmengen
+  Loecher 1476, Kerngroesse 14: 3 Streichmengen
+  Loecher 1476, Kerngroesse 15: 24 Streichmengen
+  Loecher 1476, Kerngroesse 16: 81 Streichmengen
+  Loecher 1476, Kerngroesse 17: 95 Streichmengen
+  Loecher 1476, Kerngroesse 18: 56 Streichmengen
+  Loecher 1476, Kerngroesse 19: 12 Streichmengen
+  Loecher 1476, Kerngroesse 20: 1 Streichmengen
+  Loecher 1492, Kerngroesse 13: 1 Streichmengen
+  Loecher 1492, Kerngroesse 14: 2 Streichmengen
+  Loecher 1492, Kerngroesse 15: 16 Streichmengen
+  Loecher 1492, Kerngroesse 16: 51 Streichmengen
+  Loecher 1492, Kerngroesse 17: 46 Streichmengen
+  Loecher 1492, Kerngroesse 18: 38 Streichmengen
+  Loecher 1492, Kerngroesse 19: 13 Streichmengen
+  Loecher 1492, Kerngroesse 20: 2 Streichmengen
+  Loecher 1512, Kerngroesse 15: 1 Streichmengen
+  Loecher 1512, Kerngroesse 16: 2 Streichmengen
+  Loecher 1512, Kerngroesse 17: 1 Streichmengen
+  Loecher 1512, Kerngroesse 18: 5 Streichmengen
+  Loecher 1512, Kerngroesse 20: 1 Streichmengen
+ERGEBNIS: alle bestaetigt

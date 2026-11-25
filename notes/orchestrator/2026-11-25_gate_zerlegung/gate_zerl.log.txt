@@ -1,0 +1,93 @@
+Wed Nov 25 22:14:04 CET 2026
+a_k11_t10-10_seed1     K=11 (10,10) d=8  Kopf   1063  gezaehlt   1063  gleich   |U-Gram| {0: 30, 2: 23, 6: 2}  |W-Gram| {0: 30, 2: 23, 6: 2}
+a_k11_t10-10_seed2     K=11 (10,10) d=8  Kopf   1063  gezaehlt   1063  gleich   |U-Gram| {0: 30, 2: 23, 6: 2}  |W-Gram| {0: 30, 2: 23, 6: 2}
+a_k11_t10-10_seed3     K=11 (10,10) d=8  Kopf   1063  gezaehlt   1063  gleich   |U-Gram| {0: 30, 2: 23, 6: 2}  |W-Gram| {0: 30, 2: 23, 6: 2}
+a_k11_t10-10_seed4     K=11 (10,10) d=8  Kopf   1116  gezaehlt   1116  gleich   |U-Gram| {0: 30, 2: 23, 6: 2}  |W-Gram| {0: 26, 2: 27, 4: 2}
+a_k11_t11-9_seed1      K=11 (11, 9) d=8  Kopf   1288  gezaehlt   1288  gleich   |U-Gram| {1: 42, 3: 13}  |W-Gram| {1: 43, 3: 11, 5: 1}
+a_k11_t11-9_seed2      K=11 (11, 9) d=8  Kopf   1288  gezaehlt   1288  gleich   |U-Gram| {1: 42, 3: 13}  |W-Gram| {1: 43, 3: 11, 5: 1}
+a_k11_t11-9_seed3      K=11 (11, 9) d=8  Kopf   1288  gezaehlt   1288  gleich   |U-Gram| {1: 42, 3: 13}  |W-Gram| {1: 43, 3: 11, 5: 1}
+a_k11_t11-9_seed4      K=11 (11, 9) d=8  Kopf   1288  gezaehlt   1288  gleich   |U-Gram| {1: 42, 3: 13}  |W-Gram| {1: 43, 3: 11, 5: 1}
+a_k11_t12-8_seed1      K=11 (12, 8) d=8  Kopf   1836  gezaehlt   1836  gleich   |U-Gram| {0: 55}  |W-Gram| {0: 22, 2: 30, 4: 3}
+a_k11_t12-8_seed2      K=11 (12, 8) d=8  Kopf   1836  gezaehlt   1836  gleich   |U-Gram| {0: 55}  |W-Gram| {0: 22, 2: 30, 4: 3}
+a_k11_t12-8_seed3      K=11 (12, 8) d=8  Kopf   1836  gezaehlt   1836  gleich   |U-Gram| {0: 55}  |W-Gram| {0: 22, 2: 30, 4: 3}
+a_k11_t12-8_seed4      K=11 (12, 8) d=8  Kopf   1836  gezaehlt   1836  gleich   |U-Gram| {0: 55}  |W-Gram| {0: 22, 2: 30, 4: 3}
+a_k11_t13-7_seed1      K=11 (13, 7) d=8  Kopf   2698  gezaehlt   2698  gleich   |U-Gram| {1: 55}  |W-Gram| {1: 40, 3: 15}
+a_k11_t13-7_seed2      K=11 (13, 7) d=8  Kopf   2698  gezaehlt   2698  gleich   |U-Gram| {1: 55}  |W-Gram| {1: 40, 3: 15}
+a_k11_t13-7_seed3      K=11 (13, 7) d=8  Kopf   2698  gezaehlt   2698  gleich   |U-Gram| {1: 55}  |W-Gram| {1: 40, 3: 15}
+a_k11_t13-7_seed4      K=11 (13, 7) d=8  Kopf   2698  gezaehlt   2698  gleich   |U-Gram| {1: 55}  |W-Gram| {1: 40, 3: 15}
+a_k12_t10-10_seed1     K=12 (10,10) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {0: 36, 2: 30}  |W-Gram| {0: 36, 2: 30}
+a_k12_t12-8_seed1      K=12 (12, 8) d=8  Kopf    180  gezaehlt    180  gleich   |U-Gram| {0: 55, 2: 11}  |W-Gram| {0: 30, 2: 32, 4: 4}
+a_k12_t13-7_seed1      K=12 (13, 7) d=8  Kopf    290  gezaehlt    290  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 50, 3: 15, 5: 1}
+b_k10_t10-10_seed1     K=10 (10,10) d=8  Kopf   1852  gezaehlt   1852  gleich   |U-Gram| {0: 25, 2: 20}  |W-Gram| {0: 25, 2: 20}
+b_k10_t10-10_seed2     K=10 (10,10) d=8  Kopf   1916  gezaehlt   1916  gleich   |U-Gram| {0: 24, 2: 21}  |W-Gram| {0: 25, 2: 20}
+b_k10_t10-10_seed3     K=10 (10,10) d=8  Kopf   1916  gezaehlt   1916  gleich   |U-Gram| {0: 24, 2: 21}  |W-Gram| {0: 25, 2: 20}
+b_k10_t10-10_seed4     K=10 (10,10) d=8  Kopf   1852  gezaehlt   1852  gleich   |U-Gram| {0: 25, 2: 20}  |W-Gram| {0: 25, 2: 20}
+b_k10_t11-9_seed1      K=10 (11, 9) d=8  Kopf   3234  gezaehlt   3234  gleich   |U-Gram| {1: 33, 3: 12}  |W-Gram| {1: 41, 3: 2, 5: 2}
+b_k10_t11-9_seed2      K=10 (11, 9) d=8  Kopf   3234  gezaehlt   3234  gleich   |U-Gram| {1: 33, 3: 12}  |W-Gram| {1: 41, 3: 2, 5: 2}
+b_k10_t11-9_seed3      K=10 (11, 9) d=8  Kopf   3234  gezaehlt   3234  gleich   |U-Gram| {1: 33, 3: 12}  |W-Gram| {1: 41, 3: 2, 5: 2}
+b_k10_t11-9_seed4      K=10 (11, 9) d=8  Kopf   3234  gezaehlt   3234  gleich   |U-Gram| {1: 33, 3: 12}  |W-Gram| {1: 41, 3: 2, 5: 2}
+b_k10_t12-8_seed1      K=10 (12, 8) d=8  Kopf   4280  gezaehlt   4280  gleich   |U-Gram| {0: 16, 2: 25, 4: 4}  |W-Gram| {0: 43, 8: 2}
+b_k10_t12-8_seed2      K=10 (12, 8) d=8  Kopf   4349  gezaehlt   4349  gleich   |U-Gram| {0: 16, 2: 24, 4: 5}  |W-Gram| {0: 35, 2: 8, 6: 1, 8: 1}
+b_k10_t12-8_seed3      K=10 (12, 8) d=8  Kopf   4349  gezaehlt   4349  gleich   |U-Gram| {0: 16, 2: 24, 4: 5}  |W-Gram| {0: 35, 2: 8, 6: 1, 8: 1}
+b_k10_t12-8_seed4      K=10 (12, 8) d=8  Kopf   4280  gezaehlt   4280  gleich   |U-Gram| {0: 16, 2: 25, 4: 4}  |W-Gram| {0: 43, 8: 2}
+b_k10_t13-7_seed1      K=10 (13, 7) d=8  Kopf   5926  gezaehlt   5926  gleich   |U-Gram| {1: 45}  |W-Gram| {1: 43, 7: 2}
+b_k10_t13-7_seed2      K=10 (13, 7) d=8  Kopf   5926  gezaehlt   5926  gleich   |U-Gram| {1: 45}  |W-Gram| {1: 43, 7: 2}
+b_k10_t13-7_seed3      K=10 (13, 7) d=8  Kopf   5926  gezaehlt   5926  gleich   |U-Gram| {1: 45}  |W-Gram| {1: 43, 7: 2}
+b_k10_t13-7_seed4      K=10 (13, 7) d=8  Kopf   5926  gezaehlt   5926  gleich   |U-Gram| {1: 45}  |W-Gram| {1: 43, 7: 2}
+c_k12_t11-10_seed1     K=12 (11,10) d=9  Kopf  12957  gezaehlt  12957  gleich   |U-Gram| {1: 54, 3: 12}  |W-Gram| {0: 27, 2: 39}
+c_k12_t11-10_seed2     K=12 (11,10) d=9  Kopf  12957  gezaehlt  12957  gleich   |U-Gram| {1: 54, 3: 12}  |W-Gram| {0: 27, 2: 39}
+c_k12_t11-10_seed3     K=12 (11,10) d=9  Kopf  12957  gezaehlt  12957  gleich   |U-Gram| {1: 54, 3: 12}  |W-Gram| {0: 27, 2: 39}
+c_k12_t11-10_seed4     K=12 (11,10) d=9  Kopf  12957  gezaehlt  12957  gleich   |U-Gram| {1: 54, 3: 12}  |W-Gram| {0: 27, 2: 39}
+c_k12_t11-14_seed1     K=12 (11,14) d=9  Kopf   5280  gezaehlt   5280  gleich   |U-Gram| {1: 66}  |W-Gram| {2: 66}
+c_k12_t11-14_seed2     K=12 (11,14) d=9  Kopf  21560  gezaehlt  21560  gleich   |U-Gram| {1: 61, 3: 5}  |W-Gram| {0: 11, 2: 55}
+c_k12_t11-14_seed3     K=12 (11,14) d=9  Kopf  55485  gezaehlt  55485  gleich   |U-Gram| {1: 50, 3: 16}  |W-Gram| {0: 32, 2: 34}
+c_k12_t11-14_seed4     K=12 (11,14) d=9  Kopf  55328  gezaehlt  55328  gleich   |U-Gram| {1: 52, 3: 14}  |W-Gram| {0: 32, 2: 34}
+c_k12_t12-11_seed1     K=12 (12,11) d=9  Kopf   1760  gezaehlt   1760  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 66}
+c_k12_t12-11_seed2     K=12 (12,11) d=9  Kopf   1760  gezaehlt   1760  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 66}
+c_k12_t12-11_seed3     K=12 (12,11) d=9  Kopf   1760  gezaehlt   1760  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 66}
+c_k12_t12-11_seed4     K=12 (12,11) d=9  Kopf   1760  gezaehlt   1760  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 66}
+c_k12_t12-13_seed1     K=12 (12,13) d=9  Kopf   5280  gezaehlt   5280  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 66}
+c_k12_t12-13_seed2     K=12 (12,13) d=9  Kopf   5280  gezaehlt   5280  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 66}
+c_k12_t12-13_seed3     K=12 (12,13) d=9  Kopf   5280  gezaehlt   5280  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 66}
+c_k12_t12-13_seed4     K=12 (12,13) d=9  Kopf   5280  gezaehlt   5280  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 66}
+c_k12_t12-9_seed1      K=12 (12, 9) d=9  Kopf  11002  gezaehlt  11002  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 45, 3: 21}
+c_k12_t12-9_seed2      K=12 (12, 9) d=9  Kopf  11002  gezaehlt  11002  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 45, 3: 21}
+c_k12_t12-9_seed3      K=12 (12, 9) d=9  Kopf  11002  gezaehlt  11002  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 45, 3: 21}
+c_k12_t12-9_seed4      K=12 (12, 9) d=9  Kopf  11002  gezaehlt  11002  gleich   |U-Gram| {0: 66}  |W-Gram| {1: 41, 3: 25}
+c_k12_t13-10_seed1     K=12 (13,10) d=9  Kopf  26360  gezaehlt  26360  gleich   |U-Gram| {1: 66}  |W-Gram| {0: 36, 2: 30}
+c_k12_t13-10_seed2     K=12 (13,10) d=9  Kopf  26360  gezaehlt  26360  gleich   |U-Gram| {1: 48, 3: 18}  |W-Gram| {0: 36, 2: 30}
+c_k12_t13-10_seed3     K=12 (13,10) d=9  Kopf  26360  gezaehlt  26360  gleich   |U-Gram| {1: 66}  |W-Gram| {0: 36, 2: 30}
+c_k12_t13-10_seed4     K=12 (13,10) d=9  Kopf  26360  gezaehlt  26360  gleich   |U-Gram| {1: 66}  |W-Gram| {0: 36, 2: 30}
+k1_U_seed1             K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k1_U_seed2             K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k1_U_seed3             K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k1_U_seed4             K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k1_W_seed1             K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k1_W_seed2             K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k1_W_seed3             K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k1_W_seed4             K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k1b_U_seed1            K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 12, 3: 16}  |W-Gram| {0: 28}
+k1b_U_seed2            K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 28}  |W-Gram| {0: 28}
+k1b_U_seed3            K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 28}  |W-Gram| {0: 28}
+k1b_U_seed4            K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 12, 3: 16}  |W-Gram| {0: 28}
+k1b_W_seed1            K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 12, 3: 16}  |W-Gram| {0: 28}
+k1b_W_seed2            K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 12, 3: 16}  |W-Gram| {0: 28}
+k1b_W_seed3            K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 12, 3: 16}  |W-Gram| {0: 28}
+k1b_W_seed4            K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 12, 3: 16}  |W-Gram| {0: 28}
+k3_seed1               K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k3_seed2               K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k3_seed3               K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k3_seed4               K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k3_seed5               K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k3_seed6               K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k3_seed7               K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+k3_seed8               K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+s2_ls_m12              K=12 (11,12) d=9  Kopf   1760  gezaehlt   1760  gleich   |U-Gram| {1: 66}  |W-Gram| {0: 66}
+s2_ls_m14              K=12 (11,14) d=9  Kopf   5280  gezaehlt   5280  gleich   |U-Gram| {1: 66}  |W-Gram| {2: 66}
+test_alt_seed1         K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+test_alt_seed2         K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+test_alt_seed3         K=12 (11, 9) d=8  Kopf    228  gezaehlt    228  gleich   |U-Gram| {1: 60, 3: 4, 5: 2}  |W-Gram| {1: 54, 3: 12}
+test_alt_seed4         K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+Paare: 89, Abweichungen: 0, geloest (0 offen): 28
+real	0m5.261s
+Wed Nov 25 22:14:10 CET 2026

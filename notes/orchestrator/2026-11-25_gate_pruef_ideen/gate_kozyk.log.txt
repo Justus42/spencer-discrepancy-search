@@ -1,0 +1,20 @@
+Wed Nov 25 19:50:45 CET 2026
+Z36       n=18 abelsch Elementordnungen {1: 1, 2: 1, 3: 2, 4: 2, 6: 2, 9: 6, 12: 4, 18: 6, 36: 12} | Funktionen 131072, Fehlstellen 0, max > 6: 0, Maxima {2: 9, 4: 3601, 6: 127462} -> bestaetigt
+   Z36_n18_F529.txt: gleich der eigenen Matrix: True, Hadamard: False
+Dic9      n=18 nichtabelsch Elementordnungen {1: 1, 2: 1, 3: 2, 4: 18, 6: 2, 9: 6, 18: 6} | Funktionen 131072, Fehlstellen 0, max > 6: 0, Maxima {2: 6, 4: 1116, 6: 129950} -> bestaetigt
+   Dic9_n18_F516.txt: gleich der eigenen Matrix: True, Hadamard: False
+Z3xDic3   n=18 nichtabelsch Elementordnungen {1: 1, 2: 1, 3: 8, 4: 6, 6: 8, 12: 12} | Funktionen 131072, Fehlstellen 0, max > 6: 0, Maxima {2: 27, 4: 3712, 6: 127333} -> bestaetigt
+   Z3xDic3_n18_F12.txt: gleich der eigenen Matrix: True, Hadamard: False
+Z40       n=20 abelsch Elementordnungen {1: 1, 2: 1, 4: 2, 5: 4, 8: 4, 10: 4, 20: 8, 40: 16} | Funktionen 524288, Fehlstellen 0, max > 6: 0, Maxima {2: 13, 4: 7497, 6: 516778} -> bestaetigt
+   Z40_n20_F604.txt: gleich der eigenen Matrix: True, Hadamard: False
+Z5xQ8     n=20 nichtabelsch Elementordnungen {1: 1, 2: 1, 4: 6, 5: 4, 10: 4, 20: 24} | Funktionen 524288, Fehlstellen 0, max > 6: 0, Maxima {2: 372, 4: 39171, 6: 484745} -> bestaetigt
+   Z5xQ8_n20_F17097_hadamard.txt: gleich der eigenen Matrix: True, Hadamard: True
+   Z5xQ8_n20_F713.txt: gleich der eigenen Matrix: True, Hadamard: False
+Z5xD4     n=20 nichtabelsch Elementordnungen {1: 1, 2: 5, 4: 2, 5: 4, 10: 20, 20: 8} | Funktionen 524288, Fehlstellen 0, max > 6: 0, Maxima {0: 19, 2: 979, 4: 52434, 6: 470856} -> bestaetigt
+Z5xZ4xZ2  n=20 abelsch Elementordnungen {1: 1, 2: 3, 4: 4, 5: 4, 10: 12, 20: 16} | Funktionen 524288, Fehlstellen 0, max > 6: 0, Maxima {2: 289, 4: 32886, 6: 491108, 0: 5} -> bestaetigt
+Dic10     n=20 nichtabelsch Elementordnungen {1: 1, 2: 1, 4: 22, 5: 4, 10: 4, 20: 8} | Funktionen 524288, Fehlstellen 0, max > 6: 0, Maxima {2: 26, 4: 10375, 6: 513887} -> bestaetigt
+   Dic10_n20_F6185_hadamard.txt: gleich der eigenen Matrix: True, Hadamard: True
+D20       n=20 nichtabelsch Elementordnungen {1: 1, 2: 21, 4: 2, 5: 4, 10: 4, 20: 8} | Funktionen 524288, Fehlstellen 0, max > 6: 0, Maxima {0: 34, 2: 2484, 4: 71445, 6: 450325} -> bestaetigt
+GESAMT: alle Gegenbeispiele bestaetigt
+real	0m25.764s
+Wed Nov 25 19:51:11 CET 2026

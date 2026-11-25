@@ -1,0 +1,23 @@
+Wed Nov 25 19:51:21 CET 2026
+Matrix runs/pruef_ideen/kozyklisch/beste/Z36_n18_F529.txt: 18 x 18, aufgefuellt 18 x 18
+  check_disc      Diskrepanz 6  (0.2 s)
+  verify_spencer  Diskrepanz 6  (0.2 s)
+  exakt_disc      Diskrepanz 6  (0.2 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 6 (= erwartet)
+real	0m0.282s
+Rueckgabe 0
+Matrix runs/pruef_ideen/kozyklisch/beste/Z5xQ8_n20_F17097_hadamard.txt: 20 x 20, aufgefuellt 20 x 20
+  check_disc      Diskrepanz 6  (0.5 s)
+  verify_spencer  Diskrepanz 6  (0.5 s)
+  exakt_disc      Diskrepanz 6  (0.5 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 6 (= erwartet)
+real	0m0.578s
+Rueckgabe 0
+Matrix runs/pruef_ideen/kozyklisch/beste/Dic10_n20_F6185_hadamard.txt: 20 x 20, aufgefuellt 20 x 20
+  check_disc      Diskrepanz 6  (0.6 s)
+  verify_spencer  Diskrepanz 6  (0.6 s)
+  exakt_disc      Diskrepanz 6  (0.6 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 6 (= erwartet)
+real	0m0.642s
+Rueckgabe 0
+Wed Nov 25 19:51:22 CET 2026

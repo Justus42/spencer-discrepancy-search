@@ -1,0 +1,34 @@
+== Teil A: Paley-12 voll (12 x 12)
+  Profil (6, 6, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2) : 880 Klassen
+  Profil (8, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0) : 792 Klassen
+  Profil (4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0) : 220 Klassen
+  Profil (10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2) : 144 Klassen
+  Profil (12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) : 12 Klassen
+  (6^3,2^9): 880 Klassen, 220 Zeilenmuster (Dreiermengen der 6er-Zeilen)
+  (4^9,0^3): 220 Klassen, 220 Zeilenmuster (Dreiermengen der Nullzeilen)
+  uebrige: 948 Klassen, jede mit einem Betrag >= 8: True
+  Erwartung 880/220, 220/220, uebrige >= 8: erfuellt
+== Teil B: Schnitte und Bilanz
+  |B(x,2) ∩ B(y,4)| in Q13 bei Abstand 0..6: [92, 92, 92, 47, 47, 15, 15] (erwartet [92, 92, 92, 47, 47, 15, 15])
+  m2 = 9: V(m2,2) = 46, V(m2,0) = 1; vorhanden 24*46 = 1104, noetig 1976, Spielraum -872
+  m2 = 11: V(m2,3) = 232, V(m2,1) = 12; vorhanden 24*232 = 5568, noetig 7328, Spielraum -1760
+  m2 = 13: V(m2,4) = 1093, V(m2,2) = 92; vorhanden 24*1093 = 26232, noetig 26144, Spielraum 88
+  ueberzaehlig mindestens 24*11*15 = 3960; erlaubt hoechstens 88 - 3D + 11D mit D <= 29: 320
+  Stichprobe 300 zufaellige W: kleinste Summe A(x)(B(x)-1) = 4984 (verlangt >= 3960): ok
+  Aequivalenz Bedingung <-> Ueberdeckung (12 Matrizen W, je 4096 Klassen z, davon 19973 erfuellt, 29179 nicht): gleich in 12 von 12 Matrizen
+== Teil C: Paley-12 ohne Spalte 0 (12 x 11), d = 9
+  Profil (7, 5, 5, 3, 3, 3, 1, 1, 1, 1, 1, 1) : 660 Klassen
+  Profil (5, 5, 5, 3, 3, 3, 3, 3, 3, 1, 1, 1) : 220 Klassen
+  Profil (9, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1) : 132 Klassen
+  Profil (11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1) : 12 Klassen
+  Profil (5^3,3^6,1^3): 220 Klassen (erwartet 220)
+  verschiedene Dreiermengen der 5er-Zeilen: 220 (erwartet 220)
+  Ketten C <= B <= A mit a + 3b + 6c <= 9: 17031, davon erfuellen alle 220 Muster: 0 (erwartet 0)
+  kleinstes |A| bei |B| = 0, 1, 2 und C leer: [10, 7, 6] (erwartet [10, 7, 6])
+  m2 = 10: (q4,q6,q8) = (176,56,11); 12(q4+3q6+6q8) = 4920 gegen 10*2^9 = 5120; Differenz -200
+  m2 = 12: (q4,q6,q8) = (794,299,79); 12(q4+3q6+6q8) = 25980 gegen 10*2^11 = 20480; Differenz 5500
+  m2 = 14: (q4,q6,q8) = (3473,1471,470); 12(q4+3q6+6q8) = 128472 gegen 10*2^13 = 81920; Differenz 46552
+== Teil D: Lemma (U des 48ers ohne eine Zeile, y = diese Zeile: alle uebrigen |u_i| = 1)
+  Paley-12 ohne eine Spalte (12 Spalten) x 12 Zeilen: Abweichungen 0
+  controls/had24_1p3_paley12.txt, linker Block (12 x 11): Abweichungen 0 von 12; untere Haelfte hat dieselbe linke Haelfte: True
+ERGEBNIS: A bestaetigt, B bestaetigt, C bestaetigt, D bestaetigt

@@ -1,0 +1,2 @@
+Z36 shard 2/4: Funktionen 32768, ohne Gegenbeispiel (<= 6): 0, Sieb <= 4: Vorfilter 17073, Ueberlebende 1179
+Z36 shard 2: exakt (build/exakt_disc) der Ueberlebenden: disc 6: 1179; Hadamard unter den Ueberlebenden: 0

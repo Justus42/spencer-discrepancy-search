@@ -1,0 +1,7 @@
+runs/pruef_ideen/kozyklisch/beste/Z36_n18_F529.txt Rueckgabecode 0
+runs/pruef_ideen/kozyklisch/beste/Dic9_n18_F516.txt Rueckgabecode 0
+runs/pruef_ideen/kozyklisch/beste/Z3xDic3_n18_F12.txt Rueckgabecode 0
+runs/pruef_ideen/kozyklisch/beste/Dic10_n20_F6185_hadamard.txt Rueckgabecode 0
+runs/pruef_ideen/kozyklisch/beste/Z5xQ8_n20_F713.txt Rueckgabecode 0
+runs/pruef_ideen/kozyklisch/beste/Z5xQ8_n20_F17097_hadamard.txt Rueckgabecode 0
+runs/pruef_ideen/kozyklisch/beste/Z40_n20_F604.txt Rueckgabecode 0
