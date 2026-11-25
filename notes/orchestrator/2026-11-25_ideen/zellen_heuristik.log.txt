@@ -1,0 +1,44 @@
+Teil 1: N, Schwelle 5*sqrt(N/8); je Traeger s: d, Radius, Kappenanteil (beide Vorzeichen), Dichte bei N Zeilen
+N=13 Schwelle=6.374 | s=13: d=7 r=3 Anteil=0.0923 Dichte=1.200 | s=12: d=8 r=2 Anteil=0.0386 Dichte=0.501 | s=11: d=7 r=2 Anteil=0.0654 Dichte=0.851 | s=10: d=8 r=1 Anteil=0.0215 Dichte=0.279 | s=9: d=7 r=1 Anteil=0.0391 Dichte=0.508
+N=14 Schwelle=6.614 | s=14: d=8 r=3 Anteil=0.0574 Dichte=0.803 | s=13: d=7 r=3 Anteil=0.0923 Dichte=1.292 | s=12: d=8 r=2 Anteil=0.0386 Dichte=0.540 | s=11: d=7 r=2 Anteil=0.0654 Dichte=0.916 | s=10: d=8 r=1 Anteil=0.0215 Dichte=0.301
+N=15 Schwelle=6.847 | s=15: d=7 r=4 Anteil=0.1185 Dichte=1.777 | s=14: d=8 r=3 Anteil=0.0574 Dichte=0.861 | s=13: d=7 r=3 Anteil=0.0923 Dichte=1.384 | s=12: d=8 r=2 Anteil=0.0386 Dichte=0.579 | s=11: d=7 r=2 Anteil=0.0654 Dichte=0.981
+N=16 Schwelle=7.071 | s=16: d=8 r=4 Anteil=0.0768 Dichte=1.229 | s=15: d=9 r=3 Anteil=0.0352 Dichte=0.562 | s=14: d=8 r=3 Anteil=0.0574 Dichte=0.918 | s=13: d=9 r=2 Anteil=0.0225 Dichte=0.359 | s=12: d=8 r=2 Anteil=0.0386 Dichte=0.617
+N=17 Schwelle=7.289 | s=17: d=9 r=4 Anteil=0.0490 Dichte=0.834 | s=16: d=8 r=4 Anteil=0.0768 Dichte=1.306 | s=15: d=9 r=3 Anteil=0.0352 Dichte=0.598 | s=14: d=8 r=3 Anteil=0.0574 Dichte=0.975 | s=13: d=9 r=2 Anteil=0.0225 Dichte=0.382
+N=18 Schwelle=7.500 | s=18: d=8 r=5 Anteil=0.0963 Dichte=1.733 | s=17: d=9 r=4 Anteil=0.0490 Dichte=0.883 | s=16: d=8 r=4 Anteil=0.0768 Dichte=1.383 | s=15: d=9 r=3 Anteil=0.0352 Dichte=0.633 | s=14: d=8 r=3 Anteil=0.0574 Dichte=1.033
+N=19 Schwelle=7.706 | s=19: d=9 r=5 Anteil=0.0636 Dichte=1.208 | s=18: d=8 r=5 Anteil=0.0963 Dichte=1.829 | s=17: d=9 r=4 Anteil=0.0490 Dichte=0.932 | s=16: d=8 r=4 Anteil=0.0768 Dichte=1.459 | s=15: d=9 r=3 Anteil=0.0352 Dichte=0.668
+N=20 Schwelle=7.906 | s=20: d=8 r=6 Anteil=0.1153 Dichte=2.306 | s=19: d=9 r=5 Anteil=0.0636 Dichte=1.271 | s=18: d=8 r=5 Anteil=0.0963 Dichte=1.925 | s=17: d=9 r=4 Anteil=0.0490 Dichte=0.981 | s=16: d=8 r=4 Anteil=0.0768 Dichte=1.536
+N=21 Schwelle=8.101 | s=21: d=9 r=6 Anteil=0.0784 Dichte=1.645 | s=20: d=10 r=5 Anteil=0.0414 Dichte=0.869 | s=19: d=9 r=5 Anteil=0.0636 Dichte=1.335 | s=18: d=10 r=4 Anteil=0.0309 Dichte=0.649 | s=17: d=9 r=4 Anteil=0.0490 Dichte=1.030
+N=22 Schwelle=8.292 | s=22: d=10 r=6 Anteil=0.0525 Dichte=1.155 | s=21: d=9 r=6 Anteil=0.0784 Dichte=1.724 | s=20: d=10 r=5 Anteil=0.0414 Dichte=0.911 | s=19: d=9 r=5 Anteil=0.0636 Dichte=1.398 | s=18: d=10 r=4 Anteil=0.0309 Dichte=0.679
+N=23 Schwelle=8.478 | s=23: d=9 r=7 Anteil=0.0931 Dichte=2.142 | s=22: d=10 r=6 Anteil=0.0525 Dichte=1.207 | s=21: d=9 r=6 Anteil=0.0784 Dichte=1.802 | s=20: d=10 r=5 Anteil=0.0414 Dichte=0.952 | s=19: d=9 r=5 Anteil=0.0636 Dichte=1.462
+N=24 Schwelle=8.660 | s=24: d=10 r=7 Anteil=0.0639 Dichte=1.534 | s=23: d=9 r=7 Anteil=0.0931 Dichte=2.235 | s=22: d=10 r=6 Anteil=0.0525 Dichte=1.259 | s=21: d=9 r=6 Anteil=0.0784 Dichte=1.880 | s=20: d=10 r=5 Anteil=0.0414 Dichte=0.993
+N=25 Schwelle=8.839 | s=25: d=9 r=8 Anteil=0.1078 Dichte=2.694 | s=24: d=10 r=7 Anteil=0.0639 Dichte=1.598 | s=23: d=9 r=7 Anteil=0.0931 Dichte=2.328 | s=22: d=10 r=6 Anteil=0.0525 Dichte=1.312 | s=21: d=9 r=6 Anteil=0.0784 Dichte=1.959
+
+Teil 2: d, B(d), oberste Zelle (m,R), Woerter 2B, Dichte, sqrt(m), e(m), Stufen
+d=5 B=7 Zelle=(7,1) Woerter=14 Dichte=0.875 sqrt(m)=2.646 e(m)=3 Stufen=1.0
+d=6 B=11 Zelle=(10,2) Woerter=22 Dichte=1.203 sqrt(m)=3.162 e(m)=4 Stufen=1.0
+d=7 B=15 Zelle=(15,4) Woerter=30 Dichte=1.777 sqrt(m)=3.873 e(m)=5 Stufen=1.0
+d=8 B=20 Zelle=(20,6) Woerter=40 Dichte=2.306 sqrt(m)=4.472 e(m)=6 Stufen=1.0
+d=9 B=25 Zelle=(25,8) Woerter=50 Dichte=2.694 sqrt(m)=5.000 e(m)=5 Stufen=2.0
+d=10 B=31 Zelle=(30,10) Woerter=62 Dichte=3.061 sqrt(m)=5.477 e(m)=6 Stufen=2.0
+d=11 B=38 Zelle=(37,13) Woerter=76 Dichte=3.757 sqrt(m)=6.083 e(m)=7 Stufen=2.0
+d=12 B=46 Zelle=(46,17) Woerter=92 Dichte=4.775 sqrt(m)=6.782 e(m)=8 Stufen=2.0
+d=13 B=54 Zelle=(53,20) Woerter=108 Dichte=5.312 sqrt(m)=7.280 e(m)=9 Stufen=2.0
+d=14 B=62 Zelle=(62,24) Woerter=124 Dichte=6.073 sqrt(m)=7.874 e(m)=8 Stufen=3.0
+d=15 B=71 Zelle=(71,28) Woerter=142 Dichte=6.811 sqrt(m)=8.426 e(m)=9 Stufen=3.0
+d=16 B=81 Zelle=(80,32) Woerter=162 Dichte=7.526 sqrt(m)=8.944 e(m)=10 Stufen=3.0
+
+Teil 3: gesicherte Matrizen (Name, Zeilen, Spalten m, disc): e(m), Stufen, Quotient
+ctrl_8: N=8 m=7 d=5 e(m)=3 Stufen=1.0 Quotient=1.768
+Griego 6x6: N=6 m=6 d=4 e(m)=4 Stufen=0.0 Quotient=1.633
+ctrl_9: N=9 m=9 d=5 e(m)=3 Stufen=1.0 Quotient=1.667
+ctrl_16: N=16 m=15 d=7 e(m)=5 Stufen=1.0 Quotient=1.750
+ctrl_17: N=17 m=17 d=7 e(m)=5 Stufen=1.0 Quotient=1.698
+astra_19: N=19 m=19 d=7 e(m)=5 Stufen=1.0 Quotient=1.606
+bahn15_40w: N=20 m=15 d=7 e(m)=5 Stufen=1.0 Quotient=1.565
+had20 voll: N=20 m=20 d=6 e(m)=6 Stufen=0.0 Quotient=1.342
+had20 ohne 1: N=20 m=19 d=7 e(m)=5 Stufen=1.0 Quotient=1.565
+had24 voll: N=24 m=24 d=6 e(m)=6 Stufen=0.0 Quotient=1.225
+had24 ohne 1: N=24 m=23 d=7 e(m)=5 Stufen=1.0 Quotient=1.429
+48er: N=24 m=20 d=8 e(m)=6 Stufen=1.0 Quotient=1.633
+64 bei (18,5): N=32 m=18 d=8 e(m)=6 Stufen=1.0 Quotient=1.414
+42 bei (13,3): N=21 m=13 d=7 e(m)=5 Stufen=1.0 Quotient=1.528
