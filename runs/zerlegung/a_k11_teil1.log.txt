@@ -1,0 +1,18 @@
+== 18:35:13 Block a_k11_t11-9
+a_k11_t11-9 seed 1: ZEITGRENZE nach 810.0 s, beste Restzahl 1288, 258483 Iterationen, 776 Runden, 27 Neustarts
+runs/zerlegung/a_k11_t11-9_seed1.paar.txt: K=11, Typ (11,9), d=8: offene Klassen 1288 von 262144
+a_k11_t11-9 seed 2: ZEITGRENZE nach 810.0 s, beste Restzahl 1288, 256993 Iterationen, 771 Runden, 27 Neustarts
+runs/zerlegung/a_k11_t11-9_seed2.paar.txt: K=11, Typ (11,9), d=8: offene Klassen 1288 von 262144
+a_k11_t11-9 seed 3: ZEITGRENZE nach 810.1 s, beste Restzahl 1288, 257649 Iterationen, 772 Runden, 26 Neustarts
+runs/zerlegung/a_k11_t11-9_seed3.paar.txt: K=11, Typ (11,9), d=8: offene Klassen 1288 von 262144
+a_k11_t11-9 seed 4: ZEITGRENZE nach 810.1 s, beste Restzahl 1288, 258273 Iterationen, 776 Runden, 27 Neustarts
+runs/zerlegung/a_k11_t11-9_seed4.paar.txt: K=11, Typ (11,9), d=8: offene Klassen 1288 von 262144
+== 18:48:45 Block a_k11_t13-7
+a_k11_t13-7 seed 1: ZEITGRENZE nach 810.1 s, beste Restzahl 2698, 206195 Iterationen, 649 Runden, 29 Neustarts
+runs/zerlegung/a_k11_t13-7_seed1.paar.txt: K=11, Typ (13,7), d=8: offene Klassen 2698 von 262144
+a_k11_t13-7 seed 2: ZEITGRENZE nach 810.0 s, beste Restzahl 2698, 205189 Iterationen, 646 Runden, 28 Neustarts
+runs/zerlegung/a_k11_t13-7_seed2.paar.txt: K=11, Typ (13,7), d=8: offene Klassen 2698 von 262144
+a_k11_t13-7 seed 3: ZEITGRENZE nach 810.0 s, beste Restzahl 2698, 206015 Iterationen, 645 Runden, 28 Neustarts
+runs/zerlegung/a_k11_t13-7_seed3.paar.txt: K=11, Typ (13,7), d=8: offene Klassen 2698 von 262144
+a_k11_t13-7 seed 4: ZEITGRENZE nach 810.0 s, beste Restzahl 2698, 207412 Iterationen, 649 Runden, 28 Neustarts
+runs/zerlegung/a_k11_t13-7_seed4.paar.txt: K=11, Typ (13,7), d=8: offene Klassen 2698 von 262144

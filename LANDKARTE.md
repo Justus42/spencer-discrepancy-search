@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 25.11.2026 nachmittags (nach Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 25.11.2026 spätabends (nach Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie; davor Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -8,6 +8,7 @@ bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 mit beiden Prüfskripten), `r` exakt über die Reduktion (Überdeckungsradius per Brute-Force, `construct_32.py`),
 `g` obere Schranke: für jeden Fall ein Gegenbeispiel gefunden und nachgerechnet (exakter Wert nicht bekannt),
 `s` Suche erfolglos: Quotient in Klammern ist das Ziel, das nicht erreicht wurde (kein Beweis, dass es nicht existiert).
+`g*` wie `g`, aber die Gegenbeispiele wurden nur gefunden (Sieb), nicht gespeichert und nicht getrennt nachgerechnet.
 Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Maximum über alle Klassen exakt
 (jede Klasse durch ein Gegenbeispiel nach oben beschränkt, der beste Vertreter exakt). Ebenso bei den „Rundlauf“-Zeilen (Ansatz 3): jede Matrix der Familie per nachgerechnetem Gegenbeispiel nach oben beschränkt, mindestens eine exakt auf dem Wert; 0 Überlebende.
 
@@ -32,12 +33,15 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Gruppenmatrizen nichtzyklisch n x n (Auftrag G, alle Klassen; 10 Gruppen der Ordnung 18, 20, 21, 25) |  |  |  |  |  |  |  |  |  | 0,943 e |  | 1,342 e |
 | Gruppenmatrizen nichtzyklisch + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Auftrag G, Ordnung 18 und 21) |  |  |  |  |  |  |  |  |  |  | 0,918 e |  |
 | Gruppenmatrizen nichtzyklisch ohne 2 Spalten, n x (n-2) (Auftrag G) |  |  |  |  |  |  |  |  |  | ≤1,414 g |  | 1,342 e |
-| Codes im affinen Spann bekannter Codes, (15,4) (Auftrag S): L(`ctrl_16`), L(2. Klasse), alle 254 Rang-9-Erweiterungen; Spalte 15 = 30 Wörter: Rang 8 und 3 von 9 Rang-9-Klassen (63 Erweiterungen) voll ausgeschlossen, Rest Suche erfolglos |  |  |  |  |  |  | (1,807) s | 1,750 e |  |  |  |  |
+| Codes im affinen Spann bekannter Codes, (15,4) (Auftrag S): L(`ctrl_16`), L(2. Klasse), alle 254 Rang-9-Erweiterungen; Spalte 15 = 30 Wörter: Rang 8 und alle 9 Rang-9-Klassen (254 Erweiterungen) voll ausgeschlossen (Auftrag R9), Rang 10 nicht gerechnet |  |  |  |  |  |  | (1,807) s | 1,750 e |  |  |  |  |
+| (15,4) mit 30 Wörtern nahe an einem 32er (Auftrag P): 13 Zeilen von `ctrl_16` oder `loesung111` gemeinsam, 2 Zeilen frei in [−1,1]^15 (alle 2 × 560 Tripel), 12 gemeinsam mit 3 freien (alle 2 × 1820); ganze Spalte neu gewählt (480 Fälle, immer 233 offen) | | | | | | | – (voll) | 1,750 e | | | | |
+| kozyklische Matrizen n x n (Auftrag P): Gruppe E der Ordnung 2n mit zentraler Involution, f ungerade, alle f; n = 18: Z36, Dic9, Z3×Dic3; n = 20: Z40, Z5×Q8, Z5×D4, Z5×Z4×Z2, Dic10, D20 | | | | | | | | | | 1,414 e | | 1,342 e |
 | Rundlauf Astra 2 Duaden (15x15, 59 049 Matrizen) | | | | | | | 0,775 e | | | | | |
 | Rundlauf Sol 1 Fano-Ebenentausch (15x15, 153 664) | | | | | | | 1,291 e | | | | | |
 | Rundlauf Astra 4 Walsh-Charts (20x20, 1 024) | | | | | | | | | | | | 0,894 e |
 | Rundlauf Astra 6 Differenzblöcke (20x18, 2 160) | | | | | | | | | | | | 1,342 e |
 | Rundlauf Sol 2 Paley-12-Verkabelung (20x20, 71 280) | | | | | | | | | | | | 0,894 e |
+| Kern-⟨1,a⟩-Paare (U,W) bei (20,6), d = 8, abwechselnde Suche (Auftrag H): K = 10 (40 Wörter) in (11,9), (13,7), (10,10), (12,8) nicht erreicht | | | | | | | | | | | | (1,789) s |
 
 ## N ab 21
 
@@ -60,6 +64,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Gruppenmatrizen nichtzyklisch + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Auftrag G, Ordnung 18 und 21) |  | 1,492 e |  |  |  |  |  |  |  |  |  |  |  |
 | Gruppenmatrizen nichtzyklisch ohne 2 Spalten, n x (n-2) (Auftrag G) | ≤1,527 g |  |  |  | 1,400 e |  |  |  |  |  |  |  |  |
 | Codes im affinen Spann der 48er, (20,6) (Auftrag S): L(1p3), L(2p2), L(neunter 48er), lokale Suche; 23 Paare (46 Wörter, N = 23) nicht erreicht |  |  | (1,668) s | 1,633 e |  |  |  |  |  |  |  |  |  |
+| kozyklische Matrizen n = 26 (Z52, Dic13), 28 (Z56, Z7×Q8, Z7×D4, Z7×Z4×Z2, Dic14, D28), 30 (Z60, Dic15) (Auftrag P, Sieb Ziel 10, alle f) | | | | | | ≤1,569 g* | | ≤1,512 g* | | ≤1,461 g* | | | |
 | Rundlauf Astra 1 Paley-Scharnier (25x23, 4 356) | | | | | 1,400 e | | | | | | | | |
 | Rundlauf Astra 3 Fano-Blöcke (25x21, 1 176) | | | | | 1,000 e | | | | | | | | |
 | Rundlauf Astra 5 Golay-Bahnen (25x23, 2 346) | | | | | 1,400 e | | | | | | | | |
@@ -71,6 +76,8 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Rundlauf Sol 6 Paley-26 (31x26, 40 680) | | | | | | | | | | | 1,078 e | | |
 | Rundlauf Sol 7 Hadamard-16 geschaltet (31x28, 17 920) | | | | | | | | | | | 0,718 e | | |
 | Rundlauf Sol 8 vier Walsh-Bänke (31x30, 10 000) | | | | | | | | | | | 1,078 e | | |
+| Kern-⟨1,a⟩-Paare (U,W) bei (20,6), d = 8 (Auftrag H): K = 12 aus Zufallsstart in (11,9) und (10,10); K = 11 (44 Wörter) in vier Typen nicht erreicht |  | (1,706) s |  | 1,633 e |  |  |  |  |  |  |  |  |  |
+| Kern-⟨1,a⟩-Paare bei d = 9, K = 12 (48 Wörter), (21,6), (23,7), (25,8), sechs Typen (Auftrag H); U = Paley-12 ohne Spalte mit W 12 x 10 voll ausgeschlossen |  |  |  | (1,837) s | (1,800) s |  |  |  |  |  |  |  |  |
 
 ## Bester Eintrag dieser Karte je N (nur `e`/`r`)
 
@@ -80,7 +87,7 @@ bei N = 18 schon `ctrl_17` mit 7/√18 = 1,650 über dem Tabellenwert.
 
 | N | 6 | 7 | 8 | 9 | 10 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Quotient | 1,225 | 1,134 | 1,768 | 1,667 | 0,949 | 1,336 | 1,291 | 1,750 | 1,698 | 1,179 | 1,606 | 1,565 | 1,528 | 1,492 | 1,460 | 1,633 | 1,400 | 1,569 | 1,155 | 1,512 | 1,300 | 1,461 | 1,257 | 1,414 |
+| Quotient | 1,225 | 1,134 | 1,768 | 1,667 | 0,949 | 1,336 | 1,291 | 1,750 | 1,698 | 1,414 | 1,606 | 1,565 | 1,528 | 1,492 | 1,460 | 1,633 | 1,400 | 1,569 | 1,155 | 1,512 | 1,300 | 1,461 | 1,257 | 1,414 |
 
 ## Zeilen mit einer Null, Einträge in {-1, 0, 1} (Auftrag A, 25.11.2026)
 
@@ -104,9 +111,9 @@ Programm `src/dichte_schranke.py`, Protokoll `notes/laeufe/2026-11-24_reell16.md
 | n | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | D | 2 | 3 | 4 | 5 | 5 | 6 | 7 | 8 | 8 | 9 | 10 | 11 | 12 | 12 | 13 | 14 | 15 | 16 |
-| nötige Dichte | **0,562** | **0,633** | 1,094 | 1,203 | **0,785** | 1,200 | 1,292 | 1,777 | 1,229 | 1,306 | 1,733 | 1,829 | 2,306 | 1,645 | 1,724 | 2,142 | 2,235 | 2,694 |
+| nötige Dichte | **0,562** | **0,633** | 1,094 (ausgeschlossen, s. u.) | 1,203 | **0,785** | 1,200 | 1,292 | 1,777 | 1,229 | 1,306 | 1,733 | 1,829 | 2,306 | 1,645 | 1,724 | 2,142 | 2,235 | 2,694 |
 
-Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Lokal um `ctrl_16` / `ctrl_8` (Zeilen im L1-Abstand ≤ 2) gibt es ebenfalls nichts über 7 bzw. 5
+Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Zusätzlich n = 10 (Dichte 1,094): nach Astras Argument, in Auftrag P (Teil 5) nachvollzogen und mit zwei Aufzählungen belegt, ohne Kleitman und ohne die Tabelle K(10,2) (`notes/laeufe/2026-11-25_pruef_ideen.md`). Lokal um `ctrl_16` / `ctrl_8` (Zeilen im L1-Abstand ≤ 2) gibt es ebenfalls nichts über 7 bzw. 5
 (`notes/laeufe/2026-11-24_reell16.md`, Schritt 3).
 
 ## Einzelheiten zu den Zeilen
@@ -133,6 +140,11 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Lokal um `ctrl_16` / `ctrl_8` (
   Nur ein Element der Ordnung 3 (⟨g⟩, 174 848 Bahnen): Tabu-Kontrolle (48 Wörter) nicht bestanden (1 von 4 bzw. 0 von 4), < 48 ungeprüft.
   Protokoll `notes/laeufe/2026-11-25_bahnen3.md`.
 - **Nebenklassen-Leiter unter 48 bei (20,6) (Auftrag L, 25.11.2026):** Kern ⟨1,a⟩, Typ (11,9). Kleinste erreichte Wortzahl weiter **48** (Quotient 1,633 e); der eine Treffer aus K=12-Zufallsstart (`runs/woerter_n20_R6_d2_K12_typ11-9_k12_seed5.txt`, disc 8 mit drei Programmen) ist kein neuer 48er, sondern zur Paley-Doppelung 1+3 gleichwertig (Gate: `notes/gate_2026-11-25_leiter48.md`). K=12 aus Zufallsstart: 1 von 16 Läufen à 1800 s (Kontrolle nicht bestanden), K=11 (44 Wörter, N = 22, 1,706) nicht versucht. Protokoll `notes/laeufe/2026-11-25_leiter48.md`.
+- **Kern-⟨1,a⟩-Paare (U,W), Auftrag H (25.11.2026):** Protokoll `notes/laeufe/2026-11-25_zerlegung.md`, Suchcode `src/zerl_halb.c`, Prüfcode `src/zerl_offen.py`, Logs `runs/zerlegung/`.
+  Kleinste erreichte Nebenklassenzahl je Typ und beste Restzahl darunter (offene Klassen (y,z)). d = 8, (20,6): (11,9) K = 12 (8 von 8 aus Zufallsstart, je ≤ 25 s, alle disc 8 mit drei Programmen), K = 11 Restzahl 1288, K = 10 3234;
+  (10,10) K = 12 (1 Lauf, 39 s, disc 8), K = 11 1063, K = 10 1852; (12,8) K = 12 nicht erreicht (1 Lauf 300 s, Restzahl 180), K = 11 1836, K = 10 4280; (13,7) K = 12 nicht erreicht (300 s, 290), K = 11 2698, K = 10 5926.
+  d = 9, K = 12 (keiner erreicht): (11,10) 12 957, (12,9) 11 002, (12,11) 1760, (13,10) 26 360, (12,13) 5280, (11,14) 5280. U = Paley-12 ohne Spalte: W 12 x 10 voll ausgeschlossen (Zählschranke), 12 x 12 und 12 x 14 unentschieden.
+  Gate: `notes/gate_2026-11-25_zerlegung.md` (alle 89 gespeicherten Paare mit eigenem Zähler nachgezählt, die acht Kontrolltreffer mit drei Prüfprogrammen; die besten Zustände bei (12,11) und (12,13) liegen in einem bewiesen ausgeschlossenen Fall).
 - **Gruppenmatrizen über nichtzyklischen Gruppen (Auftrag G, 25.11.2026):** Protokoll `notes/laeufe/2026-11-25_gruppen.md`, Programm `src/gruppenmatrix.c`
   (Prüfcode `src/gruppen_erzeuge.py`, `src/gruppen_pruef.py`), Tafeln und Logs `runs/gruppen/`, beste Matrizen `runs/gruppen/beste/` (beide Prüfskripte und `exakt_disc` gleich).
   A[g][h] = f(g^-1 h); alle Klassen bis auf Links-/Rechtsmultiplikation, Automorphismen und Komplement (nicht f(x^-1)). Kein Überlebender in keiner der zehn Gruppen
@@ -140,10 +152,17 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Lokal um `ctrl_16` / `ctrl_8` (
   Z7:Z3: 5, mit Rand (N = 22) 7; Z5xZ5: 7. Zwei Spalten gestrichen (nur Klassen mit u >= d-2): Ordnung 20 exakt 6, Z5xZ5 exakt 7; bei Ordnung 18 und 21 ist die Menge leer,
   die Schranke u_max + 2 gibt höchstens 6 bzw. 7 (Zeichen `≤ … g`, nicht exakt bestimmt). Kein Wert liegt über dem zyklischen Wert gleicher Ordnung. Nicht gerechnet:
   Ordnung 24 (14 nichtzyklische Gruppen, Schwelle 10) und vier gestrichene Spalten bei Ordnung 25.
+- **Gegenrechnung der Ideensammlung (Auftrag P, 25.11.2026):** Protokoll `notes/laeufe/2026-11-25_pruef_ideen.md`, Programme `src/pruef_ideen/`, getrennte Prüfer `verifiers/pruef_ideen/`, Belege `runs/pruef_ideen/`.
+  (15,4): Für alle 560 Zeilentripel beider 32er-Klassen gibt es kein Paar Ersatzzeilen in [−1,1]^15 (Zertifikate aus 6–7 Lochklassen, Prüfer bestätigt); ebenso 4 gestrichen / 3 ersetzt (1820 Fälle je Klasse);
+  ganze Spalte neu wählen bringt in allen 480 Fällen höchstens 233 offene Klassen, der Bestwert bleibt 1,750. Kozyklisch: n = 18 und 20 vollständig (exakter Bestwert disc 6, Gegenbeispiele gespeichert, `runs/pruef_ideen/kozyklisch/`),
+  n = 26, 28, 30 nur als Sieb (disc ≤ 8). Die besten Matrizen (n = 18 aus Z36, Dic9, Z3×Dic3; n = 20 aus Z40, Z5×Q8, Dic10) melden alle drei Prüfprogramme als disc 6 (`runs/pruef_ideen/kozyklisch/beste/`). Zerlegungszahlen: `runs/pruef_ideen/zerlegung/`.
+  Gate: `notes/gate_2026-11-25_pruef_ideen.md` (alle 4760 Zertifikate, alle 480 Spaltenfälle, alle Gegenbeispiele für n = 18 und 20 und der Zehn-Kugel-Fall mit eigenen Programmen nachgerechnet).
 - **Codes im affinen Spann (Auftrag S, 25.11.2026):** Protokoll `notes/laeufe/2026-11-25_spann.md`, Programme `src/spann_*.{py,c}`, Logs `runs/spann/`.
   Kleinste erreichte Paarzahl je Zelle und Universum: (15,4): 16 Paare (32 Wörter) in L(`ctrl_16`), L(loesung111) und allen 9 Klassen von
   Rang-9-Erweiterungen; 15 Paare voll ausgeschlossen in L(`ctrl_16`) (Zählschranke), L(loesung111) (Tiefensuche mit und ohne Symmetrie),
-  Rang 9 über `ctrl_16` y=3 (42) und y=1 (14), über loesung111 y=1 (7); 6 Klassen (191 Erweiterungen) unentschieden, lokale Suche Rest 233.
+  Rang 9: zuerst `ctrl_16` y=3 (42) und y=1 (14), loesung111 y=1 (7); die übrigen 6 Klassen (191 Erweiterungen: `ctrl_16` y=40 und y=7, loesung111 y=384, 128, 385, 129)
+  in Auftrag R9 (25.11.2026, `notes/laeufe/2026-11-25_rang9.md`) in Aufgabenbereichen exakt entschieden: keine Lösung, zusammen 316 958 848 Knoten, 8181 s;
+  Belegart voll, ein Programm, nur mit Symmetrie. Damit gibt es bei (15,4) keinen Code mit 30 Wörtern im affinen Spann einer der beiden bekannten 32er-Klassen bis Rang 9.
   (20,6): 24 Paare (48 Wörter) in L(1p3), L(2p2), L(neunter 48er); Kontrolle k=24 aus Zufallsstart 12 von 12; 23 Paare in 28 Läufen à 15 Min.
   nicht erreicht (beste Restzahl 886 Punktklassen). Rang 10 bei (15,4) und 78 weitere Universen bei (20,6) nicht gerechnet.
 - **Doppelung Ordnung 40:** Test C in STATUS, alle 30 780 Spaltenauswahlen mit Gegenbeispiel max ≤ 8, Rekord bräuchte 12.

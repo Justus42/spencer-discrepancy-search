@@ -1,0 +1,41 @@
+# Schritt 0, 2026-11-25 17:17:23 UTC
+runs/zerlegung/eingaben/paar_48.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+   direkt auf der 24 x 20-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+runs/zerlegung/eingaben/paar_48.txt: K=12, Typ (11,9), d=9: offene Klassen 56992 von 262144
+U (|U y|): 12 x 11, 1024 Klassen; kleinster Betrag der Gegenseite 1
+   (7,5^2,3^3,1^6): 660
+   (5^3,3^6,1^3): 220  KRITISCH
+   (9,3^5,1^6): 132
+   (11,1^11): 12
+   kritische Klassen: 220, verschiedene Anforderungsvektoren: 220
+   Anforderung (sortiert) (3, 3, 3, 5, 5, 5, 5, 5, 5, 7, 7, 7): 220 Vektoren
+W (|W z|): 12 x 9, 256 Klassen; kleinster Betrag der Gegenseite 1
+   (5^3,3^3,1^6): 72  KRITISCH
+   (7,5,3^3,1^7): 72
+   (5^2,3^6,1^4): 54  KRITISCH
+   (7,3^6,1^5): 36
+   (9,3^2,1^9): 12
+   (5^4,1^8): 9  KRITISCH
+   (3^12): 1  KRITISCH
+   kritische Klassen: 136, verschiedene Anforderungsvektoren: 136
+   Anforderung (sortiert) (3, 3, 3, 3, 7, 7, 7, 7, 7, 7, 7, 7): 9 Vektoren
+   Anforderung (sortiert) (3, 3, 3, 5, 5, 5, 7, 7, 7, 7, 7, 7): 72 Vektoren
+   Anforderung (sortiert) (3, 3, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7): 54 Vektoren
+   Anforderung (sortiert) (5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5): 1 Vektoren
+runs/zerlegung/matrix_48er_aus_paar.txt: 24 x 20
+runs/zerlegung/matrix_48er_aus_paar.txt controls/had24_1p3_paley12.txt differ: char 64, line 2
+Matrix runs/zerlegung/matrix_48er_aus_paar.txt: 24 x 20, aufgefuellt 24 x 24
+  check_disc      Diskrepanz 8  (0.9 s)
+  verify_spencer  Diskrepanz 8  (0.9 s)
+  exakt_disc      Diskrepanz 8  (0.9 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+
+real	0m1.002s
+user	0m1.583s
+sys	0m0.263s
+Rueckgabe 0
+U (8, 11), W (8, 9), d=8: offene Klassen ueber alle 40320 Zuordnungen (von 262144): 24192: 40320 Zuordnungen
+
+real	0m5.188s
+user	0m5.454s
+sys	0m0.012s

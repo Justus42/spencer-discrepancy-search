@@ -1,0 +1,16 @@
+Aufgaben: 10055 (6.9 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 1196849, Laufzeit 28.8 s
+BEREICH 0 1000 von 10055 Aufgaben insgesamt: Knoten 1196849, OHNE_LOESUNG
+Aufgaben: 10055 (6.6 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 1670034, Laufzeit 36.6 s
+BEREICH 1000 3000 von 10055 Aufgaben insgesamt: Knoten 1670034, OHNE_LOESUNG
+Aufgaben: 10055 (6.6 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 953107, Laufzeit 31.8 s
+BEREICH 3000 6000 von 10055 Aufgaben insgesamt: Knoten 953107, OHNE_LOESUNG
+Aufgaben: 10055 (6.7 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 416762, Laufzeit 20.3 s
+BEREICH 6000 10055 von 10055 Aufgaben insgesamt: Knoten 416762, OHNE_LOESUNG

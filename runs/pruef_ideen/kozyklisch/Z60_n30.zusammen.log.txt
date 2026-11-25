@@ -1,0 +1,4 @@
+Z60 shard 0/4: Funktionen 134217728, Sieb <= 8: gefunden 134217728, Ueberlebende 0
+Z60 shard 1/4: Funktionen 134217728, Sieb <= 8: gefunden 134217728, Ueberlebende 0
+Z60 shard 2/4: Funktionen 134217728, Sieb <= 8: gefunden 134217728, Ueberlebende 0
+Z60 shard 3/4: Funktionen 134217728, Sieb <= 8: gefunden 134217728, Ueberlebende 0

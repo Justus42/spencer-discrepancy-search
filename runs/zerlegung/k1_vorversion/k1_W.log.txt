@@ -1,0 +1,8 @@
+seed 1: LOESUNG nach 25.8 s, 49386 Iterationen
+runs/zerlegung/k1_W_seed1.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+seed 2: LOESUNG nach 47.4 s, 89199 Iterationen
+runs/zerlegung/k1_W_seed2.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+seed 3: LOESUNG nach 15.4 s, 28902 Iterationen
+runs/zerlegung/k1_W_seed3.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+seed 4: LOESUNG nach 19.7 s, 37325 Iterationen
+runs/zerlegung/k1_W_seed4.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144

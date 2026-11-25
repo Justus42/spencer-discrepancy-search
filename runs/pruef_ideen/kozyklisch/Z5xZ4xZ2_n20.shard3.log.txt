@@ -1,0 +1,2 @@
+Z5xZ4xZ2 shard 3/4: Funktionen 131072, ohne Gegenbeispiel (<= 6): 0, Sieb <= 4: Vorfilter 100842, Ueberlebende 230
+Z5xZ4xZ2 shard 3: exakt (build/exakt_disc) der Ueberlebenden: disc 6: 230; Hadamard unter den Ueberlebenden: 0

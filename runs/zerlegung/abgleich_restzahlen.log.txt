@@ -1,0 +1,1 @@
+Abgleich Suche gegen Pruefcode (zerl_offen.py), Einzellogs je Typ in Schritt 4: 56 Laeufe, Abweichungen 0

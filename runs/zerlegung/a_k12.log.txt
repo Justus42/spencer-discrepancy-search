@@ -1,0 +1,7 @@
+a_k12_t10-10 seed 1: LOESUNG nach 38.8 s, 14036 Iterationen, 46 Runden, 2 Neustarts
+runs/zerlegung/a_k12_t10-10_seed1.paar.txt: K=12, Typ (10,10), d=8: offene Klassen 0 von 262144
+a_k12_t12-8 seed 1: ZEITGRENZE nach 300.1 s, beste Restzahl 180, 52546 Iterationen, 163 Runden, 6 Neustarts
+a_k12_t13-7 seed 1: ZEITGRENZE nach 300.1 s, beste Restzahl 290, 62011 Iterationen, 198 Runden, 9 Neustarts
+runs/zerlegung/a_k12_t12-8_seed1.paar.txt: K=12, Typ (12,8), d=8: offene Klassen 180 von 262144
+runs/zerlegung/a_k12_t13-7_seed1.paar.txt: K=12, Typ (13,7), d=8: offene Klassen 290 von 262144
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8

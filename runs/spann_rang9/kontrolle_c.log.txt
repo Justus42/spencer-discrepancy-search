@@ -1,0 +1,11 @@
+Aufgaben: 10320 (6.7 s)
+ERGEBNIS k=16: UNENTSCHIEDEN (Zeitlimit, 2172 von 10320 Aufgaben fertig)
+Knoten 67306742, Laufzeit 1200.1 s
+BEREICH 0 5160 von 10320 Aufgaben insgesamt: Knoten 67306742, ZEITLIMIT
+Aufgaben: 10320 (7.0 s)
+LOESUNG (Fall 81) 16 Paare: 0 5 27 98 60 94 138 212 232 182 109 217 199 175 115 177
+WOERTER: 45 20592 27737 9025 7680 15724 10388 5589 3064 14009 23325 19873 29064 31461 26420 18124
+ERGEBNIS k=16: LOESBAR (Loesungen gezaehlt: 1, Abbruch nach erster)
+Knoten 6164646, Laufzeit 191.7 s
+BEREICH 5160 10320 von 10320 Aufgaben insgesamt: Knoten 6164646, LOESUNG
+runs/spann_rang9/kontrolle_c_loesung.txt: 16 Zeilen, m=15, verschiedene Woerter mit Komplementen 32, Ueberdeckungsradius 4, Punkte im Abstand max: 14336

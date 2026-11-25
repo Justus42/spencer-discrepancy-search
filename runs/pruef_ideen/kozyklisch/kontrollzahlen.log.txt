@@ -1,0 +1,6 @@
+Z16 shard 0/1: Funktionen 128, ohne Gegenbeispiel (<= -1): 0, Sieb <= 2: Vorfilter 64, Ueberlebende 64
+Z16 shard 0: exakt (build/exakt_disc) der Ueberlebenden: disc 4: 64; Hadamard unter den Ueberlebenden: 0
+Z20 shard 0/1: Funktionen 512, ohne Gegenbeispiel (<= -1): 0, Sieb <= 2: Vorfilter 205, Ueberlebende 270
+Z20 shard 0: exakt (build/exakt_disc) der Ueberlebenden: disc 4: 270; Hadamard unter den Ueberlebenden: 0
+Z3xQ8 shard 0/1: Funktionen 2048, ohne Gegenbeispiel (<= -1): 0, Sieb <= 2: Vorfilter 1572, Ueberlebende 336
+Z3xQ8 shard 0: exakt (build/exakt_disc) der Ueberlebenden: disc 4: 336; Hadamard unter den Ueberlebenden: 96

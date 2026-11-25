@@ -13,7 +13,8 @@
  * dann den Vertreter Q_i und keine 4-Teilmenge aus O_0..O_{i-1}. Fall i: S enthaelt Q_i, verbotene
  * 4-Mengen werden beim Hinzufuegen sofort ausgeschlossen. Ohne Symmetriedatei: nur 0 in S (Translation).
  *
- * Aufruf: spann_dfs PROBLEM k [zeitlimit_s] [tiefe_aufteilung] [alle] [ERZEUGER]
+ * Aufruf: spann_dfs PROBLEM k [zeitlimit_s] [tiefe_aufteilung] [alle] [ERZEUGER] [VON BIS]
+ * VON BIS (Auftrag R9, optional): nur Aufgaben mit VON <= i < BIS bearbeiten; Erzeugung und Reihenfolge unveraendert.
  * Bauen: gcc -O3 -march=native -fopenmp -o build/spann_dfs src/spann_dfs.c
  */
 #include <stdio.h>
@@ -360,6 +361,8 @@ int main(int argc, char **argv) {
         while (ngen < 64) { int ok = 1; for (int i = 0; i < d; i++) if (fscanf(g, "%d", &gen[ngen][i]) != 1) { ok = 0; break; } if (!ok) break; ngen++; }
         fclose(g); sym = 1;
     }
+    int von = 0, bis = -1, bereich = 0;
+    if (argc > 8) { von = atoi(argv[7]); bis = atoi(argv[8]); bereich = 1; }
     int mumin = 1 << 30; for (int D = 0; D < NC; D++) if (mu[D] < mumin) mumin = mu[D];
     printf("Problem %s: d=%d |G|=%d Nebenklassen=%d min mu=%d, k=%d, Zeitlimit %.0f s, Aufteilungstiefe %d, Threads %d, Symmetrie %s (%d Erzeuger)\n",
            argv[1], d, N, NC, mumin, K, zeitlimit, T, omp_get_max_threads(), sym ? "ja" : "nein", ngen);
@@ -379,6 +382,9 @@ int main(int argc, char **argv) {
     }
     frei(&z);
     printf("Aufgaben: %d (%.1f s)\n", naufg, jetzt() - t0); fflush(stdout);
+    if (!bereich) bis = naufg;
+    if (bis > naufg) bis = naufg;
+    if (von < 0) von = 0;
     long long knoten = 0; int fertig = 0;
     #pragma omp parallel reduction(+:knoten)
     {
@@ -386,7 +392,7 @@ int main(int argc, char **argv) {
         int16_t *pf = malloc(sizeof(int16_t) * N); int32_t *tt = malloc(sizeof(int32_t) * N);
         int rr[MAXK];
         #pragma omp for schedule(dynamic, 1)
-        for (int i = 0; i < naufg; i++) {
+        for (int i = von; i < bis; i++) {
             if (stopp) continue;
             Aufgabe *a = &aufg[i];
             w.fall = a->fall;
@@ -413,5 +419,9 @@ int main(int argc, char **argv) {
     else if (zeit_aus) printf("ERGEBNIS k=%d: UNENTSCHIEDEN (Zeitlimit, %d von %d Aufgaben fertig)\n", K, fertig, naufg);
     else printf("ERGEBNIS k=%d: KEINE Loesung mit <= %d Paaren (vollstaendig)\n", K, K);
     printf("Knoten %lld, Laufzeit %.1f s\n", knoten, t);
+    if (bereich) {
+        const char *erg = gefunden ? "LOESUNG" : (zeit_aus ? "ZEITLIMIT" : "OHNE_LOESUNG");
+        printf("BEREICH %d %d von %d Aufgaben insgesamt: Knoten %lld, %s\n", von, bis, naufg, knoten, erg);
+    }
     return 0;
 }

@@ -1,0 +1,5 @@
+dfs_m10: KEINE LOESUNG (vollstaendig, Zaehlschranke an der Wurzel)
+dfs_m12: ZEITGRENZE nach 1200.0 s, 8082688 Knoten
+dfs_m14: ZEITGRENZE nach 1200.0 s, 2854656 Knoten
+ls_m12: ZEITGRENZE nach 1200.4 s, beste Restzahl 1760, 38311 Iterationen
+ls_m14: ZEITGRENZE nach 1200.5 s, beste Restzahl 5280, 13935 Iterationen

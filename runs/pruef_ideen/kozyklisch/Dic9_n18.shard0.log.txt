@@ -1,0 +1,2 @@
+Dic9 shard 0/4: Funktionen 32768, ohne Gegenbeispiel (<= 6): 0, Sieb <= 4: Vorfilter 5917, Ueberlebende 5522
+Dic9 shard 0: exakt (build/exakt_disc) der Ueberlebenden: disc 6: 5522; Hadamard unter den Ueberlebenden: 0

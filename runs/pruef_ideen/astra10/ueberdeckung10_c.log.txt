@@ -1,0 +1,4 @@
+K = 10 Kugeln: keine Ueberdeckung; Knoten 63505; Zeit 0.1 s
+K = 16 Kugeln: UEBERDECKUNG GEFUNDEN; Knoten 1647204; Zeit 3.1 s
+real	1m40.003s
+K = 11: nach 100 s Zeitgrenze nicht entschieden (nicht benoetigt)

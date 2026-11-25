@@ -1,0 +1,8 @@
+c_k12_t12-11_seed1.paar.txt U (12, 12) Hadamard: True | Profile wie Paley-12 voll (880/792/220/144/12): True
+c_k12_t12-11_seed2.paar.txt U (12, 12) Hadamard: True | Profile wie Paley-12 voll (880/792/220/144/12): True
+c_k12_t12-11_seed3.paar.txt U (12, 12) Hadamard: True | Profile wie Paley-12 voll (880/792/220/144/12): True
+c_k12_t12-11_seed4.paar.txt U (12, 12) Hadamard: True | Profile wie Paley-12 voll (880/792/220/144/12): True
+c_k12_t12-13_seed1.paar.txt U (12, 12) Hadamard: True | Profile wie Paley-12 voll (880/792/220/144/12): True
+c_k12_t12-13_seed2.paar.txt U (12, 12) Hadamard: True | Profile wie Paley-12 voll (880/792/220/144/12): True
+c_k12_t12-13_seed3.paar.txt U (12, 12) Hadamard: True | Profile wie Paley-12 voll (880/792/220/144/12): True
+c_k12_t12-13_seed4.paar.txt U (12, 12) Hadamard: True | Profile wie Paley-12 voll (880/792/220/144/12): True

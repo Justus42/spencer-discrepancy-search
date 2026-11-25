@@ -1,0 +1,3 @@
+# dfs: fest runs/zerlegung/eingaben/paley12_U11.txt (12 x 11), d=9, gesucht 12 x 10; Anforderungsvektoren 880 (nur maximale), unerfuellbar 0; Punkte je Seite 1024 / 512
+# Zaehlschranke: Lam = 0 0 1 4 10 10, N0 = 10, B = 410; Wurzel: N0*NZ = 5120 gegen K*B = 4920
+KEINE LOESUNG (vollstaendig, Zaehlschranke an der Wurzel)

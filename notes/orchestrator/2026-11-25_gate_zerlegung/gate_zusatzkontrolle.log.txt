@@ -1,0 +1,14 @@
+Wed Nov 25 22:14:47 CET 2026
+(9,8) K=8 d=7 seed 1: LOESUNG nach 0.1 s, 317 Iterationen, 2 Runden, 0 Neustarts
+(9,8) K=8 d=7 seed 2: LOESUNG nach 0.1 s, 311 Iterationen, 2 Runden, 0 Neustarts
+(9,8) K=8 d=7 seed 3: LOESUNG nach 0.1 s, 318 Iterationen, 2 Runden, 0 Neustarts
+(9,8) K=8 d=7 seed 4: LOESUNG nach 0.1 s, 324 Iterationen, 2 Runden, 0 Neustarts
+K3 seed 1 wiederholt: LOESUNG nach 1.2 s, 395 Iterationen, 2 Runden, 0 Neustarts
+Paar byte-gleich zum Lauf der Sitzung
+Wed Nov 25 22:14:48 CET 2026
+k3rep_seed1            K=12 (11, 9) d=8  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 66}  |W-Gram| {1: 54, 3: 12}
+z98_seed1              K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 12, 3: 16}  |W-Gram| {0: 28}
+z98_seed2              K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 28}  |W-Gram| {0: 28}
+z98_seed3              K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 28}  |W-Gram| {0: 28}
+z98_seed4              K= 8 ( 9, 8) d=7  Kopf      0  gezaehlt      0  gleich   |U-Gram| {1: 12, 3: 16}  |W-Gram| {0: 28}
+Paare: 5, Abweichungen: 0, geloest (0 offen): 5

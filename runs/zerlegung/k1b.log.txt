@@ -1,0 +1,27 @@
+runs/zerlegung/eingaben/paar_ctrl17.txt: K=8, Typ (9,8), d=7: offene Klassen 0 von 32768
+   direkt auf der 16 x 17-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+runs/zerlegung/eingaben/paar_ctrl17.txt: K=8, Typ (9,8), d=8: offene Klassen 10976 von 32768
+runs/zerlegung/k1b_ctrl17_aus_paar.matrix.txt: 16 x 17
+Matrix runs/zerlegung/k1b_ctrl17_aus_paar.matrix.txt: 16 x 17, aufgefuellt 17 x 17
+  check_disc      Diskrepanz 7  (0.2 s)
+  verify_spencer  Diskrepanz 7  (0.2 s)
+  exakt_disc      Diskrepanz 7  (0.2 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 7
+Zeilenmenge (bis auf Vorzeichen) gleich ctrl_17: False 32 32
+W seed 1: LOESUNG nach 0.0 s, 6 Iterationen
+runs/zerlegung/k1b_W_seed1.paar.txt: K=8, Typ (9,8), d=7: offene Klassen 0 von 32768
+W seed 2: LOESUNG nach 0.0 s, 6 Iterationen
+runs/zerlegung/k1b_W_seed2.paar.txt: K=8, Typ (9,8), d=7: offene Klassen 0 von 32768
+W seed 3: LOESUNG nach 0.0 s, 5 Iterationen
+runs/zerlegung/k1b_W_seed3.paar.txt: K=8, Typ (9,8), d=7: offene Klassen 0 von 32768
+W seed 4: LOESUNG nach 0.0 s, 7 Iterationen
+runs/zerlegung/k1b_W_seed4.paar.txt: K=8, Typ (9,8), d=7: offene Klassen 0 von 32768
+U seed 1: LOESUNG nach 0.0 s, 5 Iterationen
+runs/zerlegung/k1b_U_seed1.paar.txt: K=8, Typ (9,8), d=7: offene Klassen 0 von 32768
+U seed 2: LOESUNG nach 0.0 s, 5 Iterationen
+runs/zerlegung/k1b_U_seed2.paar.txt: K=8, Typ (9,8), d=7: offene Klassen 0 von 32768
+U seed 3: LOESUNG nach 0.0 s, 5 Iterationen
+runs/zerlegung/k1b_U_seed3.paar.txt: K=8, Typ (9,8), d=7: offene Klassen 0 von 32768
+U seed 4: LOESUNG nach 0.0 s, 5 Iterationen
+runs/zerlegung/k1b_U_seed4.paar.txt: K=8, Typ (9,8), d=7: offene Klassen 0 von 32768
+Nachtrag: nach Rueckordnung der Spalten (U = Spalten 0-6,9,15; W = 7,8,10-14,16) ist die Zeilenmenge bis auf Vorzeichen gleich ctrl_17: True 32

@@ -1,0 +1,5 @@
+# dfs: fest runs/zerlegung/eingaben/paley12_U11.txt (12 x 11), d=9, gesucht 12 x 12; Anforderungsvektoren 880 (nur maximale), unerfuellbar 0; Punkte je Seite 1024 / 2048
+# Zaehlschranke: Lam = 0 0 1 3 9 9 9, N0 = 9, B = 1866; Wurzel: N0*NZ = 18432 gegen K*B = 22392
+# Schnitte durch die Zaehlschranke: 406919
+# Knoten je Tiefe: 1 1 1 1 1 1 1 1 1 1 1610 3296940 4784128
+ZEITGRENZE nach 1200.0 s, 8082688 Knoten

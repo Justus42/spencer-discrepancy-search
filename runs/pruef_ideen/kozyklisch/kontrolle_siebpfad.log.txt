@@ -1,0 +1,6 @@
+Z5xQ8 shard 0/1: Funktionen 524288, Sieb <= 4: gefunden 520214, Ueberlebende 4074
+Z40 shard 0/1: Funktionen 524288, Sieb <= 4: gefunden 461179, Ueberlebende 63109
+Dic10 shard 0/1: Funktionen 524288, Sieb <= 4: gefunden 415887, Ueberlebende 108401
+Z5xQ8 shard 0/1: Funktionen 524288, Sieb <= 6: gefunden 524288, Ueberlebende 0
+Z40 shard 0/1: Funktionen 524288, Sieb <= 6: gefunden 524288, Ueberlebende 0
+Dic10 shard 0/1: Funktionen 524288, Sieb <= 6: gefunden 524288, Ueberlebende 0
