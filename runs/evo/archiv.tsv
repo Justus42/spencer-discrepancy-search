@@ -55,3 +55,7 @@ Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
 14	p013	p010	A	20	6	23	2	600	732	Ziel 23 Paare, blind, Zugwahl ueber ganze Nachbarschaft
 14	p013	p010	A	20	6	23	3	600	738	Ziel 23 Paare, blind, Zugwahl ueber ganze Nachbarschaft
 14	p013	p010	A	20	6	23	4	600	727	Ziel 23 Paare, blind, Zugwahl ueber ganze Nachbarschaft
+15	p013	p010	A	15	4	15	1	300	233	Nebenziel (15,4) 15 Paare, Runde 2/5: p013 (Nachfahre von p001) unveraendert, blind
+15	p013	p010	A	15	4	15	2	300	233	Nebenziel (15,4) 15 Paare, Runde 2/5: p013 (Nachfahre von p001) unveraendert, blind
+15	p013	p010	A	15	4	15	3	300	233	Nebenziel (15,4) 15 Paare, Runde 2/5: p013 (Nachfahre von p001) unveraendert, blind
+15	p013	p010	A	15	4	15	4	300	233	Nebenziel (15,4) 15 Paare, Runde 2/5: p013 (Nachfahre von p001) unveraendert, blind
