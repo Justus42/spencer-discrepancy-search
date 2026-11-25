@@ -1,0 +1,3 @@
+Start: Zeilen 23 offene Klassen 1297
+ein Eintrag einer Zeile gewechselt: kleinste Restzahl 1297 None
+zwei Eintraege einer Zeile gewechselt: kleinste Restzahl 1297 None

@@ -1,0 +1,10 @@
+typ=0 n=26 k=0 t=0 Ziel d=10: 33554432 von 33554432 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 7.4 s
+typ=2 n=26 k=1 t=13 Ziel d=10: 33554432 von 33554432 Funktionen; nach Proben uebrig 1300, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 11.5 s
+typ=0 n=28 k=0 t=0 Ziel d=10: 134217728 von 134217728 Funktionen; nach Proben uebrig 17136, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 55.6 s
+typ=2 n=28 k=7 t=2 Ziel d=10: 134217728 von 134217728 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 28.7 s
+typ=1 n=28 k=7 t=2 Ziel d=10: 134217728 von 134217728 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 31.0 s
+typ=3 n=28 k=7 t=2 Ziel d=10: 134217728 von 134217728 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 30.7 s
+typ=2 n=28 k=1 t=14 Ziel d=10: 134217728 von 134217728 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 43.0 s
+typ=1 n=28 k=1 t=14 Ziel d=10: 134217728 von 134217728 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 24.6 s
+typ=0 n=30 k=0 t=0 Ziel d=10: 536870912 von 536870912 Funktionen; nach Proben uebrig 2713320, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 377.7 s
+typ=2 n=30 k=1 t=15 Ziel d=10: 429916160 von 536870912 Funktionen (ZEITGRENZE, unvollstaendig); nach Proben uebrig 38073915, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 901.7 s

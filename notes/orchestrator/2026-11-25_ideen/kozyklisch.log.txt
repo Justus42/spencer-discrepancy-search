@@ -1,0 +1,15 @@
+typ=0 n=20 k=0 t=0 Ziel d=8: 524288 von 524288 Funktionen; nach Proben uebrig 340, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 0.2 s
+typ=2 n=20 k=5 t=2 Ziel d=8: 524288 von 524288 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 0.1 s
+typ=1 n=20 k=5 t=2 Ziel d=8: 524288 von 524288 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 0.1 s
+typ=3 n=20 k=5 t=2 Ziel d=8: 524288 von 524288 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 0.1 s
+typ=2 n=20 k=1 t=10 Ziel d=8: 524288 von 524288 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 0.1 s
+typ=1 n=20 k=1 t=10 Ziel d=8: 524288 von 524288 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 0.1 s
+typ=0 n=18 k=0 t=0 Ziel d=8: 131072 von 131072 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 0.0 s
+typ=2 n=18 k=1 t=9 Ziel d=8: 131072 von 131072 Funktionen; nach Proben uebrig 18, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 0.0 s
+typ=2 n=18 k=3 t=3 Ziel d=8: 131072 von 131072 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 0.0 s
+typ=1 n=18 k=1 t=9 Ziel d=8: 131072 von 131072 Funktionen; nach Proben uebrig 0, nach Abstieg 0, vollstaendig geprueft 0, UEBERLEBENDE 0 (davon Hadamard 0); 0.0 s
+HADAMARD f=00000a7a
+UEBERLEBT f=00000a7a  Zeile 0: 1 -1 1 -1 -1 -1 -1 1 1 -1 1 -1 1 1 1 1 1 1 1 1
+UEBERLEBT f=00000a9a  Zeile 0: 1 -1 1 -1 -1 1 1 -1 1 -1 1 -1 1 1 1 1 1 1 1 1
+typ=2 n=20 k=5 t=2 Ziel d=6: 524288 von 524288 Funktionen; nach Proben uebrig 123300, nach Abstieg 4012, vollstaendig geprueft 4012, UEBERLEBENDE 3240 (davon Hadamard 480); 22.3 s
+typ=0 n=20 k=0 t=0 Ziel d=6: 524288 von 524288 Funktionen; nach Proben uebrig 418740, nach Abstieg 33772, vollstaendig geprueft 33772, UEBERLEBENDE 28560 (davon Hadamard 0); 247.0 s

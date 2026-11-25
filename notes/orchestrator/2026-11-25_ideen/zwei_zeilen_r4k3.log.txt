@@ -1,0 +1,10 @@
+r=4 gestrichen, k=3 freie Zeilen; Lochzahlen und Anzahl der Zeilenmengen: {1476: 784, 1484: 896, 1508: 112, 1512: 28}
+  gestrichen (0, 1, 2, 3): 1476 Lochklassen, 4542662 Klauseln: UNERFUELLBAR (1.6 s)
+  gestrichen (0, 1, 2, 4): 1476 Lochklassen, 4542374 Klauseln: UNERFUELLBAR (1.5 s)
+  gestrichen (0, 1, 2, 5): 1484 Lochklassen, 4578118 Klauseln: UNERFUELLBAR (1.5 s)
+  gestrichen (0, 1, 2, 7): 1484 Lochklassen, 4578118 Klauseln: UNERFUELLBAR (1.6 s)
+  gestrichen (0, 1, 5, 7): 1508 Lochklassen, 4688230 Klauseln: UNERFUELLBAR (3.0 s)
+  gestrichen (0, 1, 5, 9): 1508 Lochklassen, 4688230 Klauseln: UNERFUELLBAR (2.3 s)
+  gestrichen (0, 1, 5, 10): 1512 Lochklassen, 4705994 Klauseln: UNERFUELLBAR (2.9 s)
+  gestrichen (0, 1, 7, 13): 1512 Lochklassen, 4705994 Klauseln: UNERFUELLBAR (3.2 s)
+ZUSAMMENFASSUNG (Lochzahl, Ergebnis): Anzahl {(1476, 'UNERFUELLBAR'): 2, (1484, 'UNERFUELLBAR'): 2, (1508, 'UNERFUELLBAR'): 2, (1512, 'UNERFUELLBAR'): 2}

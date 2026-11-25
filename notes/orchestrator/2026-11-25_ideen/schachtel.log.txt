@@ -1,0 +1,6 @@
+U: Spalten 0,1 verdreifacht; W: Spalte 0 verdreifacht: kleinste Zahl offener Klassen ueber alle 8! Zuordnungen: 24192 von 262144 (Zuordnung (0, 1, 2, 3, 4, 5, 6, 7))
+   nach 1 weiteren Nebenklasse(n), gierig gewaehlt: offen 17446
+   nach 2 weiteren Nebenklasse(n), gierig gewaehlt: offen 12012
+U: Spalte 0 verfuenffacht; W: Spalte 0 verdreifacht: kleinste Zahl offener Klassen ueber alle 8! Zuordnungen: 26880 von 262144 (Zuordnung (0, 1, 2, 3, 4, 5, 6, 7))
+   nach 1 weiteren Nebenklasse(n), gierig gewaehlt: offen 19608
+   nach 2 weiteren Nebenklasse(n), gierig gewaehlt: offen 13732

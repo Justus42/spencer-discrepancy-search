@@ -1,0 +1,4 @@
+Start: Zeilen 15 offene Klassen 233 Punkte 466
+Aenderung von genau 1 Eintraegen einer Zeile: kleinste Restzahl 233 (Klassen) None
+Aenderung von genau 2 Eintraegen einer Zeile: kleinste Restzahl 233 (Klassen) None
+Aenderung von genau 3 Eintraegen einer Zeile: kleinste Restzahl 233 (Klassen) None

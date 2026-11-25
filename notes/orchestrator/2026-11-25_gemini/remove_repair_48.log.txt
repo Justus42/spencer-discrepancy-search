@@ -1,0 +1,9 @@
+# tern_ls: 48er (had24_1p3_paley12) ohne Zeile 0, 23 Zeilen, (20,6), je 240 s, 25.11.2026 17:52-17:56 Uhr
+ohne Gewichte, Startwert 11:
+Start: N=23 m=20 G=20 Nullen=0 Gewichte=0 Restzahl=1297 (Klassen)
+Ende: Schritte=24064 Gewichtsrunden=0 Zeit=242.4 s beste Restzahl=1297 aktuelle=3366
+Traeger: 23 x s=20
+mit Gewichten, Startwert 12:
+Start: N=23 m=20 G=20 Nullen=0 Gewichte=1 Restzahl=1297 (Klassen)
+Ende: Schritte=23040 Gewichtsrunden=9393 Zeit=242.2 s beste Restzahl=1297 aktuelle=3211
+Traeger: 23 x s=20

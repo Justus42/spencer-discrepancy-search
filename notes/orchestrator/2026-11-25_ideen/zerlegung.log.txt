@@ -1,0 +1,6 @@
+# zerlegung.py kontrolle (CP-SAT), 25.11.2026
+16:07-16:09 Uhr, Modell mit Bits und linearen Bedingungen, 120 s: ZEITGRENZE (Anforderungsvektoren 220 maximal von 220)
+16:13-16:16 Uhr, Modell 'jede Zeile waehlt ein Wort', 170 s: ZEITGRENZE
+48er nachgezaehlt: offene Klassen bei d=8: 0
+# zerlegung_sat.py kontrolle (Glucose 4), 16:17-16:20 Uhr, 150 s: ZEITGRENZE, 74717 Klauseln
+Hinweis: waehrenddessen lief auf einem der zwei Kerne das Sieb kozyklisch (n = 30).

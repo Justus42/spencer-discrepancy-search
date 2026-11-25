@@ -1,0 +1,4 @@
+Kontrolle (16 Zeilen, Spalte 0, 7, 14 verdeckt): (Minimum, Wert der echten Spalte, Zahl der Optima, Muster): [(0, 0, 4, 1408), (0, 0, 4, 1408), (0, 0, 4, 1408)]
+15 Zeilen (jede der 16 Zeilen gestrichen) x 15 Spalten = 240 Faelle: (Minimum Klassen, Wert der echten Spalte, Zahl der Optima): Anzahl
+   (233, 233, 4) : 240
+Faelle mit Minimum unter 233: keine
