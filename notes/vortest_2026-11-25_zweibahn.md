@@ -2,7 +2,7 @@
 
 Verfasser: Orchestrator-Claude. Repo-Stand beim Rechnen: `main` = `aa83b04`. Skripte und Log:
 `notes/orchestrator/2026-11-25_vortest/`. **Alle Zahlen hier sind Rechnungen des Orchestrators mit einem Programm,
-nicht gegengerechnet.** Die Aufträge unten sind Entwürfe; gestartet ist nichts.
+nicht gegengerechnet.** Beide Aufträge unten hat Justus am 25.11.2026 um 07:54 freigegeben; er startet die Sitzungen selbst.
 
 ## Ergebnis in zwei Sätzen
 
@@ -63,7 +63,7 @@ Alle elf Codes haben den Kern ⟨1, a⟩ mit vier Wörtern (Gewichte 9 und 11). 
 gefunden; ein Lauf K = 12 ist nie gestartet worden (Archiv, „Warmstart und K=12“). Fühlprobe (Suche, kein Beleg):
 K = 12, Typ (11,9), Startwert 1, 900 s, ein Cloud-Kern: ungelöst, Restzahl 18.
 
-## Auftrag Z (Entwurf): Zwei-Bahnen-Zählung in den Randzellen
+## Auftrag Z (freigegeben): Zwei-Bahnen-Zählung in den Randzellen
 
 ```
 Auftrag Z (Opus, Effort hoch): Zwei-Bahnen-Codes, vollständige Zählung
@@ -121,7 +121,7 @@ Am Ende: LANDKARTE.md (Regel 9, je Zelle und Typ die kleinste erreichte Wortzahl
 Fehlversuche als Einzeiler, nichts nach außen melden.
 ```
 
-## Auftrag L (Entwurf): Leiter unter 48 bei (20,6)
+## Auftrag L (freigegeben): Leiter unter 48 bei (20,6)
 
 ```
 Auftrag L (Sonnet, Effort mittel): Nebenklassen-Leiter unter 48 bei (20,6)
@@ -172,4 +172,5 @@ Laufzeiten auf zwei Cloud-Kernen: jede Zeile der Tabelle unter 2,5 Minuten, Spei
 ## Sonst aufgefallen
 
 `STATUS.md` (Offene Punkte) verweist auf `notes/gate_2026-11-25_bahnen3.md`. Die Datei und der Ordner
-`notes/orchestrator/2026-11-25_gate_bahnen3/` fehlen in `main` (auch in `doku/nachtraege-2026-11-25` nicht gefunden).
+`notes/orchestrator/2026-11-25_gate_bahnen3/` fehlten in `main`; sie lagen nur auf dem Branch
+`orchestrator/rueckfrage2-sol-2026-11-24` (Stand `ed9d47c`) und sind von dort unverändert nachgetragen.
