@@ -1,0 +1,10 @@
+== 22:23:25 Start Block s3c18-5a_k12_t9-9
+s3c18-5a_k12_t9-9 seed 5: ZEITGRENZE nach 900.0 s, beste Restzahl 1, 943136 Iterationen, 3054 Runden, 138 Neustarts
+runs/leiter_n/s3c18-5a_k12_t9-9_seed5.paar.txt: K=12, Typ (9,9), d=8: offene Klassen 1 von 65536
+s3c18-5a_k12_t9-9 seed 6: ZEITGRENZE nach 900.0 s, beste Restzahl 1, 920838 Iterationen, 2976 Runden, 135 Neustarts
+runs/leiter_n/s3c18-5a_k12_t9-9_seed6.paar.txt: K=12, Typ (9,9), d=8: offene Klassen 1 von 65536
+s3c18-5a_k12_t9-9 seed 7: ZEITGRENZE nach 900.0 s, beste Restzahl 1, 918664 Iterationen, 2982 Runden, 135 Neustarts
+runs/leiter_n/s3c18-5a_k12_t9-9_seed7.paar.txt: K=12, Typ (9,9), d=8: offene Klassen 1 von 65536
+s3c18-5a_k12_t9-9 seed 8: ZEITGRENZE nach 900.0 s, beste Restzahl 1, 931594 Iterationen, 3015 Runden, 137 Neustarts
+runs/leiter_n/s3c18-5a_k12_t9-9_seed8.paar.txt: K=12, Typ (9,9), d=8: offene Klassen 1 von 65536
+== 22:38:25 Ende Block s3c18-5a_k12_t9-9

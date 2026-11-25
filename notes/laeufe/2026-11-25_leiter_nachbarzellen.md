@@ -30,3 +30,9 @@ Treffer (18,5), K = 13, Typ (9,9), Startwert 1 (`runs/leiter_n/s2c18-5_k13_t9-9_
 `zerl_offen.py offen … 8 --direkt`: 0 offene Klassen von 65 536, direkte Zählung auf der Matrix 0; `pruefe_matrix.py --erwartet 8`: check_disc 8, verify_spencer 8,
 exakt_disc 8, **alle drei Diskrepanz 8** (22:11 UTC). 26 Zeilen = 52 Wörter mit Komplementen bei Radius 5 in Q18. Tabellenergebnis (Tabelle 28–64, eigener Wert bisher 64),
 keine Rekordgrenze (Rekordweg bei d = 8 verlangt K ≤ 10, 40 Wörter). Nicht gemeldet, ob neu: das prüft der Orchestrator.
+
+## Schritt 3: (18,5), Typ (9,9), K = 12 (48 Wörter), 8 neue Startwerte (5–8 und 9–12), je 900 s, zwei Blöcke (22:23–22:53 UTC)
+
+0 von 8 gelöst, **beste Restzahl in allen acht Läufen 1** (von 65 536; `zerl_offen.py` zählt je Paar ebenfalls 1 offene Klasse). Zusammen mit den vier 300-s-Läufen der Stufe (alle Restzahl 1) steht
+K = 12 bei 12 Startwerten fest bei Restzahl 1: auffällig fester Wert, Beinahe-Treffer; kein Ausschluss (Belegart: Suche erfolglos).
+Logs `runs/leiter_n/s3c18-5a_*`, `s3c18-5b_*`. Zelle (18,5) abgeschlossen: kleinstes erreichtes K = 13 (52 Wörter) im Typ (9,9).
