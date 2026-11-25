@@ -2,7 +2,8 @@
 
 Vom Orchestrator, 25.11.2026. Grundlage: `notes/ideen_2026-11-25.md` (Abschnitt 3), `notes/ideen_2026-11-25_pruefvermerk.md`, Sol-Antwort
 `notes/openrouter/beweise_2026-11-25--openai-gpt-6.2-sol.md` (Fragen 2 und 3), Vortest-Skripte `notes/orchestrator/2026-11-25_ideen/zerlegung.py`,
-`profile_d9.py`, `schachtel.py`. Freigabe und Start durch Justus. Der Ertrag aus Gemini Deep Research steht noch aus.
+`profile_d9.py`, `schachtel.py`. Freigabe und Start durch Justus. Der Gemini-Bericht vom 25.11. ist eingearbeitet (`notes/gemini/ideen_2026-11-25_kurz.md`): keine Vorarbeit in der
+Literatur gefunden; zweite Positivkontrolle `ctrl_17`.
 
 ```
 Auftrag H (Opus, Effort hoch): Codes mit Kern <1,a> als Paar (U,W); eigener Löser für das Halbproblem; abwechselnde Suche
@@ -35,6 +36,9 @@ Symmetriebrechung über Spaltenvorzeichen (erste Zeile lauter +1) und Spaltenrei
 (CP-SAT 120 s und 170 s, Glucose 150 s, je Zeitgrenze, 2 Kerne): deshalb eigener Code.
   K1 (Positivkontrolle): U des 48ers, d = 8, m2 = 9: ein W finden, in unter 10 Minuten, in mindestens 3 von 4 Startwerten. Ebenso gespiegelt
      (W des 48ers fest, U mit 11 Spalten gesucht).
+  K1b (zweite Positivkontrolle): controls/ctrl_17.txt (32 Wörter, (17,5), d = 7) hat einen Verschiebungskern der Größe 4 mit Gewichten 8 und 9,
+     ist also ein Paar (U,W) mit K = 8, Typ (9,8). Zerlegung selbst bestimmen (Kernelement a suchen, Spalten nach a teilen, je Nebenklasse
+     eine Zeile), mit dem Prüfcode bestätigen (0 offene Klassen bei d = 7), dann zu U ein W finden und umgekehrt.
   K2 (Negativkontrolle, vollständig): U des 48ers ohne eine Zeile (K = 11): „keine Lösung“. Grund: die gestrichene Zeile ist ein y mit allen
      |u_i| = 1, also müsste W allein Q9 mit |v| >= 7 überdecken, 22 * 10 < 512.
   Abbruch: K1 nach 2 Stunden Sitzungszeit nicht bestanden: stoppen und berichten.
