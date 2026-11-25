@@ -130,6 +130,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Reelle 10 × 10-Matrizen (Astra) | ausgeschlossen: jede Kappe hat Durchmesser ≤ 4 und liegt in einer Radius-2-Kugel oder hat ≤ 36 Punkte (Astra: ≤ 43); hat mindestens eine Kappe mehr als die Radius-2-Kugel, ist die Vereinigung aller zehn ≤ 505 < 512; sonst überdecken 10 Radius-2-Kugeln die 512 Klassen nicht (Aufzählung; Tabelle K(10,2) ≥ 24 nicht nötig) | Herleitung (Astra; von Orchestrator und P nachvollzogen, nicht formal geprüft) plus Aufzählung; Fall ohne Sonderkappe: drei Programme, zwei verschiedene Suchbäume (Sitzung 63 505 Knoten; Gate ohne Symmetriebruch 3 569 441 Knoten) | L: 2026-11-25_pruef_ideen, Teil 5; K |
 | Kern-⟨1,a⟩-Paare (U,W) bei (20,6), abwechselnde Suche mit Halbproblem-Löser (Auftrag H): K = 11 (44 Wörter) und K = 10 (40) in den Typen (11,9), (13,7), (10,10), (12,8), Zufallsstart; Kontrolle K = 12 (11,9) 8 von 8 in ≤ 25 s | nicht erreicht; beste Restzahl K = 11: 1288 / 2698 / 1063 / 1836, K = 10: 3234 / 5926 / 1852 / 4280 | Suche | L: 2026-11-25_zerlegung; K |
 | Kern-⟨1,a⟩-Paare bei d = 9, K = 12 (48 Wörter), Zellen (21,6), (23,7), (25,8), sechs Typen, Zufallsstart; dazu U = Paley-12 ohne Spalte, W 12 x 10/12/14 | nicht erreicht (beste Restzahl 1760 bei (12,11)); die besten Zustände bei (12,11) und (12,13) haben als eine Hälfte eine volle Hadamard-Matrix 12 x 12 und liegen damit in dem Fall, den der Zählbeweis (Zeile zu Auftrag P oben) für jede zweite Hälfte ausschließt; W 12 x 10 ausgeschlossen (Zählschranke über alle 880 Anforderungen, bestätigt Sol), 12 x 12 und 12 x 14 unentschieden | Suche (alle Restzahlen im Gate mit eigenem Zähler bestätigt); 12 x 10: Zählschranke, drittes Programm nach Vortest und Auftrag P | L: 2026-11-25_zerlegung |
+| Freie Suche als Evolutionsschleife (Auftrag E: 25 Programme, Inseln A, B, C, Saat; eingefrorener Bewerter) bei (20,6) mit 23 Paaren (46 Wörter), blind und ab dem 48er; Kontrollen (15,4) 16 Paare blind 4 von 4, (20,6) 24 Paare blind 1 von 4 (disc 8 dreifach) | nicht erreicht; beste Restzahl **704** offene Klassen (fester Endpunkt: 19 von 44 Läufen genau 704; 48er ohne Zeile 1297, Spann 886); (15,4) mit 15 Paaren 233 | Suche | L: 2026-11-25_evo; K |
 
 ## Fehlversuche
 
@@ -189,6 +190,11 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - 25.11.2026, Ideensammlung, Vortests des Orchestrators (von P nicht gegengerechnet): Eintrags-Suche `tern_ls.c`, Kontrolle 16 × 15 nicht bestanden (Restzahl 62–181, je 80–110 s); Halbproblem „W zu U des 48ers" mit CP-SAT und Glucose je Zeitgrenze (120–170 s); verschachtelte Hamming-Hälften 24 192 von 262 144 Klassen offen. Die kozyklischen Vortests n = 18–30 hat P bestätigt (Negativbefunde). L: 2026-11-25_pruef_ideen.
 - 25.11.2026, Astra-Vorschläge A (zwei freie Zeilen, 560 + 560 Tripel, unerfüllbar, 1,7 s Suche) und B (ganze Spalte, 240 Fälle, kein Wert unter 233, 13 s): beide negativ, von P bestätigt (Negativbefunde). L: 2026-11-25_pruef_ideen.
 - 25.11.2026, Auftrag P: Suchcode `kern_r3.c` brach bei 4/3, Index 1223 irrtümlich mit „VERTEILBAR" ab (Neustart an der Teilmengengrenze 95), behoben und nachgerechnet; erste Fassung des Zertifikatsprüfers ohne Symmetriebruch und Ordnung nach 9 CPU-Min. abgebrochen (danach 4 Prozesse, 5 Min.); Python-Tiefensuche (10 Kugeln) ohne Zuwachsschranke nach 115 s abgebrochen (mit Schranke 5 s). L: 2026-11-25_pruef_ideen.
+- 25.11.2026, Auftrag E, Punktgewichte mit Glättung (p004), (20,6) 24 Paare, 4 x 600 s: 891–953 offene Klassen, schlechter als ohne Glättung (p002: 115–673). L: 2026-11-25_evo.
+- 25.11.2026, Auftrag E, Insel C (Zeile entfernen, global beste per Walsh-Hadamard, p006), (20,6) 23 Paare, 4 x 600 s: 1569–1683 (nur 120 Züge/s). L: 2026-11-25_evo.
+- 25.11.2026, Auftrag E, Doppelungsform bei 23 Paaren, je 4 x 600 s: p007 1276–1286, p016 (11+9) starr 1241, p023 (12+8) starr 1310. L: 2026-11-25_evo.
+- 25.11.2026, Auftrag E, 23 Paare: zehn Runden ohne Verbesserung der 704 (Runden 18–29 ohne Nebenziel, je 4 x 600 s; längeres Tabu, Mindestabstand 7, Zeilenersatz, Doppelzüge, Saat, ohne Gewichte), Abbruch laut Auftrag. L: 2026-11-25_evo.
+- 25.11.2026, Auftrag E, Nebenziel (15,4) 15 Paare, 4 Runden je 4 x 300 s (p001, p013, p018, p016): immer 233 (Doppelungsform 707). L: 2026-11-25_evo.
 ## Offene Punkte
 
 - Meldung von K(20,6) ≤ 48 (und der Familie): Entscheidung am 27.11.2026 (`notes/zweitmeinung_2026-11-24_auftrag.md`).
@@ -218,6 +224,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - Auftrag H: Halbproblem-Löser findet den 48er bei (20,6) aus Zufallsstart in Sekunden (8 von 8; Typ (10,10) ebenso); Gleichwertigkeit der Treffer zu 1+3/2+2 offen (Fingerabdruck trennt nicht; alle Positivkontrollen des Lösers sind Hadamard-artig); d = 9 mit Paley-U und W 12 x 12 / 12 x 14 offen (L: 2026-11-25_zerlegung).
 - Nächster Schritt: Entscheidung zur Meldung K(20,6) ≤ 48 am 27.11.2026 (Neuheitsprüfung am 26.11.). Die Ansatzwahl ist erfolgt (`notes/ideen_2026-11-25.md`): Aufträge E (Evolutionsschleife),
   H (Zerlegung der Kern-Familie) und P (Gegenrechnung der Vortests), freigegeben am 25.11.2026, 18:10 Uhr; danach je ein Gate. P und H sind abgeschlossen (Gates bestanden, `notes/gate_2026-11-25_pruef_ideen.md`, `notes/gate_2026-11-25_zerlegung.md`); E steht aus.
+- Auftrag E (abgeschlossen, Gate steht aus): kein Treffer; Ziele 22–20 Paare nicht begonnen; Gleichwertigkeit und Struktur der 704er sowie des blinden 48ers zu Paley offen (L: 2026-11-25_evo).
 
 ## Prüfrahmen
 
@@ -255,3 +262,4 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - `src/pruef_ideen/` (Such- und Rechencode: `kern_r3.c`, `spalte.c`, `kozyk.c`, `ueberdeckung10.c`), `verifiers/pruef_ideen/` (getrennte Prüfer: `pruef_kern.py`, `pruef_kozyk.py`, `zerlegung_zahlen.py`, `astra10.py`): Auftrag P. Belege `runs/pruef_ideen/`.
 - `notes/verlauf/`: Archiv der vollständigen STATUS.md vom 24.11.2026 (eingefroren). `notes/rundlauf_2026-11-24_auftrag.md`: Auftragstext Ansatz 3.
 - `src/zerl_offen.py` (Prüfcode), `src/zerl_halb.c` (Suchcode: `ls`, `dfs`, `alt`, `zaehl`), `src/zerl_eingaben.py`, `src/zerl_test_dfs.py`, `src/zerl_gewichte.py`, `src/run_zerl_{k1,s2,alt,ziel}.sh`: Auftrag H. Logs `runs/zerlegung/`.
+- `src/evo_bewertung.c` (Prüfcode, Bewerter, eingefroren in `runs/evo/BEWERTER.sha256`), `src/evo_bewertung_kontrolle.sh`, `src/evo/p001.c`–`p025.c` (Suchcode), `src/evo/runde.sh`: Auftrag E. Archiv `runs/evo/archiv.tsv`, Ausgaben und Logs `runs/evo/`.

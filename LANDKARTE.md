@@ -42,6 +42,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Rundlauf Astra 6 Differenzblöcke (20x18, 2 160) | | | | | | | | | | | | 1,342 e |
 | Rundlauf Sol 2 Paley-12-Verkabelung (20x20, 71 280) | | | | | | | | | | | | 0,894 e |
 | Kern-⟨1,a⟩-Paare (U,W) bei (20,6), d = 8, abwechselnde Suche (Auftrag H): K = 10 (40 Wörter) in (11,9), (13,7), (10,10), (12,8) nicht erreicht | | | | | | | | | | | | (1,789) s |
+| Freie Suche als Evolutionsschleife (Auftrag E), blind: (15,4) 16 Paare (32 Wörter) in 4 von 4 Läufen (Startwert 1: disc 7 dreifach); 15 Paare (30 Wörter, N = 15) nicht erreicht, beste Restzahl 233 offene Klassen |  |  |  |  |  |  | (1,807) s | 1,750 e |  |  |  |  |
 
 ## N ab 21
 
@@ -78,6 +79,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Rundlauf Sol 8 vier Walsh-Bänke (31x30, 10 000) | | | | | | | | | | | 1,078 e | | |
 | Kern-⟨1,a⟩-Paare (U,W) bei (20,6), d = 8 (Auftrag H): K = 12 aus Zufallsstart in (11,9) und (10,10); K = 11 (44 Wörter) in vier Typen nicht erreicht |  | (1,706) s |  | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Kern-⟨1,a⟩-Paare bei d = 9, K = 12 (48 Wörter), (21,6), (23,7), (25,8), sechs Typen (Auftrag H); U = Paley-12 ohne Spalte mit W 12 x 10 voll ausgeschlossen |  |  |  | (1,837) s | (1,800) s |  |  |  |  |  |  |  |  |
+| Freie Suche als Evolutionsschleife (Auftrag E), (20,6): 24 Paare (48 Wörter) blind gefunden (1 von 4, disc 8 dreifach); 23 Paare (46 Wörter, N = 23) nicht erreicht, beste Restzahl 704 offene Klassen (fester Endpunkt) |  |  | (1,668) s | 1,633 e |  |  |  |  |  |  |  |  |  |
 
 ## Bester Eintrag dieser Karte je N (nur `e`/`r`)
 
@@ -145,6 +147,10 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Zusätzlich n = 10 (Dichte 1,09
   (10,10) K = 12 (1 Lauf, 39 s, disc 8), K = 11 1063, K = 10 1852; (12,8) K = 12 nicht erreicht (1 Lauf 300 s, Restzahl 180), K = 11 1836, K = 10 4280; (13,7) K = 12 nicht erreicht (300 s, 290), K = 11 2698, K = 10 5926.
   d = 9, K = 12 (keiner erreicht): (11,10) 12 957, (12,9) 11 002, (12,11) 1760, (13,10) 26 360, (12,13) 5280, (11,14) 5280. U = Paley-12 ohne Spalte: W 12 x 10 voll ausgeschlossen (Zählschranke), 12 x 12 und 12 x 14 unentschieden.
   Gate: `notes/gate_2026-11-25_zerlegung.md` (alle 89 gespeicherten Paare mit eigenem Zähler nachgezählt, die acht Kontrolltreffer mit drei Prüfprogrammen; die besten Zustände bei (12,11) und (12,13) liegen in einem bewiesen ausgeschlossenen Fall).
+- **Evolutionsschleife, Auftrag E (25.11.2026):** Protokoll `notes/laeufe/2026-11-25_evo.md`, Bewerter `src/evo_bewertung.c` (eingefroren), Programme
+  `src/evo/p001.c`–`p025.c`, Archiv `runs/evo/archiv.tsv`. 29 Runden zu 4 Startwerten, 4,5 h. Kleinste erreichte Paarzahl: (15,4) 16 (blind, Runde 1),
+  (20,6) 24 (blind, Doppelungsform, Runde 5). Beste Restzahl darunter: (15,4) 15 Paare 233; (20,6) 23 Paare **704** offene Klassen (Bonus g = 0,880 gegen
+  1297 = 48er ohne Zeile; besser als 886 aus Auftrag S). Abbruch nach 10 Runden ohne Verbesserung; 22–20 Paare nicht begonnen. Belegart: Suche erfolglos.
 - **Gruppenmatrizen über nichtzyklischen Gruppen (Auftrag G, 25.11.2026):** Protokoll `notes/laeufe/2026-11-25_gruppen.md`, Programm `src/gruppenmatrix.c`
   (Prüfcode `src/gruppen_erzeuge.py`, `src/gruppen_pruef.py`), Tafeln und Logs `runs/gruppen/`, beste Matrizen `runs/gruppen/beste/` (beide Prüfskripte und `exakt_disc` gleich).
   A[g][h] = f(g^-1 h); alle Klassen bis auf Links-/Rechtsmultiplikation, Automorphismen und Komplement (nicht f(x^-1)). Kein Überlebender in keiner der zehn Gruppen
