@@ -17,7 +17,8 @@
  *    des Normalisators von <g> (Blockverschiebungen, Multiplikatoren, Blocktausch, Fixspaltenpermutationen,
  *    Komplement ganzer Bloecke und Fixspalten), gewichtet mit der Klassengroesse; Option -n: alle A, Gewicht 1.
  *    B muss alle harten Klassen ueberdecken, die A offen laesst: B laeuft ueber die vollen Bahnen, die die erste
- *    solche Klasse h1 ueberdecken (Kugel um h1). Ergebnis / 2 = ungeordnete Paare.
+ *    solche Klasse h1 ueberdecken: B laeuft ueber alle vollen Bahnen, Vorfilter mit einer Stichprobe von bis zu
+ *    64 offenen harten Klassen (alle Drehungen), dann alle offenen harten Klassen. Ergebnis / 2 = ungeordnete Paare.
  *  - Rest: exakte Zaehlung aller Teilmengen kurzer Bahnen mit Gewicht <= B, die den Rest ueberdecken
  *    (Verzweigen an der Bedingung mit den wenigsten Moeglichkeiten, Ausschluss frueherer Geschwister,
  *    am Blatt Rucksack-Zaehlung der freien Bahnen). Ausgabe als Verteilung nach Zahl kurzer Paare.
@@ -354,22 +355,23 @@ int main(int argc, char **argv) {
         printf("(%.1f s)\n", omp_get_wtime() - t0); fflush(stdout);
     }
 
-    uint64_t *seen = (K == 2) ? calloc(half / 64 + 1, 8) : NULL;
-    uint32_t *ball = NULL; long VB = 0;
-    if (K == 2) { /* Kugelgroesse */
-        long c = 1; VB = 1; for (int i = 1; i <= R; i++) { c = c * (m - i + 1) / i; VB += c; }
-        ball = malloc(sizeof(uint32_t) * VB);
-    }
     uint32_t *UA = malloc(sizeof(uint32_t) * NP); unsigned char *UAH = malloc(NP);
-    uint32_t *UH = malloc(sizeof(uint32_t) * NP);
+    uint32_t *UH = malloc(sizeof(uint32_t) * NP); unsigned char *FLG = malloc(NP);
+    /* fuer k = 2: Listen harter Klassen und voller Bahnen */
+    uint32_t *HL = NULL, *FL = NULL; long nHL = 0, nFL = 0;
+    if (K == 2) {
+        HL = malloc(sizeof(uint32_t) * (nhard + 1)); FL = malloc(sizeof(uint32_t) * (bysize[q] + 1));
+        for (long i = 0; i < NP; i++) { if (HARD[i]) HL[nHL++] = P[i]; if (PS[i] == q) FL[nFL++] = P[i]; }
+    }
     long long cls_done = 0;
     for (long a = 0; a < NA; a++) {
         if (TLIM > 0 && omp_get_wtime() - t0 > TLIM) { printf("ZEITGRENZE nach %lld von %ld Klassen\n", cls_done, NA); goto report_partial; }
         uint32_t A = AREP[a], rA[64]; rots(A, rA);
-        /* Rest nach A */
         long nua = 0, nuh = 0;
-        for (long i = 0; i < NP; i++) if (!covers(rA, P[i])) { UA[nua] = P[i]; UAH[nua] = HARD[i]; nua++; if (HARD[i]) UH[nuh++] = P[i]; }
         if (K == 1) {
+            #pragma omp parallel for schedule(static)
+            for (long i = 0; i < NP; i++) FLG[i] = (unsigned char)!covers(rA, P[i]);
+            for (long i = 0; i < NP; i++) if (FLG[i]) { UA[nua] = P[i]; UAH[nua] = HARD[i]; nua++; if (HARD[i]) UH[nuh++] = P[i]; }
             if (nuh > 0) { cls_done++; continue; }
             msk *kk; int nk = build_constraints(UA, nua, &kk);
             if (nk < 0) { cls_done++; continue; }
@@ -380,73 +382,62 @@ int main(int argc, char **argv) {
             if (any) { survivors++; surv_w += AW[a]; }
             cls_done++; continue;
         }
-        /* K == 2: Kandidaten B */
-        long nb = 0; uint32_t *Bl;
-        if (nuh == 0) {
-            Bl = malloc(sizeof(uint32_t) * bysize[q]);
-            for (long i = 0; i < NP; i++) if (PS[i] == q && P[i] != A) Bl[nb++] = P[i];
-        } else {
-            uint32_t h1 = UH[0];
-            /* Kugel um h1 */
-            long nbz = 0;
-            { int pos[64]; int d = 0; pos[0] = -1; uint32_t x = h1; ball[nbz++] = x;
-              /* iterative Aufzaehlung aller Teilmengen <= R Positionen */
-              int idx[64]; int depth = 0; idx[0] = 0;
-              while (1) {
-                  if (depth < R && idx[depth] < m) {
-                      int i = idx[depth];
-                      x ^= 1u << i; ball[nbz++] = x; pos[depth] = i;
-                      depth++; idx[depth] = i + 1; continue;
-                  }
-                  if (depth == 0) break;
-                  depth--; x ^= 1u << pos[depth]; idx[depth] = pos[depth] + 1;
-              }
-              (void)d;
-            }
-            if (nbz != VB) { fprintf(stderr, "Kugelfehler %ld %ld\n", nbz, VB); return 3; }
-            #pragma omp parallel for schedule(static)
-            for (long i = 0; i < nbz; i++) ball[i] = canon(ball[i]);
-            Bl = malloc(sizeof(uint32_t) * (nbz + 1));
-            for (long i = 0; i < nbz; i++) {
-                uint32_t y = ball[i];
-                if (seen[y >> 6] >> (y & 63) & 1) continue;
-                seen[y >> 6] |= 1ull << (y & 63);
-                if (y != A && osize(y) == q) Bl[nb++] = y;
-            }
-            for (long i = 0; i < nbz; i++) { uint32_t y = ball[i]; seen[y >> 6] &= ~(1ull << (y & 63)); }
-        }
-        long long sv = 0, lv = 0;
-        u128 h2[128]; memset(h2, 0, sizeof h2);
-        #pragma omp parallel
+        /* K == 2: harte Klassen, die A offen laesst */
+        #pragma omp parallel for schedule(static)
+        for (long i = 0; i < nHL; i++) FLG[i] = (unsigned char)!covers(rA, HL[i]);
+        for (long i = 0; i < nHL; i++) if (FLG[i]) UH[nuh++] = HL[i];
+        /* Stichprobe (erste plus zufaellige) mit allen Drehungen: B ueberdeckt p <=> ein g^k(p) nahe an B */
+        enum { NPR = 64 };
+        uint32_t prot[NPR * 64]; int npr = 0;
         {
-            u128 hl[128]; memset(hl, 0, sizeof hl); long long svl = 0, lvl = 0;
-            uint32_t *rest = NULL; long restcap = 0;
-            #pragma omp for schedule(dynamic, 64)
-            for (long j = 0; j < nb; j++) {
-                uint32_t Bw = Bl[j], rB[64]; rots(Bw, rB);
-                int ok = 1;
-                for (long i = 0; i < nuh; i++) if (!covers(rB, UH[i])) { ok = 0; break; }
-                if (!ok) continue;
-                svl++;
-                if (!rest) { restcap = nua + 1; rest = malloc(sizeof(uint32_t) * restcap); }
-                long nr = 0;
-                for (long i = 0; i < nua; i++) if (!covers(rB, UA[i])) rest[nr++] = UA[i];
-                msk *kk; int nk = build_constraints(rest, nr, &kk);
-                if (nk < 0) continue;
-                eng_t E = {0}; E.k = kk; E.nk = nk; E.hist = hl; E.A = A; E.haveA = 1; E.Bw = Bw; E.haveB = 1;
-                msk z = {{0}}; rec(&E, z, z, 0, BUD); free(kk); lvl += E.leaves;
+            uint64_t s = 0x9e3779b97f4a7c15ull ^ A;
+            for (int j = 0; j < NPR && j < nuh; j++) {
+                long idx = 0;
+                if (j > 0) { s ^= s << 13; s ^= s >> 7; s ^= s << 17; idx = (long)(s % (uint64_t)nuh); }
+                rots(UH[idx], prot + npr * q); npr++;
             }
-            free(rest);
-            #pragma omp critical
-            { for (int t = 0; t < 128; t++) h2[t] += hl[t]; sv += svl; lv += lvl; }
         }
-        free(Bl);
+        /* B ueber alle vollen Bahnen */
+        long long sv = 0, lv = 0, nb = 0;
+        long scap = 1024, ns = 0; uint32_t *SB = malloc(sizeof(uint32_t) * scap);
+        #pragma omp parallel for schedule(dynamic, 4096) reduction(+:nb)
+        for (long j = 0; j < nFL; j++) {
+            uint32_t Bw = FL[j];
+            if (Bw == A) continue;
+            nb++;
+            int ok = 1;
+            for (int t = 0; t < npr && ok; t++) {
+                const uint32_t *pr = prot + t * q; int hit = 0;
+                for (int k = 0; k < q; k++) if (near(Bw, pr[k])) { hit = 1; break; }
+                if (!hit) ok = 0;
+            }
+            if (!ok) continue;
+            uint32_t rB[64]; rots(Bw, rB);
+            for (long i = 0; i < nuh; i++) if (!covers(rB, UH[i])) { ok = 0; break; }
+            if (!ok) continue;
+            #pragma omp critical(sb)
+            { if (ns == scap) { scap *= 2; SB = realloc(SB, sizeof(uint32_t) * scap); } SB[ns++] = Bw; }
+        }
+        /* Ueberlebende: Rest aller Klassen, kurze Bahnen zaehlen (Reihenfolge fest) */
+        if (ns > 1) { for (long i = 1; i < ns; i++) { uint32_t t = SB[i]; long j = i - 1; while (j >= 0 && SB[j] > t) { SB[j + 1] = SB[j]; j--; } SB[j + 1] = t; } }
+        u128 h2[128]; memset(h2, 0, sizeof h2);
+        for (long j = 0; j < ns; j++) {
+            uint32_t Bw = SB[j], rB[64]; rots(Bw, rB); sv++;
+            #pragma omp parallel for schedule(static)
+            for (long i = 0; i < NP; i++) FLG[i] = (unsigned char)(!covers(rA, P[i]) && !covers(rB, P[i]));
+            long nr = 0; for (long i = 0; i < NP; i++) if (FLG[i]) UA[nr++] = P[i];
+            msk *kk; int nk = build_constraints(UA, nr, &kk);
+            if (nk < 0) continue;
+            eng_t E = {0}; E.k = kk; E.nk = nk; E.hist = h2; E.A = A; E.haveA = 1; E.Bw = Bw; E.haveB = 1;
+            msk z = {{0}}; rec(&E, z, z, 0, BUD); free(kk); lv += E.leaves;
+        }
+        free(SB);
         for (int t = 0; t <= BUD; t++) hist[t] += h2[t] * AW[a];
         survivors += sv; surv_w += (u128)sv * AW[a]; leaves += lv;
         cls_done++;
-        if (NA <= 200 || cls_done % 500 == 0) {
+        if (NA <= 200 || cls_done % 100 == 0) {
             printf("  Klasse %lld/%ld A=%x Gewicht ", cls_done, NA, A); print128(AW[a]);
-            printf(" Rest %ld hart %ld Kandidaten B %ld harte ueberdeckt %lld  (%.1f s)\n", nua, nuh, nb, sv, omp_get_wtime() - t0);
+            printf(" hart offen %ld Kandidaten B %lld harte ueberdeckt %lld  (%.1f s)\n", nuh, nb, sv, omp_get_wtime() - t0);
             fflush(stdout);
         }
     }

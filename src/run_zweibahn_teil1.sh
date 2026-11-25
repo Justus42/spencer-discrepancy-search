@@ -2,7 +2,7 @@
 # Auftrag Z, Teil 1: Gegenrechnung des Vortests mit eigenem Zaehlprogramm. Logs nach runs/zweibahn/teil1/.
 # Aufruf aus dem Repo-Wurzelordner: bash src/run_zweibahn_teil1.sh
 set -u
-Z=build/zweibahn_zaehl; L=runs/zweibahn/teil1; mkdir -p $L
+Z=build/zweibahn_zaehl; L=${L:-runs/zweibahn/teil1}; mkdir -p $L
 lauf() { name=$1; shift; echo "== $name: $*"; ( date -u; timeout 1500 $Z "$@"; echo "Rueckgabe $?" ) > $L/$name.log.txt 2>&1;
          grep -E "Bahnen \(Paare\)|Klassen voller|harte Klassen|kurz [0-9]+ Paare|SUMME|Brute|ZEITGRENZE|UNVOLL|Laufzeit|Rueckgabe" $L/$name.log.txt; }
 # a) (15,4) q=7 f=1, alle Zusammensetzungen <= 16 Paare: k=2 (B=2), k=1 (B=9), k=0 (B=16); <= 15: B um 1 kleiner

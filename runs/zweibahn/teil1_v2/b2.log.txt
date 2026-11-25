@@ -1,0 +1,35 @@
+Wed Nov 25 07:50:04 UTC 2026
+# zweibahn_zaehl q=7 f=3 m=17 R=5 k=2 B=2 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:16 7:9360  gesamt 9376  (0.0 s)
+Kontrolle: Summe Groessen = 65536, 2^(m-1) = 65536
+erlaubte kurze Bahnen (Groesse <= 2): 16
+harte Klassen: 2800 von 9376  (0.0 s)
+Normalisator-Klassen voller Bahnen: 19 (Erzeuger 15), Summe Klassengroessen 9360 = 9360 volle Bahnen
+(0.0 s)
+  Klasse 1/19 A=1 Gewicht 32 hart offen 2625 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 2/19 A=3 Gewicht 96 hart offen 1925 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 3/19 A=7 Gewicht 96 hart offen 1750 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 4/19 A=b Gewicht 64 hart offen 1575 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 5/19 A=81 Gewicht 112 hart offen 1840 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 6/19 A=83 Gewicht 672 hart offen 1217 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 7/19 A=87 Gewicht 672 hart offen 1236 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 8/19 A=8b Gewicht 448 hart offen 958 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 9/19 A=183 Gewicht 336 hart offen 1140 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 10/19 A=185 Gewicht 672 hart offen 938 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 11/19 A=187 Gewicht 672 hart offen 1037 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 12/19 A=18b Gewicht 1344 hart offen 752 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 13/19 A=193 Gewicht 672 hart offen 933 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 14/19 A=195 Gewicht 672 hart offen 763 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 15/19 A=387 Gewicht 336 hart offen 1096 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 16/19 A=38b Gewicht 1344 hart offen 720 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 17/19 A=393 Gewicht 672 hart offen 786 Kandidaten B 9359 harte ueberdeckt 0  (0.0 s)
+  Klasse 18/19 A=58b Gewicht 224 hart offen 632 Kandidaten B 9359 harte ueberdeckt 16  (0.0 s)
+  Klasse 19/19 A=58d Gewicht 224 hart offen 624 Kandidaten B 9359 harte ueberdeckt 8  (0.1 s)
+Blaetter (ungewichtet): 16
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 24, gewichtet 5376
+Ueberdeckungen nach Zahl kurzer Paare (k=2 volle Bahnen, ungeordnet):
+  kurz 2 Paare (Paare gesamt 16, Woerter 32): 1792
+SUMME Ueberdeckungen: 1792
+Brute-Force-Nachpruefung der Blaetter: 16 ok, 0 falsch
+Laufzeit 0.1 s
+Rueckgabe 0

@@ -1,0 +1,17 @@
+== c_q11_k2_B9: 11 4 8 2 9
+Bahnen (Paare) nach Groesse: 1:32 11:3050400  gesamt 3050432  (0.2 s)
+harte Klassen: 1507968 von 3050432  (0.3 s)
+Normalisator-Klassen voller Bahnen: 507 (Erzeuger 21), Summe Klassengroessen 3050400 = 3050400 volle Bahnen
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 0, gewichtet 0
+SUMME Ueberdeckungen: 0
+Laufzeit 64.5 s
+Rueckgabe 0
+== c_q13_k2_B5: 13 0 8 2 5
+Bahnen (Paare) nach Groesse: 1:2 13:2581110  gesamt 2581112  (0.2 s)
+harte Klassen: 2199054 von 2581112  (0.2 s)
+Normalisator-Klassen voller Bahnen: 4394 (Erzeuger 16), Summe Klassengroessen 2581110 = 2581110 volle Bahnen
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 0, gewichtet 0
+SUMME Ueberdeckungen: 0
+Laufzeit 593.7 s
+Rueckgabe 0
+== a_k2_B32: 13 4 10 2 32
