@@ -1,0 +1,48 @@
+Problem runs/spann/probleme/l111_r9_y385.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 600 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 20817 (8.4 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 0, Laufzeit 8.4 s
+BEREICH 0 0 von 20817 Aufgaben insgesamt: Knoten 0, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y385.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 20817 (8.2 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 1204813, Laufzeit 36.4 s
+BEREICH 0 50 von 20817 Aufgaben insgesamt: Knoten 1204813, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y385.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 20817 (8.0 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 2672750, Laufzeit 67.6 s
+BEREICH 50 250 von 20817 Aufgaben insgesamt: Knoten 2672750, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y385.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 20817 (8.7 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 10035987, Laufzeit 226.9 s
+BEREICH 250 1050 von 20817 Aufgaben insgesamt: Knoten 10035987, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y385.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 20817 (8.2 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 15373993, Laufzeit 345.1 s
+BEREICH 1050 3165 von 20817 Aufgaben insgesamt: Knoten 15373993, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y385.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 20817 (8.0 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 14302347, Laufzeit 346.2 s
+BEREICH 3165 6843 von 20817 Aufgaben insgesamt: Knoten 14302347, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y385.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 20817 (8.4 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 10387664, Laufzeit 359.2 s
+BEREICH 6843 13221 von 20817 Aufgaben insgesamt: Knoten 10387664, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y385.txt: d=8 |G|=256 Nebenklassen=64 min mu=24, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 2256; Groessen (absteigend): 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 9216 ...
+Aufgaben: 20817 (8.1 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 1884142, Laufzeit 81.0 s
+BEREICH 13221 20817 von 20817 Aufgaben insgesamt: Knoten 1884142, OHNE_LOESUNG

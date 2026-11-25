@@ -1,0 +1,63 @@
+Wed Nov 25 19:46:46 CET 2026
+  Lochzahl 550: 64 Paare
+  Lochzahl 562: 56 Paare
+Positivkontrolle (2 gestrichen, k=2, 24 Loecher je Paar): verteilbar 120 von 120
+  Lochzahl 554: 112 Paare
+  Lochzahl 578: 8 Paare
+Positivkontrolle (2 gestrichen, k=2, 24 Loecher je Paar): verteilbar 120 von 120
+runs/pruef_ideen/kern_r3/klasse1_r3_k2_zertifikate.txt: k = 2, Zeilen 560
+  Lochzahl 967: 448 Faelle
+  Lochzahl 987: 112 Faelle
+  Kerngroessen: 6:475 7:85
+  bestaetigt 560 von 560 (Lochfehler 0, Lochzahl abweichend 0, verteilbar 0); Knoten gesamt 10844, groesster Fall 42
+
+real	0m0.312s
+user	0m0.310s
+sys	0m0.000s
+runs/pruef_ideen/kern_r3/klasse2_r3_k2_zertifikate.txt: k = 2, Zeilen 560
+  Lochzahl 967: 448 Faelle
+  Lochzahl 987: 112 Faelle
+  Kerngroessen: 6:477 7:83
+  bestaetigt 560 von 560 (Lochfehler 0, Lochzahl abweichend 0, verteilbar 0); Knoten gesamt 10867, groesster Fall 41
+runs/pruef_ideen/kern_r3/klasse1_r3_k2_zertifikate.txt: k = 2, Zeilen 560
+  Lochzahl 967: 448 Faelle
+  Lochzahl 987: 112 Faelle
+  Kerngroessen: 6:475 7:85
+  Kontrolle (eine Klasse weggelassen): verteilbar 3445 von 3445
+runs/pruef_ideen/kern_r3/klasse2_r3_k2_zertifikate.txt: k = 2, Zeilen 560
+  Lochzahl 967: 448 Faelle
+  Lochzahl 987: 112 Faelle
+  Kerngroessen: 6:477 7:83
+  Kontrolle (eine Klasse weggelassen): verteilbar 3443 von 3443
+Wed Nov 25 19:46:56 CET 2026
+runs/pruef_ideen/kern_r3/klasse1_r4_k3_zertifikate_final.txt: k = 3, Zeilen 1820
+  Lochzahl 1476: 784 Faelle
+  Lochzahl 1484: 896 Faelle
+  Lochzahl 1508: 112 Faelle
+  Lochzahl 1512: 28 Faelle
+  Kerngroessen: 12:1 13:11 14:49 15:164 16:479 17:598 18:395 19:113 20:9 21:1
+  bestaetigt 1820 von 1820 (Lochfehler 0, Lochzahl abweichend 0, verteilbar 0); Knoten gesamt 108812614, groesster Fall 975664
+
+real	0m48.040s
+user	0m47.474s
+sys	0m0.000s
+runs/pruef_ideen/kern_r3/klasse2_r4_k3_zertifikate.txt: k = 3, Zeilen 1820
+  Lochzahl 1476: 1120 Faelle
+  Lochzahl 1492: 672 Faelle
+  Lochzahl 1512: 28 Faelle
+  Kerngroessen: 13:11 14:42 15:164 16:469 17:603 18:418 19:104 20:9
+  bestaetigt 1820 von 1820 (Lochfehler 0, Lochzahl abweichend 0, verteilbar 0); Knoten gesamt 111617457, groesster Fall 1114620
+
+real	0m49.619s
+user	0m48.979s
+sys	0m0.004s
+== Vollstaendigkeit der Streichmengen
+klasse1_r3_k2_zertifikate.txt Streichmengen 560 alle 560 gleich
+klasse2_r3_k2_zertifikate.txt Streichmengen 560 alle 560 gleich
+klasse1_r4_k3_zertifikate_final.txt Streichmengen 1820 alle 1820 gleich
+klasse2_r4_k3_zertifikate.txt Streichmengen 1820 alle 1820 gleich
+1
+Roh und final unterscheiden sich nur in Zeile 1223
+runs/pruef_ideen/kern_r3/klasse1_r4_k3_zertifikate_final.txt:1223 3 6 9 13 | 1476 | 15 | 12938 10625 12747 7920 3589 14400 10768 6296 2810 3761 8261 9798 8314 9910 14826
+runs/pruef_ideen/kern_r3/klasse1_r4_k3_zertifikate.txt:1223 3 6 9 13 | 1476 | 0 | VERTEILBAR
+Wed Nov 25 19:48:33 CET 2026

@@ -1,0 +1,4 @@
+Kugelgroesse: [np.int64(56)]
+Schnittgroesse je gefaltetem Abstand: {0: [56], 1: [20], 2: [20], 3: [6], 4: [6], 5: [0]}
+gleiche Paritaet: gefaltete Abstaende [2, 4] kleinster Schnitt 6
+Schranke e=1..10: [505, 498, 491, 484, 477, 470, 463, 456, 443, 430]  e=0: 512

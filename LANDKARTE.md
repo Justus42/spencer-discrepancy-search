@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 25.11.2026 nachmittags (nach Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 25.11.2026 abends (nach Auftrag P, Gegenrechnung der Ideensammlung; davor Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -33,7 +33,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Gruppenmatrizen nichtzyklisch n x n (Auftrag G, alle Klassen; 10 Gruppen der Ordnung 18, 20, 21, 25) |  |  |  |  |  |  |  |  |  | 0,943 e |  | 1,342 e |
 | Gruppenmatrizen nichtzyklisch + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Auftrag G, Ordnung 18 und 21) |  |  |  |  |  |  |  |  |  |  | 0,918 e |  |
 | Gruppenmatrizen nichtzyklisch ohne 2 Spalten, n x (n-2) (Auftrag G) |  |  |  |  |  |  |  |  |  | ≤1,414 g |  | 1,342 e |
-| Codes im affinen Spann bekannter Codes, (15,4) (Auftrag S): L(`ctrl_16`), L(2. Klasse), alle 254 Rang-9-Erweiterungen; Spalte 15 = 30 Wörter: Rang 8 und 3 von 9 Rang-9-Klassen (63 Erweiterungen) voll ausgeschlossen, Rest Suche erfolglos |  |  |  |  |  |  | (1,807) s | 1,750 e |  |  |  |  |
+| Codes im affinen Spann bekannter Codes, (15,4) (Auftrag S): L(`ctrl_16`), L(2. Klasse), alle 254 Rang-9-Erweiterungen; Spalte 15 = 30 Wörter: Rang 8 und alle 9 Rang-9-Klassen (254 Erweiterungen) voll ausgeschlossen (Auftrag R9), Rang 10 nicht gerechnet |  |  |  |  |  |  | (1,807) s | 1,750 e |  |  |  |  |
 | (15,4) mit 30 Wörtern nahe an einem 32er (Auftrag P): 13 Zeilen von `ctrl_16` oder `loesung111` gemeinsam, 2 Zeilen frei in [−1,1]^15 (alle 2 × 560 Tripel), 12 gemeinsam mit 3 freien (alle 2 × 1820); ganze Spalte neu gewählt (480 Fälle, immer 233 offen) | | | | | | | – (voll) | 1,750 e | | | | |
 | kozyklische Matrizen n x n (Auftrag P): Gruppe E der Ordnung 2n mit zentraler Involution, f ungerade, alle f; n = 18: Z36, Dic9, Z3×Dic3; n = 20: Z40, Z5×Q8, Z5×D4, Z5×Z4×Z2, Dic10, D20 | | | | | | | | | | 1,414 e | | 1,342 e |
 | Rundlauf Astra 2 Duaden (15x15, 59 049 Matrizen) | | | | | | | 0,775 e | | | | | |
@@ -148,10 +148,13 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Zusätzlich n = 10 (Dichte 1,09
   (15,4): Für alle 560 Zeilentripel beider 32er-Klassen gibt es kein Paar Ersatzzeilen in [−1,1]^15 (Zertifikate aus 6–7 Lochklassen, Prüfer bestätigt); ebenso 4 gestrichen / 3 ersetzt (1820 Fälle je Klasse);
   ganze Spalte neu wählen bringt in allen 480 Fällen höchstens 233 offene Klassen, der Bestwert bleibt 1,750. Kozyklisch: n = 18 und 20 vollständig (exakter Bestwert disc 6, Gegenbeispiele gespeichert, `runs/pruef_ideen/kozyklisch/`),
   n = 26, 28, 30 nur als Sieb (disc ≤ 8). Die besten Matrizen (n = 18 aus Z36, Dic9, Z3×Dic3; n = 20 aus Z40, Z5×Q8, Dic10) melden alle drei Prüfprogramme als disc 6 (`runs/pruef_ideen/kozyklisch/beste/`). Zerlegungszahlen: `runs/pruef_ideen/zerlegung/`.
+  Gate: `notes/gate_2026-11-25_pruef_ideen.md` (alle 4760 Zertifikate, alle 480 Spaltenfälle, alle Gegenbeispiele für n = 18 und 20 und der Zehn-Kugel-Fall mit eigenen Programmen nachgerechnet).
 - **Codes im affinen Spann (Auftrag S, 25.11.2026):** Protokoll `notes/laeufe/2026-11-25_spann.md`, Programme `src/spann_*.{py,c}`, Logs `runs/spann/`.
   Kleinste erreichte Paarzahl je Zelle und Universum: (15,4): 16 Paare (32 Wörter) in L(`ctrl_16`), L(loesung111) und allen 9 Klassen von
   Rang-9-Erweiterungen; 15 Paare voll ausgeschlossen in L(`ctrl_16`) (Zählschranke), L(loesung111) (Tiefensuche mit und ohne Symmetrie),
-  Rang 9 über `ctrl_16` y=3 (42) und y=1 (14), über loesung111 y=1 (7); 6 Klassen (191 Erweiterungen) unentschieden, lokale Suche Rest 233.
+  Rang 9: zuerst `ctrl_16` y=3 (42) und y=1 (14), loesung111 y=1 (7); die übrigen 6 Klassen (191 Erweiterungen: `ctrl_16` y=40 und y=7, loesung111 y=384, 128, 385, 129)
+  in Auftrag R9 (25.11.2026, `notes/laeufe/2026-11-25_rang9.md`) in Aufgabenbereichen exakt entschieden: keine Lösung, zusammen 316 958 848 Knoten, 8181 s;
+  Belegart voll, ein Programm, nur mit Symmetrie. Damit gibt es bei (15,4) keinen Code mit 30 Wörtern im affinen Spann einer der beiden bekannten 32er-Klassen bis Rang 9.
   (20,6): 24 Paare (48 Wörter) in L(1p3), L(2p2), L(neunter 48er); Kontrolle k=24 aus Zufallsstart 12 von 12; 23 Paare in 28 Läufen à 15 Min.
   nicht erreicht (beste Restzahl 886 Punktklassen). Rang 10 bei (15,4) und 78 weitere Universen bei (20,6) nicht gerechnet.
 - **Doppelung Ordnung 40:** Test C in STATUS, alle 30 780 Spaltenauswahlen mit Gegenbeispiel max ≤ 8, Rekord bräuchte 12.
