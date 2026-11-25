@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 25.11.2026 (nach Gegenrechnung (15,4) unter Symmetrie). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 25.11.2026 (nach Auftrag L, Leiter unter 48 bei (20,6): Kontrolle K=12 nicht bestanden). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 Vollständige frühere Fassung: `notes/verlauf/STATUS_2026-11-24_vollstaendig.md` (Archiv, eingefroren). Übersicht Familien x N:
 `LANDKARTE.md`. Arbeitsregeln: `CLAUDE.md`. Herkunft externer Dateien: `controls/QUELLEN.md`. Laufprotokolle: `notes/laeufe/`.
 Fundstellen in den Tabellen: „A: …“ = Überschrift im Archiv, „L: …“ = `notes/laeufe/…`, „K“ = `LANDKARTE.md`,
@@ -159,6 +159,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
   - Sieb mit 0,05 s je Matrix bleibt bei Sol 4 in 7 von 2 174 Fällen über dem exakten Wert (7 statt 5): zu kurze Zeit, nur Suchcode; die exakte Rechnung entscheidet.
 - 24.11.2026, Status-Umzug: Commit-Daten über github.com (`.patch`) Proxy 403, statt dessen Git-Abruf; erster Lauf `offene_zellen.py` am CSV-Kopf gescheitert (Spalte `q`), je Sekunden.
 - 24.11.2026, Lean-Zertifikat: Kernel-Prüfung zweimal Speichermangel (einfache Schleife am Stück 117 s; 8 x 512 Blocksätze über `lake build` ca. 10 Min.), Namenskonflikt beim Neubau 2 Min.; `lakecache.blob.core.windows.net` Proxy 403 (L: 2026-11-24_lean).
+- 25.11.2026, Leiter unter 48 bei (20,6), Auftrag L: Teil 1 (Alleinanteile, eigenes Skript) bestätigt; Teil 2 Kontrolle K=12, Typ (11,9), Zufallsstart, Startwerte 1–16, je 1800 s, 4 parallel: nur 1 von 16 gelöst (Startwert 5, neuer 48er, disc 8, Allein 12 x 6108; Soll mindestens 2), Restzahlen sonst 8–22. Abbruch nach Auftrag, kein K=11, keine Warmstarts. L: 2026-11-25_leiter48.
 
 ## Offene Punkte
 
@@ -180,6 +181,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - Vollständige Aufzählung K=4 bei n=20 (ca. 280 CPU-h) nicht gestartet (L: 2026-11-24_bahnen5).
 - Variante mit 3 vollen Bahnen plus 5 festen Paaren ungeprüft (A: Fehlversuche).
 - n = 11 gemischt: Profile (3,0) ab Typ 4, (2,0), (1,1), (1,0), (0,1) offen; Fortsetzung `bash src/run_profile.sh SEK` (L: 2026-11-25_einzelnull).
+- Leiter unter 48 bei (20,6): Kontrolle K=12 aus Zufallsstart 1 von 16 (nicht bestanden); K=11 nie versucht. Nur mit Warmstart aus den drei bekannten 48ern oder weit mehr Startwerten weiterzuverfolgen (L: 2026-11-25_leiter48).
 - Nächster Schritt: Ideensammlung (Literatur, Methodentransfer).
 
 ## Prüfrahmen
@@ -200,6 +202,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - `src/pruefe_mckay.py`: Gegenrechnung der 60 McKay-Matrizen. `src/streichtest.py`: Prüfcode, überflüssige Nebenklassen.
 - `src/hadamard_tests.py`: exakte Diskrepanz (Meet-in-the-middle, int8), Kontrollen, Test A/B, Überdeckungsradius, Nachprüfung der Gegenbeispiele für Test C. Kein Suchcode.
 - `src/pruefstand.c`: Gegenbeispielsuche (Teil B). `src/zirkulant.c`, `src/zirkulant_pruef.py`, `src/zirkulant_qualitaet.py`, `src/run_zirkulant.py`: Teil C.
+- `src/leiter_allein.py`: Prüfcode, Alleinanteil je Nebenklasse (Auftrag L). Logs `runs/leiter48/`.
 - `src/gegen15_sym.py`: Prüfcode, Gegenrechnung (15,4) unter Spaltensymmetrie Ordnung 7, 11, 13 (Teil 1–4, Gleichwertigkeit zu `ctrl_16`). Logs `runs/gegenrechnung15/`.
 - `src/pruefe_reell16.py`, `src/dichte_schranke.py`, `src/kleitman_probe.py`: Prüfcode zu Ansatz 4 (Polieren um ctrl_16, Dichteschranke, Kleitman-Probe).
 - `LANDKARTE.md`: Übersicht Familien x N.

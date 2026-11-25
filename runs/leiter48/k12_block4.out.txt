@@ -1,0 +1,4 @@
+seed=13 nicht geloest, kleinste Restzahl=8
+seed=14 nicht geloest, kleinste Restzahl=12
+seed=15 nicht geloest, kleinste Restzahl=18
+seed=16 nicht geloest, kleinste Restzahl=18
