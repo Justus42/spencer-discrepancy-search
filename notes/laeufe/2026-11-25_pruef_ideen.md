@@ -100,3 +100,27 @@ Rechenzeit: n = 18, 20 zusammen etwa 4 Minuten Suche plus 4,5 Minuten Prüfung.
 Rechenzeit insgesamt etwa 7 Minuten. Kontrolle des Siebs (Siebweg auf n = 20 erzwungen, Stufe 4 mit 20 000 Proben): Z5×Q8 4074 Überlebende (exakt 3240), Z40 63 109 (28 560), Dic10 108 401 (55 400),
 also Obermenge der exakten Überlebenden, wie es sein muss; Stufe 6: 0 Überlebende (`kontrolle_siebpfad.log.txt`). Für n = 26 bis 30 ist nur „disc <= 8" belegt (Quotient <= 1,569 / 1,512 / 1,461), kein exakter Bestwert.
 
+## Teil 4: Zahlen der Zerlegung (`verifiers/pruef_ideen/zerlegung_zahlen.py`, Log `runs/pruef_ideen/zerlegung/zerlegung_zahlen.log.txt`)
+
+Eigenes Programm (nur Ganzzahlen; Paley-12 selbst aus GF(11) gebaut, H·Hᵀ = 12·I geprüft). Rechenzeit insgesamt unter 10 Sekunden. Alle Zahlen stimmen:
+
+| Aussage | Eigene Rechnung | Ergebnis |
+|---|---|---|
+| Paley-12 voll: (6³,2⁹) | 880 Klassen, 220 verschiedene Dreiermengen | bestätigt |
+| (4⁹,0³) | 220 Klassen, 220 Dreiermengen | bestätigt |
+| übrige Profile | 948 Klassen (792 mit (8,4⁵,0⁶), 144 mit (10,2¹¹), 12 mit (12,0¹¹)), alle mit einem Betrag >= 8 | bestätigt |
+| Schnitt B(x,2) ∩ B(y,4) in Q13, Abstand 0..6 | 92, 92, 92, 47, 47, 15, 15 (Durchzählen aller 8192 Punkte) | bestätigt |
+| Bilanz m2 = 13 | vorhanden 24·1093 = 26 232, nötig 26 144, Spielraum 88 (m2 = 9: −872; m2 = 11: −1760) | bestätigt |
+| überzählig / erlaubt | 24·11·15 = 3960 gegen 88 + 8·29 = 320 (D <= 29) | bestätigt (Rechnung) |
+| Stichprobe zur Schranke Σ A(x)(B(x)−1) >= 3960 | 300 zufällige W (davon 100 mit eng liegenden Zeilen): kleinster Wert 4984 | kein Widerspruch |
+| „Bedingung an W" gleichwertig zur tatsächlichen Überdeckung mit U = Paley-12 voll, d = 9 (m2 = 13) | 12 zufällige W, je 4096 Klassen z (19 973 erfüllt, 29 179 nicht): Bedingung = Überdeckung in 12 von 12 | bestätigt (Stichprobe) |
+| Paley-12 ohne Spalte 0, Profile | (7,5²,3³,1⁶) 660, (5³,3⁶,1³) 220, (9,3⁵,1⁶) 132, (11,1¹¹) 12; 220 verschiedene 5er-Dreiermengen | bestätigt |
+| Ketten C ⊆ B ⊆ A mit a + 3b + 6c <= 9 | 17 031 Ketten aufgezählt, **0** erfüllen alle 220 Muster | bestätigt |
+| Kleinstes \|A\| bei \|B\| = 0, 1, 2, C leer | 10, 7, 6 | bestätigt |
+| Summen m2 = 10 / 12 / 14 | 4920 gegen 5120 (ausgeschlossen); 25 980 gegen 20 480; 128 472 gegen 81 920 | bestätigt |
+| Lemma: U des 48ers ohne eine Zeile, y = diese Zeile | alle übrigen \|u_i\| = 1: Paley-12 ohne Spalte (12 Spalten × 12 Zeilen) 0 Abweichungen; `controls/had24_1p3_paley12.txt`, linker 12 × 11-Block: 0 Abweichungen von 12 | bestätigt |
+
+Nachvollzogen (Herleitung, nicht nur Zahlen): Bilanz m2 = 13: Σ_x B(x) = 24·1093 muss >= 4·(2^13 − |U|) + Σ_U B ≥ 26 144 + 3D sein (U = Vereinigung der kleinen Kugeln, |U| = 2208 − D); der
+Überschuss Σ_U(B−1) ist höchstens 88 − 3D, die Mehrfachzählung kostet höchstens 11·D, zusammen höchstens 88 + 8D <= 320 (D <= 29), während jede der 24·11 Paarungen (kleine Kugel, fremde Zeile mit passendem
+Vorzeichen, Abstand <= 6) mindestens 15 Punkte beisteuert. Schritte stimmen; die Zahlen sind jetzt von einem zweiten Programm bestätigt.
+
