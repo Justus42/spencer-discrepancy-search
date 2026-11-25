@@ -133,3 +133,41 @@ Block 1 (Teil 1 a/b), Kontrollen zyklische Tafeln
 2026-11-25 10:41:12 UTC   klassen mit u >= d-2 bearbeitet: 4, spaltenpaare 1200
 2026-11-25 10:41:12 UTC   verteilung u: 5:903 7:297
 2026-11-25 10:41:12 UTC ERGEBNIS z5xz5_ohne2 d=9: Überlebende 0, u_max 7 (297 Vertreter), exakt geprüft 1, größte exakte Diskrepanz darunter 7 (Vertreter ['8f4f', '0', '1']) = u_max, also beste Diskrepanz aller Klassen genau 7; Laufzeit 3 s
+=== Block 4: Teil 4 Gegenrechnung Kandidat 2 ===
+=== Block 4b: Wrapper pruefe_matrix.py auf den besten Matrizen ===
+--- d9_n18_9
+Matrix runs/gruppen/beste/d9_n18_9.txt: 18 x 18, aufgefuellt 18 x 18
+  check_disc      Diskrepanz 4  (0.3 s)
+  verify_spencer  Diskrepanz 4  (0.3 s)
+  exakt_disc      Diskrepanz 4  (0.3 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 4
+--- f20_n20_843e
+Matrix runs/gruppen/beste/f20_n20_843e.txt: 20 x 20, aufgefuellt 20 x 20
+  check_disc      Diskrepanz 6  (0.6 s)
+  verify_spencer  Diskrepanz 6  (0.6 s)
+  exakt_disc      Diskrepanz 6  (0.6 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 6
+--- f21_n21_b
+Matrix runs/gruppen/beste/f21_n21_b.txt: 21 x 21, aufgefuellt 21 x 21
+  check_disc      Diskrepanz 5  (1.1 s)
+  verify_spencer  Diskrepanz 5  (1.1 s)
+  exakt_disc      Diskrepanz 5  (1.1 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 5
+--- f21_n21_rand_45d8
+Matrix runs/gruppen/beste/f21_n21_rand_45d8.txt: 22 x 22, aufgefuellt 22 x 22
+  check_disc      Diskrepanz 7  (2.4 s)
+  verify_spencer  Diskrepanz 7  (2.4 s)
+  exakt_disc      Diskrepanz 7  (2.4 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 7
+--- z5xz5_n25_8d2f
+Matrix runs/gruppen/beste/z5xz5_n25_8d2f.txt: 25 x 25, aufgefuellt 25 x 25
+  check_disc      Diskrepanz 7  (19.2 s)
+  verify_spencer  Diskrepanz 7  (19.2 s)
+  exakt_disc      Diskrepanz 7  (19.2 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 7
+--- z5xz5_n25_ohne01_8f4f
+Matrix runs/gruppen/beste/z5xz5_n25_ohne01_8f4f.txt: 25 x 23, aufgefuellt 25 x 25
+  check_disc      Diskrepanz 7  (5.0 s)
+  verify_spencer  Diskrepanz 7  (5.0 s)
+  exakt_disc      Diskrepanz 7  (5.0 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 7
