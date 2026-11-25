@@ -1,0 +1,19 @@
+Kontrolle 1: gestrichen (0, 1): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 2): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 3): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 4): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 5): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 6): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 7): 578 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 8): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 9): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 10): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 11): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 12): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 13): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 14): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: gestrichen (0, 15): 554 Loecher, ohne Originalzeile 0, verletzte Paarbedingungen 0
+Kontrolle 1: 120 Streichpaare, Originalzeilen als Ersatz: alle Loecher abgedeckt, keine Paarbedingung verletzt: True
+Kontrolle 2: gestrichen (0,1), eine Ersatzzeile: Zertifikat (651, 669, 3125)
+Kontrolle 3: Dreieck auf 1 Zeile 0 (soll 0), auf 2 Zeilen 6 (soll > 0), D=14 auf 1 Zeile 1 (soll 1, gezaehlt bis auf Symmetrie)
+KONTROLLEN: bestanden
