@@ -1,0 +1,17 @@
+Problem runs/spann/probleme/h9.txt: |G|=2048, Nebenklassen 256, Punkte 524288, k=23, seed 2, Zeit 900 s; Startkosten 29958
+  60 s: Schritte 25152, Kosten 1691, beste 1043
+  120 s: Schritte 49920, Kosten 2848, beste 974
+  180 s: Schritte 73920, Kosten 3536, beste 974
+  240 s: Schritte 98304, Kosten 4158, beste 974
+  300 s: Schritte 122112, Kosten 4456, beste 974
+  360 s: Schritte 146240, Kosten 3657, beste 974
+  420 s: Schritte 171136, Kosten 3459, beste 974
+  481 s: Schritte 195136, Kosten 3277, beste 974
+  541 s: Schritte 219520, Kosten 3282, beste 974
+  601 s: Schritte 243136, Kosten 3042, beste 974
+  661 s: Schritte 265600, Kosten 3278, beste 946
+  721 s: Schritte 289600, Kosten 3378, beste 946
+  781 s: Schritte 313664, Kosten 2496, beste 946
+  841 s: Schritte 336896, Kosten 3089, beste 946
+ENDE: Kosten 4054, beste 946, Schritte 360128, 900.1 s
+BESTE 946 offen: 1973 744 1018 861 1747 324 1556 777 1433 627 158 338 1135 1834 935 1229 640 33 1508 191 1550 1080 1411

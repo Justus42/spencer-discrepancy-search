@@ -1,0 +1,4 @@
+Problem runs/spann/probleme/l111_r9_y129.txt: |G|=256, Nebenklassen 64, Punkte 16384, k=16, seed 1, Zeit 60 s; Startkosten 2126
+ENDE: Kosten 0, beste 0, Schritte 22, 0.0 s
+LOESUNG 16 Paare: 147 56 101 192 189 122 244 14 162 39 140 17 223 235 86 73
+WOERTER: 25239 3782 22117 52 22737 10725 5106 14848 10065 28998 7447 17792 32692 27762 13475 19235

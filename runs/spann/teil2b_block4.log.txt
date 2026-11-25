@@ -1,0 +1,1 @@
+ctrl16_r9_y1: ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig) | Knoten 18632178, Laufzeit 380.9 s

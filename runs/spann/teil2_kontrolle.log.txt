@@ -1,0 +1,21 @@
+Wed Nov 25 10:44:40 UTC 2026
+Problem runs/spann/probleme/ctrl16_r8.txt: d=7 |G|=128 Nebenklassen=128 min mu=8, k=16, Zeitlimit 600 s, Aufteilungstiefe 2, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 333375, Bahnen unter Gamma: 57; Groessen (absteigend): 53760 26880 26880 26880 26880 20160 17920 13440 13440 8960 8960 6720 6720 6720 6720 6720 5376 5040 5040 4480 2688 2520 2520 2520 1680 1680 1680 1680 1344 1260 1260 1260 1260 1260 1260 1120 840 840 840 840 ...
+Aufgaben: 2 (0.4 s)
+LOESUNG (Fall 4) 16 Paare: 0 4 11 53 62 86 99 104 93 27 71 88 50 113 45 110
+WOERTER: 45 4186 26630 22019 15912 13637 25451 2880 23918 27737 28976 3379 9846 18204 23157 15135
+ERGEBNIS k=16: LOESBAR (Loesungen gezaehlt: 1, Abbruch nach erster)
+Knoten 18, Laufzeit 0.4 s
+Problem runs/spann/probleme/ctrl16_r8.txt: d=7 |G|=128 Nebenklassen=128 min mu=8, k=15, Zeitlimit 600 s, Aufteilungstiefe 2, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 333375, Bahnen unter Gamma: 57; Groessen (absteigend): 53760 26880 26880 26880 26880 20160 17920 13440 13440 8960 8960 6720 6720 6720 6720 6720 5376 5040 5040 4480 2688 2520 2520 2520 1680 1680 1680 1680 1344 1260 1260 1260 1260 1260 1260 1120 840 840 840 840 ...
+Aufgaben: 0 (0.4 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 0, Laufzeit 0.4 s
+Problem runs/spann/probleme/l111_r8.txt: d=7 |G|=128 Nebenklassen=128 min mu=12, k=16, Zeitlimit 600 s, Aufteilungstiefe 2, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 333375, Bahnen unter Gamma: 71; Groessen (absteigend): 56448 37632 28224 28224 28224 28224 9408 7056 7056 7056 7056 7056 7056 7056 6272 4704 4704 4704 4704 2352 2352 2352 2352 2352 2352 2352 2352 2352 1568 1176 1176 1176 1176 1176 1176 1176 1176 1176 1176 784 ...
+Aufgaben: 82 (0.3 s)
+LOESUNG (Fall 1) 16 Paare: 0 17 34 68 15 30 45 75 87 88 99 108 53 121 58 118
+WOERTER: 0 17862 10019 5015 32640 14918 22691 27671 29009 3793 25268 7476 22117 19314 10725 13554
+ERGEBNIS k=16: LOESBAR (Loesungen gezaehlt: 1, Abbruch nach erster)
+Knoten 2499770, Laufzeit 39.3 s
+Wed Nov 25 10:45:20 UTC 2026

@@ -1,0 +1,40 @@
+Gate zu Auftrag S, Orchestrator, 25.11.2026 ca. 15:02 bis 15:16 Uhr, 2 Cloud-Kerne.
+Rechenzeit: hs2 für 15 Paare 233 s + 162 s (zwei Prozesse parallel, etwa 4 Minuten Wanduhr), alles Übrige zusammen unter 2 Minuten.
+Aufrufe aus dem Repo-Wurzelordner; hs2 gebaut mit: gcc -O2 -march=native -DW=2 -o hs2 hs2.c
+
+--- muster.py (eigener Export) ---
+controls/ctrl_16.txt 4:                          mu: {8: 1, 14: 56, 16: 70, 29: 1}
+runs/gegenrechnung15/loesung111_16x15.txt 4:     mu: {12: 14, 15: 64, 16: 49, 29: 1}
+
+--- hs2 (eigene exakte Suche, nur Verschiebung 0 in S, keine weitere Symmetrie) ---
+c16.txt  k=16: LOESBAR, 16 Knoten, 0 s          LOESUNG: 0 2 15 23 41 76 114 81 107 53 103 89 58 100 60 94
+c16.txt  k=15: KEINE LOESUNG (vollstaendig), 1 Knoten, 0 s
+l111.txt k=16: LOESBAR, 16 Knoten, 0 s          LOESUNG: 0 9 18 35 28 53 70 47 77 62 87 91 100 106 113 120
+l111.txt k=15 Teil 0/2: KEINE LOESUNG (vollstaendig), 17165977 Knoten, 233 s
+l111.txt k=15 Teil 1/2: KEINE LOESUNG (vollstaendig), 12681928 Knoten, 162 s
+(Eine erste Fassung ohne globale Schranke fand bei l111, k=16 in 300 s keine Lösung und wurde abgebrochen; nicht ausgewertet.)
+
+--- pruef_problem.py (Problemdateien und Erzeuger der Sitzung, runs/spann/probleme/) ---
+l111_r8.txt: q=7 Nebenklassen=128; affin True; Ausgangscode enthalten True; y enthalten True; Familie direkt 16384 / aus Mustern 16384: TREU; 12 Erzeuger: alle gültig
+ctrl16_r8.txt: q=7 Nebenklassen=128; affin True; Ausgangscode enthalten True; y enthalten True; Familie direkt 6528 / aus Mustern 6528: TREU; 12 Erzeuger: alle gültig
+ctrl16_r9_y1.txt: q=8 Nebenklassen=64; affin True; Ausgangscode enthalten True; y enthalten True; Familie direkt 14848 / aus Mustern 14848: TREU; 12 Erzeuger: alle gültig
+ctrl16_r9_y3.txt: q=8 Nebenklassen=64; affin True; Ausgangscode enthalten True; y enthalten True; Familie direkt 14848 / aus Mustern 14848: TREU; 12 Erzeuger: alle gültig
+ctrl16_r9_y7.txt: q=8 Nebenklassen=64; affin True; Ausgangscode enthalten True; y enthalten True; Familie direkt 16384 / aus Mustern 16384: TREU; 12 Erzeuger: alle gültig
+ctrl16_r9_y40.txt: q=8 Nebenklassen=64; affin True; Ausgangscode enthalten True; y enthalten True; Familie direkt 6528 / aus Mustern 6528: TREU; 12 Erzeuger: alle gültig
+l111_r9_y1.txt: q=8 Nebenklassen=64; affin True; Ausgangscode enthalten True; y enthalten True; Familie direkt 16384 / aus Mustern 16384: TREU; 12 Erzeuger: alle gültig
+l111_r9_y128.txt: q=8 Nebenklassen=64; affin True; Ausgangscode enthalten True; y enthalten True; Familie direkt 16384 / aus Mustern 16384: TREU; 12 Erzeuger: alle gültig
+l111_r9_y129.txt: q=8 Nebenklassen=64; affin True; Ausgangscode enthalten True; y enthalten True; Familie direkt 16384 / aus Mustern 16384: TREU; 12 Erzeuger: alle gültig
+l111_r9_y384.txt: q=8 Nebenklassen=64; affin True; Ausgangscode enthalten True; y enthalten True; Familie direkt 16384 / aus Mustern 16384: TREU; 12 Erzeuger: alle gültig
+l111_r9_y385.txt: q=8 Nebenklassen=64; affin True; Ausgangscode enthalten True; y enthalten True; Familie direkt 16384 / aus Mustern 16384: TREU; 12 Erzeuger: alle gültig
+
+--- aut_bahnen.py (bliss über igraph; im Orchestrator-Container ließ sich igraph installieren) ---
+controls/ctrl_16.txt: Rang 8, |Aut(V)| = 322560, 7 Erzeuger; Erweiterungsrichtungen 127, Bahnen (Größe: kleinster Vertreter): 1: y=40, 14: y=1, 42: y=3, 70: y=7
+   Vertreter der Sitzung y=40: Bahn der Größe 1;  y=1: 14;  y=3: 42;  y=7: 70
+runs/gegenrechnung15/loesung111_16x15.txt: Rang 8, |Aut(V)| = 225792, 10 Erzeuger; Erweiterungsrichtungen 127, Bahnen (Größe: kleinster Vertreter): 7: y=1, 7: y=384, 8: y=128, 49: y=385, 56: y=129
+   Vertreter der Sitzung y=1: 7;  y=384: 7;  y=128: 8;  y=385: 49;  y=129: 56
+
+--- teil3_pruef.py ---
+1p3: Rang 12; 2p2: Rang 12; neunter: Rang 12
+gleich als Mengen: 1p3/2p2 False 1p3/neunter False 2p2/neunter False
+Kontrolllösung: Wörter 24 alle im Spann von 1p3: True ; gleich dem 1p3-Code als Menge: False
+Überdeckungsradius der Kontrolllösung (48 Wörter, alle 2^20 Punkte): 6

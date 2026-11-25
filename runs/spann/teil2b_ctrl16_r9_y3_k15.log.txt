@@ -1,0 +1,7 @@
+Wed Nov 25 11:01:39 UTC 2026
+Problem runs/spann/probleme/ctrl16_r9_y3.txt: d=8 |G|=256 Nebenklassen=64 min mu=22, k=15, Zeitlimit 180 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 1921; Groessen (absteigend): 15360 15360 15360 15360 15360 15360 15360 15360 15360 15360 15360 15360 15360 15360 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 7680 ...
+Aufgaben: 10055 (6.6 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 4236752, Laufzeit 97.5 s
+Wed Nov 25 11:03:17 UTC 2026

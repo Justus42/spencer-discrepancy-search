@@ -1,0 +1,4 @@
+Problem runs/spann/probleme/ctrl16_r9_y7.txt: |G|=256, Nebenklassen 64, Punkte 16384, k=16, seed 1, Zeit 60 s; Startkosten 2001
+ENDE: Kosten 0, beste 0, Schritte 50, 0.0 s
+LOESUNG 16 Paare: 42 121 197 17 116 194 76 99 15 219 173 160 22 183 152 254
+WOERTER: 10752 20274 20896 17496 5953 8658 6427 25451 30833 28041 23242 697 13354 30355 3299 16376

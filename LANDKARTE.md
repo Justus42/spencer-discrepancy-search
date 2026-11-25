@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 25.11.2026 (nach Auftrag Z, Zwei-Bahnen-Codes, und Auftrag L, Leiter unter 48 bei (20,6)). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 25.11.2026 nachmittags (nach Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -32,6 +32,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Gruppenmatrizen nichtzyklisch n x n (Auftrag G, alle Klassen; 10 Gruppen der Ordnung 18, 20, 21, 25) |  |  |  |  |  |  |  |  |  | 0,943 e |  | 1,342 e |
 | Gruppenmatrizen nichtzyklisch + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Auftrag G, Ordnung 18 und 21) |  |  |  |  |  |  |  |  |  |  | 0,918 e |  |
 | Gruppenmatrizen nichtzyklisch ohne 2 Spalten, n x (n-2) (Auftrag G) |  |  |  |  |  |  |  |  |  | ≤1,414 g |  | 1,342 e |
+| Codes im affinen Spann bekannter Codes, (15,4) (Auftrag S): L(`ctrl_16`), L(2. Klasse), alle 254 Rang-9-Erweiterungen; Spalte 15 = 30 Wörter: Rang 8 und 3 von 9 Rang-9-Klassen (63 Erweiterungen) voll ausgeschlossen, Rest Suche erfolglos |  |  |  |  |  |  | (1,807) s | 1,750 e |  |  |  |  |
 | Rundlauf Astra 2 Duaden (15x15, 59 049 Matrizen) | | | | | | | 0,775 e | | | | | |
 | Rundlauf Sol 1 Fano-Ebenentausch (15x15, 153 664) | | | | | | | 1,291 e | | | | | |
 | Rundlauf Astra 4 Walsh-Charts (20x20, 1 024) | | | | | | | | | | | | 0,894 e |
@@ -58,6 +59,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Gruppenmatrizen nichtzyklisch n x n (Auftrag G, alle Klassen; 10 Gruppen der Ordnung 18, 20, 21, 25) | 1,091 e |  |  |  | 1,400 e |  |  |  |  |  |  |  |  |
 | Gruppenmatrizen nichtzyklisch + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Auftrag G, Ordnung 18 und 21) |  | 1,492 e |  |  |  |  |  |  |  |  |  |  |  |
 | Gruppenmatrizen nichtzyklisch ohne 2 Spalten, n x (n-2) (Auftrag G) | ≤1,527 g |  |  |  | 1,400 e |  |  |  |  |  |  |  |  |
+| Codes im affinen Spann der 48er, (20,6) (Auftrag S): L(1p3), L(2p2), L(neunter 48er), lokale Suche; 23 Paare (46 Wörter, N = 23) nicht erreicht |  |  | (1,668) s | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Rundlauf Astra 1 Paley-Scharnier (25x23, 4 356) | | | | | 1,400 e | | | | | | | | |
 | Rundlauf Astra 3 Fano-Blöcke (25x21, 1 176) | | | | | 1,000 e | | | | | | | | |
 | Rundlauf Astra 5 Golay-Bahnen (25x23, 2 346) | | | | | 1,400 e | | | | | | | | |
@@ -138,6 +140,12 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Lokal um `ctrl_16` / `ctrl_8` (
   Z7:Z3: 5, mit Rand (N = 22) 7; Z5xZ5: 7. Zwei Spalten gestrichen (nur Klassen mit u >= d-2): Ordnung 20 exakt 6, Z5xZ5 exakt 7; bei Ordnung 18 und 21 ist die Menge leer,
   die Schranke u_max + 2 gibt höchstens 6 bzw. 7 (Zeichen `≤ … g`, nicht exakt bestimmt). Kein Wert liegt über dem zyklischen Wert gleicher Ordnung. Nicht gerechnet:
   Ordnung 24 (14 nichtzyklische Gruppen, Schwelle 10) und vier gestrichene Spalten bei Ordnung 25.
+- **Codes im affinen Spann (Auftrag S, 25.11.2026):** Protokoll `notes/laeufe/2026-11-25_spann.md`, Programme `src/spann_*.{py,c}`, Logs `runs/spann/`.
+  Kleinste erreichte Paarzahl je Zelle und Universum: (15,4): 16 Paare (32 Wörter) in L(`ctrl_16`), L(loesung111) und allen 9 Klassen von
+  Rang-9-Erweiterungen; 15 Paare voll ausgeschlossen in L(`ctrl_16`) (Zählschranke), L(loesung111) (Tiefensuche mit und ohne Symmetrie),
+  Rang 9 über `ctrl_16` y=3 (42) und y=1 (14), über loesung111 y=1 (7); 6 Klassen (191 Erweiterungen) unentschieden, lokale Suche Rest 233.
+  (20,6): 24 Paare (48 Wörter) in L(1p3), L(2p2), L(neunter 48er); Kontrolle k=24 aus Zufallsstart 12 von 12; 23 Paare in 28 Läufen à 15 Min.
+  nicht erreicht (beste Restzahl 886 Punktklassen). Rang 10 bei (15,4) und 78 weitere Universen bei (20,6) nicht gerechnet.
 - **Doppelung Ordnung 40:** Test C in STATUS, alle 30 780 Spaltenauswahlen mit Gegenbeispiel max ≤ 8, Rekord bräuchte 12.
   Nur gleiche Zeilenausrichtung in beiden Hälften geprüft.
 - **Paley-12-Doppelung:** `controls/had24_1p3_paley12.txt`, `had24_2p2_paley12.txt`, beide Prüfskripte disc 8.

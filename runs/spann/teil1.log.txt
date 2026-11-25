@@ -1,0 +1,58 @@
+Wed Nov 25 10:32:14 UTC 2026
+controls/ctrl_8.txt: m=7 R=1 Woerter=16 Rang=4 Paare=8 Kern=16 Nebenklassen=8
+  mu: 1: 8
+  Zaehlschranke k >= 8/1 = 8.000
+real	0m0.020s
+controls/ctrl_16.txt: m=15 R=4 Woerter=32 Rang=8 Paare=128 Kern=2 Nebenklassen=128
+  mu: 8: 1, 14: 56, 16: 70, 29: 1
+  Zaehlschranke k >= 128/8 = 16.000
+real	0m0.031s
+controls/ctrl_17.txt: m=17 R=5 Woerter=32 Rang=8 Paare=128 Kern=4 Nebenklassen=512
+  mu: 8: 1, 12: 42, 15: 192, 16: 147, 22: 8, 25: 7, 28: 49, 29: 59, 32: 7
+  Zaehlschranke k >= 128/8 = 16.000
+real	0m0.055s
+controls/L2026_17x17.txt: m=17 R=5 Woerter=32 Rang=8 Paare=128 Kern=4 Nebenklassen=512
+  mu: 8: 1, 12: 42, 15: 192, 16: 147, 22: 8, 25: 7, 28: 49, 29: 59, 32: 7
+  Zaehlschranke k >= 128/8 = 16.000
+real	0m0.065s
+controls/astra_19.txt: m=19 R=6 Woerter=32 Rang=8 Paare=128 Kern=2 Nebenklassen=2048
+  mu: 8: 15, 14: 560, 16: 700, 22: 1, 23: 70, 28: 350, 29: 15, 30: 210, 43: 1, 48: 42, 52: 70, 55: 14
+  Zaehlschranke k >= 128/8 = 16.000
+real	0m0.117s
+controls/bahn15_40w.txt: m=15 R=4 Woerter=40 Rang=11 Paare=1024 Kern=2 Nebenklassen=16
+  mu: 120: 15, 141: 1
+  Zaehlschranke k >= 1024/120 = 8.533
+real	0m0.032s
+controls/had24_1p3_paley12.txt: m=20 R=6 Woerter=48 Rang=12 Paare=2048 Kern=4 Nebenklassen=256
+  mu: 212: 36, 240: 219, 268: 1
+  Zaehlschranke k >= 2048/212 = 9.660
+real	0m0.226s
+controls/had24_2p2_paley12.txt: m=20 R=6 Woerter=48 Rang=12 Paare=2048 Kern=4 Nebenklassen=256
+  mu: 212: 36, 240: 219, 268: 1
+  Zaehlschranke k >= 2048/212 = 9.660
+real	0m0.213s
+runs/bahnen3/teil4/kontrolle_T24_seed4_matrix.txt: m=20 R=6 Woerter=48 Rang=12 Paare=2048 Kern=2 Nebenklassen=256
+  mu: 212: 36, 240: 219, 268: 1
+  Zaehlschranke k >= 2048/212 = 9.660
+real	0m0.227s
+runs/gegenrechnung15/loesung0_16x15.txt: m=15 R=4 Woerter=32 Rang=8 Paare=128 Kern=2 Nebenklassen=128
+  mu: 8: 1, 14: 56, 16: 70, 29: 1
+  Zaehlschranke k >= 128/8 = 16.000
+real	0m0.025s
+runs/gegenrechnung15/loesung111_16x15.txt: m=15 R=4 Woerter=32 Rang=8 Paare=128 Kern=4 Nebenklassen=128
+  mu: 12: 14, 15: 64, 16: 49, 29: 1
+  Zaehlschranke k >= 128/12 = 10.667
+real	0m0.024s
+controls/ctrl_16.txt: 127 Erweiterungen auf Rang 9
+  nach kleinstem mu: 22: 56, 24: 70, 28: 1
+  verschiedene mu-Verteilungen:
+    56 x 22: 1, 28: 12, 30: 30, 32: 20, 43: 1
+    70 x 24: 1, 28: 12, 30: 32, 32: 18, 45: 1
+    1 x 28: 28, 32: 35, 37: 1
+runs/gegenrechnung15/loesung111_16x15.txt: 127 Erweiterungen auf Rang 9
+  nach kleinstem mu: 24: 63, 27: 64
+  verschiedene mu-Verteilungen:
+    49 x 24: 1, 28: 12, 30: 32, 32: 18, 45: 1
+    14 x 24: 3, 28: 7, 30: 32, 32: 21, 41: 1
+    64 x 27: 14, 31: 49, 44: 1
+Wed Nov 25 10:32:16 UTC 2026

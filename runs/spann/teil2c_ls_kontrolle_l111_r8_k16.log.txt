@@ -1,0 +1,4 @@
+Problem runs/spann/probleme/l111_r8.txt: |G|=128, Nebenklassen 128, Punkte 16384, k=16, seed 1, Zeit 60 s; Startkosten 2095
+ENDE: Kosten 0, beste 0, Schritte 12, 0.0 s
+LOESUNG 16 Paare: 19 110 97 37 61 127 28 112 42 68 86 50 7 8 89 75
+WOERTER: 25286 14900 17844 22051 22757 32754 7494 114 10659 5015 13521 10085 28928 3712 19281 27671

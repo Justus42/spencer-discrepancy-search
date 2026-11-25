@@ -1,0 +1,9 @@
+ctrl16_r9_y40: ERGEBNIS k=15: UNENTSCHIEDEN (Zeitlimit, 215 von 9276 Aufgaben fertig) | Knoten 6094841, Laufzeit 180.1 s
+ctrl16_r9_y1: ERGEBNIS k=15: UNENTSCHIEDEN (Zeitlimit, 1624 von 8449 Aufgaben fertig) | Knoten 9197769, Laufzeit 180.0 s
+ctrl16_r9_y3: ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig) | Knoten 4236752, Laufzeit 97.5 s
+ctrl16_r9_y7: ERGEBNIS k=15: UNENTSCHIEDEN (Zeitlimit, 585 von 19420 Aufgaben fertig) | Knoten 8186883, Laufzeit 180.0 s
+l111_r9_y1: ERGEBNIS k=15: UNENTSCHIEDEN (Zeitlimit, 735 von 6138 Aufgaben fertig) | Knoten 7760180, Laufzeit 180.0 s
+l111_r9_y384: ERGEBNIS k=15: UNENTSCHIEDEN (Zeitlimit, 732 von 7374 Aufgaben fertig) | Knoten 8799361, Laufzeit 180.2 s
+l111_r9_y128: ERGEBNIS k=15: UNENTSCHIEDEN (Zeitlimit, 670 von 8886 Aufgaben fertig) | Knoten 7524868, Laufzeit 180.0 s
+l111_r9_y385: ERGEBNIS k=15: UNENTSCHIEDEN (Zeitlimit, 546 von 20817 Aufgaben fertig) | Knoten 7958229, Laufzeit 180.0 s
+l111_r9_y129: ERGEBNIS k=15: UNENTSCHIEDEN (Zeitlimit, 567 von 15735 Aufgaben fertig) | Knoten 6653310, Laufzeit 180.1 s

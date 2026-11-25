@@ -1,0 +1,8 @@
+l111_r9_y1: ENDE: Kosten 562, beste 233, Schritte 6611392, 600.0 s
+ctrl16_r9_y1: ENDE: Kosten 383, beste 233, Schritte 5705088, 600.0 s
+ctrl16_r9_y40: ENDE: Kosten 233, beste 233, Schritte 7036928, 600.0 s
+ctrl16_r9_y7: ENDE: Kosten 443, beste 233, Schritte 5778944, 600.0 s
+l111_r9_y128: ENDE: Kosten 281, beste 233, Schritte 5860672, 600.0 s
+l111_r9_y384: ENDE: Kosten 316, beste 233, Schritte 6539072, 600.0 s
+l111_r9_y385: ENDE: Kosten 344, beste 233, Schritte 5903424, 600.0 s
+l111_r9_y129: ENDE: Kosten 721, beste 233, Schritte 5738432, 600.0 s

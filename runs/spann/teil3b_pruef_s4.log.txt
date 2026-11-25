@@ -1,0 +1,1 @@
+/tmp/claude-0/-home-user-spencer-discrepancy-search/7a0a2dd8-1e2a-5a8c-9cf5-621385e50dc8/scratchpad/k24_s4.txt: 24 Zeilen, m=20, verschiedene Woerter mit Komplementen 48, Ueberdeckungsradius 6, Punkte im Abstand max: 228040
