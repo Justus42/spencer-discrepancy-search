@@ -9,7 +9,7 @@ cd "$(dirname "$0")/.."
 SUP="$1"; BLOCK="$2"; Q="${3:-}"; S="${4:-}"
 TAG=$(echo "$SUP" | tr ',' '_')
 EXTRA=""
-if [ -n "$Q" ]; then TAG="${TAG}_q${Q}s${S}"; EXTRA="-q $Q -S $S"; fi
+if [ -n "$Q" ]; then TAG="${TAG}_q${Q}s${S}"; EXTRA="-q $Q -S $S -G 4000"; fi
 D=runs/einzelnull
 LOG=$D/block_$TAG.log.txt
 FERTIG=$D/fertig_$TAG.txt
