@@ -1,0 +1,31 @@
+U = H ohne 0 Spalten (12 x 12); 2048 Klassen y; kleinster moeglicher Wert von |v|: 1
+   Profil (6, 6, 6, 2, 2, 2, 2, 2, 2, 2, 2, 2): 880 Klassen, 220 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (3, 3, 3, 7, 7, 7, 7, 7, 7, 7, 7, 7)
+   Profil (8, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0): 792 Klassen, 792 Zeilenmuster, immer erfuellt
+   Profil (4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0): 220 Klassen, 220 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (5, 5, 5, 5, 5, 5, 5, 5, 5, 9, 9, 9)
+   Profil (10, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2): 144 Klassen, 12 Zeilenmuster, immer erfuellt
+   Profil (12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0): 12 Klassen, 12 Zeilenmuster, immer erfuellt
+U = H ohne 1 Spalten (12 x 11); 1024 Klassen y; kleinster moeglicher Wert von |v|: 0
+   Profil (7, 5, 5, 3, 3, 3, 1, 1, 1, 1, 1, 1): 660 Klassen, 660 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (2, 4, 4, 6, 6, 6, 8, 8, 8, 8, 8, 8)
+   Profil (5, 5, 5, 3, 3, 3, 3, 3, 3, 1, 1, 1): 220 Klassen, 220 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (4, 4, 4, 6, 6, 6, 6, 6, 6, 8, 8, 8)
+   Profil (9, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1): 132 Klassen, 132 Zeilenmuster, immer erfuellt
+   Profil (11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 12 Klassen, 12 Zeilenmuster, immer erfuellt
+U = H ohne 2 Spalten (12 x 10); 512 Klassen y; kleinster moeglicher Wert von |v|: 1
+   Profil (6, 6, 4, 4, 2, 2, 2, 2, 0, 0, 0, 0): 180 Klassen, 90 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (3, 3, 5, 5, 7, 7, 7, 7, 9, 9, 9, 9)
+   Profil (6, 4, 4, 4, 4, 2, 2, 2, 2, 2, 0, 0): 180 Klassen, 180 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (3, 5, 5, 5, 5, 7, 7, 7, 7, 7, 9, 9)
+   Profil (8, 4, 4, 2, 2, 2, 2, 2, 2, 0, 0, 0): 120 Klassen, 120 Zeilenmuster, immer erfuellt
+   Profil (4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2): 20 Klassen, 2 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 7, 7)
+   Profil (10, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0): 12 Klassen, 12 Zeilenmuster, immer erfuellt
+U = H ohne 3 Spalten (12 x 9); 256 Klassen y; kleinster moeglicher Wert von |v|: 0
+   Profil (7, 5, 3, 3, 3, 1, 1, 1, 1, 1, 1, 1): 72 Klassen, 72 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (2, 4, 6, 6, 6, 8, 8, 8, 8, 8, 8, 8)
+   Profil (5, 5, 5, 3, 3, 3, 1, 1, 1, 1, 1, 1): 72 Klassen, 72 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (4, 4, 4, 6, 6, 6, 8, 8, 8, 8, 8, 8)
+   Profil (5, 5, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1): 54 Klassen, 54 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (4, 4, 6, 6, 6, 6, 6, 6, 8, 8, 8, 8)
+   Profil (7, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1): 36 Klassen, 36 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (2, 6, 6, 6, 6, 6, 6, 8, 8, 8, 8, 8)
+   Profil (9, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1): 12 Klassen, 12 Zeilenmuster, immer erfuellt
+   Profil (5, 5, 5, 5, 1, 1, 1, 1, 1, 1, 1, 1): 9 Klassen, 9 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (4, 4, 4, 4, 8, 8, 8, 8, 8, 8, 8, 8)
+   Profil (3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3): 1 Klassen, 1 Zeilenmuster, KRITISCH: Anforderung an |v| je Zeile (6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6)
+
+U = H (12 x 12), d = 9. Bedingung an W (12 x m2, m2 ungerade), falls alle 220 Dreiermengen als 6er-Zeilen und als Nullzeilen vorkommen (oben: Zeilenmuster je 220):
+  fuer jedes z:  (eine Zeile mit |v| >= 9)  oder  (mindestens 4 Zeilen mit |v| >= 5  und  (eine Zeile mit |v| >= 7 oder hoechstens 2 Zeilen mit |v| = 1)).
+  m2=9 (Zelle (21,6)): Punkte 512; hoechstens 24 Punkte mit |v|>=9; Inzidenzen |v|>=5: 1104; noetig mindestens 1976; Spielraum -872
+  m2=11 (Zelle (23,7)): Punkte 2048; hoechstens 288 Punkte mit |v|>=9; Inzidenzen |v|>=5: 5568; noetig mindestens 7328; Spielraum -1760
+  m2=13 (Zelle (25,8)): Punkte 8192; hoechstens 2208 Punkte mit |v|>=9; Inzidenzen |v|>=5: 26232; noetig mindestens 26144; Spielraum 88

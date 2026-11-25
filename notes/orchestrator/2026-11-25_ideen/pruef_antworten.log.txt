@@ -1,0 +1,12 @@
+Sol F1: Schnitt Radius-2-Kugel mit Radius-4-Kugel in Q13, Abstand 0..6: [92, 92, 92, 47, 47, 15, 15] (Sol: 92,92,92,47,47,15,15)
+Sol F3: Paarkugeln Radius 2 in Q9, gefalteter Abstand 0..4, gemeinsame Klassen: [46, 18, 18, 6, 6] (Sol: 46,18,18,6,6)
+Sol F3: Tabelle Typ (11,9): gemeinsames Volumen = 58402 (Sol: 58 402)
+Sol F3: Inzidenzen links je Betrag 1..11 ueber 10 Zeilen: [4620, 3300, 1650, 550, 110, 10] ; rechts: [1260, 840, 360, 90, 10]
+Sol F2: m2=10: 12*(q4+3q6+6q8) = 4920 gegen 10*M = 5120 ; m2=12: 25980 gegen 20480 ; m2=14: 128472 gegen 81920
+Sol F2: kleinstes a = |A| bei c = 0 und b = 0, 1, 2 (alle Lagen von B): {2: 6, 1: 7, 0: 10} (Sol: 10, 7, 6); also a+3b: {2: 12, 1: 10, 0: 10}
+Sol F2: Ketten C in B in A mit a+3b+6c <= 9, die alle 220 Muster erfuellen: 0 (Soll 0)
+Astra: gemeinsame Klassen zweier Paarkugeln (Radius 4, Q15) bei Abstand 7/8: 140 (Astra: 140); Zeilenabstaende in ctrl_16: [7, 8]
+Astra: private Klassen je Zeile: [233]
+Astra: Lochklassen nach Streichen dreier Zeilen, ueber alle 560 Tripel: min 967 max 987 Werte [967, 987] (Astra: 699 bis 1119)
+Astra: nach Streichen zweier Zeilen: Werte [550, 562] (Astra: 466 bis 606)
+Astra: E_offen (15,4), k=15: 2.47e+03; Astra: E_offen (20,6), k=20: 4.52e+04; Astra: E_offen (25,8), k=25: 9.7e+05; Astra: E_offen (30,10), k=31: 2.14e+07; Astra: E_offen (37,13), k=38: 1.32e+09; 

@@ -1,0 +1,14 @@
+# tern_ls: Kontrolle 16 x 15 mit Gewichten, Startwert 1 und 2 (je 110 s)
+Schritt 176566  72.0 s  Restzahl 122
+Ende: Schritte=269824 Gewichtsrunden=192873 Zeit=110.1 s beste Restzahl=122 aktuelle=404
+Traeger: 16 x s=15
+Schritt 265717  108.5 s  Restzahl 62
+Ende: Schritte=269568 Gewichtsrunden=192838 Zeit=110.0 s beste Restzahl=62 aktuelle=586
+Traeger: 16 x s=15
+# Warmstart ctrl_16 ohne Zeile 0, ohne Nullen / mit Nullen (je 70 s)
+Start: N=15 m=15 G=15 Nullen=0 Gewichte=0 Restzahl=233 (Klassen)
+Ende: Schritte=166400 Gewichtsrunden=0 Zeit=70.1 s beste Restzahl=233 aktuelle=593
+Traeger: 15 x s=15
+Start: N=15 m=15 G=15 Nullen=1 Gewichte=0 Restzahl=233 (Klassen)
+Ende: Schritte=173056 Gewichtsrunden=0 Zeit=70.0 s beste Restzahl=233 aktuelle=2261
+Traeger: 1 x s=9 4 x s=11 8 x s=13 2 x s=15
