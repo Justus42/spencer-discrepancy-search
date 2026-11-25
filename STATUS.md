@@ -165,7 +165,10 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - Meldung von K(20,6) ≤ 48 (und der Familie): Entscheidung am 27.11.2026 (`notes/zweitmeinung_2026-11-24_auftrag.md`).
 - Satz von Kleitman: Zitat belegt (D. J. Kleitman, „On a combinatorial conjecture of Erdős“, J. Combin. Theory 1 (1966), 209–214;
   zwei unabhängige Fundstellen, 24.11.2026), Volltext nicht eingesehen (`notes/recherche_2026-11-24_pruefvermerk.md`, A1).
-- Unter den 112 Lösungen zu (15,4), Ordnung 7, 32 Wörter (alle disc 7, 16 x 15) sind 56 zu `ctrl_16` gleichwertig und 56 nicht (zweite Klasse); Hadamard-Klasse der zweiten nicht untersucht (L: 2026-11-25_gegenrechnung15).
+- Unter den 112 Lösungen zu (15,4), Ordnung 7, 32 Wörter (alle disc 7, 16 x 15) sind 56 zu `ctrl_16` gleichwertig und 56 nicht (zweite Klasse;
+  L: 2026-11-25_gegenrechnung15, vom Orchestrator unabhängig bestätigt). Beide Klassen sind punktierte Hadamard-Matrizen der Ordnung 16,
+  die zweite ist die Transponierte der ersten; keine ist zu ihrer Transponierten oder zu Sylvester äquivalent. Rechnung des Orchestrators,
+  nicht gegengerechnet; Zuordnung zu `had.16.3`/`had.16.4` nicht geprüft (`notes/gate_2026-11-25_gegenrechnung15.md`).
 - Verteilte Nullen sind auf Zellen zurückgeführt (Umkodierung nach Sol; n = 11 und n = 14 für alle Zeilen nachgerechnet, n = 17
   Stichprobe): ungerades n gibt die Zelle (n−1, r) mit Paaren, die bis auf eine Koordinate komplementär sind; gerades n die
   selbstkomplementäre Zelle. Die gelockerte Paarbedingung bei (16,4) und (18,5) ist nicht gesucht (Prüfvermerk, Abschnitte I, J).
