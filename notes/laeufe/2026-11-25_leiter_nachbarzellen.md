@@ -36,3 +36,14 @@ keine Rekordgrenze (Rekordweg bei d = 8 verlangt K ≤ 10, 40 Wörter). Nicht ge
 0 von 8 gelöst, **beste Restzahl in allen acht Läufen 1** (von 65 536; `zerl_offen.py` zählt je Paar ebenfalls 1 offene Klasse). Zusammen mit den vier 300-s-Läufen der Stufe (alle Restzahl 1) steht
 K = 12 bei 12 Startwerten fest bei Restzahl 1: auffällig fester Wert, Beinahe-Treffer; kein Ausschluss (Belegart: Suche erfolglos).
 Logs `runs/leiter_n/s3c18-5a_*`, `s3c18-5b_*`. Zelle (18,5) abgeschlossen: kleinstes erreichtes K = 13 (52 Wörter) im Typ (9,9).
+
+## Schritt 2: Leiter (16,4), d = 8, 4 Startwerte je Stufe, ≤ 300 s (22:53–23:17 UTC), Logs `runs/leiter_n/s2c16-4_k<K>_t<m1>-<m2>*`
+
+| Typ | kleinstes gelöstes K (Wörter) | Stufe darunter (4 x 300 s) |
+|---|---|---|
+| (8,8) | 16 (64) | K = 15: 0 von 4, Restzahl 56 (alle vier) |
+| (9,7) | 16 (64) | K = 15: 0 von 4, Restzahl 36 / 28 / 28 / 28 |
+| (10,6) | 16 (64) | K = 15: 0 von 4, Restzahl 82 (alle vier) |
+| (11,5) | 16 (64) | K = 15: 0 von 4, Restzahl 78 / 78 / 84 / 78 |
+
+K = 16 in allen vier Typen gelöst; das ist der Tabellenwert 64, kein Fortschritt. Treffer mit K = 16 nur mit `zerl_offen.py` gezählt (Auftrag: Prüfung ab 4K < 64).
