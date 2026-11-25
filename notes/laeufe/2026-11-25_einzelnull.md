@@ -123,3 +123,19 @@ Folgerung: Es genügen Zeilen mit Träger 10, 8, 6. Mindestens 6 Zeilen mit Trä
   Zeilen kosten je ≥ 40 bzw. ≥ 80). Jede Lösung enthält eine minimale Überdeckung; alle 11 Profile mit 40Q + 80S ≤ 208 werden
   gerechnet, billigste zuerst (`src/run_profile.sh`). Kontrolle n = 8, d = 5, K = 9, Träger 7/5: Profile 2, 3 mit und ohne
   Symmetrie 0, Profil 1 findet beidesmal eine Überdeckung (ohne kleine Zeile). Kein Positivfall mit kleinen Zeilen vorhanden.
+- Block 5 (00:04–00:31 UTC) und Block 6 (00:32–00:57 UTC), Profilsuche n = 11, `-y -3 -b 4`, ab Block 6 `-G 4000`
+  (weniger Gruppenelemente, feinere Bahnen, bleibt vollständig; in Block 5 ging fast alle Zeit in die Gruppenaufzählung):
+
+  | Profil (q Träger 8, s Träger 6) | Budget 208−40q−80s | Stand |
+  |---|---|---|
+  | (5,0), (3,1), (1,2) | 8 | vollständig, 0 Lösungen |
+  | (4,0), (2,1), (0,2) | 48 | vollständig, 0 Lösungen |
+  | (3,0) | 88 | Typen 0–3 vollständig; Typ 4: 5 641 619 von ≥ 6 900 261 Aufgaben; Typen 5–9 offen |
+  | (1,1), (2,0) | 88, 128 | nicht begonnen |
+  | (0,1), (1,0) | 128, 168 | nicht begonnen |
+
+  Logs `runs/einzelnull/block_10_8_6_q*.log.txt`. Zeitrahmen gemischt (2 h) damit ausgeschöpft.
+- Abgleich mit Sol: Sols Ausschluss von q + 2s ≥ 4 außer (2,1)… ist für alle sechs Profile mit Budget ≤ 48 rechnerisch bestätigt
+  ((5,0), (4,0), (3,1), (2,1), (1,2), (0,2)). Sols offene Profile (2,0), (3,0), (1,1) sind auch hier offen; (1,0), (0,1) (bei Sol
+  von Hand ausgeschlossen) nicht gerechnet.
+- **Ergebnis gemischt: Suche erfolglos, nicht vollständig.** Vollständig ausgeschlossen: die sechs Profile mit Budget ≤ 48.

@@ -1,0 +1,143 @@
+### Block Start 2026-11-25 00:33:40 UTC, Traeger 10,8,6, Grenze 1433 s
+Profil: genau 2 Zeilen mit Traeger 8, 1 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q2s1_T0.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 0 (gleiche Spalte, d=5, Schnitt 0): a = Zeile 5120, Vertreter Zeile 5616
+   Stabilisator {a,b}: 16000 Elemente angewandt (Grenze 4000 je Fall), 0 Kandidaten, 0 Bahnen
+   dritte Zeile: 0 Bahnvertreter
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe:; max. Tiefe 0; Zeit 0.0 s
+   Typ 0: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 0.8 s
+Profil: genau 2 Zeilen mit Traeger 8, 1 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q2s1_T1.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 1 (andere Spalte, d=4, Schnitt 6): a = Zeile 5120, Vertreter Zeile 5088
+   Stabilisator {a,b}: 5760 Elemente angewandt (Grenze 4000 je Fall), 1200 Kandidaten, 7 Bahnen
+   dritte Zeile: 7 Bahnvertreter
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:7; max. Tiefe 3; Zeit 0.5 s
+   Typ 1: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 1.4 s
+Profil: genau 2 Zeilen mit Traeger 8, 1 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q2s1_T2.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 2 (andere Spalte, d=3, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5056
+   Stabilisator {a,b}: 8000 Elemente angewandt (Grenze 4000 je Fall), 3306 Kandidaten, 21 Bahnen
+   dritte Zeile: 21 Bahnvertreter
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:21; max. Tiefe 3; Zeit 2.5 s
+   Typ 2: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 3.4 s
+Profil: genau 2 Zeilen mit Traeger 8, 1 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q2s1_T3.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 3 (gleiche Spalte, d=3, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5568
+   Stabilisator {a,b}: 8000 Elemente angewandt (Grenze 4000 je Fall), 3472 Kandidaten, 13 Bahnen
+   dritte Zeile: 13 Bahnvertreter
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:13; max. Tiefe 3; Zeit 2.4 s
+   Typ 3: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 3.7 s
+Profil: genau 2 Zeilen mit Traeger 8, 1 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q2s1_T4.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 4 (gleiche Spalte, d=4, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5600
+   Stabilisator {a,b}: 8000 Elemente angewandt (Grenze 4000 je Fall), 3806 Kandidaten, 12 Bahnen
+   dritte Zeile: 12 Bahnvertreter
+   [5 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 104706, zuletzt Nr. 167772160
+   Aufgaben (Tiefe 5): 509165 gesamt, 509165 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:12 4:4367 5:509165 6:31242; max. Tiefe 6; Zeit 41.8 s
+   Typ 4: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 42.7 s
+Profil: genau 2 Zeilen mit Traeger 8, 1 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q2s1_T5.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 5 (andere Spalte, d=2, Schnitt 26): a = Zeile 5120, Vertreter Zeile 4992
+   Stabilisator {a,b}: 8000 Elemente angewandt (Grenze 4000 je Fall), 5152 Kandidaten, 40 Bahnen
+   dritte Zeile: 40 Bahnvertreter
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:40; max. Tiefe 3; Zeit 3.8 s
+   Typ 5: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 4.6 s
+Profil: genau 2 Zeilen mit Traeger 8, 1 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q2s1_T6.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 6 (andere Spalte, d=1, Schnitt 40): a = Zeile 5120, Vertreter Zeile 4864
+   Stabilisator {a,b}: 8000 Elemente angewandt (Grenze 4000 je Fall), 5485 Kandidaten, 82 Bahnen
+   dritte Zeile: 82 Bahnvertreter
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:82; max. Tiefe 3; Zeit 4.3 s
+   Typ 6: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 5.3 s
+Profil: genau 2 Zeilen mit Traeger 8, 1 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q2s1_T7.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 7 (gleiche Spalte, d=1, Schnitt 40): a = Zeile 5120, Vertreter Zeile 5376
+   Stabilisator {a,b}: 8000 Elemente angewandt (Grenze 4000 je Fall), 5502 Kandidaten, 50 Bahnen
+   dritte Zeile: 50 Bahnvertreter
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:50; max. Tiefe 3; Zeit 4.2 s
+   Typ 7: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 5.1 s
+Profil: genau 2 Zeilen mit Traeger 8, 1 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q2s1_T8.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 8 (gleiche Spalte, d=2, Schnitt 40): a = Zeile 5120, Vertreter Zeile 5504
+   Stabilisator {a,b}: 8000 Elemente angewandt (Grenze 4000 je Fall), 5590 Kandidaten, 42 Bahnen
+   dritte Zeile: 42 Bahnvertreter
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:42; max. Tiefe 3; Zeit 4.1 s
+   Typ 8: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 5.3 s
+Profil: genau 2 Zeilen mit Traeger 8, 1 mit Traeger 6 (Rest Traeger 10, minimale Ueberdeckungen)
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_q2s1_T9.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+== Typ 9 (andere Spalte, d=0, Schnitt 76): a = Zeile 5120, Vertreter Zeile 4608
+   Stabilisator {a,b}: 8000 Elemente angewandt (Grenze 4000 je Fall), 5630 Kandidaten, 121 Bahnen
+   dritte Zeile: 121 Bahnvertreter
+   Aufgaben (Tiefe 5): 0 gesamt, 0 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:121; max. Tiefe 3; Zeit 4.0 s
+   Typ 9: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 4.8 s
+### Block Ende 2026-11-25 00:34:57 UTC, fertig: fertig 0 fertig 1 fertig 2 fertig 3 fertig 4 fertig 5 fertig 6 fertig 7 fertig 8 fertig 9 

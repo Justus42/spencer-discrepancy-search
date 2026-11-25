@@ -75,6 +75,8 @@ Eigene bessere Werte außerhalb dieser Tabelle (m > B(8) = 20, also kein Rekordw
 - **Neuheitsprüfung (Regel 3 offen):** Tabellenabgleich florath siehe oben. Gemini fand nichts unter 64; EinsteinArena-Thread 273 nennt
   K(20,6) „known 24..64“, keinen Code unter 64; `Mapika/coldcase` nur q ≥ 5 (A: Neuheit K(20,6) <= 56; A: Offen und unbelegt).
   Originalkonstruktion Östergård–Kaikkonen 1998 nicht einsehbar (A: Literaturstand). Nichts nach außen gemeldet.
+  Thread 273 (abgerufen 24.11.2026) enthält auch die Umformulierung als selbstkomplementärer Überdeckungscode und die 466 bei
+  n = 15; der Zellenrahmen ist also nicht neu, K(20,6) ≤ 48 nach diesem Stand schon (Prüfvermerk, A4).
 - **K(20,6) ≤ 48 in Lean bewiesen (24.11.2026):** Lean 4.30.0-rc2, nur Kernbibliothek, `lean/`. Satz: jedes x < 2^20 liegt im Abstand ≤ 6
   von einer Zeile von M oder −M (`had24_1p3_paley12` und `had24_2p2_paley12`); Radius 5 abgelehnt; Prüfschleife als korrekt bewiesen, ohne `sorry`.
   Zwei Wege: `native_decide` (je 2 Min.) und `decide +kernel` (10,4 bzw. 5,8 Min., Achsen nur `propext`, `Quot.sound`). Kontrollen Hamming [7,4], `ctrl_16`,
@@ -101,11 +103,13 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Bahnen unter der 3-Sylowgruppe P (Ordnung 9) des 48ers, n=20, R=6 | Minimum 48 Wörter (≤ 46 ausgeschlossen); nur Größe 1/3: 19 008 Lösungen | voll | L: 2026-11-25_bahnen3 |
 | Bahnen unter einem Element der Ordnung 3 des 48ers, n=20, R=6 | Tabu-Kontrolle 48 Wörter nicht bestanden (1/4, 0/4), < 48 ungeprüft | Suche | L: 2026-11-25_bahnen3 |
 | Zeilen mit genau einer Null, n = 11, 11 Zeilen (Einträge {-1,0,1}) | disc 6 unmöglich (Rekord 1,809 ausgeschlossen); nur {-1,0,1}, nicht reell | voll | L: 2026-11-25_einzelnull |
-| Zeilen mit Träger 10, 8, 6 gemischt, n = 11 | disc 6 nicht gefunden, nur Typ 0 vollständig | Suche | L: 2026-11-25_einzelnull |
+| Zeilen mit genau einer Null, n = 11: Umkodierung auf zwei Radius-2-Kugeln im 10-Würfel nachgerechnet (5632 Zeilen, 0 Abw.) | Ausschluss auch über K(10,2) ≥ 24 | voll (Tabelle) | L: 2026-11-25_einzelnull |
+| Träger 10/8/6 gemischt, n = 11, Profile (q,s) mit Budget ≤ 48: (5,0) (4,0) (3,1) (2,1) (1,2) (0,2) | keine Lösung | voll | L: 2026-11-25_einzelnull |
+| Träger 10/8/6 gemischt, Profile (3,0) (2,0) (1,1) (1,0) (0,1) | nichts gefunden, (3,0) Typen 0–3 voll, Rest offen | Suche | L: 2026-11-25_einzelnull |
 | Selbstkomplementäre Codes (13,3) (= n = 14 mit einer Null je Zeile, P1 bestätigt) | 42 Wörter gefunden, 40 nicht (4 x 10 Min.) | Suche | L: 2026-11-25_einzelnull |
 | Rundlauf Ansatz 3 (16 Familien, 388 503 Matrizen) | 0 Überlebende, bester Quotient 1,400 | Gegenbeispiel | L: 2026-11-24_rundlauf; A: Ansatz 3 |
 | Reelle Einträge um `ctrl_16` (Zeilen im L1-Abstand ≤ 2) | nichts über 7 | voll | L: 2026-11-24_reell16 |
-| Reelle Matrizen n = 8, 9, 12 (Dichte < 1) | nichts über dem Rekord | voll, bedingt auf Kleitman (unbelegt) | L: 2026-11-24_reell16; K |
+| Reelle Matrizen n = 8, 9, 12 (Dichte < 1) | nichts über dem Rekord | voll, bedingt auf Kleitman (belegt: J. Combin. Theory 1 (1966), 209–214) | L: 2026-11-24_reell16; K |
 | Nebenklassen-Suche d=2, (18,5) | nur 64 Wörter (K=15: 0 von 12) | Suche | A: Rundgang Nebenklassen-Suche |
 | Nebenklassen-Suche d=2, (21,6) | Kontrolle 64 Wörter nicht erreicht (0 von 12) | Suche | A: Rundgang Nebenklassen-Suche |
 | Nebenklassen-Suche d=2, (23,7) | 60 Wörter nicht erreicht (0 von 8) | Suche | A: Rundgang Nebenklassen-Suche |
@@ -158,13 +162,21 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 ## Offene Punkte
 
 - Meldung von K(20,6) ≤ 48 (und der Familie): Entscheidung am 27.11.2026 (`notes/zweitmeinung_2026-11-24_auftrag.md`).
-- Literaturbeleg für den Satz von Kleitman fehlt; die Dichteschranke hängt daran (L: 2026-11-24_reell16).
+- Satz von Kleitman: Zitat belegt (D. J. Kleitman, „On a combinatorial conjecture of Erdős“, J. Combin. Theory 1 (1966), 209–214;
+  zwei unabhängige Fundstellen, 24.11.2026), Volltext nicht eingesehen (`notes/recherche_2026-11-24_pruefvermerk.md`, A1).
+- Zählungen des Orchestrators zu (15,4) nicht gegengerechnet: keine 30 Wörter unter Symmetrie der Ordnung 7 (Typ 7+7+1), 11, 13;
+  `ctrl_16` ohne eine Zeile lässt immer 466 Punkte offen (`notes/orchestrator/2026-11-24_abend/README.md`).
+- Verteilte Nullen sind auf Zellen zurückgeführt (Umkodierung nach Sol; n = 11 und n = 14 für alle Zeilen nachgerechnet, n = 17
+  Stichprobe): ungerades n gibt die Zelle (n−1, r) mit Paaren, die bis auf eine Koordinate komplementär sind; gerades n die
+  selbstkomplementäre Zelle. Die gelockerte Paarbedingung bei (16,4) und (18,5) ist nicht gesucht (Prüfvermerk, Abschnitte I, J).
 - Beweise in den Rundlauf-Antworten ungeprüft (L: 2026-11-24_rundlauf). Auftragstext jetzt in `notes/rundlauf_2026-11-24_auftrag.md`.
-- 3-Sylowgruppe: 19 008 Lösungen (24 Zeilen) nicht nach G-Klassen sortiert; ⟨g⟩ mit < 48 Wörtern ungeprüft (L: 2026-11-25_bahnen3).
+- 3-Sylowgruppe: Die 19 008 Lösungen bilden 8 Äquivalenzklassen (4 mit Gruppenordnung 576, darunter 1+3 und 2+2; 2 mit 144; 2 mit 36);
+  der Tabu-Treffer aus Teil 4 ist ein neunter 48er (Gruppenordnung 24). Rechnung des Orchestrators, nicht gegengerechnet
+  (`notes/gate_2026-11-25_bahnen3.md`). „≤ 46 ausgeschlossen“ ruht auf einem Zählprogramm; ⟨g⟩ mit < 48 Wörtern ungeprüft (L: 2026-11-25_bahnen3).
 - n=25 unter 5er-Symmetrie nicht gestartet (L: 2026-11-24_bahnen5).
 - Vollständige Aufzählung K=4 bei n=20 (ca. 280 CPU-h) nicht gestartet (L: 2026-11-24_bahnen5).
 - Variante mit 3 vollen Bahnen plus 5 festen Paaren ungeprüft (A: Fehlversuche).
-- n = 11 gemischt (Träger 8/6): erst die ≤ 5 Zeilen mit Träger 8/6 als Bahnvertreter festlegen, dann Träger 10 (L: 2026-11-25_einzelnull).
+- n = 11 gemischt: Profile (3,0) ab Typ 4, (2,0), (1,1), (1,0), (0,1) offen; Fortsetzung `bash src/run_profile.sh SEK` (L: 2026-11-25_einzelnull).
 - Nächster Schritt: Ideensammlung (Literatur, Methodentransfer).
 
 ## Prüfrahmen

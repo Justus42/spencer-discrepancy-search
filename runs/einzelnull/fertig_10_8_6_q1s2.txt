@@ -5,3 +5,6 @@ fertig 3
 fertig 4
 fertig 5
 fertig 6
+fertig 7
+fertig 8
+fertig 9
