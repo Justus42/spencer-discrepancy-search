@@ -1,0 +1,46 @@
+Zyklentyp [7, 7, 1], p = 7: Punktklassen 2344; volle Zeilenbahnen 2340; feste Zeilen (mod Vorzeichen) 4; Klassengroessen [2, 14]
+  Burnside: (2^15 + 6*8) / 14 = 2344
+[00:19:11] Zeilenbahnen: voll 2340, fest 4 (Erwartung 2340, 4); Punktklassen 2344 (2344)
+Feste Zeilen (Wort, Bits 0-6 | 7-13 | 14): ['000000000000000', '111111100000000', '000000011111110', '111111111111110']
+  i = 0/2340  (0 s)
+  i = 500/2340  (2 s)
+  i = 1000/2340  (3 s)
+  i = 1500/2340  (4 s)
+  i = 2000/2340  (5 s)
+[00:19:16] Paare voller Bahnen: 2736630, Rechenzeit 5 s
+
+Teilmenge fester Zeilen (Indizes 0..3) | Woerter | Ueberdeckungen (2 volle + Teilmenge) | kleinste Restzahl offener Punkte | Paare am Minimum
+  ()                  28 Woerter      0 Ueberdeckungen   Minimum   1100   Paare 56
+  (0,)                30 Woerter      0 Ueberdeckungen   Minimum    466   Paare 56
+  (1,)                30 Woerter      0 Ueberdeckungen   Minimum    466   Paare 56
+  (2,)                30 Woerter      0 Ueberdeckungen   Minimum    466   Paare 56
+  (3,)                30 Woerter      0 Ueberdeckungen   Minimum    466   Paare 56
+  (0, 1)              32 Woerter     28 Ueberdeckungen   Minimum      0   Paare 28
+  (0, 2)              32 Woerter     28 Ueberdeckungen   Minimum      0   Paare 28
+  (0, 3)              32 Woerter      0 Ueberdeckungen   Minimum    438   Paare 56
+  (1, 2)              32 Woerter      0 Ueberdeckungen   Minimum    438   Paare 56
+  (1, 3)              32 Woerter     28 Ueberdeckungen   Minimum      0   Paare 28
+  (2, 3)              32 Woerter     28 Ueberdeckungen   Minimum      0   Paare 28
+  (0, 1, 2)           34 Woerter     56 Ueberdeckungen   Minimum      0   Paare 56
+  (0, 1, 3)           34 Woerter     56 Ueberdeckungen   Minimum      0   Paare 56
+  (0, 2, 3)           34 Woerter     56 Ueberdeckungen   Minimum      0   Paare 56
+  (1, 2, 3)           34 Woerter     56 Ueberdeckungen   Minimum      0   Paare 56
+  (0, 1, 2, 3)        36 Woerter    112 Ueberdeckungen   Minimum      0   Paare 112
+Zusammen 0 feste Zeilen (28 Woerter): 0 Ueberdeckungen
+Zusammen 1 feste Zeilen (30 Woerter): 0 Ueberdeckungen
+Zusammen 2 feste Zeilen (32 Woerter): 112 Ueberdeckungen
+Zusammen 3 feste Zeilen (34 Woerter): 224 Ueberdeckungen
+Zusammen 4 feste Zeilen (36 Woerter): 112 Ueberdeckungen
+Loesungen nach runs/gegenrechnung15/loesungen_2voll_2fest.txt
+[00:19:16] Direkte Nachrechnung (Skalarprodukte auf allen 2^15 Punkten) aller Loesungen mit 2 festen Zeilen ...
+  112 Loesungen direkt geprueft, offene Punkte != 0 in 0 Faellen
+Direkte Nachrechnung eines Paares am Minimum je Teilmenge der Groesse 0 und 1:
+  ()       Klassenmethode 1100, direkt 1100
+  (0,)     Klassenmethode 466, direkt 466
+  (1,)     Klassenmethode 466, direkt 466
+  (2,)     Klassenmethode 466, direkt 466
+  (3,)     Klassenmethode 466, direkt 466
+
+real	0m5.560s
+user	0m20.905s
+sys	0m0.043s

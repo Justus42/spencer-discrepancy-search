@@ -1,0 +1,23 @@
+ctrl_16 ohne Nullspalte: 16 x 15; offene Punkte mit allen 16 Zeilen: 0 (Erwartung 0)
+  Zeile  0 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile  1 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile  2 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile  3 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile  4 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile  5 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile  6 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile  7 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile  8 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile  9 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile 10 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile 11 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile 12 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile 13 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile 14 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+  Zeile 15 gestrichen: offene Punkte 466   (Punkte, die nur diese Zeile trifft: 466)
+alle 466: True
+Verteilung der Zahl treffender Zeilen je Punkt (0..16): [0, 7456, 21504, 3584, 224, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+real	0m0.144s
+user	0m0.387s
+sys	0m0.017s

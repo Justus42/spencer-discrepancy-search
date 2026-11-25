@@ -1,0 +1,14 @@
+Zyklentyp [13, 1, 1], p = 13: Punktklassen 1264; volle Zeilenbahnen 1260; feste Zeilen (mod Vorzeichen) 4; Klassengroessen [2, 26]
+  Burnside: (2^15 + 12*8) / 26 = 1264
+[00:19:21] Rechenzeit 0 s
+  eine volle Bahn + 2 feste Zeilen (30 Woerter): Teilmengen 6, Ueberdeckungen 0; kleinste Restzahl offener Punkte 1690 (144 Kombinationen)
+    direkte Nachrechnung eines Minimums: 1690 offene Punkte (Klassenmethode 1690)
+  eine volle Bahn + 3 feste Zeilen (32 Woerter): Teilmengen 4, Ueberdeckungen 0; kleinste Restzahl offener Punkte 1326 (48 Kombinationen)
+    direkte Nachrechnung eines Minimums: 1326 offene Punkte (Klassenmethode 1326)
+  eine volle Bahn + 4 feste Zeilen (34 Woerter): Teilmengen 1, Ueberdeckungen 0; kleinste Restzahl offener Punkte 1326 (48 Kombinationen)
+    direkte Nachrechnung eines Minimums: 1326 offene Punkte (Klassenmethode 1326)
+  Stichprobe p = 13, 60 zufaellige (1 volle Bahn + 2 feste): Klassenmethode = direkte Rechnung in 60, Abweichungen 0
+
+real	0m0.466s
+user	0m0.984s
+sys	0m0.032s
