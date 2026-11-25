@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 25.11.2026 (nach Auftrag Z, Zwei-Bahnen-Codes, und Auftrag L, Leiter unter 48 bei (20,6): Kontrolle K=12 nicht bestanden). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 25.11.2026 nachmittags (nach Auftrag G, Gruppenmatrizen über nichtzyklischen Gruppen, und Auftrag S, Suche im affinen Spann: beide ohne Kandidaten, beide mit Gate). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 Vollständige frühere Fassung: `notes/verlauf/STATUS_2026-11-24_vollstaendig.md` (Archiv, eingefroren). Übersicht Familien x N:
 `LANDKARTE.md`. Arbeitsregeln: `CLAUDE.md`. Herkunft externer Dateien: `controls/QUELLEN.md`. Laufprotokolle: `notes/laeufe/`.
 Fundstellen in den Tabellen: „A: …“ = Überschrift im Archiv, „L: …“ = `notes/laeufe/…`, „K“ = `LANDKARTE.md`,
@@ -99,7 +99,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Paley-Konferenzmatrizen Ordnung 6, 10, 14, 18 | disc 3, 3, 5, 5 | voll | A: Gegenrechnung des Prüfvermerks, Teil A |
 | Zirkulante ±1-Matrizen n = 18–31 (10 Ordnungen), mit Rand n = 18–26 | beste disc 4–7, 0 Überlebende | Gegenbeispiel je Klasse, Bester exakt | L: 2026-11-24_zirkulant; A: Teil B, C, D |
 | Gruppenmatrizen A[g][h] = f(g^-1 h), 10 nichtzyklische Gruppen der Ordnung 18, 20, 21, 25, alle Klassen; mit Rand bei 18 und 21; zwei Spalten gestrichen | 0 Überlebende; beste disc 4 (18, mit Rand 4), 6 (20), 5 (Z7:Z3; mit Rand 7), 7 (Z5xZ5); ohne 2 Spalten 6 (20), 7 (25) | Gegenbeispiel je Klasse, Bester exakt (zwei unabhängige Zählungen der Klassen; Kontrollen Z7 mit Rand, Z18/20/21/25 bestanden) | L: 2026-11-25_gruppen; K |
-| Codes im affinen Spann bekannter Codes, (15,4), 15 Paare (30 Wörter): L(`ctrl_16`), L(loesung111), Rang-9-Erweiterungen (254 = 9 Klassen unter Aut(L)) | unmöglich in Rang 8 und in 4 Klassen (63 Erweiterungen); 6 Klassen unentschieden | voll (L(loesung111) mit und ohne Symmetrie; Rang 9 nur mit Symmetrie) / unentschieden | L: 2026-11-25_spann; K |
+| Codes im affinen Spann bekannter Codes, (15,4), 15 Paare (30 Wörter): L(`ctrl_16`), L(loesung111), Rang-9-Erweiterungen (254 = 9 Klassen unter Aut(L)) | unmöglich in Rang 8 und in 3 Klassen (63 Erweiterungen); 6 Klassen (191 Erweiterungen) unentschieden | voll (L(loesung111): zwei Programme, Sitzung mit und ohne Symmetrie, Gate ohne Symmetrie; Rang 9: ein Programm, nur mit Symmetrie) / unentschieden | L: 2026-11-25_spann; K |
 | Codes im affinen Spann der 48er, (20,6), 23 Paare (46 Wörter): L(1p3), L(2p2), L(neunter); unter den 19 008 P-Lösungen 81 verschiedene Spanne | Kontrolle 24 Paare 12/12, 23 Paare 0 von 28 (beste Restzahl 886) | Suche | L: 2026-11-25_spann; K |
 | Kern ⟨1,a,b⟩ (8 Wörter) bei (20,6): Zählschranke 2^17/B(D) | 97 Typen, B(D) 31 180 bis 53 372, Schranke 2,46 bis 4,20 < 5: schließt keinen Typ aus | voll (eigenes Skript `src/kern_nebenklassen.py`) | L: 2026-11-25_gruppen, Teil 4 |
 | Bahnen aus 5er-Zyklen plus Komplement, n=15, R=4 | mindestens 40 Wörter (525 Vierermengen) | voll | L: 2026-11-24_bahnen5 |
@@ -195,7 +195,9 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - Leiter unter 48 bei (20,6): Kontrolle K=12 aus Zufallsstart 1 von 16 (nicht bestanden); K=11 nie versucht. Nur mit Warmstart aus den bekannten 48ern oder weit mehr Startwerten weiterzuverfolgen (L: 2026-11-25_leiter48). Alle drei bisherigen
   Treffer der Nebenklassen-Suche bei Typ (11,9) sind derselbe Code (Paley-Doppelung 1+3; `notes/gate_2026-11-25_leiter48.md`).
 - Gruppenmatrizen: Ordnung 24 (14 nichtzyklische Gruppen, Schwelle 10) und vier gestrichene Spalten bei Ordnung 25 nicht gerechnet (L: 2026-11-25_gruppen).
-- Nächster Schritt: Ideensammlung (Literatur, Methodentransfer).
+- Suche im Spann: bei (15,4) sechs Rang-9-Klassen (191 Erweiterungen) unentschieden, Rang 10 nicht begonnen; die drei Rang-9-Ausschlüsse ruhen auf einem Programm
+  mit Symmetrie. Bei (20,6) 78 weitere Spanne nicht durchsucht, Gleichwertigkeit der drei 48er-Spanne offen (L: 2026-11-25_spann; `notes/gate_2026-11-25_spann.md`).
+- Nächster Schritt: Entscheidung zur Meldung K(20,6) ≤ 48 am 27.11.2026; danach Ansatzwahl (offene exakte Fälle aus Auftrag S oder neue Ideensammlung).
 
 ## Prüfrahmen
 

@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 25.11.2026 (nach Auftrag Z, Zwei-Bahnen-Codes, und Auftrag L, Leiter unter 48 bei (20,6)). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 25.11.2026 nachmittags (nach Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -32,7 +32,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Gruppenmatrizen nichtzyklisch n x n (Auftrag G, alle Klassen; 10 Gruppen der Ordnung 18, 20, 21, 25) |  |  |  |  |  |  |  |  |  | 0,943 e |  | 1,342 e |
 | Gruppenmatrizen nichtzyklisch + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Auftrag G, Ordnung 18 und 21) |  |  |  |  |  |  |  |  |  |  | 0,918 e |  |
 | Gruppenmatrizen nichtzyklisch ohne 2 Spalten, n x (n-2) (Auftrag G) |  |  |  |  |  |  |  |  |  | ≤1,414 g |  | 1,342 e |
-| Codes im affinen Spann bekannter Codes, (15,4) (Auftrag S): L(`ctrl_16`), L(2. Klasse), alle 254 Rang-9-Erweiterungen; Spalte 15 = 30 Wörter: Rang 8 und 4 von 9 Rang-9-Klassen (63 Erweiterungen) voll ausgeschlossen, Rest Suche erfolglos |  |  |  |  |  |  | (1,807) s | 1,750 e |  |  |  |  |
+| Codes im affinen Spann bekannter Codes, (15,4) (Auftrag S): L(`ctrl_16`), L(2. Klasse), alle 254 Rang-9-Erweiterungen; Spalte 15 = 30 Wörter: Rang 8 und 3 von 9 Rang-9-Klassen (63 Erweiterungen) voll ausgeschlossen, Rest Suche erfolglos |  |  |  |  |  |  | (1,807) s | 1,750 e |  |  |  |  |
 | Rundlauf Astra 2 Duaden (15x15, 59 049 Matrizen) | | | | | | | 0,775 e | | | | | |
 | Rundlauf Sol 1 Fano-Ebenentausch (15x15, 153 664) | | | | | | | 1,291 e | | | | | |
 | Rundlauf Astra 4 Walsh-Charts (20x20, 1 024) | | | | | | | | | | | | 0,894 e |
