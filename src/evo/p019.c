@@ -1,8 +1,8 @@
-/* p019 -- Insel A, blind. Elter: p015.
- * Geaendert: Stoerung beim Neustart: vom Bestpunkt aus die Zeile mit den wenigsten allein ueberdeckten Klassen entfernen und durch die
- *   global beste Zeile ersetzen (Gewinn aller 2^(m-1) Kandidaten per Walsh-Hadamard-Faltung, Idee aus Insel C; nicht die alte Zeile),
- *   statt 6 Zufallsbits. Sonst wie p015.
- * Warum: Zufaellige Stoerungen (p009-p015) und zufaelliger Zeilenersatz (p012) trugen wenig; gezielter Ersatz soll in neue gute Bereiche fuehren.
+/* p019 -- Insel A, blind. Elter: p018.
+ * Geaendert: wieder Neustarts (nach 60 s ohne lokalen Fortschritt) vom Bestpunkt, Stoerung = schwaechste Zeile (wenigste allein ueberdeckte
+ *   Klassen) durch die global beste andere Zeile ersetzen (Gewinn aller 2^(m-1) Kandidaten per Walsh-Hadamard-Faltung, Idee aus Insel C).
+ *   Rauschen 1 %, Zugwahl ueber die ganze Nachbarschaft wie p018.
+ * Warum: p017/p018 enden verlaesslich im Anziehungspunkt 704; ein gezielter Zeilenersatz soll ihn verlassen.
  * Aufruf: p019 m R PAARE STARTWERT SEKUNDEN AUSGABEDATEI   (Suchcode; blind, liest keine Dateien)
  */
 #include <stdio.h>
@@ -12,10 +12,9 @@
 #include <time.h>
 #include <limits.h>
 
-#define RAUSCHEN 0.05
+#define RAUSCHEN 0.01
 #define GLATT 0
-#define STAG 120.0
-#define STOER 6
+#define STAG 60.0
 
 typedef uint32_t u32;
 typedef int32_t v8i __attribute__((vector_size(32)));
@@ -32,32 +31,6 @@ static u32 *openl; static int32_t *opos; static long nopen;
 static u32 **mRnoj; static long nRnoj;
 static u32 *mR, *mR1; static long nR, nR1;
 static u32 *mBall; static long nBall;
-static int64_t *Bh, *Gw;
-static void wht(int64_t *a, long n) {
-    for (long h = 1; h < n; h <<= 1)
-        for (long s = 0; s < n; s += 2 * h)
-            for (long t = s; t < s + h; t++) { int64_t x = a[t], y = a[t + h]; a[t] = x + y; a[t + h] = x - y; }
-}
-/* ersetzt in w die schwaechste Zeile durch die global beste (ohne die alte); setzt cs dabei neu */
-static void ersetze_schwaechste(void) {
-    long N = (long)TOP;
-    long allein[256] = {0};
-    memset(cs, 0, N * 2);
-    for (int i = 0; i < K; i++) for (long q = 0; q < nBall; q++) { u32 c = canon(w[i] ^ mBall[q]); cs[c] = (uint16_t)((cs[c] + 1) ^ ((i + 1) << 8)); }
-    for (long q = 0; q < N; q++) if ((cs[q] & 255) == 1) allein[(cs[q] >> 8) - 1]++;
-    int ws = 0; long am = LONG_MAX; int ties = 0;
-    for (int i = 0; i < K; i++) { if (allein[i] < am) { am = allein[i]; ws = i; ties = 1; } else if (allein[i] == am && rnd() % (++ties) == 0) ws = i; }
-    u32 alt = canon(w[ws]);
-    for (long q = 0; q < nBall; q++) { u32 c = canon(alt ^ mBall[q]); cs[c] = (uint16_t)((cs[c] - 1) ^ ((ws + 1) << 8)); }
-    for (long q = 0; q < N; q++) Gw[q] = ((cs[q] & 255) == 0);
-    wht(Gw, N);
-    for (long q = 0; q < N; q++) Gw[q] *= Bh[q];
-    wht(Gw, N);
-    int64_t bg = -1; u32 bv = alt; long tb = 0;
-    for (long v = 0; v < N; v++) { if ((u32)v == alt) continue;
-        if (Gw[v] > bg) { bg = Gw[v]; bv = (u32)v; tb = 1; } else if (Gw[v] == bg && rnd() % (++tb) == 0) bv = (u32)v; }
-    w[ws] = bv;
-}
 static v8i SH[NV];
 
 static uint64_t rs;
@@ -114,6 +87,32 @@ static void kippe(int i, int j) {
     }
     w[i] = wn;
     zeile_neu(i);
+}
+static int64_t *Bh, *Gw;
+static void wht(int64_t *a, long n) {
+    for (long h = 1; h < n; h <<= 1)
+        for (long s = 0; s < n; s += 2 * h)
+            for (long t = s; t < s + h; t++) { int64_t x = a[t], y = a[t + h]; a[t] = x + y; a[t + h] = x - y; }
+}
+/* ersetzt in w die schwaechste Zeile durch die global beste (ohne die alte); setzt cs dabei neu */
+static void ersetze_schwaechste(void) {
+    long N = (long)TOP;
+    long allein[256] = {0};
+    memset(cs, 0, N * 2);
+    for (int i = 0; i < K; i++) for (long q = 0; q < nBall; q++) { u32 c = canon(w[i] ^ mBall[q]); cs[c] = (uint16_t)((cs[c] + 1) ^ ((i + 1) << 8)); }
+    for (long q = 0; q < N; q++) if ((cs[q] & 255) == 1) allein[(cs[q] >> 8) - 1]++;
+    int ws = 0; long am = LONG_MAX; int ties = 0;
+    for (int i = 0; i < K; i++) { if (allein[i] < am) { am = allein[i]; ws = i; ties = 1; } else if (allein[i] == am && rnd() % (++ties) == 0) ws = i; }
+    u32 alt = canon(w[ws]);
+    for (long q = 0; q < nBall; q++) { u32 c = canon(alt ^ mBall[q]); cs[c] = (uint16_t)((cs[c] - 1) ^ ((ws + 1) << 8)); }
+    for (long q = 0; q < N; q++) Gw[q] = ((cs[q] & 255) == 0);
+    wht(Gw, N);
+    for (long q = 0; q < N; q++) Gw[q] *= Bh[q];
+    wht(Gw, N);
+    int64_t bg = -1; u32 bv = alt; long tb = 0;
+    for (long v = 0; v < N; v++) { if ((u32)v == alt) continue;
+        if (Gw[v] > bg) { bg = Gw[v]; bv = (u32)v; tb = 1; } else if (Gw[v] == bg && rnd() % (++tb) == 0) bv = (u32)v; }
+    w[ws] = bv;
 }
 static void alles_neu(void) {
     long N = (long)TOP;
