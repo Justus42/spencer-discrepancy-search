@@ -59,6 +59,8 @@ static long long knoten_tiefe[MAXK + 1];
 static int max_tiefe = 0;
 static long long aufg_gesamt = -1, aufg_erledigt_jetzt = 0, erl_vorher = 0;
 static int zaehlmodus = 0;
+static int prof_q = -1, prof_s = -1;   /* genaue Zahl der Zeilen mit Traeger n-3 (q) und n-5 (s); -1: aus */
+static int8_t *klasse;                 /* 0: Traeger n-1, 1: n-3, 2: n-5, 3: sonst */
 static long long id_basis = 0;
 static int schranke2 = 0;      /* 0 aus, sonst max. Zahl der Punkte */
 static long long maxaufg = -1; /* nur Aufgaben < maxaufg (Messung) */
@@ -169,6 +171,7 @@ typedef struct {
     char *excl;
     long long knoten[MAXK + 1];
     int maxt;
+    int u8[MAXK + 2], u6[MAXK + 2];
     long long split_idx;
     long long ticket;
     long long zaehl;
@@ -220,6 +223,13 @@ static void knoten(Faden *F, int k, int verlust, int *L, int nL) {
         const uint64_t *h = Hb + (size_t)row * W;
         int s = 0; for (int w = 0; w < W; w++) s += pc(h[w] & cov[w]);
         if (s == gr[row]) continue;            /* nichts Neues */
+        if (prof_q >= 0) {
+            int kl = klasse[row];
+            if (kl == 1 && F->u8[k] >= prof_q) continue;
+            if (kl == 2 && F->u6[k] >= prof_s) continue;
+            if (kl == 0 && r - (prof_q - F->u8[k]) - (prof_s - F->u6[k]) < 1) continue;
+            if (kl == 3) continue;
+        }
         int l = maxgr - gr[row] + s;
         if (l > rest) continue;
         L2[n2] = row; V2[n2] = l; n2++;
@@ -239,6 +249,21 @@ static void knoten(Faden *F, int k, int verlust, int *L, int nL) {
             for (int v = 0; v <= maxv && take > 0; v++) { int t = hist[v] < take ? hist[v] : take; for (int q = 0; q < t; q++) { pi++; pref[pi] = pref[pi - 1] + v; } sum += (long long)t * v; take -= t; }
             /* gain gesamt = need*maxgr - sum muss >= u */
             if ((long long)need * maxgr - sum < u) return;
+        }
+        if (prof_q >= 0) {
+            /* genaue Profilschranke: restliche kleine Zeilen muessen kommen, je Klasse die kleinsten Verluste */
+            int rq = prof_q - F->u8[k], rs6 = prof_s - F->u6[k], r10 = r - rq - rs6;
+            if (r10 < 0) return;
+            static __thread int hk[3][4096];
+            for (int c3 = 0; c3 < 3; c3++) memset(hk[c3], 0, sizeof(int) * (rest + 1));
+            int nk[3] = {0, 0, 0};
+            for (int i = 0; i < n2; i++) { int kl = klasse[L2[i]]; if (kl < 3) { hk[kl][V2[i]]++; nk[kl]++; } }
+            if (nk[1] < rq || nk[2] < rs6) return;
+            int want[3] = {r10 < nk[0] ? r10 : nk[0], rq, rs6};
+            long long lb = 0;
+            for (int c3 = 0; c3 < 3; c3++) { int take = want[c3]; for (int v = 0; v <= rest && take > 0; v++) { int t = hk[c3][v] < take ? hk[c3][v] : take; lb += (long long)t * v; take -= t; } }
+            /* Abdeckung: (want0+rq+rs6)*maxgr - lb >= u */
+            if ((long long)(want[0] + rq + rs6) * maxgr - lb < u) return;
         }
     }
     /* Punktzählung */
@@ -312,6 +337,8 @@ static void knoten(Faden *F, int k, int verlust, int *L, int nL) {
             Lk[nk++] = row;
         }
         F->gew[k] = c;
+        F->u8[k + 1] = F->u8[k] + (prof_q >= 0 && klasse[c] == 1);
+        F->u6[k + 1] = F->u6[k] + (prof_q >= 0 && klasse[c] == 2);
         const uint64_t *h = Hb + (size_t)c * W;
         for (int w = 0; w < W; w++) F->cov[k + 1][w] = cov[w] | h[w];
         knoten(F, k + 1, verlust + cv[ci], Lk, nk);
@@ -555,6 +582,8 @@ int main(int argc, char **argv) {
         else if (!strcmp(argv[i], "-a")) alle = 1;
         else if (!strcmp(argv[i], "-b")) schranke2 = atoi(argv[++i]);
         else if (!strcmp(argv[i], "-3")) dritte = 1;
+        else if (!strcmp(argv[i], "-q")) prof_q = atoi(argv[++i]);
+        else if (!strcmp(argv[i], "-S")) prof_s = atoi(argv[++i]);
         else if (!strcmp(argv[i], "-G")) g_maxel = atoi(argv[++i]);
         else if (!strcmp(argv[i], "-B")) { bahn_von = atoi(argv[++i]); bahn_bis = atoi(argv[++i]); }
         else if (!strcmp(argv[i], "-m")) maxaufg = atoll(argv[++i]);
@@ -566,6 +595,10 @@ int main(int argc, char **argv) {
     t0 = jetzt();
     zeilen_bauen();
     B_total = K * maxgr - P;
+    klasse = malloc(nrows);
+    for (int r = 0; r < nrows; r++) { int ss = 0; for (int j = 0; j < n; j++) ss += ent[r][j] != 0; klasse[r] = ss == n - 1 ? 0 : ss == n - 3 ? 1 : ss == n - 5 ? 2 : 3; }
+    if (prof_q >= 0 && prof_s < 0) prof_s = 0;
+    if (prof_q >= 0) printf("Profil: genau %d Zeilen mit Traeger %d, %d mit Traeger %d (Rest Traeger %d, minimale Ueberdeckungen)\n", prof_q, n - 3, prof_s, n - 5, n - 1);
     printf("n=%d d=%d K=%d Traeger=%s: %d Zeilen (davon %d Typzeilen), %d Klassen, maxgr=%d, Budget B=%d\n",
            n, d, K, argv[0] ? sups : "", nrows, ntyp, P, maxgr, B_total);
     for (int s = n; s >= 1; s--) if (sup_ok[s]) {

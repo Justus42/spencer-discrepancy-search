@@ -111,3 +111,15 @@ Folgerung: Es genügen Zeilen mit Träger 10, 8, 6. Mindestens 6 Zeilen mit Trä
   Belegart: vollständig durchgerechnet (Suchcode mit Symmetriereduktion; kein Zertifikat). Gilt nur für Einträge in {-1,0,1}.
 - Teil 3, gemischt (Träger 10/8/6): Suche erfolglos, nicht fertig (Typ 0 vollständig, Typ 1 fast, Typen 2–9 nicht).
 - Teil 4: P1 bestätigt; (13,3) selbstkomplementär: 42 Wörter erreicht, 40 nicht. Kein Rekord.
+
+## Nachtrag 22:50 (abgearbeitet nach Teil 4): Umkodierung und Profilsuche
+
+- **Umkodierung nachgerechnet** (Prüfcode `src/umkodierung11.py`, 16 s): alle 5632 Zeilen; Treffermenge = zwei Radius-2-Kugeln
+  in H (gerade Vertreter), nach Streichen von Koordinate 10 zwei Radius-2-Kugeln im 10-Würfel: **0 Abweichungen**; 512 Zeilen mit
+  voll komplementären Zentren. Damit: 11 Zeilen mit Träger 10 → K(10,2) ≤ 22, Widerspruch zur Tabelle (≥ 24). Die Baumsuche
+  oben (36 Min., vor dem Nachtrag gelaufen) ist die Gegenprobe; beide sagen „keine Lösung“. Log `umkodierung11.log.txt`.
+- Sols Einschränkung auf drei Profile nicht übernommen (Beweise nicht selbst geprüft). Statt dessen Profilsuche `-q Q -S S`:
+  minimale Überdeckungen mit genau Q Zeilen Träger 8 und S Träger 6, Rest Träger 10; Schranke je Klasse (die fehlenden kleinen
+  Zeilen kosten je ≥ 40 bzw. ≥ 80). Jede Lösung enthält eine minimale Überdeckung; alle 11 Profile mit 40Q + 80S ≤ 208 werden
+  gerechnet, billigste zuerst (`src/run_profile.sh`). Kontrolle n = 8, d = 5, K = 9, Träger 7/5: Profile 2, 3 mit und ohne
+  Symmetrie 0, Profil 1 findet beidesmal eine Überdeckung (ohne kleine Zeile). Kein Positivfall mit kleinen Zeilen vorhanden.

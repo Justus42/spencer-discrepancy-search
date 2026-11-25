@@ -1,0 +1,4 @@
+Zeilen: 5632
+Abweichungen (zwei Radius-2-Kugeln in H): 0
+Abweichungen (nach Streichen von Koordinate 10, zwei Kugeln im 10-Wuerfel): 0
+Zentren nach Streichen voll komplementaer: 512
