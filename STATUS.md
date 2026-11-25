@@ -99,6 +99,8 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Paley-Konferenzmatrizen Ordnung 6, 10, 14, 18 | disc 3, 3, 5, 5 | voll | A: Gegenrechnung des Prüfvermerks, Teil A |
 | Zirkulante ±1-Matrizen n = 18–31 (10 Ordnungen), mit Rand n = 18–26 | beste disc 4–7, 0 Überlebende | Gegenbeispiel je Klasse, Bester exakt | L: 2026-11-24_zirkulant; A: Teil B, C, D |
 | Gruppenmatrizen A[g][h] = f(g^-1 h), 10 nichtzyklische Gruppen der Ordnung 18, 20, 21, 25, alle Klassen; mit Rand bei 18 und 21; zwei Spalten gestrichen | 0 Überlebende; beste disc 4 (18, mit Rand 4), 6 (20), 5 (Z7:Z3; mit Rand 7), 7 (Z5xZ5); ohne 2 Spalten 6 (20), 7 (25) | Gegenbeispiel je Klasse, Bester exakt (zwei unabhängige Zählungen der Klassen; Kontrollen Z7 mit Rand, Z18/20/21/25 bestanden) | L: 2026-11-25_gruppen; K |
+| Codes im affinen Spann bekannter Codes, (15,4), 15 Paare (30 Wörter): L(`ctrl_16`), L(loesung111), Rang-9-Erweiterungen (254 = 9 Klassen unter Aut(L)) | unmöglich in Rang 8 und in 4 Klassen (63 Erweiterungen); 6 Klassen unentschieden | voll (L(loesung111) mit und ohne Symmetrie; Rang 9 nur mit Symmetrie) / unentschieden | L: 2026-11-25_spann; K |
+| Codes im affinen Spann der 48er, (20,6), 23 Paare (46 Wörter): L(1p3), L(2p2), L(neunter); unter den 19 008 P-Lösungen 81 verschiedene Spanne | Kontrolle 24 Paare 12/12, 23 Paare 0 von 28 (beste Restzahl 886) | Suche | L: 2026-11-25_spann; K |
 | Kern ⟨1,a,b⟩ (8 Wörter) bei (20,6): Zählschranke 2^17/B(D) | 97 Typen, B(D) 31 180 bis 53 372, Schranke 2,46 bis 4,20 < 5: schließt keinen Typ aus | voll (eigenes Skript `src/kern_nebenklassen.py`) | L: 2026-11-25_gruppen, Teil 4 |
 | Bahnen aus 5er-Zyklen plus Komplement, n=15, R=4 | mindestens 40 Wörter (525 Vierermengen) | voll | L: 2026-11-24_bahnen5 |
 | Bahnen aus 5er-Zyklen plus Komplement, n=20, R=6 | 70 Wörter gefunden, 60 nicht | Suche | L: 2026-11-24_bahnen5 |
@@ -151,6 +153,9 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - 25.11.2026, (13,3) selbstkomplementär, `src/sc13_tabu.c`, 40 Wörter, Startwerte 1–4 je 600 s: ungelöst (Restzahl 160–196, bester 16). L: 2026-11-25_einzelnull.
 - 25.11.2026, Auftrag Z, (30,10) mit Kugel um h1 je Klasse: 4394 Klassen statt geschätzter Dutzende, nach 10 Min. abgebrochen; ersetzt durch Vorfilter über alle vollen Bahnen (L: 2026-11-25_zweibahn).
 - 25.11.2026, Auftrag G, Gruppenmatrizen über nichtzyklischen Gruppen (10 Gruppen, Ordnung 18/20/21/25, Rand, 2 Spalten gestrichen): 0 Überlebende, kein Kandidat; reine Rechenzeit ca. 40 s, mit Kontrollen und exakten Gegenrechnungen ca. 5 Min. L: 2026-11-25_gruppen.
+- 25.11.2026, Auftrag S: `pip install ortools python-sat igraph` vom Berechtigungsfilter abgelehnt (eigene C-Suche statt SAT/bliss); Gleichwertigkeitssuche der 48er-Spanne (`spann_aut`, m=20) nach 10 Min. abgebrochen. L: 2026-11-25_spann.
+- 25.11.2026, Auftrag S, (15,4) 15 Paare, Rang-9-Vertreter ctrl16 y=40/7, loesung111 y=384/128/385/129: exakt je 180 s unentschieden, lokale Suche je 600 s Restzahl 233. L: 2026-11-25_spann.
+- 25.11.2026, Auftrag S, (20,6) 23 Paare im Spann der 48er: Zufallsstart 8 + Warmstart 8 (L(1p3)), je 4 in L(2p2) und L(neunter), je 900 s, 0 von 28, Restzahl 886–989. L: 2026-11-25_spann.
 - 24.11.2026, Kleitman-Probe (`src/kleitman_probe.py`, exakte Clique-Suche im Würfel): n=6, D=5 nach 600 s (Zeitgrenze) nicht fertig, nicht
   ausgewertet; Fall D = n−1 aus dem Skript genommen. n = 3–6 mit D ≤ n−2 (13 Fälle) lieferten die Formel. Kein Einfluss auf Teil B.
 - 24.11.2026, Hadamard-Tests (Abschnitt „Hadamard-Bauregel und Tests“):
@@ -211,6 +216,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - `src/hadamard_tests.py`: exakte Diskrepanz (Meet-in-the-middle, int8), Kontrollen, Test A/B, Überdeckungsradius, Nachprüfung der Gegenbeispiele für Test C. Kein Suchcode.
 - `src/pruefstand.c`: Gegenbeispielsuche (Teil B). `src/zirkulant.c`, `src/zirkulant_pruef.py`, `src/zirkulant_qualitaet.py`, `src/run_zirkulant.py`: Teil C.
 - `src/gruppenmatrix.c` (Suchcode), `src/gruppen_erzeuge.py`, `src/gruppen_pruef.py`, `src/run_gruppen.py`, `src/kern_nebenklassen.py` (Prüfcode/Treiber): Auftrag G. Tafeln, Logs, beste Matrizen `runs/gruppen/`.
+- `src/spann_zaehl.py` (Zählcode), `src/spann_dfs.c`, `src/spann_ls.c` (Suchcode), `src/spann_aut.c`, `src/spann_sym.py` (Symmetrie), `src/spann_pruef.py` (Prüfcode), `src/run_spann_teil{2b,3}.sh`: Auftrag S. Logs `runs/spann/`.
 - `src/leiter_allein.py`: Prüfcode, Alleinanteil je Nebenklasse (Auftrag L). Logs `runs/leiter48/`.
 - `src/gegen15_sym.py`: Prüfcode, Gegenrechnung (15,4) unter Spaltensymmetrie Ordnung 7, 11, 13 (Teil 1–4, Gleichwertigkeit zu `ctrl_16`). Logs `runs/gegenrechnung15/`.
 - `src/pruefe_reell16.py`, `src/dichte_schranke.py`, `src/kleitman_probe.py`: Prüfcode zu Ansatz 4 (Polieren um ctrl_16, Dichteschranke, Kleitman-Probe).
