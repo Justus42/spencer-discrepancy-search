@@ -1,0 +1,1 @@
+seed=5 start=None GELOEST (geloest nach 171.9s) Woerter=48 selbstkompl=True Radius(Brute-Force)=6 Datei=runs/woerter_n20_R6_d2_K12_typ11-9_k12_seed5.txt

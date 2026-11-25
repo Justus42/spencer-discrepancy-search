@@ -1,0 +1,1 @@
+runs/woerter_n20_R6_d2_K12_typ11-9_k12_seed5.txt: W=48 Kern=4 (Gew. [9, 11]) Klassen=12 Radius<=6=True min_allein=6108 allein=[6108, 6108, 6108, 6108, 6108, 6108, 6108, 6108, 6108, 6108, 6108, 6108]
