@@ -1,0 +1,8 @@
+s2c18-5_k13_t9-9 seed 1: LOESUNG nach 0.9 s, 523 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_n/s2c18-5_k13_t9-9_seed1.paar.txt: K=13, Typ (9,9), d=8: offene Klassen 0 von 65536
+s2c18-5_k13_t9-9 seed 2: LOESUNG nach 1.0 s, 589 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_n/s2c18-5_k13_t9-9_seed2.paar.txt: K=13, Typ (9,9), d=8: offene Klassen 0 von 65536
+s2c18-5_k13_t9-9 seed 3: LOESUNG nach 1.6 s, 793 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_n/s2c18-5_k13_t9-9_seed3.paar.txt: K=13, Typ (9,9), d=8: offene Klassen 0 von 65536
+s2c18-5_k13_t9-9 seed 4: LOESUNG nach 1.1 s, 547 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_n/s2c18-5_k13_t9-9_seed4.paar.txt: K=13, Typ (9,9), d=8: offene Klassen 0 von 65536

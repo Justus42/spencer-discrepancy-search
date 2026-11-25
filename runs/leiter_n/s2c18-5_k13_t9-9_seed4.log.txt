@@ -1,0 +1,3 @@
+  Runde 1 (W frei): Restzahl 1351, bestes 1351, Anforderungsvektoren 151, Iterationen 505, 1.1 s
+  Runde 2 (U frei): Restzahl 0, bestes 0, Anforderungsvektoren 132, Iterationen 547, 1.1 s
+LOESUNG nach 1.1 s, 547 Iterationen, 2 Runden, 0 Neustarts
