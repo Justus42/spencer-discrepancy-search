@@ -1,0 +1,36 @@
+ctrl_8.txt: m=7 Wörter=16 affiner Rang=4 |Kern|=16
+ctrl_9.txt: m=9 Wörter=18 affiner Rang=5 |Kern|=2
+ctrl_16.txt: m=15 Wörter=32 affiner Rang=8 |Kern|=2
+ctrl_17.txt: m=17 Wörter=32 affiner Rang=8 |Kern|=4
+L2026_17x17.txt: m=17 Wörter=32 affiner Rang=8 |Kern|=4
+astra_19.txt: m=19 Wörter=32 affiner Rang=8 |Kern|=2
+bahn15_40w.txt: m=15 Wörter=40 affiner Rang=11 |Kern|=2
+had24_1p3_paley12.txt: m=20 Wörter=48 affiner Rang=12 |Kern|=4
+had24_2p2_paley12.txt: m=20 Wörter=48 affiner Rang=12 |Kern|=4
+ctrl_8.txt: (m,R)=(7,1) Rang 4, Paare in L 8, eigener Code 8 Paare, min mu=1, Schranke k >= 8/1 = 8.00; Ziel 8 Paare -> nicht ausgeschlossen
+    Verteilung mu: {1: 8}
+ctrl_16.txt: (m,R)=(15,4) Rang 8, Paare in L 128, eigener Code 16 Paare, min mu=8, Schranke k >= 128/8 = 16.00; Ziel 15 Paare -> AUSGESCHLOSSEN
+    Verteilung mu: {8: 1, 14: 56, 16: 70, 29: 1}
+ctrl_17.txt: (m,R)=(17,5) Rang 8, Paare in L 128, eigener Code 16 Paare, min mu=8, Schranke k >= 128/8 = 16.00; Ziel 15 Paare -> AUSGESCHLOSSEN
+    Verteilung mu: {8: 1, 12: 42, 15: 192, 16: 147, 22: 8, 25: 7, 28: 49, 29: 59, 32: 7}
+L2026_17x17.txt: (m,R)=(17,5) Rang 8, Paare in L 128, eigener Code 16 Paare, min mu=8, Schranke k >= 128/8 = 16.00; Ziel 15 Paare -> AUSGESCHLOSSEN
+    Verteilung mu: {8: 1, 12: 42, 15: 192, 16: 147, 22: 8, 25: 7, 28: 49, 29: 59, 32: 7}
+astra_19.txt: (m,R)=(19,6) Rang 8, Paare in L 128, eigener Code 16 Paare, min mu=8, Schranke k >= 128/8 = 16.00; Ziel 15 Paare -> AUSGESCHLOSSEN
+    Verteilung mu: {8: 15, 14: 560, 16: 700, 22: 1, 23: 70, 28: 350, 29: 15, 30: 210, 43: 1, 48: 42, 52: 70, 55: 14}
+had24_1p3_paley12.txt: (m,R)=(20,6) Rang 12, Paare in L 2048, eigener Code 24 Paare, min mu=212, Schranke k >= 2048/212 = 9.66; Ziel 20 Paare -> nicht ausgeschlossen
+    Verteilung mu: {212: 36, 240: 219, 268: 1}
+had24_2p2_paley12.txt: (m,R)=(20,6) Rang 12, Paare in L 2048, eigener Code 24 Paare, min mu=212, Schranke k >= 2048/212 = 9.66; Ziel 20 Paare -> nicht ausgeschlossen
+    Verteilung mu: {212: 36, 240: 219, 268: 1}
+min mu 22 Werte (22, 28, 30, 32, 43) Erweiterungen 56 Beispiel v = 1 Schranke k >= 11.64
+min mu 24 Werte (24, 28, 30, 32, 45) Erweiterungen 70 Beispiel v = 7 Schranke k >= 10.67
+min mu 28 Werte (28, 32, 37) Erweiterungen 1 Beispiel v = 40 Schranke k >= 9.14
+--- rang6.py (Stichproben, Kandidat 1 der Mittags-Übergabe) ---
+m=20 R=6 Proben=3000 Modus=mehrfach (Startwert 1): Verteilung des Minimums {0: 2979, 1: 20}
+m=20 R=6 Proben=3000 Modus=verschieden (Startwert 2): Verteilung des Minimums {0: 510, 1: 2490}
+m=25 R=8 Proben=150 Modus=verschieden (Startwert 1): Verteilung des Minimums {0: 136, 1: 14}
+m=25 R=8 Proben=150 Modus=mehrfach (Startwert 2): Verteilung des Minimums {0: 150}
+--- spann9.py sat (CP-SAT, 2 Kerne) ---
+v=0 Paare im Universum=128 Bedingungen=6528 k<=16: OPTIMAL nach 0.3 s
+v=0 Paare im Universum=128 Bedingungen=6528 k<=15: INFEASIBLE nach 0.3 s
+v=40 Paare im Universum=256 Bedingungen=6528 k<=16: OPTIMAL nach 0.7 s
+v=40 Paare im Universum=256 Bedingungen=6528 k<=15: UNKNOWN nach 120.0 s
