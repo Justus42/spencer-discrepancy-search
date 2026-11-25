@@ -1,0 +1,2 @@
+Z5xQ8 shard 2/4: Funktionen 131072, ohne Gegenbeispiel (<= 6): 0, Sieb <= 4: Vorfilter 108887, Ueberlebende 728
+Z5xQ8 shard 2: exakt (build/exakt_disc) der Ueberlebenden: disc 6: 728; Hadamard unter den Ueberlebenden: 120

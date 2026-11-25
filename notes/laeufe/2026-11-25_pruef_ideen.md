@@ -53,7 +53,7 @@ Unabhängige Gegenprobe im selben Programm: direkte Zählung über die ganze Mat
 |---|---|
 | Kontrolle, alle 16 Zeilen, je 15 verdeckte Spalten (2^16 Ergänzungen) | Minimum 0, 4 Optima, echte Spalte darunter: 15 von 15 |
 | **16 gestrichene Zeilen × 15 Spalten = 240 Fälle** | **Minimum 233 in allen 240 Fällen, 4 Optima, echte Spalte (233) optimal, kein Wert unter 233; 240 von 240 direkte Gegenproben OK** |
-| Zusatz (nicht verlangt), zweite 32er-Klasse (`loesung111`) | siehe `klasse2_*.txt` im Ordner |
+| Zusatz (nicht verlangt), zweite 32er-Klasse (`loesung111`) | Kontrolle Minimum 0 (4 Optima, echte Spalte darunter, 15 von 15); 240 Fälle alle Minimum 233, 4 Optima, echte Spalte optimal |
 
 Rechenzeit 13 s (240 Fälle) bzw. 1 s (Kontrolle). Erwartung erfüllt, keine Abweichung.
 

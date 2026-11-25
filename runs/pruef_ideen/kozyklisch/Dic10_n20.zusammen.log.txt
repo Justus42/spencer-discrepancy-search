@@ -1,0 +1,8 @@
+Dic10 shard 0/4: Funktionen 131072, ohne Gegenbeispiel (<= 6): 0, Sieb <= 4: Vorfilter 42232, Ueberlebende 13850
+Dic10 shard 0: exakt (build/exakt_disc) der Ueberlebenden: disc 6: 13850; Hadamard unter den Ueberlebenden: 1400
+Dic10 shard 1/4: Funktionen 131072, ohne Gegenbeispiel (<= 6): 0, Sieb <= 4: Vorfilter 42230, Ueberlebende 13850
+Dic10 shard 1: exakt (build/exakt_disc) der Ueberlebenden: disc 6: 13850; Hadamard unter den Ueberlebenden: 1400
+Dic10 shard 2/4: Funktionen 131072, ohne Gegenbeispiel (<= 6): 0, Sieb <= 4: Vorfilter 42071, Ueberlebende 13850
+Dic10 shard 2: exakt (build/exakt_disc) der Ueberlebenden: disc 6: 13850; Hadamard unter den Ueberlebenden: 1400
+Dic10 shard 3/4: Funktionen 131072, ohne Gegenbeispiel (<= 6): 0, Sieb <= 4: Vorfilter 42447, Ueberlebende 13850
+Dic10 shard 3: exakt (build/exakt_disc) der Ueberlebenden: disc 6: 13850; Hadamard unter den Ueberlebenden: 1400

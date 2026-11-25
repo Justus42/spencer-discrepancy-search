@@ -1,0 +1,5 @@
+Z3xDic3: n = 18, Funktionen 131072, Gegenbeispiele nachgerechnet: Fehlstellen 0, nicht bestanden 0 (max <= 6 verlangt)
+  Verteilung des erreichten Maximums der gespeicherten x: {2: 27, 4: 3712, 6: 127333}
+Z3xDic3: 4752 Ueberlebende (eigene Matrizen), exakte Diskrepanz laut build/exakt_disc: {6: 4752}; Hadamard-Matrizen (M M^T = nI): 0
+  Stichprobe 300 Nicht-Ueberlebende: mit x unter dem Ziel 6 gefunden (disc < 6): 300, nicht: 0
+ERGEBNIS Z3xDic3 bestaetigt
