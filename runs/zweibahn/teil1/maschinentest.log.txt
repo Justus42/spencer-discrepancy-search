@@ -1,0 +1,41 @@
+=== 6 0 4 1 5
+m=12 Bahnen 356 voll 330 kurz(erlaubt) 26   kurz 2 Paare: 8   kurz 3 Paare: 72   kurz 4 Paare: 224   kurz 5 Paare: 2184 SUMME 2488 
+  kurz 2 Paare (Paare gesamt 8, Woerter 16): 8   kurz 3 Paare (Paare gesamt 9, Woerter 18): 72   kurz 4 Paare (Paare gesamt 10, Woerter 20): 224   kurz 5 Paare (Paare gesamt 11, Woerter 22): 2184 SUMME Ueberdeckungen: 2488 Brute-Force-Nachpruefung der Blaetter: 240 ok, 0 falsch 
+SUMME Ueberdeckungen: 2488
+=== 6 0 4 0 6
+m=12 Bahnen 356 voll 330 kurz(erlaubt) 26 SUMME 0 
+SUMME Ueberdeckungen: 0 Brute-Force-Nachpruefung der Blaetter: 0 ok, 0 falsch 
+SUMME Ueberdeckungen: 0
+=== 5 1 4 1 6
+m=11 Bahnen 208 voll 204 kurz(erlaubt) 4   kurz 1 Paare: 144   kurz 2 Paare: 556   kurz 3 Paare: 616   kurz 4 Paare: 204 SUMME 1520 
+  kurz 1 Paare (Paare gesamt 6, Woerter 12): 144   kurz 2 Paare (Paare gesamt 7, Woerter 14): 556   kurz 3 Paare (Paare gesamt 8, Woerter 16): 616   kurz 4 Paare (Paare gesamt 9, Woerter 18): 204 SUMME Ueberdeckungen: 1520 Brute-Force-Nachpruefung der Blaetter: 14 ok, 0 falsch 
+SUMME Ueberdeckungen: 1520
+=== 4 2 3 1 5
+m=10 Bahnen 140 voll 120 kurz(erlaubt) 20   kurz 4 Paare: 688   kurz 5 Paare: 4048 SUMME 4736 
+  kurz 4 Paare (Paare gesamt 8, Woerter 16): 688   kurz 5 Paare (Paare gesamt 9, Woerter 18): 4048 SUMME Ueberdeckungen: 4736 Brute-Force-Nachpruefung der Blaetter: 330 ok, 0 falsch 
+SUMME Ueberdeckungen: 4736
+=== 4 2 3 0 6
+m=10 Bahnen 140 voll 120 kurz(erlaubt) 20 SUMME 0 
+SUMME Ueberdeckungen: 0 Brute-Force-Nachpruefung der Blaetter: 0 ok, 0 falsch 
+SUMME Ueberdeckungen: 0
+=== 6 1 4 2 3
+m=13 Bahnen 700 voll 670 kurz(erlaubt) 30   kurz 0 Paare: 96   kurz 1 Paare: 6800   kurz 2 Paare: 76036   kurz 3 Paare: 438124 SUMME 521056 
+  kurz 0 Paare (Paare gesamt 12, Woerter 24): 96   kurz 1 Paare (Paare gesamt 13, Woerter 26): 6800   kurz 2 Paare (Paare gesamt 14, Woerter 28): 76036   kurz 3 Paare (Paare gesamt 15, Woerter 30): 438124 SUMME Ueberdeckungen: 521056 Brute-Force-Nachpruefung der Blaetter: 25280 ok, 0 falsch 
+SUMME Ueberdeckungen: 521056
+=== 5 0 3 2 2
+m=10 Bahnen 104 voll 102 kurz(erlaubt) 2   kurz 0 Paare: 505   kurz 1 Paare: 1938   kurz 2 Paare: 1785 SUMME 4228 
+  kurz 0 Paare (Paare gesamt 10, Woerter 20): 505   kurz 1 Paare (Paare gesamt 11, Woerter 22): 1938   kurz 2 Paare (Paare gesamt 12, Woerter 24): 1785 SUMME Ueberdeckungen: 4228 Brute-Force-Nachpruefung der Blaetter: 196 ok, 0 falsch 
+SUMME Ueberdeckungen: 4228
+=== 4 1 3 1 5
+m=9 Bahnen 70 voll 60 kurz(erlaubt) 10   kurz 1 Paare: 16   kurz 2 Paare: 152   kurz 3 Paare: 648   kurz 4 Paare: 1584   kurz 5 Paare: 3104 SUMME 5504 
+  kurz 1 Paare (Paare gesamt 5, Woerter 10): 16   kurz 2 Paare (Paare gesamt 6, Woerter 12): 152   kurz 3 Paare (Paare gesamt 7, Woerter 14): 648   kurz 4 Paare (Paare gesamt 8, Woerter 16): 1584   kurz 5 Paare (Paare gesamt 9, Woerter 18): 3104 SUMME Ueberdeckungen: 5504 Brute-Force-Nachpruefung der Blaetter: 138 ok, 0 falsch 
+SUMME Ueberdeckungen: 5504
+=== 4 1 3 0 9
+m=9 Bahnen 70 voll 60 kurz(erlaubt) 10 SUMME 0 
+SUMME Ueberdeckungen: 0 Brute-Force-Nachpruefung der Blaetter: 0 ok, 0 falsch 
+=== 4 2 3 0 12
+m=10 Bahnen 140 voll 120 kurz(erlaubt) 20 SUMME 0 
+SUMME Ueberdeckungen: 0 Brute-Force-Nachpruefung der Blaetter: 0 ok, 0 falsch 
+=== 6 0 4 0 12
+m=12 Bahnen 356 voll 330 kurz(erlaubt) 26   kurz 8 Paare: 9   kurz 9 Paare: 56   kurz 10 Paare: 164   kurz 11 Paare: 628   kurz 12 Paare: 2302 SUMME 3159 
+  kurz 8 Paare (Paare gesamt 8, Woerter 16): 9   kurz 9 Paare (Paare gesamt 9, Woerter 18): 56   kurz 10 Paare (Paare gesamt 10, Woerter 20): 164   kurz 11 Paare (Paare gesamt 11, Woerter 22): 628   kurz 12 Paare (Paare gesamt 12, Woerter 24): 2302 SUMME Ueberdeckungen: 3159 Brute-Force-Nachpruefung der Blaetter: 1566 ok, 0 falsch 

@@ -1,0 +1,16 @@
+A=58b B=6f2 kurz=3f80/1,3fff/1 kurzgewicht=2 ergaenzungen=1
+A=58b B=be8 kurz=7f/1,3fff/1 kurzgewicht=2 ergaenzungen=1
+A=58b B=46f2 kurz=3fff/1,7f80/1 kurzgewicht=2 ergaenzungen=1
+A=58b B=c6f2 kurz=3fff/1,ff80/1 kurzgewicht=2 ergaenzungen=1
+A=58b B=8be8 kurz=3fff/1,807f/1 kurzgewicht=2 ergaenzungen=1
+A=58b B=86f2 kurz=3fff/1,bf80/1 kurzgewicht=2 ergaenzungen=1
+A=58b B=4be8 kurz=3fff/1,407f/1 kurzgewicht=2 ergaenzungen=1
+A=58b B=cbe8 kurz=3fff/1,c07f/1 kurzgewicht=2 ergaenzungen=1
+A=58d B=ea3 kurz=7f/1,3fff/1 kurzgewicht=2 ergaenzungen=1
+A=58d B=5f2 kurz=3f80/1,3fff/1 kurzgewicht=2 ergaenzungen=1
+A=58d B=45f2 kurz=3fff/1,7f80/1 kurzgewicht=2 ergaenzungen=1
+A=58d B=c5f2 kurz=3fff/1,ff80/1 kurzgewicht=2 ergaenzungen=1
+A=58d B=8ea3 kurz=3fff/1,807f/1 kurzgewicht=2 ergaenzungen=1
+A=58d B=85f2 kurz=3fff/1,bf80/1 kurzgewicht=2 ergaenzungen=1
+A=58d B=4ea3 kurz=3fff/1,407f/1 kurzgewicht=2 ergaenzungen=1
+A=58d B=cea3 kurz=3fff/1,c07f/1 kurzgewicht=2 ergaenzungen=1

@@ -1,0 +1,14 @@
+Wed Nov 25 07:06:24 UTC 2026
+# zweibahn_zaehl q=10 f=0 m=20 R=6 k=1 B=10 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:4 2:2 5:204 10:52326  gesamt 52536  (0.0 s)
+Kontrolle: Summe Groessen = 524288, 2^(m-1) = 524288
+erlaubte kurze Bahnen (Groesse <= 10): 210
+harte Klassen: 0 von 52536  (0.0 s)
+Normalisator-Klassen voller Bahnen: 543 (Erzeuger 8), Summe Klassengroessen 52326 = 52326 volle Bahnen
+(0.0 s)
+Blaetter (ungewichtet): 0
+Klassen A mit Ueberdeckung: 0, gewichtet 0
+Ueberdeckungen nach Zahl kurzer Paare (k=1 volle Bahnen):
+SUMME Ueberdeckungen: 0
+Laufzeit 20.2 s
+Rueckgabe 0

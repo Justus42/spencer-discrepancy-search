@@ -1,0 +1,35 @@
+Wed Nov 25 07:06:10 UTC 2026
+# zweibahn_zaehl q=7 f=1 m=15 R=4 k=2 B=2 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:4 7:2340  gesamt 2344  (0.0 s)
+Kontrolle: Summe Groessen = 16384, 2^(m-1) = 16384
+erlaubte kurze Bahnen (Groesse <= 2): 4
+harte Klassen: 1540 von 2344  (0.0 s)
+Normalisator-Klassen voller Bahnen: 19 (Erzeuger 11), Summe Klassengroessen 2340 = 2340 volle Bahnen
+(0.0 s)
+  Klasse 1/19 A=1 Gewicht 8 Rest 1654 hart 1330 Kandidaten B 1255 harte ueberdeckt 0  (0.0 s)
+  Klasse 2/19 A=3 Gewicht 24 Rest 1413 hart 1022 Kandidaten B 1480 harte ueberdeckt 0  (0.0 s)
+  Klasse 3/19 A=7 Gewicht 24 Rest 1380 hart 1008 Kandidaten B 1337 harte ueberdeckt 0  (0.0 s)
+  Klasse 4/19 A=b Gewicht 16 Rest 1212 hart 896 Kandidaten B 1481 harte ueberdeckt 0  (0.0 s)
+  Klasse 5/19 A=81 Gewicht 28 Rest 1257 hart 905 Kandidaten B 1255 harte ueberdeckt 0  (0.0 s)
+  Klasse 6/19 A=83 Gewicht 168 Rest 1071 hart 789 Kandidaten B 1481 harte ueberdeckt 0  (0.0 s)
+  Klasse 7/19 A=87 Gewicht 168 Rest 1068 hart 725 Kandidaten B 1337 harte ueberdeckt 0  (0.0 s)
+  Klasse 8/19 A=8b Gewicht 112 Rest 923 hart 595 Kandidaten B 1480 harte ueberdeckt 0  (0.0 s)
+  Klasse 9/19 A=183 Gewicht 84 Rest 1056 hart 677 Kandidaten B 1255 harte ueberdeckt 0  (0.0 s)
+  Klasse 10/19 A=185 Gewicht 168 Rest 910 hart 564 Kandidaten B 1337 harte ueberdeckt 0  (0.0 s)
+  Klasse 11/19 A=187 Gewicht 168 Rest 1089 hart 696 Kandidaten B 1481 harte ueberdeckt 0  (0.0 s)
+  Klasse 12/19 A=18b Gewicht 336 Rest 863 hart 530 Kandidaten B 1480 harte ueberdeckt 0  (0.0 s)
+  Klasse 13/19 A=193 Gewicht 168 Rest 1007 hart 643 Kandidaten B 1480 harte ueberdeckt 0  (0.0 s)
+  Klasse 14/19 A=195 Gewicht 168 Rest 864 hart 535 Kandidaten B 1255 harte ueberdeckt 0  (0.0 s)
+  Klasse 15/19 A=387 Gewicht 84 Rest 1210 hart 726 Kandidaten B 1337 harte ueberdeckt 0  (0.0 s)
+  Klasse 16/19 A=38b Gewicht 336 Rest 910 hart 512 Kandidaten B 1255 harte ueberdeckt 0  (0.0 s)
+  Klasse 17/19 A=393 Gewicht 168 Rest 942 hart 538 Kandidaten B 1255 harte ueberdeckt 0  (0.0 s)
+  Klasse 18/19 A=58b Gewicht 56 Rest 807 hart 440 Kandidaten B 1480 harte ueberdeckt 2  (0.0 s)
+  Klasse 19/19 A=58d Gewicht 56 Rest 803 hart 434 Kandidaten B 1337 harte ueberdeckt 2  (0.0 s)
+Blaetter (ungewichtet): 4
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 4, gewichtet 224
+Ueberdeckungen nach Zahl kurzer Paare (k=2 volle Bahnen, ungeordnet):
+  kurz 2 Paare (Paare gesamt 16, Woerter 32): 112
+SUMME Ueberdeckungen: 112
+Brute-Force-Nachpruefung der Blaetter: 4 ok, 0 falsch
+Laufzeit 0.0 s
+Rueckgabe 0
