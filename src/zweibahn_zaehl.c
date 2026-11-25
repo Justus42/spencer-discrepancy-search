@@ -25,7 +25,7 @@
  *  - Option -v: jedes Blatt (A, B, gewaehlte kurze Bahnen) per Brute-Force ueber alle 2^m Punkte nachpruefen,
  *    ohne Klassen (nur fuer m <= 24).
  *
- * Aufruf: zweibahn_zaehl q f R k B [-n] [-v] [-o datei] [-z zeitgrenze_s]
+ * Aufruf: zweibahn_zaehl q f R k B [-n] [-v] [-o datei] [-z zeitgrenze_s] [-s erste_klasse] [-e ende_klasse]
  * Bauen:  gcc -O3 -march=native -fopenmp -o build/zweibahn_zaehl src/zweibahn_zaehl.c
  */
 #include <stdio.h>
@@ -36,7 +36,7 @@
 
 typedef unsigned __int128 u128;
 static int q, f, m, R, K, BUD, NOSYM = 0, VERIFY = 0;
-static double TLIM = 0;
+static double TLIM = 0; static long CSTART = 0, CEND = -1;
 static uint32_t M1, MF, FULL;
 static FILE *OUT = NULL;
 
@@ -254,6 +254,8 @@ int main(int argc, char **argv) {
         else if (!strcmp(argv[i], "-v")) VERIFY = 1;
         else if (!strcmp(argv[i], "-o") && i + 1 < argc) OUT = fopen(argv[++i], "w");
         else if (!strcmp(argv[i], "-z") && i + 1 < argc) TLIM = atof(argv[++i]);
+        else if (!strcmp(argv[i], "-s") && i + 1 < argc) CSTART = atol(argv[++i]);
+        else if (!strcmp(argv[i], "-e") && i + 1 < argc) CEND = atol(argv[++i]);
     }
     m = 2 * q + f;
     if (m > 31 || BUD > 62 || K < 0 || K > 2) { fprintf(stderr, "Parameter ausserhalb\n"); return 2; }
@@ -364,8 +366,10 @@ int main(int argc, char **argv) {
         for (long i = 0; i < NP; i++) { if (HARD[i]) HL[nHL++] = P[i]; if (PS[i] == q) FL[nFL++] = P[i]; }
     }
     long long cls_done = 0;
-    for (long a = 0; a < NA; a++) {
-        if (TLIM > 0 && omp_get_wtime() - t0 > TLIM) { printf("ZEITGRENZE nach %lld von %ld Klassen\n", cls_done, NA); goto report_partial; }
+    if (CEND < 0 || CEND > NA) CEND = NA;
+    if (CSTART > 0 || CEND < NA) printf("Klassenbereich [%ld, %ld) von %ld\n", CSTART, CEND, NA);
+    for (long a = CSTART; a < CEND; a++) {
+        if (TLIM > 0 && omp_get_wtime() - t0 > TLIM) { printf("ZEITGRENZE: Klassen [%ld, %ld) fertig, weiter mit -s %ld\n", CSTART, a, a); goto report_partial; }
         uint32_t A = AREP[a], rA[64]; rots(A, rA);
         long nua = 0, nuh = 0;
         if (K == 1) {
@@ -436,7 +440,7 @@ int main(int argc, char **argv) {
         survivors += sv; surv_w += (u128)sv * AW[a]; leaves += lv;
         cls_done++;
         if (NA <= 200 || cls_done % 100 == 0) {
-            printf("  Klasse %lld/%ld A=%x Gewicht ", cls_done, NA, A); print128(AW[a]);
+            printf("  Klasse %ld/%ld A=%x Gewicht ", a + 1, NA, A); print128(AW[a]);
             printf(" hart offen %ld Kandidaten B %lld harte ueberdeckt %lld  (%.1f s)\n", nuh, nb, sv, omp_get_wtime() - t0);
             fflush(stdout);
         }
