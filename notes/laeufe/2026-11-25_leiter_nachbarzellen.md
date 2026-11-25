@@ -47,3 +47,8 @@ Logs `runs/leiter_n/s3c18-5a_*`, `s3c18-5b_*`. Zelle (18,5) abgeschlossen: klein
 | (11,5) | 16 (64) | K = 15: 0 von 4, Restzahl 78 / 78 / 84 / 78 |
 
 K = 16 in allen vier Typen gelöst; das ist der Tabellenwert 64, kein Fortschritt. Treffer mit K = 16 nur mit `zerl_offen.py` gezählt (Auftrag: Prüfung ab 4K < 64).
+
+## Schritt 3: (16,4), Typ (9,7), K = 15 (60 Wörter), 8 neue Startwerte (5–12), je 900 s, zwei Blöcke (23:17–23:47 UTC)
+
+0 von 8 gelöst, beste Restzahl 28 (sieben Läufe), 36 (ein Lauf); zusammen mit der Stufe (28 / 28 / 28 / 36) kein Treffer in 12 Startwerten (Suche erfolglos).
+Zelle (16,4) abgeschlossen: kleinstes erreichtes K = 16 (64 Wörter) in allen vier Typen, kein Fortschritt gegenüber der Tabelle. Logs `s3c16-4a_*`, `s3c16-4b_*`.
