@@ -1,0 +1,7 @@
+Wed Nov 25 10:58:39 UTC 2026
+Problem runs/spann/probleme/ctrl16_r9_y1.txt: d=8 |G|=256 Nebenklassen=64 min mu=22, k=15, Zeitlimit 180 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 1232; Groessen (absteigend): 23040 23040 23040 23040 23040 23040 23040 23040 23040 23040 23040 23040 23040 23040 15360 15360 15360 15360 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 11520 ...
+Aufgaben: 8449 (5.8 s)
+ERGEBNIS k=15: UNENTSCHIEDEN (Zeitlimit, 1624 von 8449 Aufgaben fertig)
+Knoten 9197769, Laufzeit 180.0 s
+Wed Nov 25 11:01:39 UTC 2026

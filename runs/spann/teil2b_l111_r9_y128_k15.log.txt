@@ -1,0 +1,7 @@
+Wed Nov 25 11:12:17 UTC 2026
+Problem runs/spann/probleme/l111_r9_y128.txt: d=8 |G|=256 Nebenklassen=64 min mu=27, k=15, Zeitlimit 180 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 886; Groessen (absteigend): 56448 56448 56448 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 18816 18816 18816 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 ...
+Aufgaben: 8886 (4.6 s)
+ERGEBNIS k=15: UNENTSCHIEDEN (Zeitlimit, 670 von 8886 Aufgaben fertig)
+Knoten 7524868, Laufzeit 180.0 s
+Wed Nov 25 11:15:17 UTC 2026

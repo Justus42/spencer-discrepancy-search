@@ -225,7 +225,30 @@ def universen(liste, orbits_datei, pfad):
     return spanne
 
 
-if __name__ == '__main__':
+def startdatei(problem, matrix, ziel, ohne=None):
+    """Zeilen einer Matrix als Elemente von G des Problems (Paarwort w oder ~w); optional ohne die Zeile Nummer `ohne`."""
+    f = open(problem); kopf = f.readline(); d, nc = map(int, f.readline().split())
+    W = list(map(int, f.readline().split()))
+    m = int(kopf.split('m=')[1].split(',')[0]); ALLE = (1 << m) - 1
+    pos = {}
+    for g, w in enumerate(W):
+        pos[w] = g; pos[w ^ ALLE] = g
+    m2, Z = lies_woerter(matrix)
+    assert m2 == m
+    el = []
+    for i, w in enumerate(Z):
+        if i == ohne:
+            continue
+        if w not in pos:
+            print(f"{matrix}: Zeile {i} nicht im Spann"); return None
+        el.append(pos[w])
+    open(ziel, 'w').write(" ".join(map(str, el)) + "\n")
+    return el
+
+
+if __name__ == '__main__' and sys.argv[1] == 'startdatei':
+    print(startdatei(sys.argv[2], sys.argv[3], sys.argv[4], int(sys.argv[5]) if len(sys.argv) > 5 else None))
+elif __name__ == '__main__':
     a = sys.argv
     if a[1] == 'info':
         info(a[2], int(a[3]))
