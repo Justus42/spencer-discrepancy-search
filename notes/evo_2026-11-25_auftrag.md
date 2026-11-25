@@ -2,12 +2,13 @@
 
 Vom Orchestrator, 25.11.2026. Grundlage: `notes/ideen_2026-11-25.md` (Abschnitte 4, 8, 10), `notes/ideen_2026-11-25_pruefvermerk.md`,
 Astra-Antwort `notes/openrouter/ideen_2026-11-25--openai-gpt-6.2-astra.md` (Abschnitt 3, Bewertungsleiter). Freigabe und Start durch Justus.
-Der Ertrag aus Gemini Deep Research steht noch aus und kann den Auftrag ändern.
+Der Gemini-Bericht vom 25.11. ist eingearbeitet (`notes/gemini/ideen_2026-11-25_kurz.md`): Bauhinweise für Insel A, Insel „Saat“.
 
 ```
 Auftrag E (Opus, Effort hoch): Suchprogramme in Runden gegen einen eingefrorenen Bewerter verbessern
 
-Lies zuerst STATUS.md, CLAUDE.md, notes/ideen_2026-11-25.md (Abschnitte 4, 8, 10) und notes/ideen_2026-11-25_pruefvermerk.md.
+Lies zuerst STATUS.md, CLAUDE.md, notes/ideen_2026-11-25.md (Abschnitte 4, 8, 10, 11), notes/ideen_2026-11-25_pruefvermerk.md und
+notes/gemini/ideen_2026-11-25_kurz.md.
 Eigener Branch, Protokoll notes/laeufe/<Datum>_evo.md, Logs und Archiv runs/evo/, STATUS.md erst am Ende. Nichts installieren
 (kein pip, kein apt); C mit gcc -O3 -march=native -fopenmp, Python nur Standardbibliothek und numpy.
 Die Stand-Zeile (Zeile 3) von STATUS.md und LANDKARTE.md nicht ändern.
@@ -35,8 +36,15 @@ Schritt 2, Archiv und Runde.
   Elter, was geändert, warum (zwei Zeilen). Aufruf einheitlich: pNNN m R PAARE STARTWERT SEKUNDEN AUSGABEDATEI. (3) Vier Startwerte parallel,
   festes Zeitbudget. (4) Bewerter auf alle Ausgaben. (5) Archiv ergänzen, committen, pushen.
   Regeln: Ein Kind, das dieselben Zahlen liefert wie der Elter, zählt als Fehlschlag. Programme lesen keine Dateien aus controls/ oder runs/
-  (blind), außer in der Insel „Saat“. Mindestens drei Inseln: A Züge auf Wortebene mit Tabu und Punktgewichten (Gewicht eines Punkts steigt,
-  solange er offen bleibt); B Doppelungsform (Paar (U,W), Wörter (U_i,W_i) und (U_i,-W_i), Bedingung max_i(|U y|_i + |W z|_i) >= d, siehe
+  (blind), außer in der Insel „Saat“. Mindestens drei Inseln plus Saat:
+  A Züge auf Wortebene: einen offenen Punkt wählen und ein Wort durch einen Bitwechsel zu ihm hinziehen; Zähler je Klasse fortschreiben statt
+    neu zählen (ein Bitwechsel ändert 2*C(m-1,R) Zähler, bei (20,6) 54 264); Tabu über 6 bis 9 Schritte; Punktgewichte (Gewicht eines Punkts
+    steigt, solange er offen bleibt) an- und abschaltbar, beide Fassungen im Archiv vergleichen. Vorbilder laut Literaturbericht (ungeprüft):
+    Marosi, arXiv 2608.19872; van Staden, Preprint Oktober 2026 (dort war bei stark überlappenden Überdeckungen Tabu ohne Gewichte besser).
+  Saat (erst nach K2, als eigene Insel): Streichen und Reparieren ab dem 48er. Start: controls/had24_1p3_paley12.txt ohne eine Zeile
+    (1297 offene Klassen) oder ohne eine Nebenklasse (3054). Bekannt aus dem Vortest: Kein Wechsel von ein oder zwei Einträgen einer Zeile
+    senkt die 1297; ein Schnellprogramm blieb 240 s bei 1297. Die Insel braucht also Züge, die ein lokales Minimum verlassen.
+  B Doppelungsform (Paar (U,W), Wörter (U_i,W_i) und (U_i,-W_i), Bedingung max_i(|U y|_i + |W z|_i) >= d, siehe
   notes/ideen_2026-11-25.md Abschnitt 3); C freie Erfindung ohne Wiederverwendung vorhandenen Suchcodes. Alle fünf Runden drei Zeilen ins Protokoll:
   was trägt, was nicht; bei fünf Runden ohne Verbesserung die Insel wechseln.
   Bewertung: zuerst die kleinste Paarzahl mit 0 offenen Klassen. Bei Gleichstand der Bonus g = log2((1+b)/(1+h)) für den besten Lauf mit einem

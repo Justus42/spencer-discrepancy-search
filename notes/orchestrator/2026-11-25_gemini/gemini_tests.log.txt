@@ -1,0 +1,11 @@
+Teil 1: groesste Kappe (eine Seite) bei n = 16: Schwelle 7: 3882 Punkte; Schwelle > 7,0711: 2517 Punkte; 32 solche Kappen: Dichte 1.229 ; Tabelle K(16,4) >= 34 > 32
+  je Zeile (private orientierte Punkte, groesster Abstand untereinander, Zahl der Paare im Abstand 8): [(233, 8, 924)]
+Teil 2: Hadamard 20 Klasse 1, 1 Spalte(n) ersetzt, 1000 Stichproben: in 0 Faellen kein x mit max <= 6 unter 20000 Zufallspunkten; kleinste Trefferzahl 88
+Teil 2: Hadamard 20 Klasse 1, 2 Spalte(n) ersetzt, 1000 Stichproben: in 0 Faellen kein x mit max <= 6 unter 20000 Zufallspunkten; kleinste Trefferzahl 147
+Teil 2: Hadamard 20 Klasse 1, 3 Spalte(n) ersetzt, 1000 Stichproben: in 0 Faellen kein x mit max <= 6 unter 20000 Zufallspunkten; kleinste Trefferzahl 224
+Teil 2: Hadamard 20 Klasse 2, 1 Spalte(n) ersetzt, 1000 Stichproben: in 0 Faellen kein x mit max <= 6 unter 20000 Zufallspunkten; kleinste Trefferzahl 85
+Teil 2: Hadamard 20 Klasse 2, 2 Spalte(n) ersetzt, 1000 Stichproben: in 0 Faellen kein x mit max <= 6 unter 20000 Zufallspunkten; kleinste Trefferzahl 149
+Teil 2: Hadamard 20 Klasse 2, 3 Spalte(n) ersetzt, 1000 Stichproben: in 0 Faellen kein x mit max <= 6 unter 20000 Zufallspunkten; kleinste Trefferzahl 248
+Teil 2: Hadamard 20 Klasse 3, 1 Spalte(n) ersetzt, 1000 Stichproben: in 0 Faellen kein x mit max <= 6 unter 20000 Zufallspunkten; kleinste Trefferzahl 87
+Teil 2: Hadamard 20 Klasse 3, 2 Spalte(n) ersetzt, 1000 Stichproben: in 0 Faellen kein x mit max <= 6 unter 20000 Zufallspunkten; kleinste Trefferzahl 117
+Teil 2: Hadamard 20 Klasse 3, 3 Spalte(n) ersetzt, 1000 Stichproben: in 0 Faellen kein x mit max <= 6 unter 20000 Zufallspunkten; kleinste Trefferzahl 244
