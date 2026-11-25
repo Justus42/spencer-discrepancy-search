@@ -1,9 +1,11 @@
-# Auftrag P (Entwurf 25.11.2026, noch nicht freigegeben): Gegenrechnung der Vortests der Ideensammlung
+# Auftrag P (freigegeben 25.11.2026, 18:10 Uhr): Gegenrechnung der Vortests der Ideensammlung
+
+Freigabe durch Justus im Orchestrator-Chat, 25.11.2026, 18:10 Uhr: „E, P und H parallel“. Die drei Sitzungen laufen nebeneinander und neben R9:
+je eigener Branch, je eigenes Protokoll, `STATUS.md` und `LANDKARTE.md` erst am Ende und erst nach `main` holen.
 
 Vom Orchestrator, 25.11.2026. Grundlage: `notes/ideen_2026-11-25.md`, `notes/ideen_2026-11-25_pruefvermerk.md`, Skripte und Logs in
 `notes/orchestrator/2026-11-25_ideen/`. Zweck: Projektregel „eigene Rechnungen des Orchestrators werden von einer Sitzung gegengerechnet“.
-Kein Rekordweg; erst danach dürfen die Befunde in `STATUS.md` und `LANDKARTE.md`. Freigabe und Start durch Justus.
-
+Kein Rekordweg; erst danach dürfen die Befunde in `STATUS.md` und `LANDKARTE.md`. 
 ```
 Auftrag P (Sonnet, Effort hoch): Vortests vom 25.11.2026 mit eigenen Programmen nachrechnen, Belege speichern
 

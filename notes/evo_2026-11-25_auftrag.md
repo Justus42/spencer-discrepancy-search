@@ -1,8 +1,10 @@
-# Auftrag E (Entwurf 25.11.2026, noch nicht freigegeben): Evolutionsschleife für freie Suchprogramme
+# Auftrag E (freigegeben 25.11.2026, 18:10 Uhr): Evolutionsschleife für freie Suchprogramme
+
+Freigabe durch Justus im Orchestrator-Chat, 25.11.2026, 18:10 Uhr: „E, P und H parallel“. Die drei Sitzungen laufen nebeneinander und neben R9:
+je eigener Branch, je eigenes Protokoll, `STATUS.md` und `LANDKARTE.md` erst am Ende und erst nach `main` holen.
 
 Vom Orchestrator, 25.11.2026. Grundlage: `notes/ideen_2026-11-25.md` (Abschnitte 4, 8, 10), `notes/ideen_2026-11-25_pruefvermerk.md`,
-Astra-Antwort `notes/openrouter/ideen_2026-11-25--openai-gpt-6.2-astra.md` (Abschnitt 3, Bewertungsleiter). Freigabe und Start durch Justus.
-Der Gemini-Bericht vom 25.11. ist eingearbeitet (`notes/gemini/ideen_2026-11-25_kurz.md`): Bauhinweise für Insel A, Insel „Saat“.
+Astra-Antwort `notes/openrouter/ideen_2026-11-25--openai-gpt-6.2-astra.md` (Abschnitt 3, Bewertungsleiter). Der Gemini-Bericht vom 25.11. ist eingearbeitet (`notes/gemini/ideen_2026-11-25_kurz.md`): Bauhinweise für Insel A, Insel „Saat“.
 
 ```
 Auftrag E (Opus, Effort hoch): Suchprogramme in Runden gegen einen eingefrorenen Bewerter verbessern

@@ -1,8 +1,11 @@
-# Auftrag H (Entwurf 25.11.2026, noch nicht freigegeben): Zerlegung der Kern-⟨1,a⟩-Familie, Halbproblem-Löser
+# Auftrag H (freigegeben 25.11.2026, 18:10 Uhr): Zerlegung der Kern-⟨1,a⟩-Familie, Halbproblem-Löser
+
+Freigabe durch Justus im Orchestrator-Chat, 25.11.2026, 18:10 Uhr: „E, P und H parallel“. Die drei Sitzungen laufen nebeneinander und neben R9:
+je eigener Branch, je eigenes Protokoll, `STATUS.md` und `LANDKARTE.md` erst am Ende und erst nach `main` holen.
 
 Vom Orchestrator, 25.11.2026. Grundlage: `notes/ideen_2026-11-25.md` (Abschnitt 3), `notes/ideen_2026-11-25_pruefvermerk.md`, Sol-Antwort
 `notes/openrouter/beweise_2026-11-25--openai-gpt-6.2-sol.md` (Fragen 2 und 3), Vortest-Skripte `notes/orchestrator/2026-11-25_ideen/zerlegung.py`,
-`profile_d9.py`, `schachtel.py`. Freigabe und Start durch Justus. Der Gemini-Bericht vom 25.11. ist eingearbeitet (`notes/gemini/ideen_2026-11-25_kurz.md`): keine Vorarbeit in der
+`profile_d9.py`, `schachtel.py`. Der Gemini-Bericht vom 25.11. ist eingearbeitet (`notes/gemini/ideen_2026-11-25_kurz.md`): keine Vorarbeit in der
 Literatur gefunden; zweite Positivkontrolle `ctrl_17`.
 
 ```
