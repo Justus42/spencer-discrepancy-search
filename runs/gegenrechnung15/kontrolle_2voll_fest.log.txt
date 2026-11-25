@@ -1,0 +1,17 @@
+13 () Woerter 52 Ueberdeckungen 0 Minimum 2
+13 (0,) Woerter 54 Ueberdeckungen 1328 Minimum 0
+13 (1,) Woerter 54 Ueberdeckungen 1328 Minimum 0
+13 (2,) Woerter 54 Ueberdeckungen 1328 Minimum 0
+13 (3,) Woerter 54 Ueberdeckungen 1328 Minimum 0
+13 (0, 1) Woerter 56 Ueberdeckungen 3770 Minimum 0
+13 (0, 2) Woerter 56 Ueberdeckungen 3770 Minimum 0
+13 (0, 3) Woerter 56 Ueberdeckungen 3770 Minimum 0
+13 (1, 2) Woerter 56 Ueberdeckungen 3770 Minimum 0
+13 (1, 3) Woerter 56 Ueberdeckungen 3770 Minimum 0
+13 (2, 3) Woerter 56 Ueberdeckungen 3770 Minimum 0
+13 (0, 1, 2) Woerter 58 Ueberdeckungen 6119 Minimum 0
+13 (0, 1, 3) Woerter 58 Ueberdeckungen 6119 Minimum 0
+13 (0, 2, 3) Woerter 58 Ueberdeckungen 6119 Minimum 0
+13 (1, 2, 3) Woerter 58 Ueberdeckungen 6119 Minimum 0
+13 (0, 1, 2, 3) Woerter 60 Ueberdeckungen 10112 Minimum 0
+direkt nachgerechnet 50 Abweichungen 0

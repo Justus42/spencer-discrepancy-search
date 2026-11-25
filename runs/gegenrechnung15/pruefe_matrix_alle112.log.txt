@@ -1,0 +1,1 @@
+pruefe_matrix (alle 112 Loesungen, --erwartet 7): ok=112 abweichend=0

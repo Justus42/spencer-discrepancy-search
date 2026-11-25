@@ -1,0 +1,10 @@
+p = 13: zwei volle Bahnen (52 Woerter): Ueberdeckungen 0; kleinste Restzahl 2 (32 Paare)
+  die ersten 0 direkt nachgerechnet: 0 offene Punkte
+  Minimum direkt: 2
+p = 11: zwei volle Bahnen (44 Woerter): Ueberdeckungen 0; kleinste Restzahl 1306 (1600 Paare)
+  die ersten 0 direkt nachgerechnet: 0 offene Punkte
+  Minimum direkt: 1306
+
+real	0m2.474s
+user	0m9.764s
+sys	0m0.032s

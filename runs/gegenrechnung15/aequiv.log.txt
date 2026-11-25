@@ -1,0 +1,11 @@
+112 Loesungen; Gleichwertigkeit (Zeilen/Spalten vertauschen und negieren) zu ctrl_16 ohne Nullspalte:
+  gleichwertig zu ctrl_16: 56 von 112  (289 s)
+  Kontrolle verwuerfelte ctrl_16 gleichwertig: True
+  Kontrolle ctrl_16 mit einem umgedrehten Eintrag: Hadamard-Typ nach Normierung = False (soll False)
+  Sylvester-16 ohne Spalte 0 gegen ohne Spalte 5 (gleichwertig, Automorphismus): True
+  Sylvester-16 ohne Spalte 0 gegen ctrl_16: False
+  Aequivalenzklassen unter den 112 Loesungen: 2 (Groessen [56, 56])
+
+real	9m40.367s
+user	9m39.406s
+sys	0m0.100s
