@@ -1,0 +1,33 @@
+Doppelungsform: 12 gekoppelte Paare, rechter Block 9 Spalten, 0 frei
+t=10 it=11264 offen=396 best=36 bumps=8922
+t=20 it=22784 offen=476 best=36 bumps=18845
+t=30 it=34560 offen=222 best=24 bumps=29228
+t=41 it=46336 offen=170 best=24 bumps=39645
+t=51 it=58624 offen=320 best=24 bumps=50471
+t=61 it=70400 offen=318 best=24 bumps=60833
+t=71 it=82176 offen=548 best=16 bumps=71167
+t=81 it=93440 offen=1276 best=16 bumps=80934
+t=91 it=104960 offen=960 best=16 bumps=91120
+t=101 it=117504 offen=372 best=16 bumps=102189
+t=111 it=129280 offen=444 best=16 bumps=112552
+t=121 it=141312 offen=318 best=16 bumps=123204
+t=132 it=153088 offen=188 best=16 bumps=133493
+t=142 it=165120 offen=760 best=16 bumps=144154
+t=152 it=177664 offen=1424 best=16 bumps=155265
+t=162 it=189696 offen=296 best=16 bumps=165844
+t=172 it=201728 offen=262 best=16 bumps=176509
+t=182 it=213504 offen=352 best=16 bumps=186925
+t=192 it=225536 offen=520 best=16 bumps=197475
+t=202 it=238336 offen=360 best=16 bumps=208733
+t=213 it=250368 offen=632 best=16 bumps=219377
+t=223 it=262144 offen=834 best=16 bumps=229777
+t=233 it=274688 offen=298 best=16 bumps=240781
+t=243 it=286720 offen=170 best=16 bumps=251317
+t=253 it=298496 offen=206 best=16 bumps=261720
+t=263 it=310528 offen=386 best=16 bumps=272411
+t=273 it=321792 offen=150 best=16 bumps=282333
+t=283 it=334080 offen=1164 best=16 bumps=293165
+t=293 it=345344 offen=158 best=16 bumps=303059
+t=303 it=356864 offen=426 best=16 bumps=313330
+t=314 it=370176 offen=268 best=16 bumps=325137
+ENDE best=0 it=371338 t_best=314.6 t=314.6 bumps=326173

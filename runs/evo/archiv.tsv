@@ -15,3 +15,7 @@ Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
 4	p004	p003	A	20	6	24	2	600	953	K2, Gewichte mit Glaettung
 4	p004	p003	A	20	6	24	3	600	926	K2, Gewichte mit Glaettung
 4	p004	p003	A	20	6	24	4	600	891	K2, Gewichte mit Glaettung
+5	p005	p004	B	20	6	24	1	600	16	K2, Doppelungsform (11,9), Gewichte ohne Glaettung
+5	p005	p004	B	20	6	24	2	600	16	K2, Doppelungsform (11,9), Gewichte ohne Glaettung
+5	p005	p004	B	20	6	24	3	600	16	K2, Doppelungsform (11,9), Gewichte ohne Glaettung
+5	p005	p004	B	20	6	24	4	315	0	K2, Doppelungsform (11,9), Gewichte ohne Glaettung
