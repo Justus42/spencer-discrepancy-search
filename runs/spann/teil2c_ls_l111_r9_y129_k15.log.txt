@@ -1,0 +1,12 @@
+Problem runs/spann/probleme/l111_r9_y129.txt: |G|=256, Nebenklassen 64, Punkte 16384, k=15, seed 1, Zeit 600 s; Startkosten 2584
+  60 s: Schritte 545664, Kosten 597, beste 233
+  120 s: Schritte 1115072, Kosten 415, beste 233
+  180 s: Schritte 1683072, Kosten 641, beste 233
+  240 s: Schritte 2272640, Kosten 415, beste 233
+  300 s: Schritte 2849920, Kosten 281, beste 233
+  360 s: Schritte 3427648, Kosten 694, beste 233
+  420 s: Schritte 3987520, Kosten 426, beste 233
+  480 s: Schritte 4567104, Kosten 605, beste 233
+  540 s: Schritte 5148544, Kosten 334, beste 233
+ENDE: Kosten 721, beste 233, Schritte 5738432, 600.0 s
+BESTE 233 offen: 14 232 1 178 189 117 159 144 92 203 38 41 83 196 231

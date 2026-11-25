@@ -1,0 +1,4 @@
+runs/spann/teil2c_ls_kontrolle_ctrl16_r9_y40_k16.log.txt:ENDE: Kosten 0, beste 0, Schritte 19, 0.0 s
+runs/spann/teil2c_ls_kontrolle_ctrl16_r9_y7_k16.log.txt:ENDE: Kosten 0, beste 0, Schritte 50, 0.0 s
+runs/spann/teil2c_ls_kontrolle_l111_r8_k16.log.txt:ENDE: Kosten 0, beste 0, Schritte 12, 0.0 s
+runs/spann/teil2c_ls_kontrolle_l111_r9_y129_k16.log.txt:ENDE: Kosten 0, beste 0, Schritte 22, 0.0 s

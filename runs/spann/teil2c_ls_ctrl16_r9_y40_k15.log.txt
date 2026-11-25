@@ -1,0 +1,12 @@
+Problem runs/spann/probleme/ctrl16_r9_y40.txt: |G|=256, Nebenklassen 64, Punkte 16384, k=15, seed 1, Zeit 600 s; Startkosten 2541
+  60 s: Schritte 683328, Kosten 442, beste 233
+  120 s: Schritte 1350656, Kosten 233, beste 233
+  180 s: Schritte 2067776, Kosten 685, beste 233
+  240 s: Schritte 2807936, Kosten 317, beste 233
+  300 s: Schritte 3500928, Kosten 625, beste 233
+  360 s: Schritte 4202752, Kosten 492, beste 233
+  420 s: Schritte 4899008, Kosten 353, beste 233
+  480 s: Schritte 5608320, Kosten 460, beste 233
+  540 s: Schritte 6315648, Kosten 326, beste 233
+ENDE: Kosten 233, beste 233, Schritte 7036928, 600.0 s
+BESTE 233 offen: 131 5 97 246 189 95 108 175 241 91 42 50 20 198 152
