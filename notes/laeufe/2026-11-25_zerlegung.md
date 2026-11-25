@@ -143,3 +143,14 @@ Rechenzeit (a): 5 + 4 · 13,5 = 59 Min.
 
 Begründung der Kürzung: Jede Lösung mit K = 10 gibt durch eine beliebige elfte Nebenklasse eine Lösung mit K = 11; die ist in (a) in keinem Typ
 gefunden. Daher je Typ nur 4 Startwerte zu 300 s.
+
+| Typ | Block (UTC) | je Startwert | Ergebnis K = 10 | beste Restzahl (von 262 144) |
+|---|---|---|---|---|
+| (11,9) | 19:30–19:35 | 300 s | nicht gelöst (0 von 4) | 3234 (alle vier) |
+| (13,7) | 19:35–19:40 | 300 s | nicht gelöst (0 von 4) | 5926 (alle vier) |
+| (10,10) | 19:40–19:45 | 300 s | nicht gelöst (0 von 4) | 1852 (zwei; sonst 1916) |
+| (12,8) | 19:45–19:51 | 300 s | nicht gelöst (0 von 4) | 4280 (zwei; sonst 4349) |
+
+Ergebnis (b): kein Code mit 40 Wörtern gefunden (Suche erfolglos). Log `runs/zerlegung/b_k10.log.txt`.
+
+### (c) d = 9, K = 12 (48 Wörter), Typen (11,10), (12,9), (12,11), (13,10), (12,13), (11,14); U, W aus Zufallsstart; je Typ 4 x 570 s
