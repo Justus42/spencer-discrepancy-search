@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 25.11.2026 spätabends (nach Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie; davor Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 25.11.2026 nachts (nach Auftrag E, Evolutionsschleife; davor Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -151,6 +151,7 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Zusätzlich n = 10 (Dichte 1,09
   `src/evo/p001.c`–`p025.c`, Archiv `runs/evo/archiv.tsv`. 29 Runden zu 4 Startwerten, 4,5 h. Kleinste erreichte Paarzahl: (15,4) 16 (blind, Runde 1),
   (20,6) 24 (blind, Doppelungsform, Runde 5). Beste Restzahl darunter: (15,4) 15 Paare 233; (20,6) 23 Paare **704** offene Klassen (Bonus g = 0,880 gegen
   1297 = 48er ohne Zeile; besser als 886 aus Auftrag S). Abbruch nach 10 Runden ohne Verbesserung; 22–20 Paare nicht begonnen. Belegart: Suche erfolglos.
+  Gate: `notes/gate_2026-11-25_evo.md` (alle 116 Läufe des Archivs nachgezählt; Zusatzkontrolle: das Zielprogramm p018 findet bei 24 Paaren blind einen 48er, 2 von 2).
 - **Gruppenmatrizen über nichtzyklischen Gruppen (Auftrag G, 25.11.2026):** Protokoll `notes/laeufe/2026-11-25_gruppen.md`, Programm `src/gruppenmatrix.c`
   (Prüfcode `src/gruppen_erzeuge.py`, `src/gruppen_pruef.py`), Tafeln und Logs `runs/gruppen/`, beste Matrizen `runs/gruppen/beste/` (beide Prüfskripte und `exakt_disc` gleich).
   A[g][h] = f(g^-1 h); alle Klassen bis auf Links-/Rechtsmultiplikation, Automorphismen und Komplement (nicht f(x^-1)). Kein Überlebender in keiner der zehn Gruppen

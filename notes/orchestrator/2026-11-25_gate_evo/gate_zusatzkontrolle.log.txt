@@ -1,0 +1,10 @@
+Zusatzkontrolle des Gates: p018 (Insel A, volle Nachbarschaft, blind) bei (20,6) mit 24 Paaren, Startwerte 1 und 2, je 300 s, 2 Kerne
+Start: Wed Nov 25 23:08:22 CET 2026  Ende: Wed Nov 25 23:09:13 CET 2026
+ENDE best=0 it=15956 t_best=8.4 t=8.4 bumps=3921 neustarts=0
+  Bewerter der Sitzung: offen=0 klassen=524288 k=24 m=20 R=6
+ENDE best=0 it=87865 t_best=50.7 t=50.7 bumps=36502 neustarts=0
+  Bewerter der Sitzung: offen=0 klassen=524288 k=24 m=20 R=6
+  Startwert 1: eigener Zaehler 0 offene Klassen; Zeilen 24; |Zeilenprodukte| {0: 108, 2: 144, 4: 24}
+  Startwert 2: eigener Zaehler 0 offene Klassen; Zeilen 24; |Zeilenprodukte| {0: 108, 2: 144, 4: 24}
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
