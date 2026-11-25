@@ -1,0 +1,42 @@
+Problem runs/spann/probleme/l111_r9_y128.txt: d=8 |G|=256 Nebenklassen=64 min mu=27, k=15, Zeitlimit 600 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 886; Groessen (absteigend): 56448 56448 56448 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 18816 18816 18816 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 ...
+Aufgaben: 8886 (4.7 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 0, Laufzeit 4.7 s
+BEREICH 0 0 von 8886 Aufgaben insgesamt: Knoten 0, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y128.txt: d=8 |G|=256 Nebenklassen=64 min mu=27, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 886; Groessen (absteigend): 56448 56448 56448 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 18816 18816 18816 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 ...
+Aufgaben: 8886 (4.7 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 979110, Laufzeit 28.4 s
+BEREICH 0 50 von 8886 Aufgaben insgesamt: Knoten 979110, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y128.txt: d=8 |G|=256 Nebenklassen=64 min mu=27, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 886; Groessen (absteigend): 56448 56448 56448 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 18816 18816 18816 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 ...
+Aufgaben: 8886 (4.5 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 2322810, Laufzeit 59.2 s
+BEREICH 50 250 von 8886 Aufgaben insgesamt: Knoten 2322810, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y128.txt: d=8 |G|=256 Nebenklassen=64 min mu=27, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 886; Groessen (absteigend): 56448 56448 56448 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 18816 18816 18816 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 ...
+Aufgaben: 8886 (4.5 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 8144276, Laufzeit 189.7 s
+BEREICH 250 1050 von 8886 Aufgaben insgesamt: Knoten 8144276, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y128.txt: d=8 |G|=256 Nebenklassen=64 min mu=27, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 886; Groessen (absteigend): 56448 56448 56448 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 18816 18816 18816 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 ...
+Aufgaben: 8886 (4.2 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 18087651, Laufzeit 410.6 s
+BEREICH 1050 3576 von 8886 Aufgaben insgesamt: Knoten 18087651, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y128.txt: d=8 |G|=256 Nebenklassen=64 min mu=27, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 886; Groessen (absteigend): 56448 56448 56448 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 18816 18816 18816 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 ...
+Aufgaben: 8886 (4.2 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 12062441, Laufzeit 278.9 s
+BEREICH 3576 7264 von 8886 Aufgaben insgesamt: Knoten 12062441, OHNE_LOESUNG
+Problem runs/spann/probleme/l111_r9_y128.txt: d=8 |G|=256 Nebenklassen=64 min mu=27, k=15, Zeitlimit 1500 s, Aufteilungstiefe 3, Threads 4, Symmetrie ja (12 Erzeuger)
+4-Mengen {0,a,b,c}: 2731135, Bahnen unter Gamma: 886; Groessen (absteigend): 56448 56448 56448 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 28224 18816 18816 18816 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 14112 ...
+Aufgaben: 8886 (4.5 s)
+ERGEBNIS k=15: KEINE Loesung mit <= 15 Paaren (vollstaendig)
+Knoten 847006, Laufzeit 26.2 s
+BEREICH 7264 8886 von 8886 Aufgaben insgesamt: Knoten 847006, OHNE_LOESUNG
