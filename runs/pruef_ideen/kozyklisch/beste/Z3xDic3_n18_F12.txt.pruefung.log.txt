@@ -1,0 +1,5 @@
+Matrix runs/pruef_ideen/kozyklisch/beste/Z3xDic3_n18_F12.txt: 18 x 18, aufgefuellt 18 x 18
+  check_disc      Diskrepanz 6  (0.6 s)
+  verify_spencer  Diskrepanz 6  (0.7 s)
+  exakt_disc      Diskrepanz 6  (0.7 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 6 (= erwartet)

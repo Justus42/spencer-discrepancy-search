@@ -1,0 +1,1 @@
+Z5xD4 shard 3/4: Funktionen 131072, ohne Gegenbeispiel (<= 6): 0, Sieb <= 4: Vorfilter 119961, Ueberlebende 0

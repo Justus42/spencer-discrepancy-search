@@ -1,0 +1,1 @@
+Negativkontrolle: 60 Zertifikate; gestrichenes Element macht verteilbar: 60; eingesetzte Nicht-Loecher erkannt: 60

@@ -1,0 +1,1 @@
+D20 shard 3/4: Funktionen 131072, ohne Gegenbeispiel (<= 6): 0, Sieb <= 4: Vorfilter 129103, Ueberlebende 0

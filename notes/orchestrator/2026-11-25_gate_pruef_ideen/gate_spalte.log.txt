@@ -1,0 +1,10 @@
+Wed Nov 25 19:48:56 CET 2026
+== controls/ctrl_16.txt
+Kontrolle 16 Zeilen, 15 Spalten: (Minimum, Optima, echte Spalte): [(0, 4, 0)]
+240 Faelle: (Minimum, Zahl der Optima, Wert der echten Spalte) -> {(233, 4, 233): 240}
+real	0m22.267s
+== runs/gegenrechnung15/loesung111_16x15.txt
+Kontrolle 16 Zeilen, 15 Spalten: (Minimum, Optima, echte Spalte): [(0, 4, 0)]
+240 Faelle: (Minimum, Zahl der Optima, Wert der echten Spalte) -> {(233, 4, 233): 240}
+real	0m24.334s
+Wed Nov 25 19:49:57 CET 2026

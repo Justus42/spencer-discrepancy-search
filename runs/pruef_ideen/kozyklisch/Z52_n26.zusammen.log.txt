@@ -1,0 +1,4 @@
+Z52 shard 0/4: Funktionen 8388608, Sieb <= 8: gefunden 8388608, Ueberlebende 0
+Z52 shard 1/4: Funktionen 8388608, Sieb <= 8: gefunden 8388608, Ueberlebende 0
+Z52 shard 2/4: Funktionen 8388608, Sieb <= 8: gefunden 8388608, Ueberlebende 0
+Z52 shard 3/4: Funktionen 8388608, Sieb <= 8: gefunden 8388608, Ueberlebende 0

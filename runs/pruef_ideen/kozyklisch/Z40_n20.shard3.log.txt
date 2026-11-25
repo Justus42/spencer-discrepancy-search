@@ -1,0 +1,2 @@
+Z40 shard 3/4: Funktionen 131072, ohne Gegenbeispiel (<= 6): 0, Sieb <= 4: Vorfilter 32789, Ueberlebende 7140
+Z40 shard 3: exakt (build/exakt_disc) der Ueberlebenden: disc 6: 7140; Hadamard unter den Ueberlebenden: 0

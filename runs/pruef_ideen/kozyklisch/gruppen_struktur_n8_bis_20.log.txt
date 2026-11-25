@@ -1,0 +1,12 @@
+Z16: Ordnung 16, z = 8, Elementordnungen {1: 1, 2: 1, 4: 2, 8: 4, 16: 8}, Zentrum 16, abelsch True
+Z20: Ordnung 20, z = 10, Elementordnungen {1: 1, 2: 1, 4: 2, 5: 4, 10: 4, 20: 8}, Zentrum 20, abelsch True
+Z3xQ8: Ordnung 24, z = 6, Elementordnungen {1: 1, 2: 1, 3: 2, 4: 6, 6: 2, 12: 12}, Zentrum 6, abelsch False
+Z36: Ordnung 36, z = 18, Elementordnungen {1: 1, 2: 1, 3: 2, 4: 2, 6: 2, 9: 6, 12: 4, 18: 6, 36: 12}, Zentrum 36, abelsch True
+Dic9: Ordnung 36, z = 9, Elementordnungen {1: 1, 2: 1, 3: 2, 4: 18, 6: 2, 9: 6, 18: 6}, Zentrum 2, abelsch False
+Z3xDic3: Ordnung 36, z = 9, Elementordnungen {1: 1, 2: 1, 3: 8, 4: 6, 6: 8, 12: 12}, Zentrum 6, abelsch False
+Z40: Ordnung 40, z = 20, Elementordnungen {1: 1, 2: 1, 4: 2, 5: 4, 8: 4, 10: 4, 20: 8, 40: 16}, Zentrum 40, abelsch True
+Z5xQ8: Ordnung 40, z = 10, Elementordnungen {1: 1, 2: 1, 4: 6, 5: 4, 10: 4, 20: 24}, Zentrum 10, abelsch False
+Z5xD4: Ordnung 40, z = 10, Elementordnungen {1: 1, 2: 5, 4: 2, 5: 4, 10: 20, 20: 8}, Zentrum 10, abelsch False
+Z5xZ4xZ2: Ordnung 40, z = 10, Elementordnungen {1: 1, 2: 3, 4: 4, 5: 4, 10: 12, 20: 16}, Zentrum 40, abelsch True
+Dic10: Ordnung 40, z = 10, Elementordnungen {1: 1, 2: 1, 4: 22, 5: 4, 10: 4, 20: 8}, Zentrum 2, abelsch False
+D20: Ordnung 40, z = 10, Elementordnungen {1: 1, 2: 21, 4: 2, 5: 4, 10: 4, 20: 8}, Zentrum 2, abelsch False

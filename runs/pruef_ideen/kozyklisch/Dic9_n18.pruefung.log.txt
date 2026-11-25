@@ -1,0 +1,5 @@
+Dic9: n = 18, Funktionen 131072, Gegenbeispiele nachgerechnet: Fehlstellen 0, nicht bestanden 0 (max <= 6 verlangt)
+  Verteilung des erreichten Maximums der gespeicherten x: {2: 6, 4: 1116, 6: 129950}
+Dic9: 23922 Ueberlebende (eigene Matrizen), exakte Diskrepanz laut build/exakt_disc: {6: 23922}; Hadamard-Matrizen (M M^T = nI): 0
+  Stichprobe 300 Nicht-Ueberlebende: mit x unter dem Ziel 6 gefunden (disc < 6): 300, nicht: 0
+ERGEBNIS Dic9 bestaetigt

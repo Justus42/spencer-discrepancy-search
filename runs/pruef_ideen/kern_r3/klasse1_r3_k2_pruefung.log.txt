@@ -1,0 +1,6 @@
+Zertifikate bestaetigt: 560, nicht bestaetigt: 0, Lochzahl weicht von Angabe ab: 0
+  Loecher 967, Kerngroesse 6: 378 Streichmengen
+  Loecher 967, Kerngroesse 7: 70 Streichmengen
+  Loecher 987, Kerngroesse 6: 97 Streichmengen
+  Loecher 987, Kerngroesse 7: 15 Streichmengen
+ERGEBNIS: alle bestaetigt

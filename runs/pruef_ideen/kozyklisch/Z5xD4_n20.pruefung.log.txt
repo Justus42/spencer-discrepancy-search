@@ -1,0 +1,5 @@
+Z5xD4: n = 20, Funktionen 524288, Gegenbeispiele nachgerechnet: Fehlstellen 0, nicht bestanden 0 (max <= 6 verlangt)
+  Verteilung des erreichten Maximums der gespeicherten x: {0: 19, 2: 979, 4: 52434, 6: 470856}
+Z5xD4: 0 Ueberlebende (eigene Matrizen), exakte Diskrepanz laut build/exakt_disc: {}; Hadamard-Matrizen (M M^T = nI): 0
+  Stichprobe 300 Nicht-Ueberlebende: mit x unter dem Ziel 6 gefunden (disc < 6): 300, nicht: 0
+ERGEBNIS Z5xD4 bestaetigt

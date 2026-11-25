@@ -1,0 +1,22 @@
+Gruppe n | Funktionen | ohne Gegenbeispiel <=6 | Ueberlebende Stufe 4 (disc>=6) | exakte disc der Ueberlebenden | Hadamard | Pruefung Gegenbeispiele
+Z36 n=18 | 131072 | 0 | 4338 | {6: 4338} | 0 | bestaetigt
+Dic9 n=18 | 131072 | 0 | 23922 | {6: 23922} | 0 | bestaetigt
+Z3xDic3 n=18 | 131072 | 0 | 4752 | {6: 4752} | 0 | bestaetigt
+Z40 n=20 | 524288 | 0 | 28560 | {6: 28560} | 0 | bestaetigt
+Z5xQ8 n=20 | 524288 | 0 | 3240 | {6: 3240} | 480 | bestaetigt
+Z5xD4 n=20 | 524288 | 0 | 0 | {} | 0 | bestaetigt
+Z5xZ4xZ2 n=20 | 524288 | 0 | 900 | {6: 900} | 0 | bestaetigt
+Dic10 n=20 | 524288 | 0 | 55400 | {6: 55400} | 5600 | bestaetigt
+D20 n=20 | 524288 | 0 | 0 | {} | 0 | bestaetigt
+
+Sieb Stufe 8 (Ziel 10), ohne gespeicherte Gegenbeispiele:
+Z52 n=26 | Funktionen 33554432 | x mit max<=8 gefunden 33554432 | Ueberlebende 0
+Dic13 n=26 | Funktionen 33554432 | x mit max<=8 gefunden 33554432 | Ueberlebende 0
+Z56 n=28 | Funktionen 134217728 | x mit max<=8 gefunden 134217728 | Ueberlebende 0
+Z7xQ8 n=28 | Funktionen 134217728 | x mit max<=8 gefunden 134217728 | Ueberlebende 0
+Z7xD4 n=28 | Funktionen 134217728 | x mit max<=8 gefunden 134217728 | Ueberlebende 0
+Z7xZ4xZ2 n=28 | Funktionen 134217728 | x mit max<=8 gefunden 134217728 | Ueberlebende 0
+Dic14 n=28 | Funktionen 134217728 | x mit max<=8 gefunden 134217728 | Ueberlebende 0
+D28 n=28 | Funktionen 134217728 | x mit max<=8 gefunden 134217728 | Ueberlebende 0
+Z60 n=30 | Funktionen 536870912 | x mit max<=8 gefunden 536870912 | Ueberlebende 0
+Dic15 n=30 | Funktionen 536870912 | x mit max<=8 gefunden 536870912 | Ueberlebende 0
