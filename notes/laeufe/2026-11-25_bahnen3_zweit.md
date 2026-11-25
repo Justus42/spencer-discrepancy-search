@@ -26,3 +26,19 @@ Log `runs/bahnen3_zweit/teil0.log.txt`, Elemente `G_elemente_1p3.txt`, `P_elemen
 | 48er | 8 Dreierbahnen, Radius 6 | 24 Zeilenpaare = 8 volle Dreierbahnen; Radius 6 über alle 2^20 Punkte |
 
 had24_2p2_paley12: ebenfalls |Aut| = 576 (1 961 Knoten). **Teil 0: keine Abweichung.**
+
+## Teil 1: zweite Zählung (Zwischenstand)
+
+Programm `src/b2_zaehl.c` (Prüfcode, C/OpenMP, ganze Zahlen). Bahnen selbst berechnet (C, getrennt von Python), Überdeckung
+symmetrisch (0 Abweichungen), 48er = Bahnen 8, 39, 79, 96, 109, 130, 142, 161 (je Größe 3), überdeckt alles (`teil1_info.log.txt`).
+Verfahren: binäres Verzweigen über kleine Bahnen (drin/nicht drin), Zählschranke Σ m_u · min w_c/cov_m(c) (Festkomma 2^32, abgerundet),
+Zustand über D = 1792 schwerste Punktbahnen, bei überdecktem D Vollprüfung über alle 58 368 und Weiterverzweigen. Einzelheiten im Kopf
+der Datei und unten (Vollständigkeit).
+
+Erster Test (a) mit Gewicht ≤ 18: keine, 155 255 Knoten, 0,3 s (D = 512). Hochrechnung (D = 512): B = 20/21/22: 9 s / 40 s / 148 s;
+mit D = 1792: B = 21 6,6 s, B = 22 16,7 s → B = 23 ca. 1–2 min, B = 24 ca. 5–10 min, (c)/(d) je Minuten. Weit unter 4 h.
+
+| Lauf | Ergebnis | Knoten | Zeit (4 Kerne) | Log |
+|---|---|---|---|---|
+| (a) nur Größe 1/3, Gewicht ≤ 23 | **keine** | 4,70 · 10^7 | 47 s | `teil1a_B23.log.txt` |
+| (b) nur Größe 1/3, Gewicht ≤ 24 | **19 008**, alle Gewicht 24, alle aus 8 Dreierbahnen, paarweise verschieden, 48er dabei | 3,65 · 10^8 (1,15 · 10^8 Vollprüfungen) | 350 s | `teil1b_B24.log.txt`, Liste `teil1b_B24_liste.txt` |

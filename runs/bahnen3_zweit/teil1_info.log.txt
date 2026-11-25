@@ -1,0 +1,8 @@
+# Aufbau: 58368 Bahnen (1:8 3:160 9:58200), Kugel 60460, 2.1 s
+Bahnen: 58368 (Groesse 1: 8, 3: 160, 9: 58200)
+Ueberdeckung symmetrisch: ja (0 Abweichungen)
+Punktbahnen Groesse 1: kleine Ueberdecker 56 bis 56
+Punktbahnen Groesse 3: kleine Ueberdecker 29 bis 56
+Punktbahnen Groesse 9: kleine Ueberdecker 29 bis 84
+Matrix controls/had24_1p3_paley12.txt: 24 Zeilen in 8 Bahnen: 8(Gr.3) 142(Gr.3) 79(Gr.3) 109(Gr.3) 39(Gr.3) 161(Gr.3) 96(Gr.3) 130(Gr.3); Gewicht der Bahnen 24
+nicht ueberdeckte Punktbahnen: 0
