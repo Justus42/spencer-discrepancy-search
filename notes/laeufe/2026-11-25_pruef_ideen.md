@@ -43,3 +43,17 @@ Beobachtungen:
   `klasse1_r4_k3_zertifikate_final.txt` ersetzt. `klasse1_r4_k3_zertifikate.txt` ist der Rohstand mit der Zeile „VERTEILBAR“. Keine Abweichung der Aussage.
 - Sicht der Aussage: ausgeschlossen ist, dass 13 Zeilen (bzw. 12 bei 4/3) mit einer der beiden 32er-Klassen gemeinsam sind. Nicht gerechnet: 4/3 für Klasse 2; 5 gestrichene.
 
+## Teil 2: ganze Spalte neu wählen (`src/pruef_ideen/spalte.c`, Belege `runs/pruef_ideen/spalte/`)
+
+Verfahren: 16 × 15 (`ctrl_16` ohne Nullspalte) ohne Zeile r, Spalte c verdeckt. Klassen {x,−x} mit x_c = +1 (2^14 Stück); Zeile i liefert s_i + a_i, offen für die Ergänzung a
+genau dann, wenn alle |s_i + a_i| <= 5 (bei |s_i| <= 4 frei, s_i = ±6 erzwingt a_i, |s_i| >= 8 nie offen). Alle 2^15 Ergänzungen exakt bewertet (Zählung über Klassenmasken).
+Unabhängige Gegenprobe im selben Programm: direkte Zählung über die ganze Matrix (alle Klassen, alle Zeilen) für die echte Spalte und 40 Zufallsspalten je Fall, alle stimmen.
+
+| Fall | Ergebnis |
+|---|---|
+| Kontrolle, alle 16 Zeilen, je 15 verdeckte Spalten (2^16 Ergänzungen) | Minimum 0, 4 Optima, echte Spalte darunter: 15 von 15 |
+| **16 gestrichene Zeilen × 15 Spalten = 240 Fälle** | **Minimum 233 in allen 240 Fällen, 4 Optima, echte Spalte (233) optimal, kein Wert unter 233; 240 von 240 direkte Gegenproben OK** |
+| Zusatz (nicht verlangt), zweite 32er-Klasse (`loesung111`) | siehe `klasse2_*.txt` im Ordner |
+
+Rechenzeit 13 s (240 Fälle) bzw. 1 s (Kontrolle). Erwartung erfüllt, keine Abweichung.
+
