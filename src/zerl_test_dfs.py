@@ -2,7 +2,7 @@
 """Test der Tiefensuche von build/zerl_halb (Auftrag H, 25.11.2026): kleine Zufallsfaelle, Vergleich
 'dfs' (mit Symmetriebrechung und Schranke) gegen 'brute' (alle Belegungen, keine Symmetrie).
 Jede gemeldete Loesung wird zusaetzlich mit src/zerl_offen.py (Pruefcode) nachgezaehlt.
-Aufruf: python3 src/zerl_test_dfs.py ANZAHL [SEED]"""
+Aufruf: python3 src/zerl_test_dfs.py ANZAHL [SEED] [ZUSATZ...]   (ZUSATZ wird an 'dfs' angehaengt, z. B. --lam 1,2,3)"""
 import os
 import random
 import subprocess
@@ -34,7 +34,7 @@ def main():
             for z in F:
                 h.write(" ".join(str(v) for v in z) + "\n")
         aus = os.path.join(tmp, f"P{t}.txt")
-        rd, ld = lauf(["dfs", f, str(d), str(mg), "--zeit", "60", "--aus", aus])
+        rd, ld = lauf(["dfs", f, str(d), str(mg), "--zeit", "60", "--aus", aus] + sys.argv[3:])
         rb, lb = lauf(["brute", f, str(d), str(mg)])
         if rd not in (0, 3) or rb not in (0, 3):
             print(f"Fall {t}: Fehler rd={rd} rb={rb} ({ld} / {lb})")

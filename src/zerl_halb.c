@@ -453,6 +453,11 @@ static int *cntp = NULL;
 static int64_t *volsum = NULL;
 static int64_t knoten_tiefe[MAXK + 1];
 
+static int64_t lamc[MAXM + 3];   /* kumulierte Kosten Lam(l), siehe Zaehlschranke */
+static int zaehl_an = 0;          /* Zaehlschranke in der dfs (Option --lam) */
+static int64_t zN0 = 0, zB = 0;
+static int64_t *zAC = NULL;        /* je Tiefe und z: Kosten Lam der belegten Zeilen bei z */
+static int64_t zaehl_schnitte = 0;
 typedef struct { uint32_t c; int64_t g; } Kand;
 static int cmpkand(const void *a, const void *b) { const Kand *x = a, *y = b; return (x->g < y->g) - (x->g > y->g); }
 
@@ -478,6 +483,13 @@ static int dfs(int tiefe, int nint, const int *ib) {
         for (int i = 0; i < K; i++) if (!zugewiesen[i]) cap += volr(R[(size_t)p * K + i]);
         if (cntp[p] > cap) return 0;
         if (cap - cntp[p] < bslack) { bslack = cap - cntp[p]; bp = p; }
+    }
+    if (zaehl_an) {
+        int frei = 0; for (int i = 0; i < K; i++) if (!zugewiesen[i]) frei++;
+        const int64_t *ac = zAC + (size_t)tiefe * NZ;
+        int64_t bedarf = 0;
+        for (int z = 0; z < NZ; z++) if (ac[z] < zN0) bedarf += zN0 - ac[z];
+        if (bedarf > (int64_t)frei * zB) { zaehl_schnitte++; return 0; }
     }
     int bi = -1, bv = -1;
     for (int i = 0; i < K; i++) if (!zugewiesen[i]) { int v = volr(R[(size_t)bp * K + i]); if (v > bv) { bv = v; bi = i; } }
@@ -526,11 +538,56 @@ static int dfs(int tiefe, int nint, const int *ib) {
             if (kj > 0) nib[++nn] = ib[j + 1];
         }
         dw[bi] = c;
+        if (zaehl_an) {
+            const int64_t *ac = zAC + (size_t)tiefe * NZ; int64_t *ac2 = zAC + (size_t)(tiefe + 1) * NZ;
+            for (int z = 0; z < NZ; z++) ac2[z] = ac[z] + lamc[lvlidx(c, (uint32_t)z << 1)];
+        }
         if (dfs(tiefe + 1, nn, nib)) { free(ks); return 1; }
     }
     zugewiesen[bi] = 0;
     free(ks);
     return 0;
+}
+
+/* ---------- Zaehlschranke (verallgemeinert nach Sol, Frage 2) ----------
+   Gewichte lam[l] >= 0 je Stufenindex l (l = 0 entspricht |v| = gmin); Kosten einer Zeile auf Stufe l: Lam(l) = Summe lam[1..l].
+   Fuer jeden Punkt z muessen die Stufen (l_1..l_K) der K Zeilen alle Anforderungsvektoren erfuellen; N0 = kleinste Summe Lam(l_i)
+   ueber alle solchen Stufenvektoren (exakt, Branch-and-Bound). Jede Zeile hat unabhaengig vom Wort dieselbe Stufenverteilung ueber z,
+   also Summe_z Summe_i Lam(l_i(z)) = K * B mit B = Summe_z Lam(l(0,z)). Ist N0 * NZ > K * B, gibt es kein G. */
+static int64_t n0_best;
+static int64_t n0_knoten;
+static int n0_lv[MAXK], n0_bestlv[MAXK];
+static void n0_rek(int i, u64 *cov, int64_t kosten) {
+    n0_knoten++;
+    if (kosten >= n0_best) return;
+    int voll = 1;
+    for (int w = 0; w < NW; w++) if (~cov[w] & (w == NW - 1 ? lastmask : ~0ULL)) { voll = 0; break; }
+    if (voll) { n0_best = kosten; for (int k = 0; k < K; k++) n0_bestlv[k] = (k < i) ? n0_lv[k] : 0; return; }
+    if (i == K) return;
+    u64 neu[1024];
+    for (int l = L - 1; l >= 0; l--) {   /* hohe Stufen zuerst: findet schnell gute Schranken */
+        if (l > 0) { /* Stufe l nur, wenn sie gegenueber l-1 etwas Neues abdeckt */
+            const u64 *A = T + ((size_t)i * L + l) * NW, *B = T + ((size_t)i * L + l - 1) * NW;
+            int neu_ab = 0;
+            for (int w = 0; w < NW; w++) if ((A[w] & ~B[w]) & ~cov[w]) { neu_ab = 1; break; }
+            if (!neu_ab) continue;
+        }
+        const u64 *A = T + ((size_t)i * L + l) * NW;
+        for (int w = 0; w < NW; w++) neu[w] = cov[w] | A[w];
+        n0_lv[i] = l;
+        n0_rek(i + 1, neu, kosten + lamc[l]);
+    }
+}
+static int64_t berechne_N0(void) {
+    u64 cov[1024]; memset(cov, 0, sizeof cov);
+    n0_best = INT64_MAX; n0_knoten = 0;
+    n0_rek(0, cov, 0);
+    return n0_best;
+}
+static int64_t budget_B(void) {
+    int64_t b = 0;
+    for (int z = 0; z < NZ; z++) b += lamc[lvlidx(0, (uint32_t)z << 1)];
+    return b;
 }
 
 /* ---------- Brute Force (Test) ---------- */
@@ -584,6 +641,25 @@ int main(int argc, char **argv) {
     int stoer = atoi(opt(argc, argv, "--stoer", "2"));
     tauschzuege = !flag(argc, argv, "--ohne-tausch");
 
+    if (!strcmp(modus, "zaehl")) {
+        int k, m;
+        lies_matrix(argv[2], Ffix, &k, &m);
+        K = k; mf = m; d = atoi(argv[3]); mg = atoi(argv[4]);
+        baue_anforderungen(1);
+        lamc[0] = 0;
+        int a = 5;
+        for (int l = 1; l < L; l++) { int64_t x = (a < argc && argv[a][0] != '-') ? atoll(argv[a++]) : 0; lamc[l] = lamc[l - 1] + x; }
+        int64_t N0 = berechne_N0(), B = budget_B();
+        printf("# zaehl: fest %s (%d x %d), d=%d, mg=%d; Anforderungsvektoren %d (maximal); Stufen |v| =", argv[2], K, mf, d, mg, P);
+        for (int l = 0; l < L; l++) printf(" %d", gmin + 2 * l);
+        printf("; Lam =");
+        for (int l = 0; l < L; l++) printf(" %ld", (long)lamc[l]);
+        printf("\n  N0 = %ld (Knoten %ld), bester Stufenvektor |v|:", (long)N0, (long)n0_knoten);
+        for (int i = 0; i < K; i++) printf(" %d", gmin + 2 * n0_bestlv[i]);
+        printf("\n  Punkte NZ = %d, Budget je Zeile B = %ld:  N0*NZ = %ld  gegen  K*B = %ld  ->  %s\n", NZ, (long)B, (long)(N0 * NZ), (long)(K * B),
+               N0 * NZ > K * B ? "KEINE LOESUNG (Zaehlschranke)" : "nicht entschieden");
+        return N0 * NZ > K * B ? 3 : 1;
+    }
     if (!strcmp(modus, "ls") || !strcmp(modus, "dfs") || !strcmp(modus, "brute")) {
         int k, m;
         lies_matrix(argv[2], Ffix, &k, &m);
@@ -626,9 +702,22 @@ int main(int argc, char **argv) {
             if (unerfuellbar) { printf("KEINE LOESUNG (vollstaendig): %d Anforderungsvektoren ohne erfuellbaren Eintrag, 0 Knoten\n", unerfuellbar); return 3; }
             MS = calloc((size_t)(K + 1) * NZ * NW, sizeof(u64));
             cntp = malloc(sizeof(int) * (P + 1));
+            const char *lamtxt = opt(argc, argv, "--lam", NULL);
+            if (lamtxt) {
+                char buf[256]; strncpy(buf, lamtxt, 255); buf[255] = 0;
+                lamc[0] = 0; char *tok = strtok(buf, ",");
+                for (int l = 1; l < L; l++) { int64_t x = tok ? atoll(tok) : 0; lamc[l] = lamc[l - 1] + x; if (tok) tok = strtok(NULL, ","); }
+                zN0 = berechne_N0(); zB = budget_B(); zaehl_an = 1;
+                zAC = calloc((size_t)(K + 1) * NZ, sizeof(int64_t));
+                printf("# Zaehlschranke: Lam =");
+                for (int l = 0; l < L; l++) printf(" %ld", (long)lamc[l]);
+                printf(", N0 = %ld, B = %ld; Wurzel: N0*NZ = %ld gegen K*B = %ld\n", (long)zN0, (long)zB, (long)(zN0 * NZ), (long)(K * zB));
+                if (zN0 * NZ > K * zB) { printf("KEINE LOESUNG (vollstaendig, Zaehlschranke an der Wurzel)\n"); return 3; }
+            }
             int ib[2] = {0, mg};
             memset(zugewiesen, 0, sizeof zugewiesen);
             int r = dfs(0, 1, ib);
+            if (zaehl_an) printf("# Schnitte durch die Zaehlschranke: %ld\n", (long)zaehl_schnitte);
             printf("# Knoten je Tiefe:");
             for (int t = 0; t <= K; t++) printf(" %ld", (long)knoten_tiefe[t]);
             printf("\n");

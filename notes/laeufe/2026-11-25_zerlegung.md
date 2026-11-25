@@ -71,4 +71,21 @@ maximale Anforderungsvektor ist (7,…,7) (die gestrichene Zeile als flaches y),
 Restzahl 1448 / 1451 / 1464, keine Lösung. **Bestanden.** Grenze: K2 prüft nur die Wurzelschranke; die tiefere Logik der `dfs` ist durch den
 Vergleich mit `brute` (300 Fälle) geprüft.
 
-K1, K1b, K2 bestanden um 17:58 UTC (43 Min. Sitzungszeit). Schritt 2 beginnt.
+K1, K1b, K2 bestanden um 17:55 UTC (40 Min. Sitzungszeit). Schritt 2 beginnt.
+
+## Schritt 2: d = 9, U = Paley-12 ohne Spalte 0 (12 x 11), W 12 x 12 und 12 x 14
+
+Vorbereitung (17:56–18:06 UTC):
+- `dfs` mit der Volumenschranke je Anforderungsvektor schafft nicht einmal den bekannt unmöglichen Fall m2 = 10 (120 s Zeitgrenze, 2 Mio. Knoten;
+  880 maximale Anforderungsvektoren). Die Schranke erfasst Sols Zählargument nicht.
+- Neu im Suchcode (`zerl_halb zaehl`, `dfs --lam`): **Zählschranke**, verallgemeinert nach Sol (Frage 2). Gewichte je Stufe, Kosten Λ(|v|) kumuliert;
+  N0 = kleinste Summe Λ über alle Stufenvektoren (|v_1|,…,|v_12|), die alle 880 Anforderungen erfüllen (exakt per Branch-and-Bound);
+  B = Σ_z Λ(|c·z|) ist für jedes Wort c gleich. Wurzel: N0 · 2^(m2−1) > 12 · B ⇒ kein W. Knoten: Σ_z max(0, N0 − Kosten der belegten
+  Zeilen bei z) ≤ (freie Zeilen) · B.
+- Kontrolle mit Sols Gewichten Λ(4,6,8) = (1,4,10): m2 = 10: N0 = 10, 10 · 512 = 5120 > 4920 = 12 · 410 → **ausgeschlossen** (Sols Zahlen
+  exakt reproduziert, jetzt mit allen 880 Anforderungen). m2 = 12: 20 480 gegen 25 980; m2 = 14: 81 920 gegen 128 472 (wie Sol, Tabelle Frage 2).
+- Gewichtssuche (`src/zerl_gewichte.py`, je 240 s, 2865 bzw. 2311 Auswertungen): bestes Verhältnis N0 · NZ / (12 · B) = **0,823** (m2 = 12) bzw.
+  **0,665** (m2 = 14), beide mit Zuwächsen (0,1,2,6,0,…) für |v| ≥ 2,4,6,8,…; es müsste über 1 liegen. **Reine Zählung entscheidet nicht.**
+  Logs `runs/zerlegung/s2_gewichte_m12.log.txt`, `…_m14.log.txt`.
+- Test der Knotenschranke gegen `brute` (`zerl_test_dfs.py` mit `--lam 1,2,3,4`, `0,1,3,6`, `2,0,5,1`; Startwerte 11–13): 900 Fälle, 0 Abweichungen
+  (`runs/zerlegung/test_dfs_lam.log.txt`).

@@ -1,0 +1,7 @@
+Start [0, 1, 3, 6, 0, 0, 0] Verhaeltnis 0.6376
+   2.5 s  lam [0, 1, 2, 6, 0, 0, 0]  Verhaeltnis 0.6653  (73728 gegen 110820)
+Ende nach 2311 Auswertungen: lam [0, 1, 2, 6, 0, 0, 0], Verhaeltnis 0.6653; nicht entschieden
+# zaehl: fest runs/zerlegung/eingaben/paley12_U11.txt (12 x 11), d=9, mg=14; Anforderungsvektoren 880 (maximal); Stufen |v| = 0 2 4 6 8 10 12 14; Lam = 0 0 1 3 9 9 9 9
+  N0 = 9 (Knoten 8732082), bester Stufenvektor |v|: 8 0 0 0 0 0 0 0 0 0 0 0
+  Punkte NZ = 8192, Budget je Zeile B = 9235:  N0*NZ = 73728  gegen  K*B = 110820  ->  nicht entschieden
+
