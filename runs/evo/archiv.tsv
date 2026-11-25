@@ -43,3 +43,7 @@ Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
 11	p010	p009	A	20	6	23	2	600	1212	Ziel 23 Paare, blind (Zufallsstart), sonst wie p009
 11	p010	p009	A	20	6	23	3	600	1207	Ziel 23 Paare, blind (Zufallsstart), sonst wie p009
 11	p010	p009	A	20	6	23	4	600	1005	Ziel 23 Paare, blind (Zufallsstart), sonst wie p009
+12	p011	p009	S	20	6	23	1	600	1129	Ziel 23 Paare, Saat, Neustart vom Abschnittsbesten wenn <= 2 % ueber Bestwert
+12	p011	p009	S	20	6	23	2	600	1217	Ziel 23 Paare, Saat, Neustart vom Abschnittsbesten wenn <= 2 % ueber Bestwert
+12	p011	p009	S	20	6	23	3	600	1139	Ziel 23 Paare, Saat, Neustart vom Abschnittsbesten wenn <= 2 % ueber Bestwert
+12	p011	p009	S	20	6	23	4	600	1271	Ziel 23 Paare, Saat, Neustart vom Abschnittsbesten wenn <= 2 % ueber Bestwert
