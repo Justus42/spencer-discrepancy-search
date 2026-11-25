@@ -51,3 +51,7 @@ Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
 13	p012	p011	S	20	6	23	2	600	1240	Ziel 23 Paare, Saat, Stoerung = schwaechste Zeile neu (Streichen und Reparieren)
 13	p012	p011	S	20	6	23	3	600	935	Ziel 23 Paare, Saat, Stoerung = schwaechste Zeile neu (Streichen und Reparieren)
 13	p012	p011	S	20	6	23	4	600	1091	Ziel 23 Paare, Saat, Stoerung = schwaechste Zeile neu (Streichen und Reparieren)
+14	p013	p010	A	20	6	23	1	600	725	Ziel 23 Paare, blind, Zugwahl ueber ganze Nachbarschaft
+14	p013	p010	A	20	6	23	2	600	732	Ziel 23 Paare, blind, Zugwahl ueber ganze Nachbarschaft
+14	p013	p010	A	20	6	23	3	600	738	Ziel 23 Paare, blind, Zugwahl ueber ganze Nachbarschaft
+14	p013	p010	A	20	6	23	4	600	727	Ziel 23 Paare, blind, Zugwahl ueber ganze Nachbarschaft
