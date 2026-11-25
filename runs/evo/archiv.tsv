@@ -87,3 +87,7 @@ Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
 22	p019	p018	A	20	6	23	2	600	709	Ziel 23 Paare, blind, Neustart nach 60 s: schwaechste Zeile durch WHT-beste ersetzen
 22	p019	p018	A	20	6	23	3	600	704	Ziel 23 Paare, blind, Neustart nach 60 s: schwaechste Zeile durch WHT-beste ersetzen
 22	p019	p018	A	20	6	23	4	600	704	Ziel 23 Paare, blind, Neustart nach 60 s: schwaechste Zeile durch WHT-beste ersetzen
+23	p020	p018	A	20	6	23	1	600	707	Ziel 23 Paare, blind, Tabu ohne Gewichte, Aspiration
+23	p020	p018	A	20	6	23	2	600	704	Ziel 23 Paare, blind, Tabu ohne Gewichte, Aspiration
+23	p020	p018	A	20	6	23	3	600	704	Ziel 23 Paare, blind, Tabu ohne Gewichte, Aspiration
+23	p020	p018	A	20	6	23	4	600	704	Ziel 23 Paare, blind, Tabu ohne Gewichte, Aspiration
