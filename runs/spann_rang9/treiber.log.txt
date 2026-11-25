@@ -45,3 +45,5 @@ ctrl16_r9_y40: 2418-3858 von 9276: OHNE_LOESUNG, Knoten 18803907, 510s
 ctrl16_r9_y40: 3858-5552 von 9276: OHNE_LOESUNG, Knoten 17567963, 465s
 ctrl16_r9_y40: 5552-7738 von 9276: OHNE_LOESUNG, Knoten 13106472, 354s
 Blockende (verstrichen 1329s)
+ctrl16_r9_y40: 7738-9276 von 9276: OHNE_LOESUNG, Knoten 236634, 10s
+ctrl16_r9_y40: alle 9276 Aufgaben gerechnet
