@@ -1,0 +1,65 @@
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T5.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+  0: gleich, d=5, Schnitt 0
+  1: andere, d=4, Schnitt 6
+  2: andere, d=3, Schnitt 12
+  3: gleich, d=3, Schnitt 12
+  4: gleich, d=4, Schnitt 12
+  5: andere, d=2, Schnitt 26
+  6: andere, d=1, Schnitt 40
+  7: gleich, d=1, Schnitt 40
+  8: gleich, d=2, Schnitt 40
+  9: andere, d=0, Schnitt 76
+== Typ 5 (andere Spalte, d=2, Schnitt 26): a = Zeile 5120, Vertreter Zeile 4992
+   Stabilisator {a,b}: 20160 Elemente angewandt (Grenze 200000 je Fall), 5152 Kandidaten, 40 Bahnen
+   dritte Zeile: 40 Bahnvertreter
+   Bahn 0/40 (Profil 1,0): 0 Aufgaben, Zeit bisher 8.9 s
+   [10 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 5764, zuletzt Nr. 1048577
+   Bahn 1/40 (Profil 1,1): 5764 Aufgaben, Zeit bisher 9.0 s
+   Bahn 2/40 (Profil 1,1): 5633 Aufgaben, Zeit bisher 9.1 s
+   Bahn 3/40 (Profil 1,1): 5155 Aufgaben, Zeit bisher 9.3 s
+   Bahn 4/40 (Profil 1,1): 5007 Aufgaben, Zeit bisher 9.4 s
+   Bahn 5/40 (Profil 1,1): 4646 Aufgaben, Zeit bisher 9.5 s
+   Bahn 6/40 (Profil 1,1): 4842 Aufgaben, Zeit bisher 9.6 s
+   Bahn 7/40 (Profil 2,0): 5602 Aufgaben, Zeit bisher 9.7 s
+   Bahn 8/40 (Profil 2,1): 48763 Aufgaben, Zeit bisher 11.0 s
+   Bahn 9/40 (Profil 2,1): 49553 Aufgaben, Zeit bisher 11.8 s
+   Bahn 10/40 (Profil 2,1): 50106 Aufgaben, Zeit bisher 13.0 s
+   Bahn 11/40 (Profil 2,1): 46800 Aufgaben, Zeit bisher 14.3 s
+   Bahn 12/40 (Profil 2,1): 48045 Aufgaben, Zeit bisher 15.1 s
+   Bahn 13/40 (Profil 2,1): 48721 Aufgaben, Zeit bisher 16.1 s
+   Bahn 14/40 (Profil 2,1): 50132 Aufgaben, Zeit bisher 17.2 s
+   Bahn 15/40 (Profil 2,2): 77371 Aufgaben, Zeit bisher 18.9 s
+   Bahn 16/40 (Profil 2,2): 75738 Aufgaben, Zeit bisher 20.5 s
+   Bahn 17/40 (Profil 2,2): 76886 Aufgaben, Zeit bisher 21.8 s
+   Bahn 18/40 (Profil 2,2): 80414 Aufgaben, Zeit bisher 23.7 s
+   Bahn 19/40 (Profil 3,1): 84024 Aufgaben, Zeit bisher 24.7 s
+   Bahn 20/40 (Profil 3,1): 81108 Aufgaben, Zeit bisher 25.9 s
+   Bahn 21/40 (Profil 3,2): 75606 Aufgaben, Zeit bisher 27.0 s
+   Bahn 22/40 (Profil 4,1): 97707 Aufgaben, Zeit bisher 56.3 s
+   [70 s] Aufgaben erledigt (dieser Lauf) 20008, insgesamt 20008 von 98357, zuletzt Nr. 24137253
+   Bahn 23/40 (Profil 4,1): 98357 Aufgaben, Zeit bisher 101.7 s
+   Bahn 24/40 (Profil 4,2): 112752 Aufgaben, Zeit bisher 123.3 s
+   [130 s] Aufgaben erledigt (dieser Lauf) 27299, insgesamt 27299 von 110738, zuletzt Nr. 26241698
+   Bahn 25/40 (Profil 4,2): 110738 Aufgaben, Zeit bisher 146.8 s
+   Bahn 26/40 (Profil 5,0): 109568 Aufgaben, Zeit bisher 148.9 s
+   Bahn 27/40 (Profil 5,1): 146834 Aufgaben, Zeit bisher 152.4 s
+   Bahn 28/40 (Profil 5,1): 149513 Aufgaben, Zeit bisher 157.8 s
+   Bahn 29/40 (Profil 5,1): 143828 Aufgaben, Zeit bisher 162.0 s
+   Bahn 30/40 (Profil 5,1): 142136 Aufgaben, Zeit bisher 166.6 s
+   Bahn 31/40 (Profil 5,2): 149945 Aufgaben, Zeit bisher 170.0 s
+   Bahn 32/40 (Profil 5,2): 156739 Aufgaben, Zeit bisher 173.0 s
+   Bahn 33/40 (Profil 5,2): 144937 Aufgaben, Zeit bisher 176.3 s
+   Bahn 34/40 (Profil 5,2): 183334 Aufgaben, Zeit bisher 181.1 s
+   Bahn 35/40 (Profil 5,3): 148592 Aufgaben, Zeit bisher 184.3 s
+   [190 s] Aufgaben erledigt (dieser Lauf) 20719, insgesamt 20719 von 184302, zuletzt Nr. 37769454
+   Bahn 36/40 (Profil 5,4): 184302 Aufgaben, Zeit bisher 211.7 s
+   Bahn 37/40 (Profil 5,5): 153569 Aufgaben, Zeit bisher 214.3 s
+   Bahn 38/40 (Profil 5,5): 100600 Aufgaben, Zeit bisher 216.4 s
+   Bahn 39/40 (Profil 5,5): 153691 Aufgaben, Zeit bisher 219.1 s
+   Aufgaben (Tiefe 5): 3417058 gesamt, 3417058 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:40 4:12448 5:3417058 6:13509969; max. Tiefe 6; Zeit 219.1 s
+   Typ 5: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 219.8 s

@@ -1,0 +1,12 @@
+== Typ 0 (gleiche Spalte, d=5, Schnitt 0): a = Zeile 5120, Vertreter Zeile 5616
+   dritte Zeile: 0 Bahnvertreter
+   Typ 0: fertig, Loesungen 0
+== Typ 1 (andere Spalte, d=4, Schnitt 6): a = Zeile 5120, Vertreter Zeile 5088
+   dritte Zeile: 7 Bahnvertreter
+   Typ 1: fertig, Loesungen 0
+== Typ 2 (andere Spalte, d=3, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5056
+   dritte Zeile: 21 Bahnvertreter
+   Typ 2: NICHT fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), ABBRUCH (Zeit), Gesamtzeit 100.0 s
+   Typ 6: NICHT fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), ABBRUCH (Zeit), Gesamtzeit 39.0 s

@@ -1,0 +1,26 @@
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+  0: gleich, d=5, Schnitt 0
+  1: andere, d=4, Schnitt 6
+  2: andere, d=3, Schnitt 12
+  3: gleich, d=3, Schnitt 12
+  4: gleich, d=4, Schnitt 12
+  5: andere, d=2, Schnitt 26
+  6: andere, d=1, Schnitt 40
+  7: gleich, d=1, Schnitt 40
+  8: gleich, d=2, Schnitt 40
+  9: andere, d=0, Schnitt 76
+== Typ 0 (gleiche Spalte, d=5, Schnitt 0): a = Zeile 5120, Vertreter Zeile 5616
+   Aufgaben (Tiefe 4): 0 gesamt, 0 in diesem Lauf erledigt; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 2:1; max. Tiefe 2; Zeit 0.0 s
+   Typ 0: fertig, Loesungen 0
+== Typ 1 (andere Spalte, d=4, Schnitt 6): a = Zeile 5120, Vertreter Zeile 5088
+   Aufgaben (Tiefe 4): 1992 gesamt, 1992 in diesem Lauf erledigt; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 2:1 3:90 4:1992 5:5784 6:432; max. Tiefe 6; Zeit 0.1 s
+   Typ 1: fertig, Loesungen 0
+== Typ 2 (andere Spalte, d=3, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5056
+   Aufgaben (Tiefe 4): 6139 gesamt, 6135 in diesem Lauf erledigt; Loesungen bisher 0 (verteilt 0) ABBRUCH Zeit
+   Knoten je Tiefe: 2:1 3:29 4:6139 5:884695 6:29207536; max. Tiefe 6; Zeit 119.2 s
+   Typ 2: NICHT fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), ABBRUCH (Zeit), Gesamtzeit 120.0 s

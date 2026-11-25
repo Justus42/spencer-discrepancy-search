@@ -71,6 +71,18 @@ bei N = 18 schon `ctrl_17` mit 7/√18 = 1,650 über dem Tabellenwert.
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Quotient | 1,225 | 1,134 | 1,768 | 1,667 | 0,949 | 1,336 | 1,291 | 1,750 | 1,698 | 1,179 | 1,606 | 1,565 | 1,528 | 1,492 | 1,460 | 1,633 | 1,400 | 1,569 | 1,155 | 1,512 | 1,300 | 1,461 | 1,257 | 1,414 |
 
+## Zeilen mit einer Null, Einträge in {-1, 0, 1} (Auftrag A, 25.11.2026)
+
+Eigene Tabelle, weil N = 11, 13 in den Tabellen oben fehlen. Protokoll `notes/laeufe/2026-11-25_einzelnull.md`.
+
+| Familie | N | Ergebnis | Quotient | Belegart |
+|---|---|---|---|---|
+| n = 8, 8 Zeilen mit je einer Null (Träger 7) | 8 | 57 600 Lösungen mit disc 5, davon 55 680 mit verteilten Nullen (`runs/einzelnull/n8_verteilt.txt`) | 1,768 | e |
+| n = 11, jede Zeile genau eine Null (Träger 10) | 11 | disc 6 ausgeschlossen; disc ist gerade, Zirkulant mit Nulldiagonale erreicht 4 | 1,206 (max.) | e |
+| n = 11, Träger 10, 8, 6 gemischt | 11 | disc 6 nicht gefunden, Suche abgebrochen (nur Typ 0 vollständig) | (1,809) | s |
+| Zirkulant mit Nulldiagonale n = 11, 14, 17 (alle Klassen) | 11/14/17 | Maximum 4, 5, 6 | 1,206 / 1,336 / 1,455 | e |
+| selbstkomplementäre Codes (13,3), Tabu-Leiter (n = 14 mit einer Null je Zeile ist äquivalent, P1) | 21 | kleinste erreichte Wortzahl **42** (21 x 13, disc 7, 3 Prüfprogramme); 40 nicht erreicht | 1,528 | e (42) / (1,565) s (40) |
+
 ## Nötige Dichte, Schranke für reelle Matrizen
 
 Für reelle n x n-Matrizen in [-1,1] (auch mit Nullen aufgefüllte) mit disc > 5√(n/8) müssen 2n Kappen den Würfel {±1}^n überdecken; jede Kappe hat

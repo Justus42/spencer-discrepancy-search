@@ -1,0 +1,40 @@
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T2.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+  0: gleich, d=5, Schnitt 0
+  1: andere, d=4, Schnitt 6
+  2: andere, d=3, Schnitt 12
+  3: gleich, d=3, Schnitt 12
+  4: gleich, d=4, Schnitt 12
+  5: andere, d=2, Schnitt 26
+  6: andere, d=1, Schnitt 40
+  7: gleich, d=1, Schnitt 40
+  8: gleich, d=2, Schnitt 40
+  9: andere, d=0, Schnitt 76
+== Typ 2 (andere Spalte, d=3, Schnitt 12): a = Zeile 5120, Vertreter Zeile 5056
+   Stabilisator {a,b}: 8640 Elemente angewandt (Grenze 200000 je Fall), 3306 Kandidaten, 21 Bahnen
+   dritte Zeile: 21 Bahnvertreter
+   Bahn 0/21 (Profil 1,0): 0 Aufgaben, Zeit bisher 2.4 s
+   [3 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 1366, zuletzt Nr. 1048576
+   Bahn 1/21 (Profil 1,1): 1366 Aufgaben, Zeit bisher 2.5 s
+   Bahn 2/21 (Profil 1,1): 1507 Aufgaben, Zeit bisher 2.5 s
+   Bahn 5/21 (Profil 1,1): 1220 Aufgaben, Zeit bisher 2.6 s
+   Bahn 7/21 (Profil 2,0): 1446 Aufgaben, Zeit bisher 2.7 s
+   Bahn 8/21 (Profil 2,1): 14474 Aufgaben, Zeit bisher 2.9 s
+   Bahn 9/21 (Profil 2,1): 15257 Aufgaben, Zeit bisher 3.2 s
+   Bahn 10/21 (Profil 2,1): 18941 Aufgaben, Zeit bisher 3.6 s
+   Bahn 11/21 (Profil 2,1): 18094 Aufgaben, Zeit bisher 4.0 s
+   Bahn 12/21 (Profil 2,1): 15128 Aufgaben, Zeit bisher 4.3 s
+   Bahn 13/21 (Profil 2,1): 16231 Aufgaben, Zeit bisher 4.6 s
+   Bahn 14/21 (Profil 2,1): 17436 Aufgaben, Zeit bisher 5.0 s
+   Bahn 15/21 (Profil 2,1): 18593 Aufgaben, Zeit bisher 5.3 s
+   Bahn 16/21 (Profil 2,2): 26570 Aufgaben, Zeit bisher 5.7 s
+   Bahn 17/21 (Profil 2,2): 27661 Aufgaben, Zeit bisher 6.1 s
+   Bahn 18/21 (Profil 2,2): 28830 Aufgaben, Zeit bisher 6.4 s
+   Bahn 19/21 (Profil 2,2): 28757 Aufgaben, Zeit bisher 6.7 s
+   Bahn 20/21 (Profil 2,2): 26582 Aufgaben, Zeit bisher 7.1 s
+   Aufgaben (Tiefe 5): 280532 gesamt, 280532 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:21 4:2492 5:280532 6:2797; max. Tiefe 6; Zeit 7.1 s
+   Typ 2: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 7.7 s

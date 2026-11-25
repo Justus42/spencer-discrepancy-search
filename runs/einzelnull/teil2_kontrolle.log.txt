@@ -1,0 +1,11 @@
+Zeilen mit einer Null modulo Vorzeichen: 512, Treffer je Zeile: {16}
+Algorithmus X: 57600 exakte Ueberdeckungen, davon Nullen verteilt: 55680
+Suchcode-Liste: 57600 Loesungen, verschieden: 57600, gleich der Algo-X-Menge: True
+disc >= 5 geprueft (jede 50. und alle einspaltigen): Verstoesse 0
+  Typ (False, 0): Loesungen mit a, Vertreter, alle Paarraenge <= Rang(a,Vertreter): 0
+  Typ (False, 1): Loesungen mit a, Vertreter, alle Paarraenge <= Rang(a,Vertreter): 0
+  Typ (False, 2): Loesungen mit a, Vertreter, alle Paarraenge <= Rang(a,Vertreter): 0
+  Typ (False, 3): Loesungen mit a, Vertreter, alle Paarraenge <= Rang(a,Vertreter): 12
+  Typ (True, 1): Loesungen mit a, Vertreter, alle Paarraenge <= Rang(a,Vertreter): 0
+  Typ (True, 2): Loesungen mit a, Vertreter, alle Paarraenge <= Rang(a,Vertreter): 0
+  Typ (True, 3): Loesungen mit a, Vertreter, alle Paarraenge <= Rang(a,Vertreter): 36

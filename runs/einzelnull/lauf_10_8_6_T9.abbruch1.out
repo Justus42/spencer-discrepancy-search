@@ -1,0 +1,29 @@
+n=11 d=6 K=11 Traeger=10: 41536 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+  Traeger 8: 21120 Zeilen, je 72 Klassen
+  Traeger 6: 14784 Zeilen, je 32 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_8_6_T9.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+  0: gleich, d=5, Schnitt 0
+  1: andere, d=4, Schnitt 6
+  2: andere, d=3, Schnitt 12
+  3: gleich, d=3, Schnitt 12
+  4: gleich, d=4, Schnitt 12
+  5: andere, d=2, Schnitt 26
+  6: andere, d=1, Schnitt 40
+  7: gleich, d=1, Schnitt 40
+  8: gleich, d=2, Schnitt 40
+  9: andere, d=0, Schnitt 76
+== Typ 9 (andere Spalte, d=0, Schnitt 76): a = Zeile 5120, Vertreter Zeile 4608
+   Stabilisator {a,b}: 400000 Elemente angewandt (Grenze 200000 je Fall), 5630 Kandidaten, 23 Bahnen
+   dritte Zeile: 23 Bahnvertreter
+   Bahn 0/23 (Profil 1,0): 0 Aufgaben, Zeit bisher 195.5 s
+   [200 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 640149, zuletzt Nr. 1048576
+   Bahn 1/23 (Profil 1,1): 640149 Aufgaben, Zeit bisher 242.4 s
+   [260 s] Aufgaben erledigt (dieser Lauf) 159652, insgesamt 159652 von 1026118, zuletzt Nr. 2256803
+   Bahn 2/23 (Profil 1,1): 1026118 Aufgaben, Zeit bisher 299.0 s
+   [320 s] Aufgaben erledigt (dieser Lauf) 211390, insgesamt 211390 von 999143, zuletzt Nr. 3357117
+   Bahn 3/23 (Profil 1,1): 999143 Aufgaben, Zeit bisher 354.0 s
+   [380 s] Aufgaben erledigt (dieser Lauf) 286536, insgesamt 286536 von 574399, zuletzt Nr. 4480839
+   Bahn 4/23 (Profil 2,1): 574399 Aufgaben, Zeit bisher 395.7 s
+zu viele Aufgaben je Bahn (1609116)

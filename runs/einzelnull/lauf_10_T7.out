@@ -1,0 +1,32 @@
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T7.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+  0: gleich, d=5, Schnitt 0
+  1: andere, d=4, Schnitt 6
+  2: andere, d=3, Schnitt 12
+  3: gleich, d=3, Schnitt 12
+  4: gleich, d=4, Schnitt 12
+  5: andere, d=2, Schnitt 26
+  6: andere, d=1, Schnitt 40
+  7: gleich, d=1, Schnitt 40
+  8: gleich, d=2, Schnitt 40
+  9: andere, d=0, Schnitt 76
+== Typ 7 (gleiche Spalte, d=1, Schnitt 40): a = Zeile 5120, Vertreter Zeile 5376
+   Stabilisator {a,b}: 400000 Elemente angewandt (Grenze 200000 je Fall), 5502 Kandidaten, 10 Bahnen
+   dritte Zeile: 10 Bahnvertreter
+   [189 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 12159, zuletzt Nr. 0
+   Bahn 0/10 (Profil 1,1): 12159 Aufgaben, Zeit bisher 188.0 s
+   Bahn 1/10 (Profil 1,1): 14499 Aufgaben, Zeit bisher 188.2 s
+   Bahn 2/10 (Profil 2,1): 95475 Aufgaben, Zeit bisher 190.7 s
+   Bahn 3/10 (Profil 2,2): 95076 Aufgaben, Zeit bisher 193.6 s
+   Bahn 4/10 (Profil 4,0): 115448 Aufgaben, Zeit bisher 196.5 s
+   Bahn 5/10 (Profil 4,3): 116592 Aufgaben, Zeit bisher 200.2 s
+   Bahn 6/10 (Profil 5,2): 103047 Aufgaben, Zeit bisher 202.1 s
+   Bahn 7/10 (Profil 5,5): 65688 Aufgaben, Zeit bisher 203.3 s
+   Bahn 8/10 (Profil 6,5): 14051 Aufgaben, Zeit bisher 203.6 s
+   Bahn 9/10 (Profil 6,6): 12679 Aufgaben, Zeit bisher 203.9 s
+   Aufgaben (Tiefe 5): 644714 gesamt, 644714 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:10 4:4293 5:644714 6:455993; max. Tiefe 6; Zeit 203.9 s
+   Typ 7: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 204.6 s

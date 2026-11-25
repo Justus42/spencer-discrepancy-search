@@ -100,6 +100,9 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Bahnen aus 5er-Zyklen plus Komplement, n=20, R=6 | 70 Wörter gefunden, 60 nicht | Suche | L: 2026-11-24_bahnen5 |
 | Bahnen unter der 3-Sylowgruppe P (Ordnung 9) des 48ers, n=20, R=6 | Minimum 48 Wörter (≤ 46 ausgeschlossen); nur Größe 1/3: 19 008 Lösungen | voll | L: 2026-11-25_bahnen3 |
 | Bahnen unter einem Element der Ordnung 3 des 48ers, n=20, R=6 | Tabu-Kontrolle 48 Wörter nicht bestanden (1/4, 0/4), < 48 ungeprüft | Suche | L: 2026-11-25_bahnen3 |
+| Zeilen mit genau einer Null, n = 11, 11 Zeilen (Einträge {-1,0,1}) | disc 6 unmöglich (Rekord 1,809 ausgeschlossen); nur {-1,0,1}, nicht reell | voll | L: 2026-11-25_einzelnull |
+| Zeilen mit Träger 10, 8, 6 gemischt, n = 11 | disc 6 nicht gefunden, nur Typ 0 vollständig | Suche | L: 2026-11-25_einzelnull |
+| Selbstkomplementäre Codes (13,3) (= n = 14 mit einer Null je Zeile, P1 bestätigt) | 42 Wörter gefunden, 40 nicht (4 x 10 Min.) | Suche | L: 2026-11-25_einzelnull |
 | Rundlauf Ansatz 3 (16 Familien, 388 503 Matrizen) | 0 Überlebende, bester Quotient 1,400 | Gegenbeispiel | L: 2026-11-24_rundlauf; A: Ansatz 3 |
 | Reelle Einträge um `ctrl_16` (Zeilen im L1-Abstand ≤ 2) | nichts über 7 | voll | L: 2026-11-24_reell16 |
 | Reelle Matrizen n = 8, 9, 12 (Dichte < 1) | nichts über dem Rekord | voll, bedingt auf Kleitman (unbelegt) | L: 2026-11-24_reell16; K |
@@ -135,6 +138,8 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
   (94/116/116/118). Stopp; K=5, K=4 nicht versucht, Variante 3 volle Bahnen + 5 feste Paare ungeprüft. Protokoll `notes/laeufe/2026-11-24_bahnen5.md`.
 - 25.11.2026, Bahnen ⟨g⟩ (Ordnung 3) des 48ers, Tabu `src/bahnen3_tabu.c`, T=24 (48 Wörter), Startwerte 1–4 je 900 s: Kontrolle nicht bestanden
   (Stichprobe 1000: 1 von 4; exakt: 0 von 4, Restzahl 326–493), keine Leiter. Python-Gruppensuche zu langsam (abgebrochen, C statt dessen). L: 2026-11-25_bahnen3.
+- 25.11.2026, n = 11 gemischt (Träger 10/8/6), `src/einzelnull_such.c -y -3`: Block 3 (20 Min.) am Nummernraum gescheitert (> 2^20 Aufgaben je Bahn), Block 4 (25 Min.) Typ 1 nicht fertig; abgebrochen. L: 2026-11-25_einzelnull.
+- 25.11.2026, (13,3) selbstkomplementär, `src/sc13_tabu.c`, 40 Wörter, Startwerte 1–4 je 600 s: ungelöst (Restzahl 160–196, bester 16). L: 2026-11-25_einzelnull.
 - 24.11.2026, Kleitman-Probe (`src/kleitman_probe.py`, exakte Clique-Suche im Würfel): n=6, D=5 nach 600 s (Zeitgrenze) nicht fertig, nicht
   ausgewertet; Fall D = n−1 aus dem Skript genommen. n = 3–6 mit D ≤ n−2 (13 Fälle) lieferten die Formel. Kein Einfluss auf Teil B.
 - 24.11.2026, Hadamard-Tests (Abschnitt „Hadamard-Bauregel und Tests“):
@@ -159,6 +164,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - n=25 unter 5er-Symmetrie nicht gestartet (L: 2026-11-24_bahnen5).
 - Vollständige Aufzählung K=4 bei n=20 (ca. 280 CPU-h) nicht gestartet (L: 2026-11-24_bahnen5).
 - Variante mit 3 vollen Bahnen plus 5 festen Paaren ungeprüft (A: Fehlversuche).
+- n = 11 gemischt (Träger 8/6): erst die ≤ 5 Zeilen mit Träger 8/6 als Bahnvertreter festlegen, dann Träger 10 (L: 2026-11-25_einzelnull).
 - Nächster Schritt: Ideensammlung (Literatur, Methodentransfer).
 
 ## Prüfrahmen

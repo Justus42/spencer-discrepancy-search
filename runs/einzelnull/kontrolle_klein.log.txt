@@ -1,0 +1,24 @@
+n=8 d=3 K=3:
+n=8 d=3 K=3 Traeger=7: 512 Zeilen (davon 512 Typzeilen), 128 Klassen, maxgr=58, Budget B=46
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 0.0 s
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 0.2 s
+n=8 d=3 K=4:
+n=8 d=3 K=4 Traeger=7: 512 Zeilen (davon 512 Typzeilen), 128 Klassen, maxgr=58, Budget B=104
+ENDE: Loesungen 487424 (Nullen verteilt: 444416), vollstaendig, Gesamtzeit 1.9 s
+ENDE: Loesungen 11 (Nullen verteilt: 7), vollstaendig, Gesamtzeit 0.2 s
+n=9 d=4 K=4:
+n=9 d=4 K=4 Traeger=8: 1152 Zeilen (davon 1152 Typzeilen), 256 Klassen, maxgr=74, Budget B=40
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 0.2 s
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 3.3 s
+n=9 d=4 K=5:
+n=9 d=4 K=5 Traeger=8: 1152 Zeilen (davon 1152 Typzeilen), 256 Klassen, maxgr=74, Budget B=114
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 26.0 s
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 3.3 s
+n=10 d=5 K=8:
+n=10 d=5 K=8 Traeger=9: 2560 Zeilen (davon 2560 Typzeilen), 512 Klassen, maxgr=92, Budget B=224
+ENDE: Loesungen 1072 (Nullen verteilt: 592), ABBRUCH (Zeit), Gesamtzeit 40.0 s
+ENDE: Loesungen 48 (Nullen verteilt: 40), vollstaendig, Gesamtzeit 33.2 s
+  check_disc      Diskrepanz 5  (0.2 s)
+  verify_spencer  Diskrepanz 5  (0.2 s)
+  exakt_disc      Diskrepanz 5  (0.2 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 5 (= erwartet)

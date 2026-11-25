@@ -1,0 +1,59 @@
+n=11 d=6 K=11 Traeger=10: 5632 Zeilen (davon 5632 Typzeilen), 1024 Klassen, maxgr=112, Budget B=208
+  Traeger 10: 5632 Zeilen, je 112 Klassen
+Fortsetzung: 0 erledigte Aufgaben gelesen aus runs/einzelnull/erl_10_T6.txt
+Typen (Rang: gleiche Spalte?, Abstand, Schnitt mit a):
+  0: gleich, d=5, Schnitt 0
+  1: andere, d=4, Schnitt 6
+  2: andere, d=3, Schnitt 12
+  3: gleich, d=3, Schnitt 12
+  4: gleich, d=4, Schnitt 12
+  5: andere, d=2, Schnitt 26
+  6: andere, d=1, Schnitt 40
+  7: gleich, d=1, Schnitt 40
+  8: gleich, d=2, Schnitt 40
+  9: andere, d=0, Schnitt 76
+== Typ 6 (andere Spalte, d=1, Schnitt 40): a = Zeile 5120, Vertreter Zeile 4864
+   Stabilisator {a,b}: 80640 Elemente angewandt (Grenze 200000 je Fall), 5485 Kandidaten, 36 Bahnen
+   dritte Zeile: 36 Bahnvertreter
+   Bahn 0/36 (Profil 1,0): 0 Aufgaben, Zeit bisher 37.6 s
+   [38 s] Aufgaben erledigt (dieser Lauf) 1, insgesamt 1 von 11301, zuletzt Nr. 1048577
+   Bahn 1/36 (Profil 1,1): 11301 Aufgaben, Zeit bisher 37.8 s
+   Bahn 2/36 (Profil 1,1): 9582 Aufgaben, Zeit bisher 37.9 s
+   Bahn 3/36 (Profil 1,1): 10053 Aufgaben, Zeit bisher 38.1 s
+   Bahn 4/36 (Profil 1,1): 10372 Aufgaben, Zeit bisher 38.2 s
+   Bahn 5/36 (Profil 1,1): 10417 Aufgaben, Zeit bisher 38.4 s
+   Bahn 6/36 (Profil 2,0): 11879 Aufgaben, Zeit bisher 38.5 s
+   Bahn 7/36 (Profil 2,1): 66260 Aufgaben, Zeit bisher 39.7 s
+   Bahn 8/36 (Profil 2,1): 65334 Aufgaben, Zeit bisher 42.2 s
+   Bahn 9/36 (Profil 2,1): 70605 Aufgaben, Zeit bisher 48.2 s
+   Bahn 10/36 (Profil 2,1): 64260 Aufgaben, Zeit bisher 50.7 s
+   Bahn 11/36 (Profil 2,2): 107708 Aufgaben, Zeit bisher 53.8 s
+   Bahn 12/36 (Profil 2,2): 99056 Aufgaben, Zeit bisher 55.7 s
+   Bahn 13/36 (Profil 2,2): 102890 Aufgaben, Zeit bisher 57.5 s
+   Bahn 14/36 (Profil 3,1): 105624 Aufgaben, Zeit bisher 59.6 s
+   Bahn 15/36 (Profil 3,2): 94305 Aufgaben, Zeit bisher 61.0 s
+   Bahn 16/36 (Profil 4,1): 137657 Aufgaben, Zeit bisher 77.1 s
+   Bahn 17/36 (Profil 4,1): 134838 Aufgaben, Zeit bisher 90.2 s
+   [98 s] Aufgaben erledigt (dieser Lauf) 55356, insgesamt 55356 von 138646, zuletzt Nr. 18929726
+   Bahn 18/36 (Profil 4,2): 138646 Aufgaben, Zeit bisher 104.6 s
+   Bahn 19/36 (Profil 5,1): 143391 Aufgaben, Zeit bisher 110.5 s
+   Bahn 20/36 (Profil 5,2): 113355 Aufgaben, Zeit bisher 113.7 s
+   Bahn 21/36 (Profil 5,2): 161932 Aufgaben, Zeit bisher 116.9 s
+   Bahn 22/36 (Profil 5,2): 153646 Aufgaben, Zeit bisher 119.5 s
+   Bahn 23/36 (Profil 5,3): 98397 Aufgaben, Zeit bisher 121.6 s
+   Bahn 24/36 (Profil 5,4): 201295 Aufgaben, Zeit bisher 135.0 s
+   Bahn 25/36 (Profil 5,5): 172528 Aufgaben, Zeit bisher 138.5 s
+   Bahn 26/36 (Profil 5,5): 92443 Aufgaben, Zeit bisher 140.3 s
+   Bahn 27/36 (Profil 5,5): 130412 Aufgaben, Zeit bisher 142.7 s
+   Bahn 28/36 (Profil 6,2): 141755 Aufgaben, Zeit bisher 145.3 s
+   Bahn 29/36 (Profil 6,3): 68938 Aufgaben, Zeit bisher 146.7 s
+   Bahn 30/36 (Profil 6,5): 124535 Aufgaben, Zeit bisher 149.3 s
+   Bahn 31/36 (Profil 6,5): 75565 Aufgaben, Zeit bisher 151.0 s
+   Bahn 32/36 (Profil 6,5): 121695 Aufgaben, Zeit bisher 153.3 s
+   Bahn 33/36 (Profil 6,6): 14742 Aufgaben, Zeit bisher 153.6 s
+   Bahn 34/36 (Profil 6,6): 108973 Aufgaben, Zeit bisher 155.7 s
+   Bahn 35/36 (Profil 6,6): 14183 Aufgaben, Zeit bisher 156.0 s
+   Aufgaben (Tiefe 5): 3188572 gesamt, 3188572 in diesem Lauf erledigt, 0 vorher; Loesungen bisher 0 (verteilt 0)
+   Knoten je Tiefe: 3:36 4:14307 5:3188572 6:4826303; max. Tiefe 6; Zeit 156.0 s
+   Typ 6: fertig, Loesungen 0
+ENDE: Loesungen 0 (Nullen verteilt: 0), vollstaendig, Gesamtzeit 156.6 s
