@@ -1,0 +1,29 @@
+Wed Nov 25 08:19:40 UTC 2026
+# zweibahn_zaehl q=13 f=4 m=30 R=10 k=2 B=32 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:32 13:41297760  gesamt 41297792  (3.0 s)
+Kontrolle: Summe Groessen = 536870912, 2^(m-1) = 536870912
+erlaubte kurze Bahnen (Groesse <= 32): 32
+harte Klassen: 18120960 von 41297792  (5.3 s)
+Normalisator-Klassen voller Bahnen: 4394 (Erzeuger 23), Summe Klassengroessen 41297760 = 41297760 volle Bahnen
+(63.4 s)
+Klassenbereich [2926, 4394) von 4394
+  Klasse 3026/4394 A=ae177 Gewicht 9984 hart offen 4879508 Kandidaten B 41297759 harte ueberdeckt 0  (119.3 s)
+  Klasse 3126/4394 A=ae4d5 Gewicht 9984 hart offen 4646163 Kandidaten B 41297759 harte ueberdeckt 0  (174.2 s)
+  Klasse 3226/4394 A=b61dd Gewicht 9984 hart offen 4434082 Kandidaten B 41297759 harte ueberdeckt 0  (230.6 s)
+  Klasse 3326/4394 A=ba139 Gewicht 4992 hart offen 5055507 Kandidaten B 41297759 harte ueberdeckt 0  (286.2 s)
+  Klasse 3426/4394 A=be13b Gewicht 9984 hart offen 5140033 Kandidaten B 41297759 harte ueberdeckt 0  (341.1 s)
+  Klasse 3526/4394 A=be4ad Gewicht 9984 hart offen 5334545 Kandidaten B 41297759 harte ueberdeckt 0  (393.5 s)
+  Klasse 3626/4394 A=de173 Gewicht 9984 hart offen 4528003 Kandidaten B 41297759 harte ueberdeckt 0  (447.8 s)
+  Klasse 3726/4394 A=ee11d Gewicht 9984 hart offen 5137985 Kandidaten B 41297759 harte ueberdeckt 0  (500.6 s)
+  Klasse 3826/4394 A=12e197 Gewicht 9984 hart offen 4718904 Kandidaten B 41297759 harte ueberdeckt 0  (554.9 s)
+  Klasse 3926/4394 A=13a173 Gewicht 9984 hart offen 4276688 Kandidaten B 41297759 harte ueberdeckt 0  (611.0 s)
+  Klasse 4026/4394 A=13e197 Gewicht 9984 hart offen 4829867 Kandidaten B 41297759 harte ueberdeckt 0  (665.6 s)
+  Klasse 4126/4394 A=15e1d9 Gewicht 9984 hart offen 4141323 Kandidaten B 41297759 harte ueberdeckt 0  (720.6 s)
+  Klasse 4226/4394 A=16e36d Gewicht 9984 hart offen 4395439 Kandidaten B 41297759 harte ueberdeckt 0  (776.0 s)
+  Klasse 4326/4394 A=1ae1ab Gewicht 9984 hart offen 4202743 Kandidaten B 41297759 harte ueberdeckt 0  (831.3 s)
+Blaetter (ungewichtet): 0
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 0, gewichtet 0
+Ueberdeckungen nach Zahl kurzer Paare (k=2 volle Bahnen, ungeordnet):
+SUMME Ueberdeckungen: 0
+Laufzeit 869.6 s
+Rueckgabe 0

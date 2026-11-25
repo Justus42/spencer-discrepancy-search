@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 25.11.2026 (nach Gegenrechnung (15,4) unter Symmetrie). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 25.11.2026 (nach Auftrag Z, Zwei-Bahnen-Codes). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 Vollständige frühere Fassung: `notes/verlauf/STATUS_2026-11-24_vollstaendig.md` (Archiv, eingefroren). Übersicht Familien x N:
 `LANDKARTE.md`. Arbeitsregeln: `CLAUDE.md`. Herkunft externer Dateien: `controls/QUELLEN.md`. Laufprotokolle: `notes/laeufe/`.
 Fundstellen in den Tabellen: „A: …“ = Überschrift im Archiv, „L: …“ = `notes/laeufe/…`, „K“ = `LANDKARTE.md`,
@@ -107,6 +107,8 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Träger 10/8/6 gemischt, n = 11, Profile (q,s) mit Budget ≤ 48: (5,0) (4,0) (3,1) (2,1) (1,2) (0,2) | keine Lösung | voll | L: 2026-11-25_einzelnull |
 | Träger 10/8/6 gemischt, Profile (3,0) (2,0) (1,1) (1,0) (0,1) | nichts gefunden, (3,0) Typen 0–3 voll, Rest offen | Suche | L: 2026-11-25_einzelnull |
 | Selbstkomplementäre Codes (13,3) (= n = 14 mit einer Null je Zeile, P1 bestätigt) | 42 Wörter gefunden, 40 nicht (4 x 10 Min.) | Suche | L: 2026-11-25_einzelnull |
+| Zwei-Bahnen-Codes (⟨g⟩ auf zwei Blöcken der Länge q + f Fixspalten), Kontrollen (15,4) 112 und (17,5) 1792 bestätigt; (20,6) q=10/9 alle Teilfälle des Vortests plus 1 volle + kurze ≤ 11 | nichts mit ≤ 40 Wörtern | voll (ein Programm, an Kontrollen und Brute-Force geprüft) | L: 2026-11-25_zweibahn |
+| Zwei-Bahnen-Codes, 2 volle Bahnen + feste Paare: (25,8) q=11/12, (23,7) bis 50 Wörter; (30,10), (28,9), (26,8) q=13/11 bis 62 Wörter | keine Überdeckung; bei q ungerade auch mit beliebig vielen festen Paaren nicht | voll | L: 2026-11-25_zweibahn; K |
 | Rundlauf Ansatz 3 (16 Familien, 388 503 Matrizen) | 0 Überlebende, bester Quotient 1,400 | Gegenbeispiel | L: 2026-11-24_rundlauf; A: Ansatz 3 |
 | Reelle Einträge um `ctrl_16` (Zeilen im L1-Abstand ≤ 2) | nichts über 7 | voll | L: 2026-11-24_reell16 |
 | Reelle Matrizen n = 8, 9, 12 (Dichte < 1) | nichts über dem Rekord | voll, bedingt auf Kleitman (belegt: J. Combin. Theory 1 (1966), 209–214) | L: 2026-11-24_reell16; K |
@@ -145,6 +147,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
   (Stichprobe 1000: 1 von 4; exakt: 0 von 4, Restzahl 326–493), keine Leiter. Python-Gruppensuche zu langsam (abgebrochen, C statt dessen). L: 2026-11-25_bahnen3.
 - 25.11.2026, n = 11 gemischt (Träger 10/8/6), `src/einzelnull_such.c -y -3`: Block 3 (20 Min.) am Nummernraum gescheitert (> 2^20 Aufgaben je Bahn), Block 4 (25 Min.) Typ 1 nicht fertig; abgebrochen. L: 2026-11-25_einzelnull.
 - 25.11.2026, (13,3) selbstkomplementär, `src/sc13_tabu.c`, 40 Wörter, Startwerte 1–4 je 600 s: ungelöst (Restzahl 160–196, bester 16). L: 2026-11-25_einzelnull.
+- 25.11.2026, Auftrag Z, (30,10) mit Kugel um h1 je Klasse: 4394 Klassen statt geschätzter Dutzende, nach 10 Min. abgebrochen; ersetzt durch Vorfilter über alle vollen Bahnen (L: 2026-11-25_zweibahn).
 - 24.11.2026, Kleitman-Probe (`src/kleitman_probe.py`, exakte Clique-Suche im Würfel): n=6, D=5 nach 600 s (Zeitgrenze) nicht fertig, nicht
   ausgewertet; Fall D = n−1 aus dem Skript genommen. n = 3–6 mit D ≤ n−2 (13 Fälle) lieferten die Formel. Kein Einfluss auf Teil B.
 - 24.11.2026, Hadamard-Tests (Abschnitt „Hadamard-Bauregel und Tests“):
@@ -177,7 +180,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
   der Tabu-Treffer aus Teil 4 ist ein neunter 48er (Gruppenordnung 24). Rechnung des Orchestrators, nicht gegengerechnet
   (`notes/gate_2026-11-25_bahnen3.md`). „≤ 46 ausgeschlossen“ ruht auf einem Zählprogramm; ⟨g⟩ mit < 48 Wörtern ungeprüft (L: 2026-11-25_bahnen3).
 - n=25 unter 5er-Symmetrie nicht gestartet (L: 2026-11-24_bahnen5).
-- Vollständige Aufzählung K=4 bei n=20 (ca. 280 CPU-h) nicht gestartet (L: 2026-11-24_bahnen5).
+- Vollständige Aufzählung K=4 bei n=20 (ca. 280 CPU-h) nicht gestartet (L: 2026-11-24_bahnen5); Teilfall zwei 10er-Zyklen erledigt (L: 2026-11-25_zweibahn).
 - Variante mit 3 vollen Bahnen plus 5 festen Paaren ungeprüft (A: Fehlversuche).
 - n = 11 gemischt: Profile (3,0) ab Typ 4, (2,0), (1,1), (1,0), (0,1) offen; Fortsetzung `bash src/run_profile.sh SEK` (L: 2026-11-25_einzelnull).
 - Nächster Schritt: Ideensammlung (Literatur, Methodentransfer).
@@ -211,4 +214,5 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - `src/gegenbeispiel40.c`: Suchcode für Test C (Tabu-Suche auf Vorzeichenvektoren). Bauen: `gcc -O3 -march=native -o build/gegenbeispiel40 src/gegenbeispiel40.c`.
 - `src/offene_zellen.py`: Prüfcode, offene Zellen aus der Post-Kéri-Tabelle (Teil C, 24.11.2026). `src/gegenrechnung_testc.py`: Prüfcode, zweite
   Nachrechnung der 30 780 Gegenbeispiele zu Test C ohne `hadamard_tests.py`. Logs `runs/status_umzug/`.
+- `src/zweibahn_zaehl.c` (Zählcode, Zwei-Bahnen-Codes), `src/zweibahn_brute.py` (Prüfcode, Brute-Force-Test), `src/run_zweibahn_teil{1,2,3}.sh`. Logs `runs/zweibahn/`.
 - `notes/verlauf/`: Archiv der vollständigen STATUS.md vom 24.11.2026 (eingefroren). `notes/rundlauf_2026-11-24_auftrag.md`: Auftragstext Ansatz 3.

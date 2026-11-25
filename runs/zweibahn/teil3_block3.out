@@ -1,0 +1,16 @@
+== a_k2_B32_ab2926: 13 4 10 2 32 -s 2926
+Bahnen (Paare) nach Groesse: 1:32 13:41297760  gesamt 41297792  (3.0 s)
+harte Klassen: 18120960 von 41297792  (5.3 s)
+Normalisator-Klassen voller Bahnen: 4394 (Erzeuger 23), Summe Klassengroessen 41297760 = 41297760 volle Bahnen
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 0, gewichtet 0
+SUMME Ueberdeckungen: 0
+Laufzeit 869.6 s
+Rueckgabe 0
+== b_k2_B5: 13 2 9 2 5
+Bahnen (Paare) nach Groesse: 1:8 13:10324440  gesamt 10324448  (0.7 s)
+harte Klassen: 7059624 von 10324448  (0.9 s)
+Normalisator-Klassen voller Bahnen: 4394 (Erzeuger 19), Summe Klassengroessen 10324440 = 10324440 volle Bahnen
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 0, gewichtet 0
+SUMME Ueberdeckungen: 0
+Laufzeit 613.8 s
+Rueckgabe 0

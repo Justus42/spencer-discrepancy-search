@@ -1,0 +1,57 @@
+Wed Nov 25 08:34:09 UTC 2026
+# zweibahn_zaehl q=13 f=2 m=28 R=9 k=2 B=5 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:8 13:10324440  gesamt 10324448  (0.7 s)
+Kontrolle: Summe Groessen = 134217728, 2^(m-1) = 134217728
+erlaubte kurze Bahnen (Groesse <= 5): 8
+harte Klassen: 7059624 von 10324448  (0.9 s)
+Normalisator-Klassen voller Bahnen: 4394 (Erzeuger 19), Summe Klassengroessen 10324440 = 10324440 volle Bahnen
+(13.5 s)
+  Klasse 100/4394 A=604f Gewicht 2496 hart offen 3108070 Kandidaten B 10324439 harte ueberdeckt 0  (26.9 s)
+  Klasse 200/4394 A=622d Gewicht 1248 hart offen 2770330 Kandidaten B 10324439 harte ueberdeckt 0  (40.5 s)
+  Klasse 300/4394 A=e093 Gewicht 2496 hart offen 2837313 Kandidaten B 10324439 harte ueberdeckt 0  (54.0 s)
+  Klasse 400/4394 A=e275 Gewicht 2496 hart offen 2550551 Kandidaten B 10324439 harte ueberdeckt 0  (67.8 s)
+  Klasse 500/4394 A=1609f Gewicht 2496 hart offen 2762228 Kandidaten B 10324439 harte ueberdeckt 0  (81.9 s)
+  Klasse 600/4394 A=16197 Gewicht 2496 hart offen 2447386 Kandidaten B 10324439 harte ueberdeckt 0  (95.8 s)
+  Klasse 700/4394 A=16337 Gewicht 2496 hart offen 2436131 Kandidaten B 10324439 harte ueberdeckt 0  (109.0 s)
+  Klasse 800/4394 A=1e123 Gewicht 2496 hart offen 2538039 Kandidaten B 10324439 harte ueberdeckt 0  (122.1 s)
+  Klasse 900/4394 A=1e533 Gewicht 1248 hart offen 2233926 Kandidaten B 10324439 harte ueberdeckt 0  (135.4 s)
+  Klasse 1000/4394 A=261cb Gewicht 2496 hart offen 2450398 Kandidaten B 10324439 harte ueberdeckt 0  (149.3 s)
+  Klasse 1100/4394 A=2e113 Gewicht 2496 hart offen 2441439 Kandidaten B 10324439 harte ueberdeckt 0  (163.0 s)
+  Klasse 1200/4394 A=2e267 Gewicht 2496 hart offen 2339619 Kandidaten B 10324439 harte ueberdeckt 0  (176.8 s)
+  Klasse 1300/4394 A=36063 Gewicht 1248 hart offen 2564788 Kandidaten B 10324439 harte ueberdeckt 0  (190.5 s)
+  Klasse 1400/4394 A=36295 Gewicht 2496 hart offen 2238303 Kandidaten B 10324439 harte ueberdeckt 0  (204.3 s)
+  Klasse 1500/4394 A=3e14d Gewicht 2496 hart offen 2330202 Kandidaten B 10324439 harte ueberdeckt 0  (216.9 s)
+  Klasse 1600/4394 A=4e059 Gewicht 2496 hart offen 2423262 Kandidaten B 10324439 harte ueberdeckt 0  (230.8 s)
+  Klasse 1700/4394 A=4e18d Gewicht 2496 hart offen 2356635 Kandidaten B 10324439 harte ueberdeckt 0  (244.5 s)
+  Klasse 1800/4394 A=4e335 Gewicht 2496 hart offen 2221529 Kandidaten B 10324439 harte ueberdeckt 0  (258.3 s)
+  Klasse 1900/4394 A=560ef Gewicht 2496 hart offen 2307034 Kandidaten B 10324439 harte ueberdeckt 0  (272.2 s)
+  Klasse 2000/4394 A=5628b Gewicht 2496 hart offen 2219673 Kandidaten B 10324439 harte ueberdeckt 0  (286.1 s)
+  Klasse 2100/4394 A=5a0bd Gewicht 1248 hart offen 2755750 Kandidaten B 10324439 harte ueberdeckt 0  (299.6 s)
+  Klasse 2200/4394 A=5e0f3 Gewicht 2496 hart offen 2329025 Kandidaten B 10324439 harte ueberdeckt 0  (313.4 s)
+  Klasse 2300/4394 A=5e29b Gewicht 2496 hart offen 2030992 Kandidaten B 10324439 harte ueberdeckt 0  (327.1 s)
+  Klasse 2400/4394 A=6e0b9 Gewicht 2496 hart offen 2366735 Kandidaten B 10324439 harte ueberdeckt 0  (340.1 s)
+  Klasse 2500/4394 A=6e25b Gewicht 2496 hart offen 2274028 Kandidaten B 10324439 harte ueberdeckt 0  (354.1 s)
+  Klasse 2600/4394 A=7e0bb Gewicht 2496 hart offen 2809233 Kandidaten B 10324439 harte ueberdeckt 0  (367.5 s)
+  Klasse 2700/4394 A=9e067 Gewicht 2496 hart offen 2335855 Kandidaten B 10324439 harte ueberdeckt 0  (380.8 s)
+  Klasse 2800/4394 A=9e1d9 Gewicht 2496 hart offen 2130951 Kandidaten B 10324439 harte ueberdeckt 0  (395.5 s)
+  Klasse 2900/4394 A=a608d Gewicht 832 hart offen 2235843 Kandidaten B 10324439 harte ueberdeckt 0  (409.5 s)
+  Klasse 3000/4394 A=ae117 Gewicht 2496 hart offen 2250202 Kandidaten B 10324439 harte ueberdeckt 0  (423.3 s)
+  Klasse 3100/4394 A=ae32b Gewicht 2496 hart offen 2090533 Kandidaten B 10324439 harte ueberdeckt 0  (436.9 s)
+  Klasse 3200/4394 A=b618f Gewicht 2496 hart offen 2242127 Kandidaten B 10324439 harte ueberdeckt 0  (450.2 s)
+  Klasse 3300/4394 A=ba05f Gewicht 2496 hart offen 2837568 Kandidaten B 10324439 harte ueberdeckt 0  (463.9 s)
+  Klasse 3400/4394 A=be0b7 Gewicht 2496 hart offen 2380866 Kandidaten B 10324439 harte ueberdeckt 0  (476.8 s)
+  Klasse 3500/4394 A=be2db Gewicht 2496 hart offen 2263275 Kandidaten B 10324439 harte ueberdeckt 0  (490.9 s)
+  Klasse 3600/4394 A=de0ef Gewicht 2496 hart offen 2345526 Kandidaten B 10324439 harte ueberdeckt 0  (505.2 s)
+  Klasse 3700/4394 A=de4b3 Gewicht 2496 hart offen 2149744 Kandidaten B 10324439 harte ueberdeckt 0  (518.7 s)
+  Klasse 3800/4394 A=12e0f7 Gewicht 2496 hart offen 2130691 Kandidaten B 10324439 harte ueberdeckt 0  (532.2 s)
+  Klasse 3900/4394 A=13a0bd Gewicht 2496 hart offen 2279312 Kandidaten B 10324439 harte ueberdeckt 0  (546.0 s)
+  Klasse 4000/4394 A=13e0cf Gewicht 2496 hart offen 2377112 Kandidaten B 10324439 harte ueberdeckt 0  (560.3 s)
+  Klasse 4100/4394 A=15e12f Gewicht 2496 hart offen 2219249 Kandidaten B 10324439 harte ueberdeckt 0  (574.6 s)
+  Klasse 4200/4394 A=16e1d9 Gewicht 2496 hart offen 1944228 Kandidaten B 10324439 harte ueberdeckt 0  (588.1 s)
+  Klasse 4300/4394 A=17a1bb Gewicht 1248 hart offen 2088095 Kandidaten B 10324439 harte ueberdeckt 0  (601.1 s)
+Blaetter (ungewichtet): 0
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 0, gewichtet 0
+Ueberdeckungen nach Zahl kurzer Paare (k=2 volle Bahnen, ungeordnet):
+SUMME Ueberdeckungen: 0
+Laufzeit 613.8 s
+Rueckgabe 0
