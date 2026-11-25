@@ -1,0 +1,76 @@
+# Kontrolle Bewerter, 2026-11-25 17:18 UTC, gcc -O3 -march=native -fopenmp -Wall -Wextra -o build/evo_bewertung src/evo_bewertung.c
+== Hamming: ctrl_8, erste 7 Spalten, R = 1
+OK    ctrl_8 voll: offen=0
+OK    ctrl_8 ohne Zeile 1: offen=8
+OK    ctrl_8 ohne Zeile 2: offen=8
+OK    ctrl_8 ohne Zeile 3: offen=8
+OK    ctrl_8 ohne Zeile 4: offen=8
+OK    ctrl_8 ohne Zeile 5: offen=8
+OK    ctrl_8 ohne Zeile 6: offen=8
+OK    ctrl_8 ohne Zeile 7: offen=8
+OK    ctrl_8 ohne Zeile 8: offen=8
+== ctrl_16, erste 15 Spalten, R = 4
+OK    ctrl_16 voll: offen=0
+OK    ctrl_16 ohne Zeile 1: offen=233
+OK    ctrl_16 ohne Zeile 2: offen=233
+OK    ctrl_16 ohne Zeile 3: offen=233
+OK    ctrl_16 ohne Zeile 4: offen=233
+OK    ctrl_16 ohne Zeile 5: offen=233
+OK    ctrl_16 ohne Zeile 6: offen=233
+OK    ctrl_16 ohne Zeile 7: offen=233
+OK    ctrl_16 ohne Zeile 8: offen=233
+OK    ctrl_16 ohne Zeile 9: offen=233
+OK    ctrl_16 ohne Zeile 10: offen=233
+OK    ctrl_16 ohne Zeile 11: offen=233
+OK    ctrl_16 ohne Zeile 12: offen=233
+OK    ctrl_16 ohne Zeile 13: offen=233
+OK    ctrl_16 ohne Zeile 14: offen=233
+OK    ctrl_16 ohne Zeile 15: offen=233
+OK    ctrl_16 ohne Zeile 16: offen=233
+== had24_1p3_paley12, m = 20, R = 6
+OK    48er voll: offen=0
+OK    48er ohne Nebenklasse (Zeilen 1, 13): offen=3054
+OK    48er ohne Nebenklasse (Zeilen 2, 14): offen=3054
+OK    48er ohne Nebenklasse (Zeilen 3, 15): offen=3054
+OK    48er ohne Nebenklasse (Zeilen 4, 16): offen=3054
+OK    48er ohne Nebenklasse (Zeilen 5, 17): offen=3054
+OK    48er ohne Nebenklasse (Zeilen 6, 18): offen=3054
+OK    48er ohne Nebenklasse (Zeilen 7, 19): offen=3054
+OK    48er ohne Nebenklasse (Zeilen 8, 20): offen=3054
+OK    48er ohne Nebenklasse (Zeilen 9, 21): offen=3054
+OK    48er ohne Nebenklasse (Zeilen 10, 22): offen=3054
+OK    48er ohne Nebenklasse (Zeilen 11, 23): offen=3054
+OK    48er ohne Nebenklasse (Zeilen 12, 24): offen=3054
+OK    48er ohne Zeile 1: offen=1297
+OK    48er ohne Zeile 2: offen=1297
+OK    48er ohne Zeile 3: offen=1297
+OK    48er ohne Zeile 4: offen=1297
+OK    48er ohne Zeile 5: offen=1297
+OK    48er ohne Zeile 6: offen=1297
+OK    48er ohne Zeile 7: offen=1297
+OK    48er ohne Zeile 8: offen=1297
+OK    48er ohne Zeile 9: offen=1297
+OK    48er ohne Zeile 10: offen=1297
+OK    48er ohne Zeile 11: offen=1297
+OK    48er ohne Zeile 12: offen=1297
+OK    48er ohne Zeile 13: offen=1297
+OK    48er ohne Zeile 14: offen=1297
+OK    48er ohne Zeile 15: offen=1297
+OK    48er ohne Zeile 16: offen=1297
+OK    48er ohne Zeile 17: offen=1297
+OK    48er ohne Zeile 18: offen=1297
+OK    48er ohne Zeile 19: offen=1297
+OK    48er ohne Zeile 20: offen=1297
+OK    48er ohne Zeile 21: offen=1297
+OK    48er ohne Zeile 22: offen=1297
+OK    48er ohne Zeile 23: offen=1297
+OK    48er ohne Zeile 24: offen=1297
+== Eingabefehler muessen abgelehnt werden
+OK    Eintrag 0 abgelehnt
+OK    kurze Zeile abgelehnt
+OK    Text abgelehnt
+ALLE KONTROLLEN BESTANDEN
+
+real	0m0.538s
+user	0m0.962s
+sys	0m0.173s
