@@ -1,0 +1,6 @@
+2026-11-25 18:30:17 UTC  Runde 8  p006 (Elter -, Insel C)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=1598  (600 s)   [Selbstauskunft: ENDE best=1598 it=73643 t_best=389.6 t=600.0]
+  Startwert 2: offen=1573  (600 s)   [Selbstauskunft: ENDE best=1573 it=72974 t_best=326.3 t=600.0]
+  Startwert 3: offen=1569  (600 s)   [Selbstauskunft: ENDE best=1569 it=73249 t_best=403.4 t=600.0]
+  Startwert 4: offen=1683  (600 s)   [Selbstauskunft: ENDE best=1683 it=73295 t_best=563.7 t=600.0]
+2026-11-25 18:40:18 UTC  Runde 8 fertig
