@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 25.11.2026 (nach Auftrag Z, Zwei-Bahnen-Codes). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 25.11.2026 (nach Auftrag Z, Zwei-Bahnen-Codes, und Auftrag L, Leiter unter 48 bei (20,6): Kontrolle K=12 nicht bestanden). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 Vollständige frühere Fassung: `notes/verlauf/STATUS_2026-11-24_vollstaendig.md` (Archiv, eingefroren). Übersicht Familien x N:
 `LANDKARTE.md`. Arbeitsregeln: `CLAUDE.md`. Herkunft externer Dateien: `controls/QUELLEN.md`. Laufprotokolle: `notes/laeufe/`.
 Fundstellen in den Tabellen: „A: …“ = Überschrift im Archiv, „L: …“ = `notes/laeufe/…`, „K“ = `LANDKARTE.md`,
@@ -107,8 +107,8 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Träger 10/8/6 gemischt, n = 11, Profile (q,s) mit Budget ≤ 48: (5,0) (4,0) (3,1) (2,1) (1,2) (0,2) | keine Lösung | voll | L: 2026-11-25_einzelnull |
 | Träger 10/8/6 gemischt, Profile (3,0) (2,0) (1,1) (1,0) (0,1) | nichts gefunden, (3,0) Typen 0–3 voll, Rest offen | Suche | L: 2026-11-25_einzelnull |
 | Selbstkomplementäre Codes (13,3) (= n = 14 mit einer Null je Zeile, P1 bestätigt) | 42 Wörter gefunden, 40 nicht (4 x 10 Min.) | Suche | L: 2026-11-25_einzelnull |
-| Zwei-Bahnen-Codes (⟨g⟩ auf zwei Blöcken der Länge q + f Fixspalten), Kontrollen (15,4) 112 und (17,5) 1792 bestätigt; (20,6) q=10/9 alle Teilfälle des Vortests plus 1 volle + kurze ≤ 11 | nichts mit ≤ 40 Wörtern | voll (ein Programm, an Kontrollen und Brute-Force geprüft) | L: 2026-11-25_zweibahn |
-| Zwei-Bahnen-Codes, 2 volle Bahnen + feste Paare: (25,8) q=11/12, (23,7) bis 50 Wörter; (30,10), (28,9), (26,8) q=13/11 bis 62 Wörter | keine Überdeckung; bei q ungerade auch mit beliebig vielen festen Paaren nicht | voll | L: 2026-11-25_zweibahn; K |
+| Zwei-Bahnen-Codes (⟨g⟩ auf zwei Blöcken der Länge q + f Fixspalten), Kontrollen (15,4) 112 und (17,5) 1792 bestätigt; (20,6) q=10/9 alle Teilfälle des Vortests plus 1 volle + kurze ≤ 11 | nichts mit ≤ 40 Wörtern | voll (zwei Programme: Vortest des Orchestrators und Sitzung; „1 volle + kurze ≤ 11“ ein Programm) | L: 2026-11-25_zweibahn; `notes/gate_2026-11-25_zweibahn.md` |
+| Zwei-Bahnen-Codes, 2 volle Bahnen + feste Paare: (25,8) q=11/12, (23,7) bis 50 Wörter; (30,10), (28,9), (26,8) q=13/11 bis 62 Wörter | keine Überdeckung; bei q = 11 und 13 auch mit beliebig vielen festen Paaren und mit nur einer vollen Bahn nicht | voll (q = 11: zwei Programme; q = 13 und q = 12: ein Programm, im Gate nur Stichprobe) | L: 2026-11-25_zweibahn; K; `notes/gate_2026-11-25_zweibahn.md` |
 | Rundlauf Ansatz 3 (16 Familien, 388 503 Matrizen) | 0 Überlebende, bester Quotient 1,400 | Gegenbeispiel | L: 2026-11-24_rundlauf; A: Ansatz 3 |
 | Reelle Einträge um `ctrl_16` (Zeilen im L1-Abstand ≤ 2) | nichts über 7 | voll | L: 2026-11-24_reell16 |
 | Reelle Matrizen n = 8, 9, 12 (Dichte < 1) | nichts über dem Rekord | voll, bedingt auf Kleitman (belegt: J. Combin. Theory 1 (1966), 209–214) | L: 2026-11-24_reell16; K |
@@ -162,6 +162,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
   - Sieb mit 0,05 s je Matrix bleibt bei Sol 4 in 7 von 2 174 Fällen über dem exakten Wert (7 statt 5): zu kurze Zeit, nur Suchcode; die exakte Rechnung entscheidet.
 - 24.11.2026, Status-Umzug: Commit-Daten über github.com (`.patch`) Proxy 403, statt dessen Git-Abruf; erster Lauf `offene_zellen.py` am CSV-Kopf gescheitert (Spalte `q`), je Sekunden.
 - 24.11.2026, Lean-Zertifikat: Kernel-Prüfung zweimal Speichermangel (einfache Schleife am Stück 117 s; 8 x 512 Blocksätze über `lake build` ca. 10 Min.), Namenskonflikt beim Neubau 2 Min.; `lakecache.blob.core.windows.net` Proxy 403 (L: 2026-11-24_lean).
+- 25.11.2026, Leiter unter 48 bei (20,6), Auftrag L: Teil 1 (Alleinanteile, eigenes Skript) bestätigt; Teil 2 Kontrolle K=12, Typ (11,9), Zufallsstart, Startwerte 1–16, je 1800 s, 4 parallel: nur 1 von 16 gelöst (Startwert 5, 48er, disc 8, Allein 12 x 6108, laut Gate gleichwertig zur Paley-Doppelung 1+3; Soll mindestens 2), Restzahlen sonst 8–22. Abbruch nach Auftrag, kein K=11, keine Warmstarts. L: 2026-11-25_leiter48.
 
 ## Offene Punkte
 
@@ -183,6 +184,8 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - Vollständige Aufzählung K=4 bei n=20 (ca. 280 CPU-h) nicht gestartet (L: 2026-11-24_bahnen5); Teilfall zwei 10er-Zyklen erledigt (L: 2026-11-25_zweibahn).
 - Variante mit 3 vollen Bahnen plus 5 festen Paaren ungeprüft (A: Fehlversuche).
 - n = 11 gemischt: Profile (3,0) ab Typ 4, (2,0), (1,1), (1,0), (0,1) offen; Fortsetzung `bash src/run_profile.sh SEK` (L: 2026-11-25_einzelnull).
+- Leiter unter 48 bei (20,6): Kontrolle K=12 aus Zufallsstart 1 von 16 (nicht bestanden); K=11 nie versucht. Nur mit Warmstart aus den bekannten 48ern oder weit mehr Startwerten weiterzuverfolgen (L: 2026-11-25_leiter48). Alle drei bisherigen
+  Treffer der Nebenklassen-Suche bei Typ (11,9) sind derselbe Code (Paley-Doppelung 1+3; `notes/gate_2026-11-25_leiter48.md`).
 - Nächster Schritt: Ideensammlung (Literatur, Methodentransfer).
 
 ## Prüfrahmen
@@ -203,6 +206,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - `src/pruefe_mckay.py`: Gegenrechnung der 60 McKay-Matrizen. `src/streichtest.py`: Prüfcode, überflüssige Nebenklassen.
 - `src/hadamard_tests.py`: exakte Diskrepanz (Meet-in-the-middle, int8), Kontrollen, Test A/B, Überdeckungsradius, Nachprüfung der Gegenbeispiele für Test C. Kein Suchcode.
 - `src/pruefstand.c`: Gegenbeispielsuche (Teil B). `src/zirkulant.c`, `src/zirkulant_pruef.py`, `src/zirkulant_qualitaet.py`, `src/run_zirkulant.py`: Teil C.
+- `src/leiter_allein.py`: Prüfcode, Alleinanteil je Nebenklasse (Auftrag L). Logs `runs/leiter48/`.
 - `src/gegen15_sym.py`: Prüfcode, Gegenrechnung (15,4) unter Spaltensymmetrie Ordnung 7, 11, 13 (Teil 1–4, Gleichwertigkeit zu `ctrl_16`). Logs `runs/gegenrechnung15/`.
 - `src/pruefe_reell16.py`, `src/dichte_schranke.py`, `src/kleitman_probe.py`: Prüfcode zu Ansatz 4 (Polieren um ctrl_16, Dichteschranke, Kleitman-Probe).
 - `LANDKARTE.md`: Übersicht Familien x N.

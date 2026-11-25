@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 25.11.2026 (nach Auftrag Z, Zwei-Bahnen-Codes). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 25.11.2026 (nach Auftrag Z, Zwei-Bahnen-Codes, und Auftrag L, Leiter unter 48 bei (20,6)). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -111,7 +111,9 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Lokal um `ctrl_16` / `ctrl_8` (
   (1792 Codes aus 2 vollen + 2 festen, mit ≤ 1 festem keiner). Keine Überdeckung innerhalb der Rekordgrenze: (20,6) 10+10 alle ≤ 20 Paare,
   10+10 2 volle + kurze ≤ 4, 9+9+2 2 volle + ≤ 2 und 1 volle + kurze ≤ 11; (25,8) 11+11+3 (2 volle + ≤ 3 fest, 1 volle + ≤ 14 fest),
   12+12+1 (2 volle + ≤ 1); (23,7) 11+11+1; (30,10) 13+13+4; (28,9) 13+13+2; (26,8) 13+13 und 11+11+4 (je 2 volle + feste).
-  Bei allen Typen mit q ungerade überdecken 2 volle Bahnen mit keiner Zahl fester Paare. Nicht gezählt: 1 volle Bahn in Teil 3, kurze Bahnen > 1 bei q=12.
+  Bei allen Typen mit q = 9, 11 und 13 überdecken 2 volle Bahnen mit keiner Zahl fester Paare (bei q = 7 dagegen schon mit zwei). Für q = 11 und 13
+  ist damit auch „1 volle Bahn + feste Paare“ ausgeschlossen, also jede Zusammensetzung innerhalb der Rekordgrenze. Nicht gezählt: kurze Bahnen > 1 bei q=12.
+  Gate: `notes/gate_2026-11-25_zweibahn.md` (q = 11 mit zweitem Programm voll nachgezählt, q = 13 nur Stichprobe).
 - **32-Wörter-Codes:** N = 16, 17, 19 aus `controls/` (beide Prüfskripte, disc 7); N = 21, 23 nur Radius per Brute-Force (STATUS).
 - **Hadamard:** volle Matrizen `controls/had20_klasse*.txt`, McKay-60 (`controls/had24_mckay_hex.txt`); ohne 1 Spalte:
   `runs/teilA/zusatz_ohne_eine_spalte.log.txt`; ohne 2/3 Spalten: `runs/teilA/a1*`, `a2*` (alle 1140 bzw. 242 880 Fälle).
@@ -122,6 +124,7 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Lokal um `ctrl_16` / `ctrl_8` (
   Neunerbahnen keine Überdeckung mit ≤ 23 Zeilen. Also kein P-invarianter Code mit 40, 42, 44 oder 46 Wörtern (Rekord bräuchte 40).
   Nur ein Element der Ordnung 3 (⟨g⟩, 174 848 Bahnen): Tabu-Kontrolle (48 Wörter) nicht bestanden (1 von 4 bzw. 0 von 4), < 48 ungeprüft.
   Protokoll `notes/laeufe/2026-11-25_bahnen3.md`.
+- **Nebenklassen-Leiter unter 48 bei (20,6) (Auftrag L, 25.11.2026):** Kern ⟨1,a⟩, Typ (11,9). Kleinste erreichte Wortzahl weiter **48** (Quotient 1,633 e); der eine Treffer aus K=12-Zufallsstart (`runs/woerter_n20_R6_d2_K12_typ11-9_k12_seed5.txt`, disc 8 mit drei Programmen) ist kein neuer 48er, sondern zur Paley-Doppelung 1+3 gleichwertig (Gate: `notes/gate_2026-11-25_leiter48.md`). K=12 aus Zufallsstart: 1 von 16 Läufen à 1800 s (Kontrolle nicht bestanden), K=11 (44 Wörter, N = 22, 1,706) nicht versucht. Protokoll `notes/laeufe/2026-11-25_leiter48.md`.
 - **Doppelung Ordnung 40:** Test C in STATUS, alle 30 780 Spaltenauswahlen mit Gegenbeispiel max ≤ 8, Rekord bräuchte 12.
   Nur gleiche Zeilenausrichtung in beiden Hälften geprüft.
 - **Paley-12-Doppelung:** `controls/had24_1p3_paley12.txt`, `had24_2p2_paley12.txt`, beide Prüfskripte disc 8.

@@ -1,0 +1,9 @@
+Matrix runs/leiter48/matrix_n20_48w_k12_seed5.txt: 24 x 20, aufgefuellt 24 x 24
+  check_disc      Diskrepanz 8  (0.7 s)
+  verify_spencer  Diskrepanz 8  (0.7 s)
+  exakt_disc      Diskrepanz 8  (0.7 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+
+real	0m0.800s
+user	0m1.278s
+sys	0m0.201s
