@@ -1,0 +1,3 @@
+d9 d=6: Klassen mit u >= d-2: 10, Paare 1530, exakt >= d: 0, Überlebende des Filters: 0, echte Treffer unter den Nicht-Überlebenden (VERLETZT): 0, exakt(gestrichen) > exakt(voll)+2 (VERLETZT): 0, größtes exakt 4
+s3xz3 d=6: Klassen mit u >= d-2: 71, Paare 10863, exakt >= d: 0, Überlebende des Filters: 0, echte Treffer unter den Nicht-Überlebenden (VERLETZT): 0, exakt(gestrichen) > exakt(voll)+2 (VERLETZT): 0, größtes exakt 4
+d9 d=4: Klassen mit u >= d-2: 136, Paare 20808, exakt >= d: 5850, Überlebende des Filters: 7074, echte Treffer unter den Nicht-Überlebenden (VERLETZT): 0, exakt(gestrichen) > exakt(voll)+2 (VERLETZT): 0, größtes exakt 4

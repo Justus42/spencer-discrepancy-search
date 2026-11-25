@@ -1,0 +1,15 @@
+z7       n= 7 abelsch      Ordnungen {1: 1, 7: 6} = erwartet; |Aut| = 6
+z18      n=18 abelsch      Ordnungen {1: 1, 18: 6, 9: 6, 6: 2, 3: 2, 2: 1} = erwartet; |Aut| = 6
+z3xz6    n=18 abelsch      Ordnungen {1: 1, 6: 8, 3: 8, 2: 1} = erwartet; |Aut| = 48
+d9       n=18 nichtabelsch Ordnungen {1: 1, 9: 6, 3: 2, 2: 9} = erwartet; |Aut| = 54
+s3xz3    n=18 nichtabelsch Ordnungen {1: 1, 3: 8, 2: 3, 6: 6} = erwartet; |Aut| = 12
+z3z3_z2  n=18 nichtabelsch Ordnungen {1: 1, 3: 8, 2: 9} = erwartet; |Aut| = 432
+z20      n=20 abelsch      Ordnungen {1: 1, 20: 8, 10: 4, 5: 4, 4: 2, 2: 1} = erwartet; |Aut| = 8
+z2xz10   n=20 abelsch      Ordnungen {1: 1, 10: 12, 5: 4, 2: 3} = erwartet; |Aut| = 24
+d10      n=20 nichtabelsch Ordnungen {1: 1, 10: 4, 5: 4, 2: 11} = erwartet; |Aut| = 40
+dic5     n=20 nichtabelsch Ordnungen {1: 1, 10: 4, 5: 4, 2: 1, 4: 10} = erwartet; |Aut| = 40
+f20      n=20 nichtabelsch Ordnungen {1: 1, 5: 4, 4: 10, 2: 5} = erwartet; |Aut| = 20
+z21      n=21 abelsch      Ordnungen {1: 1, 21: 12, 7: 6, 3: 2} = erwartet; |Aut| = 12
+f21      n=21 nichtabelsch Ordnungen {1: 1, 7: 6, 3: 14} = erwartet; |Aut| = 42
+z25      n=25 abelsch      Ordnungen {1: 1, 25: 20, 5: 4} = erwartet; |Aut| = 20
+z5xz5    n=25 abelsch      Ordnungen {1: 1, 5: 24} = erwartet; |Aut| = 480

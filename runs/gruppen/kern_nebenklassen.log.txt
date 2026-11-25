@@ -1,0 +1,5 @@
+Typen: 97
+größtes B(D) = 53372 bei Typ (6, 5, 5, 4)
+B(D) bei (5,5,5,5) = 51447
+kleinstes B(D) = 31180 bei Typ (18, 1, 1, 0)
+Schranke 2^17/B(D): kleinste 2.4558 (Typ (6, 5, 5, 4)), größte 4.2037 (Typ (18, 1, 1, 0)); Typen mit Schranke >= 5: 0

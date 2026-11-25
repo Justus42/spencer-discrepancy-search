@@ -1,0 +1,7 @@
+d9: 60 Paare (f, Symmetrie), Abweichungen der exakten Diskrepanz: 0; f(x^-1) weicht ab in 0 von 60
+s3xz3: 60 Paare (f, Symmetrie), Abweichungen der exakten Diskrepanz: 0; f(x^-1) weicht ab in 0 von 60
+z3z3_z2: 60 Paare (f, Symmetrie), Abweichungen der exakten Diskrepanz: 0; f(x^-1) weicht ab in 0 von 60
+f20: 60 Paare (f, Symmetrie), Abweichungen der exakten Diskrepanz: 0; f(x^-1) weicht ab in 1 von 60
+dic5: 60 Paare (f, Symmetrie), Abweichungen der exakten Diskrepanz: 0; f(x^-1) weicht ab in 0 von 60
+f21: 60 Paare (f, Symmetrie), Abweichungen der exakten Diskrepanz: 0; f(x^-1) weicht ab in 1 von 60
+z3xz6: 30 Paare (f, Symmetrie), Abweichungen der exakten Diskrepanz: 0; f(x^-1) weicht ab in 0 von 30
