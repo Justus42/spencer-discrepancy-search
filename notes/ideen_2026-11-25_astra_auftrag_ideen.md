@@ -1,4 +1,4 @@
-# Auftrag Teil A: Ideen und Methodentransfer zur Spencer-Schwelle (Stand 25.11.2026, 16:50 Uhr)
+# Auftrag Teil A: Ideen und Methodentransfer zur Spencer-Schwelle (Stand 25.11.2026, 16:44 Uhr)
 
 Du bist Kombinatoriker mit Schwerpunkt Überdeckungscodes, extremale Mengenlehre und Diskrepanz, mit Überblick über Suchverfahren.
 Du hast keine Websuche. Kennzeichne jede Aussage: [R] eigene Rechnung oder Herleitung, [L] Literatur aus dem Gedächtnis (unbelegt),
