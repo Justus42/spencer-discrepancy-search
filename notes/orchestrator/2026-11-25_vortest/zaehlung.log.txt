@@ -1,0 +1,36 @@
+== 20_q9f2_T20_A (2 9 2 6 20 2):  Groesse 1: 8 Groesse 3: 40 Groesse 9: 58240
+Fall mit 2 vollen Bahnen, Restbudget 2: harte Punktbahnen 32928 von 58288 Knoten: 1061378535. Kombinationen voller Bahnen, die alle harten Punkte ueberdecken: 0. Erste Bahn ueberdeckt allein alle harten Punkte (nicht weiterverfolgt): 0. Ueberdeckungen (hoechstens 20 Paare): 0 real	0m32.513s 
+== 20_q9f2_T20_B (2 9 2 6 20 1):  Groesse 1: 8 Groesse 3: 40 Groesse 9: 58240
+Fall mit 1 vollen Bahnen, Restbudget 11: harte Punktbahnen 0 von 58288 keine harten Punkte: dieser Fall ist hier nicht entschieden real	0m17.650s 
+== 20_q10_T20_A (2 10 0 6 20 2):  Groesse 1: 4 Groesse 2: 2 Groesse 5: 204 Groesse 10: 52326
+Fall mit 2 vollen Bahnen, Restbudget 0: harte Punktbahnen 52544 von 52536 Knoten: 36380136. Kombinationen voller Bahnen, die alle harten Punkte ueberdecken: 0. Erste Bahn ueberdeckt allein alle harten Punkte (nicht weiterverfolgt): 0. Ueberdeckungen (hoechstens 20 Paare): 0 real	0m15.060s 
+== 20_q10_T24_A (2 10 0 6 24 2):  Groesse 1: 4 Groesse 2: 2 Groesse 5: 204 Groesse 10: 52326
+Fall mit 2 vollen Bahnen, Restbudget 4: harte Punktbahnen 24040 von 52536 Knoten: 386017276. Kombinationen voller Bahnen, die alle harten Punkte ueberdecken: 0. Erste Bahn ueberdeckt allein alle harten Punkte (nicht weiterverfolgt): 0. Ueberdeckungen (hoechstens 24 Paare): 0 real	0m17.311s 
+== 20_q10_T25_A (2 10 0 6 25 2):  Groesse 1: 4 Groesse 2: 2 Groesse 5: 204 Groesse 10: 52326
+Fall mit 2 vollen Bahnen, Restbudget 5: harte Punktbahnen 0 von 52536 keine harten Punkte: dieser Fall ist hier nicht entschieden real	0m14.739s 
+== 18_q9f0_T20_A (2 9 0 5 20 2):  Groesse 1: 2 Groesse 3: 10 Groesse 9: 14560
+Fall mit 2 vollen Bahnen, Restbudget 2: harte Punktbahnen 11820 von 14572 Knoten: 12732871. Kombinationen voller Bahnen, die alle harten Punkte ueberdecken: 0. Erste Bahn ueberdeckt allein alle harten Punkte (nicht weiterverfolgt): 0. Ueberdeckungen (hoechstens 20 Paare): 0 real	0m1.234s 
+== 16_q8f0_T20_A (2 8 0 4 20 2):  Groesse 1: 4 Groesse 2: 6 Groesse 4: 60 Groesse 8: 4064
+Fall mit 2 vollen Bahnen, Restbudget 4: harte Punktbahnen 0 von 4134 keine harten Punkte: dieser Fall ist hier nicht entschieden real	0m0.129s 
+== 16_q7f2_T20_A (2 7 2 4 20 2):  Groesse 1: 8 Groesse 7: 4680
+Fall mit 2 vollen Bahnen, Restbudget 6: harte Punktbahnen 3080 von 4688 Knoten: 3324135. Kombinationen voller Bahnen, die alle harten Punkte ueberdecken: 0. Erste Bahn ueberdeckt allein alle harten Punkte (nicht weiterverfolgt): 0. Ueberdeckungen (hoechstens 20 Paare): 0 real	0m0.187s 
+== 13_q6f1_T15_allg (2 6 1 3 15):  Groesse 1: 4 Groesse 2: 6 Groesse 3: 20 Groesse 6: 670
+Knoten: 1479988. Ueberdeckungen (verschiedene Bahnmengen, hoechstens 15 Paare): 0 real	0m0.013s 
+== 19_q9f1_T25_A (2 9 1 5 25 2):  Groesse 1: 4 Groesse 3: 20 Groesse 9: 29120
+Fall mit 2 vollen Bahnen, Restbudget 7: harte Punktbahnen 5184 von 29144 Knoten: 125405062. Kombinationen voller Bahnen, die alle harten Punkte ueberdecken: 0. Erste Bahn ueberdeckt allein alle harten Punkte (nicht weiterverfolgt): 0. Ueberdeckungen (hoechstens 25 Paare): 0 real	0m5.823s 
+== 20_q19f1_T20_B (1 19 1 6 20 1):  Groesse 1: 2 Groesse 19: 27594
+Fall mit 1 vollen Bahnen, Restbudget 1: harte Punktbahnen 22984 von 27596 Knoten: 0. Kombinationen voller Bahnen, die alle harten Punkte ueberdecken: 0. Erste Bahn ueberdeckt allein alle harten Punkte (nicht weiterverfolgt): 0. Ueberdeckungen (hoechstens 20 Paare): 0 real	0m6.161s 
+== 20_q17f3_T20_B (1 17 3 6 20 1):  Groesse 1: 8 Groesse 17: 30840
+Fall mit 1 vollen Bahnen, Restbudget 3: harte Punktbahnen 20592 von 30848 Knoten: 0. Kombinationen voller Bahnen, die alle harten Punkte ueberdecken: 0. Erste Bahn ueberdeckt allein alle harten Punkte (nicht weiterverfolgt): 0. Ueberdeckungen (hoechstens 20 Paare): 0 real	0m7.708s 
+FERTIG
+== 17_q7f3_T16_A:  Groesse 1: 16 Groesse 7: 9360
+Fall mit 2 vollen Bahnen, Restbudget 2: harte Punktbahnen 2800 von 9376 Knoten: 30929074. Kombinationen voller Bahnen, die alle harten Punkte ueberdecken: 3520. Erste Bahn ueberdeckt allein alle harten Punkte (nicht weiterverfolgt): 0. Ueberdeckungen (hoechstens 16 Paare): 1792 kleinste Paarzahl: 16 real	0m0.860s 
+== 17_q7f3_T15_A:  Groesse 1: 16 Groesse 7: 9360
+Fall mit 2 vollen Bahnen, Restbudget 1: harte Punktbahnen 2800 von 9376 Knoten: 30675634. Kombinationen voller Bahnen, die alle harten Punkte ueberdecken: 3520. Erste Bahn ueberdeckt allein alle harten Punkte (nicht weiterverfolgt): 0. Ueberdeckungen (hoechstens 15 Paare): 0 real	0m0.779s 
+== 16_q8f0_T20_allg:  Groesse 1: 4 Groesse 2: 6 Groesse 4: 60 Groesse 8: 4064
+Knoten: 70409584. Ueberdeckungen (verschiedene Bahnmengen, hoechstens 20 Paare): 0 real	0m0.365s 
+== 18_q9f0_T20_allg:  Groesse 1: 2 Groesse 3: 10 Groesse 9: 14560
+Knoten: 32518374. Ueberdeckungen (verschiedene Bahnmengen, hoechstens 20 Paare): 0 real	0m1.438s 
+== 20_q10_T20_allg (erste Programmfassung, ohne Modus): Knoten: 309262814. Ueberdeckungen (verschiedene Bahnmengen, hoechstens 20 Paare): 0
+== Kontrolle 15_q7f1 allg T=16: 112 Ueberdeckungen, T=15: 0; Fall A T=16: 132 Kombinationen, 112 Ueberdeckungen; T=15: 0
+== Fuehlprobe Leiter: n=20 R=6 d=2 K=12 typ=(11, 9) seed=1: nicht geloest, kleinste Restzahl unueberdeckt Syndrome=18
