@@ -1,0 +1,2 @@
+t=10 it=168704 offen=350 best=84 W=350
+ENDE best=0 it=211198 t_best=12.3 t=12.3

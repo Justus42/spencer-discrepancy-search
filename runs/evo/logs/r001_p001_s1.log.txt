@@ -1,0 +1,5 @@
+t=10 it=168960 offen=437 best=60 W=437
+t=20 it=349952 offen=337 best=60 W=337
+t=30 it=528640 offen=659 best=60 W=659
+t=40 it=710144 offen=407 best=60 W=407
+ENDE best=0 it=736047 t_best=41.3 t=41.3

@@ -1,1 +1,9 @@
 Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
+1	p001	-	A	15	4	16	1	41	0	K1, Insel A Wurzel, ohne Gewichte
+1	p001	-	A	15	4	16	2	0	0	K1, Insel A Wurzel, ohne Gewichte
+1	p001	-	A	15	4	16	3	37	0	K1, Insel A Wurzel, ohne Gewichte
+1	p001	-	A	15	4	16	4	12	0	K1, Insel A Wurzel, ohne Gewichte
+2	p002	p001	A	20	6	24	1	600	115	K2, Gewichte an
+2	p002	p001	A	20	6	24	2	600	673	K2, Gewichte an
+2	p002	p001	A	20	6	24	3	600	122	K2, Gewichte an
+2	p002	p001	A	20	6	24	4	600	431	K2, Gewichte an

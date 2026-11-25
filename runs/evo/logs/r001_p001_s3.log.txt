@@ -1,0 +1,4 @@
+t=10 it=172032 offen=550 best=84 W=550
+t=20 it=353024 offen=356 best=76 W=356
+t=30 it=543232 offen=407 best=76 W=407
+ENDE best=0 it=667401 t_best=36.6 t=36.6
