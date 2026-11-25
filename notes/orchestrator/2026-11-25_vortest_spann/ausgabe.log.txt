@@ -34,7 +34,7 @@ v=0 Paare im Universum=128 Bedingungen=6528 k<=16: OPTIMAL nach 0.3 s
 v=0 Paare im Universum=128 Bedingungen=6528 k<=15: INFEASIBLE nach 0.3 s
 v=40 Paare im Universum=256 Bedingungen=6528 k<=16: OPTIMAL nach 0.7 s
 v=40 Paare im Universum=256 Bedingungen=6528 k<=15: UNKNOWN nach 120.0 s
---- Nachtrag 25.11., ca. 12:30 Uhr ---
+--- Nachtrag 25.11., ca. 11:20 Uhr ---
 --- spann_datei.py 4 ... (zweite Klasse der 112 Lösungen) ---
 controls/ctrl_16.txt: m=15 Zeilen=16 Rang 8, Paare in L 128, min mu 8, Schranke 16.00, mu: {8: 1, 14: 56, 16: 70, 29: 1}
 runs/gegenrechnung15/loesung0_16x15.txt: m=15 Zeilen=16 Rang 8, Paare in L 128, min mu 8, Schranke 16.00, mu: {8: 1, 14: 56, 16: 70, 29: 1}

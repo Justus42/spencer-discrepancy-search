@@ -1,4 +1,4 @@
-Gate zu Auftrag S, Orchestrator, 25.11.2026 ca. 15:10 bis 16:00 Uhr, 2 Cloud-Kerne.
+Gate zu Auftrag S, Orchestrator, 25.11.2026 ca. 15:02 bis 15:16 Uhr, 2 Cloud-Kerne.
 Rechenzeit: hs2 für 15 Paare 233 s + 162 s (zwei Prozesse parallel, etwa 4 Minuten Wanduhr), alles Übrige zusammen unter 2 Minuten.
 Aufrufe aus dem Repo-Wurzelordner; hs2 gebaut mit: gcc -O2 -march=native -DW=2 -o hs2 hs2.c
 

@@ -1,6 +1,6 @@
 # Vortest 25.11.2026: Codes im affinen Spann eines bekannten guten Codes
 
-Rechnung des Orchestrators (Chat vom 25.11., ca. 11 bis 12 Uhr), zusammen unter 5 Minuten Rechenzeit, **nicht gegengerechnet**.
+Rechnung des Orchestrators (Chat vom 25.11., ca. 11:00 bis 11:07 Uhr), zusammen unter 5 Minuten Rechenzeit, **nicht gegengerechnet**.
 Skripte und Ausgabe: `notes/orchestrator/2026-11-25_vortest_spann/` (aus dem Repo-Wurzelordner starten).
 Anlass: Kandidat 1 der Mittags-Übergabe („Codes von kleinem Rang“). `STATUS.md` und `LANDKARTE.md` sind nicht geändert.
 
@@ -56,7 +56,7 @@ Rang 8 und 12, nicht 6; Rang 6 hat also kein Vorbild.
    23 Paaren in 16 Läufen ohne Treffer. **Obergrenze:** 4 Stunden Rechenzeit.
 5. Jeden Treffer auf Gleichwertigkeit zu bekannten Codes prüfen (bliss) und durch `verifiers/pruefe_matrix.py` schicken.
 
-## Nachtrag 25.11., ca. 12:30 Uhr (ebenfalls Rechnung des Orchestrators, nicht gegengerechnet)
+## Nachtrag 25.11., ca. 11:20 Uhr (ebenfalls Rechnung des Orchestrators, nicht gegengerechnet)
 
 - **Zweite Klasse der 112 Lösungen bei (15,4)** (`runs/gegenrechnung15/loesung111_16x15.txt`): Rang 8, μ-Werte
   12 (14 Nebenklassen), 15 (64), 16 (49), 29 (1). Zählschranke 128/12 = 10,67. Anders als bei `ctrl_16` sind hier

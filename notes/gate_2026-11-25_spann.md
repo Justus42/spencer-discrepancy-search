@@ -1,7 +1,7 @@
 # Gate zu Auftrag S (Suche im affinen Spann), 25.11.2026
 
 Geprüfter Stand: Branch `claude/cool-cannon-5umcqa`, Commit `cfdbaa1` (enthält `main` mit Auftrag G). Prüfer: Orchestrator
-(Chat vom 25.11., gegen 15:30 Uhr). Eigene Programme ohne Code der Sitzung: `notes/orchestrator/2026-11-25_gate_spann/`
+(Chat vom 25.11., gegen 15:10 Uhr). Eigene Programme ohne Code der Sitzung: `notes/orchestrator/2026-11-25_gate_spann/`
 (Ausgabe `ausgabe.log.txt`). Rechenzeit etwa 6 Minuten auf 2 Kernen, davon 4 Minuten für Punkt 5. Das ist mehr als die
 üblichen „wenigen Minuten“; der Punkt ist der einzige neue volle Ausschluss in der Rekordzelle und war so in einem Lauf zu haben.
 
@@ -40,6 +40,11 @@ Geprüfter Stand: Branch `claude/cool-cannon-5umcqa`, Commit `cfdbaa1` (enthält
   (42 + 14 + 7 = 63); der vierte unlösbare Fall ist L(loesung111) im Rang 8. Berichtigt. Der Chat-Bericht der Sitzung nannte
   62 statt 63 Erweiterungen.
 - Stand-Zeilen von `STATUS.md` und `LANDKARTE.md` vom Orchestrator nachgezogen; offene Punkte und nächster Schritt in `STATUS.md` ergänzt.
+
+## Berichtigung der Zeitangaben des Orchestrators (25.11., 15:25 Uhr)
+
+Die Uhrzeiten in den Vermerken und Logs des Orchestrators von heute (Vortest Spann, Gate G, Gate S) waren geschätzt und lagen bis zu
+anderthalb Stunden daneben. Sie sind in diesem Commit nach den Zeitstempeln der Commits und Nachrichten berichtigt. Inhaltlich ändert sich nichts.
 
 ## Beobachtungen
 

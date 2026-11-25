@@ -1,4 +1,4 @@
-Gate zu Auftrag G, Orchestrator, 25.11.2026 ca. 12:50 bis 13:20 Uhr, 2 Cloud-Kerne, zusammen etwa 4 Minuten Rechenzeit.
+Gate zu Auftrag G, Orchestrator, 25.11.2026 ca. 11:45 bis 11:54 Uhr, 2 Cloud-Kerne, zusammen etwa 4 Minuten Rechenzeit.
 Aufruf jeweils aus dem Repo-Wurzelordner: python3 notes/orchestrator/2026-11-25_gate_gruppen/<skript> ...
 
 --- gate_g.py A (eigene Tafeln gegen runs/gruppen/tafeln/*.grp; eigene/Sitzung) ---

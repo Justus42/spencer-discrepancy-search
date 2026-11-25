@@ -1,6 +1,6 @@
 # Gate zu Auftrag G (Gruppenmatrizen über nichtzyklischen Gruppen), 25.11.2026
 
-Geprüfter Stand: Branch `claude/serene-goldberg-ofa5qc`, Commit `d16fba8`. Prüfer: Orchestrator (Chat vom 25.11., gegen 13 Uhr).
+Geprüfter Stand: Branch `claude/serene-goldberg-ofa5qc`, Commit `d16fba8`. Prüfer: Orchestrator (Chat vom 25.11., gegen 11:50 Uhr).
 Eigenes Programm ohne Code der Sitzung und **ohne Symmetrieabbau**: `notes/orchestrator/2026-11-25_gate_gruppen/`
 (Ausgabe `ausgabe.log.txt`, etwa 4 Minuten Rechenzeit auf 2 Kernen). Rechnung des Orchestrators, nicht gegengerechnet;
 sie ist selbst die Gegenrechnung zur Sitzung.
