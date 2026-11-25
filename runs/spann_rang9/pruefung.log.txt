@@ -1,0 +1,12 @@
+runs/spann_rang9/l111_r9_y384.fortschritt: Aufgaben 7374, bis 7374 gerechnet, Bereiche 5, Knoten 30961395, Sekunden 688, Zeitlimit-Wiederholungen 0, Luecken [], Ueberlappungen [], Loesung False
+ENTSCHIEDEN: keine Loesung (lueckenlos, vollstaendig)
+runs/spann_rang9/l111_r9_y128.fortschritt: Aufgaben 8886, bis 8886 gerechnet, Bereiche 6, Knoten 42443294, Sekunden 993, Zeitlimit-Wiederholungen 0, Luecken [], Ueberlappungen [], Loesung False
+ENTSCHIEDEN: keine Loesung (lueckenlos, vollstaendig)
+runs/spann_rang9/l111_r9_y129.fortschritt: Aufgaben 15735, bis 15735 gerechnet, Bereiche 7, Knoten 46442894, Sekunden 1263, Zeitlimit-Wiederholungen 0, Luecken [], Ueberlappungen [], Loesung False
+ENTSCHIEDEN: keine Loesung (lueckenlos, vollstaendig)
+runs/spann_rang9/ctrl16_r9_y7.fortschritt: Aufgaben 19420, bis 19420 gerechnet, Bereiche 7, Knoten 50899137, Sekunden 1309, Zeitlimit-Wiederholungen 0, Luecken [], Ueberlappungen [], Loesung False
+ENTSCHIEDEN: keine Loesung (lueckenlos, vollstaendig)
+runs/spann_rang9/l111_r9_y385.fortschritt: Aufgaben 20817, bis 20817 gerechnet, Bereiche 7, Knoten 55861696, Sekunden 1462, Zeitlimit-Wiederholungen 0, Luecken [], Ueberlappungen [], Loesung False
+ENTSCHIEDEN: keine Loesung (lueckenlos, vollstaendig)
+runs/spann_rang9/ctrl16_r9_y40.fortschritt: Aufgaben 9276, bis 9276 gerechnet, Bereiche 8, Knoten 90350432, Sekunden 2466, Zeitlimit-Wiederholungen 0, Luecken [], Ueberlappungen [], Loesung False
+ENTSCHIEDEN: keine Loesung (lueckenlos, vollstaendig)

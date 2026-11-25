@@ -1,0 +1,7 @@
+l111_r9_y384: Aufgaben 7374 (Altlog S: 7374), Bereiche 5, gedeckt 0..7374, Lücke False, Überlappung False, andere Ergebnisse 0, Knoten 30961395, Sekunden 689, Fortschrittsdatei gleich True, Fehler [] -> OK
+l111_r9_y128: Aufgaben 8886 (Altlog S: 8886), Bereiche 6, gedeckt 0..8886, Lücke False, Überlappung False, andere Ergebnisse 0, Knoten 42443294, Sekunden 993, Fortschrittsdatei gleich True, Fehler [] -> OK
+l111_r9_y129: Aufgaben 15735 (Altlog S: 15735), Bereiche 7, gedeckt 0..15735, Lücke False, Überlappung False, andere Ergebnisse 0, Knoten 46442894, Sekunden 1263, Fortschrittsdatei gleich True, Fehler [] -> OK
+ctrl16_r9_y7: Aufgaben 19420 (Altlog S: 19420), Bereiche 7, gedeckt 0..19420, Lücke False, Überlappung False, andere Ergebnisse 0, Knoten 50899137, Sekunden 1308, Fortschrittsdatei gleich True, Fehler [] -> OK
+l111_r9_y385: Aufgaben 20817 (Altlog S: 20817), Bereiche 7, gedeckt 0..20817, Lücke False, Überlappung False, andere Ergebnisse 0, Knoten 55861696, Sekunden 1462, Fortschrittsdatei gleich True, Fehler [] -> OK
+ctrl16_r9_y40: Aufgaben 9276 (Altlog S: 9276), Bereiche 8, gedeckt 0..9276, Lücke False, Überlappung False, andere Ergebnisse 0, Knoten 90350432, Sekunden 2466, Fortschrittsdatei gleich True, Fehler [] -> OK
+Summe: Aufgaben 81508, Bereiche 40, Knoten 316958848, Sekunden 8182 -> ALLE OK
