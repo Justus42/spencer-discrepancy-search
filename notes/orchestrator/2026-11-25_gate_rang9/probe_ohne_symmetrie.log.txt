@@ -1,0 +1,4 @@
+Problem runs/spann/probleme/ctrl16_r9_y3.txt: d=8 |G|=256 Nebenklassen=64 min mu=22, k=15, Zeitlimit 90 s, Aufteilungstiefe 3, Threads 2, Symmetrie nein (0 Erzeuger)
+Aufgaben: 4438 (0.7 s)
+ERGEBNIS k=15: UNENTSCHIEDEN (Zeitlimit, 2 von 4438 Aufgaben fertig)
+Knoten 3079813, Laufzeit 90.0 s

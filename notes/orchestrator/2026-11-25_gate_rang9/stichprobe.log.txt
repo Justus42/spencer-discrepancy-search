@@ -1,0 +1,7 @@
+Gate R9, Stichprobe: Bereiche mit dem Programm des Branches neu gerechnet (Orchestrator-Container, 2 Kerne)
+Beginn 25.11.2026 19:21:00
+ctrl16_r9_y40 7738 9276: Knoten 236634 (Sitzung 236634), OHNE_LOESUNG, 19.5 s -> GLEICH
+l111_r9_y128 7264 8886: Knoten 847006 (Sitzung 847006), OHNE_LOESUNG, 49.6 s -> GLEICH
+l111_r9_y129 11781 15735: Knoten 830673 (Sitzung 830673), OHNE_LOESUNG, 58.3 s -> GLEICH
+l111_r9_y384 0 50: Knoten 1071749 (Sitzung 1071749), OHNE_LOESUNG, 51.1 s -> GLEICH
+Ende 25.11.2026 19:23:59

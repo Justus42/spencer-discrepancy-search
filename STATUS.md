@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 25.11.2026 nachmittags (nach Auftrag G, Gruppenmatrizen über nichtzyklischen Gruppen, und Auftrag S, Suche im affinen Spann: beide ohne Kandidaten, beide mit Gate). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 25.11.2026 abends (nach Auftrag R9, Rang 9 bei (15,4): alle neun Klassen ausgeschlossen, mit Gate; davor Auftrag G und Auftrag S, beide ohne Kandidaten, beide mit Gate. Freigegeben am 25.11.2026, 18:10 Uhr, Ergebnisse stehen aus: Aufträge E, H, P aus `notes/ideen_2026-11-25.md`). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 Vollständige frühere Fassung: `notes/verlauf/STATUS_2026-11-24_vollstaendig.md` (Archiv, eingefroren). Übersicht Familien x N:
 `LANDKARTE.md`. Arbeitsregeln: `CLAUDE.md`. Herkunft externer Dateien: `controls/QUELLEN.md`. Laufprotokolle: `notes/laeufe/`.
 Fundstellen in den Tabellen: „A: …“ = Überschrift im Archiv, „L: …“ = `notes/laeufe/…`, „K“ = `LANDKARTE.md`,
@@ -197,8 +197,9 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
   Treffer der Nebenklassen-Suche bei Typ (11,9) sind derselbe Code (Paley-Doppelung 1+3; `notes/gate_2026-11-25_leiter48.md`).
 - Gruppenmatrizen: Ordnung 24 (14 nichtzyklische Gruppen, Schwelle 10) und vier gestrichene Spalten bei Ordnung 25 nicht gerechnet (L: 2026-11-25_gruppen).
 - Suche im Spann: bei (15,4) Rang 8 und Rang 9 vollständig ausgeschlossen (alle 9 Klassen, Auftrag R9), Rang 10 nicht begonnen; die neun Rang-9-Ausschlüsse ruhen auf einem Programm
-  mit Symmetrie (Gegenprobe ohne Symmetrie offen, Gate zu R9 offen). Bei (20,6) 78 weitere Spanne nicht durchsucht, Gleichwertigkeit der drei 48er-Spanne offen (L: 2026-11-25_spann; `notes/gate_2026-11-25_spann.md`).
-- Nächster Schritt: Entscheidung zur Meldung K(20,6) ≤ 48 am 27.11.2026; danach Ansatzwahl (offene exakte Fälle aus Auftrag S oder neue Ideensammlung).
+  mit Symmetrie (Gate zu R9 bestanden, `notes/gate_2026-11-25_rang9.md`; Gegenprobe ohne Symmetrie nicht gerechnet und nicht geplant: nach einer 90-s-Probe mehrere Stunden je Klasse). Bei (20,6) 78 weitere Spanne nicht durchsucht, Gleichwertigkeit der drei 48er-Spanne offen (L: 2026-11-25_spann; `notes/gate_2026-11-25_spann.md`).
+- Nächster Schritt: Entscheidung zur Meldung K(20,6) ≤ 48 am 27.11.2026 (Neuheitsprüfung am 26.11.). Die Ansatzwahl ist erfolgt (`notes/ideen_2026-11-25.md`): Aufträge E (Evolutionsschleife),
+  H (Zerlegung der Kern-Familie) und P (Gegenrechnung der Vortests), freigegeben am 25.11.2026, 18:10 Uhr; danach je ein Gate.
 
 ## Prüfrahmen
 
