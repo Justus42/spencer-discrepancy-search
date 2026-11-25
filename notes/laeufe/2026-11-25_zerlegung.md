@@ -89,3 +89,16 @@ Vorbereitung (17:56–18:06 UTC):
   Logs `runs/zerlegung/s2_gewichte_m12.log.txt`, `…_m14.log.txt`.
 - Test der Knotenschranke gegen `brute` (`zerl_test_dfs.py` mit `--lam 1,2,3,4`, `0,1,3,6`, `2,0,5,1`; Startwerte 11–13): 900 Fälle, 0 Abweichungen
   (`runs/zerlegung/test_dfs_lam.log.txt`).
+
+Block Schritt 2 (18:04–18:24 UTC, `bash src/run_zerl_s2.sh 1200`, 4 parallel, je 1200 s), Log `runs/zerlegung/s2.log.txt`, Einzellogs `s2_*.log.txt`:
+
+| Fall | Verfahren | Ergebnis |
+|---|---|---|
+| m2 = 10 (Kontrolle, bekannt unmöglich) | `dfs --lam 0,1,3,6,0` | **KEINE LOESUNG** an der Wurzel (Zählschranke 5120 > 4920) |
+| m2 = 12, Zelle (23,7) | `dfs --lam 0,1,2,6,0,0` (N0 = 9, 18 432 gegen 22 392) | **ZEITGRENZE** 1200 s, 8,1 Mio. Knoten, 406 919 Schnitte durch die Knoten-Zählschranke; unentschieden |
+| m2 = 14, Zelle (25,8) | `dfs --lam 0,1,2,6,0,0,0` (73 728 gegen 110 820) | **ZEITGRENZE** 1200 s, 2,9 Mio. Knoten, 0 Schnitte; unentschieden |
+| m2 = 12 | `ls`, Startwert 1 | Restzahl 1760 (von 2 097 152), Suche erfolglos |
+| m2 = 14 | `ls`, Startwert 1 | Restzahl 5280 (von 8 388 608), Suche erfolglos |
+
+Ergebnis Schritt 2: **beide Fälle unentschieden** (Belegart: Suche erfolglos). Die Tiefensuche hängt in den letzten zwei, drei Zeilen; reine Zählung
+reicht nicht (Verhältnis höchstens 0,82 bzw. 0,67). Nicht weiter verfolgt (Auftrag: höchstens 30 Min. je Fall).
