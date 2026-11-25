@@ -1,0 +1,27 @@
+Wed Nov 25 12:02:30 UTC 2026
+export runs/spann/probleme/h13.txt: G-Dimension 11, Nebenklassen 256, Ausgangscode = 24 Paare: [0, 37, 209, 302, 474, 511, 654, 663, 749, 786, 872, 881, 1099, 1116, 1250, 1309, 1443, 1460, 1595, 1654, 1720, 1863, 1929, 1988]
+export runs/spann/probleme/h22.txt: G-Dimension 11, Nebenklassen 256, Ausgangscode = 24 Paare: [0, 59, 302, 327, 393, 474, 549, 630, 696, 721, 964, 1023, 1116, 1175, 1250, 1261, 1393, 1460, 1611, 1678, 1810, 1821, 1896, 1955]
+export runs/spann/probleme/h9.txt: G-Dimension 11, Nebenklassen 256, Ausgangscode = 24 Paare: [58, 92, 195, 283, 372, 482, 615, 644, 681, 847, 916, 953, 1037, 1056, 1175, 1463, 1480, 1517, 1649, 1754, 1790, 1794, 1838, 1873]
+16be3351d330097d613b5825324190c0  -
+254bd0800d50f9e9a96532df91bb6789  -
+371e7e7de5e0a96b7cf7faebab3dc278  -
+1p3 c0 0 V-Basis [525308, 262656, 131328, 65664, 32832, 16416, 8208, 4104, 2052, 2044, 2, 1]
+2p2 c0 0 V-Basis [524798, 262400, 131200, 65600, 32800, 16400, 8200, 4100, 2050, 1024, 1022, 1]
+neunter c0 6188 V-Basis [528384, 262148, 131104, 67584, 39292, 22908, 8200, 1280, 576, 144, 2, 1]
+1p3==2p2 False 1p3==neunter False 2p2==neunter False
+spann_aut2 h13 vs h22: nach ca. 10 Min. ohne Ergebnis abgebrochen (Rücksuche zu langsam)
+1p3 V: [(0, 1), (1, 2), (2, 10), (3, 18), (4, 45), (5, 72), (6, 120), (7, 168), (8, 210), (9, 764), (10, 1276), (11, 764), (12, 210), (13, 168), (14, 120), (15, 72), (16, 45), (17, 18), (18, 10), (19, 2), (20, 1)] | L: [(0, 1), (1, 2), (2, 10), (3, 18), (4, 45), (5, 72), (6, 120), (7, 168), (8, 210), (9, 764), (10, 1276), (11, 764), (12, 210), (13, 168), (14, 120), (15, 72), (16, 45), (17, 18), (18, 10), (19, 2), (20, 1)] | Dual: [(0, 1), (4, 36), (8, 126), (12, 84), (16, 9)] | Spaltensignatur Dualgewicht 4 : [(0, 2), (8, 18)]
+2p2 V: [(0, 1), (1, 2), (2, 10), (3, 18), (4, 45), (5, 72), (6, 120), (7, 168), (8, 210), (9, 764), (10, 1276), (11, 764), (12, 210), (13, 168), (14, 120), (15, 72), (16, 45), (17, 18), (18, 10), (19, 2), (20, 1)] | L: [(0, 1), (1, 2), (2, 10), (3, 18), (4, 45), (5, 72), (6, 120), (7, 168), (8, 210), (9, 764), (10, 1276), (11, 764), (12, 210), (13, 168), (14, 120), (15, 72), (16, 45), (17, 18), (18, 10), (19, 2), (20, 1)] | Dual: [(0, 1), (4, 36), (8, 126), (12, 84), (16, 9)] | Spaltensignatur Dualgewicht 4 : [(0, 2), (8, 18)]
+neunter V: [(0, 1), (1, 2), (2, 10), (3, 18), (4, 45), (5, 72), (6, 120), (7, 168), (8, 210), (9, 764), (10, 1276), (11, 764), (12, 210), (13, 168), (14, 120), (15, 72), (16, 45), (17, 18), (18, 10), (19, 2), (20, 1)] | L: [(4, 16), (5, 64), (6, 160), (7, 320), (8, 496), (9, 640), (10, 704), (11, 640), (12, 496), (13, 320), (14, 160), (15, 64), (16, 16)] | Dual: [(0, 1), (4, 36), (8, 126), (12, 84), (16, 9)] | Spaltensignatur Dualgewicht 4 : [(0, 2), (8, 18)]
+runs/bahnen3/teil2_klein_B24_liste_4_56.txt: 19008 Loesungen, im Spann von controls/had24_1p3_paley12.txt: 576; verschiedene Spanne: 81
+  Raenge: 12: 81
+  Loesungen je Spann (Haeufigkeiten): 192: 72, 576: 9
+  Spann von controls/had24_1p3_paley12.txt darunter: True, mit 576 Loesungen
+
+real	0m1.131s
+user	0m1.104s
+sys	0m0.000s
+runs/bahnen3/teil2_klein_B24_liste_4_56.txt: 19008 Loesungen, im Spann von controls/had24_2p2_paley12.txt: 0; verschiedene Spanne: 81
+  Spann von controls/had24_2p2_paley12.txt darunter: False, mit 0 Loesungen
+runs/bahnen3/teil2_klein_B24_liste_4_56.txt: 19008 Loesungen, im Spann von runs/bahnen3/teil4/kontrolle_T24_seed4_matrix.txt: 0; verschiedene Spanne: 81
+  Spann von runs/bahnen3/teil4/kontrolle_T24_seed4_matrix.txt darunter: False, mit 0 Loesungen
