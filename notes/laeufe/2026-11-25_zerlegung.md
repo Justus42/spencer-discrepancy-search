@@ -154,3 +154,36 @@ gefunden. Daher je Typ nur 4 Startwerte zu 300 s.
 Ergebnis (b): kein Code mit 40 Wörtern gefunden (Suche erfolglos). Log `runs/zerlegung/b_k10.log.txt`.
 
 ### (c) d = 9, K = 12 (48 Wörter), Typen (11,10), (12,9), (12,11), (13,10), (12,13), (11,14); U, W aus Zufallsstart; je Typ 4 x 570 s
+
+| Typ | Zelle | Block (UTC) | Ergebnis K = 12 | beste Restzahl (von 2^(m1−1) · 2^(m2−1)) |
+|---|---|---|---|---|
+| (11,10) | (21,6) | 19:51–20:01 | nicht gelöst (0 von 4) | 12 957 von 524 288 (alle vier) |
+| (12,9) | (21,6) | 20:01–20:10 | nicht gelöst (0 von 4) | 11 002 von 524 288 (alle vier) |
+| (12,11) | (23,7) | 20:10–20:20 | nicht gelöst (0 von 4) | **1760** von 2 097 152 (alle vier) |
+| (13,10) | (23,7) | 20:20–20:30 | nicht gelöst (0 von 4) | 26 360 von 2 097 152 (alle vier) |
+| (12,13) | (25,8) | 20:30–20:39 | nicht gelöst (0 von 4) | 5280 von 8 388 608 (alle vier) |
+| (11,14) | (25,8) | 20:39–20:49 | nicht gelöst (0 von 4) | 5280 von 8 388 608 (sonst 21 560, 55 485, 55 328) |
+
+Ergebnis (c): **kein Code mit 48 Wörtern bei d = 9** in der Familie gefunden (Suche erfolglos). Log `runs/zerlegung/c_d9.log.txt`.
+Die besten Zustände bei (12,11) bestehen aus einer vollen Hadamard-Matrix 12 x 12 (alle Zeilen-Skalarprodukte 0) und einer Hadamard-Matrix ohne
+Spalte (alle ±1): dieselbe Restzahl 1760 wie die lokale Suche in Schritt 2 (Paley-U, W 12 x 12). Ebenso 5280 bei (11,14) wie in Schritt 2. Die freie
+Suche läuft also von selbst in die Paley-Struktur; die liegt bei d = 9 weit von einer Überdeckung.
+
+Abgleich: alle 56 Läufe aus Schritt 4 (Einzellogs je Typ) – beste Restzahl der Suche gleich der Nachzählung mit `zerl_offen.py`, 0 Abweichungen
+(`runs/zerlegung/abgleich_restzahlen.log.txt`). `sha256sum -c verifiers/SHA256SUMS` am Ende (20:52 UTC): alle drei OK (`runs/zerlegung/sha256_ende.log.txt`).
+
+## Zusammenfassung
+
+- Kontrollen: Schritt 0 (alle Vortestzahlen), K1 (4/4 beide Richtungen, ≤ 6,3 s), K1b (`ctrl_17` zerlegt, 4/4 beide Richtungen), K2 (voll), K3 (8/8, ≤ 24 s) bestanden.
+- Kein Treffer: K = 11 und K = 10 bei (20,6) in vier Typen, d = 9 mit K = 12 in sechs Typen nicht erreicht (Suche erfolglos).
+- Schritt 2 unentschieden (m2 = 12, 14); m2 = 10 als Kontrolle mit der Zählschranke über alle 880 Anforderungen ausgeschlossen.
+- Methodisch: Der Löser findet den 48er aus Zufallsstart in Sekunden (alte Nebenklassen-Suche 1 von 16 in 30 Min.); entscheidend waren dynamische
+  Gewichte je offenem Paar und Tauschzüge zweier Zeilenwörter. Die Suche endet je Typ immer am selben besten Wert (z. B. 1288 bei (11,9), K = 11).
+- Rechenzeit (Blöcke, Wanduhr, 4 Kerne): etwa 3 h 20 Min. von 6 h; Sitzung 17:15–20:55 UTC.
+
+## Fehlversuche (für STATUS.md)
+
+- K1 erste Fassung, W fest / U gesucht, nur Einzelzeilen-Züge: 0 von 4 in je 600 s (Restzahl 22, falsche Zeilenzuordnung); Stellschrauben 8 x 90–180 s ohne Erfolg; behoben durch Tauschzüge.
+- `dfs` auf K1 (60 s) und auf d = 9, m2 = 10 ohne Zählschranke (120 s): Zeitgrenze, steckt in den letzten Zeilen.
+- Schritt 2, d = 9, U = Paley-12 ohne Spalte 0: m2 = 12 und 14 je `dfs` mit Zählschranke 1200 s und `ls` 1200 s, unentschieden; Gewichtssuche je 240 s, bestes Verhältnis 0,82 / 0,67.
+- Schritt 4 (a)–(c) wie oben, je 4 Startwerte, `--neustart 20`: 810 s (K = 11), 300 s (K = 10), 570 s (d = 9) je Typ; kein Treffer.
