@@ -55,3 +55,18 @@ Rang 8 und 12, nicht 6; Rang 6 hat also kein Vorbild.
 4. **Abbruch:** Kontrolle nicht bestanden, oder exakte Fälle nach je 30 Minuten unentschieden und lokale Suche bei
    23 Paaren in 16 Läufen ohne Treffer. **Obergrenze:** 4 Stunden Rechenzeit.
 5. Jeden Treffer auf Gleichwertigkeit zu bekannten Codes prüfen (bliss) und durch `verifiers/pruefe_matrix.py` schicken.
+
+## Nachtrag 25.11., ca. 12:30 Uhr (ebenfalls Rechnung des Orchestrators, nicht gegengerechnet)
+
+- **Zweite Klasse der 112 Lösungen bei (15,4)** (`runs/gegenrechnung15/loesung111_16x15.txt`): Rang 8, μ-Werte
+  12 (14 Nebenklassen), 15 (64), 16 (49), 29 (1). Zählschranke 128/12 = 10,67. Anders als bei `ctrl_16` sind hier
+  **15 Paare im eigenen Spann nicht ausgeschlossen**. CP-SAT, 2 Kerne: 16 Paare in 1,4 s, 15 Paare nach 150 s unentschieden.
+  `loesung0_16x15.txt` hat dieselben μ-Werte wie `ctrl_16`.
+- **Neunter 48er** (`runs/bahnen3/teil4/kontrolle_T24_seed4_matrix.txt`): Rang 12, dieselben μ-Werte wie 1+3 und 2+2.
+  Ob die drei Spanne gleich oder gleichwertig sind, ist nicht geprüft.
+- **Kandidat 2 der Mittags-Übergabe** (Code = wenige Nebenklassen eines Kerns ⟨1,a,b⟩ mit 8 Wörtern, (20,6), 5 Nebenklassen):
+  Die Zählschranke über B(D) = Zahl der Nebenklassen mit Minimalgewicht ≤ 6 schließt keinen der 97 Typen aus
+  (Schranke 2,46 bis 4,20 gegen 5). Eine vollständige Zählung braucht also echte Aufzählung über 2^17 Syndrome und ist
+  entgegen der Übergabe nicht in Minuten zu haben (Schätzung, unbelegt). Zurückgestellt; kein bekannter guter Code hat
+  einen Kern über 4.
+- Aufträge: `notes/spann_2026-11-25_auftrag.md` (S) und `notes/gruppen_2026-11-25_auftrag.md` (G).

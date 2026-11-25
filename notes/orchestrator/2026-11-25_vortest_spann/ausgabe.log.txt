@@ -34,3 +34,23 @@ v=0 Paare im Universum=128 Bedingungen=6528 k<=16: OPTIMAL nach 0.3 s
 v=0 Paare im Universum=128 Bedingungen=6528 k<=15: INFEASIBLE nach 0.3 s
 v=40 Paare im Universum=256 Bedingungen=6528 k<=16: OPTIMAL nach 0.7 s
 v=40 Paare im Universum=256 Bedingungen=6528 k<=15: UNKNOWN nach 120.0 s
+--- Nachtrag 25.11., ca. 12:30 Uhr ---
+--- spann_datei.py 4 ... (zweite Klasse der 112 Lösungen) ---
+controls/ctrl_16.txt: m=15 Zeilen=16 Rang 8, Paare in L 128, min mu 8, Schranke 16.00, mu: {8: 1, 14: 56, 16: 70, 29: 1}
+runs/gegenrechnung15/loesung0_16x15.txt: m=15 Zeilen=16 Rang 8, Paare in L 128, min mu 8, Schranke 16.00, mu: {8: 1, 14: 56, 16: 70, 29: 1}
+runs/gegenrechnung15/loesung111_16x15.txt: m=15 Zeilen=16 Rang 8, Paare in L 128, min mu 12, Schranke 10.67, mu: {12: 14, 15: 64, 16: 49, 29: 1}
+--- spann_datei.py 6 ... ---
+runs/bahnen3/teil4/kontrolle_T24_seed4_matrix.txt: m=20 Zeilen=24 Rang 12, Paare in L 2048, min mu 212, Schranke 9.66, mu: {212: 36, 240: 219, 268: 1}
+--- spann_sat.py runs/gegenrechnung15/loesung111_16x15.txt 4 k SEK (CP-SAT, 2 Kerne) ---
+Rang 8 Paare 128 Bedingungen 16384 (kleinste 12) k<=16: OPTIMAL nach 1.4 s
+Rang 8 Paare 128 Bedingungen 16384 (kleinste 12) k<=15: UNKNOWN nach 150.0 s
+--- kern3.py (Kandidat 2 der Mittags-Übergabe, Kern <1,a,b>) ---
+(m,R)=(15,4), k=4: 46 Typen, durch Zählschranke ausgeschlossen 0, offen 46; bester Typ (4,4,4,3): B(D)=1734, Schranke 2.362
+(m,R)=(20,6), k=5: 97 Typen, durch Zählschranke ausgeschlossen 0, offen 97
+  Typ (6, 5, 5, 4): B(D)=53372, Schranke 2.456
+  Typ (7, 5, 4, 4): B(D)=52742, Schranke 2.485
+  Typ (6, 6, 5, 3): B(D)=52622, Schranke 2.491
+  Typ (7, 6, 4, 3): B(D)=52147, Schranke 2.514
+  Typ (8, 5, 4, 3): B(D)=51622, Schranke 2.539
+  Typ (5, 5, 5, 5): B(D)=51447, Schranke 2.548
+  ... schlechtester offener Typ (18, 1, 1, 0): B(D)=31180, Schranke 4.204
