@@ -1,0 +1,38 @@
+Wed Nov 25 07:50:03 UTC 2026
+# zweibahn_zaehl q=7 f=1 m=15 R=4 k=2 B=2 sym=nein threads=4
+Bahnen (Paare) nach Groesse: 1:4 7:2340  gesamt 2344  (0.0 s)
+Kontrolle: Summe Groessen = 16384, 2^(m-1) = 16384
+erlaubte kurze Bahnen (Groesse <= 2): 4
+harte Klassen: 1540 von 2344  (0.0 s)
+(0.0 s)
+  Klasse 100/2340 A=d1 Gewicht 1 hart offen 595 Kandidaten B 2339 harte ueberdeckt 0  (0.0 s)
+  Klasse 200/2340 A=1b5 Gewicht 1 hart offen 535 Kandidaten B 2339 harte ueberdeckt 0  (0.0 s)
+  Klasse 300/2340 A=299 Gewicht 1 hart offen 535 Kandidaten B 2339 harte ueberdeckt 0  (0.0 s)
+  Klasse 400/2340 A=2fd Gewicht 1 hart offen 789 Kandidaten B 2339 harte ueberdeckt 0  (0.1 s)
+  Klasse 500/2340 A=3e1 Gewicht 1 hart offen 726 Kandidaten B 2339 harte ueberdeckt 0  (0.1 s)
+  Klasse 600/2340 A=4c5 Gewicht 1 hart offen 530 Kandidaten B 2339 harte ueberdeckt 0  (0.1 s)
+  Klasse 700/2340 A=5a9 Gewicht 1 hart offen 512 Kandidaten B 2339 harte ueberdeckt 0  (0.1 s)
+  Klasse 800/2340 A=68d Gewicht 1 hart offen 440 Kandidaten B 2339 harte ueberdeckt 2  (0.2 s)
+  Klasse 900/2340 A=6f1 Gewicht 1 hart offen 512 Kandidaten B 2339 harte ueberdeckt 0  (0.2 s)
+  Klasse 1000/2340 A=7d5 Gewicht 1 hart offen 538 Kandidaten B 2339 harte ueberdeckt 0  (0.2 s)
+  Klasse 1100/2340 A=9b9 Gewicht 1 hart offen 512 Kandidaten B 2339 harte ueberdeckt 0  (0.2 s)
+  Klasse 1200/2340 A=a9d Gewicht 1 hart offen 512 Kandidaten B 2339 harte ueberdeckt 0  (0.2 s)
+  Klasse 1300/2340 A=b81 Gewicht 1 hart offen 595 Kandidaten B 2339 harte ueberdeckt 0  (0.2 s)
+  Klasse 1400/2340 A=be5 Gewicht 1 hart offen 440 Kandidaten B 2339 harte ueberdeckt 2  (0.3 s)
+  Klasse 1500/2340 A=dc9 Gewicht 1 hart offen 726 Kandidaten B 2339 harte ueberdeckt 0  (0.3 s)
+  Klasse 1600/2340 A=ead Gewicht 1 hart offen 512 Kandidaten B 2339 harte ueberdeckt 0  (0.3 s)
+  Klasse 1700/2340 A=f91 Gewicht 1 hart offen 564 Kandidaten B 2339 harte ueberdeckt 0  (0.3 s)
+  Klasse 1800/2340 A=ff5 Gewicht 1 hart offen 564 Kandidaten B 2339 harte ueberdeckt 0  (0.4 s)
+  Klasse 1900/2340 A=15d9 Gewicht 1 hart offen 538 Kandidaten B 2339 harte ueberdeckt 0  (0.4 s)
+  Klasse 2000/2340 A=17bd Gewicht 1 hart offen 677 Kandidaten B 2339 harte ueberdeckt 0  (0.4 s)
+  Klasse 2100/2340 A=1ba1 Gewicht 1 hart offen 564 Kandidaten B 2339 harte ueberdeckt 0  (0.4 s)
+  Klasse 2200/2340 A=1f85 Gewicht 1 hart offen 789 Kandidaten B 2339 harte ueberdeckt 0  (0.4 s)
+  Klasse 2300/2340 A=1fe9 Gewicht 1 hart offen 595 Kandidaten B 2339 harte ueberdeckt 0  (0.4 s)
+Blaetter (ungewichtet): 224
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 224, gewichtet 224
+Ueberdeckungen nach Zahl kurzer Paare (k=2 volle Bahnen, ungeordnet):
+  kurz 2 Paare (Paare gesamt 16, Woerter 32): 112
+SUMME Ueberdeckungen: 112
+Brute-Force-Nachpruefung der Blaetter: 224 ok, 0 falsch
+Laufzeit 0.4 s
+Rueckgabe 0

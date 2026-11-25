@@ -1,0 +1,45 @@
+Wed Nov 25 07:51:00 UTC 2026
+# zweibahn_zaehl q=13 f=4 m=30 R=10 k=2 B=32 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:32 13:41297760  gesamt 41297792  (3.3 s)
+Kontrolle: Summe Groessen = 536870912, 2^(m-1) = 536870912
+erlaubte kurze Bahnen (Groesse <= 32): 32
+harte Klassen: 18120960 von 41297792  (5.8 s)
+Normalisator-Klassen voller Bahnen: 4394 (Erzeuger 23), Summe Klassengroessen 41297760 = 41297760 volle Bahnen
+(76.5 s)
+  Klasse 100/4394 A=604f Gewicht 9984 hart offen 7606006 Kandidaten B 41297759 harte ueberdeckt 0  (135.7 s)
+  Klasse 200/4394 A=622d Gewicht 4992 hart offen 6747323 Kandidaten B 41297759 harte ueberdeckt 0  (195.3 s)
+  Klasse 300/4394 A=e093 Gewicht 9984 hart offen 6840359 Kandidaten B 41297759 harte ueberdeckt 0  (253.0 s)
+  Klasse 400/4394 A=e275 Gewicht 9984 hart offen 5953234 Kandidaten B 41297759 harte ueberdeckt 0  (311.3 s)
+  Klasse 500/4394 A=1609f Gewicht 9984 hart offen 6476682 Kandidaten B 41297759 harte ueberdeckt 0  (372.0 s)
+  Klasse 600/4394 A=16197 Gewicht 9984 hart offen 5699158 Kandidaten B 41297759 harte ueberdeckt 0  (431.5 s)
+  Klasse 700/4394 A=16337 Gewicht 9984 hart offen 5675822 Kandidaten B 41297759 harte ueberdeckt 0  (487.5 s)
+  Klasse 800/4394 A=1e123 Gewicht 9984 hart offen 6026730 Kandidaten B 41297759 harte ueberdeckt 0  (539.4 s)
+  Klasse 900/4394 A=1e533 Gewicht 4992 hart offen 5039171 Kandidaten B 41297759 harte ueberdeckt 0  (591.9 s)
+  Klasse 1000/4394 A=261cb Gewicht 9984 hart offen 5711179 Kandidaten B 41297759 harte ueberdeckt 0  (649.3 s)
+  Klasse 1100/4394 A=2e113 Gewicht 9984 hart offen 5775167 Kandidaten B 41297759 harte ueberdeckt 0  (704.7 s)
+  Klasse 1200/4394 A=2e267 Gewicht 9984 hart offen 5297907 Kandidaten B 41297759 harte ueberdeckt 0  (759.1 s)
+  Klasse 1300/4394 A=36063 Gewicht 4992 hart offen 6089448 Kandidaten B 41297759 harte ueberdeckt 0  (816.1 s)
+  Klasse 1400/4394 A=36295 Gewicht 9984 hart offen 5071451 Kandidaten B 41297759 harte ueberdeckt 0  (870.5 s)
+  Klasse 1500/4394 A=3e14d Gewicht 9984 hart offen 5227343 Kandidaten B 41297759 harte ueberdeckt 0  (924.3 s)
+  Klasse 1600/4394 A=4e059 Gewicht 9984 hart offen 5730889 Kandidaten B 41297759 harte ueberdeckt 0  (979.6 s)
+  Klasse 1700/4394 A=4e18d Gewicht 9984 hart offen 5359129 Kandidaten B 41297759 harte ueberdeckt 0  (1034.8 s)
+  Klasse 1800/4394 A=4e335 Gewicht 9984 hart offen 5010868 Kandidaten B 41297759 harte ueberdeckt 0  (1089.8 s)
+  Klasse 1900/4394 A=560ef Gewicht 9984 hart offen 5218036 Kandidaten B 41297759 harte ueberdeckt 0  (1145.7 s)
+  Klasse 2000/4394 A=5628b Gewicht 9984 hart offen 5025871 Kandidaten B 41297759 harte ueberdeckt 0  (1201.0 s)
+  Klasse 2100/4394 A=5a0bd Gewicht 4992 hart offen 6320030 Kandidaten B 41297759 harte ueberdeckt 0  (1254.4 s)
+  Klasse 2200/4394 A=5e0f3 Gewicht 9984 hart offen 5119649 Kandidaten B 41297759 harte ueberdeckt 0  (1305.4 s)
+  Klasse 2300/4394 A=5e29b Gewicht 9984 hart offen 4415556 Kandidaten B 41297759 harte ueberdeckt 0  (1358.2 s)
+  Klasse 2400/4394 A=6e0b9 Gewicht 9984 hart offen 5311263 Kandidaten B 41297759 harte ueberdeckt 0  (1412.1 s)
+  Klasse 2500/4394 A=6e25b Gewicht 9984 hart offen 5000098 Kandidaten B 41297759 harte ueberdeckt 0  (1466.1 s)
+  Klasse 2600/4394 A=7e0bb Gewicht 9984 hart offen 6203219 Kandidaten B 41297759 harte ueberdeckt 0  (1520.8 s)
+  Klasse 2700/4394 A=9e067 Gewicht 9984 hart offen 5249385 Kandidaten B 41297759 harte ueberdeckt 0  (1576.1 s)
+  Klasse 2800/4394 A=9e1d9 Gewicht 9984 hart offen 4653993 Kandidaten B 41297759 harte ueberdeckt 0  (1629.9 s)
+  Klasse 2900/4394 A=a608d Gewicht 3328 hart offen 5255300 Kandidaten B 41297759 harte ueberdeckt 0  (1685.9 s)
+ZEITGRENZE nach 2926 von 4394 Klassen
+UNVOLLSTAENDIG
+Blaetter (ungewichtet): 0
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 0, gewichtet 0
+Ueberdeckungen nach Zahl kurzer Paare (k=2 volle Bahnen, ungeordnet):
+SUMME Ueberdeckungen: 0
+Laufzeit 1700.0 s
+Rueckgabe 0

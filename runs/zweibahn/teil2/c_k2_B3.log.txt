@@ -1,0 +1,15 @@
+Wed Nov 25 07:25:19 UTC 2026
+# zweibahn_zaehl q=11 f=1 m=23 R=7 k=2 B=3 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:4 11:381300  gesamt 381304  (0.0 s)
+Kontrolle: Summe Groessen = 4194304, 2^(m-1) = 4194304
+erlaubte kurze Bahnen (Groesse <= 3): 4
+harte Klassen: 283536 von 381304  (0.0 s)
+Normalisator-Klassen voller Bahnen: 507 (Erzeuger 15), Summe Klassengroessen 381300 = 381300 volle Bahnen
+(0.3 s)
+  Klasse 500/507 A=278db Gewicht 880 Rest 122116 hart 81964 Kandidaten B 238161 harte ueberdeckt 0  (13.7 s)
+Blaetter (ungewichtet): 0
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 0, gewichtet 0
+Ueberdeckungen nach Zahl kurzer Paare (k=2 volle Bahnen, ungeordnet):
+SUMME Ueberdeckungen: 0
+Laufzeit 13.8 s
+Rueckgabe 0

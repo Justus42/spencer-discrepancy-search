@@ -1,0 +1,13 @@
+Wed Nov 25 07:50:04 UTC 2026
+# zweibahn_zaehl q=7 f=1 m=15 R=4 k=0 B=16 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:4 7:2340  gesamt 2344  (0.0 s)
+Kontrolle: Summe Groessen = 16384, 2^(m-1) = 16384
+erlaubte kurze Bahnen (Groesse <= 16): 4
+harte Klassen: 1540 von 2344  (0.0 s)
+ein Punkt von keiner kurzen Bahn erreichbar
+Blaetter (ungewichtet): 0
+Ueberdeckungen nach Zahl kurzer Paare (k=0 volle Bahnen):
+SUMME Ueberdeckungen: 0
+Brute-Force-Nachpruefung der Blaetter: 0 ok, 0 falsch
+Laufzeit 0.0 s
+Rueckgabe 0

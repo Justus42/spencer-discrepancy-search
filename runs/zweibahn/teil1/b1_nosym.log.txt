@@ -1,0 +1,31 @@
+Wed Nov 25 07:06:19 UTC 2026
+# zweibahn_zaehl q=7 f=3 m=17 R=5 k=2 B=1 sym=nein threads=4
+Bahnen (Paare) nach Groesse: 1:16 7:9360  gesamt 9376  (0.0 s)
+Kontrolle: Summe Groessen = 65536, 2^(m-1) = 65536
+erlaubte kurze Bahnen (Groesse <= 1): 16
+harte Klassen: 2800 von 9376  (0.0 s)
+(0.0 s)
+  Klasse 500/9360 A=3e1 Gewicht 1 Rest 4154 hart 1096 Kandidaten B 5222 harte ueberdeckt 0  (0.2 s)
+  Klasse 1000/9360 A=7d5 Gewicht 1 Rest 3187 hart 786 Kandidaten B 6310 harte ueberdeckt 0  (0.5 s)
+  Klasse 1500/9360 A=dc9 Gewicht 1 Rest 4154 hart 1096 Kandidaten B 5222 harte ueberdeckt 0  (0.7 s)
+  Klasse 2000/9360 A=17bd Gewicht 1 Rest 3778 hart 1140 Kandidaten B 5222 harte ueberdeckt 0  (1.0 s)
+  Klasse 2500/9360 A=418d Gewicht 1 Rest 2999 hart 752 Kandidaten B 6310 harte ueberdeckt 0  (1.2 s)
+  Klasse 3000/9360 A=4581 Gewicht 1 Rest 3333 hart 958 Kandidaten B 5222 harte ueberdeckt 0  (1.4 s)
+  Klasse 3500/9360 A=49f5 Gewicht 1 Rest 3007 hart 763 Kandidaten B 5222 harte ueberdeckt 0  (1.6 s)
+  Klasse 4000/9360 A=4ee9 Gewicht 1 Rest 2722 hart 632 Kandidaten B 5222 harte ueberdeckt 16  (1.8 s)
+  Klasse 4500/9360 A=5bdd Gewicht 1 Rest 3778 hart 1140 Kandidaten B 5222 harte ueberdeckt 0  (2.0 s)
+  Klasse 5000/9360 A=82ad Gewicht 1 Rest 3815 hart 1037 Kandidaten B 6189 harte ueberdeckt 0  (2.2 s)
+  Klasse 5500/9360 A=86a1 Gewicht 1 Rest 2999 hart 752 Kandidaten B 5222 harte ueberdeckt 0  (2.4 s)
+  Klasse 6000/9360 A=8b95 Gewicht 1 Rest 3066 hart 720 Kandidaten B 5222 harte ueberdeckt 0  (2.6 s)
+  Klasse 6500/9360 A=9589 Gewicht 1 Rest 3520 hart 933 Kandidaten B 5222 harte ueberdeckt 0  (2.8 s)
+  Klasse 7000/9360 A=9ffd Gewicht 1 Rest 4690 hart 1840 Kandidaten B 5222 harte ueberdeckt 0  (3.0 s)
+  Klasse 7500/9360 A=c3cd Gewicht 1 Rest 3187 hart 786 Kandidaten B 5222 harte ueberdeckt 0  (3.2 s)
+  Klasse 8000/9360 A=c7c1 Gewicht 1 Rest 3815 hart 1037 Kandidaten B 6310 harte ueberdeckt 0  (3.4 s)
+  Klasse 8500/9360 A=cdb5 Gewicht 1 Rest 3187 hart 786 Kandidaten B 5222 harte ueberdeckt 0  (3.6 s)
+  Klasse 9000/9360 A=d7a9 Gewicht 1 Rest 3815 hart 1037 Kandidaten B 6310 harte ueberdeckt 0  (3.8 s)
+Blaetter (ungewichtet): 0
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 5376, gewichtet 5376
+Ueberdeckungen nach Zahl kurzer Paare (k=2 volle Bahnen, ungeordnet):
+SUMME Ueberdeckungen: 0
+Laufzeit 3.9 s
+Rueckgabe 0

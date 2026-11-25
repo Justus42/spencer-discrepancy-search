@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 25.11.2026 (nach Gegenrechnung (15,4) unter Symmetrie). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 25.11.2026 (nach Auftrag Z, Zwei-Bahnen-Codes). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -25,6 +25,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Bahnen unter 5er-Zyklen plus Komplement (n=15: 40 Wörter, alle 525 Vierermengen, `bahn15_40w`) |  |  |  |  |  |  | |  |  |  |  | 1,565 e |
 | Bahnen unter der 3-Sylowgruppe P des 48ers (n=20, R=6; 40 Wörter = Rekord 1,789 ausgeschlossen, voll) | | | | | | | | | | | | – (voll) |
 | (15,4) unter Spaltensymmetrie Primzahlordnung 7 (7+7+1), 11, 13: 30 Wörter ausgeschlossen, 32 Wörter nur Ordnung 7 (112 Lösungen, 2 Klassen, eine `ctrl_16`; voll) | | | | | | | | 1,750 e | | | | |
+| Zwei-Bahnen-Codes (⟨g⟩ verschiebt zwei Blöcke der Länge q, f Fixspalten; Auftrag Z, voll): (15,4) 7+7+1 und (17,5) 7+7+3 je 32 Wörter, (20,6) mit 40 Wörtern in 10+10 und 9+9+2 (1 oder 2 volle Bahnen, Teilfälle s. u.) ausgeschlossen | | | | | | | | 1,750 e | 1,698 r | | | – (voll) |
 | Paley-Konferenzmatrizen | 1,225 e |  |  |  | 0,949 e | 1,336 e | |  |  | 1,179 e |  |  |
 | zirkulant n x n (Teil C, alle Klassen) |  | 1,134 e |  |  |  |  | |  |  | 0,943 e |  | 1,342 e |
 | zirkulant + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Teil C) |  |  | 1,768 e |  |  |  | |  |  |  | 0,918 e |  |
@@ -47,6 +48,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Paley-12-Doppelung, Bauregel 1+3 und 2+2 (24 x 20) |  |  |  | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Überdeckungscodes aus Nebenklassen-Suche (48/52/56/60 Wörter bei (20,6), 52 bei (22,7), 64 bei (18,5)) |  |  |  | 1,633 e |  | 1,569 e |  | 1,512 e |  | 1,461 e |  | 1,414 e |  |
 | Bahnen unter der 3-Sylowgruppe P des 48ers (n=20, R=6; unter P 48 Wörter optimal, ≤ 46 ausgeschlossen, voll) |  |  |  | 1,633 e |  |  |  |  |  |  |  |  |  |
+| Zwei-Bahnen-Codes (Auftrag Z, 2 volle Bahnen + feste Paare): (25,8) q=11/12, (23,7) mit 50 Wörtern; (30,10), (28,9), (26,8) q=13/11 mit 62 Wörtern ausgeschlossen (voll) |  |  |  |  | – (voll) |  |  |  |  |  | – (voll) |  |  |
 | Nebenklassen-Suche, nicht erreichte Ziele |  |  |  |  |  |  |  |  |  | (1,643) s |  | (1,591) s |  |
 | zirkulant n x n (Teil C, alle Klassen) | 1,091 e |  | 1,460 e | 1,225 e | 1,400 e | 1,177 e |  |  | 1,300 e | 1,095 e | 1,257 e |  |  |
 | zirkulant + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Teil C) | 1,309 e | 1,492 e |  | 1,429 e | 1,200 e | 1,373 e | 1,155 e |  |  |  |  |  |  |
@@ -104,6 +106,12 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Lokal um `ctrl_16` / `ctrl_8` (
 - **(15,4) unter Spaltensymmetrie:** Gegenrechnung 25.11.2026 (`notes/laeufe/2026-11-25_gegenrechnung15.md`, `src/gegen15_sym.py`, Logs `runs/gegenrechnung15/`):
   Ordnung 7 (7+7+1): 2 volle Bahnen + 2 feste Zeilen (32 Wörter) 112 Überdeckungen, bei 30 und 28 Wörtern 0 (kleinste Restzahl 466 bzw. 1100);
   Ordnung 13 (13+1+1) und 11 (11+1⁴): eine volle Bahn + 2–4 bzw. 4–6 feste Zeilen (30, 32, 34 Wörter) 0. Bestes Ergebnis 32 Wörter, disc 7, Quotient 1,750 (= `ctrl_16`).
+- **Zwei-Bahnen-Codes (Auftrag Z, 25.11.2026):** Protokoll `notes/laeufe/2026-11-25_zweibahn.md`, Programm `src/zweibahn_zaehl.c`, Logs `runs/zweibahn/`.
+  Kleinste erreichte Wortzahl je Zelle und Typ: (15,4) 7+7+1: 32 (112 Codes, 30 ausgeschlossen, alle Zusammensetzungen); (17,5) 7+7+3: 32
+  (1792 Codes aus 2 vollen + 2 festen, mit ≤ 1 festem keiner). Keine Überdeckung innerhalb der Rekordgrenze: (20,6) 10+10 alle ≤ 20 Paare,
+  10+10 2 volle + kurze ≤ 4, 9+9+2 2 volle + ≤ 2 und 1 volle + kurze ≤ 11; (25,8) 11+11+3 (2 volle + ≤ 3 fest, 1 volle + ≤ 14 fest),
+  12+12+1 (2 volle + ≤ 1); (23,7) 11+11+1; (30,10) 13+13+4; (28,9) 13+13+2; (26,8) 13+13 und 11+11+4 (je 2 volle + feste).
+  Bei allen Typen mit q ungerade überdecken 2 volle Bahnen mit keiner Zahl fester Paare. Nicht gezählt: 1 volle Bahn in Teil 3, kurze Bahnen > 1 bei q=12.
 - **32-Wörter-Codes:** N = 16, 17, 19 aus `controls/` (beide Prüfskripte, disc 7); N = 21, 23 nur Radius per Brute-Force (STATUS).
 - **Hadamard:** volle Matrizen `controls/had20_klasse*.txt`, McKay-60 (`controls/had24_mckay_hex.txt`); ohne 1 Spalte:
   `runs/teilA/zusatz_ohne_eine_spalte.log.txt`; ohne 2/3 Spalten: `runs/teilA/a1*`, `a2*` (alle 1140 bzw. 242 880 Fälle).

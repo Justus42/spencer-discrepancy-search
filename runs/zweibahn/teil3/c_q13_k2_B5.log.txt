@@ -1,0 +1,22 @@
+Wed Nov 25 07:28:41 UTC 2026
+# zweibahn_zaehl q=13 f=0 m=26 R=8 k=2 B=5 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:2 13:2581110  gesamt 2581112  (0.2 s)
+Kontrolle: Summe Groessen = 33554432, 2^(m-1) = 33554432
+erlaubte kurze Bahnen (Groesse <= 5): 2
+harte Klassen: 2199054 von 2581112  (0.2 s)
+Normalisator-Klassen voller Bahnen: 4394 (Erzeuger 16), Summe Klassengroessen 2581110 = 2581110 volle Bahnen
+(2.8 s)
+  Klasse 500/4394 A=1609f Gewicht 624 Rest 1068629 hart 945730 Kandidaten B 1443127 harte ueberdeckt 0  (68.7 s)
+  Klasse 1000/4394 A=261cb Gewicht 624 Rest 954247 hart 844842 Kandidaten B 1537309 harte ueberdeckt 0  (134.6 s)
+  Klasse 1500/4394 A=3e14d Gewicht 624 Rest 1021279 hart 860711 Kandidaten B 1521114 harte ueberdeckt 0  (200.0 s)
+  Klasse 2000/4394 A=5628b Gewicht 624 Rest 914408 hart 792011 Kandidaten B 1232329 harte ueberdeckt 0  (265.4 s)
+  Klasse 2500/4394 A=6e25b Gewicht 624 Rest 1033314 hart 858132 Kandidaten B 1408215 harte ueberdeckt 0  (332.4 s)
+  Klasse 3000/4394 A=ae117 Gewicht 624 Rest 988153 hart 831881 Kandidaten B 1576657 harte ueberdeckt 0  (401.2 s)
+  Klasse 3500/4394 A=be2db Gewicht 624 Rest 1077724 hart 875875 Kandidaten B 1598073 harte ueberdeckt 0  (470.3 s)
+  Klasse 4000/4394 A=13e0cf Gewicht 624 Rest 1119042 hart 912453 Kandidaten B 1533541 harte ueberdeckt 0  (540.0 s)
+Blaetter (ungewichtet): 0
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 0, gewichtet 0
+Ueberdeckungen nach Zahl kurzer Paare (k=2 volle Bahnen, ungeordnet):
+SUMME Ueberdeckungen: 0
+Laufzeit 593.7 s
+Rueckgabe 0

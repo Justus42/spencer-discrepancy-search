@@ -1,0 +1,8 @@
+Wed Nov 25 07:38:35 UTC 2026
+# zweibahn_zaehl q=13 f=4 m=30 R=10 k=2 B=32 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:32 13:41297760  gesamt 41297792  (2.7 s)
+Kontrolle: Summe Groessen = 536870912, 2^(m-1) = 536870912
+erlaubte kurze Bahnen (Groesse <= 32): 32
+harte Klassen: 18120960 von 41297792  (4.4 s)
+Normalisator-Klassen voller Bahnen: 4394 (Erzeuger 23), Summe Klassengroessen 41297760 = 41297760 volle Bahnen
+(60.3 s)

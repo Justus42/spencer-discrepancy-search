@@ -1,0 +1,15 @@
+Wed Nov 25 07:06:47 UTC 2026
+# zweibahn_zaehl q=10 f=0 m=20 R=6 k=2 B=4 sym=ja threads=4
+Bahnen (Paare) nach Groesse: 1:4 2:2 5:204 10:52326  gesamt 52536  (0.0 s)
+Kontrolle: Summe Groessen = 524288, 2^(m-1) = 524288
+erlaubte kurze Bahnen (Groesse <= 4): 6
+harte Klassen: 24040 von 52536  (0.0 s)
+Normalisator-Klassen voller Bahnen: 543 (Erzeuger 8), Summe Klassengroessen 52326 = 52326 volle Bahnen
+(0.0 s)
+  Klasse 500/543 A=dcab Gewicht 160 Rest 16209 hart 6906 Kandidaten B 29067 harte ueberdeckt 0  (1.6 s)
+Blaetter (ungewichtet): 0
+geordnete Paare (A Vertreter), die alle harten Klassen ueberdecken: 0, gewichtet 0
+Ueberdeckungen nach Zahl kurzer Paare (k=2 volle Bahnen, ungeordnet):
+SUMME Ueberdeckungen: 0
+Laufzeit 1.7 s
+Rueckgabe 0
