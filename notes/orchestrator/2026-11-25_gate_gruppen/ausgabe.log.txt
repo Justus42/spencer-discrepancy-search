@@ -1,0 +1,70 @@
+Gate zu Auftrag G, Orchestrator, 25.11.2026 ca. 12:50 bis 13:20 Uhr, 2 Cloud-Kerne, zusammen etwa 4 Minuten Rechenzeit.
+Aufruf jeweils aus dem Repo-Wurzelordner: python3 notes/orchestrator/2026-11-25_gate_gruppen/<skript> ...
+
+--- gate_g.py A (eigene Tafeln gegen runs/gruppen/tafeln/*.grp; eigene/Sitzung) ---
+z3xz6: n=18 assoziativ True/True abelsch True/True Zentrum 18/18 Ordnungen ((1, 1), (2, 1), (3, 8), (6, 8)) GLEICH
+d9: n=18 assoziativ True/True abelsch False/False Zentrum 1/1 Ordnungen ((1, 1), (2, 9), (3, 2), (9, 6)) GLEICH
+s3xz3: n=18 assoziativ True/True abelsch False/False Zentrum 3/3 Ordnungen ((1, 1), (2, 3), (3, 8), (6, 6)) GLEICH
+z3z3_z2: n=18 assoziativ True/True abelsch False/False Zentrum 1/1 Ordnungen ((1, 1), (2, 9), (3, 8)) GLEICH
+z2xz10: n=20 assoziativ True/True abelsch True/True Zentrum 20/20 Ordnungen ((1, 1), (2, 3), (5, 4), (10, 12)) GLEICH
+d10: n=20 assoziativ True/True abelsch False/False Zentrum 2/2 Ordnungen ((1, 1), (2, 11), (5, 4), (10, 4)) GLEICH
+dic5: n=20 assoziativ True/True abelsch False/False Zentrum 2/2 Ordnungen ((1, 1), (2, 1), (4, 10), (5, 4), (10, 4)) GLEICH
+f20: n=20 assoziativ True/True abelsch False/False Zentrum 1/1 Ordnungen ((1, 1), (2, 5), (4, 10), (5, 4)) GLEICH
+f21: n=21 assoziativ True/True abelsch False/False Zentrum 1/1 Ordnungen ((1, 1), (3, 14), (7, 6)) GLEICH
+z5xz5: n=25 assoziativ True/True abelsch True/True Zentrum 25/25 Ordnungen ((1, 1), (5, 24)) GLEICH
+
+--- gate_g2.py z7 (Positivkontrolle des Gate-Programms) ---
+Kontrolle Z7 Rand=True d=5: 64 Funktionen, unwiderlegt 14, davon exakt disc >= d: 14
+Kontrolle Z7 Rand=False d=5: 64 Funktionen, unwiderlegt 0, davon exakt disc >= d: 0
+Kontrolle Z7 Rand=True d=7: 64 Funktionen, unwiderlegt 0, davon exakt disc >= d: 0
+
+--- gate_g.py B ... (volle Matrizen, jedes f einzeln widerlegt, ohne Symmetrieabbau) ---
+z3z3_z2: n=18 d=8: 131072 Funktionen, 23 Zufalls-x, 36 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (6 s)
+z3z3_z2 mit Rand: n=18 d=8: 131072 Funktionen, 36 Zufalls-x, 54 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (7 s)
+d9: n=18 d=8: 131072 Funktionen, 20 Zufalls-x, 36 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (6 s)
+d9 mit Rand: n=18 d=8: 131072 Funktionen, 27 Zufalls-x, 54 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (8 s)
+  (diese vier Läufe noch mit Abbruch der Zufallsphase bei 64 Rest-f je Block; danach bis zum leeren Rest)
+s3xz3: n=18 d=8: 131072 Funktionen, 46 Zufalls-x, 0 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (0 s)
+s3xz3 mit Rand: n=18 d=8: 131072 Funktionen, 49 Zufalls-x, 0 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (0 s)
+z3xz6: n=18 d=8: 131072 Funktionen, 59 Zufalls-x, 0 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (0 s)
+z3xz6 mit Rand: n=18 d=8: 131072 Funktionen, 54 Zufalls-x, 0 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (0 s)
+z2xz10: n=20 d=8: 524288 Funktionen, 186 Zufalls-x, 0 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (0 s)
+d10: n=20 d=8: 524288 Funktionen, 141 Zufalls-x, 0 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (0 s)
+dic5: n=20 d=8: 524288 Funktionen, 180 Zufalls-x, 0 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (0 s)
+f20: n=20 d=8: 524288 Funktionen, 147 Zufalls-x, 0 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (0 s)
+f21: n=21 d=9: 1048576 Funktionen, 308 Zufalls-x, 0 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (1 s)
+f21 mit Rand: n=21 d=9: 1048576 Funktionen, 382 Zufalls-x, 0 einzeln nachbehandelt, OHNE Gegenbeispiel: 0  (1 s)
+--- gate_g2.py z5xz5 ---
+z5xz5 voll d=9: 16777216 Funktionen, 67107 Zufalls-x (Summe über 64 Blöcke), OHNE Gegenbeispiel: 0 (53 s)
+
+--- gate_g2.py ... (zwei Spalten gestrichen, ohne Symmetrieabbau) ---
+d9: n=18, Ziel max < 6: unwiderlegt |L| = 0 (Obermenge von disc >= 6) (0 s)
+z3z3_z2: n=18, Ziel max < 6: unwiderlegt |L| = 0 (Obermenge von disc >= 6) (0 s)
+s3xz3: n=18, Ziel max < 6: unwiderlegt |L| = 0 (Obermenge von disc >= 6) (0 s)
+z3xz6: n=18, Ziel max < 6: unwiderlegt |L| = 0 (Obermenge von disc >= 6) (1 s)
+f21: n=21, Ziel max < 7: unwiderlegt |L| = 2582 (Obermenge von disc >= 7) (17 s)
+   2582 x 210 = 542220 gestrichene Matrizen, 86 Zufalls-x, OHNE Gegenbeispiel (max < 9): 0 (18 s)
+z2xz10: n=20, Ziel max < 6: unwiderlegt |L| = 270 (Obermenge von disc >= 6) (8 s)
+   270 x 190 = 51300 gestrichene Matrizen, 288 Zufalls-x, OHNE Gegenbeispiel (max < 8): 0 (9 s)
+d10: n=20, Ziel max < 6: unwiderlegt |L| = 100 (Obermenge von disc >= 6) (3 s)
+   100 x 190 = 19000 gestrichene Matrizen, 216 Zufalls-x, OHNE Gegenbeispiel (max < 8): 0 (3 s)
+dic5: n=20, Ziel max < 6: unwiderlegt |L| = 260 (Obermenge von disc >= 6) (7 s)
+   260 x 190 = 49400 gestrichene Matrizen, 262 Zufalls-x, OHNE Gegenbeispiel (max < 8): 0 (7 s)
+f20: n=20, Ziel max < 6: unwiderlegt |L| = 100 (Obermenge von disc >= 6) (3 s)
+   100 x 190 = 19000 gestrichene Matrizen, 201 Zufalls-x, OHNE Gegenbeispiel (max < 8): 0 (3 s)
+
+--- gate_g3.py z2xz10 d10 dic5 f20 (exakte Diskrepanz aller f aus L, alle 2^19 x) ---
+z2xz10: |L| = 270, exakte Diskrepanz: {4: 10, 6: 260}; f mit disc >= 6 (mit Komplement): 520; Bahnen unter Verschiebungen und Komplement: [40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40, 40] (21 s)
+d10: |L| = 100, exakte Diskrepanz: {6: 100}; f mit disc >= 6 (mit Komplement): 200; Bahnen unter Verschiebungen und Komplement: [200] (7 s)
+dic5: |L| = 120, exakte Diskrepanz: {4: 20, 6: 100}; f mit disc >= 6 (mit Komplement): 200; Bahnen unter Verschiebungen und Komplement: [200] (12 s)
+f20: |L| = 100, exakte Diskrepanz: {6: 100}; f mit disc >= 6 (mit Komplement): 200; Bahnen unter Verschiebungen und Komplement: [200] (8 s)
+
+--- gate_g4.py (Z5xZ5, Vertreter der Sitzung mit u = 7, alle 300 Spaltenpaare) ---
+z5xz5 f=8459: beste gefundene Schranke voll 5; 300 Spaltenpaare, ohne Gegenbeispiel (max < 9): 0 nach 98 Zufalls-x
+z5xz5 f=8d2f: beste gefundene Schranke voll 7; 300 Spaltenpaare, ohne Gegenbeispiel (max < 9): 0 nach 99 Zufalls-x
+z5xz5 f=8f4f: beste gefundene Schranke voll 7; 300 Spaltenpaare, ohne Gegenbeispiel (max < 9): 0 nach 273 Zufalls-x
+z5xz5 f=108a8f: beste gefundene Schranke voll 5; 300 Spaltenpaare, ohne Gegenbeispiel (max < 9): 0 nach 227 Zufalls-x
+
+--- Plausibilität der u-Verteilung: exakte Diskrepanz von je 60 zufälligen f (alle 2^19 x) ---
+z2xz10: {0: 27, 2: 31, 4: 2}   (Sitzung, Klassen: 0: 627, 2: 705, 4: 121, 6: 2)
+f20:    {0: 22, 2: 35, 4: 3}   (Sitzung, Klassen: 0: 479, 2: 892, 4: 132, 6: 1)
