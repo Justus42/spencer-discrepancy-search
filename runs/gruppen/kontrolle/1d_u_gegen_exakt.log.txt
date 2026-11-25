@@ -1,0 +1,10 @@
+z18 ohne-rand: klassen 1346, u < exakt (VERLETZT): 0, u > exakt: 26, exakt max 4, u max 4
+z18 -r: klassen 1346, u < exakt (VERLETZT): 0, u > exakt: 25, exakt max 4, u max 4
+z3xz6 ohne-rand: klassen 300, u < exakt (VERLETZT): 0, u > exakt: 6, exakt max 4, u max 4
+z3xz6 -r: klassen 300, u < exakt (VERLETZT): 0, u > exakt: 3, exakt max 4, u max 4
+d9 ohne-rand: klassen 224, u < exakt (VERLETZT): 0, u > exakt: 3, exakt max 4, u max 4
+d9 -r: klassen 224, u < exakt (VERLETZT): 0, u > exakt: 3, exakt max 4, u max 4
+s3xz3 ohne-rand: klassen 894, u < exakt (VERLETZT): 0, u > exakt: 11, exakt max 4, u max 4
+s3xz3 -r: klassen 894, u < exakt (VERLETZT): 0, u > exakt: 2, exakt max 4, u max 4
+z3z3_z2 ohne-rand: klassen 94, u < exakt (VERLETZT): 0, u > exakt: 0, exakt max 4, u max 4
+z3z3_z2 -r: klassen 94, u < exakt (VERLETZT): 0, u > exakt: 0, exakt max 4, u max 4
