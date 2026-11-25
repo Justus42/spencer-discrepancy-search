@@ -121,6 +121,8 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Nebenklassen-Suche d=2, (23,7) | 60 Wörter nicht erreicht (0 von 8) | Suche | A: Rundgang Nebenklassen-Suche |
 | Freie Suche (15,4) mit 30 Wörtern | bleibt bei 466 offenen Punkten | Suche | A: Ziele; A: Fehlversuche |
 | (15,4) mit 30 Wörtern: Symmetrie der Ordnung 7 (Typ 7+7+1), 11 (Typ 11+1⁴), 13 (Typ 13+1+1) | keine; Ordnung 7 mit 32 Wörtern: 112 Lösungen (2 Klassen); `ctrl_16` ohne eine Zeile: immer 466 offen | voll (zwei unabhängige Programme, direkt nachgerechnet) | L: 2026-11-25_gegenrechnung15 |
+| Kern-⟨1,a⟩-Paare (U,W) bei (20,6), abwechselnde Suche mit Halbproblem-Löser (Auftrag H): K = 11 (44 Wörter) und K = 10 (40) in den Typen (11,9), (13,7), (10,10), (12,8), Zufallsstart; Kontrolle K = 12 (11,9) 8 von 8 in ≤ 24 s | nicht erreicht; beste Restzahl K = 11: 1288 / 2698 / 1063 / 1836, K = 10: 3234 / 5926 / 1852 / 4280 | Suche | L: 2026-11-25_zerlegung; K |
+| Kern-⟨1,a⟩-Paare bei d = 9, K = 12 (48 Wörter), Zellen (21,6), (23,7), (25,8), sechs Typen, Zufallsstart; dazu U = Paley-12 ohne Spalte, W 12 x 10/12/14 | nicht erreicht (beste Restzahl 1760 bei (12,11)); W 12 x 10 ausgeschlossen (Zählschranke über alle 880 Anforderungen, bestätigt Sol), 12 x 12 und 12 x 14 unentschieden | Suche; voll für 12 x 10 (ein Programm) | L: 2026-11-25_zerlegung |
 
 ## Fehlversuche
 
@@ -172,6 +174,10 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - 24.11.2026, Status-Umzug: Commit-Daten über github.com (`.patch`) Proxy 403, statt dessen Git-Abruf; erster Lauf `offene_zellen.py` am CSV-Kopf gescheitert (Spalte `q`), je Sekunden.
 - 24.11.2026, Lean-Zertifikat: Kernel-Prüfung zweimal Speichermangel (einfache Schleife am Stück 117 s; 8 x 512 Blocksätze über `lake build` ca. 10 Min.), Namenskonflikt beim Neubau 2 Min.; `lakecache.blob.core.windows.net` Proxy 403 (L: 2026-11-24_lean).
 - 25.11.2026, Leiter unter 48 bei (20,6), Auftrag L: Teil 1 (Alleinanteile, eigenes Skript) bestätigt; Teil 2 Kontrolle K=12, Typ (11,9), Zufallsstart, Startwerte 1–16, je 1800 s, 4 parallel: nur 1 von 16 gelöst (Startwert 5, 48er, disc 8, Allein 12 x 6108, laut Gate gleichwertig zur Paley-Doppelung 1+3; Soll mindestens 2), Restzahlen sonst 8–22. Abbruch nach Auftrag, kein K=11, keine Warmstarts. L: 2026-11-25_leiter48.
+- 25.11.2026, Auftrag H, K1 erste Fassung (W fest, U gesucht, nur Einzelzeilen-Züge): 0 von 4 je 600 s (Restzahl 22, falsche Zeilenzuordnung), 8 Stellschrauben-Läufe je 90–180 s ohne Erfolg; behoben durch Tauschzüge. L: 2026-11-25_zerlegung.
+- 25.11.2026, Auftrag H: `dfs` ohne Zählschranke auf K1 (60 s) und auf d = 9, W 12 x 10 (120 s) an der Zeitgrenze (steckt in den letzten Zeilen). L: 2026-11-25_zerlegung.
+- 25.11.2026, Auftrag H, Schritt 2 (d = 9, U = Paley-12 ohne Spalte 0): W 12 x 12 und 12 x 14 je `dfs` mit Zählschranke 1200 s und `ls` 1200 s unentschieden (Restzahl 1760 / 5280); Gewichtssuche je 240 s, Verhältnis höchstens 0,82 / 0,67. L: 2026-11-25_zerlegung.
+- 25.11.2026, Auftrag H, Schritt 4, Zufallsstart mit Neustarts, je 4 Startwerte: K = 11 (4 Typen je 810 s), K = 10 (4 Typen je 300 s, gekürzt, da jede K=10-Lösung eine K=11-Lösung gäbe), d = 9 K = 12 (6 Typen je 570 s): kein Treffer. L: 2026-11-25_zerlegung.
 
 ## Offene Punkte
 
@@ -198,6 +204,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - Gruppenmatrizen: Ordnung 24 (14 nichtzyklische Gruppen, Schwelle 10) und vier gestrichene Spalten bei Ordnung 25 nicht gerechnet (L: 2026-11-25_gruppen).
 - Suche im Spann: bei (15,4) Rang 8 und Rang 9 vollständig ausgeschlossen (alle 9 Klassen, Auftrag R9), Rang 10 nicht begonnen; die neun Rang-9-Ausschlüsse ruhen auf einem Programm
   mit Symmetrie (Gate zu R9 bestanden, `notes/gate_2026-11-25_rang9.md`; Gegenprobe ohne Symmetrie nicht gerechnet und nicht geplant: nach einer 90-s-Probe mehrere Stunden je Klasse). Bei (20,6) 78 weitere Spanne nicht durchsucht, Gleichwertigkeit der drei 48er-Spanne offen (L: 2026-11-25_spann; `notes/gate_2026-11-25_spann.md`).
+- Auftrag H: Halbproblem-Löser findet den 48er bei (20,6) aus Zufallsstart in Sekunden (8 von 8; Typ (10,10) ebenso); Gleichwertigkeit der Treffer zu 1+3/2+2 offen (Fingerabdruck trennt nicht); d = 9 mit Paley-U und W 12 x 12 / 12 x 14 offen (L: 2026-11-25_zerlegung).
 - Nächster Schritt: Entscheidung zur Meldung K(20,6) ≤ 48 am 27.11.2026 (Neuheitsprüfung am 26.11.). Die Ansatzwahl ist erfolgt (`notes/ideen_2026-11-25.md`): Aufträge E (Evolutionsschleife),
   H (Zerlegung der Kern-Familie) und P (Gegenrechnung der Vortests), freigegeben am 25.11.2026, 18:10 Uhr; danach je ein Gate.
 
@@ -235,3 +242,4 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
   Nachrechnung der 30 780 Gegenbeispiele zu Test C ohne `hadamard_tests.py`. Logs `runs/status_umzug/`.
 - `src/zweibahn_zaehl.c` (Zählcode, Zwei-Bahnen-Codes), `src/zweibahn_brute.py` (Prüfcode, Brute-Force-Test), `src/run_zweibahn_teil{1,2,3}.sh`. Logs `runs/zweibahn/`.
 - `notes/verlauf/`: Archiv der vollständigen STATUS.md vom 24.11.2026 (eingefroren). `notes/rundlauf_2026-11-24_auftrag.md`: Auftragstext Ansatz 3.
+- `src/zerl_offen.py` (Prüfcode), `src/zerl_halb.c` (Suchcode: `ls`, `dfs`, `alt`, `zaehl`), `src/zerl_eingaben.py`, `src/zerl_test_dfs.py`, `src/zerl_gewichte.py`, `src/run_zerl_{k1,s2,alt,ziel}.sh`: Auftrag H. Logs `runs/zerlegung/`.

@@ -38,6 +38,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Rundlauf Astra 4 Walsh-Charts (20x20, 1 024) | | | | | | | | | | | | 0,894 e |
 | Rundlauf Astra 6 Differenzblöcke (20x18, 2 160) | | | | | | | | | | | | 1,342 e |
 | Rundlauf Sol 2 Paley-12-Verkabelung (20x20, 71 280) | | | | | | | | | | | | 0,894 e |
+| Kern-⟨1,a⟩-Paare (U,W) bei (20,6), d = 8, abwechselnde Suche (Auftrag H): K = 10 (40 Wörter) in (11,9), (13,7), (10,10), (12,8) nicht erreicht | | | | | | | | | | | | (1,789) s |
 
 ## N ab 21
 
@@ -71,6 +72,8 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Rundlauf Sol 6 Paley-26 (31x26, 40 680) | | | | | | | | | | | 1,078 e | | |
 | Rundlauf Sol 7 Hadamard-16 geschaltet (31x28, 17 920) | | | | | | | | | | | 0,718 e | | |
 | Rundlauf Sol 8 vier Walsh-Bänke (31x30, 10 000) | | | | | | | | | | | 1,078 e | | |
+| Kern-⟨1,a⟩-Paare (U,W) bei (20,6), d = 8 (Auftrag H): K = 12 aus Zufallsstart in (11,9) und (10,10); K = 11 (44 Wörter) in vier Typen nicht erreicht |  | (1,706) s |  | 1,633 e |  |  |  |  |  |  |  |  |  |
+| Kern-⟨1,a⟩-Paare bei d = 9, K = 12 (48 Wörter), (21,6), (23,7), (25,8), sechs Typen (Auftrag H); U = Paley-12 ohne Spalte mit W 12 x 10 voll ausgeschlossen |  |  |  | (1,837) s | (1,800) s |  |  |  |  |  |  |  |  |
 
 ## Bester Eintrag dieser Karte je N (nur `e`/`r`)
 
@@ -133,6 +136,10 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Lokal um `ctrl_16` / `ctrl_8` (
   Nur ein Element der Ordnung 3 (⟨g⟩, 174 848 Bahnen): Tabu-Kontrolle (48 Wörter) nicht bestanden (1 von 4 bzw. 0 von 4), < 48 ungeprüft.
   Protokoll `notes/laeufe/2026-11-25_bahnen3.md`.
 - **Nebenklassen-Leiter unter 48 bei (20,6) (Auftrag L, 25.11.2026):** Kern ⟨1,a⟩, Typ (11,9). Kleinste erreichte Wortzahl weiter **48** (Quotient 1,633 e); der eine Treffer aus K=12-Zufallsstart (`runs/woerter_n20_R6_d2_K12_typ11-9_k12_seed5.txt`, disc 8 mit drei Programmen) ist kein neuer 48er, sondern zur Paley-Doppelung 1+3 gleichwertig (Gate: `notes/gate_2026-11-25_leiter48.md`). K=12 aus Zufallsstart: 1 von 16 Läufen à 1800 s (Kontrolle nicht bestanden), K=11 (44 Wörter, N = 22, 1,706) nicht versucht. Protokoll `notes/laeufe/2026-11-25_leiter48.md`.
+- **Kern-⟨1,a⟩-Paare (U,W), Auftrag H (25.11.2026):** Protokoll `notes/laeufe/2026-11-25_zerlegung.md`, Suchcode `src/zerl_halb.c`, Prüfcode `src/zerl_offen.py`, Logs `runs/zerlegung/`.
+  Kleinste erreichte Nebenklassenzahl je Typ und beste Restzahl darunter (offene Klassen (y,z)). d = 8, (20,6): (11,9) K = 12 (8 von 8 aus Zufallsstart, je ≤ 24 s, alle disc 8 mit drei Programmen), K = 11 Restzahl 1288, K = 10 3234;
+  (10,10) K = 12 (1 Lauf, 39 s, disc 8), K = 11 1063, K = 10 1852; (12,8) K = 12 nicht erreicht (1 Lauf 300 s, Restzahl 180), K = 11 1836, K = 10 4280; (13,7) K = 12 nicht erreicht (300 s, 290), K = 11 2698, K = 10 5926.
+  d = 9, K = 12 (keiner erreicht): (11,10) 12 957, (12,9) 11 002, (12,11) 1760, (13,10) 26 360, (12,13) 5280, (11,14) 5280. U = Paley-12 ohne Spalte: W 12 x 10 voll ausgeschlossen (Zählschranke), 12 x 12 und 12 x 14 unentschieden.
 - **Gruppenmatrizen über nichtzyklischen Gruppen (Auftrag G, 25.11.2026):** Protokoll `notes/laeufe/2026-11-25_gruppen.md`, Programm `src/gruppenmatrix.c`
   (Prüfcode `src/gruppen_erzeuge.py`, `src/gruppen_pruef.py`), Tafeln und Logs `runs/gruppen/`, beste Matrizen `runs/gruppen/beste/` (beide Prüfskripte und `exakt_disc` gleich).
   A[g][h] = f(g^-1 h); alle Klassen bis auf Links-/Rechtsmultiplikation, Automorphismen und Komplement (nicht f(x^-1)). Kein Überlebender in keiner der zehn Gruppen
