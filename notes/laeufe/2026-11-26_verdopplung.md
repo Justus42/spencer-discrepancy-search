@@ -47,3 +47,18 @@ Alle Zahlen laut Bewerter, alle Läufe einer Stufe enden beim selben Wert (feste
 
 Zelle (19,6) und (17,5) beendet (Regel: zwei Stufen nacheinander nicht erreicht, dann 8 Startwerte mit doppelter Zeit in der letzten, ohne Treffer).
 Kleinste erreichte Paarzahl in beiden Zellen: 16 (32 Wörter), das ist der bekannte Tabellenwert; kein Tabellenwert darunter.
+
+## Schritt 2, (22,7) (Block 2, 18:33–19:03 UTC)
+
+Stufe je 4 Startwerte à 300 s; nach zwei nicht erreichten Stufen 8 Startwerte à 600 s bei 22 Paaren (zwei Durchgänge à 4 Läufe, Hintergrundjob wegen des 10-Minuten-Limits der Werkzeugaufrufe; keine Abfrage zwischendurch).
+Hinweis: Die Läufe mit gleichem Namen überschreiben Ausgabe und Log der kürzeren Läufe (Startwerte 1–4 bei 22 Paaren und bei 14 Paaren in (19,6)/(17,5)); die Zahlen aller Läufe stehen unverändert in `archiv.tsv`.
+
+| Paare | Ergebnis | offene Klassen (Startwerte) | Anteil |
+|---|---|---|---|
+| 24 | erreicht (Kontrolle, 4 von 4) | 0 | 0 |
+| 23 | nicht erreicht | 616 / 759 / 666 / 657 | 0,0003 |
+| 22 | nicht erreicht (4 x 300 s) | 714 / 742 / 860 / 648 | 0,0003 |
+| 22 | 8 Startwerte à 600 s | 714 / 722 / 694 / 648 / 714 / 736 / 648 / 668 | 0,0003 |
+| 12 (Ziel) | nicht erreicht | 234 512 bis 234 668 | 0,1119 |
+
+(22,7) beendet. Kleinste erreichte Paarzahl: 24 (48 Wörter, Kontrolle, entspricht der Bauregel), beste Restzahl darunter: 616 bei 23 Paaren (mit nur einer Messung à 300 s; 22 Paare: 648).
