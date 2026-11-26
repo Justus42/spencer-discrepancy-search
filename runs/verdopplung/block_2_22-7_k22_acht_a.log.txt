@@ -1,0 +1,1 @@
+2026-11-26 18:43:50 UTC  Block 2  m=22 R=7 Paare=22  Startwerte: 1 2 3 4  je 600 s  (Leiter (22,7) 8 Startwerte, doppelte Zeit, Startwerte 1-4)
