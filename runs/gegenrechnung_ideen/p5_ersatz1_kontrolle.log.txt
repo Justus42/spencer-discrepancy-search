@@ -1,0 +1,13 @@
+Thu Nov 26 17:58:36 UTC 2026
+Matrix 0, Ziel 4: gr [50, 84, 0, 132, 98, 146, 0, 166, 54, 0]  direkt [50, 84, 0, 132, 98, 146, 0, 166, 54, 0]  gleich: True
+Matrix 0, Ziel 6: gr [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  direkt [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  gleich: True
+Matrix 1, Ziel 4: gr [26, 20, 8, 12, 0, 18, 0, 26, 4, 8]  direkt [26, 20, 8, 12, 0, 18, 0, 26, 4, 8]  gleich: True
+Matrix 1, Ziel 6: gr [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  direkt [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  gleich: True
+Matrix 2, Ziel 4: gr [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  direkt [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  gleich: True
+Matrix 2, Ziel 6: gr [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  direkt [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  gleich: True
+ALLE GLEICH: True
+
+real	0m3.523s
+user	0m3.821s
+sys	0m0.042s
+Thu Nov 26 17:58:40 UTC 2026

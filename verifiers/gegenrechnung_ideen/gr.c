@@ -14,8 +14,8 @@
      frei FILE c d SCHRITT [REST]  Spaltenteilmengen der Groesse c (jede SCHRITT-te, Index % SCHRITT == REST): Loecher (max|s| < d)
                             zaehlen, eine freie +-1-Zeile w suchen, die alle Loecher deckt (|<w,x>| >= d)
      freizeile FILE d       Nullspalten weg, je eine Zeile gestrichen: Loecher zaehlen, freie Zeile suchen (Positivkontrolle)
-     ersatz1 FILE           Hadamard ohne Spalte j, neue Spalte c: flache x' (max|b| <= N/2-3), Bedingungen, gute c
-     ersatz2 FILE           Hadamard ohne Spalten a<b, zwei neue Spalten: flache x'', Bedingungen je Zeilengruppe, Belegungen
+     ersatz1 FILE [Z]       Hadamard (oder beliebige +-1-Matrix mit gerader Zeilenzahl, ungerader Spaltenzahl - 1) ohne Spalte j, neue Spalte c: flache x' (max|b| <= N/2-3), Bedingungen, gute c
+     ersatz2 FILE [Z]       Hadamard ohne Spalten a<b, zwei neue Spalten: flache x'', Bedingungen je Zeilengruppe, Belegungen
      zirk n                 alle zirkulanten +-1-Matrizen n x n (erste Zeile mit c_0 = +1): Verteilung der exakten Diskrepanz
    Bauen: gcc -O3 -march=native -fopenmp -o build/gr verifiers/gegenrechnung_ideen/gr.c */
 #include <stdio.h>
@@ -324,8 +324,8 @@ static long eindeutig(Bed *v, long n) {
     for (long i = 0; i < n; i++) if (u == 0 || bedcmp(&v[i], &v[u - 1])) v[u++] = v[i];
     return u;
 }
-static void cmd_ersatz1(const char *fn) {
-    Datei d = lese(fn); int N = d.z; int T = N / 2 - 3; /* N = 20: flach heisst max|b| <= 7 */
+static void cmd_ersatz1(const char *fn, int Z) {
+    Datei d = lese(fn); int N = d.z; int T = Z > 0 ? Z - 1 : N / 2 - 3; /* N = 20, Ziel 8: flach heisst max|b| <= 7 */
     long fall = 0, alle_null = 1;
     for (int k = 0; k < d.anz; k++) for (int j = 0; j < d.s; j++) {
         Ctx *cx = aligned_alloc(32, sizeof(Ctx)); memset(cx, 0, sizeof *cx);
@@ -356,8 +356,8 @@ static void cmd_ersatz1(const char *fn) {
     }
     printf("GESAMT %ld Faelle, gute Ersatzspalten in allen Faellen 0: %s\n", fall, alle_null ? "ja" : "NEIN");
 }
-static void cmd_ersatz2(const char *fn) {
-    Datei d = lese(fn); int N = d.z; int T = N / 2 - 4; /* N = 20: max|b| <= 6 */
+static void cmd_ersatz2(const char *fn, int Z) {
+    Datei d = lese(fn); int N = d.z; int T = Z > 0 ? Z - 2 : N / 2 - 4; /* N = 20, Ziel 8: max|b| <= 6 */
     long paare = 0, ausgeschl = 0, fmin = 1L << 40, fmax = 0, bmin = 1L << 40, bmax = 0, quer = 0;
     for (int k = 0; k < d.anz; k++) for (int a = 0; a < d.s; a++) for (int bb = a + 1; bb < d.s; bb++) {
         Ctx *cx = aligned_alloc(32, sizeof(Ctx)); memset(cx, 0, sizeof *cx);
@@ -441,8 +441,8 @@ int main(int argc, char **argv) {
     else if (!strcmp(b, "allein") && argc == 5) cmd_allein(argv[2], argv[3], atoi(argv[4]));
     else if (!strcmp(b, "frei") && argc >= 6) cmd_frei(argv[2], atoi(argv[3]), atoi(argv[4]), atol(argv[5]), argc > 6 ? atol(argv[6]) : 0);
     else if (!strcmp(b, "freizeile") && argc == 4) cmd_freizeile(argv[2], atoi(argv[3]));
-    else if (!strcmp(b, "ersatz1") && argc == 3) cmd_ersatz1(argv[2]);
-    else if (!strcmp(b, "ersatz2") && argc == 3) cmd_ersatz2(argv[2]);
+    else if (!strcmp(b, "ersatz1") && argc >= 3) cmd_ersatz1(argv[2], argc > 3 ? atoi(argv[3]) : 0);
+    else if (!strcmp(b, "ersatz2") && argc >= 3) cmd_ersatz2(argv[2], argc > 3 ? atoi(argv[3]) : 0);
     else if (!strcmp(b, "zirk") && argc == 3) cmd_zirk(atoi(argv[2]));
     else { fprintf(stderr, "unbekannter Aufruf\n"); return 2; }
     return 0;

@@ -25,3 +25,18 @@ had24_1p3_paley12 8, je gleich. Tiefensuche (`gr schwelle`) bei T = disc − 1 �
 | 1, Ordnung 16 Sylvester | 4 / 5 / 6 / 5 / 140× 4, 1680× 6 | ebenso | ja | ebd. |
 | 1, Ordnung 16 aus `ctrl_16` + Transponierte | 6 / 7 / 6 / 5 / 56× 4, 3584× 6 | ebenso | ja | ebd. |
 | 1, Ordnung 20 (3 Klassen + Transponierte) | 6 / 7 / 6 / 5 / 6, alle Fälle gleich | ebenso | ja | ebd. |
+| 2, Ordnung 24 ohne 2 Spalten, disc ≥ 8 | 7420 von 33 120 (Tiefensuche); Gegenprobe Gray-Code: 25 700× 6, 7420× 8 | 7420 von 33 120 | ja | `p2_c2.log.txt` |
+| 2, ohne 4 Spalten, disc ≥ 8 | 42 304 von 1 275 120; je Ausrichtung 21 152 = 8× 2640 + 16 + 6 + 6 + 4 | ebenso | ja | `p2_c4.log.txt` |
+| 2, ohne 5 Spalten, disc ≥ 9 | 0 von 5 100 480 | 0 von 5 100 480 | ja | `p2_c5.log.txt` |
+| 3, ohne 1 Spalte, d = 9 | Löcher 3520 bis 16 192 je Fall; freie ±1-Zeile: 0 von 2880 (Positivkontrollen `ctrl_16` ohne Zeile 233 Löcher, 16 von 16; 48er ohne Zeile 24 von 24) | 3520 bis 16 192; 0 von 2880 | ja | `p3_frei_c1.log.txt` |
+| 4, Alleinanteil, 42 304 Fälle | 1264 bis 1354; erste McKay-Matrix 1297 bis 1300; nebenbei 0 unbedeckte x (Gray-Code bestätigt disc ≥ 8 aller 42 304) | 1264 bis 1354; 1297 bis 1300 | ja | `p4_allein.log.txt` |
+| 5, Hadamard 20, eine Ersatzspalte | je Fall 20 064 flache x', 3021 Bedingungen (1140 Größe 3, 1881 Größe 4), 0 gute Spalten in 120 Fällen; Kontrolle an 3 Zufallsmatrizen 10 x 10 gegen direkte Zählung, Ziele 4 und 6: gleich | ebenso | ja | `p5_ersatz1.log.txt`, `p5_ersatz1_kontrolle.log.txt` |
+| 5, zwei Ersatzspalten | 1272 flache x'' je Paar, 488 bis 600 Bedingungen je Gruppe, kritische Menge immer in einer Gruppe, alle 1140 Paare ausgeschlossen (Belegungen je Gruppe brute force über 4^10) | ebenso | ja | `p5_ersatz2.log.txt` |
+| 6, Sylvester 32 ohne 1 Spalte | 13 693 568 flache x bei d = 11, 0 bei d = 9 | ebenso | ja | `p6_sylv32.log.txt` |
+| 6, ohne 2 Spalten | 215 040 bei d = 10 | ebenso | ja | ebd. |
+| 7, Konferenz 26 / 30 | disc 5 (260 x mit max ≤ 5) / disc 7 (45 588 x mit max ≤ 7) | 5 (260) / 7 (45 588) | ja | `p7_konf_zirk.log.txt` |
+| 7, Zirkulant 15; Paley II 28 | größte disc 5 (975 von 16 384 ersten Zeilen; Kontrolle n = 7: 3); disc 6 | 5; 6 | ja | ebd. |
+
+Block 1 (17:45 bis 17:59 UTC): Punkte 1 bis 5 und 7, Punkt 6 teilweise. Rechenzeit zusammen etwa 6 Minuten Wandzeit.
+Hinweis zur zweiten Ersatzspalte: Die Positivkontrolle an Paley 12 ist leer (keine flachen x''), sie prüft nichts; geblieben ist die Struktur-
+prüfung (keine kritische Menge über beide Gruppen) und die Kontrolle der Logik mit einer Spalte.

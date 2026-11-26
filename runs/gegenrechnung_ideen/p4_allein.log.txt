@@ -1,0 +1,8 @@
+Thu Nov 26 17:55:37 UTC 2026
+42304 Faelle, d = 8: Alleinanteil je Zeile zwischen 1264 und 1354; unbedeckte x gesamt 0
+Matrix 0 (2640 Faelle): Alleinanteil zwischen 1297 und 1300
+
+real	0m36.533s
+user	2m24.543s
+sys	0m0.032s
+Thu Nov 26 17:56:14 UTC 2026
