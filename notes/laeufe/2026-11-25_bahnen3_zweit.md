@@ -81,3 +81,58 @@ Q1 ⊆ cov o2, dann exakt: alle Einsermengen O mit |O| ≤ B − 18 − 3|T|, di
 
 **Ergebnis Teil 1: (a) keine, (b) genau 19 008 (alle 8 Dreierbahnen, 48er dabei, identisch mit dem ersten Programm), (c) keine,
 (d) keine.** Rechenzeit Teil 1 ca. 45 Min. (ohne Fehlversuche).
+
+## Teil 2: Klassen (eigenes Programm `src/b2_aequiv.c`, ohne Fremdbibliothek)
+
+Jede Aussage „gleichwertig“ wird mit der ausgegebenen Spaltenabbildung in Python nachgeprüft (`src/b2_teil2.py pruefe`: Abbildung
+anwenden, Wortmenge = Wortmenge des Vertreters). „Nicht gleichwertig“ ruht auf der kanonischen Form und wird zusätzlich durch
+unabhängige Invarianten belegt (`src/b2_invarianten.py`, `src/b2_invarianten2.py`, Python/numpy, ganze Zahlen).
+
+| Kontrolle | erwartet | eigen | Log |
+|---|---|---|---|
+| 20 zufällige Kopien von 1p3 (Spaltenperm. mit Vorzeichen, zusätzlich Zeilenperm. und Zeilenvorzeichen) | gleichwertig | alle 20 in der Klasse von 1p3, 21 Abbildungen in Python bestätigt | `teil2_kontrolle.log.txt` |
+| |Aut(1p3)| aus diesem Programm | 576 | 576 | ebd. |
+| 1p3 gegen 2p2 | nicht gleichwertig | verschiedene Klassen (beide |Aut| = 576) | ebd. |
+
+| Teil | erwartet | eigen | Log |
+|---|---|---|---|
+| (a) Klassen der 19 008 | 8: vier mit 576 (je 432, darunter 1p3 und 2p2), zwei mit 144 (je 1728), zwei mit 36 (je 6912) | **8 Klassen: 576/432, 36/6912, 36/6912, 144/1728, 144/1728, 576/432, 576/432, 576/432** (Klassen 0…7); 1p3 = Klasse 0, 2p2 = Klasse 7; 19 008 von 19 008 Abbildungen bestätigt; 4,1 · 10^7 Suchknoten, 5 min | `teil2a_klassen.log.txt`, Zuordnung `teil2a_klassen_zuordnung.txt` |
+| (b) `kontrolle_T24_seed4_matrix.txt` | |Aut| = 24, zu keiner der 8 gleichwertig | **|Aut| = 24, eigene (neunte) Klasse** | `teil2bc.log.txt`, `teil2bc_klassen.txt` |
+| (c) Treffer aus Auftrag H | offen | **k3_seed1 … k3_seed8: alle Klasse 0 (= 1p3); a_k12_t10-10_seed1: Klasse 7 (= 2p2)**; kein neuer Code | ebd. |
+
+Stimmigkeit (Bahn-Stabilisator): 432 · 576 = 1728 · 144 = 6912 · 36 = 248 832 für alle acht Klassen, wie es sein muss, wenn P in
+jeder Klasse die einzige 3-Sylowgruppe der Automorphismengruppe ist (gleicher Normalisator von P in der Gruppe aller 2^20 · 20!
+vorzeichenbehafteten Spaltenpermutationen).
+
+Unabhängige Invarianten der 9 Vertreter (`teil2_invarianten.log.txt`, `teil2_invarianten2.log.txt`): I2 (4-Spalten-Summen) trennt 1/2,
+I3 (Abstandsprofil aller 2^20 Punkte) gibt 5 Gruppen {0,5}, {1,2}, {3,4}, {6,7}, {8}, J3 (6-Spalten-Summen) trennt 0/5, 3/4, 6/7.
+**Alle 36 Paare der neun Vertreter durch Invarianten getrennt**, also paarweise nicht gleichwertig, unabhängig vom Kanonisierer.
+
+Vertreter: `runs/bahnen3_zweit/klasse0_vertreter.txt` … `klasse7_vertreter.txt` (je 24 × 20) und `klasse8_vertreter.txt` (Kopie seed4).
+Regel 8: `sha256sum -c verifiers/SHA256SUMS` alle drei OK (26.11.2026 00:22 UTC). Regel 1: `verifiers/pruefe_matrix.py … --erwartet 8`
+für alle neun: check_disc, verify_spencer, exakt_disc je **Diskrepanz 8** (Quotient 8/√24 = 1,633, kein Rekord; `regel1_vertreter.log.txt`;
+`build/exakt_disc` dazu lokal gebaut, nicht eingecheckt).
+
+**Ergebnis Teil 2: alle erwarteten Zahlen bestätigt; die H-Treffer sind 1p3 (8×) und 2p2 (1×).**
+
+## Fehlversuche
+
+- (d), erstes Verfahren (Paarfilter über Probenpunkt-Tabellen, 4 × 24 Punkte nach wenigsten Neuner-Überdeckern): 29 min ohne Ergebnis
+  abgebrochen (Zeitlimit). Diagnose: Filter fast wirkungslos (16 Tabellen: 7 % der Paare überleben; Hochrechnung 2,6 h). Ersetzt durch Verfahren B (28 s).
+  Log `teil1d_neun2_B23.log.txt`.
+- Zwei-Neuner-Kontrolle mit K = 6 Punkten (fast jedes Paar Lösung): nach 8 min abgebrochen; B = 21/22-Kontrollen mit vollem o1-Bereich
+  über 280 s; wiederholt mit o1 < 200.
+
+## Befunde und Belegart
+
+| Aussage | Belegart |
+|---|---|
+| Teil 0: |G| = 576, Ordnungen, P eindeutig, Bahnen 8/160/58 200, 48er = 8 Dreierbahnen, Radius 6 | voll, jetzt zwei Programme |
+| Unter P keine selbstkomplementäre Überdeckung mit ≤ 46 Wörtern ((a), (c), (d)) | **voll, zwei Programme mit verschiedenen Verfahren** |
+| Nur Größe 1/3: genau 19 008 mit 48 Wörtern, Listen identisch | **voll, zwei Programme mit verschiedenen Verfahren** |
+| 19 008 = 8 Klassen (4 × 576, 2 × 144, 2 × 36) | **voll, zwei Programme mit verschiedenen Verfahren** (bliss beim Orchestrator, eigener Kanonisierer hier, Gleichheit per Abbildung, Ungleichheit per Invarianten) |
+| seed4 neunter, zu keinem gleichwertig, |Aut| = 24 | ebenso |
+| H-Treffer: 8 × 1p3, 1 × 2p2 | ein Programm (eigener Kanonisierer), Abbildungen in Python bestätigt |
+
+Rechenzeit gesamt ca. 1 h 40 min (Teil 0: 1 min; Teil 1: ca. 45 min plus 29 min Fehlversuch und ca. 15 min Kontrollen; Teil 2: ca. 7 min).
+Kein Block über 30 min. Ende 26.11.2026, 00:23 UTC (date).
