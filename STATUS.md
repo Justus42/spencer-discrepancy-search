@@ -85,10 +85,11 @@ Eigene bessere Werte außerhalb dieser Tabelle (m > B(8) = 20, also kein Rekordw
 - **K(18,5) ≤ 52, d = 8 (Auftrag N, 26.11.2026):** Löser aus Auftrag H, Kern ⟨1,a⟩, Typ (9,9), K = 13 (26 Zeilen, 52 Wörter), 4 von 4 Startwerten in ≤ 1,6 s; K = 14 und 15 ebenso. Matrix 26 x 18
   (`runs/leiter_n/c18-5_k13_t9-9.matrix.txt`): `zerl_offen.py` und direkte Zählung 0 offen, check_disc, verify_spencer, exakt_disc je Diskrepanz 8. Tabelle K(18,5) 28–64, eigener Wert bisher 64; keine Rekordgrenze (40).
   K = 12 (48 Wörter): 12 Startwerte, immer Restzahl 1. Neuheit prüft der Orchestrator. K = 16 (64 Wörter) auch in (21,6), (23,7), (25,8): 32 x 21 / 23 / 25, je Diskrepanz 9 mit drei Programmen. L: 2026-11-25_leiter_nachbarzellen
-- **K(18,5) ≤ 50, d = 8 (Gate N, 26.11.2026, Rechnung des Orchestrators, noch von keiner Sitzung gegengerechnet):** Jeder der 12 Zustände mit K = 12 und Restzahl 1 lässt genau die vier Punkte (±y, ±z) offen.
+- **K(18,5) ≤ 50, d = 8 (Gate N, 26.11.2026, Rechnung des Orchestrators; in Lean bewiesen und damit von einer Sitzung gegengerechnet, Auftrag LZ, siehe letzte Zeile des Eintrags):** Jeder der 12 Zustände mit K = 12 und Restzahl 1 lässt genau die vier Punkte (±y, ±z) offen.
   Das Wort (y, z') mit z' = z an vier Stellen gewechselt hat Abstand 4 zu (y, z) und 5 zu (y, −z); sein Negativ erledigt die beiden anderen. 24 Zeilen plus diese eine: 25 Zeilen, 50 Wörter (kein Kern-⟨1,a⟩-Code mehr).
   Matrix 25 x 18 (`notes/orchestrator/2026-11-26_gate_leiter_n/gate_c18-5_50w.matrix.txt`): Radius 5 über alle 2^18 Punkte mit eigenem Zähler, check_disc, verify_spencer, exakt_disc je Diskrepanz 8; in allen 12 Zuständen gelingt es.
   Neuheit: Post-Kéri-Tabelle (florath, `main` am 26.11.2026, SHA-256 unverändert `5efaf8d9…`) nennt 28–64, obere Schranke aus der trivialen Regel. Eine Websuche ohne Fund. Gemini Deep Research (26.11.2026): kein Fund unter 64; vom Orchestrator nachgeprüft: alle Zweige bei florath nennen 28–64, keine PR-Referenzen sichtbar (`notes/gemini/neuheit_18_5_2026-11-26_kurz.md`). Weiter offen: Issues bei florath, EinsteinArena-Thread im Volltext, Kéris PDF, Bezahlschranken-Texte. Keine Rekordgrenze (40). `notes/gate_2026-11-26_leiter_n.md`
+  **Lean (Auftrag LZ, 26.11.2026):** 25 x 18-Matrix: jedes x < 2^18 im Abstand ≤ 5 von einer Zeile von M oder −M, Radius 4 abgelehnt; ebenso der 52er (26 x 18) und die Negativkontrolle (50er ohne freie Zeile: 48 Wörter, Radius 5 abgelehnt, 4 offene Punkte). native_decide 31 s, decide +kernel 132 s (nur `propext`, `Quot.sound`). Grenzen wie bei (20,6): Erzeuger + Prüfsumme statt Dateilesen, Überdeckung → Diskrepanz nicht formalisiert, Neuheit offen. L: 2026-11-26_lean_18_5; `lean/README.md`
 
 ## Negativbefunde
 
@@ -207,6 +208,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - 26.11.2026, Auftrag N, (18,5) K = 12 Typ (9,9): 4 x 300 s und 8 x 900 s (Startwerte 1–12), immer Restzahl 1, ungelöst. L: 2026-11-25_leiter_nachbarzellen.
 - 26.11.2026, Auftrag N, K − 1 nach dem besten K: (16,4) K = 15 Typ (9,7) 4 x 300 + 8 x 900 s, Restzahl 28; (21,6) K = 15 Typ (12,9) 8 x 900 s, 3343; (23,7) K = 15 Typ (12,11) 4 x 300 + 8 x 900 s, immer 548; (25,8) K = 15 Typ (16,9) 4 x 300 + 8 x 900 s, 10 598–13 007; (19,5) K = 16 Typ (10,9) 4 x 300 + 8 x 900 s, 768–1280. L: 2026-11-25_leiter_nachbarzellen.
 - 26.11.2026, Auftrag N, Schritt 4, (20,6) K = 11 (44 Wörter) Typen (14,6), (15,5), (16,4), je 4 x 600 s: nicht gelöst, Restzahl 4152 / 5996 / 9415 (schlechter als (11,9) 1288 und (10,10) 1063). L: 2026-11-25_leiter_nachbarzellen.
+- 26.11.2026, Auftrag LZ: `tar --zstd`/`zstd` fehlten (`pip install zstandard` zum Entpacken, erlaubt); erster `AchsenKern.lean`-Lauf scheiterte an noch nicht gebauten Had24-Stufen (14 Min. Nachbau). L: 2026-11-26_lean_18_5.
 ## Offene Punkte
 
 - Meldung von K(20,6) ≤ 48 (und der Familie): Entscheidung am 27.11.2026 (`notes/zweitmeinung_2026-11-24_auftrag.md`).

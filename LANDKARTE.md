@@ -81,7 +81,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Kern-⟨1,a⟩-Paare bei d = 9, K = 12 (48 Wörter), (21,6), (23,7), (25,8), sechs Typen (Auftrag H); U = Paley-12 ohne Spalte mit W 12 x 10 voll ausgeschlossen |  |  |  | (1,837) s | (1,800) s |  |  |  |  |  |  |  |  |
 | Freie Suche als Evolutionsschleife (Auftrag E), (20,6): 24 Paare (48 Wörter) blind gefunden (1 von 4, disc 8 dreifach); 23 Paare (46 Wörter, N = 23) nicht erreicht, beste Restzahl 704 offene Klassen (fester Endpunkt) |  |  | (1,668) s | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Kern-⟨1,a⟩-Leiter in den Nachbarzellen mit dem Löser aus H (Auftrag N): (18,5) 52 (K = 13) / 56 / 60 Wörter, 48 nicht (Restzahl 1); (21,6), (23,7), (25,8) 64 Wörter erreicht, 60 nicht (3343 / 548 / 10 598); (16,4) 64 erreicht, 60 nicht (28); (19,5) 64 nicht (768) |  |  |  |  |  | 1,569 e |  | 1,512 e |  | 1,461 e; (1,643) s |  | 1,591 e |  |
-| (18,5) mit 50 Wörtern: Zustand K = 12 mit Restzahl 1 aus Auftrag N plus eine freie Zeile (Gate N, Matrix 25 x 18, Rechnung des Orchestrators) |  |  |  |  | 1,600 e |  |  |  |  |  |  |  |  |
+| (18,5) mit 50 Wörtern: Zustand K = 12 mit Restzahl 1 aus Auftrag N plus eine freie Zeile (Gate N, Matrix 25 x 18, Rechnung des Orchestrators; in Lean bewiesen, Auftrag LZ) |  |  |  |  | 1,600 e |  |  |  |  |  |  |  |  |
 
 ## Bester Eintrag dieser Karte je N (nur `e`/`r`)
 
