@@ -63,3 +63,9 @@ Zelle (16,4) abgeschlossen: kleinstes erreichtes K = 16 (64 Wörter) in allen vi
 | (14,7) | 0 von 4 | 384 / 576 / 704 / 1280 |
 
 Auch der Tabellenwert 64 wird in keinem Typ erreicht (wie die alte Nebenklassen-Suche: 0 von 12). Die Leiter endet in allen vier Typen an der ersten Stufe; es gibt kein „kleinstes erreichtes K“.
+
+## Schritt 3: (21,6), Typ (12,9) (beste Restzahl 384; Gleichstand mit (13,8), (14,7), (12,9) hatte zwei Läufe bei 384)
+
+- K = 16 (64 Wörter), Startwerte 5–8, je 900 s (00:08–00:23 UTC): **Startwert 6 gelöst nach 182,7 s** (`runs/leiter_n/s3c21-6a_k16_t12-9_seed6.paar.txt`, `zerl_offen.py` 0 offene Klassen
+  von 524 288); Startwerte 5, 7, 8: Restzahl 576 / 576 / 320. Gleich dem Tabellenwert 64 (kein Fortschritt; Auftrag: Prüfung mit Matrix erst ab 4K < 64).
+- K = 15 (60 Wörter), Startwerte 1–4, je 900 s (00:23–00:38 UTC): 0 von 4, Restzahl 3633 / 3600 / 3343 / 3343.
