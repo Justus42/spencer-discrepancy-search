@@ -1,5 +1,9 @@
 # Laufprotokoll Auftrag C: Gegenrechnung der Ideenrunde vom 26.11.2026
 
+**Ergebnis: keine Abweichung.** Alle Sollzahlen der Punkte 1 bis 9 mit eigenen Programmen bestätigt. Schritt 2 voll gerechnet
+(nicht Stichprobe): Ordnung 24 ohne 3 bzw. 5 Spalten plus eine freie ±1-Zeile bei d = 9 in 0 von 242 880 bzw. 0 von 5 100 480 Fällen lösbar.
+Kein Rekordkandidat, nichts nach außen gemeldet.
+
 Sitzung (Cloud, 4 Kerne), Branch `claude/auftrag-c-gegenrechnung-2xqmh5`. Auftrag: `notes/gegenrechnung_ideen_2026-11-26_auftrag.md`.
 Alle Uhrzeiten aus `date` (UTC). Beginn 17:45 UTC. Eigener Prüfcode in `verifiers/gegenrechnung_ideen/`, Logs in `runs/gegenrechnung_ideen/`.
 Programme des Orchestrators nicht gelesen, außer dem Kopfkommentar von `ersatz_k2.c` (vom Auftrag für die Definition der Bedingung genannt).
@@ -56,3 +60,19 @@ Mengen an c = 1 mit beiden Verfahren gleich, Positivkontrollen erneut 16 von 16 
 0,32 ms bzw. 1,13 ms je Fall auf 4 Kernen, hochgerechnet c = 5 ≈ 28 Min., c = 3 ≈ 5 Min. Entscheidung: beide voll rechnen,
 c = 5 in vier Teilen (jeder 4. Fall, Rest 0..3).
 Die freie Zeile ist ±1 (wie in der Notiz); WLOG liegt sie im Abstand ≤ R vom ersten Loch (sonst ihr Negativ), alle Kandidaten der Kugel werden geprüft.
+| Schritt 2, c = 3 | 0 von 242 880 lösbar; Löcher 24 344 bis 26 748 je Fall | nie lösbar | ja (voll) | `s2_c3_frei.log.txt` |
+| Schritt 2, c = 5 | 0 von 5 100 480 lösbar (vier Teile zu je 1 275 120); Löcher 11 856 bis 17 724 je Fall | nie lösbar | ja (voll) | `s2_c5_frei_teil0..3.log.txt` |
+
+Blöcke: c = 3 18:02–18:06 UTC (4 Min. 28 s); c = 5 Teil 0 18:07–18:14, Teil 1 18:14–18:21, Teil 2 18:21–18:28, Teil 3 18:28–18:35 (je knapp 7 Min.).
+Nach jedem Teil commit und push.
+
+## Abschluss (18:35 UTC)
+
+- `sha256sum -c verifiers/SHA256SUMS` erneut: alle drei OK (`schluss_sha256.log.txt`).
+- Rechenzeit gesamt rund 45 Minuten Wandzeit auf 4 Kernen (Obergrenze 4 Stunden).
+- Was nicht gegengerechnet ist: die Probe der Verdopplungszellen (26 192 und 8952 offene Klassen, Suche des Orchestrators) und die
+  Herleitung „mindestens 8 freie Zeilen“ bei Sylvester 32 (nur ihre Zahlen aus Punkt 6); Sols Handbeweise; die Literaturangaben.
+- Zweite Ersatzspalte: Die Logik ist nur über die erste Ersatzspalte (Zufallskontrolle) und die Strukturprüfung abgesichert, eine
+  nichtleere Positivkontrolle mit zwei Spalten fehlt.
+- Belegart der Nachträge in `STATUS.md`/`LANDKARTE.md`: „zwei Programme (Orchestrator, Sitzung)“; Schritt 2 (c = 3, 5) voll nur von der Sitzung
+  (Orchestrator: Stichprobe 0 von 6072 bzw. 0 von 12 752).
