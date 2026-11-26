@@ -1,1 +1,6 @@
 2026-11-26 18:25:34 UTC  Start s3_p026_m25R8k31: p026 m=25 R=8 Paare=31 je 1500 s, Startwerte 1 2 3 4, Zusatz: runs/leiter_n/c25-8_k16.matrix.txt 4
+  Startwert 1: Bewerter: offen=4727 klassen=16777216 k=31 m=25 R=8 | 1504 s | Speicher (VmHWM) 256956 kB | ENDE best=4727 it=77568 t_best=0.8 t=1503.0 bumps=9727 neustarts=0
+  Startwert 2: Bewerter: offen=5117 klassen=16777216 k=31 m=25 R=8 | 1502 s | Speicher (VmHWM) 256960 kB | ENDE best=5117 it=78336 t_best=0.9 t=1501.1 bumps=9755 neustarts=0
+  Startwert 3: Bewerter: offen=5081 klassen=16777216 k=31 m=25 R=8 | 1504 s | Speicher (VmHWM) 256956 kB | ENDE best=5081 it=77312 t_best=0.8 t=1503.3 bumps=9582 neustarts=0
+  Startwert 4: Bewerter: offen=5293 klassen=16777216 k=31 m=25 R=8 | 1502 s | Speicher (VmHWM) 256972 kB | ENDE best=5293 it=77568 t_best=0.8 t=1501.1 bumps=9655 neustarts=0
+2026-11-26 18:50:39 UTC  Ende s3_p026_m25R8k31
