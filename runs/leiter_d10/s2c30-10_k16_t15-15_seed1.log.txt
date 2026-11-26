@@ -1,0 +1,2 @@
+  Runde 1 (W frei): Restzahl 2128641, bestes 2128641, Anforderungsvektoren 9323, Iterationen 383, 1246.0 s
+ZEITGRENZE nach 1246.0 s, beste Restzahl 2128641, 383 Iterationen, 1 Runden, 0 Neustarts
