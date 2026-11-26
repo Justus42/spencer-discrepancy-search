@@ -1,0 +1,21 @@
+== 09:35:13 Start Block s2c30-10_k16_t16-14
+s2c30-10_k16_t16-14 seed 1: ZEITGRENZE nach 1201.7 s, beste Restzahl 2848038, 399 Iterationen, 1 Runden, 0 Neustarts
+runs/leiter_d10/s2c30-10_k16_t16-14_seed1.paar.txt: K=16, Typ (16,14), d=10: offene Klassen 2848038 von 268435456
+s2c30-10_k16_t16-14 seed 2: ZEITGRENZE nach 1236.8 s, beste Restzahl 2992376, 383 Iterationen, 1 Runden, 0 Neustarts
+runs/leiter_d10/s2c30-10_k16_t16-14_seed2.paar.txt: K=16, Typ (16,14), d=10: offene Klassen 2992376 von 268435456
+s2c30-10_k16_t16-14 seed 3: ZEITGRENZE nach 1221.7 s, beste Restzahl 2523321, 319 Iterationen, 1 Runden, 0 Neustarts
+runs/leiter_d10/s2c30-10_k16_t16-14_seed3.paar.txt: K=16, Typ (16,14), d=10: offene Klassen 2523321 von 268435456
+s2c30-10_k16_t16-14 seed 4: ZEITGRENZE nach 1269.5 s, beste Restzahl 3034120, 399 Iterationen, 1 Runden, 0 Neustarts
+runs/leiter_d10/s2c30-10_k16_t16-14_seed4.paar.txt: K=16, Typ (16,14), d=10: offene Klassen 3034120 von 268435456
+== 09:58:04 Ende Block s2c30-10_k16_t16-14
+== 09:58:06 Start Block s2c30-10_k16_t15-15
+s2c30-10_k16_t15-15 seed 1: ZEITGRENZE nach 1246.0 s, beste Restzahl 2128641, 383 Iterationen, 1 Runden, 0 Neustarts
+runs/leiter_d10/s2c30-10_k16_t15-15_seed1.paar.txt: K=16, Typ (15,15), d=10: offene Klassen 2128641 von 268435456
+s2c30-10_k16_t15-15 seed 2: ZEITGRENZE nach 1233.2 s, beste Restzahl 2414694, 383 Iterationen, 1 Runden, 0 Neustarts
+runs/leiter_d10/s2c30-10_k16_t15-15_seed2.paar.txt: K=16, Typ (15,15), d=10: offene Klassen 2414694 von 268435456
+s2c30-10_k16_t15-15 seed 3: ZEITGRENZE nach 1200.2 s, beste Restzahl 1911391, 367 Iterationen, 1 Runden, 0 Neustarts
+runs/leiter_d10/s2c30-10_k16_t15-15_seed3.paar.txt: K=16, Typ (15,15), d=10: offene Klassen 1911391 von 268435456
+s2c30-10_k16_t15-15 seed 4: ZEITGRENZE nach 1231.3 s, beste Restzahl 2234491, 351 Iterationen, 1 Runden, 0 Neustarts
+runs/leiter_d10/s2c30-10_k16_t15-15_seed4.paar.txt: K=16, Typ (15,15), d=10: offene Klassen 2234491 von 268435456
+== 10:20:26 Ende Block s2c30-10_k16_t15-15
+ENDE

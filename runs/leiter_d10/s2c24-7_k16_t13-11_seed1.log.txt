@@ -1,0 +1,20 @@
+  Runde 1 (W frei): Restzahl 254004, bestes 254004, Anforderungsvektoren 2796, Iterationen 567, 58.6 s
+  Runde 2 (U frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 832, Iterationen 944, 103.5 s
+  Runde 3 (W frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 2624, Iterationen 1245, 129.2 s
+  Runde 4 (U frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 832, Iterationen 1546, 165.8 s
+  Runde 5 (W frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 2624, Iterationen 1847, 190.0 s
+  Runde 6 (U frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 832, Iterationen 2148, 226.5 s
+  Runde 7 (W frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 2624, Iterationen 2449, 254.6 s
+  Runde 8 (U frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 832, Iterationen 2750, 291.1 s
+  Runde 9 (W frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 2624, Iterationen 3051, 315.2 s
+  Runde 10 (U frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 832, Iterationen 3352, 349.1 s
+  Runde 11 (W frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 2624, Iterationen 3653, 373.4 s
+  Runde 12 (U frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 832, Iterationen 3954, 408.5 s
+  Runde 13 (W frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 2624, Iterationen 4255, 431.5 s
+  Runde 14 (U frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 832, Iterationen 4556, 466.3 s
+  Runde 15 (W frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 2624, Iterationen 4857, 490.5 s
+  Runde 16 (U frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 832, Iterationen 5158, 525.2 s
+  Runde 17 (W frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 2624, Iterationen 5459, 550.0 s
+  Runde 18 (U frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 832, Iterationen 5760, 585.5 s
+  Runde 19 (W frei): Restzahl 85016, bestes 85016, Anforderungsvektoren 2624, Iterationen 5951, 600.8 s
+ZEITGRENZE nach 600.8 s, beste Restzahl 85016, 5951 Iterationen, 19 Runden, 0 Neustarts

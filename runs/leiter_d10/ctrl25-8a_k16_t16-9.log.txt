@@ -1,0 +1,8 @@
+ctrl25-8a_k16_t16-9 seed 1: ZEITGRENZE nach 600.8 s, beste Restzahl 416, 9881 Iterationen, 26 Runden, 1 Neustarts
+runs/leiter_d10/ctrl25-8a_k16_t16-9_seed1.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 416 von 8388608
+ctrl25-8a_k16_t16-9 seed 2: ZEITGRENZE nach 600.8 s, beste Restzahl 1929, 6732 Iterationen, 20 Runden, 0 Neustarts
+runs/leiter_d10/ctrl25-8a_k16_t16-9_seed2.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 1929 von 8388608
+ctrl25-8a_k16_t16-9 seed 3: ZEITGRENZE nach 601.2 s, beste Restzahl 2073, 7206 Iterationen, 22 Runden, 0 Neustarts
+runs/leiter_d10/ctrl25-8a_k16_t16-9_seed3.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 2073 von 8388608
+ctrl25-8a_k16_t16-9 seed 4: LOESUNG nach 169.4 s, 2011 Iterationen, 4 Runden, 0 Neustarts
+runs/leiter_d10/ctrl25-8a_k16_t16-9_seed4.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 0 von 8388608

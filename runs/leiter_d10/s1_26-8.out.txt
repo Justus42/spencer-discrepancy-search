@@ -1,0 +1,13 @@
+s1_26-8 seed 1: ZEITGRENZE nach 311.7 s, beste Restzahl 227187, 1023 Iterationen, 2 Runden, 0 Neustarts | Speicher max 190832 kB
+runs/leiter_d10/s1_26-8_seed1.paar.txt: K=16, Typ (16,10), d=10: offene Klassen 227187 von 16777216
+  zerl_offen.py Dauer 1.662164040 s
+s1_26-8 seed 2: ZEITGRENZE nach 302.1 s, beste Restzahl 139896, 654 Iterationen, 2 Runden, 0 Neustarts | Speicher max 188808 kB
+runs/leiter_d10/s1_26-8_seed2.paar.txt: K=16, Typ (16,10), d=10: offene Klassen 139896 von 16777216
+  zerl_offen.py Dauer 1.677302113 s
+s1_26-8 seed 3: ZEITGRENZE nach 306.5 s, beste Restzahl 766733, 831 Iterationen, 1 Runden, 0 Neustarts | Speicher max 90392 kB
+runs/leiter_d10/s1_26-8_seed3.paar.txt: K=16, Typ (16,10), d=10: offene Klassen 766733 von 16777216
+  zerl_offen.py Dauer 1.599854460 s
+s1_26-8 seed 4: ZEITGRENZE nach 307.5 s, beste Restzahl 185920, 1000 Iterationen, 2 Runden, 0 Neustarts | Speicher max 184748 kB
+runs/leiter_d10/s1_26-8_seed4.paar.txt: K=16, Typ (16,10), d=10: offene Klassen 185920 von 16777216
+  zerl_offen.py Dauer 1.647820769 s
+07:45:50

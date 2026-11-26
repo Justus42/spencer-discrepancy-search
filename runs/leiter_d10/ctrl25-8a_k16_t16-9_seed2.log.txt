@@ -1,0 +1,21 @@
+  Runde 1 (W frei): Restzahl 94874, bestes 94874, Anforderungsvektoren 7742, Iterationen 415, 15.6 s
+  Runde 2 (U frei): Restzahl 2928, bestes 2928, Anforderungsvektoren 240, Iterationen 942, 101.3 s
+  Runde 3 (W frei): Restzahl 1980, bestes 1980, Anforderungsvektoren 4206, Iterationen 1291, 105.6 s
+  Runde 4 (U frei): Restzahl 1979, bestes 1979, Anforderungsvektoren 240, Iterationen 1601, 152.9 s
+  Runde 5 (W frei): Restzahl 1954, bestes 1954, Anforderungsvektoren 4169, Iterationen 2002, 157.4 s
+  Runde 6 (U frei): Restzahl 1940, bestes 1940, Anforderungsvektoren 240, Iterationen 2313, 205.4 s
+  Runde 7 (W frei): Restzahl 1940, bestes 1940, Anforderungsvektoren 4228, Iterationen 2614, 208.9 s
+  Runde 8 (U frei): Restzahl 1940, bestes 1940, Anforderungsvektoren 240, Iterationen 2915, 255.7 s
+  Runde 9 (W frei): Restzahl 1940, bestes 1940, Anforderungsvektoren 4228, Iterationen 3216, 259.0 s
+  Runde 10 (U frei): Restzahl 1940, bestes 1940, Anforderungsvektoren 240, Iterationen 3517, 306.6 s
+  Runde 11 (W frei): Restzahl 1940, bestes 1940, Anforderungsvektoren 4228, Iterationen 3818, 310.2 s
+  Runde 12 (U frei): Restzahl 1940, bestes 1940, Anforderungsvektoren 240, Iterationen 4119, 357.5 s
+  Runde 13 (W frei): Restzahl 1940, bestes 1940, Anforderungsvektoren 4228, Iterationen 4420, 361.3 s
+  Runde 14 (U frei): Restzahl 1929, bestes 1929, Anforderungsvektoren 240, Iterationen 4926, 442.3 s
+  Runde 15 (W frei): Restzahl 1929, bestes 1929, Anforderungsvektoren 4230, Iterationen 5227, 445.8 s
+  Runde 16 (U frei): Restzahl 1929, bestes 1929, Anforderungsvektoren 240, Iterationen 5528, 494.2 s
+  Runde 17 (W frei): Restzahl 1929, bestes 1929, Anforderungsvektoren 4230, Iterationen 5829, 498.3 s
+  Runde 18 (U frei): Restzahl 1929, bestes 1929, Anforderungsvektoren 240, Iterationen 6130, 548.0 s
+  Runde 19 (W frei): Restzahl 1929, bestes 1929, Anforderungsvektoren 4230, Iterationen 6431, 551.8 s
+  Runde 20 (U frei): Restzahl 1929, bestes 1929, Anforderungsvektoren 240, Iterationen 6732, 600.8 s
+ZEITGRENZE nach 600.8 s, beste Restzahl 1929, 6732 Iterationen, 20 Runden, 0 Neustarts

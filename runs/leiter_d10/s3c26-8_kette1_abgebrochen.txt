@@ -1,0 +1,11 @@
+== 11:42:07 Start Block s3c26-8a_k16_t16-10
+s3c26-8a_k16_t16-10 seed 5: ZEITGRENZE nach 1210.7 s, beste Restzahl 115136, 2819 Iterationen, 6 Runden, 0 Neustarts
+runs/leiter_d10/s3c26-8a_k16_t16-10_seed5.paar.txt: K=16, Typ (16,10), d=10: offene Klassen 115136 von 16777216
+s3c26-8a_k16_t16-10 seed 6: ZEITGRENZE nach 1200.7 s, beste Restzahl 131508, 2965 Iterationen, 9 Runden, 0 Neustarts
+runs/leiter_d10/s3c26-8a_k16_t16-10_seed6.paar.txt: K=16, Typ (16,10), d=10: offene Klassen 131508 von 16777216
+s3c26-8a_k16_t16-10 seed 7: ZEITGRENZE nach 1206.9 s, beste Restzahl 185348, 2606 Iterationen, 8 Runden, 0 Neustarts
+runs/leiter_d10/s3c26-8a_k16_t16-10_seed7.paar.txt: K=16, Typ (16,10), d=10: offene Klassen 185348 von 16777216
+s3c26-8a_k16_t16-10 seed 8: ZEITGRENZE nach 1210.6 s, beste Restzahl 118720, 2880 Iterationen, 8 Runden, 0 Neustarts
+runs/leiter_d10/s3c26-8a_k16_t16-10_seed8.paar.txt: K=16, Typ (16,10), d=10: offene Klassen 118720 von 16777216
+== 12:02:25 Ende Block s3c26-8a_k16_t16-10
+== 12:02:27 Start Block s3c26-8b_k16_t16-10

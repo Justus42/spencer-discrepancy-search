@@ -1,0 +1,16 @@
+k3_k12_t11-9 seed 1: LOESUNG nach 2.3 s, 395 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/k3_k12_t11-9_seed1.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+k3_k12_t11-9 seed 2: LOESUNG nach 2.4 s, 419 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/k3_k12_t11-9_seed2.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+k3_k12_t11-9 seed 3: LOESUNG nach 21.5 s, 7166 Iterationen, 24 Runden, 1 Neustarts
+runs/leiter_d10/k3_k12_t11-9_seed3.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+k3_k12_t11-9 seed 4: LOESUNG nach 2.7 s, 500 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/k3_k12_t11-9_seed4.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+k3_k12_t11-9 seed 5: LOESUNG nach 1.9 s, 325 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/k3_k12_t11-9_seed5.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+k3_k12_t11-9 seed 6: LOESUNG nach 2.8 s, 681 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/k3_k12_t11-9_seed6.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+k3_k12_t11-9 seed 7: LOESUNG nach 25.8 s, 7339 Iterationen, 24 Runden, 1 Neustarts
+runs/leiter_d10/k3_k12_t11-9_seed7.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144
+k3_k12_t11-9 seed 8: LOESUNG nach 2.2 s, 413 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/k3_k12_t11-9_seed8.paar.txt: K=12, Typ (11,9), d=8: offene Klassen 0 von 262144

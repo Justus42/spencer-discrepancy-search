@@ -1,0 +1,11 @@
+Zelle (31,10), d = 11, 1 Spalten gestrichen, 3 zufaellige Lagen; offene Klassen (von 536870912): 6846784 (3 Lagen)
+     beste Lage: gestrichen (3,), Anteil offen 1.2753 %
+Zelle (29,9), d = 11, 3 Spalten gestrichen, 8 zufaellige Lagen; offene Klassen (von 134217728): 4069632 (8 Lagen)
+     beste Lage: gestrichen (10, 19, 23), Anteil offen 3.0321 %
+Zelle (27,8), d = 11, 5 Spalten gestrichen, 16 zufaellige Lagen; offene Klassen (von 33554432): 1704192 (3 Lagen), 2105280 (13 Lagen)
+     beste Lage: gestrichen (8, 11, 20, 23, 28), Anteil offen 5.0789 %
+Zelle (25,7), d = 11, 7 Spalten gestrichen, 24 zufaellige Lagen; offene Klassen (von 8388608): 855168 (5 Lagen), 997440 (16 Lagen), 1001408 (3 Lagen)
+     beste Lage: gestrichen (4, 8, 10, 15, 16, 25, 28), Anteil offen 10.1944 %
+Zelle (23,6), d = 11, 9 Spalten gestrichen, 24 zufaellige Lagen; offene Klassen (von 2097152): 386496 (6 Lagen), 389120 (1 Lagen), 428288 (4 Lagen), 430016 (12 Lagen), 431200 (1 Lagen)
+     beste Lage: gestrichen (13, 15, 16, 17, 23, 26, 27, 28, 30), Anteil offen 18.4296 %
+real	0m5.417s

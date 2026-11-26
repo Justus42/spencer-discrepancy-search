@@ -1,0 +1,31 @@
+== 08:33:08 Start Block s2c28-9_k16_t16-12
+s2c28-9_k16_t16-12 seed 1: ZEITGRENZE nach 1218.6 s, beste Restzahl 129052, 1187 Iterationen, 4 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t16-12_seed1.paar.txt: K=16, Typ (16,12), d=10: offene Klassen 129052 von 67108864
+s2c28-9_k16_t16-12 seed 2: ZEITGRENZE nach 1206.0 s, beste Restzahl 186810, 934 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t16-12_seed2.paar.txt: K=16, Typ (16,12), d=10: offene Klassen 186810 von 67108864
+s2c28-9_k16_t16-12 seed 3: ZEITGRENZE nach 1209.4 s, beste Restzahl 300064, 821 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t16-12_seed3.paar.txt: K=16, Typ (16,12), d=10: offene Klassen 300064 von 67108864
+s2c28-9_k16_t16-12 seed 4: ZEITGRENZE nach 1212.7 s, beste Restzahl 226888, 1000 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t16-12_seed4.paar.txt: K=16, Typ (16,12), d=10: offene Klassen 226888 von 67108864
+== 08:53:50 Ende Block s2c28-9_k16_t16-12
+== 08:53:52 Start Block s2c28-9_k16_t15-13
+s2c28-9_k16_t15-13 seed 1: ZEITGRENZE nach 1207.0 s, beste Restzahl 129120, 1152 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t15-13_seed1.paar.txt: K=16, Typ (15,13), d=10: offene Klassen 129120 von 67108864
+s2c28-9_k16_t15-13 seed 2: ZEITGRENZE nach 1204.6 s, beste Restzahl 126656, 1252 Iterationen, 4 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t15-13_seed2.paar.txt: K=16, Typ (15,13), d=10: offene Klassen 126656 von 67108864
+s2c28-9_k16_t15-13 seed 3: ZEITGRENZE nach 1207.6 s, beste Restzahl 130512, 1201 Iterationen, 3 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t15-13_seed3.paar.txt: K=16, Typ (15,13), d=10: offene Klassen 130512 von 67108864
+s2c28-9_k16_t15-13 seed 4: ZEITGRENZE nach 1207.1 s, beste Restzahl 130504, 989 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t15-13_seed4.paar.txt: K=16, Typ (15,13), d=10: offene Klassen 130504 von 67108864
+== 09:14:24 Ende Block s2c28-9_k16_t15-13
+== 09:14:26 Start Block s2c28-9_k16_t14-14
+s2c28-9_k16_t14-14 seed 1: ZEITGRENZE nach 1211.6 s, beste Restzahl 132464, 1128 Iterationen, 3 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t14-14_seed1.paar.txt: K=16, Typ (14,14), d=10: offene Klassen 132464 von 67108864
+s2c28-9_k16_t14-14 seed 2: ZEITGRENZE nach 1205.2 s, beste Restzahl 130112, 1236 Iterationen, 3 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t14-14_seed2.paar.txt: K=16, Typ (14,14), d=10: offene Klassen 130112 von 67108864
+s2c28-9_k16_t14-14 seed 3: ZEITGRENZE nach 1211.4 s, beste Restzahl 180678, 1040 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t14-14_seed3.paar.txt: K=16, Typ (14,14), d=10: offene Klassen 180678 von 67108864
+s2c28-9_k16_t14-14 seed 4: ZEITGRENZE nach 1207.5 s, beste Restzahl 197294, 862 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_d10/s2c28-9_k16_t14-14_seed4.paar.txt: K=16, Typ (14,14), d=10: offene Klassen 197294 von 67108864
+== 09:35:01 Ende Block s2c28-9_k16_t14-14
+ENDE

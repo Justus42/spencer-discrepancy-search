@@ -1,0 +1,15 @@
+Zelle (30,10), 2 Spalten gestrichen (alle 2-Mengen sind unter AGL(5,2) gleichwertig; drei Lagen zur Kontrolle):
+   U ohne (), W ohne (0, 1): Typ (16,14), offene Klassen 107520 von 268435456
+   U ohne (), W ohne (5, 10): Typ (16,14), offene Klassen 107520 von 268435456
+   U ohne (3,), W ohne (12,): Typ (15,15), offene Klassen 107520 von 268435456
+Zelle (28,9), 4 Spalten gestrichen (zwei Bahnen: Summe der vier Punkte 0 oder nicht):
+   U ohne (), W ohne (0, 1, 2, 3): Typ (16,12), offene Klassen 1704192 von 67108864
+   U ohne (), W ohne (0, 1, 2, 4): Typ (16,12), offene Klassen 133056 von 67108864
+   U ohne (0, 1), W ohne (0, 1): Typ (14,14), offene Klassen 1704192 von 67108864
+   U ohne (0, 1), W ohne (0, 2): Typ (14,14), offene Klassen 133056 von 67108864
+   U ohne (0,), W ohne (1, 2, 4): Typ (15,13), offene Klassen 133056 von 67108864
+Zelle (26,8), 6 Spalten gestrichen, 40 zufaellige Lagen (Startwert 1), Verteilung der offenen Klassen:
+   offene Klassen   117504: 24 Lagen, z. B. U ohne (8, 9), W ohne (0, 3, 6, 15)
+   offene Klassen   121536: 15 Lagen, z. B. U ohne (2, 8), W ohne (2, 8, 9, 11)
+   offene Klassen   138816:  1 Lagen, z. B. U ohne (8, 9, 10), W ohne (4, 5, 6)
+real	0m2.816s
