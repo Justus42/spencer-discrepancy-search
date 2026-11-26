@@ -1,0 +1,36 @@
+K=15 seed 1:
+runs/leiter_n/s2c18-5_k15_t9-9_seed1.paar.txt: K=15, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 30 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+K=15 seed 2:
+runs/leiter_n/s2c18-5_k15_t9-9_seed2.paar.txt: K=15, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 30 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+K=15 seed 3:
+runs/leiter_n/s2c18-5_k15_t9-9_seed3.paar.txt: K=15, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 30 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+K=15 seed 4:
+runs/leiter_n/s2c18-5_k15_t9-9_seed4.paar.txt: K=15, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 30 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+K=14 seed 1:
+runs/leiter_n/s2c18-5_k14_t9-9_seed1.paar.txt: K=14, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 28 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+K=14 seed 2:
+runs/leiter_n/s2c18-5_k14_t9-9_seed2.paar.txt: K=14, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 28 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+K=14 seed 3:
+runs/leiter_n/s2c18-5_k14_t9-9_seed3.paar.txt: K=14, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 28 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+K=14 seed 4:
+runs/leiter_n/s2c18-5_k14_t9-9_seed4.paar.txt: K=14, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 28 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+K=13 seed 1:
+runs/leiter_n/s2c18-5_k13_t9-9_seed1.paar.txt: K=13, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 26 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+K=13 seed 2:
+runs/leiter_n/s2c18-5_k13_t9-9_seed2.paar.txt: K=13, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 26 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+K=13 seed 3:
+runs/leiter_n/s2c18-5_k13_t9-9_seed3.paar.txt: K=13, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 26 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+K=13 seed 4:
+runs/leiter_n/s2c18-5_k13_t9-9_seed4.paar.txt: K=13, Typ (9,9), d=8: offene Klassen 0 von 65536
+   direkt auf der 26 x 18-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
