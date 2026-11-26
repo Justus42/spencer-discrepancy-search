@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 26.11.2026 nachmittags (nach Auftrag D, Leiter bei d = 10, kein Treffer, kein neuer Wert; davor Auftrag M, Mischform bei (18,5), kein neuer Tabellenwert; davor Auftrag LZ, Lean-Zertifikat für K(18,5) ≤ 50, kein neuer Tabellenwert; davor Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 26.11.2026 abends (nach Auftrag C, Gegenrechnung der Ideenrunde, neue Zeilen zu Hadamard, Konferenzmatrizen und Zirkulanten, kein neuer Bestwert; davor Auftrag D, Leiter bei d = 10, kein Treffer, kein neuer Wert; davor Auftrag M, Mischform bei (18,5), kein neuer Tabellenwert; davor Auftrag LZ, Lean-Zertifikat für K(18,5) ≤ 50, kein neuer Tabellenwert; davor Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -144,6 +144,7 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Zusätzlich n = 10 (Dichte 1,09
 - **Hadamard, Ideenrunde 26.11.2026:** Zahlen aus `notes/ideen_2026-11-26.md` (3a, 3d, 3f), von Auftrag C mit eigenen Programmen gegengerechnet,
   keine Abweichung (`notes/laeufe/2026-11-26_gegenrechnung_ideen.md`, Logs `runs/gegenrechnung_ideen/`). Ordnung 24: disc 8 ohne 2 Spalten in 7420 von 33 120
   und ohne 4 Spalten in 42 304 von 1 275 120 Fällen (alle starr, Alleinanteil 1264 bis 1354); ohne 5 Spalten nie 9.
+  Gate (`notes/gate_2026-11-26_gegenrechnung_ideen.md`): Trefferlisten fallweise gleich; die Fallzahlen zählen Originale und Transponierte, bis auf Äquivalenz sind es 3710 von 16 560 und 21 152 von 637 560.
 - **32-Wörter-Codes:** N = 16, 17, 19 aus `controls/` (beide Prüfskripte, disc 7); N = 21, 23 nur Radius per Brute-Force (STATUS).
 - **Hadamard:** volle Matrizen `controls/had20_klasse*.txt`, McKay-60 (`controls/had24_mckay_hex.txt`); ohne 1 Spalte:
   `runs/teilA/zusatz_ohne_eine_spalte.log.txt`; ohne 2/3 Spalten: `runs/teilA/a1*`, `a2*` (alle 1140 bzw. 242 880 Fälle).
