@@ -22,3 +22,13 @@ disc(A)/sqrt(n) > 5/sqrt(8)). Prüfe:
    ausgeschlossen?
 6. Nenne höchstens drei Richtungen, die du für besser hältst, je mit einem Test unter 30 Minuten. Keine Richtung, die in
    Abschnitt 2 als "voll" steht.
+
+## Abgabe (Meldung der Bridge)
+
+- Abgegeben 26.11.2026, 17:55 Uhr als Batch, Kennung `openrouter:batch-1795712113-Oi6Q8xNU4qFqNY5JXQal`, Modell `openai/gpt-6.2-sol`,
+  Denkstufe xhigh, Ausgabegrenze 65 536 Tokens, Systemrolle „Kombinatoriker … feindseliger Gegenprüfer: du beweist oder widerlegst, du rätst nicht“.
+- Eingelesen vom Branch `orchestrator/gegenpruefung-2026-11-26` (Commit `a773036`): dieser Auftragstext ohne den Abschnitt „Abgabe“
+  (2 010 Zeichen) und `notes/ideen_2026-11-26.md` (29 418 Zeichen), unverändert gegenüber `main` nach PR 56.
+- Frist des Betreibers 27.11.2026, 17:55 Uhr; abholbar bis 26.12.2026. Kosten stehen erst mit dem Ergebnis fest.
+- Die Notiz ging absichtlich unkorrigiert hinaus: Geminis Einwände zu 3e und 3c (Teilantwort vom 26.11., 17:03 Uhr) sollen
+  unabhängig gefunden oder verfehlt werden.
