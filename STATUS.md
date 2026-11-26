@@ -88,7 +88,7 @@ Eigene bessere Werte außerhalb dieser Tabelle (m > B(8) = 20, also kein Rekordw
 - **K(18,5) ≤ 50, d = 8 (Gate N, 26.11.2026, Rechnung des Orchestrators, noch von keiner Sitzung gegengerechnet):** Jeder der 12 Zustände mit K = 12 und Restzahl 1 lässt genau die vier Punkte (±y, ±z) offen.
   Das Wort (y, z') mit z' = z an vier Stellen gewechselt hat Abstand 4 zu (y, z) und 5 zu (y, −z); sein Negativ erledigt die beiden anderen. 24 Zeilen plus diese eine: 25 Zeilen, 50 Wörter (kein Kern-⟨1,a⟩-Code mehr).
   Matrix 25 x 18 (`notes/orchestrator/2026-11-26_gate_leiter_n/gate_c18-5_50w.matrix.txt`): Radius 5 über alle 2^18 Punkte mit eigenem Zähler, check_disc, verify_spencer, exakt_disc je Diskrepanz 8; in allen 12 Zuständen gelingt es.
-  Neuheit: Post-Kéri-Tabelle (florath, `main` am 26.11.2026, SHA-256 unverändert `5efaf8d9…`) nennt 28–64, obere Schranke aus der trivialen Regel. Eine Websuche ohne Fund. Nicht geprüft: offene PRs und Issues bei florath, Kéris eigene Tabelle, arXiv gründlich. Keine Rekordgrenze (40). `notes/gate_2026-11-26_leiter_n.md`
+  Neuheit: Post-Kéri-Tabelle (florath, `main` am 26.11.2026, SHA-256 unverändert `5efaf8d9…`) nennt 28–64, obere Schranke aus der trivialen Regel. Eine Websuche ohne Fund. Gemini Deep Research (26.11.2026): kein Fund unter 64; vom Orchestrator nachgeprüft: alle Zweige bei florath nennen 28–64, keine PR-Referenzen sichtbar (`notes/gemini/neuheit_18_5_2026-11-26_kurz.md`). Weiter offen: Issues bei florath, EinsteinArena-Thread im Volltext, Kéris PDF, Bezahlschranken-Texte. Keine Rekordgrenze (40). `notes/gate_2026-11-26_leiter_n.md`
 
 ## Negativbefunde
 
