@@ -86,3 +86,11 @@
 2	19:14:15	24	8	22	2	301	2577	0.00031	100	140	Leiter (24,8)
 2	19:14:15	24	8	22	3	302	2748	0.00033	97	140	Leiter (24,8)
 2	19:14:15	24	8	22	4	302	2493	0.00030	92	140	Leiter (24,8)
+2	19:24:22	24	8	22	1	602	2448	0.00029	92	140	Leiter (24,8) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	19:24:22	24	8	22	2	602	2577	0.00031	94	140	Leiter (24,8) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	19:24:22	24	8	22	3	601	2634	0.00031	91	140	Leiter (24,8) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	19:24:22	24	8	22	4	601	2493	0.00030	87	140	Leiter (24,8) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	19:34:24	24	8	22	5	601	2289	0.00027	95	140	Leiter (24,8) 8 Startwerte, doppelte Zeit, Startwerte 5-8
+2	19:34:24	24	8	22	6	601	2793	0.00033	92	140	Leiter (24,8) 8 Startwerte, doppelte Zeit, Startwerte 5-8
+2	19:34:24	24	8	22	7	601	2064	0.00025	97	140	Leiter (24,8) 8 Startwerte, doppelte Zeit, Startwerte 5-8
+2	19:34:24	24	8	22	8	601	3123	0.00037	91	140	Leiter (24,8) 8 Startwerte, doppelte Zeit, Startwerte 5-8

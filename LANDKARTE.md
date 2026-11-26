@@ -46,6 +46,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Rundlauf Sol 2 Paley-12-Verkabelung (20x20, 71 280) | | | | | | | | | | | | 0,894 e |
 | Kern-⟨1,a⟩-Paare (U,W) bei (20,6), d = 8, abwechselnde Suche (Auftrag H): K = 10 (40 Wörter) in (11,9), (13,7), (10,10), (12,8) nicht erreicht | | | | | | | | | | | | (1,789) s |
 | Freie Suche als Evolutionsschleife (Auftrag E), blind: (15,4) 16 Paare (32 Wörter) in 4 von 4 Läufen (Startwert 1: disc 7 dreifach); 15 Paare (30 Wörter, N = 15) nicht erreicht, beste Restzahl 233 offene Klassen |  |  |  |  |  |  | (1,807) s | 1,750 e |  |  |  |  |
+| Verdopplungszellen (Auftrag V, p018 blind, Leiter von der Kontrolle abwärts): kleinste erreichte Paarzahl (19,6) 16, (17,5) 16, (22,7) 24, (24,8) 24 (Tabellenwerte); Ziele 10 / 10 / 12 / 12 Paare (20 x 20 und 20 x 18 disc 8, 24 x 23 und 24 x 25 disc 9; Quotienten 1,789, 1,789, 1,837, 1,800) nicht erreicht; beste Restzahl darunter: (19,6) 15 Paare 2236, (17,5) 15: 722, (22,7) 23: 616, (24,8) 22: 2064; am Ziel 26 192, 8952, ca. 234 600, ca. 733 000 offen | | | | | | | | | | | | (1,789) s |
 
 ## N ab 21
 

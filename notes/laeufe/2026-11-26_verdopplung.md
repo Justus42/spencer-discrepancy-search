@@ -62,3 +62,44 @@ Hinweis: Die Läufe mit gleichem Namen überschreiben Ausgabe und Log der kürze
 | 12 (Ziel) | nicht erreicht | 234 512 bis 234 668 | 0,1119 |
 
 (22,7) beendet. Kleinste erreichte Paarzahl: 24 (48 Wörter, Kontrolle, entspricht der Bauregel), beste Restzahl darunter: 616 bei 23 Paaren (mit nur einer Messung à 300 s; 22 Paare: 648).
+
+## Schritt 2, (24,8) (Block 2, 19:04–19:34 UTC)
+
+Stufe je 4 Startwerte à 300 s; nach zwei nicht erreichten Stufen 8 Startwerte à 600 s bei 22 Paaren (zwei Durchgänge, Hintergrundjob, nicht abgefragt).
+Bei (24,8) ca. 100 Schritte/s, 140 MB; auch die Kontrolle (24 Paare) gelang nur in 1 von 4 Läufen.
+
+| Paare | Ergebnis | offene Klassen (Startwerte) | Anteil |
+|---|---|---|---|
+| 24 | erreicht (Kontrolle, 1 von 4; Bauregel 0 offen) | 0 / 559 / 524 / 568 | 0 bis 0,0001 |
+| 23 | nicht erreicht | 2407 / 2400 / 2471 / 2444 | 0,0003 |
+| 22 | nicht erreicht (4 x 300 s) | 2448 / 2577 / 2748 / 2493 | 0,0003 |
+| 22 | 8 Startwerte à 600 s | 2448 / 2577 / 2634 / 2493 / 2289 / 2793 / 2064 / 3123 | 0,0002 bis 0,0004 |
+| 12 (Ziel) | nicht erreicht | 732 766 bis 733 510 | 0,0874 |
+
+(24,8) beendet. Kleinste erreichte Paarzahl: 24 (48 Wörter, Kontrolle); beste Restzahl darunter: 2064 bei 22 Paaren (23 Paare: 2400).
+
+## Auswertung (19:34–19:50 UTC, ohne Zuruf)
+
+**Prüfungen.** `sha256sum -c verifiers/SHA256SUMS` (drei Prüfdateien) und `sha256sum -c runs/evo/BEWERTER.sha256`: alle vier OK, am Anfang (17:45 UTC) und am Ende (19:34 UTC)
+(`runs/verdopplung/sha256_start.log.txt`, `sha256_ende.log.txt`). Kein Treffer, daher kein Treffer-Bericht und kein Aufruf von `pruefe_matrix.py`.
+Alle 80 am Ende noch gespeicherten Ausgaben (letzter Lauf je Zelle, Stufe und Startwert) mit dem Bewerter noch einmal gezählt: 0 Abweichungen vom Archiv
+(`runs/verdopplung/nachzaehlung.log.txt`). Die kürzeren Läufe, die von gleichnamigen längeren überschrieben wurden (Startwerte 1–4 bei (22,7) und (24,8) mit 22 Paaren,
+bei 14 Paaren in (19,6) und (17,5)), sind nur über `archiv.tsv` belegt, nicht nachgezählt.
+`main` geholt (Stand `fe524e4`) und in den Branch gemergt; STATUS.md (ein Negativbefund, vier Fehlversuche, eine Dateizeile; Stand-Zeilen unverändert) und
+LANDKARTE.md (eine Zeile) ergänzt. Nicht nach `main` zusammengeführt. Nichts installiert, nichts nach außen gemeldet. `src/evo/p018.c`, `src/evo_bewertung.c` und die drei Prüfdateien unverändert.
+
+**Ergebnis je Zelle (Bewerter, Belegart: Suche erfolglos, schließt nichts aus):**
+
+| Zelle | Ziel (Paare) | kleinste erreichte Paarzahl | beste Restzahl darunter | am Ziel offen |
+|---|---|---|---|---|
+| (19,6) | 10 (20 x 20, disc 8) | 16 (Tabellenwert 32 Wörter, kein neuer Wert) | 15 Paare: 2236 | 26 192 von 262 144 (0,100) |
+| (17,5) | 10 (20 x 18, disc 8) | 16 (Tabellenwert) | 15 Paare: 722 | 8952 von 65 536 (0,137) |
+| (22,7) | 12 (24 x 23, disc 9) | 24 (48 Wörter, Bauregel) | 23 Paare: 616 | ca. 234 600 von 2 097 152 (0,112) |
+| (24,8) | 12 (24 x 25, disc 9) | 24 (nur 1 von 4 blind, Bauregel gelingt) | 22 Paare: 2064 | ca. 733 000 von 8 388 608 (0,087) |
+
+**Deutung (unbelegt).** (19,6) und (17,5): schon eine Paarzahl unter der Kontrolle bleibt bei einem festen Endpunkt hängen (alle Startwerte gleich), der Abstand zum Ziel
+wächst von 15 zu 14 zu 10 Paaren stetig; die Probe des Orchestrators (26 192, 8952) ist bestätigt. Bei (22,7) und (24,8) streuen die Werte, ändern sich aber von 23 zu 22 Paaren kaum
+(616/648, 2400/2064): wie bei Auftrag E (704 bei 23 Paaren in (20,6)) ein Plateau knapp unter der Kontrolle. Die Erwartung des Orchestrators (kein Rekord) trifft zu;
+„Tabellenwerte knapp unter 32 Wörtern“ bei (19,6) und (17,5) wurden nicht gefunden (15 Paare nicht erreicht).
+
+**Rechenzeit.** 17:45 bis 19:34 UTC (1 h 49 min) einschließlich der Auswertungspausen; Summe der Läufe ohne Überlappung rund 1 h 45 min von 3 h. Blöcke: 17:45–18:08 (Schritte 0, 1), 18:09–18:33 ((19,6), (17,5)), 18:33–19:03 ((22,7)), 19:04–19:34 ((24,8)); nach jedem Block commit und push.
