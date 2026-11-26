@@ -1,0 +1,62 @@
+TYP 16 4 14,1,1,0 B(D)=1471 K_faser=6
+TYP 16 4 13,2,1,0 B(D)=1471 K_faser=6
+TYP 16 4 13,1,1,1 B(D)=1471 K_faser=6
+TYP 16 4 12,3,1,0 B(D)=1691 K_faser=5
+TYP 16 4 12,2,2,0 B(D)=1471 K_faser=7
+TYP 16 4 12,2,1,1 B(D)=1691 K_faser=6
+TYP 16 4 11,4,1,0 B(D)=1691 K_faser=5
+TYP 16 4 11,3,2,0 B(D)=1691 K_faser=6
+TYP 16 4 11,3,1,1 B(D)=1691 K_faser=6
+TYP 16 4 11,2,2,1 B(D)=1856 K_faser=6
+TYP 16 4 10,5,1,0 B(D)=1826 K_faser=5
+TYP 16 4 10,4,2,0 B(D)=1691 K_faser=6
+TYP 16 4 10,4,1,1 B(D)=1826 K_faser=5
+TYP 16 4 10,3,3,0 B(D)=1946 K_faser=5
+TYP 16 4 10,3,2,1 B(D)=1946 K_faser=5
+TYP 16 4 10,2,2,2 B(D)=1856 K_faser=6
+TYP 16 4 9,6,1,0 B(D)=1826 K_faser=5
+TYP 16 4 9,5,2,0 B(D)=1826 K_faser=5
+TYP 16 4 9,5,1,1 B(D)=1826 K_faser=5
+TYP 16 4 9,4,3,0 B(D)=1946 K_faser=5
+TYP 16 4 9,4,2,1 B(D)=2054 K_faser=4
+TYP 16 4 9,3,3,1 B(D)=1946 K_faser=5
+TYP 16 4 9,3,2,2 B(D)=2054 K_faser=4
+TYP 16 4 8,7,1,0 B(D)=1871 K_faser=5
+TYP 16 4 8,6,2,0 B(D)=1791 K_faser=6
+TYP 16 4 8,6,1,1 B(D)=1906 K_faser=5
+TYP 16 4 8,5,3,0 B(D)=2067 K_faser=4
+TYP 16 4 8,5,2,1 B(D)=2102 K_faser=4
+TYP 16 4 8,4,4,0 B(D)=1911 K_faser=5
+TYP 16 4 8,4,3,1 B(D)=2102 K_faser=4
+TYP 16 4 8,4,2,2 B(D)=2054 K_faser=5
+TYP 16 4 8,3,3,2 B(D)=2186 K_faser=4
+TYP 16 4 7,7,2,0 B(D)=1871 K_faser=5
+TYP 16 4 7,7,1,1 B(D)=1871 K_faser=5
+TYP 16 4 7,6,3,0 B(D)=2067 K_faser=4
+TYP 16 4 7,6,2,1 B(D)=2137 K_faser=4
+TYP 16 4 7,5,4,0 B(D)=2067 K_faser=4
+TYP 16 4 7,5,3,1 B(D)=2067 K_faser=4
+TYP 16 4 7,5,2,2 B(D)=2172 K_faser=4
+TYP 16 4 7,4,4,1 B(D)=2214 K_faser=4
+TYP 16 4 7,4,3,2 B(D)=2249 K_faser=4
+TYP 16 4 7,3,3,3 B(D)=2186 K_faser=4
+TYP 16 4 6,6,4,0 B(D)=1977 K_faser=5
+TYP 16 4 6,6,3,1 B(D)=2157 K_faser=4
+TYP 16 4 6,6,2,2 B(D)=2117 K_faser=5
+TYP 16 4 6,5,5,0 B(D)=2142 K_faser=4
+TYP 16 4 6,5,4,1 B(D)=2232 K_faser=4
+TYP 16 4 6,5,3,2 B(D)=2292 K_faser=4
+TYP 16 4 6,4,4,2 B(D)=2214 K_faser=4
+TYP 16 4 6,4,3,3 B(D)=2327 K_faser=4
+TYP 16 4 5,5,5,1 B(D)=2142 K_faser=4
+TYP 16 4 5,5,4,2 B(D)=2322 K_faser=4
+TYP 16 4 5,5,3,3 B(D)=2262 K_faser=4
+TYP 16 4 5,4,4,3 B(D)=2378 K_faser=4
+TYP 16 4 4,4,4,4 B(D)=2310 K_faser=4
+ZELLE (16,4): 55 Typen, B(D) 1471 bis 2378
+   K_faser = 4: 25 Typen 
+   K_faser = 5: 19 Typen 
+   K_faser = 6: 10 Typen [(8, 6, 2, 0), (10, 2, 2, 2), (10, 4, 2, 0), (11, 2, 2, 1), (11, 3, 1, 1), (11, 3, 2, 0), (12, 2, 1, 1), (13, 1, 1, 1), (13, 2, 1, 0), (14, 1, 1, 0)]
+   K_faser = 7: 1 Typen [(12, 2, 2, 0)]
+   bei K = 5 ausgeschlossen: 11 Typen [(8, 6, 2, 0), (10, 2, 2, 2), (10, 4, 2, 0), (11, 2, 2, 1), (11, 3, 1, 1), (11, 3, 2, 0), (12, 2, 1, 1), (12, 2, 2, 0), (13, 1, 1, 1), (13, 2, 1, 0), (14, 1, 1, 0)]
+   bei K = 6 ausgeschlossen: 1 Typen [(12, 2, 2, 0)]
