@@ -1,0 +1,3 @@
+(16,4) K=5: Typen Gate 55, Sitzung 44, gemeinsam 44; |S| gleich in 44; Sitzung KEINE 44, davon Gate KEINE 44; Gate KEINE insgesamt 55; Widerspruch (einer GEFUNDEN) 0
+(18,5) K=5: Typen Gate 74, Sitzung 70, gemeinsam 70; |S| gleich in 70; Sitzung KEINE 27, davon Gate KEINE 27; Gate KEINE insgesamt 31; Widerspruch (einer GEFUNDEN) 0
+(16,4) K=6: Typen Gate 27, Sitzung 54, gemeinsam 26; |S| gleich in 26; Sitzung KEINE 26, davon Gate KEINE 24; Gate KEINE insgesamt 25; Widerspruch (einer GEFUNDEN) 0

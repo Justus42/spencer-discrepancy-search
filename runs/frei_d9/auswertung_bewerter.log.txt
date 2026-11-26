@@ -1,0 +1,37 @@
+2026-11-26 19:21:44 UTC
+src/check_disc.py: OK
+verifiers/verify_spencer.py: OK
+src/exakt_disc.c: OK
+src/evo_bewertung.c: OK
+s0c_p018_m20R6k24_s1.txt: offen=0 klassen=524288 k=24 m=20 R=6
+s0c_p018_m20R6k24_s2.txt: offen=0 klassen=524288 k=24 m=20 R=6
+s1b_p018_m25R8k32_s1.txt: offen=6500 klassen=16777216 k=32 m=25 R=8
+s1c_p018_m25R8k31_s1.txt: offen=8712 klassen=16777216 k=31 m=25 R=8
+s1c_p018_m25R8k31_s2.txt: offen=8928 klassen=16777216 k=31 m=25 R=8
+s1c_p018_m25R8k31_s3.txt: offen=8484 klassen=16777216 k=31 m=25 R=8
+s1c_p018_m25R8k31_s4.txt: offen=8523 klassen=16777216 k=31 m=25 R=8
+s2_p018_m25R8k32_s1.txt: offen=5775 klassen=16777216 k=32 m=25 R=8
+s2_p018_m25R8k32_s2.txt: offen=5536 klassen=16777216 k=32 m=25 R=8
+s2_p018_m25R8k32_s3.txt: offen=5246 klassen=16777216 k=32 m=25 R=8
+s2_p018_m25R8k32_s4.txt: offen=6007 klassen=16777216 k=32 m=25 R=8
+s3_kontrolle_p022_m20R6k23_s1.txt: offen=721 klassen=524288 k=23 m=20 R=6
+s3_kontrolle_p022_m20R6k23_s2.txt: offen=728 klassen=524288 k=23 m=20 R=6
+s3_kontrolle_p026_m20R6k23_z0_s1.txt: offen=721 klassen=524288 k=23 m=20 R=6
+s3_kontrolle_p026_m20R6k23_z1_s2.txt: offen=728 klassen=524288 k=23 m=20 R=6
+s3_p026_m25R8k31_s1.txt: offen=4727 klassen=16777216 k=31 m=25 R=8
+s3_p026_m25R8k31_s2.txt: offen=5117 klassen=16777216 k=31 m=25 R=8
+s3_p026_m25R8k31_s3.txt: offen=5081 klassen=16777216 k=31 m=25 R=8
+s3_p026_m25R8k31_s4.txt: offen=5293 klassen=16777216 k=31 m=25 R=8
+s4_1b_p018_m23R7k32_s1.txt: offen=5846 klassen=4194304 k=32 m=23 R=7
+s4_1c_p018_m23R7k31_s1.txt: offen=7238 klassen=4194304 k=31 m=23 R=7
+s4_1c_p018_m23R7k31_s2.txt: offen=7706 klassen=4194304 k=31 m=23 R=7
+s4_1c_p018_m23R7k31_s3.txt: offen=7598 klassen=4194304 k=31 m=23 R=7
+s4_1c_p018_m23R7k31_s4.txt: offen=7539 klassen=4194304 k=31 m=23 R=7
+s4_2_p018_m23R7k32_s1.txt: offen=5539 klassen=4194304 k=32 m=23 R=7
+s4_2_p018_m23R7k32_s2.txt: offen=5885 klassen=4194304 k=32 m=23 R=7
+s4_2_p018_m23R7k32_s3.txt: offen=5792 klassen=4194304 k=32 m=23 R=7
+s4_2_p018_m23R7k32_s4.txt: offen=5815 klassen=4194304 k=32 m=23 R=7
+s4_3_p026_m23R7k31_s1.txt: offen=4072 klassen=4194304 k=31 m=23 R=7
+s4_3_p026_m23R7k31_s2.txt: offen=4072 klassen=4194304 k=31 m=23 R=7
+s4_3_p026_m23R7k31_s3.txt: offen=4072 klassen=4194304 k=31 m=23 R=7
+s4_3_p026_m23R7k31_s4.txt: offen=4072 klassen=4194304 k=31 m=23 R=7
