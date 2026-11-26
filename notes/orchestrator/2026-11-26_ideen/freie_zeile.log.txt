@@ -1,0 +1,15 @@
+# Lochzahlen und Ein-Zeilen-Test (had_loecher, had_frei1)
+Thu Nov 26 15:45:19 CET 2026
+N=20 c=4 m=16 T=8: 29070 Mengen aus 6 Matrizen (jede 1-te); flache Punkte bis auf Vorzeichen: min 1496, max 2984, Mittel 1595 von 32768; eine Zusatzzeile deckt hoechstens V(16,4) = 2517
+N=24 c=5 m=19 T=9: 2551 Mengen aus 120 Matrizen (jede 2000-te); flache Punkte bis auf Vorzeichen: min 11936, max 17712, Mittel 16698 von 262144; eine Zusatzzeile deckt hoechstens V(19,5) = 16664
+N=24 c=3 m=21 T=9: 2429 Mengen aus 120 Matrizen (jede 100-te); flache Punkte bis auf Vorzeichen: min 24344, max 26730, Mittel 26142 von 1048576; eine Zusatzzeile deckt hoechstens V(21,6) = 82160
+N=24 c=1 m=23 T=9: 2880 Mengen aus 120 Matrizen (jede 1-te); flache Punkte bis auf Vorzeichen: min 3520, max 16192, Mittel 8256 von 4194304; eine Zusatzzeile deckt hoechstens V(23,7) = 390656
+Kontrollen had_frei1:
+N=8 c=1 m=7 T=5 R=1: 8 Faelle aus 1 Matrizen (jede 1-te); ohne Loch 8; mehr Loecher als V=8: 0; mit EINER Zusatzzeile loesbar: 0; kleinste Lochzahl 0
+N=16 c=1 m=15 T=7 R=4: 32 Faelle aus 2 Matrizen (jede 1-te); ohne Loch 32; mehr Loecher als V=1941: 0; mit EINER Zusatzzeile loesbar: 0; kleinste Lochzahl 0
+N=16 c=1 m=15 T=7 R=4: 16 Faelle aus 1 Matrizen (jede 1-te); ohne Loch 0; mehr Loecher als V=1941: 0; mit EINER Zusatzzeile loesbar: 16; kleinste Lochzahl 233
+Ziel d=9, Ordnung 24:
+N=24 c=1 m=23 T=9 R=7: 2880 Faelle aus 120 Matrizen (jede 1-te); ohne Loch 0; mehr Loecher als V=390656: 0; mit EINER Zusatzzeile loesbar: 0; kleinste Lochzahl 3520
+N=24 c=5 m=19 T=9 R=5: 12752 Faelle aus 120 Matrizen (jede 400-te); ohne Loch 0; mehr Loecher als V=16664: 6893; mit EINER Zusatzzeile loesbar: 0; kleinste Lochzahl 11888
+N=24 c=3 m=21 T=9 R=6: 6072 Faelle aus 120 Matrizen (jede 40-te); ohne Loch 0; mehr Loecher als V=82160: 0; mit EINER Zusatzzeile loesbar: 0; kleinste Lochzahl 24344
+Thu Nov 26 15:47:14 CET 2026

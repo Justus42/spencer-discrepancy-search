@@ -1,0 +1,31 @@
+# Tabelle: exakte Diskrepanz, alle Spaltenmengen (had_streich, T=0)
+Thu Nov 26 15:43:09 CET 2026
+had8 c=0: GESAMT exakt: d=4:1
+had8 c=1: GESAMT exakt: d=5:8
+had8 c=2: GESAMT exakt: d=4:28
+had8 c=3: GESAMT exakt: d=3:56
+had8 c=4: GESAMT exakt: d=2:14 d=4:56
+had12 c=0: GESAMT exakt: d=4:1
+had12 c=1: GESAMT exakt: d=5:12
+had12 c=2: GESAMT exakt: d=4:66
+had12 c=3: GESAMT exakt: d=3:220
+had12 c=4: GESAMT exakt: d=4:495
+had16syl c=0: GESAMT exakt: d=4:1
+had16syl c=1: GESAMT exakt: d=5:16
+had16syl c=2: GESAMT exakt: d=6:120
+had16syl c=3: GESAMT exakt: d=5:560
+had16syl c=4: GESAMT exakt: d=4:140 d=6:1680
+had16iv c=0: GESAMT exakt: d=6:2
+had16iv c=1: GESAMT exakt: d=7:32
+had16iv c=2: GESAMT exakt: d=6:240
+had16iv c=3: GESAMT exakt: d=5:1120
+had16iv c=4: GESAMT exakt: d=4:56 d=6:3584
+had20 c=0: GESAMT exakt: d=6:6
+had20 c=1: GESAMT exakt: d=7:120
+had20 c=2: GESAMT exakt: d=6:1140
+had20 c=3: GESAMT exakt: d=5:6840
+had20 c=4: GESAMT exakt: d=6:29070
+# Ordnung 24 (60 McKay-Klassen + Transponierte), Schwellen
+c=2 T=8: GESAMT: 120 Matrizen, 7420 Treffer von 33120 geprueften Mengen (c=2, T=8)
+c=5 T=9: GESAMT: 120 Matrizen, 0 Treffer von 5100480 geprueften Mengen (c=5, T=9)
+Thu Nov 26 15:44:03 CET 2026

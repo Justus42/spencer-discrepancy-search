@@ -1,0 +1,11 @@
+# eine ersetzte Spalte (had_ersatz, had_ersatz2)
+Thu Nov 26 15:49:56 CET 2026
+N=8 T=5: 8 Faelle (Matrix, Spalte); ohne ein x' mit genau einer Zeile bei 5: 0; kleinste Zahl solcher x' (bis auf Vorzeichen): 56
+N=16 T=7: 32 Faelle (Matrix, Spalte); ohne ein x' mit genau einer Zeile bei 7: 0; kleinste Zahl solcher x' (bis auf Vorzeichen): 1344
+N=20 T=7: 120 Faelle (Matrix, Spalte); ohne ein x' mit genau einer Zeile bei 7: 120; kleinste Zahl solcher x' (bis auf Vorzeichen): 0
+N=12 T=5: 12 Faelle; gute Ersatzspalten insgesamt: 0
+N=12 T=3: 12 Faelle; gute Ersatzspalten insgesamt: 24576
+mat 5 Spalte 18: flache x' 20064, verschiedene Bedingungen 3021 (Groesse 1: 0, 2: 0, 3: 1140, 4: 1881, 5: 0, 6: 0, >=7: 0); gute Ersatzspalten: 0
+mat 5 Spalte 19: flache x' 20064, verschiedene Bedingungen 3021 (Groesse 1: 0, 2: 0, 3: 1140, 4: 1881, 5: 0, 6: 0, >=7: 0); gute Ersatzspalten: 0
+N=20 T=7: 120 Faelle; gute Ersatzspalten insgesamt: 0
+Thu Nov 26 15:49:57 CET 2026

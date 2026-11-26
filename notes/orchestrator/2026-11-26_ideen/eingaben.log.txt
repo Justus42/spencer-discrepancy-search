@@ -1,0 +1,7 @@
+had8.txt 1 Matrizen, Ordnung 8
+had16syl.txt 1 Matrizen, Ordnung 16
+had32syl.txt 1 Matrizen, Ordnung 32
+had12.txt 1 Matrizen, Ordnung 12
+had16iv.txt 2 Matrizen, Ordnung 16
+had20.txt 6 Matrizen, Ordnung 20
+had24.txt 120 Matrizen, Ordnung 24

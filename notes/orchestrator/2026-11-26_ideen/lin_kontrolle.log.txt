@@ -1,0 +1,6 @@
+m=16: disc >= 8 in 9 von 300 Punktmengen; Beispiel (Maske der gestrichenen Spalten) ed386b24
+      GESAMT: 9 Faelle; kleinster Alleinanteil ueberhaupt 129; Faelle nach kleinstem Alleinanteil: =0: 0, <100: 0, <1000: 9, <3000: 0, <6000: 0, <10000: 0, >=10000: 0
+m=18: disc >= 8 in 105 von 300 Punktmengen; Beispiel (Maske der gestrichenen Spalten) aaa8782a
+      GESAMT: 105 Faelle; kleinster Alleinanteil ueberhaupt 118; Faelle nach kleinstem Alleinanteil: =0: 0, <100: 0, <1000: 105, <3000: 0, <6000: 0, <10000: 0, >=10000: 0
+m=20: disc >= 8 in 245 von 300 Punktmengen; Beispiel (Maske der gestrichenen Spalten) 6a8d8850
+      GESAMT: 245 Faelle; kleinster Alleinanteil ueberhaupt 48; Faelle nach kleinstem Alleinanteil: =0: 0, <100: 15, <1000: 230, <3000: 0, <6000: 0, <10000: 0, >=10000: 0
