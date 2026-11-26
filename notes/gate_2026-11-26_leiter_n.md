@@ -48,7 +48,7 @@ Das ist eine Rechnung des Orchestrators. Nach Projektregel muss eine Sitzung sie
 
 1. **Hadamard-Becken, von der Sitzung offen gelassen:** Die zwölf Zustände mit Restzahl 1 haben in beiden Hälften die Zeilenprodukte 54-mal 1 und 12-mal 3, also
    beide Hälften von der Bauart „Hadamard-12 ohne drei Spalten“. Der 52er selbst ist nicht mehr von dieser Bauart (Produkte bis 7). Bei d = 9 haben die
-   Treffer mit K = 16 eine Hälfte mit 96 bis 120 Produkten 0, bei (25,8) eine volle 16 x 16-Hadamard-Matrix.
+   Treffer mit K = 16 eine Hälfte mit 60 bis 120 Produkten 0 (von 120), bei (25,8) eine volle 16 x 16-Hadamard-Matrix.
 2. **Probe: die freie Suche ist bei (18,5) schlechter als die Kern-Familie.** p018 aus Auftrag E bei (18,5) mit 24 Paaren, zwei Startwerte je 150 s:
    beide enden bei 288 offenen Klassen (`probe_p018_18_5.log.txt`). Bei (20,6) hatte dasselbe Programm den 48er in Sekunden gefunden.
 3. **Probe: Mischform aus Nebenklassen und freien Zeilen.** K = 11 im Typ (9,9), zwei Startwerte je 150 s: beide Restzahl 967; die erste freie Zeile
