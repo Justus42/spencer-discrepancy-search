@@ -1,1 +1,6 @@
 2026-11-26 17:52:17 UTC  Start s1c_p018_m25R8k31: p018 m=25 R=8 Paare=31 je 300 s, Startwerte 1 2 3 4, Zusatz: 
+  Startwert 1: Bewerter: offen=8712 klassen=16777216 k=31 m=25 R=8 | 302 s | Speicher (VmHWM) 258820 kB | ENDE best=8712 it=17664 t_best=284.4 t=300.8 bumps=1352 neustarts=0
+  Startwert 2: Bewerter: offen=8928 klassen=16777216 k=31 m=25 R=8 | 302 s | Speicher (VmHWM) 258756 kB | ENDE best=8928 it=17664 t_best=180.7 t=300.3 bumps=1350 neustarts=0
+  Startwert 3: Bewerter: offen=8484 klassen=16777216 k=31 m=25 R=8 | 302 s | Speicher (VmHWM) 258840 kB | ENDE best=8484 it=17664 t_best=205.2 t=300.6 bumps=1356 neustarts=0
+  Startwert 4: Bewerter: offen=8523 klassen=16777216 k=31 m=25 R=8 | 304 s | Speicher (VmHWM) 258704 kB | ENDE best=8523 it=17920 t_best=52.5 t=303.8 bumps=1376 neustarts=0
+2026-11-26 17:57:21 UTC  Ende s1c_p018_m25R8k31
