@@ -1,0 +1,6 @@
+2026-11-25 19:44:04 UTC  Runde 16  p014 (Elter p013, Insel A)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=821  (600 s)   [Selbstauskunft: ENDE best=821 it=1159936 t_best=343.7 t=600.0 bumps=270257 neustarts=15]
+  Startwert 2: offen=761  (600 s)   [Selbstauskunft: ENDE best=761 it=1160960 t_best=196.3 t=600.1 bumps=259888 neustarts=16]
+  Startwert 3: offen=762  (600 s)   [Selbstauskunft: ENDE best=762 it=1158144 t_best=343.4 t=600.1 bumps=245832 neustarts=17]
+  Startwert 4: offen=752  (600 s)   [Selbstauskunft: ENDE best=752 it=1158400 t_best=238.8 t=600.1 bumps=256073 neustarts=16]
+2026-11-25 19:54:04 UTC  Runde 16 fertig

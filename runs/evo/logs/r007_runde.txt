@@ -1,0 +1,6 @@
+2026-11-25 18:19:12 UTC  Runde 7  p008 (Elter p004, Insel S)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=1195  (600 s)   [Selbstauskunft: ENDE best=1195 it=1022976 t_best=442.0 t=600.1 bumps=422332 neustarts=17]
+  Startwert 2: offen=1170  (600 s)   [Selbstauskunft: ENDE best=1170 it=1017856 t_best=382.8 t=600.1 bumps=424812 neustarts=15]
+  Startwert 3: offen=1148  (600 s)   [Selbstauskunft: ENDE best=1148 it=1012224 t_best=504.9 t=600.1 bumps=418494 neustarts=17]
+  Startwert 4: offen=1154  (600 s)   [Selbstauskunft: ENDE best=1154 it=1019136 t_best=376.8 t=600.1 bumps=418691 neustarts=18]
+2026-11-25 18:29:12 UTC  Runde 7 fertig

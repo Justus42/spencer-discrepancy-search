@@ -1,0 +1,6 @@
+2026-11-25 18:08:38 UTC  Runde 6  p007 (Elter p005, Insel B)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=1286  (600 s)   [Selbstauskunft: ENDE best=1286 it=559872 t_best=202.0 t=600.3 bumps=337241 neustarts=9]
+  Startwert 2: offen=1284  (600 s)   [Selbstauskunft: ENDE best=1284 it=559872 t_best=472.4 t=600.1 bumps=334093 neustarts=10]
+  Startwert 3: offen=1279  (600 s)   [Selbstauskunft: ENDE best=1279 it=561664 t_best=122.0 t=600.2 bumps=337776 neustarts=9]
+  Startwert 4: offen=1276  (600 s)   [Selbstauskunft: ENDE best=1276 it=560384 t_best=267.0 t=600.3 bumps=331116 neustarts=11]
+2026-11-25 18:18:39 UTC  Runde 6 fertig

@@ -1,0 +1,6 @@
+2026-11-25 21:02:29 UTC  Runde 24  p021 (Elter p018, Insel A)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=893  (600 s)   [Selbstauskunft: ENDE best=893 it=1079040 t_best=54.2 t=600.1 bumps=514550 neustarts=0]
+  Startwert 2: offen=940  (600 s)   [Selbstauskunft: ENDE best=940 it=1057792 t_best=191.8 t=600.1 bumps=504151 neustarts=0]
+  Startwert 3: offen=853  (600 s)   [Selbstauskunft: ENDE best=853 it=1093888 t_best=363.7 t=600.1 bumps=522352 neustarts=0]
+  Startwert 4: offen=920  (600 s)   [Selbstauskunft: ENDE best=920 it=1078528 t_best=168.8 t=600.0 bumps=514637 neustarts=0]
+2026-11-25 21:12:29 UTC  Runde 24 fertig

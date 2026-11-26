@@ -1,0 +1,6 @@
+2026-11-25 21:49:55 UTC  Runde 29  p025 (Elter p016, Insel B)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=710  (600 s)   [Selbstauskunft: ENDE best=710 it=1150464 t_best=411.6 t=600.0 bumps=515084 neustarts=2]
+  Startwert 2: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1127680 t_best=531.0 t=600.1 bumps=504624 neustarts=2]
+  Startwert 3: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1162496 t_best=351.9 t=600.1 bumps=519390 neustarts=3]
+  Startwert 4: offen=707  (600 s)   [Selbstauskunft: ENDE best=707 it=1169152 t_best=297.2 t=600.1 bumps=523701 neustarts=2]
+2026-11-25 21:59:56 UTC  Runde 29 fertig

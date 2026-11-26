@@ -1,0 +1,6 @@
+2026-11-25 21:28:54 UTC  Runde 27  p023 (Elter p016, Insel B)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=1310  (600 s)   [Selbstauskunft: ENDE best=1310 it=657920 t_best=1.8 t=600.2 bumps=181916 neustarts=18]
+  Startwert 2: offen=1310  (600 s)   [Selbstauskunft: ENDE best=1310 it=675328 t_best=1.4 t=600.0 bumps=186645 neustarts=18]
+  Startwert 3: offen=1310  (600 s)   [Selbstauskunft: ENDE best=1310 it=656384 t_best=3.1 t=600.0 bumps=181022 neustarts=18]
+  Startwert 4: offen=1310  (600 s)   [Selbstauskunft: ENDE best=1310 it=662784 t_best=3.0 t=600.2 bumps=182011 neustarts=18]
+2026-11-25 21:38:54 UTC  Runde 27 fertig

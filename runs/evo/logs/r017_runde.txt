@@ -1,0 +1,6 @@
+2026-11-25 19:54:29 UTC  Runde 17  p015 (Elter p013, Insel A)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=717  (600 s)   [Selbstauskunft: ENDE best=717 it=1121024 t_best=301.7 t=600.1 bumps=372531 neustarts=3]
+  Startwert 2: offen=732  (600 s)   [Selbstauskunft: ENDE best=732 it=1127168 t_best=331.5 t=600.1 bumps=372834 neustarts=3]
+  Startwert 3: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1143552 t_best=246.2 t=600.0 bumps=395927 neustarts=2]
+  Startwert 4: offen=722  (600 s)   [Selbstauskunft: ENDE best=722 it=1132800 t_best=86.1 t=600.1 bumps=364661 neustarts=4]
+2026-11-25 20:04:29 UTC  Runde 17 fertig

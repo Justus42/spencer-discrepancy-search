@@ -1,0 +1,5 @@
+Matrix runs/evo/out/r001_p001_m15R4k16_s1.txt: 16 x 15, aufgefuellt 16 x 16
+  check_disc      Diskrepanz 7  (0.2 s)
+  verify_spencer  Diskrepanz 7  (0.2 s)
+  exakt_disc      Diskrepanz 7  (0.2 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 7 (= erwartet)

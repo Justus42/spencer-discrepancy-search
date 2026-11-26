@@ -1,0 +1,31 @@
+Doppelungsform: 7 gekoppelte Paare, rechter Block 6 Spalten, 1 frei
+t=10 it=107264 offen=839 lokal=707 best=707 neustarts=0
+t=20 it=225792 offen=886 lokal=707 best=707 neustarts=0
+t=30 it=336896 offen=746 lokal=707 best=707 neustarts=1
+t=40 it=448512 offen=707 lokal=707 best=707 neustarts=1
+t=50 it=563968 offen=719 lokal=707 best=707 neustarts=1
+t=60 it=685824 offen=783 lokal=707 best=707 neustarts=2
+t=70 it=796672 offen=737 lokal=707 best=707 neustarts=2
+t=80 it=910336 offen=707 lokal=707 best=707 neustarts=2
+t=90 it=1026048 offen=806 lokal=707 best=707 neustarts=3
+t=100 it=1140992 offen=878 lokal=707 best=707 neustarts=3
+t=110 it=1255424 offen=737 lokal=707 best=707 neustarts=3
+t=120 it=1366272 offen=789 lokal=707 best=707 neustarts=4
+t=130 it=1478656 offen=818 lokal=707 best=707 neustarts=4
+t=140 it=1596672 offen=707 lokal=707 best=707 neustarts=4
+t=150 it=1713152 offen=831 lokal=707 best=707 neustarts=5
+t=160 it=1824256 offen=707 lokal=707 best=707 neustarts=5
+t=170 it=1935616 offen=962 lokal=707 best=707 neustarts=5
+t=180 it=2049792 offen=759 lokal=707 best=707 neustarts=6
+t=190 it=2162176 offen=752 lokal=707 best=707 neustarts=6
+t=200 it=2272000 offen=707 lokal=707 best=707 neustarts=6
+t=210 it=2378496 offen=707 lokal=707 best=707 neustarts=7
+t=220 it=2488832 offen=707 lokal=707 best=707 neustarts=7
+t=230 it=2604544 offen=948 lokal=707 best=707 neustarts=7
+t=240 it=2715648 offen=707 lokal=707 best=707 neustarts=8
+t=250 it=2824704 offen=784 lokal=707 best=707 neustarts=8
+t=260 it=2930432 offen=707 lokal=707 best=707 neustarts=8
+t=270 it=3040768 offen=817 lokal=707 best=707 neustarts=9
+t=280 it=3151872 offen=814 lokal=707 best=707 neustarts=9
+t=290 it=3259904 offen=906 lokal=707 best=707 neustarts=9
+ENDE best=707 it=3365632 t_best=0.0 t=300.0 bumps=735639 neustarts=9
