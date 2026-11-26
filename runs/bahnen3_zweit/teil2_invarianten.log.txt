@@ -1,0 +1,12 @@
+runs/bahnen3_zweit/klasse0_vertreter.txt I3: 39 Profile, Kennung 13eddbf49f43
+runs/bahnen3_zweit/klasse1_vertreter.txt I3: 44 Profile, Kennung 22f44cba115a
+runs/bahnen3_zweit/klasse2_vertreter.txt I3: 44 Profile, Kennung 22f44cba115a
+runs/bahnen3_zweit/klasse3_vertreter.txt I3: 42 Profile, Kennung b68fb9fd5238
+runs/bahnen3_zweit/klasse4_vertreter.txt I3: 42 Profile, Kennung b68fb9fd5238
+runs/bahnen3_zweit/klasse5_vertreter.txt I3: 39 Profile, Kennung 13eddbf49f43
+runs/bahnen3_zweit/klasse6_vertreter.txt I3: 40 Profile, Kennung 3339d98bc375
+runs/bahnen3_zweit/klasse7_vertreter.txt I3: 40 Profile, Kennung 3339d98bc375
+runs/bahnen3/teil4/kontrolle_T24_seed4_matrix.txt I3: 43 Profile, Kennung f76668ac989f
+controls/had24_1p3_paley12.txt I3: 39 Profile, Kennung 13eddbf49f43
+controls/had24_2p2_paley12.txt I3: 40 Profile, Kennung 3339d98bc375
+verschiedene Invariantenpaare: 6 von 11 Matrizen

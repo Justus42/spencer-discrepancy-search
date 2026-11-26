@@ -1,0 +1,33 @@
+Thu Nov 26 00:21:18 UTC 2026
+# Matrizen=20 Klassen=9
+# Klasse 0:
+# Klasse 1:
+# Klasse 2:
+# Klasse 3:
+# Klasse 4:
+# Klasse 5:
+# Klasse 6:
+# Klasse 7:
+# Klasse 8:
+0 0 576
+1 1 36
+2 2 36
+3 3 144
+4 4 144
+5 5 576
+6 6 576
+7 7 576
+8 0 576
+9 7 576
+10 8 24
+11 0 576
+12 0 576
+13 0 576
+14 0 576
+15 0 576
+16 0 576
+17 0 576
+18 0 576
+19 7 576
+Abbildungen geprueft: 20, richtig: 20 (Matrizen 20, Klassen 9)
+Thu Nov 26 00:21:19 UTC 2026
