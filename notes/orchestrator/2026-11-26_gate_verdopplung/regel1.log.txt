@@ -1,0 +1,9 @@
+# Regel 1 an vier geloesten Kontrollmatrizen der Sitzung; 2026-11-26 19:46:20 UTC
+src/check_disc.py: OK
+verifiers/verify_spencer.py: OK
+src/exakt_disc.c: OK
+src/evo_bewertung.c: OK
+0b_m19R6k16_s1: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 7
+0b_m17R5k16_s1: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 7
+0c_m22R7k24_s2: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+0c_m24R8k24_s1: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8

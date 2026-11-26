@@ -1,0 +1,23 @@
+# gate_v.py; 26.11.2026 19:45 UTC
+1. Ausgabedateien: 80 im Ordner, 80 im Log der Sitzung, gleiche Namen: True
+   eigener Zaehler = Archiv = Nachzaehlung der Sitzung: 80 von 80
+2. Bauregel
+   bauregel_24x22.txt: 24 x 22, R=7, offen 0
+   bauregel_24x24.txt: 24 x 24, R=8, offen 0
+3. je Zelle, Paarzahl, Block: Laeufe, davon 0 offen, kleinste, groesste Restzahl
+   (17,5) k=10 Block 1: 4 Laeufe, 0 mit 0, min 8952, max 8952
+   (17,5) k=14 Block 2: 8 Laeufe, 0 mit 0, min 1710, max 1710
+   (17,5) k=15 Block 2: 4 Laeufe, 0 mit 0, min 722, max 722
+   (17,5) k=16 Block 0b: 4 Laeufe, 4 mit 0, min 0, max 0
+   (19,6) k=10 Block 1: 4 Laeufe, 0 mit 0, min 26192, max 26192
+   (19,6) k=14 Block 2: 8 Laeufe, 0 mit 0, min 5312, max 5312
+   (19,6) k=15 Block 2: 4 Laeufe, 0 mit 0, min 2236, max 2236
+   (19,6) k=16 Block 0b: 4 Laeufe, 4 mit 0, min 0, max 0
+   (22,7) k=12 Block 1: 4 Laeufe, 0 mit 0, min 234512, max 234668
+   (22,7) k=22 Block 2: 8 Laeufe, 0 mit 0, min 648, max 736
+   (22,7) k=23 Block 2: 4 Laeufe, 0 mit 0, min 616, max 759
+   (22,7) k=24 Block 0c: 4 Laeufe, 4 mit 0, min 0, max 0
+   (24,8) k=12 Block 1: 4 Laeufe, 0 mit 0, min 732766, max 733510
+   (24,8) k=22 Block 2: 8 Laeufe, 0 mit 0, min 2064, max 3123
+   (24,8) k=23 Block 2: 4 Laeufe, 0 mit 0, min 2400, max 2471
+   (24,8) k=24 Block 0c: 4 Laeufe, 1 mit 0, min 0, max 568

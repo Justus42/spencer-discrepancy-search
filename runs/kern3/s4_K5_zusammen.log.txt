@@ -1,0 +1,70 @@
+14,3,1,0 S=7886 Bahnen=16 thr0=5676 KEINE knoten=6 blatt=0 zeit=0.04 c2_bahnen=6
+14,2,1,1 S=7886 Bahnen=23 thr0=5676 KEINE knoten=9 blatt=0 zeit=0.06 c2_bahnen=9
+13,4,1,0 S=7886 Bahnen=21 thr0=5676 KEINE knoten=7 blatt=0 zeit=0.04 c2_bahnen=7
+13,3,2,0 S=7886 Bahnen=28 thr0=4836 KEINE knoten=16 blatt=0 zeit=0.10 c2_bahnen=16
+13,3,1,1 S=7886 Bahnen=28 thr0=4836 KEINE knoten=16 blatt=0 zeit=0.10 c2_bahnen=16
+13,2,2,1 S=8601 Bahnen=28 thr0=3116 KEINE knoten=24 blatt=0 zeit=0.24 c2_bahnen=24
+12,5,1,0 S=8546 Bahnen=21 thr0=3846 KEINE knoten=15 blatt=0 zeit=0.14 c2_bahnen=15
+12,4,2,0 S=7886 Bahnen=42 thr0=3576 KEINE knoten=65 blatt=0 zeit=0.22 c2_bahnen=33
+12,4,1,1 S=8546 Bahnen=33 thr0=3846 KEINE knoten=24 blatt=0 zeit=0.15 c2_bahnen=24
+12,3,3,0 S=9041 Bahnen=21 thr0=2376 KEINE knoten=19 blatt=0 zeit=0.16 c2_bahnen=19
+12,3,2,1 S=9041 Bahnen=40 thr0=2376 KEINE knoten=36 blatt=0 zeit=0.26 c2_bahnen=36
+12,2,2,2 S=8601 Bahnen=34 thr0=1136 KEINE knoten=9183 blatt=0 zeit=2.90 c2_bahnen=33
+11,6,1,0 S=8546 Bahnen=24 thr0=3846 KEINE knoten=18 blatt=0 zeit=0.11 c2_bahnen=18
+11,5,2,0 S=8546 Bahnen=36 thr0=2766 KEINE knoten=371 blatt=0 zeit=0.27 c2_bahnen=35
+11,5,1,1 S=8546 Bahnen=36 thr0=2766 KEINE knoten=371 blatt=0 zeit=0.31 c2_bahnen=35
+11,4,3,0 S=9041 Bahnen=36 thr0=2046 KEINE knoten=1925 blatt=0 zeit=0.70 c2_bahnen=35
+11,4,2,1 S=9536 Bahnen=48 thr0=726 KEINE knoten=53074 blatt=0 zeit=44.30 c2_bahnen=47
+11,3,3,1 S=9041 Bahnen=36 thr0=1086 KEINE knoten=25929 blatt=0 zeit=25.23 c2_bahnen=35
+11,3,2,2 S=9536 Bahnen=48 thr0=366 ZEITGRENZE knoten=64768 blatt=0 zeit=60.17 c2_fertig=27 von 28
+10,7,1,0 S=8870 Bahnen=24 thr0=3108 KEINE knoten=23 blatt=0 zeit=0.18 c2_bahnen=23
+10,6,2,0 S=8420 Bahnen=48 thr0=1854 KEINE knoten=3814 blatt=0 zeit=2.06 c2_bahnen=47
+10,6,1,1 S=8996 Bahnen=39 thr0=2640 KEINE knoten=38 blatt=0 zeit=0.39 c2_bahnen=38
+10,5,3,0 S=9680 Bahnen=36 thr0=624 ZEITGRENZE knoten=52736 blatt=0 zeit=60.06 c2_fertig=18 von 19
+10,5,2,1 S=9806 Bahnen=51 thr0=276 ZEITGRENZE knoten=46080 blatt=0 zeit=60.13 c2_fertig=16 von 17
+10,4,4,0 S=8915 Bahnen=36 thr0=774 KEINE knoten=27718 blatt=0 zeit=17.84 c2_bahnen=35
+10,4,3,1 S=9806 Bahnen=56 thr0=276 ZEITGRENZE knoten=43776 blatt=0 zeit=60.10 c2_fertig=16 von 17
+10,4,2,2 S=9536 Bahnen=64 thr0=-1464 ZEITGRENZE knoten=39936 blatt=0 zeit=60.18 c2_fertig=27 von 28
+10,3,3,2 S=10166 Bahnen=51 thr0=-804 ZEITGRENZE knoten=30208 blatt=0 zeit=60.02 c2_fertig=14 von 15
+9,8,1,0 S=8870 Bahnen=25 thr0=3108 KEINE knoten=24 blatt=0 zeit=0.24 c2_bahnen=24
+9,7,2,0 S=8870 Bahnen=40 thr0=1764 KEINE knoten=12134 blatt=0 zeit=7.17 c2_bahnen=39
+9,7,1,1 S=8870 Bahnen=40 thr0=1764 KEINE knoten=12134 blatt=0 zeit=7.29 c2_bahnen=39
+9,6,3,0 S=9680 Bahnen=40 thr0=444 ZEITGRENZE knoten=52480 blatt=0 zeit=60.02 c2_fertig=17 von 18
+9,6,2,1 S=10040 Bahnen=55 thr0=-456 ZEITGRENZE knoten=37120 blatt=0 zeit=60.70 c2_fertig=14 von 15
+9,5,4,0 S=9680 Bahnen=45 thr0=360 ZEITGRENZE knoten=46848 blatt=0 zeit=60.65 c2_fertig=15 von 16
+9,5,3,1 S=9680 Bahnen=60 thr0=-816 ZEITGRENZE knoten=36352 blatt=0 zeit=60.25 c2_fertig=19 von 20
+9,5,2,2 S=10166 Bahnen=60 thr0=-1344 ZEITGRENZE knoten=31744 blatt=0 zeit=60.61 c2_fertig=14 von 15
+9,4,4,1 S=10364 Bahnen=45 thr0=-1224 ZEITGRENZE knoten=29184 blatt=0 zeit=60.28 c2_fertig=12 von 13
+9,4,3,2 S=10490 Bahnen=80 thr0=-1956 ZEITGRENZE knoten=36864 blatt=0 zeit=60.23 c2_fertig=18 von 19
+9,3,3,3 S=10166 Bahnen=40 thr0=-2424 ZEITGRENZE knoten=35840 blatt=7557 zeit=60.56 c2_fertig=14 von 15
+8,8,2,0 S=8590 Bahnen=30 thr0=1300 KEINE knoten=11611 blatt=0 zeit=5.75 c2_bahnen=29
+8,8,1,1 S=9150 Bahnen=25 thr0=2324 KEINE knoten=24 blatt=0 zeit=0.26 c2_bahnen=24
+8,7,3,0 S=9885 Bahnen=40 thr0=38 ZEITGRENZE knoten=34304 blatt=0 zeit=60.52 c2_fertig=11 von 12
+8,7,2,1 S=10130 Bahnen=56 thr0=-612 ZEITGRENZE knoten=34304 blatt=0 zeit=60.15 c2_fertig=13 von 14
+8,6,4,0 S=9365 Bahnen=60 thr0=-426 ZEITGRENZE knoten=44544 blatt=0 zeit=60.52 c2_fertig=28 von 29
+8,6,3,1 S=10200 Bahnen=64 thr0=-784 ZEITGRENZE knoten=35328 blatt=0 zeit=60.17 c2_fertig=15 von 16
+8,6,2,2 S=9970 Bahnen=72 thr0=-2684 ZEITGRENZE knoten=35584 blatt=0 zeit=60.08 c2_fertig=26 von 27
+8,5,5,0 S=10193 Bahnen=30 thr0=-690 ZEITGRENZE knoten=24576 blatt=0 zeit=60.66 c2_fertig=8 von 9
+8,5,4,1 S=10508 Bahnen=69 thr0=-1512 ZEITGRENZE knoten=34816 blatt=0 zeit=60.47 c2_fertig=15 von 16
+8,5,3,2 S=10788 Bahnen=84 thr0=-2440 ZEITGRENZE knoten=37888 blatt=0 zeit=60.72 c2_fertig=18 von 19
+8,4,4,2 S=10364 Bahnen=72 thr0=-3768 ZEITGRENZE knoten=273664 blatt=238014 zeit=60.37 c2_fertig=25 von 26
+8,4,3,3 S=10914 Bahnen=69 thr0=-2788 ZEITGRENZE knoten=46080 blatt=13214 zeit=60.64 c2_fertig=15 von 16
+7,7,4,0 S=9885 Bahnen=30 thr0=-142 ZEITGRENZE knoten=31232 blatt=0 zeit=60.96 c2_fertig=10 von 11
+7,7,3,1 S=9885 Bahnen=40 thr0=-1414 ZEITGRENZE knoten=31744 blatt=0 zeit=60.04 c2_fertig=14 von 15
+7,7,2,2 S=10375 Bahnen=40 thr0=-1874 ZEITGRENZE knoten=29440 blatt=0 zeit=60.27 c2_fertig=11 von 12
+7,6,5,0 S=10193 Bahnen=48 thr0=-762 ZEITGRENZE knoten=31744 blatt=0 zeit=60.46 c2_fertig=11 von 12
+7,6,4,1 S=10683 Bahnen=72 thr0=-1942 ZEITGRENZE knoten=37120 blatt=0 zeit=60.64 c2_fertig=15 von 16
+7,6,3,2 S=10893 Bahnen=88 thr0=-2764 ZEITGRENZE knoten=41472 blatt=0 zeit=60.34 c2_fertig=19 von 20
+7,5,5,1 S=10193 Bahnen=48 thr0=-2274 ZEITGRENZE knoten=42240 blatt=10994 zeit=60.00 c2_fertig=14 von 15
+7,5,4,2 S=10998 Bahnen=96 thr0=-3292 ZEITGRENZE knoten=131072 blatt=91753 zeit=60.56 c2_fertig=19 von 20
+7,5,3,3 S=10683 Bahnen=72 thr0=-3922 ZEITGRENZE knoten=1193728 blatt=1159654 zeit=60.13 c2_fertig=21 von 22
+7,4,4,3 S=11250 Bahnen=72 thr0=-3772 ZEITGRENZE knoten=543488 blatt=505762 zeit=60.25 c2_fertig=16 von 17
+6,6,6,0 S=9643 Bahnen=20 thr0=-1052 ZEITGRENZE knoten=31488 blatt=0 zeit=62.50 c2_fertig=12 von 13
+6,6,5,1 S=10743 Bahnen=48 thr0=-2092 ZEITGRENZE knoten=31488 blatt=0 zeit=60.17 c2_fertig=11 von 12
+6,6,4,2 S=10623 Bahnen=72 thr0=-4492 ZEITGRENZE knoten=1163776 blatt=1127530 zeit=60.01 c2_fertig=26 von 27
+6,6,3,3 S=11163 Bahnen=48 thr0=-3412 ZEITGRENZE knoten=88064 blatt=60034 zeit=60.13 c2_fertig=12 von 13
+6,5,5,2 S=11193 Bahnen=66 thr0=-3568 ZEITGRENZE knoten=134400 blatt=98164 zeit=60.08 c2_fertig=15 von 16
+6,5,4,3 S=11388 Bahnen=108 thr0=-4042 ZEITGRENZE knoten=1325568 blatt=1289329 zeit=60.36 c2_fertig=18 von 19
+6,4,4,4 S=11010 Bahnen=52 thr0=-5692 ZEITGRENZE knoten=2664704 blatt=2647334 zeit=60.01 c2_fertig=16 von 17
+5,5,5,3 S=10993 Bahnen=40 thr0=-4832 ZEITGRENZE knoten=2041344 blatt=2025195 zeit=60.00 c2_fertig=12 von 13
+5,5,4,4 S=11558 Bahnen=54 thr0=-4596 ZEITGRENZE knoten=2961408 blatt=2935241 zeit=60.36 c2_fertig=11 von 12

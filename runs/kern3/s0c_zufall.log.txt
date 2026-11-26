@@ -1,0 +1,21 @@
+Z00 Typ=(4, 4, 4, 4) K=3 offen: direkt=23424 nebenklassen=23424 suchcode=23424 OK
+Z01 Typ=(5, 4, 4, 3) K=7 offen: direkt=5824 nebenklassen=5824 suchcode=5824 OK
+Z02 Typ=(5, 5, 3, 3) K=2 offen: direkt=33472 nebenklassen=33472 suchcode=33472 OK
+Z03 Typ=(6, 5, 3, 2) K=6 offen: direkt=7984 nebenklassen=7984 suchcode=7984 OK
+Z04 Typ=(8, 3, 3, 2) K=4 offen: direkt=19824 nebenklassen=19824 suchcode=19824 OK
+Z05 Typ=(7, 7, 1, 1) K=7 offen: direkt=11680 nebenklassen=11680 suchcode=11680 OK
+Z06 Typ=(9, 6, 1, 0) K=4 offen: direkt=23648 nebenklassen=23648 suchcode=23648 OK
+Z07 Typ=(10, 3, 3, 0) K=8 offen: direkt=6328 nebenklassen=6328 suchcode=6328 OK
+Z08 Typ=(6, 6, 4, 0) K=3 offen: direkt=29736 nebenklassen=29736 suchcode=29736 OK
+Z09 Typ=(8, 4, 2, 2) K=3 offen: direkt=29040 nebenklassen=29040 suchcode=29040 OK
+Z10 Typ=(12, 2, 2, 0) K=6 offen: direkt=20136 nebenklassen=20136 suchcode=20136 OK
+Z11 Typ=(14, 1, 1, 0) K=1 offen: direkt=53768 nebenklassen=53768 suchcode=53768 OK
+Z12 Typ=(4, 4, 4, 4) K=8 offen: direkt=5664 nebenklassen=5664 suchcode=5664 OK
+Z13 Typ=(5, 4, 4, 3) K=3 offen: direkt=23248 nebenklassen=23248 suchcode=23248 OK
+Z14 Typ=(5, 5, 3, 3) K=3 offen: direkt=28608 nebenklassen=28608 suchcode=28608 OK
+Z15 Typ=(6, 5, 3, 2) K=5 offen: direkt=11936 nebenklassen=11936 suchcode=11936 OK
+Z16 Typ=(8, 3, 3, 2) K=7 offen: direkt=7120 nebenklassen=7120 suchcode=7120 OK
+Z17 Typ=(7, 7, 1, 1) K=4 offen: direkt=22416 nebenklassen=22416 suchcode=22416 OK
+Z18 Typ=(9, 6, 1, 0) K=3 offen: direkt=32240 nebenklassen=32240 suchcode=32240 OK
+Z19 Typ=(10, 3, 3, 0) K=8 offen: direkt=5976 nebenklassen=5976 suchcode=5976 OK
+ABWEICHUNGEN 0 von 20

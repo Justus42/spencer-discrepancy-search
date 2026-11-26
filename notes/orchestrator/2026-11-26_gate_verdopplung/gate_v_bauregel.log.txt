@@ -1,0 +1,24 @@
+# gate_v_bauregel.py; 26.11.2026 19:45 bis 19:46 UTC
+1. Bauregel: geloeste Matrix ohne 1 Zeile / ohne 2 Zeilen, kleinste Zahl offener Klassen
+   (19,6) 0b_m19R6k16_s1.txt: ohne 1 Zeile min 2236, ohne 2 Zeilen min 5312
+   (19,6) 0b_m19R6k16_s2.txt: ohne 1 Zeile min 2236, ohne 2 Zeilen min 5312
+   (19,6) 0b_m19R6k16_s3.txt: ohne 1 Zeile min 2589, ohne 2 Zeilen min 5862
+   (19,6) 0b_m19R6k16_s4.txt: ohne 1 Zeile min 2236, ohne 2 Zeilen min 5312
+   (17,5) 0b_m17R5k16_s1.txt: ohne 1 Zeile min 722, ohne 2 Zeilen min 1710
+   (17,5) 0b_m17R5k16_s2.txt: ohne 1 Zeile min 722, ohne 2 Zeilen min 1710
+   (17,5) 0b_m17R5k16_s3.txt: ohne 1 Zeile min 853, ohne 2 Zeilen min 1928
+   (17,5) 0b_m17R5k16_s4.txt: ohne 1 Zeile min 722, ohne 2 Zeilen min 1710
+   (22,7) 0c_m22R7k24_s1.txt: ohne 1 Zeile min 2178, ohne 2 Zeilen min 5537
+   (22,7) 0c_m22R7k24_s2.txt: ohne 1 Zeile min 2073, ohne 2 Zeilen min 5296
+   (22,7) 0c_m22R7k24_s3.txt: ohne 1 Zeile min 2289, ohne 2 Zeilen min 5736
+   (22,7) 0c_m22R7k24_s4.txt: ohne 1 Zeile min 2087, ohne 2 Zeilen min 5357
+   (22,7) bauregel_24x22.txt: ohne 1 Zeile min 3911, ohne 2 Zeilen min 9222
+   (24,8) 0c_m24R8k24_s1.txt: ohne 1 Zeile min 5478, ohne 2 Zeilen min 14119
+   (24,8) bauregel_24x24.txt: ohne 1 Zeile min 11794, ohne 2 Zeilen min 27860
+2. Ausgaben verschiedener Startwerte: verschiedene Dateiinhalte / verschiedene Zeilenmengen bis auf Vorzeichen und Reihenfolge
+   2_m19R6k15: 4 Dateien, 4 verschiedene Inhalte, 4 verschiedene Zeilenmengen
+   2_m19R6k14: 8 Dateien, 8 verschiedene Inhalte, 8 verschiedene Zeilenmengen
+   2_m17R5k15: 4 Dateien, 4 verschiedene Inhalte, 4 verschiedene Zeilenmengen
+   2_m17R5k14: 8 Dateien, 8 verschiedene Inhalte, 8 verschiedene Zeilenmengen
+   1_m19R6k10: 4 Dateien, 4 verschiedene Inhalte, 4 verschiedene Zeilenmengen
+   1_m17R5k10: 4 Dateien, 4 verschiedene Inhalte, 4 verschiedene Zeilenmengen

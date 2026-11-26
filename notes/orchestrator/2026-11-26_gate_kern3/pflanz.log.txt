@@ -1,0 +1,16 @@
+# pflanz.py auf den fuenf lsw-Loesungen der Sitzung (K = 8), r = 3; 26.11.2026 19:33 UTC
+s0d_K8lsw_4-4-4-4.matrix.txt: 64 Woerter, Kern 8 Elemente, 8 Klassen
+Typ (4,4,4,4) m=16 R=4: |S|=2310; vorgegebene 8 Klassen: offen 0; ohne die letzten 3: offen 970; Suche nach 3 neuen: GEFUNDEN, 66714 Knoten, 0.2 s
+  gefundene Ergaenzung deckt: offen 0
+s0d_K8lsw_5-4-4-3.matrix.txt: 64 Woerter, Kern 8 Elemente, 8 Klassen
+Typ (5,4,4,3) m=16 R=4: |S|=2378; vorgegebene 8 Klassen: offen 0; ohne die letzten 3: offen 981; Suche nach 3 neuen: GEFUNDEN, 3 Knoten, 0.0 s
+  gefundene Ergaenzung deckt: offen 0
+s0d_K8lsw_5-5-3-3.matrix.txt: 64 Woerter, Kern 8 Elemente, 8 Klassen
+Typ (5,5,3,3) m=16 R=4: |S|=2262; vorgegebene 8 Klassen: offen 0; ohne die letzten 3: offen 1089; Suche nach 3 neuen: GEFUNDEN, 17536 Knoten, 0.1 s
+  gefundene Ergaenzung deckt: offen 0
+s0d_K8lsw_6-5-3-2.matrix.txt: 64 Woerter, Kern 8 Elemente, 8 Klassen
+Typ (6,5,3,2) m=16 R=4: |S|=2292; vorgegebene 8 Klassen: offen 0; ohne die letzten 3: offen 1145; Suche nach 3 neuen: GEFUNDEN, 609 Knoten, 0.0 s
+  gefundene Ergaenzung deckt: offen 0
+s0d_K8lsw_8-3-3-2.matrix.txt: 64 Woerter, Kern 8 Elemente, 8 Klassen
+Typ (8,3,3,2) m=16 R=4: |S|=2186; vorgegebene 8 Klassen: offen 0; ohne die letzten 3: offen 1061; Suche nach 3 neuen: GEFUNDEN, 3 Knoten, 0.0 s
+  gefundene Ergaenzung deckt: offen 0

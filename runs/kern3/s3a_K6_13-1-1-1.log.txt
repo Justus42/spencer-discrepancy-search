@@ -1,0 +1,4 @@
+START 18:27:11 dfs m=16 R=4 Typ=13,1,1,1 K=6 SEK=30 SEED=1
+INFO |S| = 1471, Q = 8192, Bahnen = 14, offen nach c_1 = 6721, Summe der 5 groessten g = 6655, Schwelle = 1397
+ERGEBNIS KEINE (Wurzelschranke) knoten=0 zeit=0.00
+ENDE 18:27:11

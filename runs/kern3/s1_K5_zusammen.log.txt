@@ -1,0 +1,44 @@
+10-3-2-1 S=1946 Bahnen=34 thr0=1308 KEINE knoten=17 blatt=0 zeit=0.01 c2_bahnen=17
+10-3-3-0 S=1946 Bahnen=18 thr0=1308 KEINE knoten=9 blatt=0 zeit=0.00 c2_bahnen=9
+10-4-1-1 S=1826 Bahnen=28 thr0=1668 KEINE (Wurzelschranke) knoten=0 zeit=0.00
+10-5-1-0 S=1826 Bahnen=18 thr0=1668 KEINE (Wurzelschranke) knoten=0 zeit=0.00
+11-4-1-0 S=1691 Bahnen=18 thr0=2088 KEINE (Wurzelschranke) knoten=0 zeit=0.00
+12-3-1-0 S=1691 Bahnen=14 thr0=2088 KEINE (Wurzelschranke) knoten=0 zeit=0.00
+4-4-4-4 S=2310 Bahnen=20 thr0=-244 KEINE knoten=18460 blatt=112 zeit=2.08 c2_bahnen=19
+5-4-4-3 S=2378 Bahnen=54 thr0=-108 KEINE knoten=58573 blatt=0 zeit=6.72 c2_bahnen=53
+5-5-3-3 S=2262 Bahnen=36 thr0=-70 KEINE knoten=22151 blatt=0 zeit=2.04 c2_bahnen=35
+5-5-4-2 S=2322 Bahnen=48 thr0=50 KEINE knoten=33961 blatt=0 zeit=2.22 c2_bahnen=47
+5-5-5-1 S=2142 Bahnen=20 thr0=374 KEINE knoten=2798 blatt=0 zeit=0.15 c2_bahnen=19
+6-4-3-3 S=2327 Bahnen=54 thr0=60 KEINE knoten=38624 blatt=0 zeit=2.68 c2_bahnen=53
+6-4-4-2 S=2214 Bahnen=57 thr0=44 KEINE knoten=21401 blatt=0 zeit=1.64 c2_bahnen=56
+6-5-3-2 S=2292 Bahnen=66 thr0=188 KEINE knoten=26000 blatt=0 zeit=1.19 c2_bahnen=65
+6-5-4-1 S=2232 Bahnen=54 thr0=392 KEINE knoten=4589 blatt=0 zeit=0.09 c2_bahnen=53
+6-5-5-0 S=2142 Bahnen=24 thr0=698 KEINE knoten=95 blatt=0 zeit=0.01 c2_bahnen=23
+6-6-2-2 S=2117 Bahnen=36 thr0=360 KEINE knoten=4397 blatt=0 zeit=0.14 c2_bahnen=35
+6-6-3-1 S=2157 Bahnen=32 thr0=620 KEINE knoten=359 blatt=0 zeit=0.01 c2_bahnen=31
+6-6-4-0 S=1977 Bahnen=30 thr0=902 KEINE knoten=77 blatt=0 zeit=0.01 c2_bahnen=27
+7-3-3-3 S=2186 Bahnen=32 thr0=204 KEINE knoten=7939 blatt=0 zeit=0.61 c2_bahnen=31
+7-4-3-2 S=2249 Bahnen=64 thr0=294 KEINE knoten=11534 blatt=0 zeit=0.29 c2_bahnen=63
+7-4-4-1 S=2214 Bahnen=36 thr0=452 KEINE knoten=1171 blatt=0 zeit=0.03 c2_bahnen=35
+7-5-2-2 S=2172 Bahnen=48 thr0=470 KEINE knoten=2241 blatt=0 zeit=0.05 c2_bahnen=47
+7-5-3-1 S=2067 Bahnen=48 thr0=638 KEINE knoten=1407 blatt=0 zeit=0.04 c2_bahnen=46
+7-5-4-0 S=2067 Bahnen=36 thr0=866 KEINE knoten=50 blatt=0 zeit=0.02 c2_bahnen=30
+7-6-2-1 S=2137 Bahnen=44 thr0=688 KEINE knoten=149 blatt=0 zeit=0.02 c2_bahnen=41
+7-6-3-0 S=2067 Bahnen=32 thr0=926 KEINE knoten=27 blatt=0 zeit=0.01 c2_bahnen=27
+7-7-1-1 S=1871 Bahnen=20 thr0=1326 KEINE knoten=7 blatt=0 zeit=0.00 c2_bahnen=7
+7-7-2-0 S=1871 Bahnen=20 thr0=1326 KEINE knoten=7 blatt=0 zeit=0.00 c2_bahnen=7
+8-3-3-2 S=2186 Bahnen=42 thr0=540 KEINE knoten=377 blatt=0 zeit=0.02 c2_bahnen=41
+8-4-2-2 S=2054 Bahnen=53 thr0=534 KEINE knoten=1819 blatt=0 zeit=0.04 c2_bahnen=51
+8-4-3-1 S=2102 Bahnen=46 thr0=804 KEINE knoten=48 blatt=0 zeit=0.01 c2_bahnen=40
+8-4-4-0 S=1911 Bahnen=30 thr0=1070 KEINE knoten=21 blatt=0 zeit=0.01 c2_bahnen=21
+8-5-2-1 S=2102 Bahnen=42 thr0=804 KEINE knoten=37 blatt=0 zeit=0.01 c2_bahnen=37
+8-5-3-0 S=2067 Bahnen=30 thr0=938 KEINE knoten=24 blatt=0 zeit=0.01 c2_bahnen=24
+8-6-1-1 S=1906 Bahnen=32 thr0=1396 KEINE knoten=8 blatt=0 zeit=0.00 c2_bahnen=8
+8-7-1-0 S=1871 Bahnen=20 thr0=1530 KEINE knoten=1 blatt=0 zeit=0.00 c2_bahnen=1
+9-3-2-2 S=2054 Bahnen=40 thr0=864 KEINE knoten=33 blatt=0 zeit=0.01 c2_bahnen=33
+9-3-3-1 S=1946 Bahnen=30 thr0=1068 KEINE knoten=21 blatt=0 zeit=0.01 c2_bahnen=21
+9-4-2-1 S=2054 Bahnen=40 thr0=924 KEINE knoten=33 blatt=0 zeit=0.01 c2_bahnen=33
+9-4-3-0 S=1946 Bahnen=30 thr0=1260 KEINE knoten=13 blatt=0 zeit=0.00 c2_bahnen=13
+9-5-1-1 S=1826 Bahnen=30 thr0=1488 KEINE knoten=4 blatt=0 zeit=0.00 c2_bahnen=4
+9-5-2-0 S=1826 Bahnen=30 thr0=1488 KEINE knoten=4 blatt=0 zeit=0.00 c2_bahnen=4
+9-6-1-0 S=1826 Bahnen=20 thr0=1668 KEINE (Wurzelschranke) knoten=0 zeit=0.00
