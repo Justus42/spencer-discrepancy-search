@@ -1,0 +1,3 @@
+6,4,4,4 ERGEBNIS ZEITGRENZE knoten=7676416 blatt=7622841 zeit=300.28 c2_fertig=22 von 23
+5,5,5,3 ERGEBNIS ZEITGRENZE knoten=7614720 blatt=7574337 zeit=300.30 c2_fertig=16 von 17
+5,5,4,4 ERGEBNIS ZEITGRENZE knoten=6132992 blatt=6068192 zeit=301.01 c2_fertig=17 von 18
