@@ -70,3 +70,14 @@ Auch der Tabellenwert 64 wird in keinem Typ erreicht (wie die alte Nebenklassen-
   von 524 288); Startwerte 5, 7, 8: Restzahl 576 / 576 / 320. Gleich dem Tabellenwert 64 (kein Fortschritt; Auftrag: Prüfung mit Matrix erst ab 4K < 64).
 - K = 15 (60 Wörter), Startwerte 1–4, je 900 s (00:23–00:38 UTC): 0 von 4, Restzahl 3633 / 3600 / 3343 / 3343.
 - K = 15, Startwerte 5–8, je 900 s (00:38–00:53 UTC): 0 von 4, Restzahl 3642 / 3600 / 3600 / 3600. Zelle (21,6) abgeschlossen: kleinstes erreichtes K = 16 (64 Wörter, nur im Typ (12,9), 1 von 8 Läufen bei 900 s), K = 15 in 8 Startwerten nicht.
+
+## Schritt 2: Leiter (19,5), d = 9, 4 Startwerte je Stufe, ≤ 300 s (00:54–01:14 UTC), Logs `runs/leiter_n/s2c19-5_k16_t<m1>-<m2>*`
+
+| Typ | K = 16 (64 Wörter) | beste Restzahl der vier Startwerte (von 2^(m1+m2−2) = 131 072) |
+|---|---|---|
+| (10,9) | 0 von 4 | 1280 (alle vier) |
+| (11,8) | 0 von 4 | 1344 / 1648 / 1760 / 1792 |
+| (12,7) | 0 von 4 | 1344 / 1472 / 1648 / 1664 |
+| (13,6) | 0 von 4 | 1856 / 1856 / 1856 / 1912 |
+
+Tabellenwert 64 in keinem Typ erreicht; es gibt kein „kleinstes erreichtes K“.
