@@ -19,3 +19,14 @@ import Ueberdeckung
 #print axioms Ueberdeckung.Had24_2p2.radius6
 #print axioms Ueberdeckung.Had24_2p2.hauptsatz
 #print axioms Ueberdeckung.Had24_2p2.nicht_radius5
+#print axioms Ueberdeckung.C18_5_50w.form
+#print axioms Ueberdeckung.C18_5_50w.anzahl_woerter
+#print axioms Ueberdeckung.C18_5_50w.radius5
+#print axioms Ueberdeckung.C18_5_50w.hauptsatz
+#print axioms Ueberdeckung.C18_5_50w.nicht_radius4
+#print axioms Ueberdeckung.C18_5_52w.form
+#print axioms Ueberdeckung.C18_5_52w.anzahl_woerter
+#print axioms Ueberdeckung.C18_5_52w.radius5
+#print axioms Ueberdeckung.C18_5_52w.hauptsatz
+#print axioms Ueberdeckung.C18_5_52w.nicht_radius4
+#print axioms Ueberdeckung.C18_5_50w_ohne24.nicht_radius5
