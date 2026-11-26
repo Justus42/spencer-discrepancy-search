@@ -1,0 +1,35 @@
+Thu Nov 26 09:22:55 CET 2026
+  ok     Kern/C18_5_50w/Teil7            23.2 s 
+  ok     Kern/C18_5_50w/Teil8            21.9 s 
+  ok     Kern/C18_5_50w/Teil9            21.5 s 
+  ok     Kern/C18_5_50w/Teil10           23.2 s 
+  ok     Kern/C18_5_50w/Teil11           23.1 s 
+  ok     Kern/C18_5_50w/Teil12           22.5 s 
+  ok     Kern/C18_5_50w/Teil13           21.7 s 
+  ok     Kern/C18_5_50w/Teil14           24.1 s 
+  ok     Kern/C18_5_50w/Teil15           24.7 s 
+  ok     Kern/Swar18/Teil0               14.9 s 
+  ok     Kern/Swar18/Teil1               14.9 s 
+  ok     Kern/Swar18/Teil2               14.3 s 
+  ok     Kern/Swar18/Teil3               14.5 s 
+  ok     Kern/Swar18/Teil4               13.5 s 
+  ok     Kern/Swar18/Teil5               14.3 s 
+  ok     Kern/Swar18/Teil6               15.1 s 
+  ok     Kern/Swar18/Teil7               14.9 s 
+  ok     Kern/Swar18/Teil8               14.9 s 
+  ok     Kern/Swar18/Teil9               14.6 s 
+  ok     Kern/Swar18/Teil10              13.8 s 
+  ok     Kern/Swar18/Teil11              14.9 s 
+  ok     Kern/Swar18/Teil12              14.0 s 
+  ok     Kern/Swar18/Teil13              13.3 s 
+  ok     Kern/Swar18/Teil14              13.6 s 
+  ok     Kern/Swar18/Teil15              13.8 s 
+  ok     Kern/Swar18                      0.4 s 
+  ok     Kern/C18_5_50w                   0.5 s 
+Stufe C18_5_50w fertig, 306.5 s Wand, Ende 08:28:02 UTC
+
+real	5m6.587s
+user	8m31.636s
+sys	1m22.286s
+Rueckgabe: 0
+Thu Nov 26 09:28:02 CET 2026

@@ -16,6 +16,24 @@ keine eigenen Axiome. Zwei unabhängige Wege: `native_decide` (Compiler) und `de
 
 `#print axioms`: Kernel-Fassung nur `propext`, `Quot.sound`; native Fassung zusätzlich das Hilfsaxiom von `native_decide`.
 
+## Ergebnis Auftrag LZ (26.11.2026, Cloud, 4 Kerne, Protokoll `notes/laeufe/2026-11-26_lean_18_5.md`): K(18,5) ≤ 50 und ≤ 52
+
+Eingaben `controls/c18_5_50w.txt` (25 x 18, Gate N) und `controls/c18_5_52w.txt` (26 x 18, Auftrag N), Herkunft in `controls/QUELLEN.md`.
+Sätze wie bei `Had24_1p3` (`form`, `anzahl_woerter`, `woerter_eq`, `radius5`, `hauptsatz`, `nicht_radius4`); Kernel-Fassung mit `Kern.Swar18`.
+
+| Datensatz | Wörter | angenommen | abgelehnt | native_decide (lake build) | decide +kernel |
+|---|---|---|---|---|---|
+| `C18_5_50w` | 50 | Radius 5 | Radius 4 | 31 s | 132 s (4 Prozesse, enthält `Swar18`) |
+| `C18_5_52w` | 52 | Radius 5 | Radius 4 | 32 s | 90 s (`Swar18` übernommen) |
+| `C18_5_50w_ohne24` (50er ohne die freie Zeile 24) | 48 | — | Radius 5 | 3,4 s | 0,5 s (mit Zeuge, s. u.) |
+
+Gesamtbau `lake build` aller Stufen 33 s (nur die neuen Dateien neu). `#print axioms`: Kernel-Fassung nur `propext`, `Quot.sound`; native Fassung zusätzlich das Hilfsaxiom von `native_decide`.
+Vortest (numpy): 50er und 52er Radius 5; der 50er ohne Zeile 24 hat genau 4 offene Punkte (55992, 56135, 206008, 206151).
+
+Abweichung in der Kernel-Fassung der Negativkontrolle `C18_5_50w_ohne24`: `pruefe` besucht die Punkte in Bitumkehr-Reihenfolge, der erste offene Punkt liegt an Rang 29 843, das ginge im Kernel nicht
+(Speicher, siehe oben). `erzeuge_kern.py` erzeugt deshalb für diesen Datensatz einen Zeugen: `nahe 18 5 55992 woerter = false` (Kernel), daraus `nicht_radius5_kern` mit `nahe_iff`. Die Aussage ist dieselbe.
+Der Zeuge ist ein Vorschlag aus der Vorrechnung, Lean prüft ihn (und lehnt ihn beim 50er ab). Grenzen wie oben; zusätzlich: die Übersetzung Überdeckung → Diskrepanz 8 ist nicht formalisiert.
+
 ## Was bewiesen wird
 
 `Ueberdeckung/Basis.lean` (von Hand, kurz, lesen!):
@@ -77,6 +95,9 @@ python3 -I pruefe_kern.py Ctrl16 4            # ca. 20 s
 python3 -I pruefe_kern.py Had24_1p3 4         # ca. 10 Min. (enthält den SWAR-Nachweis für 2^20)
 python3 -I pruefe_kern.py Had24_2p2 4         # ca. 5 Min. (SWAR-Nachweis schon gebaut)
 python3 -I pruefe_kern.py Had24_1p3_ohne0 4
+python3 -I pruefe_kern.py C18_5_50w 4          # ca. 2 Min. (enthält Swar18)
+python3 -I pruefe_kern.py C18_5_52w 4          # ca. 1,5 Min.
+python3 -I pruefe_kern.py C18_5_50w_ohne24 4   # unter 1 s
 lake env lean AchsenKern.lean   # #print axioms der Kernel-Sätze
 ```
 

@@ -1,0 +1,21 @@
+import Ueberdeckung.Saetze.C18_5_50w
+import Ueberdeckung.Saetze.C18_5_52w
+import Ueberdeckung.Saetze.C18_5_50w_ohne24
+import Kern.C18_5_50w
+import Kern.C18_5_50w_ohne24
+import Kern.C18_5_52w
+#check @Ueberdeckung.C18_5_50w.hauptsatz_kern
+#check @Ueberdeckung.C18_5_52w.hauptsatz_kern
+#check @Ueberdeckung.C18_5_50w_ohne24.nicht_radius5_kern
+#print axioms Ueberdeckung.C18_5_50w.form
+#print axioms Ueberdeckung.C18_5_50w.anzahl_woerter
+#print axioms Ueberdeckung.C18_5_50w.hauptsatz
+#print axioms Ueberdeckung.C18_5_50w.nicht_radius4
+#print axioms Ueberdeckung.C18_5_50w.hauptsatz_kern
+#print axioms Ueberdeckung.C18_5_50w.nicht_radius4_kern
+#print axioms Ueberdeckung.C18_5_52w.hauptsatz
+#print axioms Ueberdeckung.C18_5_52w.hauptsatz_kern
+#print axioms Ueberdeckung.C18_5_52w.nicht_radius4_kern
+#print axioms Ueberdeckung.C18_5_50w_ohne24.nicht_radius5
+#print axioms Ueberdeckung.C18_5_50w_ohne24.nicht_radius5_kern
+#print axioms Ueberdeckung.Kern.Swar18.swar_ok
