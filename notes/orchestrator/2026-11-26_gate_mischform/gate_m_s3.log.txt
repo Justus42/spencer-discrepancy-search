@@ -1,0 +1,13 @@
+kontrolle_k12_f1_t9-9        offene Punkte    0, Zeilenpaare (u,w),(u,-w): 12, uebrige Zeilen: 1   -> 8 Laeufe
+ziel48_k10_f4_t10-8          offene Punkte  816, Zeilenpaare (u,w),(u,-w): 12, uebrige Zeilen: 0   -> 8 Laeufe
+ziel48_k10_f4_t9-9           offene Punkte    4, Zeilenpaare (u,w),(u,-w): 12, uebrige Zeilen: 0   -> 7 Laeufe
+ziel48_k10_f4_t9-9           offene Punkte  820, Zeilenpaare (u,w),(u,-w): 12, uebrige Zeilen: 0   -> 1 Laeufe
+ziel48_k11_f2_t10-8          offene Punkte  816, Zeilenpaare (u,w),(u,-w): 12, uebrige Zeilen: 0   -> 8 Laeufe
+ziel48_k11_f2_t9-9           offene Punkte    4, Zeilenpaare (u,w),(u,-w): 12, uebrige Zeilen: 0   -> 8 Laeufe
+ziel48_k9_f6_t10-8           offene Punkte  816, Zeilenpaare (u,w),(u,-w): 12, uebrige Zeilen: 0   -> 4 Laeufe
+ziel48_k9_f6_t9-9            offene Punkte    4, Zeilenpaare (u,w),(u,-w): 12, uebrige Zeilen: 0   -> 5 Laeufe
+ziel48_k9_f6_t9-9            offene Punkte  644, Zeilenpaare (u,w),(u,-w): 12, uebrige Zeilen: 0   -> 1 Laeufe
+ziel48_k9_f6_t9-9            offene Punkte  820, Zeilenpaare (u,w),(u,-w): 12, uebrige Zeilen: 0   -> 1 Laeufe
+ziel48_k9_f6_t9-9            offene Punkte  876, Zeilenpaare (u,w),(u,-w): 12, uebrige Zeilen: 0   -> 1 Laeufe
+Matrizen: 52, mit Sollwert verglichen: 52, Abweichungen: 0
+real	0m0.379s

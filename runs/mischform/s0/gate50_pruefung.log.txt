@@ -1,0 +1,9 @@
+# notes/orchestrator/2026-11-26_gate_leiter_n/gate_c18-5_50w.matrix.txt: 25 Zeilen x 18 Spalten, 50 verschiedene Woerter, d = 8
+offene Punkte (von 2^18 = 262144): 0
+Matrix notes/orchestrator/2026-11-26_gate_leiter_n/gate_c18-5_50w.matrix.txt: 25 x 18, aufgefuellt 25 x 25
+  check_disc      Diskrepanz 8  (0.5 s)
+  verify_spencer  Diskrepanz 8  (0.5 s)
+  exakt_disc      Diskrepanz 8  (0.5 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+Exit 0
+Thu Nov 26 07:17:33 UTC 2026

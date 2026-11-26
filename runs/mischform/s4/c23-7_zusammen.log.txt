@@ -1,0 +1,16 @@
+s2c23-7_k15_t12-11_seed1 (23,7) d=9: Restzahl 680, offene Punkte 2720, maxcov 544, f=1-Zeilen 0, f=1: NEIN
+s2c23-7_k15_t12-11_seed2 (23,7) d=9: Restzahl 548, offene Punkte 2192, maxcov 808, f=1-Zeilen 0, f=1: NEIN
+s2c23-7_k15_t12-11_seed3 (23,7) d=9: Restzahl 672, offene Punkte 2688, maxcov 448, f=1-Zeilen 0, f=1: NEIN
+s2c23-7_k15_t12-11_seed4 (23,7) d=9: Restzahl 548, offene Punkte 2192, maxcov 808, f=1-Zeilen 0, f=1: NEIN
+s3c23-7a_k15_t12-11_seed5 (23,7) d=9: Restzahl 548, offene Punkte 2192, maxcov 808, f=1-Zeilen 0, f=1: NEIN
+s3c23-7a_k15_t12-11_seed6 (23,7) d=9: Restzahl 548, offene Punkte 2192, maxcov 808, f=1-Zeilen 0, f=1: NEIN
+s3c23-7a_k15_t12-11_seed7 (23,7) d=9: Restzahl 548, offene Punkte 2192, maxcov 808, f=1-Zeilen 0, f=1: NEIN
+s3c23-7a_k15_t12-11_seed8 (23,7) d=9: Restzahl 548, offene Punkte 2192, maxcov 808, f=1-Zeilen 0, f=1: NEIN
+s3c23-7b_k15_t12-11_seed10 (23,7) d=9: Restzahl 548, offene Punkte 2192, maxcov 808, f=1-Zeilen 0, f=1: NEIN
+s3c23-7b_k15_t12-11_seed11 (23,7) d=9: Restzahl 548, offene Punkte 2192, maxcov 808, f=1-Zeilen 0, f=1: NEIN
+s3c23-7b_k15_t12-11_seed12 (23,7) d=9: Restzahl 548, offene Punkte 2192, maxcov 808, f=1-Zeilen 0, f=1: NEIN
+s3c23-7b_k15_t12-11_seed9 (23,7) d=9: Restzahl 548, offene Punkte 2192, maxcov 808, f=1-Zeilen 0, f=1: NEIN
+
+real	0m10.135s
+user	0m9.878s
+sys	0m0.196s

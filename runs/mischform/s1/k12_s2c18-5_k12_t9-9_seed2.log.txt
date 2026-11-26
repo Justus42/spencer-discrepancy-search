@@ -1,0 +1,6 @@
+# paar runs/leiter_n/s2c18-5_k12_t9-9_seed2.paar.txt: K=12 (Typ (9,9)), 24 Zeilen
+# m=18 d=8 R=5, 24 Zeilen; offene Punkte 4 (Klassen 2)
+maxcov: eine Zeile ueberdeckt hoechstens 4 offene Punkte (2 Klassen) von 4; Beispiel:  1  1  1  1  1  1  1  1  1 -1  1  1  1  1  1  1  1  1
+f=1: Zeilen r (alle 2^18), die alle offenen Punkte ueberdecken: 1008 (bis auf Vorzeichen 504)
+f=1: JA (Knoten 1, 0.00 s)
+# Laufzeit 0.00 s

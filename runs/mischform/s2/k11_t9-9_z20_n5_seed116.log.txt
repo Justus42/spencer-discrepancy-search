@@ -1,0 +1,43 @@
+  Runde 1 (W frei): Restzahl 3453, bestes 3453, Anforderungsvektoren 171, Iterationen 840, 1.6 s
+  Runde 2 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 1163, 2.0 s
+  Runde 3 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 1464, 2.4 s
+  Runde 4 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 1765, 2.8 s
+  Runde 5 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 2066, 3.1 s
+  Runde 6 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 2367, 3.5 s
+  Runde 7 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 2668, 3.8 s
+  Neustart 1 nach Runde 7 (bestes bisher 1002), 3.8 s
+  Runde 8 (W frei): Restzahl 3768, bestes 1002, Anforderungsvektoren 176, Iterationen 3444, 5.1 s
+  Runde 9 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 3897, 5.7 s
+  Runde 10 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 4198, 6.2 s
+  Runde 11 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 4499, 6.5 s
+  Runde 12 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 4800, 6.9 s
+  Runde 13 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 5101, 7.3 s
+  Runde 14 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 5402, 7.7 s
+  Neustart 2 nach Runde 14 (bestes bisher 1002), 7.7 s
+  Runde 15 (W frei): Restzahl 3193, bestes 1002, Anforderungsvektoren 163, Iterationen 6248, 9.1 s
+  Runde 16 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 6600, 9.7 s
+  Runde 17 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 6901, 10.1 s
+  Runde 18 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 7202, 10.4 s
+  Runde 19 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 7503, 10.9 s
+  Runde 20 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 7804, 11.3 s
+  Runde 21 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 8105, 11.8 s
+  Neustart 3 nach Runde 21 (bestes bisher 1002), 11.8 s
+  Runde 22 (W frei): Restzahl 2564, bestes 1002, Anforderungsvektoren 162, Iterationen 8641, 12.7 s
+  Runde 23 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 8999, 13.3 s
+  Runde 24 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 9300, 13.9 s
+  Runde 25 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 9601, 14.3 s
+  Runde 26 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 9902, 14.6 s
+  Runde 27 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 10203, 15.2 s
+  Runde 28 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 10504, 15.8 s
+  Neustart 4 nach Runde 28 (bestes bisher 1002), 15.8 s
+  Runde 29 (W frei): Restzahl 2905, bestes 1002, Anforderungsvektoren 162, Iterationen 10916, 16.4 s
+  Runde 30 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 11302, 17.0 s
+  Runde 31 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 11603, 17.5 s
+  Runde 32 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 11904, 17.9 s
+  Runde 33 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 12205, 18.3 s
+  Runde 34 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 12506, 18.6 s
+  Runde 35 (W frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 12807, 19.0 s
+  Neustart 5 nach Runde 35 (bestes bisher 1002), 19.0 s
+  Runde 36 (W frei): Restzahl 2580, bestes 1002, Anforderungsvektoren 162, Iterationen 13194, 19.7 s
+  Runde 37 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 13417, 20.0 s
+ZEITGRENZE nach 20.0 s, beste Restzahl 1002, 13417 Iterationen, 37 Runden, 5 Neustarts

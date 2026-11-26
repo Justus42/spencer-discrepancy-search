@@ -1,0 +1,13 @@
+ohne Paarzeile  0: Loesungen fuer Zeile 1: 1, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+ohne Paarzeile  1: Loesungen fuer Zeile 1: 2, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+ohne Paarzeile  2: Loesungen fuer Zeile 1: 1, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+ohne Paarzeile  3: Loesungen fuer Zeile 1: 1, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+ohne Paarzeile  4: Loesungen fuer Zeile 1: 1, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+ohne Paarzeile  5: Loesungen fuer Zeile 1: 2, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+ohne Paarzeile  6: Loesungen fuer Zeile 1: 2, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+ohne Paarzeile  7: Loesungen fuer Zeile 1: 1, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+ohne Paarzeile  8: Loesungen fuer Zeile 1: 1, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+ohne Paarzeile  9: Loesungen fuer Zeile 1: 1, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+ohne Paarzeile 10: Loesungen fuer Zeile 1: 1, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+ohne Paarzeile 11: Loesungen fuer Zeile 1: 2, jede Loesung = die beiden gestrichenen Zeilen (bis auf Vorzeichen): True
+Eindeutig in 12 von 12 Faellen

@@ -1,0 +1,7 @@
+# paar runs/mischform/s2/k11_t12-6_z150_n20_seed5.paar.txt: K=11 (Typ (12,6)), 22 Zeilen
+# m=18 d=8 R=5, 22 Zeilen; offene Punkte 5444 (Klassen 2722)
+maxcov: eine Zeile ueberdeckt hoechstens 2964 offene Punkte (1482 Klassen) von 5444; Beispiel:  1  1  1 -1 -1 -1 -1 -1 -1  1  1  1 -1 -1  1  1  1  1
+f=1: Zeilen r (alle 2^18), die alle offenen Punkte ueberdecken: 0 (bis auf Vorzeichen 0)
+f=1: NEIN (vollstaendig) (Knoten 1, 0.00 s)
+f=2: NEIN (vollstaendig) (Knoten 8, 0.06 s)
+# Laufzeit 0.09 s

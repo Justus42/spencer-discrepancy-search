@@ -1,0 +1,4 @@
+# misch_alt m=18 d=8 R=5 K=12 (m1=9, m2=9) f=1 seed=2 sek=600 Klassen 131072, Woerter 50, stag=300 neustart=20
+  Neustart 1 nach Runde 23 (bestes 359), 13.1 s
+  Runde 44: offen 0, bestes 0, Zuege 15205, Neustarts 1, 24.4 s
+LOESUNG nach 24.4 s: beste Zahl offener Klassen 0 (offene Punkte 0), t_best=24.4, Runden 44, Zuege 15205, Gewichtsschritte 6564, Neustarts 1

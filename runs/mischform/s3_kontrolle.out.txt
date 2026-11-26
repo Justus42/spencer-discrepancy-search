@@ -1,0 +1,34 @@
+Kontrolle Start 08:17:02
+kontrolle_k12_f1_t9-9 seed 1: LOESUNG nach 161.1 s: beste Zahl offener Klassen 0 (offene Punkte 0), t_best=161.1, Runden 300, Zuege 101545, Gewichtsschritte 44341, Neustarts 14
+    # runs/mischform/s3/kontrolle_k12_f1_t9-9_seed1.matrix.txt: 25 Zeilen x 18 Spalten, 50 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 0
+    pruefe_matrix.py Exit 0: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+kontrolle_k12_f1_t9-9 seed 2: LOESUNG nach 24.4 s: beste Zahl offener Klassen 0 (offene Punkte 0), t_best=24.4, Runden 44, Zuege 15205, Gewichtsschritte 6564, Neustarts 1
+    # runs/mischform/s3/kontrolle_k12_f1_t9-9_seed2.matrix.txt: 25 Zeilen x 18 Spalten, 50 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 0
+    pruefe_matrix.py Exit 0: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+kontrolle_k12_f1_t9-9 seed 3: LOESUNG nach 39.8 s: beste Zahl offener Klassen 0 (offene Punkte 0), t_best=39.8, Runden 73, Zuege 24751, Gewichtsschritte 10639, Neustarts 3
+    # runs/mischform/s3/kontrolle_k12_f1_t9-9_seed3.matrix.txt: 25 Zeilen x 18 Spalten, 50 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 0
+    pruefe_matrix.py Exit 0: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+kontrolle_k12_f1_t9-9 seed 4: LOESUNG nach 161.7 s: beste Zahl offener Klassen 0 (offene Punkte 0), t_best=161.7, Runden 310, Zuege 102413, Gewichtsschritte 43629, Neustarts 14
+    # runs/mischform/s3/kontrolle_k12_f1_t9-9_seed4.matrix.txt: 25 Zeilen x 18 Spalten, 50 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 0
+    pruefe_matrix.py Exit 0: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+kontrolle_k12_f1_t9-9 seed 5: LOESUNG nach 138.7 s: beste Zahl offener Klassen 0 (offene Punkte 0), t_best=138.7, Runden 267, Zuege 88080, Gewichtsschritte 37578, Neustarts 12
+    # runs/mischform/s3/kontrolle_k12_f1_t9-9_seed5.matrix.txt: 25 Zeilen x 18 Spalten, 50 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 0
+    pruefe_matrix.py Exit 0: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+kontrolle_k12_f1_t9-9 seed 6: LOESUNG nach 5.4 s: beste Zahl offener Klassen 0 (offene Punkte 0), t_best=5.4, Runden 10, Zuege 3495, Gewichtsschritte 1298, Neustarts 0
+    # runs/mischform/s3/kontrolle_k12_f1_t9-9_seed6.matrix.txt: 25 Zeilen x 18 Spalten, 50 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 0
+    pruefe_matrix.py Exit 0: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+kontrolle_k12_f1_t9-9 seed 7: LOESUNG nach 385.9 s: beste Zahl offener Klassen 0 (offene Punkte 0), t_best=385.9, Runden 758, Zuege 251403, Gewichtsschritte 108170, Neustarts 36
+    # runs/mischform/s3/kontrolle_k12_f1_t9-9_seed7.matrix.txt: 25 Zeilen x 18 Spalten, 50 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 0
+    pruefe_matrix.py Exit 0: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+kontrolle_k12_f1_t9-9 seed 8: LOESUNG nach 320.3 s: beste Zahl offener Klassen 0 (offene Punkte 0), t_best=320.3, Runden 626, Zuege 209745, Gewichtsschritte 89928, Neustarts 29
+    # runs/mischform/s3/kontrolle_k12_f1_t9-9_seed8.matrix.txt: 25 Zeilen x 18 Spalten, 50 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 0
+    pruefe_matrix.py Exit 0: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+Ende 08:25:11
