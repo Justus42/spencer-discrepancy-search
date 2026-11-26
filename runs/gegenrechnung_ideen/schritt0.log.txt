@@ -1,0 +1,32 @@
+Thu Nov 26 17:52:12 UTC 2026
+src/check_disc.py: OK
+verifiers/verify_spencer.py: OK
+src/exakt_disc.c: OK
+== ctrl_8
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 5
+gr Gray:   exakte Diskrepanz 5
+== ctrl_16
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 7
+gr Gray:   exakte Diskrepanz 7
+== had20_klasse1
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 6
+gr Gray:   exakte Diskrepanz 6
+== had24_1p3_paley12
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+gr Gray:   exakte Diskrepanz 8
+== Tiefensuche (schwelle, c=0): Zahl der Faelle OHNE x mit max<=T
+ctrl_8 T=3: GESAMT c = 0, T = 3: 1 von 1 Faellen ohne x mit max|s| <= 3
+ctrl_8 T=4: GESAMT c = 0, T = 4: 1 von 1 Faellen ohne x mit max|s| <= 4
+ctrl_16 T=5: GESAMT c = 0, T = 5: 1 von 1 Faellen ohne x mit max|s| <= 5
+ctrl_16 T=6: GESAMT c = 0, T = 6: 1 von 1 Faellen ohne x mit max|s| <= 6
+had20_klasse1 T=4: GESAMT c = 0, T = 4: 1 von 1 Faellen ohne x mit max|s| <= 4
+had20_klasse1 T=5: GESAMT c = 0, T = 5: 1 von 1 Faellen ohne x mit max|s| <= 5
+had24_1p3_paley12 T=6: GESAMT c = 0, T = 6: 1 von 1 Faellen ohne x mit max|s| <= 6
+had24_1p3_paley12 T=7: GESAMT c = 0, T = 7: 1 von 1 Faellen ohne x mit max|s| <= 7
+Thu Nov 26 17:52:14 UTC 2026
+== Tiefensuche bei T = disc (muss 0 von 1 geben)
+ctrl_8 T=5: GESAMT c = 0, T = 5: 0 von 1 Faellen ohne x mit max|s| <= 5
+ctrl_16 T=7: GESAMT c = 0, T = 7: 0 von 1 Faellen ohne x mit max|s| <= 7
+had20_klasse1 T=6: GESAMT c = 0, T = 6: 0 von 1 Faellen ohne x mit max|s| <= 6
+had24_1p3_paley12 T=8: GESAMT c = 0, T = 8: 0 von 1 Faellen ohne x mit max|s| <= 8
+Thu Nov 26 17:52:18 UTC 2026

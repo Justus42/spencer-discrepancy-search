@@ -1,0 +1,9 @@
+Zuordnung: Orchestrator-Block 2k = Sitzung k (Original), Block 2k+1 = Sitzung 60+k (Transponierte), Inhalt gleich: ja
+verschiedene Matrizen unter den 120: 72; 48 Transponierte stehen woertlich schon unter den 60 Originalen
+Originale, deren Transponierte NICHT woertlich in der Liste steht: [0, 1, 12, 14, 17, 19, 26, 39, 40, 42, 54, 56]
+ohne 4 Spalten: Orchestrator 42304 Faelle, Sitzung 42304 Faelle, gemeinsam 42304, nur Orchestrator 0, nur Sitzung 0
+FALLWEISE GLEICH: True
+woertlich doppelte Matrizen haben dieselbe Treffermenge (Sitzung): True
+Matrizen mit Treffern, Originale: [(0, 2640), (1, 16), (5, 6), (11, 2640), (22, 2640), (30, 4), (33, 2640), (39, 6), (44, 2640), (55, 2640), (57, 2640), (58, 2640)]
+Matrizen mit Treffern, Transponierte (als Nummer des gleichen Originals, wo woertlich vorhanden): [('T0', 2640), ('T1', 16), ('T39', 6), (11, 2640), (22, 2640), (30, 4), (33, 2640), (44, 2640), (5, 6), (55, 2640), (57, 2640), (58, 2640)]
+geschrieben: 14 Matrizen nach /tmp/gate_c/mat

@@ -1,0 +1,22 @@
+# Regel 1 an 14 Treffern der Sitzung (Ordnung 24 ohne 2 bzw. 4 Spalten) und 3 Nichttreffern; 2026-11-26 18:44:31 UTC
+src/check_disc.py: OK
+verifiers/verify_spencer.py: OK
+src/exakt_disc.c: OK
+had24_m000_ohne_000005.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m000_ohne_000017.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m000_ohne_e80000.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m001_ohne_0004c2.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m005_ohne_0001b0.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m030_ohne_003021.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m039_ohne_1020c0.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m060_ohne_000003.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m060_ohne_10c008.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m061_ohne_003003.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m065_ohne_003021.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m090_ohne_0001b0.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m099_ohne_0011c0.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+had24_m119_ohne_a00000.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8
+nicht_m000_ohne_00000f.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 6
+nicht_m001_ohne_0004c1.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 6
+nicht_m002_ohne_00000f.txt: ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 6
+18:44:51 UTC

@@ -1,0 +1,21 @@
+Thu Nov 26 17:58:55 UTC 2026
+== konf26
+Matrix 0, Spalten 0..-1 gestrichen, m = 26, 2^25 Vektoren: max|s| = 5:260(kum 260) 7:87960(kum 88220) 9:6314100(kum 6402320) 11:14983800(kum 21386120) 13:8611200(kum 29997320) 15:2762760(kum 32760080) 17:657800(kum 33417880) 19:119600(kum 33537480) 21:15600(kum 33553080) 23:1300(kum 33554380) 25:52(kum 33554432)
+  exakte Diskrepanz 5
+== konf30
+Matrix 0, Spalten 0..-1 gestrichen, m = 30, 2^29 Vektoren: max|s| = 7:45588(kum 45588) 9:24478668(kum 24524256) 11:185649996(kum 210174252) 13:198734680(kum 408908932) 15:90665020(kum 499573952) 17:28501200(kum 528075152) 19:7125300(kum 535200452) 21:1425060(kum 536625512) 23:219240(kum 536844752) 25:24360(kum 536869112) 27:1740(kum 536870852) 29:60(kum 536870912)
+  exakte Diskrepanz 7
+== paley2_28
+Matrix 0, Spalten 0..-1 gestrichen, m = 28, 2^27 Vektoren: max|s| = 6:728(kum 728) 8:5032612(kum 5033340) 10:33692152(kum 38725492) 12:50943620(kum 89669112) 14:30571632(kum 120240744) 16:10548720(kum 130789464) 18:2751840(kum 133541304) 20:573300(kum 134114604) 22:91728(kum 134206332) 24:10584(kum 134216916) 26:784(kum 134217700) 28:28(kum 134217728)
+  exakte Diskrepanz 6
+== Kontrolle zirk 7
+Zirkulant n = 7, 64 erste Zeilen (c_0 = +1): disc 1: 36 disc 3: 28
+  groesste Diskrepanz 3
+== zirk 15
+Zirkulant n = 15, 16384 erste Zeilen (c_0 = +1): disc 1: 7679 disc 3: 7730 disc 5: 975
+  groesste Diskrepanz 5
+
+real	0m0.234s
+user	0m0.926s
+sys	0m0.000s
+Thu Nov 26 17:58:57 UTC 2026

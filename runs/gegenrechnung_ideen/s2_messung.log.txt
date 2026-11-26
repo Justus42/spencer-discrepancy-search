@@ -1,0 +1,47 @@
+Thu Nov 26 18:01:05 UTC 2026
+Messung c = 3, jeder 1214. Fall
+GESAMT c = 3, d = 9, Schritt 1214 Rest 0: 201 Faelle, Loecher (bis auf Vorzeichen) 24344..26668, mit einer freien Zeile loesbar: 0
+
+real	0m1.280s
+user	0m3.334s
+sys	0m0.016s
+Thu Nov 26 18:01:06 UTC 2026
+Messung c = 5, jeder 25502. Fall
+GESAMT c = 5, d = 9, Schritt 25502 Rest 0: 201 Faelle, Loecher (bis auf Vorzeichen) 12640..17688, mit einer freien Zeile loesbar: 0
+
+real	0m0.426s
+user	0m1.646s
+sys	0m0.008s
+Thu Nov 26 18:01:07 UTC 2026
+Thu Nov 26 18:01:29 UTC 2026
+Gray-Code statt Tiefensuche, gleiche Stichproben; Positivkontrolle erneut
+Matrix 0: 16 von 16 loesbar
+GESAMT c = 1, d = 9, Schritt 97 Rest 0: 30 Faelle, Loecher (bis auf Vorzeichen) 3520..16192, mit einer freien Zeile loesbar: 0
+GESAMT c = 1, d = 9, Schritt 97 Rest 0: 30 Faelle, Loecher (bis auf Vorzeichen) 3520..16192, mit einer freien Zeile loesbar: 0
+GESAMT c = 3, d = 9, Schritt 1214 Rest 0: 201 Faelle, Loecher (bis auf Vorzeichen) 24344..26668, mit einer freien Zeile loesbar: 0
+
+real	0m0.578s
+user	0m2.159s
+sys	0m0.008s
+GESAMT c = 5, d = 9, Schritt 25502 Rest 0: 201 Faelle, Loecher (bis auf Vorzeichen) 12640..17688, mit einer freien Zeile loesbar: 0
+
+real	0m0.196s
+user	0m0.753s
+sys	0m0.010s
+Thu Nov 26 18:01:31 UTC 2026
+Thu Nov 26 18:01:52 UTC 2026
+mit Liste der letzten 32 Bremser:
+Matrix 0: 16 von 16 loesbar
+Matrix 0: 24 von 24 loesbar
+GESAMT c = 1, d = 9, Schritt 97 Rest 0: 30 Faelle, Loecher (bis auf Vorzeichen) 3520..16192, mit einer freien Zeile loesbar: 0
+GESAMT c = 3, d = 9, Schritt 1214 Rest 0: 201 Faelle, Loecher (bis auf Vorzeichen) 24344..26668, mit einer freien Zeile loesbar: 0
+
+real	0m0.575s
+user	0m2.099s
+sys	0m0.012s
+GESAMT c = 5, d = 9, Schritt 25502 Rest 0: 201 Faelle, Loecher (bis auf Vorzeichen) 12640..17688, mit einer freien Zeile loesbar: 0
+
+real	0m0.196s
+user	0m0.764s
+sys	0m0.000s
+Thu Nov 26 18:01:53 UTC 2026

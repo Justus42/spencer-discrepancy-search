@@ -1,0 +1,11 @@
+sylv8: 1 Matrizen 8x8, orthogonal (Diagonale 8): True, symmetrisch: True
+paley12: 1 Matrizen 12x12, orthogonal (Diagonale 12): True, symmetrisch: False
+sylv16: 1 Matrizen 16x16, orthogonal (Diagonale 16): True, symmetrisch: True
+sylv32: 1 Matrizen 32x32, orthogonal (Diagonale 32): True, symmetrisch: True
+ctrl16voll: 2 Matrizen 16x16, orthogonal (Diagonale 16): True, symmetrisch: False
+had20: 6 Matrizen 20x20, orthogonal (Diagonale 20): True, symmetrisch: False
+had24: 120 Matrizen 24x24, orthogonal (Diagonale 24): True, symmetrisch: False
+paley2_28: 1 Matrizen 28x28, orthogonal (Diagonale 28): True, symmetrisch: True
+konf26: 1 Matrizen 26x26, orthogonal (Diagonale 25): True, symmetrisch: True
+konf30: 1 Matrizen 30x30, orthogonal (Diagonale 29): True, symmetrisch: True
+geschrieben nach runs/gegenrechnung_ideen/eingaben
