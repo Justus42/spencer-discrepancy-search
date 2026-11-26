@@ -78,7 +78,7 @@ Bei (24,8) ca. 100 Schritte/s, 140 MB; auch die Kontrolle (24 Paare) gelang nur 
 
 (24,8) beendet. Kleinste erreichte Paarzahl: 24 (48 Wörter, Kontrolle); beste Restzahl darunter: 2064 bei 22 Paaren (23 Paare: 2400).
 
-## Auswertung (19:34–19:50 UTC, ohne Zuruf)
+## Auswertung (19:34–19:36 UTC laut `date`, ohne Zuruf)
 
 **Prüfungen.** `sha256sum -c verifiers/SHA256SUMS` (drei Prüfdateien) und `sha256sum -c runs/evo/BEWERTER.sha256`: alle vier OK, am Anfang (17:45 UTC) und am Ende (19:34 UTC)
 (`runs/verdopplung/sha256_start.log.txt`, `sha256_ende.log.txt`). Kein Treffer, daher kein Treffer-Bericht und kein Aufruf von `pruefe_matrix.py`.
@@ -102,4 +102,4 @@ wächst von 15 zu 14 zu 10 Paaren stetig; die Probe des Orchestrators (26 192, 8
 (616/648, 2400/2064): wie bei Auftrag E (704 bei 23 Paaren in (20,6)) ein Plateau knapp unter der Kontrolle. Die Erwartung des Orchestrators (kein Rekord) trifft zu;
 „Tabellenwerte knapp unter 32 Wörtern“ bei (19,6) und (17,5) wurden nicht gefunden (15 Paare nicht erreicht).
 
-**Rechenzeit.** 17:45 bis 19:34 UTC (1 h 49 min) einschließlich der Auswertungspausen; Summe der Läufe ohne Überlappung rund 1 h 45 min von 3 h. Blöcke: 17:45–18:08 (Schritte 0, 1), 18:09–18:33 ((19,6), (17,5)), 18:33–19:03 ((22,7)), 19:04–19:34 ((24,8)); nach jedem Block commit und push.
+**Rechenzeit.** 17:45 bis 19:34 UTC (1 h 49 min Wanduhr, `date`) von 3 h Obergrenze. Blöcke: 17:45–18:08 (Schritte 0, 1), 18:09–18:33 ((19,6), (17,5)), 18:33–19:03 ((22,7)), 19:04–19:34 ((24,8)); nach jedem Block commit und push.
