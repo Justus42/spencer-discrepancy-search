@@ -13,6 +13,7 @@
      allein FILE LISTE d    fuer jede Zeile "Matrix Maske" der Liste: je Zeile i Zahl der x mit |s_i| >= d nur in Zeile i
      frei FILE c d SCHRITT [REST]  Spaltenteilmengen der Groesse c (jede SCHRITT-te, Index % SCHRITT == REST): Loecher (max|s| < d)
                             zaehlen, eine freie +-1-Zeile w suchen, die alle Loecher deckt (|<w,x>| >= d)
+     (frei/freizeile zaehlen Loecher per Gray-Code; mit Umgebungsvariable GR_DFS per Tiefensuche)
      freizeile FILE d       Nullspalten weg, je eine Zeile gestrichen: Loecher zaehlen, freie Zeile suchen (Positivkontrolle)
      ersatz1 FILE [Z]       Hadamard (oder beliebige +-1-Matrix mit gerader Zeilenzahl, ungerader Spaltenzahl - 1) ohne Spalte j, neue Spalte c: flache x' (max|b| <= N/2-3), Bedingungen, gute c
      ersatz2 FILE [Z]       Hadamard ohne Spalten a<b, zwei neue Spalten: flache x'', Bedingungen je Zeilengruppe, Belegungen
@@ -114,6 +115,27 @@ static void dfs_auf(Ctx *c, int k, uint32_t x) {
     }
 }
 static void aufzaehlen(Ctx *c, int T) { c->T = T; c->nx = 0; memset(c->st[0], 0, MR); dfs_auf(c, 0, 0); }
+
+/* dieselbe Aufzaehlung per Gray-Code (fuer frei: schneller bei m <= 23); Reihenfolge anders, Menge gleich */
+static void aufzaehlen_gray(Ctx *c, int T) {
+    c->nx = 0;
+    int8_t s[MR] __attribute__((aligned(32)));
+    for (int i = 0; i < MR; i++) { int t = 0; for (int j = 0; j < c->m; j++) t += c->col[j][i]; s[i] = (int8_t)t; }
+    uint32_t x = 0; uint64_t n = 1ULL << (c->m - 1);
+    for (uint64_t t = 0; t < n; t++) {
+        if (t) {
+            int j = __builtin_ctzll(t) + 1; const int8_t *q = c->col2[j];
+            if ((x >> j) & 1) { for (int i = 0; i < MR; i++) s[i] += q[i]; }
+            else { for (int i = 0; i < MR; i++) s[i] -= q[i]; }
+            x ^= 1u << j;
+        }
+        if (maxabs(s) <= T) {
+            if (c->nx == c->cap) { c->cap = c->cap ? 2 * c->cap : 4096; c->xs = realloc(c->xs, c->cap * sizeof *c->xs); }
+            c->xs[c->nx++] = x;
+        }
+    }
+}
+static int GRAY = 1;
 
 /* Teilmengen der Groesse c von n als Masken */
 static long teilmengen(int n, int c, uint32_t **out) {
@@ -242,18 +264,20 @@ static void cmd_allein(const char *fn, const char *liste, int dd) {
 }
 
 /* ---------- frei ---------- */
-typedef struct { uint32_t *h; long n; int m, R; } Loecher;
-static int deckt(const Loecher *L, uint32_t w) {
-    for (long i = 0; i < L->n; i++) {
-        int dist = __builtin_popcount(w ^ L->h[i]);
-        if (dist > L->R && dist < L->m - L->R) {
-            if (i > 1) { uint32_t t = L->h[i]; L->h[i] = L->h[1]; L->h[1] = t; } /* Bremser nach vorn */
-            return 0;
-        }
+typedef struct { uint32_t *h; long n; int m, R; uint32_t kill[32]; int nk, pos; } Loecher;
+static inline int offen_fuer(const Loecher *L, uint32_t w, uint32_t h) {
+    int dist = __builtin_popcount(w ^ h); return dist > L->R && dist < L->m - L->R;
+}
+/* deckt w alle Loecher? Zuerst die letzten 32 Loecher, an denen ein w scheiterte (nur Reihenfolge, Ergebnis gleich). */
+static int deckt(Loecher *L, uint32_t w) {
+    for (int k = 0; k < L->nk; k++) if (offen_fuer(L, w, L->kill[k])) return 0;
+    for (long i = 0; i < L->n; i++) if (offen_fuer(L, w, L->h[i])) {
+        L->kill[L->pos] = L->h[i]; L->pos = (L->pos + 1) & 31; if (L->nk < 32) L->nk++;
+        return 0;
     }
     return 1;
 }
-static int kugel(const Loecher *L, uint32_t w, int ab, int rest, uint32_t *gef) {
+static int kugel(Loecher *L, uint32_t w, int ab, int rest, uint32_t *gef) {
     if (deckt(L, w)) { *gef = w; return 1; }
     if (rest == 0) return 0;
     for (int j = ab; j < L->m; j++) if (kugel(L, w ^ (1u << j), j + 1, rest - 1, gef)) return 1;
@@ -261,10 +285,11 @@ static int kugel(const Loecher *L, uint32_t w, int ab, int rest, uint32_t *gef) 
 }
 /* gibt 1 zurueck, wenn eine freie Zeile alle Loecher deckt; WLOG d(w, h0) <= R */
 static int freie_zeile(Ctx *cx, int dd, long *nl, uint32_t *wgef) {
-    aufzaehlen(cx, dd - 1); *nl = cx->nx;
+    if (GRAY) aufzaehlen_gray(cx, dd - 1); else aufzaehlen(cx, dd - 1);
+    *nl = cx->nx;
     if (cx->nx == 0) { *wgef = 0; return 1; }
     if ((cx->m - dd) % 2) { fprintf(stderr, "m - d ungerade\n"); exit(2); }
-    Loecher L = { cx->xs, cx->nx, cx->m, (cx->m - dd) / 2 };
+    Loecher L; memset(&L, 0, sizeof L); L.h = cx->xs; L.n = cx->nx; L.m = cx->m; L.R = (cx->m - dd) / 2;
     return kugel(&L, cx->xs[0], 0, L.R, wgef);
 }
 static void cmd_frei(const char *fn, int c, int dd, long schritt, long rest) {
@@ -435,6 +460,7 @@ static void cmd_zirk(int n) {
 int main(int argc, char **argv) {
     if (argc < 2) { fprintf(stderr, "siehe Kopf\n"); return 2; }
     const char *b = argv[1];
+    if (getenv("GR_DFS")) GRAY = 0;
     if (!strcmp(b, "tab") && argc == 4) cmd_tab(argv[2], atoi(argv[3]));
     else if (!strcmp(b, "schwelle") && argc >= 5) cmd_schwelle(argv[2], atoi(argv[3]), atoi(argv[4]), argc > 5 ? argv[5] : NULL);
     else if (!strcmp(b, "flach") && argc == 4) cmd_flach(argv[2], atoi(argv[3]));

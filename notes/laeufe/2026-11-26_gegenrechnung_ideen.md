@@ -48,3 +48,11 @@ prüfung (keine kritische Menge über beide Gruppen) und die Kontrolle der Logik
 
 Randbemerkung zu Punkt 9: Nach der Regel m + 1 ≤ min(B, 33) käme bei d = 11 auch (32,11) in Frage; die Zeile fehlt in der CSV, also nicht entscheidbar (keine Abweichung, die Notiz nennt sie nicht).
 Zur Faserbedingung: Definition aus Sols Beschreibung (Paritätsklassen modulo Bild des Kerns, ganzzahlige Belegung mit Summe K), nicht aus `kern3_fasern.py`.
+
+## Schritt 2: Ordnung 24 ohne 3 / ohne 5 Spalten plus eine freie ±1-Zeile, d = 9
+
+Messung an 201 + 201 Fällen (18:01 UTC, `s2_messung.log.txt`): 0 lösbar. Lochzählung erst per Tiefensuche, dann per Gray-Code (schneller;
+Mengen an c = 1 mit beiden Verfahren gleich, Positivkontrollen erneut 16 von 16 und 24 von 24). Durchsatz an Matrix 0 (4251 bzw. 203 Fälle):
+0,32 ms bzw. 1,13 ms je Fall auf 4 Kernen, hochgerechnet c = 5 ≈ 28 Min., c = 3 ≈ 5 Min. Entscheidung: beide voll rechnen,
+c = 5 in vier Teilen (jeder 4. Fall, Rest 0..3).
+Die freie Zeile ist ±1 (wie in der Notiz); WLOG liegt sie im Abstand ≤ R vom ersten Loch (sonst ihr Negativ), alle Kandidaten der Kugel werden geprüft.
