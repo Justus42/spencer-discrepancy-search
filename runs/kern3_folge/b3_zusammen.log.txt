@@ -1,0 +1,12 @@
+K=7 5,5,5,5 ERGEBNIS NICHT_ERREICHT beste_restzahl=48 iter=192 zeit=325.68
+K=7 6,5,5,4 ERGEBNIS NICHT_ERREICHT beste_restzahl=138 iter=192 zeit=317.87
+K=7 6,6,4,4 ERGEBNIS NICHT_ERREICHT beste_restzahl=138 iter=176 zeit=308.28
+K=7 7,5,4,4 ERGEBNIS NICHT_ERREICHT beste_restzahl=173 iter=176 zeit=307.82
+K=6 5,5,5,5 ERGEBNIS NICHT_ERREICHT beste_restzahl=250 iter=144 zeit=326.88
+K=6 6,5,5,4 ERGEBNIS NICHT_ERREICHT beste_restzahl=446 iter=128 zeit=310.62
+K=6 6,6,4,4 ERGEBNIS NICHT_ERREICHT beste_restzahl=424 iter=128 zeit=310.30
+K=6 7,5,4,4 ERGEBNIS NICHT_ERREICHT beste_restzahl=992 iter=128 zeit=319.26
+K=5 5,5,5,5 ERGEBNIS NICHT_ERREICHT beste_restzahl=926 iter=112 zeit=334.02
+K=5 6,5,5,4 ERGEBNIS NICHT_ERREICHT beste_restzahl=1695 iter=112 zeit=333.44
+K=5 6,6,4,4 ERGEBNIS NICHT_ERREICHT beste_restzahl=2756 iter=112 zeit=333.21
+K=5 7,5,4,4 ERGEBNIS NICHT_ERREICHT beste_restzahl=2379 iter=112 zeit=334.96
