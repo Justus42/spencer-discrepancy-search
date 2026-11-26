@@ -1,0 +1,22 @@
+# Struktur der 704er (Auftrag E)
+48er 1+3: 24x20 | Spalten |<.,.>| {0: 190} | Zeilen |<.,.>| {0: 108, 2: 144, 4: 24} | Eigenwerte Spalten-Gram min 24.00 max 24.00
+Paare 23, offen 704, 19 Laeufe: 23x20 | Spalten |<.,.>| {1: 148, 3: 42} | Zeilen |<.,.>| {0: 113, 2: 124, 4: 6, 6: 6, 8: 1, 10: 2, 12: 1} | Eigenwerte Spalten-Gram min 20.00 max 44.00
+Paare 24, offen 0, 1 Laeufe: 24x20 | Spalten |<.,.>| {0: 190} | Zeilen |<.,.>| {0: 108, 2: 144, 4: 24} | Eigenwerte Spalten-Gram min 24.00 max 24.00
+# Buendelung der Loecher, Hadamard 24 (Matrix 0) ohne Spalte 0, d = 9
+Loecher bis auf Vorzeichen: 3520
+Kandidaten: 45760
+  Kugel 1 deckt 360 neue, offen 3160
+  Kugel 2 deckt 360 neue, offen 2800
+  Kugel 3 deckt 352 neue, offen 2448
+  Kugel 4 deckt 328 neue, offen 2120
+  Kugel 5 deckt 290 neue, offen 1830
+  Kugel 6 deckt 266 neue, offen 1564
+  Kugel 7 deckt 248 neue, offen 1316
+  Kugel 8 deckt 214 neue, offen 1102
+  Kugel 9 deckt 191 neue, offen 911
+  Kugel 10 deckt 162 neue, offen 749
+  Kugel 11 deckt 146 neue, offen 603
+  Kugel 12 deckt 117 neue, offen 486
+  Kugel 25 deckt 4 neue, offen 0
+groesste Einzelkugel: 360 von 3520 (10.2 %); gierig: 25 Kugeln
+Thu Nov 26 15:50:18 CET 2026

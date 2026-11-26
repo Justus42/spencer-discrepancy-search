@@ -1,0 +1,34 @@
+# Ordnung 24 ohne 4 Spalten, disc >= 8 (Teil 0 = Originale, Teil 1 = Transponierte)
+==> c4_teil0.err <==
+GESAMT: 60 Matrizen, 21152 Treffer von 637560 geprueften Mengen (c=4, T=8)
+
+==> c4_teil1.err <==
+GESAMT: 60 Matrizen, 21152 Treffer von 637560 geprueften Mengen (c=4, T=8)
+# Alleinanteil je Zeile fuer alle Treffer
+mat 0: 2640 Faelle, kleinster Alleinanteil einer Zeile 1297, groesster 1300
+mat 1: 16 Faelle, kleinster Alleinanteil einer Zeile 1269, groesster 1350
+mat 5: 6 Faelle, kleinster Alleinanteil einer Zeile 1269, groesster 1350
+mat 11: 2640 Faelle, kleinster Alleinanteil einer Zeile 1264, groesster 1342
+mat 22: 2640 Faelle, kleinster Alleinanteil einer Zeile 1275, groesster 1332
+mat 30: 4 Faelle, kleinster Alleinanteil einer Zeile 1270, groesster 1354
+mat 33: 2640 Faelle, kleinster Alleinanteil einer Zeile 1265, groesster 1340
+mat 39: 6 Faelle, kleinster Alleinanteil einer Zeile 1270, groesster 1354
+mat 44: 2640 Faelle, kleinster Alleinanteil einer Zeile 1267, groesster 1342
+mat 55: 2640 Faelle, kleinster Alleinanteil einer Zeile 1265, groesster 1340
+mat 57: 2640 Faelle, kleinster Alleinanteil einer Zeile 1264, groesster 1342
+mat 58: 2640 Faelle, kleinster Alleinanteil einer Zeile 1274, groesster 1327
+GESAMT: 21152 Faelle; kleinster Alleinanteil ueberhaupt 1264; Faelle nach kleinstem Alleinanteil: =0: 0, <100: 0, <1000: 0, <3000: 21152, <6000: 0, <10000: 0, >=10000: 0
+mat 0: 2640 Faelle, kleinster Alleinanteil einer Zeile 1297, groesster 1300
+mat 1: 16 Faelle, kleinster Alleinanteil einer Zeile 1269, groesster 1350
+mat 5: 4 Faelle, kleinster Alleinanteil einer Zeile 1270, groesster 1354
+mat 8: 2640 Faelle, kleinster Alleinanteil einer Zeile 1275, groesster 1332
+mat 27: 2640 Faelle, kleinster Alleinanteil einer Zeile 1264, groesster 1342
+mat 28: 2640 Faelle, kleinster Alleinanteil einer Zeile 1264, groesster 1342
+mat 30: 6 Faelle, kleinster Alleinanteil einer Zeile 1269, groesster 1350
+mat 39: 6 Faelle, kleinster Alleinanteil einer Zeile 1270, groesster 1354
+mat 43: 2640 Faelle, kleinster Alleinanteil einer Zeile 1265, groesster 1340
+mat 45: 2640 Faelle, kleinster Alleinanteil einer Zeile 1265, groesster 1340
+mat 53: 2640 Faelle, kleinster Alleinanteil einer Zeile 1274, groesster 1327
+mat 59: 2640 Faelle, kleinster Alleinanteil einer Zeile 1267, groesster 1342
+GESAMT: 21152 Faelle; kleinster Alleinanteil ueberhaupt 1264; Faelle nach kleinstem Alleinanteil: =0: 0, <100: 0, <1000: 0, <3000: 21152, <6000: 0, <10000: 0, >=10000: 0
+Thu Nov 26 15:45:19 CET 2026

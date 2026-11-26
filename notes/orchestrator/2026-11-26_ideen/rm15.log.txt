@@ -1,0 +1,13 @@
+# RM(1,5): Nebenklassen, tiefe Loecher, L-Histogramm
+Thu Nov 26 15:47:14 CET 2026
+Nebenklassen je max|W| (Abstand): 8(12):427924 10(11):8693888 12(10):22064064 14(9):21288320 16(8):10119795 18(7):3365856 20(6):906192 22(5):201376 24(4):35960 26(3):4960 28(2):496 30(1):32 32(0):1
+tiefe Loecher: 427924 Nebenklassen = 27387136 Funktionen; Spektren:  [8^16 4^0 0^16]: 219604  [8^12 4^16 0^4]: 208320
+L = #{u: |W|>=12}, gerade Funktionen: L=0:427924 L=1:5091689 L=2:15643096 L=3:9999360 L=4:2378475 L=6:13888
+L = #{u: |W|>=12}, ungerade Funktionen: L=0:8693888 L=1:18427424 L=2:6110720 L=3:317440 L=4:4960
+# eine Kugel bei (31,10)
+Signaturen: 23; groesster Anteil der tiefen Loecher in EINER Kugel (mit Gegenkugel): 0.0710; noetig im Mittel bei f Zeilen: 1/f
+# Struktur der Loecher bei (30,10)
+b= 1: Loecher mit x_0=+1: 430080 (Soll 430080 = 4 x 107520 Klassen aus Gate D); davon Spektrum [8^16 0^16]: 53760, Spektrum [8^12 4^16 0^4]: 376320
+b= 7: Loecher mit x_0=+1: 430080 (Soll 430080 = 4 x 107520 Klassen aus Gate D); davon Spektrum [8^16 0^16]: 53760, Spektrum [8^12 4^16 0^4]: 376320
+b=31: Loecher mit x_0=+1: 430080 (Soll 430080 = 4 x 107520 Klassen aus Gate D); davon Spektrum [8^16 0^16]: 53760, Spektrum [8^12 4^16 0^4]: 376320
+Thu Nov 26 15:48:03 CET 2026
