@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 26.11.2026 vormittags (nach Auftrag LZ, Lean-Zertifikat für K(18,5) ≤ 50, kein neuer Tabellenwert; davor Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 26.11.2026 mittags (nach Auftrag M, Mischform bei (18,5), kein neuer Tabellenwert; davor Auftrag LZ, Lean-Zertifikat für K(18,5) ≤ 50, kein neuer Tabellenwert; davor Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -82,7 +82,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Freie Suche als Evolutionsschleife (Auftrag E), (20,6): 24 Paare (48 Wörter) blind gefunden (1 von 4, disc 8 dreifach); 23 Paare (46 Wörter, N = 23) nicht erreicht, beste Restzahl 704 offene Klassen (fester Endpunkt) |  |  | (1,668) s | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Kern-⟨1,a⟩-Leiter in den Nachbarzellen mit dem Löser aus H (Auftrag N): (18,5) 52 (K = 13) / 56 / 60 Wörter, 48 nicht (Restzahl 1); (21,6), (23,7), (25,8) 64 Wörter erreicht, 60 nicht (3343 / 548 / 10 598); (16,4) 64 erreicht, 60 nicht (28); (19,5) 64 nicht (768) |  |  |  |  |  | 1,569 e |  | 1,512 e |  | 1,461 e; (1,643) s |  | 1,591 e |  |
 | (18,5) mit 50 Wörtern: Zustand K = 12 mit Restzahl 1 aus Auftrag N plus eine freie Zeile (Gate N, Matrix 25 x 18, Rechnung des Orchestrators; in Lean bewiesen, Auftrag LZ) |  |  |  |  | 1,600 e |  |  |  |  |  |  |  |  |
-| Mischform Nebenklassen plus freie Zeilen bei (18,5), d = 8 (Auftrag M, gemeinsame Suche `misch_alt`): (K, f) = (12, 1) 50 Wörter aus Zufallsstart 8 von 8 (disc 8 dreifach); 48 Wörter nicht erreicht: (11,2), (10,4), (9,6) bester Stand 4 offene Punkte (Typ (9,9)); 46 und 44 nicht begonnen |  |  |  | (1,633) s | 1,600 e |  |  |  |  |  |  |  |  |
+| Mischform Nebenklassen plus freie Zeilen bei (18,5), d = 8 (Auftrag M, gemeinsame Suche `misch_alt`): (K, f) = (12, 1) 50 Wörter aus Zufallsstart 8 von 8 (disc 8 dreifach); 48 Wörter nicht erreicht: (11,2), (10,4), (9,6) bester Stand 4 offene Punkte (Typ (9,9)), laut Gate in allen 44 Läufen reine Paarzustände K = 12; 46 und 44 nicht begonnen |  |  |  | (1,633) s | 1,600 e |  |  |  |  |  |  |  |  |
 
 ## Bester Eintrag dieser Karte je N (nur `e`/`r`)
 

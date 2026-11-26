@@ -1,0 +1,13 @@
+(20,6) ohne Paarzeile  0: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 354, Loesungen fuer Zeile 1: 1 -> JA
+(20,6) ohne Paarzeile  1: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 707, Loesungen fuer Zeile 1: 2 -> JA
+(20,6) ohne Paarzeile  2: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 344, Loesungen fuer Zeile 1: 1 -> JA
+(20,6) ohne Paarzeile  3: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 556, Loesungen fuer Zeile 1: 1 -> JA
+(20,6) ohne Paarzeile  4: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 344, Loesungen fuer Zeile 1: 1 -> JA
+(20,6) ohne Paarzeile  5: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 526, Loesungen fuer Zeile 1: 2 -> JA
+(20,6) ohne Paarzeile  6: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 526, Loesungen fuer Zeile 1: 2 -> JA
+(20,6) ohne Paarzeile  7: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 212, Loesungen fuer Zeile 1: 1 -> JA
+(20,6) ohne Paarzeile  8: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 350, Loesungen fuer Zeile 1: 1 -> JA
+(20,6) ohne Paarzeile  9: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 158, Loesungen fuer Zeile 1: 1 -> JA
+(20,6) ohne Paarzeile 10: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 290, Loesungen fuer Zeile 1: 1 -> JA
+(20,6) ohne Paarzeile 11: offene Punkte 6108, f=1 Zeilen bis auf Vorzeichen: 0; eigenes f=2: maxcov 3514, Kandidaten 536, Loesungen fuer Zeile 1: 2 -> JA
+real	0m51.233s
