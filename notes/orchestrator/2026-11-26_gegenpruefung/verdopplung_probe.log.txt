@@ -1,0 +1,11 @@
+# Probe mit src/evo/p018.c und dem eingefrorenen Bewerter src/evo_bewertung.c, 26.11.2026 17:06 bis 17:09 Uhr, je 20 bis 60 s, Startwert 1
+k19_16_s1: offen=0 klassen=262144 k=16 m=19 R=6
+z19_10_s1: offen=26192 klassen=262144 k=10 m=19 R=6
+a19_15: offen=2236 klassen=262144 k=15 m=19 R=6
+a19_14: offen=5312 klassen=262144 k=14 m=19 R=6
+a19_13: offen=9390 klassen=262144 k=13 m=19 R=6
+a19_12: offen=13741 klassen=262144 k=12 m=19 R=6
+a19_11: offen=19176 klassen=262144 k=11 m=19 R=6
+a19_10: offen=26246 klassen=262144 k=10 m=19 R=6
+k17_16: offen=0 klassen=65536 k=16 m=17 R=5
+z17_10: offen=8952 klassen=65536 k=10 m=17 R=5
