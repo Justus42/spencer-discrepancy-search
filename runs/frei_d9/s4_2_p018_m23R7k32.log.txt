@@ -1,0 +1,6 @@
+2026-11-26 19:01:24 UTC  Start s4_2_p018_m23R7k32: p018 m=23 R=7 Paare=32 je 600 s, Startwerte 1 2 3 4, Zusatz: 
+  Startwert 1: Bewerter: offen=5539 klassen=4194304 k=32 m=23 R=7 | 600 s | Speicher (VmHWM) 63264 kB | ENDE best=5539 it=131072 t_best=454.6 t=600.0 bumps=38108 neustarts=0
+  Startwert 2: Bewerter: offen=5885 klassen=4194304 k=32 m=23 R=7 | 602 s | Speicher (VmHWM) 63316 kB | ENDE best=5885 it=132096 t_best=535.7 t=601.1 bumps=38706 neustarts=0
+  Startwert 3: Bewerter: offen=5792 klassen=4194304 k=32 m=23 R=7 | 602 s | Speicher (VmHWM) 63336 kB | ENDE best=5792 it=131072 t_best=473.9 t=601.3 bumps=38374 neustarts=0
+  Startwert 4: Bewerter: offen=5815 klassen=4194304 k=32 m=23 R=7 | 602 s | Speicher (VmHWM) 63332 kB | ENDE best=5815 it=131328 t_best=597.7 t=600.5 bumps=38702 neustarts=0
+2026-11-26 19:11:27 UTC  Ende s4_2_p018_m23R7k32

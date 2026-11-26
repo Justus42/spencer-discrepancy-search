@@ -1,0 +1,6 @@
+2026-11-26 19:11:33 UTC  Start s4_3_p026_m23R7k31: p026 m=23 R=7 Paare=31 je 600 s, Startwerte 1 2 3 4, Zusatz: runs/leiter_n/c23-7_k16.matrix.txt 16
+  Startwert 1: Bewerter: offen=4072 klassen=4194304 k=31 m=23 R=7 | 602 s | Speicher (VmHWM) 62648 kB | ENDE best=4072 it=124672 t_best=0.2 t=601.1 bumps=39527 neustarts=0
+  Startwert 2: Bewerter: offen=4072 klassen=4194304 k=31 m=23 R=7 | 602 s | Speicher (VmHWM) 62660 kB | ENDE best=4072 it=122112 t_best=0.1 t=600.4 bumps=38481 neustarts=0
+  Startwert 3: Bewerter: offen=4072 klassen=4194304 k=31 m=23 R=7 | 602 s | Speicher (VmHWM) 62652 kB | ENDE best=4072 it=122880 t_best=0.1 t=601.1 bumps=39028 neustarts=0
+  Startwert 4: Bewerter: offen=4072 klassen=4194304 k=31 m=23 R=7 | 602 s | Speicher (VmHWM) 62656 kB | ENDE best=4072 it=124672 t_best=0.1 t=600.6 bumps=39705 neustarts=0
+2026-11-26 19:21:35 UTC  Ende s4_3_p026_m23R7k31

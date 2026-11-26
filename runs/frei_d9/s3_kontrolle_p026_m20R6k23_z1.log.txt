@@ -1,0 +1,3 @@
+2026-11-26 18:23:18 UTC  Start s3_kontrolle_p026_m20R6k23_z1: p026 m=20 R=6 Paare=23 je 120 s, Startwerte 2, Zusatz: controls/had24_1p3_paley12.txt 1
+  Startwert 2: Bewerter: offen=728 klassen=524288 k=23 m=20 R=6 | 122 s | Speicher (VmHWM) 9796 kB | ENDE best=728 it=221184 t_best=96.6 t=120.0 bumps=88178 neustarts=0
+2026-11-26 18:25:20 UTC  Ende s3_kontrolle_p026_m20R6k23_z1

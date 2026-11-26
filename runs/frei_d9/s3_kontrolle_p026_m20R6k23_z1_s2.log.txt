@@ -1,0 +1,13 @@
+Saat: 1 Zeilen gestrichen, Start offen=1297
+t=10 it=18944 offen=1612 lokal=1012 best=1012 neustarts=0
+t=20 it=37120 offen=1441 lokal=1012 best=1012 neustarts=0
+t=30 it=55552 offen=1342 lokal=825 best=825 neustarts=0
+t=40 it=74240 offen=1519 lokal=825 best=825 neustarts=0
+t=50 it=94464 offen=1537 lokal=748 best=748 neustarts=0
+t=60 it=112640 offen=1427 lokal=748 best=748 neustarts=0
+t=71 it=131584 offen=1435 lokal=742 best=742 neustarts=0
+t=81 it=148992 offen=1386 lokal=742 best=742 neustarts=0
+t=91 it=166912 offen=1405 lokal=742 best=742 neustarts=0
+t=101 it=185600 offen=1493 lokal=728 best=728 neustarts=0
+t=111 it=204032 offen=1558 lokal=728 best=728 neustarts=0
+ENDE best=728 it=221184 t_best=96.6 t=120.0 bumps=88178 neustarts=0

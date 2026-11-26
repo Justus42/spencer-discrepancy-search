@@ -1,0 +1,3 @@
+2026-11-26 17:47:10 UTC  Start s1b_p018_m25R8k32: p018 m=25 R=8 Paare=32 je 300 s, Startwerte 1, Zusatz: 
+  Startwert 1: Bewerter: offen=6500 klassen=16777216 k=32 m=25 R=8 | 301 s | Speicher (VmHWM) 258612 kB | ENDE best=6500 it=19968 t_best=269.6 t=300.4 bumps=1547 neustarts=0
+2026-11-26 17:52:12 UTC  Ende s1b_p018_m25R8k32
