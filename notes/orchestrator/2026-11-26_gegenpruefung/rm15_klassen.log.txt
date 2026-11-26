@@ -1,0 +1,5 @@
+Spektrum [8^12 4^16 0^4], Grad 4, |Autokorrelation| {0: 24, 8: 6, 16: 1, 32: 1}: 208320 Nebenklassen, 376320 Loecher bei (30,10)
+Spektrum [8^16 0^16], Grad 2, |Autokorrelation| {0: 30, 32: 2}: 868 Nebenklassen, 0 Loecher bei (30,10)
+Spektrum [8^16 0^16], Grad 3, |Autokorrelation| {0: 15, 8: 16, 32: 1}: 166656 Nebenklassen, 0 Loecher bei (30,10)
+Spektrum [8^16 0^16], Grad 3, |Autokorrelation| {0: 27, 16: 4, 32: 1}: 52080 Nebenklassen, 53760 Loecher bei (30,10)
+Summe: 427924 Nebenklassen, 430080 Loecher (Soll 427924 und 430080)

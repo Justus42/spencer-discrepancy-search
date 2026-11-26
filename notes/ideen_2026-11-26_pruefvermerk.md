@@ -1,14 +1,14 @@
 # Prüfvermerk zur Gegenprüfung der Ideenliste vom 26.11.2026
 
-Orchestrator, 26.11.2026, 17:03 bis 18:15 Uhr (Zeiten aus Zeitstempeln und `date`). Geprüft werden zwei Antworten auf den Prompt 5b aus
-`notes/ideen_2026-11-26.md`:
+Orchestrator, 26.11.2026, 17:03 bis 18:15 Uhr, Abschnitt 6 und die Berichtigung der Notiz bis 18:35 Uhr (Zeiten aus Zeitstempeln und `date`).
+Geprüft werden zwei Antworten auf den Prompt 5b aus `notes/ideen_2026-11-26.md` und der Deep-Research-Bericht zu Prompt 5a (Abschnitt 6):
 
 - **Gemini** (App, von Justus um 17:03 Uhr geschickt): bricht mitten in Punkt 2 ab. Teilantwort in `notes/gemini/gegenpruefung_2026-11-26_teilantwort.md`.
 - **GPT-6.2 Sol** (Bridge, Batch, Freigabe 17:54 Uhr, fertig 18:04 Uhr, 0,14 US-$): vollständig, `notes/openrouter/gegenpruefung_2026-11-26--openai-gpt-6.2-sol.md`.
   Auftragstext `notes/ideen_2026-11-26_sol_auftrag_gegenpruefung.md`. Sol bekam die Notiz unkorrigiert und ohne Geminis Antwort.
 
 Eigene Rechnungen dazu: `notes/orchestrator/2026-11-26_gegenpruefung/`, zusammen unter 5 Minuten, je ein Programm außer wo vermerkt.
-**Die Notiz `notes/ideen_2026-11-26.md` ist noch nicht berichtigt**; das geschieht nach Rückmeldung von Justus.
+Die Notiz `notes/ideen_2026-11-26.md` ist nach Freigabe durch Justus (18:20 Uhr) berichtigt; die erste Fassung ist der Stand von `main` nach PR 56 (`ff723e4`).
 
 ## 1. Was an der Notiz falsch ist
 
@@ -69,3 +69,24 @@ Eigene Rechnungen dazu: `notes/orchestrator/2026-11-26_gegenpruefung/`, zusammen
   „bekannter linearer Code geht als K ≤ 8 durch“.
 - **Neu: Verdopplungszellen** ((19,6) mit 20 Wörtern und die elf weiteren aus Punkt 3.1). Billig zu suchen, die Probe liegt weit weg.
 - **Abschnitt 3e** der Notiz wird zurückgenommen und durch die Tabelle aus Punkt 3.1 ersetzt.
+
+## 6. Geminis Deep Research zu Prompt 5a (von Justus um 18:20 Uhr geschickt)
+
+Bericht: `notes/gemini/ideen_2026-11-26_deep-research.pdf` (18 Seiten). Geprüft habe ich, was die Notiz trägt.
+
+| Aussage des Berichts | Prüfung | Urteil |
+|---|---|---|
+| t[n,6] = ⌊(n−8)/2⌋ für n ≥ 18 ist Theorem 4.1 von Baicheva und Bouyukliev (Adv. Math. Commun. 4 (2010), 399–404); obere Schranke von Graham und Sloane 1985; Ausnahmen t[15,6] = 4, t[17,6] = 5 | Arbeit über die im Bericht genannte Adresse abgerufen (Kurzfassung durch das Abrufwerkzeug, nicht selbst Zeile für Zeile gelesen): Titel, Theorem 4.1, Zuschreibung und t[17,6] = 5 bestätigt | **belegt.** Meine Zuschreibung an Kilby und Sloane 1987 war falsch |
+| t[n,7]: nur die obere Schranke ⌊(n−9)/2⌋ ist belegt, keine Gleichheit | dieselbe Arbeit nennt für Dimension 7 nur obere Schranken | **übernommen.** Mein Satz „d ≤ 10 bei 64 Zeilen“ ist gestrichen; lineare Codes sind nur bis Dimension 6 ausgeschlossen |
+| Verheiden 1978: Ergänzung möglich, wenn höchstens 7 Zeilen fehlen; scharf | Quelle des Berichts ist eine MathOverflow-Diskussion; für mich nicht abrufbar | **aus zweiter Hand**, in der Notiz so gekennzeichnet |
+| 427 924 = 219 604 + 208 320, aber vier Klassen statt zwei; Löcher bei zwei gestrichenen Spalten nur aus zwei der vier | nachgerechnet (`rm15_klassen.py`): Grad 2: 868; Grad 3: 166 656 und 52 080; Grad 4: 208 320; Löcher 0, 0, 53 760, 376 320 | **bestätigt** |
+| Reis und Song: Anteil 2^−22 ersetzter Spalten, gilt ab n ≥ 2^50, Faktor 1 + 2^−22 | am 26.11. nur die Kurzfassung gelesen (dort steht der Anteil 2^−22 und „erste Verbesserung über √n“) | Schwelle 2^50 **nicht selbst geprüft**; Folge für uns: kein Mechanismus für n ≤ 40 |
+| Ordnung 16: had16.1 und had16.2 geben 4 und 5, had16.3 und had16.4 geben 6, 7, 6 | meine Tabelle hat für Sylvester und die Klasse von `ctrl_16` dieselben Werte; had16.1 und had16.2 nicht nachgerechnet | teils bestätigt, Rest als Geminis Rechnung gekennzeichnet |
+| Paley 20: 6, 7, 6, 5, 6, 5 für 0 bis 5 gestrichene Spalten; Sylvester 32: 9 und 8 | stimmt mit 3a überein (dort alle Klassen und Spaltenmengen bis c = 4) | bestätigt |
+| K(16,4), K(18,5), K(20,6) ≤ 64 und K(30,10) ≤ 128 stammen aus linearen Codes der Dimension 6 und 7 | passt zu `lin_kontrolle.py` (lineare Codes mit d = 8 bei Länge 16, 18, 20 gefunden) | plausibel, Primärquelle (Kéris Fußnoten) laut Bericht nicht abrufbar |
+| Seit September 2026 kein Wert über 5/√8 (Seite 10c, EinsteinArena, Preprints) | nicht erneut selbst geprüft (letzte eigene Prüfung 26.11., 10:08 und 11:30 Uhr) | ersetzt die Neuheitsprüfung vor einer Meldung nicht |
+| Keine Bauart außerhalb der Hadamard-Familie mit n − 2R ≥ 8 bei Länge 20 bis 31 und höchstens 2n Wörtern gefunden | nicht prüfbar | „nichts gefunden“, kein Ausschluss |
+
+Nicht geprüft und nicht verwendet: die neueren Arbeiten zu Hadamard-Bent-Folgen und zum Gale-Berlekamp-Spiel, die der Bericht nennt
+(dort geht es um andere Größen als die Diskrepanz), und die Einzelheiten zu Dimension 8 und 9.
+
