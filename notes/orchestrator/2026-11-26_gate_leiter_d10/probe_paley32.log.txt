@@ -1,0 +1,8 @@
+Eichung Sylvester 32 ohne Spalten (16,17): Zeilen=32 m=30 d=10 R=10 offen_bis_auf_Vorzeichen=215040 von=536870912
+Paley 32 ohne Spalten (0, 1): Zeilen=32 m=30 d=10 R=10 offen_bis_auf_Vorzeichen=270000 von=536870912
+Paley 32 ohne Spalten (5, 20): Zeilen=32 m=30 d=10 R=10 offen_bis_auf_Vorzeichen=270000 von=536870912
+Paley 32 ohne Spalten (8, 15, 23, 30): Zeilen=32 m=28 d=10 R=9 offen_bis_auf_Vorzeichen=406630 von=134217728
+Paley 32 ohne Spalten (0, 4, 16, 30): Zeilen=32 m=28 d=10 R=9 offen_bis_auf_Vorzeichen=406630 von=134217728
+Paley 32 ohne Spalten (12, 14, 25, 30): Zeilen=32 m=28 d=10 R=9 offen_bis_auf_Vorzeichen=406438 von=134217728
+Paley 32 ohne Spalten (0, 9, 14, 24): Zeilen=32 m=28 d=10 R=9 offen_bis_auf_Vorzeichen=273924 von=134217728
+real	0m13.061s
