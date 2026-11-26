@@ -113,3 +113,9 @@ Wie bei (18,5) K = 12 (Restzahl 1) ein fester bester Wert der Suche. Zelle (23,7
 | (16,9) | **Startwert 4 gelöst nach 176,3 s** (Restzahl der anderen 416 / 1940 / 2074) | K = 15: 0 von 4, Restzahl 10 600 / 10 600 / 11 562 / 12 690 |
 
 Der Treffer bei K = 16 (`s2c25-8_k16_t16-9_seed4.paar.txt`, `zerl_offen.py` 0 offene Klassen von 8 388 608) ist der Tabellenwert 64, kein Fortschritt.
+
+## Schritt 3: (25,8), Typ (16,9), K = 15 (60 Wörter), 8 neue Startwerte (5–12), je 900 s, zwei Blöcke (03:07–03:37 UTC)
+
+0 von 8 gelöst; beste Restzahl 10 958 / 10 598 / 11 120 / 10 656 und 10 598 / 10 872 / 13 007 / 10 754 (von 8 388 608); mit der Stufe (10 600 / 10 600 / 11 562 / 12 690) kein Treffer in 12 Startwerten.
+Zelle (25,8) abgeschlossen: kleinstes erreichtes K = 16 (64 Wörter, Tabellenwert) nur im Typ (16,9); K = 15 weit entfernt (Restzahl ≈ 10 600).
+Hinweis: Typ (16,9) liegt an der Grenze des Programms (m1 = 16, Auftrag: m1 und m2 ≤ 16); der Typ (14,11) kam bei K = 16 auf Restzahl 188.
