@@ -1,0 +1,20 @@
+11,3,2,2 |S| = 9536, Q = 32768, Bahnen = 48, offen nach c_1 = 23232, Summe der 4 groessten g = 30488, Schwelle = 366 ERGEBNIS KEINE knoten=95491 blatt=0 zeit=101.34 c2_bahnen=47 
+10,5,3,0 |S| = 9680, Q = 32768, Bahnen = 36, offen nach c_1 = 23088, Summe der 4 groessten g = 29952, Schwelle = 624 ERGEBNIS KEINE knoten=90651 blatt=0 zeit=146.87 c2_bahnen=35 
+10,5,2,1 |S| = 9806, Q = 32768, Bahnen = 51, offen nach c_1 = 22962, Summe der 4 groessten g = 30248, Schwelle = 276 ERGEBNIS ZEITGRENZE knoten=156928 blatt=0 zeit=301.16 c2_fertig=47 von 48 
+10,4,3,1 |S| = 9806, Q = 32768, Bahnen = 56, offen nach c_1 = 22962, Summe der 4 groessten g = 30248, Schwelle = 276 ERGEBNIS ZEITGRENZE knoten=130304 blatt=0 zeit=301.68 c2_fertig=37 von 38 
+10,4,2,2 |S| = 9536, Q = 32768, Bahnen = 64, offen nach c_1 = 23232, Summe der 4 groessten g = 32928, Schwelle = -1464 ERGEBNIS ZEITGRENZE knoten=111872 blatt=0 zeit=300.19 c2_fertig=40 von 41 
+10,3,3,2 |S| = 10166, Q = 32768, Bahnen = 51, offen nach c_1 = 22602, Summe der 4 groessten g = 31208, Schwelle = -804 ERGEBNIS ZEITGRENZE knoten=67072 blatt=0 zeit=302.08 c2_fertig=20 von 21 
+9,6,3,0 |S| = 9680, Q = 32768, Bahnen = 40, offen nach c_1 = 23088, Summe der 4 groessten g = 30192, Schwelle = 444 ERGEBNIS KEINE knoten=112251 blatt=0 zeit=163.09 c2_bahnen=39 
+9,6,2,1 |S| = 10040, Q = 32768, Bahnen = 55, offen nach c_1 = 22728, Summe der 4 groessten g = 30912, Schwelle = -456 ERGEBNIS ZEITGRENZE knoten=88064 blatt=0 zeit=302.30 c2_fertig=22 von 23 
+9,5,4,0 |S| = 9680, Q = 32768, Bahnen = 45, offen nach c_1 = 23088, Summe der 4 groessten g = 30304, Schwelle = 360 ERGEBNIS KEINE knoten=151347 blatt=0 zeit=233.62 c2_bahnen=44 
+9,5,3,1 |S| = 9680, Q = 32768, Bahnen = 60, offen nach c_1 = 23088, Summe der 4 groessten g = 31872, Schwelle = -816 ERGEBNIS ZEITGRENZE knoten=111104 blatt=0 zeit=300.11 c2_fertig=35 von 36 
+9,5,2,2 |S| = 10166, Q = 32768, Bahnen = 60, offen nach c_1 = 22602, Summe der 4 groessten g = 31928, Schwelle = -1344 ERGEBNIS ZEITGRENZE knoten=73216 blatt=0 zeit=302.51 c2_fertig=21 von 22 
+9,4,4,1 |S| = 10364, Q = 32768, Bahnen = 45, offen nach c_1 = 22404, Summe der 4 groessten g = 31504, Schwelle = -1224 ERGEBNIS ZEITGRENZE knoten=64512 blatt=0 zeit=300.28 c2_fertig=17 von 18 
+9,4,3,2 |S| = 10490, Q = 32768, Bahnen = 80, offen nach c_1 = 22278, Summe der 4 groessten g = 32312, Schwelle = -1956 ERGEBNIS ZEITGRENZE knoten=76288 blatt=0 zeit=300.54 c2_fertig=25 von 26 
+9,3,3,3 |S| = 10166, Q = 32768, Bahnen = 40, offen nach c_1 = 22602, Summe der 4 groessten g = 33368, Schwelle = -2424 ERGEBNIS ZEITGRENZE knoten=75264 blatt=8867 zeit=300.86 c2_fertig=19 von 20 
+8,7,3,0 |S| = 9885, Q = 32768, Bahnen = 40, offen nach c_1 = 22883, Summe der 4 groessten g = 30460, Schwelle = 38 ERGEBNIS ZEITGRENZE knoten=106752 blatt=0 zeit=300.28 c2_fertig=23 von 24 
+8,7,2,1 |S| = 10130, Q = 32768, Bahnen = 56, offen nach c_1 = 22638, Summe der 4 groessten g = 31000, Schwelle = -612 ERGEBNIS ZEITGRENZE knoten=76032 blatt=0 zeit=303.05 c2_fertig=20 von 21 
+8,6,4,0 |S| = 9365, Q = 32768, Bahnen = 60, offen nach c_1 = 23403, Summe der 4 groessten g = 31772, Schwelle = -426 ERGEBNIS KEINE knoten=143333 blatt=0 zeit=274.14 c2_bahnen=59 
+8,6,3,1 |S| = 10200, Q = 32768, Bahnen = 64, offen nach c_1 = 22568, Summe der 4 groessten g = 31136, Schwelle = -784 ERGEBNIS ZEITGRENZE knoten=68352 blatt=0 zeit=301.03 c2_fertig=20 von 21 
+8,6,2,2 |S| = 9970, Q = 32768, Bahnen = 72, offen nach c_1 = 22798, Summe der 4 groessten g = 33976, Schwelle = -2684 ERGEBNIS ZEITGRENZE knoten=74752 blatt=0 zeit=300.40 c2_fertig=33 von 34 
+8,5,5,0 |S| = 10193, Q = 32768, Bahnen = 30, offen nach c_1 = 22575, Summe der 4 groessten g = 31020, Schwelle = -690 ERGEBNIS ZEITGRENZE knoten=64000 blatt=0 zeit=300.23 c2_fertig=13 von 14 

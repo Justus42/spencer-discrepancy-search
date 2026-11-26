@@ -1,0 +1,4 @@
+START 20:54:13 dfs m=18 R=5 Typ=9,3,3,3 K=5 SEK=300 SEED=1
+INFO |S| = 10166, Q = 32768, Bahnen = 40, offen nach c_1 = 22602, Summe der 4 groessten g = 33368, Schwelle = -2424
+ERGEBNIS ZEITGRENZE knoten=75264 blatt=8867 zeit=300.86 c2_fertig=19 von 20
+ENDE 20:59:15
