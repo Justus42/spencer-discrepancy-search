@@ -1,0 +1,27 @@
+  Runde 1 (W frei): Restzahl 40102, bestes 40102, Anforderungsvektoren 2904, Iterationen 472, 7.0 s
+  Runde 2 (U frei): Restzahl 834, bestes 834, Anforderungsvektoren 240, Iterationen 1087, 48.6 s
+  Runde 3 (W frei): Restzahl 480, bestes 480, Anforderungsvektoren 1216, Iterationen 1571, 51.3 s
+  Runde 4 (U frei): Restzahl 480, bestes 480, Anforderungsvektoren 240, Iterationen 1872, 73.3 s
+  Runde 5 (W frei): Restzahl 480, bestes 480, Anforderungsvektoren 1216, Iterationen 2173, 75.3 s
+  Runde 6 (U frei): Restzahl 480, bestes 480, Anforderungsvektoren 240, Iterationen 2474, 93.6 s
+  Runde 7 (W frei): Restzahl 480, bestes 480, Anforderungsvektoren 1216, Iterationen 2775, 95.2 s
+  Runde 8 (U frei): Restzahl 480, bestes 480, Anforderungsvektoren 240, Iterationen 3076, 115.2 s
+  Runde 9 (W frei): Restzahl 480, bestes 480, Anforderungsvektoren 1216, Iterationen 3377, 116.6 s
+  Runde 10 (U frei): Restzahl 480, bestes 480, Anforderungsvektoren 240, Iterationen 3678, 135.6 s
+  Runde 11 (W frei): Restzahl 480, bestes 480, Anforderungsvektoren 1216, Iterationen 3979, 137.0 s
+  Runde 12 (U frei): Restzahl 480, bestes 480, Anforderungsvektoren 240, Iterationen 4280, 155.4 s
+  Runde 13 (W frei): Restzahl 480, bestes 480, Anforderungsvektoren 1216, Iterationen 4581, 156.8 s
+  Runde 14 (U frei): Restzahl 480, bestes 480, Anforderungsvektoren 240, Iterationen 4882, 177.3 s
+  Runde 15 (W frei): Restzahl 480, bestes 480, Anforderungsvektoren 1216, Iterationen 5183, 179.4 s
+  Runde 16 (U frei): Restzahl 480, bestes 480, Anforderungsvektoren 240, Iterationen 5484, 199.3 s
+  Runde 17 (W frei): Restzahl 480, bestes 480, Anforderungsvektoren 1216, Iterationen 5785, 200.6 s
+  Runde 18 (U frei): Restzahl 480, bestes 480, Anforderungsvektoren 240, Iterationen 6086, 220.2 s
+  Runde 19 (W frei): Restzahl 480, bestes 480, Anforderungsvektoren 1216, Iterationen 6387, 221.7 s
+  Runde 20 (U frei): Restzahl 480, bestes 480, Anforderungsvektoren 240, Iterationen 6688, 240.1 s
+  Runde 21 (W frei): Restzahl 480, bestes 480, Anforderungsvektoren 1216, Iterationen 6989, 241.5 s
+  Runde 22 (U frei): Restzahl 480, bestes 480, Anforderungsvektoren 240, Iterationen 7290, 260.4 s
+  Runde 23 (W frei): Restzahl 480, bestes 480, Anforderungsvektoren 1216, Iterationen 7591, 262.0 s
+  Neustart 1 nach Runde 23 (bestes bisher 480), 262.0 s
+  Runde 24 (W frei): Restzahl 33120, bestes 480, Anforderungsvektoren 2870, Iterationen 8164, 270.9 s
+  Runde 25 (U frei): Restzahl 1661, bestes 480, Anforderungsvektoren 240, Iterationen 8707, 300.7 s
+ZEITGRENZE nach 300.7 s, beste Restzahl 480, 8707 Iterationen, 25 Runden, 1 Neustarts
