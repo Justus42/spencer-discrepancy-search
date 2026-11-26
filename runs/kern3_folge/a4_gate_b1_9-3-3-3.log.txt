@@ -1,0 +1,4 @@
+START 21:10:19 kern3_gate m=18 R=5 Typ=9,3,3,3 K=5 SEK=300
+(9,3,3,3) |S|=10166 c2-Bahnen 79: KEINE, 799547 Knoten, 151.5 s
+m=18 R=5 K=5: 1 Typen; KEINE (vollstaendig) 1, GEFUNDEN 0, ZEIT 0; 151 s
+ENDE 21:12:51

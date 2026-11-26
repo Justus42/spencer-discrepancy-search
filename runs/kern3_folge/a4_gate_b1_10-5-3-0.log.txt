@@ -1,0 +1,4 @@
+START 21:07:22 kern3_gate m=18 R=5 Typ=10,5,3,0 K=5 SEK=300
+(10,5,3,0) |S|=9680 c2-Bahnen 35: KEINE, 122601 Knoten, 24.4 s
+m=18 R=5 K=5: 1 Typen; KEINE (vollstaendig) 1, GEFUNDEN 0, ZEIT 0; 24 s
+ENDE 21:07:46
