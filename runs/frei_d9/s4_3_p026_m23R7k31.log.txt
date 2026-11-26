@@ -1,0 +1,1 @@
+2026-11-26 19:11:33 UTC  Start s4_3_p026_m23R7k31: p026 m=23 R=7 Paare=31 je 600 s, Startwerte 1 2 3 4, Zusatz: runs/leiter_n/c23-7_k16.matrix.txt 16
