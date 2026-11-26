@@ -1,0 +1,22 @@
+== 23:57:59 Start s2c21-6_k16_t13-8 (d=9, 300s, Startwerte 1 2 3 4)
+s2c21-6_k16_t13-8 seed 1: ZEITGRENZE nach 300.1 s, beste Restzahl 672, 19179 Iterationen, 54 Runden, 1 Neustarts
+runs/leiter_n/s2c21-6_k16_t13-8_seed1.paar.txt: K=16, Typ (13,8), d=9: offene Klassen 672 von 524288
+s2c21-6_k16_t13-8 seed 2: ZEITGRENZE nach 300.0 s, beste Restzahl 2077, 17909 Iterationen, 52 Runden, 2 Neustarts
+runs/leiter_n/s2c21-6_k16_t13-8_seed2.paar.txt: K=16, Typ (13,8), d=9: offene Klassen 2077 von 524288
+s2c21-6_k16_t13-8 seed 3: ZEITGRENZE nach 300.4 s, beste Restzahl 1401, 19854 Iterationen, 56 Runden, 2 Neustarts
+runs/leiter_n/s2c21-6_k16_t13-8_seed3.paar.txt: K=16, Typ (13,8), d=9: offene Klassen 1401 von 524288
+s2c21-6_k16_t13-8 seed 4: ZEITGRENZE nach 300.6 s, beste Restzahl 384, 18485 Iterationen, 50 Runden, 2 Neustarts
+runs/leiter_n/s2c21-6_k16_t13-8_seed4.paar.txt: K=16, Typ (13,8), d=9: offene Klassen 384 von 524288
+== 00:03:00 Ende s2c21-6_k16_t13-8
+LEITER ENDET bei K=16 (13-8)
+== 00:03:02 Start s2c21-6_k16_t14-7 (d=9, 300s, Startwerte 1 2 3 4)
+s2c21-6_k16_t14-7 seed 1: ZEITGRENZE nach 300.3 s, beste Restzahl 704, 11905 Iterationen, 36 Runden, 1 Neustarts
+runs/leiter_n/s2c21-6_k16_t14-7_seed1.paar.txt: K=16, Typ (14,7), d=9: offene Klassen 704 von 524288
+s2c21-6_k16_t14-7 seed 2: ZEITGRENZE nach 300.3 s, beste Restzahl 1280, 12002 Iterationen, 36 Runden, 0 Neustarts
+runs/leiter_n/s2c21-6_k16_t14-7_seed2.paar.txt: K=16, Typ (14,7), d=9: offene Klassen 1280 von 524288
+s2c21-6_k16_t14-7 seed 3: ZEITGRENZE nach 300.4 s, beste Restzahl 576, 13606 Iterationen, 41 Runden, 1 Neustarts
+runs/leiter_n/s2c21-6_k16_t14-7_seed3.paar.txt: K=16, Typ (14,7), d=9: offene Klassen 576 von 524288
+s2c21-6_k16_t14-7 seed 4: ZEITGRENZE nach 300.0 s, beste Restzahl 384, 12087 Iterationen, 36 Runden, 1 Neustarts
+runs/leiter_n/s2c21-6_k16_t14-7_seed4.paar.txt: K=16, Typ (14,7), d=9: offene Klassen 384 von 524288
+== 00:08:03 Ende s2c21-6_k16_t14-7
+LEITER ENDET bei K=16 (14-7)
