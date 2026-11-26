@@ -104,7 +104,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Kern ⟨1,a,b⟩ (8 Wörter) bei (20,6): Zählschranke 2^17/B(D) | 97 Typen, B(D) 31 180 bis 53 372, Schranke 2,46 bis 4,20 < 5: schließt keinen Typ aus | voll (eigenes Skript `src/kern_nebenklassen.py`) | L: 2026-11-25_gruppen, Teil 4 |
 | Bahnen aus 5er-Zyklen plus Komplement, n=15, R=4 | mindestens 40 Wörter (525 Vierermengen) | voll | L: 2026-11-24_bahnen5 |
 | Bahnen aus 5er-Zyklen plus Komplement, n=20, R=6 | 70 Wörter gefunden, 60 nicht | Suche | L: 2026-11-24_bahnen5 |
-| Bahnen unter der 3-Sylowgruppe P (Ordnung 9) des 48ers, n=20, R=6 | Minimum 48 Wörter (≤ 46 ausgeschlossen); nur Größe 1/3: 19 008 Lösungen | voll | L: 2026-11-25_bahnen3 |
+| Bahnen unter der 3-Sylowgruppe P (Ordnung 9) des 48ers, n=20, R=6 | Minimum 48 Wörter (≤ 46 ausgeschlossen); nur Größe 1/3: 19 008 Lösungen in 8 Klassen | voll, zwei Programme mit verschiedenen Verfahren (B2) | L: 2026-11-25_bahnen3; L: 2026-11-25_bahnen3_zweit |
 | Bahnen unter einem Element der Ordnung 3 des 48ers, n=20, R=6 | Tabu-Kontrolle 48 Wörter nicht bestanden (1/4, 0/4), < 48 ungeprüft | Suche | L: 2026-11-25_bahnen3 |
 | Zeilen mit genau einer Null, n = 11, 11 Zeilen (Einträge {-1,0,1}) | disc 6 unmöglich (Rekord 1,809 ausgeschlossen); nur {-1,0,1}, nicht reell | voll | L: 2026-11-25_einzelnull |
 | Zeilen mit genau einer Null, n = 11: Umkodierung auf zwei Radius-2-Kugeln im 10-Würfel nachgerechnet (5632 Zeilen, 0 Abw.) | Ausschluss auch über K(10,2) ≥ 24 | voll (Tabelle) | L: 2026-11-25_einzelnull |
@@ -195,6 +195,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - 25.11.2026, Auftrag E, Doppelungsform bei 23 Paaren, je 4 x 600 s: p007 1276–1286, p016 (11+9) starr 1241, p023 (12+8) starr 1310. L: 2026-11-25_evo.
 - 25.11.2026, Auftrag E, 23 Paare: zehn Runden ohne Verbesserung der 704 (Runden 18–29 ohne Nebenziel, je 4 x 600 s; längeres Tabu, Mindestabstand 7, Zeilenersatz, Doppelzüge, Saat, ohne Gewichte), Abbruch laut Auftrag. L: 2026-11-25_evo.
 - 25.11.2026, Auftrag E, Nebenziel (15,4) 15 Paare, 4 Runden je 4 x 300 s (p001, p013, p018, p016): immer 233 (Doppelungsform 707). L: 2026-11-25_evo.
+- 25.11.2026, Auftrag B2, (d) zwei Neunerbahnen mit Probenpunkt-Tabellenfilter (4 × 24 Punkte): 29 min ohne Ergebnis abgebrochen (Filter ließ 7 % der Paare durch), ersetzt durch Bündelung der Einserbahnen (28 s). L: 2026-11-25_bahnen3_zweit.
 ## Offene Punkte
 
 - Meldung von K(20,6) ≤ 48 (und der Familie): Entscheidung am 27.11.2026 (`notes/zweitmeinung_2026-11-24_auftrag.md`).
@@ -208,9 +209,9 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
   Stichprobe): ungerades n gibt die Zelle (n−1, r) mit Paaren, die bis auf eine Koordinate komplementär sind; gerades n die
   selbstkomplementäre Zelle. Die gelockerte Paarbedingung bei (16,4) und (18,5) ist nicht gesucht (Prüfvermerk, Abschnitte I, J).
 - Beweise in den Rundlauf-Antworten ungeprüft (L: 2026-11-24_rundlauf). Auftragstext jetzt in `notes/rundlauf_2026-11-24_auftrag.md`.
-- 3-Sylowgruppe: Die 19 008 Lösungen bilden 8 Äquivalenzklassen (4 mit Gruppenordnung 576, darunter 1+3 und 2+2; 2 mit 144; 2 mit 36);
-  der Tabu-Treffer aus Teil 4 ist ein neunter 48er (Gruppenordnung 24). Rechnung des Orchestrators, nicht gegengerechnet
-  (`notes/gate_2026-11-25_bahnen3.md`). „≤ 46 ausgeschlossen“ ruht auf einem Zählprogramm; ⟨g⟩ mit < 48 Wörtern ungeprüft (L: 2026-11-25_bahnen3).
+- 3-Sylowgruppe: Auftrag B2 (eigene Programme, anderes Verfahren) bestätigt „≤ 46 ausgeschlossen“, die 19 008 Lösungen (Listen identisch),
+  ihre 8 Klassen (4 × |Aut| 576, darunter 1+3 und 2+2; 2 × 144; 2 × 36) und seed4 als neunten 48er (|Aut| 24); alle neun durch Invarianten
+  getrennt. Die H-Treffer sind 1+3 (k3_seed1–8) und 2+2 (a_k12). Offen: ⟨g⟩ mit < 48 Wörtern ungeprüft (L: 2026-11-25_bahnen3_zweit; Gate steht aus).
 - n=25 unter 5er-Symmetrie nicht gestartet (L: 2026-11-24_bahnen5).
 - Vollständige Aufzählung K=4 bei n=20 (ca. 280 CPU-h) nicht gestartet (L: 2026-11-24_bahnen5); Teilfall zwei 10er-Zyklen erledigt (L: 2026-11-25_zweibahn).
 - Variante mit 3 vollen Bahnen plus 5 festen Paaren ungeprüft (A: Fehlversuche).
@@ -221,7 +222,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - Suche im Spann: bei (15,4) Rang 8 und Rang 9 vollständig ausgeschlossen (alle 9 Klassen, Auftrag R9), Rang 10 nicht begonnen; die neun Rang-9-Ausschlüsse ruhen auf einem Programm
   mit Symmetrie (Gate zu R9 bestanden, `notes/gate_2026-11-25_rang9.md`; Gegenprobe ohne Symmetrie nicht gerechnet und nicht geplant: nach einer 90-s-Probe mehrere Stunden je Klasse). Bei (20,6) 78 weitere Spanne nicht durchsucht, Gleichwertigkeit der drei 48er-Spanne offen (L: 2026-11-25_spann; `notes/gate_2026-11-25_spann.md`).
 - Auftrag P, offen: d = 9 mit punktierter Paley-Hälfte bei m2 = 12, 14 (Zählung entscheidet nicht); (15,4) mit 5 gestrichenen Zeilen nicht gerechnet; kozyklisch n = 26–30 nur disc ≤ 8 belegt (weitere Gruppen der Ordnung 40 wie Z5⋊Z8, Z4×D5, Ordnung 60 außer Z60 und Dic15 nicht gerechnet); elf Radius-2-Kugeln bei n = 10 nicht selbst entschieden (nach der Tabelle, K(10,2) ≥ 24, unmöglich) (L: 2026-11-25_pruef_ideen).
-- Auftrag H: Halbproblem-Löser findet den 48er bei (20,6) aus Zufallsstart in Sekunden (8 von 8; Typ (10,10) ebenso); Gleichwertigkeit der Treffer zu 1+3/2+2 offen (Fingerabdruck trennt nicht; alle Positivkontrollen des Lösers sind Hadamard-artig); d = 9 mit Paley-U und W 12 x 12 / 12 x 14 offen (L: 2026-11-25_zerlegung).
+- Auftrag H: Halbproblem-Löser findet den 48er bei (20,6) aus Zufallsstart in Sekunden (8 von 8; Typ (10,10) ebenso); Treffer sind 1+3 bzw. 2+2 (B2; alle Positivkontrollen des Lösers sind Hadamard-artig); d = 9 mit Paley-U und W 12 x 12 / 12 x 14 offen (L: 2026-11-25_zerlegung).
 - Nächster Schritt: Entscheidung zur Meldung K(20,6) ≤ 48 am 27.11.2026 (Neuheitsprüfung am 26.11.). Die Ansatzwahl ist erfolgt (`notes/ideen_2026-11-25.md`): Aufträge E (Evolutionsschleife),
   H (Zerlegung der Kern-Familie) und P (Gegenrechnung der Vortests), freigegeben am 25.11.2026, 18:10 Uhr; danach je ein Gate. P, H und E sind abgeschlossen (Gates bestanden, `notes/gate_2026-11-25_pruef_ideen.md`, `notes/gate_2026-11-25_zerlegung.md`, `notes/gate_2026-11-25_evo.md`). Danach: Aufträge N (`notes/leiter_nachbarzellen_2026-11-25_auftrag.md`) und B2 (`notes/gegenrechnung_bahnen3_2026-11-25_auftrag.md`), je mit Gate; die Entscheidung über (25,8) erst nach N.
 - Auftrag E (abgeschlossen, Gate bestanden, `notes/gate_2026-11-25_evo.md`): kein Treffer; Ziele 22–20 Paare nicht begonnen; Gleichwertigkeit und Struktur der 704er sowie des blinden 48ers zu Paley offen (L: 2026-11-25_evo).
