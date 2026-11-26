@@ -1,0 +1,6 @@
+2026-11-26 17:58:28 UTC  Block 1  m=22 R=7 Paare=12  Startwerte: 1 2 3 4  je 300 s  (Abstandsprobe Ziel)
+  Startwert 1: offen=234512  Anteil=0.11182  (301 s, 82 Schritte/s, 36 MB)
+  Startwert 2: offen=234634  Anteil=0.11188  (302 s, 82 Schritte/s, 36 MB)
+  Startwert 3: offen=234668  Anteil=0.11190  (302 s, 82 Schritte/s, 36 MB)
+  Startwert 4: offen=234589  Anteil=0.11186  (301 s, 82 Schritte/s, 36 MB)
+2026-11-26 18:03:30 UTC  Block 1 fertig
