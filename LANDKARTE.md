@@ -23,6 +23,9 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Hadamard voll (Ordnung 20: 3 Klassen, 24: 60 Klassen, je mit Transponierten) |  |  |  |  |  |  | |  |  |  |  | 1,342 e |
 | Hadamard ohne 1 Spalte (alle Spalten, alle Klassen) |  |  |  |  |  |  | |  |  |  |  | 1,565 e |
 | Hadamard 20 ohne 2 / 24 ohne 3 Spalten (alle Paare/Tripel) |  |  |  |  |  |  | |  |  |  |  | 1,342 e |
+| Hadamard ohne c Spalten, alle Spaltenmengen, c ≤ 4 (Ideenrunde 26.11., voll, zwei Programme: Orchestrator, Sitzung): Sylvester 8, 16, Klasse von `ctrl_16` mit Transponierter, Ordnung 20; dazu Paley 12 (Spalte fehlt): bestes d 5, 1,443 e |  |  | 1,768 e |  |  |  |  | 1,750 e |  |  |  | 1,565 e |
+| Hadamard 20 mit einer oder zwei beliebig ersetzten Spalten (auch reell; 120 Fälle / 1140 Paare; disc 8 ausgeschlossen, voll, zwei Programme) |  |  |  |  |  |  |  |  |  |  |  | – (voll) |
+| zirkulant 15 (alle 2^14 ersten Zeilen, Ideenrunde 26.11., voll, zwei Programme) |  |  |  |  |  |  | 1,291 e |  |  |  |  |  |
 | Bahnen unter 5er-Zyklen plus Komplement (n=15: 40 Wörter, alle 525 Vierermengen, `bahn15_40w`) |  |  |  |  |  |  | |  |  |  |  | 1,565 e |
 | Bahnen unter der 3-Sylowgruppe P des 48ers (n=20, R=6; 40 Wörter = Rekord 1,789 ausgeschlossen, voll, zwei Programme) | | | | | | | | | | | | – (voll) |
 | (15,4) unter Spaltensymmetrie Primzahlordnung 7 (7+7+1), 11, 13: 30 Wörter ausgeschlossen, 32 Wörter nur Ordnung 7 (112 Lösungen, 2 Klassen, eine `ctrl_16`; voll) | | | | | | | | 1,750 e | | | | |
@@ -53,6 +56,9 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Hadamard voll (Ordnung 20: 3 Klassen, 24: 60 Klassen, je mit Transponierten) |  |  |  | 1,225 e |  |  |  |  |  |  |  |  |  |
 | Hadamard ohne 1 Spalte (alle Spalten, alle Klassen) |  |  |  | 1,429 e |  |  |  |  |  |  |  |  |  |
 | Hadamard 20 ohne 2 / 24 ohne 3 Spalten (alle Paare/Tripel) |  |  |  | 1,429 e |  |  |  |  |  |  |  |  |  |
+| Hadamard ohne c Spalten (Ideenrunde 26.11., voll, zwei Programme): 24 alle 60 Klassen mit Transponierten, c ≤ 5 (d = 8 bei c = 2, 4); Paley II 28 voll; Sylvester 32 ohne 1 / 2 Spalten (9 / 8) |  |  |  | 1,633 e |  |  |  | 1,134 e |  |  |  | 1,591 e |  |
+| Hadamard 24 ohne 1 / 3 / 5 Spalten plus eine freie ±1-Zeile, d = 9 (alle 2880 / 242 880 / 5 100 480 Fälle; c = 1 zwei Programme, c = 3, 5 nur Sitzung) |  |  |  |  | – (voll) |  |  |  |  |  |  |  |  |
+| Paley-Konferenzmatrizen 26 und 30 (Ideenrunde 26.11., voll, zwei Programme) |  |  |  |  |  | 0,981 e |  |  |  | 1,278 e |  |  |  |
 | Doppelung [[H,H],[H,-H]], H Hadamard 20, Bauregel 1+3/2+2 (40 x 36) |  |  |  |  |  |  |  |  |  |  |  |  | ≤1,265 g |
 | Paley-12-Doppelung, Bauregel 1+3 und 2+2 (24 x 20) |  |  |  | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Überdeckungscodes aus Nebenklassen-Suche (48/52/56/60 Wörter bei (20,6), 52 bei (22,7), 64 bei (18,5); Auftrag N: 52/56/60 bei (18,5), 64 bei (21,6), (23,7), (25,8)) |  |  |  | 1,633 e |  | 1,569 e |  | 1,512 e |  | 1,461 e |  | 1,591 e |  |
@@ -135,6 +141,9 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Zusätzlich n = 10 (Dichte 1,09
   Bei allen Typen mit q = 9, 11 und 13 überdecken 2 volle Bahnen mit keiner Zahl fester Paare (bei q = 7 dagegen schon mit zwei). Für q = 11 und 13
   ist damit auch „1 volle Bahn + feste Paare“ ausgeschlossen, also jede Zusammensetzung innerhalb der Rekordgrenze. Nicht gezählt: kurze Bahnen > 1 bei q=12.
   Gate: `notes/gate_2026-11-25_zweibahn.md` (q = 11 mit zweitem Programm voll nachgezählt, q = 13 nur Stichprobe).
+- **Hadamard, Ideenrunde 26.11.2026:** Zahlen aus `notes/ideen_2026-11-26.md` (3a, 3d, 3f), von Auftrag C mit eigenen Programmen gegengerechnet,
+  keine Abweichung (`notes/laeufe/2026-11-26_gegenrechnung_ideen.md`, Logs `runs/gegenrechnung_ideen/`). Ordnung 24: disc 8 ohne 2 Spalten in 7420 von 33 120
+  und ohne 4 Spalten in 42 304 von 1 275 120 Fällen (alle starr, Alleinanteil 1264 bis 1354); ohne 5 Spalten nie 9.
 - **32-Wörter-Codes:** N = 16, 17, 19 aus `controls/` (beide Prüfskripte, disc 7); N = 21, 23 nur Radius per Brute-Force (STATUS).
 - **Hadamard:** volle Matrizen `controls/had20_klasse*.txt`, McKay-60 (`controls/had24_mckay_hex.txt`); ohne 1 Spalte:
   `runs/teilA/zusatz_ohne_eine_spalte.log.txt`; ohne 2/3 Spalten: `runs/teilA/a1*`, `a2*` (alle 1140 bzw. 242 880 Fälle).
