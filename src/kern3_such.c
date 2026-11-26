@@ -10,6 +10,7 @@
  *   eval m R n0 n1 n2 n3                         stdin: Vertreter als 0/1-Strings (Bit j = Spalte j); Ausgabe offene Klassen
  *   dfs  m R n0 n1 n2 n3 K SEK [MATRIX]          vollstaendige Suche (Ergebnis KEINE / GEFUNDEN / ZEITGRENZE)
  *   ls   m R n0 n1 n2 n3 K SEK SEED [MATRIX]     lokale Suche (Tabu), Ergebnis GEFUNDEN oder beste Restzahl
+ *   lsw  wie ls, mit Punktgewichten (offene Punkte +1 je Schritt, Zugwahl nach gewichteter Aenderung)
  *
  * Vollstaendige Suche (Begruendung der Schnitte im Protokoll notes/laeufe/2026-11-26_kern3.md):
  *   - key(x) = Rang der Bahn von x unter G (Permutationen in den Bloecken, Tausch gleich grosser Bloecke) in der Ordnung
@@ -333,7 +334,14 @@ static void lauf_dfs(const char *mdatei) {
 static uint64_t rng_s;
 static uint64_t rnd(void) { rng_s ^= rng_s << 13; rng_s ^= rng_s >> 7; rng_s ^= rng_s << 17; return rng_s; }
 
-static void lauf_ls(unsigned seed, const char *mdatei) {
+static int *wgt;   /* Punktgewichte (nur lsw) */
+static inline long long wsum(const u64 *a, const u64 *b) {
+    long long v = 0;
+    for (int w = 0; w < NW; w++) { u64 x = a[w] & b[w]; while (x) { v += wgt[w * 64 + __builtin_ctzll(x)]; x &= x - 1; } }
+    return v;
+}
+
+static void lauf_ls(unsigned seed, const char *mdatei, int gew) {
     rng_s = 0x9E3779B97F4A7C15ull ^ ((uint64_t)seed * 0x1234567ull + 1);
     int *cur = malloc(sizeof(int) * K), *best = malloc(sizeof(int) * K);
     int *cnt = calloc(Q, sizeof(int));
@@ -345,6 +353,7 @@ static void lauf_ls(unsigned seed, const char *mdatei) {
     long long it = 0;
     t0 = jetzt();
     int *ulist = malloc(sizeof(int) * Q);
+    wgt = malloc(sizeof(int) * Q); for (int x = 0; x < Q; x++) wgt[x] = 1;
     while (1) {
         memset(U, 0, 8 * NW); memset(C1, 0, 8 * NW);
         int unc = 0;
@@ -354,19 +363,22 @@ static void lauf_ls(unsigned seed, const char *mdatei) {
         if ((it & 15) == 0 && jetzt() - t0 > tlimit) break;
         it++;
         for (int i = 0; i < K; i++) { const u64 *t = T + (size_t)cur[i] * NW; for (int w = 0; w < NW; w++) Uq[(size_t)i * NW + w] = t[w] & C1[w]; }
-        int lost[64];
+        int lost[64]; long long wlost[64];
         for (int i = 0; i < K; i++) { int v = 0; for (int w = 0; w < NW; w++) v += __builtin_popcountll(Uq[(size_t)i * NW + w]); lost[i] = v; }
+        if (gew) { for (int j = 0; j < unc; j++) wgt[ulist[j]]++; for (int i = 0; i < K; i++) wlost[i] = wsum(Uq + (size_t)i * NW, Uq + (size_t)i * NW); }
         int p = ulist[rnd() % unc];
-        int bd = 1 << 30, bi = -1, bc = -1, nb = 0;
+        long long bd = 1ll << 60; int bi = -1, bc = -1, nb = 0;
         for (int s = 0; s < Ssize; s++) {
             int c = p ^ Slist[s];
             const u64 *t = T + (size_t)c * NW;
             int a = popand(t, U);
+            long long wa = gew ? wsum(t, U) : 0;
             for (int i = 0; i < K; i++) {
                 if (cur[i] == c) continue;
                 int bq = popand(t, Uq + (size_t)i * NW);
-                int d = lost[i] - a - bq;   /* Aenderung der offenen Zahl */
-                int erlaubt = tabu[c] <= it || unc + d < bestoff;
+                int d0 = lost[i] - a - bq;   /* Aenderung der offenen Zahl */
+                long long d = gew ? (wlost[i] - wa - wsum(t, Uq + (size_t)i * NW)) : d0;
+                int erlaubt = tabu[c] <= it || unc + d0 < bestoff;
                 if (!erlaubt) continue;
                 if (d < bd) { bd = d; bi = i; bc = c; nb = 1; }
                 else if (d == bd) { nb++; if (rnd() % nb == 0) { bi = i; bc = c; } }
@@ -422,7 +434,8 @@ int main(int argc, char **argv) {
     K = atoi(argv[8]); tlimit = atof(argv[9]);
     if (K > MAXK) { fprintf(stderr, "K zu gross\n"); return 2; }
     if (!strcmp(modus, "dfs")) { lauf_dfs(argc > 10 ? argv[10] : NULL); return 0; }
-    if (!strcmp(modus, "ls")) { if (argc < 11) return 2; lauf_ls((unsigned)atoi(argv[10]), argc > 11 ? argv[11] : NULL); return 0; }
+    if (!strcmp(modus, "ls")) { if (argc < 11) return 2; lauf_ls((unsigned)atoi(argv[10]), argc > 11 ? argv[11] : NULL, 0); return 0; }
+    if (!strcmp(modus, "lsw")) { if (argc < 11) return 2; lauf_ls((unsigned)atoi(argv[10]), argc > 11 ? argv[11] : NULL, 1); return 0; }
     fprintf(stderr, "unbekannter Modus\n");
     return 2;
 }
