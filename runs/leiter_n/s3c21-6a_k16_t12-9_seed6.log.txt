@@ -1,0 +1,28 @@
+  Runde 1 (W frei): Restzahl 18050, bestes 18050, Anforderungsvektoren 1087, Iterationen 322, 2.5 s
+  Runde 2 (U frei): Restzahl 1390, bestes 1390, Anforderungsvektoren 240, Iterationen 943, 28.3 s
+  Runde 3 (W frei): Restzahl 960, bestes 960, Anforderungsvektoren 768, Iterationen 1252, 29.8 s
+  Runde 4 (U frei): Restzahl 960, bestes 960, Anforderungsvektoren 240, Iterationen 1553, 41.1 s
+  Runde 5 (W frei): Restzahl 960, bestes 960, Anforderungsvektoren 768, Iterationen 1854, 42.7 s
+  Runde 6 (U frei): Restzahl 960, bestes 960, Anforderungsvektoren 240, Iterationen 2155, 54.1 s
+  Runde 7 (W frei): Restzahl 960, bestes 960, Anforderungsvektoren 768, Iterationen 2456, 55.7 s
+  Runde 8 (U frei): Restzahl 960, bestes 960, Anforderungsvektoren 240, Iterationen 2757, 66.1 s
+  Runde 9 (W frei): Restzahl 960, bestes 960, Anforderungsvektoren 768, Iterationen 3058, 67.6 s
+  Runde 10 (U frei): Restzahl 960, bestes 960, Anforderungsvektoren 240, Iterationen 3359, 77.7 s
+  Runde 11 (W frei): Restzahl 960, bestes 960, Anforderungsvektoren 768, Iterationen 3660, 79.2 s
+  Runde 12 (U frei): Restzahl 960, bestes 960, Anforderungsvektoren 240, Iterationen 3961, 89.7 s
+  Runde 13 (W frei): Restzahl 960, bestes 960, Anforderungsvektoren 768, Iterationen 4262, 91.2 s
+  Runde 14 (U frei): Restzahl 960, bestes 960, Anforderungsvektoren 240, Iterationen 4563, 102.0 s
+  Runde 15 (W frei): Restzahl 960, bestes 960, Anforderungsvektoren 768, Iterationen 4864, 103.5 s
+  Runde 16 (U frei): Restzahl 960, bestes 960, Anforderungsvektoren 240, Iterationen 5165, 113.6 s
+  Runde 17 (W frei): Restzahl 960, bestes 960, Anforderungsvektoren 768, Iterationen 5466, 115.0 s
+  Runde 18 (U frei): Restzahl 960, bestes 960, Anforderungsvektoren 240, Iterationen 5767, 125.3 s
+  Runde 19 (W frei): Restzahl 960, bestes 960, Anforderungsvektoren 768, Iterationen 6068, 126.7 s
+  Runde 20 (U frei): Restzahl 960, bestes 960, Anforderungsvektoren 240, Iterationen 6369, 137.7 s
+  Runde 21 (W frei): Restzahl 960, bestes 960, Anforderungsvektoren 768, Iterationen 6670, 139.2 s
+  Runde 22 (U frei): Restzahl 960, bestes 960, Anforderungsvektoren 240, Iterationen 6971, 149.4 s
+  Runde 23 (W frei): Restzahl 960, bestes 960, Anforderungsvektoren 768, Iterationen 7272, 151.1 s
+  Neustart 1 nach Runde 23 (bestes bisher 960), 151.1 s
+  Runde 24 (W frei): Restzahl 16580, bestes 960, Anforderungsvektoren 1028, Iterationen 7720, 155.0 s
+  Runde 25 (U frei): Restzahl 1352, bestes 960, Anforderungsvektoren 240, Iterationen 8451, 182.7 s
+  Runde 26 (W frei): Restzahl 0, bestes 0, Anforderungsvektoren 212, Iterationen 8460, 182.7 s
+LOESUNG nach 182.7 s, 8460 Iterationen, 26 Runden, 1 Neustarts
