@@ -1,0 +1,31 @@
+# ersatz_k2: Hadamard 20 (3 Klassen + Transponierte), zwei ersetzte Spalten, Ziel 8; Thu Nov 26 18:13:08 CET 2026
+mat 0: 190 Paare, ausgeschlossen 190, offen 0
+mat 1: 190 Paare, ausgeschlossen 190, offen 0
+mat 2: 190 Paare, ausgeschlossen 190, offen 0
+mat 3: 190 Paare, ausgeschlossen 190, offen 0
+mat 4: 190 Paare, ausgeschlossen 190, offen 0
+mat 5: 190 Paare, ausgeschlossen 190, offen 0
+N=20 Ziel 8: 1140 Spaltenpaare; ausgeschlossen (eine Gruppe ohne Belegung) 1140; offen 0; kleinste kritische Menge 6; Bedingungen ueber beide Gruppen 0; meiste Bedingungen je Paar 1200
+# je Paar (flache x'', Bedingungen je Gruppe, Belegungen je Gruppe), zusammengefasst:
+      1 N=20 Ziel 8: 1140 Spaltenpaare; ausgeschlossen (eine Gruppe ohne Belegung) 1140; offen 0; kleinste kritische Menge 6; Bedingungen ueber beide Gruppen 0; meiste Bedingungen je Paar 1200
+    180 flache x'' 1272, Bedingungen 488/488, Belegungen 0/0
+     60 flache x'' 1272, Bedingungen 504/504, Belegungen 0/0
+     20 flache x'' 1272, Bedingungen 510/510, Belegungen 0/0
+    180 flache x'' 1272, Bedingungen 582/582, Belegungen 0/0
+    320 flache x'' 1272, Bedingungen 597/597, Belegungen 0/0
+    380 flache x'' 1272, Bedingungen 600/600, Belegungen 0/0
+# Kontrollen: Ordnung 12 Ziel 6 und Ziel 4
+N=12 Ziel 6: 66 Spaltenpaare; ausgeschlossen (eine Gruppe ohne Belegung) 66; offen 0; kleinste kritische Menge 6; Bedingungen ueber beide Gruppen 0; meiste Bedingungen je Paar 20
+N=12 Ziel 4: 66 Spaltenpaare; ausgeschlossen (eine Gruppe ohne Belegung) 0; offen 66; kleinste kritische Menge 99; Bedingungen ueber beide Gruppen 0; meiste Bedingungen je Paar 0
+# Aufzaehlung mit abgeschwaechten Bedingungen (|S| >= 8), C gegen Python:
+mat 0 Spalten 0,1: flache x'' 1272, Bedingungen 36/36, Belegungen 36/36
+mat 0 Spalten 7,19: flache x'' 1272, Bedingungen 36/36, Belegungen 36/36
+mat 0 Spalten 0,1: flache x'' 1272, Bedingungen 36/36, Belegungen 36/36, ueber beide Gruppen 0
+mat 0 Spalten 7,19: flache x'' 1272, Bedingungen 36/36, Belegungen 36/36, ueber beide Gruppen 0
+# alle Bedingungen, Python, fuenf Paare:
+mat 0 Spalten 0,1: flache x'' 1272, Bedingungen 597/597, Belegungen 0/0, ueber beide Gruppen 0
+mat 0 Spalten 3,11: flache x'' 1272, Bedingungen 597/597, Belegungen 0/0, ueber beide Gruppen 0
+mat 0 Spalten 7,19: flache x'' 1272, Bedingungen 597/597, Belegungen 0/0, ueber beide Gruppen 0
+mat 4 Spalten 2,5: flache x'' 1272, Bedingungen 600/600, Belegungen 0/0, ueber beide Gruppen 0
+mat 4 Spalten 10,17: flache x'' 1272, Bedingungen 600/600, Belegungen 0/0, ueber beide Gruppen 0
+Thu Nov 26 18:14:13 CET 2026

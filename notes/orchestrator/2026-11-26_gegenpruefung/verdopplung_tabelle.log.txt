@@ -1,0 +1,12 @@
+d=8: Zelle (17,5) mit hoechstens 20 Woertern, Tabelle 20 bis 32: OFFEN
+d=8: Zelle (19,6) mit hoechstens 20 Woertern, Tabelle 17 bis 32: OFFEN
+d=9: Zelle (20,6) mit hoechstens 24 Woertern, Tabelle 24 bis 64: OFFEN
+d=9: Zelle (22,7) mit hoechstens 24 Woertern, Tabelle 21 bis 64: OFFEN
+d=9: Zelle (24,8) mit hoechstens 24 Woertern, Tabelle 19 bis 64: OFFEN
+d=10: Zelle (23,7) mit hoechstens 30 Woertern, Tabelle 29 bis 64: OFFEN
+d=10: Zelle (25,8) mit hoechstens 30 Woertern, Tabelle 25 bis 64: OFFEN
+d=10: Zelle (27,9) mit hoechstens 30 Woertern, Tabelle 22 bis 64: OFFEN
+d=10: Zelle (29,10) mit hoechstens 30 Woertern, Tabelle 20 bis 64: OFFEN
+d=11: Zelle (26,8) mit hoechstens 38 Woertern, Tabelle 36 bis 128: OFFEN
+d=11: Zelle (28,9) mit hoechstens 38 Woertern, Tabelle 30 bis 128: OFFEN
+d=11: Zelle (30,10) mit hoechstens 38 Woertern, Tabelle 27 bis 128: OFFEN
