@@ -1,0 +1,3 @@
+src/check_disc.py: OK
+verifiers/verify_spencer.py: OK
+src/exakt_disc.c: OK

@@ -1,0 +1,32 @@
+m=20 R=6 Typ=(5,5,5,5) |S|=51447 Q=131072 Bahnen=30
+BAHN 0 rep=13111 ov=13888 code=74121
+BAHN 1 rep=4915 ov=15562 code=38183
+BAHN 2 rep=4407 ov=17206 code=37095
+BAHN 3 rep=4371 ov=18830 code=37061
+BAHN 4 rep=823 ov=19072 code=2247
+BAHN 5 rep=13107 ov=20006 code=74120
+BAHN 6 rep=4383 ov=20430 code=37063
+BAHN 7 rep=307 ov=20782 code=1157
+BAHN 8 rep=4919 ov=21412 code=38184
+BAHN 9 rep=279 ov=22342 code=1125
+BAHN 10 rep=4403 ov=22878 code=37094
+BAHN 11 rep=273 ov=23822 code=1123
+BAHN 12 rep=55 ov=24022 code=69
+BAHN 13 rep=4375 ov=24374 code=37062
+BAHN 14 rep=819 ov=25268 code=2246
+BAHN 15 rep=19 ov=25822 code=35
+BAHN 16 rep=4369 ov=25934 code=37060
+BAHN 17 rep=311 ov=26698 code=1158
+BAHN 18 rep=31 ov=27022 code=37
+BAHN 19 rep=275 ov=28278 code=1124
+BAHN 20 rep=7 ov=28822 code=3
+BAHN 21 rep=287 ov=29798 code=1126
+BAHN 22 rep=51 ov=30992 code=68
+BAHN 23 rep=1 ov=31822 code=1
+BAHN 24 rep=126976 ov=31822 code=5
+BAHN 25 rep=23 ov=32242 code=36
+BAHN 26 rep=17 ov=34242 code=34
+BAHN 27 rep=15 ov=38122 code=4
+BAHN 28 rep=3 ov=38372 code=2
+BAHN 29 rep=0 ov=51447 code=0
+VmHWM_kB(letzte Messung)=2099496

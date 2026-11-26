@@ -1,0 +1,5 @@
+Matrix controls/c18_5_50w.txt: 25 x 18, aufgefuellt 25 x 25
+  check_disc      Diskrepanz 8  (0.3 s)
+  verify_spencer  Diskrepanz 8  (0.3 s)
+  exakt_disc      Diskrepanz 8  (0.3 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)

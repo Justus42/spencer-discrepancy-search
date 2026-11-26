@@ -1,0 +1,2 @@
+INFO |S| = 2378, Q = 8192, Bahnen = 54, offen nach c_1 = 5814, Summe der 4 groessten g = 7896, Schwelle = -108
+ERGEBNIS KEINE knoten=58573 blatt=0 zeit=6.38 c2_bahnen=53
