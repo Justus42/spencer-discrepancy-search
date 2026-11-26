@@ -1,0 +1,54 @@
+13-1-1-1 S=1471 Bahnen=14 thr0=1397 KEINE (Wurzelschranke) knoten=0 zeit=0.00
+13-2-1-0 S=1471 Bahnen=14 thr0=1397 KEINE (Wurzelschranke) knoten=0 zeit=0.00
+14-1-1-0 S=1471 Bahnen=8 thr0=1397 KEINE (Wurzelschranke) knoten=0 zeit=0.00
+12-3-1-0 S=1691 Bahnen=14 thr0=617 KEINE knoten=74 blatt=0 zeit=0.01 c2_bahnen=12
+11-4-1-0 S=1691 Bahnen=18 thr0=617 KEINE knoten=108 blatt=0 zeit=0.01 c2_bahnen=16
+12-2-1-1 S=1691 Bahnen=20 thr0=617 KEINE knoten=17 blatt=0 zeit=0.01 c2_bahnen=17
+11-3-2-0 S=1691 Bahnen=24 thr0=457 KEINE knoten=1792 blatt=0 zeit=0.10 c2_bahnen=23
+11-3-1-1 S=1691 Bahnen=24 thr0=457 KEINE knoten=1792 blatt=0 zeit=0.13 c2_bahnen=23
+10-4-2-0 S=1691 Bahnen=36 thr0=177 KEINE knoten=8820 blatt=0 zeit=0.81 c2_bahnen=35
+8-6-2-0 S=1791 Bahnen=40 thr0=-243 KEINE knoten=61365 blatt=0 zeit=5.76 c2_bahnen=39
+10-5-1-0 S=1826 Bahnen=18 thr0=102 KEINE knoten=11884 blatt=0 zeit=1.85 c2_bahnen=17
+9-6-1-0 S=1826 Bahnen=20 thr0=102 KEINE knoten=13104 blatt=0 zeit=1.90 c2_bahnen=19
+10-4-1-1 S=1826 Bahnen=28 thr0=102 KEINE knoten=13825 blatt=0 zeit=1.60 c2_bahnen=27
+9-5-2-0 S=1826 Bahnen=30 thr0=-138 KEINE knoten=23444 blatt=0 zeit=3.88 c2_bahnen=29
+9-5-1-1 S=1826 Bahnen=30 thr0=-138 KEINE knoten=23444 blatt=0 zeit=5.01 c2_bahnen=29
+11-2-2-1 S=1856 Bahnen=24 thr0=-128 KEINE knoten=20344 blatt=0 zeit=3.70 c2_bahnen=23
+10-2-2-2 S=1856 Bahnen=29 thr0=-568 KEINE knoten=65296 blatt=0 zeit=8.34 c2_bahnen=28
+7-7-2-0 S=1871 Bahnen=20 thr0=-339 KEINE knoten=71497 blatt=0 zeit=5.72 c2_bahnen=19
+7-7-1-1 S=1871 Bahnen=20 thr0=-339 KEINE knoten=71497 blatt=0 zeit=6.11 c2_bahnen=19
+8-7-1-0 S=1871 Bahnen=20 thr0=-67 KEINE knoten=21642 blatt=0 zeit=4.84 c2_bahnen=19
+8-6-1-1 S=1906 Bahnen=32 thr0=-234 KEINE knoten=38295 blatt=0 zeit=10.09 c2_bahnen=31
+8-4-4-0 S=1911 Bahnen=30 thr0=-667 KEINE knoten=1058669 blatt=0 zeit=29.62 c2_bahnen=29
+10-3-3-0 S=1946 Bahnen=18 thr0=-338 KEINE knoten=21751 blatt=0 zeit=6.45 c2_bahnen=17
+9-4-3-0 S=1946 Bahnen=30 thr0=-402 KEINE knoten=75693 blatt=0 zeit=11.80 c2_bahnen=29
+9-3-3-1 S=1946 Bahnen=30 thr0=-658 ZEITGRENZE knoten=855808 blatt=0 zeit=30.01 c2_fertig=20 von 21
+10-3-2-1 S=1946 Bahnen=34 thr0=-338 KEINE knoten=41424 blatt=0 zeit=11.79 c2_bahnen=33
+6-6-4-0 S=1977 Bahnen=30 thr0=-869 ZEITGRENZE knoten=879104 blatt=0 zeit=30.00 c2_fertig=15 von 16
+9-4-2-1 S=2054 Bahnen=40 thr0=-814 KEINE knoten=614167 blatt=0 zeit=25.37 c2_bahnen=39
+9-3-2-2 S=2054 Bahnen=40 thr0=-894 ZEITGRENZE knoten=1131520 blatt=0 zeit=30.05 c2_fertig=32 von 33
+8-4-2-2 S=2054 Bahnen=53 thr0=-1334 ZEITGRENZE knoten=911104 blatt=0 zeit=30.00 c2_fertig=20 von 21
+8-5-3-0 S=2067 Bahnen=30 thr0=-791 ZEITGRENZE knoten=1985792 blatt=0 zeit=30.02 c2_fertig=21 von 22
+7-6-3-0 S=2067 Bahnen=32 thr0=-807 ZEITGRENZE knoten=2149120 blatt=0 zeit=30.05 c2_fertig=18 von 19
+7-5-4-0 S=2067 Bahnen=36 thr0=-887 ZEITGRENZE knoten=2322432 blatt=0 zeit=30.00 c2_fertig=18 von 19
+7-5-3-1 S=2067 Bahnen=48 thr0=-1191 ZEITGRENZE knoten=1378816 blatt=0 zeit=30.00 c2_fertig=15 von 16
+8-5-2-1 S=2102 Bahnen=42 thr0=-958 ZEITGRENZE knoten=1986048 blatt=0 zeit=30.00 c2_fertig=20 von 21
+8-4-3-1 S=2102 Bahnen=46 thr0=-958 ZEITGRENZE knoten=2267648 blatt=0 zeit=30.00 c2_fertig=18 von 19
+6-6-2-2 S=2117 Bahnen=36 thr0=-1545 ZEITGRENZE knoten=903680 blatt=0 zeit=30.00 c2_fertig=13 von 14
+7-6-2-1 S=2137 Bahnen=44 thr0=-1101 ZEITGRENZE knoten=1585408 blatt=0 zeit=30.00 c2_fertig=12 von 13
+5-5-5-1 S=2142 Bahnen=20 thr0=-1518 ZEITGRENZE knoten=553216 blatt=11926 zeit=30.02 c2_fertig=6 von 7
+6-5-5-0 S=2142 Bahnen=24 thr0=-1086 ZEITGRENZE knoten=960256 blatt=0 zeit=30.01 c2_fertig=6 von 7
+6-6-3-1 S=2157 Bahnen=32 thr0=-1185 ZEITGRENZE knoten=1053440 blatt=0 zeit=30.02 c2_fertig=8 von 9
+7-5-2-2 S=2172 Bahnen=48 thr0=-1380 ZEITGRENZE knoten=931072 blatt=0 zeit=30.00 c2_fertig=11 von 12
+7-3-3-3 S=2186 Bahnen=32 thr0=-1730 ZEITGRENZE knoten=500480 blatt=13182 zeit=30.02 c2_fertig=10 von 11
+8-3-3-2 S=2186 Bahnen=42 thr0=-1282 ZEITGRENZE knoten=877056 blatt=0 zeit=30.01 c2_fertig=10 von 11
+7-4-4-1 S=2214 Bahnen=36 thr0=-1390 ZEITGRENZE knoten=720128 blatt=0 zeit=30.00 c2_fertig=9 von 10
+6-4-4-2 S=2214 Bahnen=57 thr0=-1934 ZEITGRENZE knoten=675584 blatt=150100 zeit=30.00 c2_fertig=20 von 21
+6-5-4-1 S=2232 Bahnen=54 thr0=-1464 ZEITGRENZE knoten=762368 blatt=0 zeit=30.00 c2_fertig=11 von 12
+7-4-3-2 S=2249 Bahnen=64 thr0=-1589 ZEITGRENZE knoten=858624 blatt=0 zeit=30.02 c2_fertig=14 von 15
+5-5-3-3 S=2262 Bahnen=36 thr0=-2070 ZEITGRENZE knoten=1515520 blatt=1257922 zeit=30.01 c2_fertig=9 von 10
+6-5-3-2 S=2292 Bahnen=66 thr0=-1716 ZEITGRENZE knoten=805120 blatt=1014 zeit=30.00 c2_fertig=13 von 14
+4-4-4-4 S=2310 Bahnen=20 thr0=-2286 ZEITGRENZE knoten=5737984 blatt=5524659 zeit=30.00 c2_fertig=4 von 5
+5-5-4-2 S=2322 Bahnen=48 thr0=-1890 ZEITGRENZE knoten=740352 blatt=82944 zeit=30.01 c2_fertig=10 von 11
+6-4-3-3 S=2327 Bahnen=54 thr0=-1875 ZEITGRENZE knoten=738304 blatt=89062 zeit=30.00 c2_fertig=10 von 11
+5-4-4-3 S=2378 Bahnen=54 thr0=-2082 ZEITGRENZE knoten=1440768 blatt=813306 zeit=30.01 c2_fertig=11 von 12
