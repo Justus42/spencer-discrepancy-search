@@ -102,3 +102,14 @@ Der Treffer bei K = 16 (`s2c23-7_k16_t12-11_seed3.paar.txt`, `zerl_offen.py` 0 o
 
 0 von 8 gelöst, **beste Restzahl in allen acht Läufen genau 548** (von 2 097 152); mit den vier Läufen der Stufe (680 / 548 / 672 / 548) in 12 Startwerten kein Treffer (Suche erfolglos).
 Wie bei (18,5) K = 12 (Restzahl 1) ein fester bester Wert der Suche. Zelle (23,7) abgeschlossen: kleinstes erreichtes K = 16 (64 Wörter, Tabellenwert) nur im Typ (12,11).
+
+## Schritt 2: Leiter (25,8), d = 9, 4 Startwerte je Stufe, ≤ 300 s (02:41–03:06 UTC), Logs `runs/leiter_n/s2c25-8_k16_t<m1>-<m2>*`
+
+| Typ | K = 16 (64 Wörter) | Stufe darunter |
+|---|---|---|
+| (13,12) | 0 von 4, Restzahl 554 / 763 / 847 / 985 (von 8 388 608) | – |
+| (14,11) | 0 von 4, Restzahl 188 / 417 / 538 / 601 | – |
+| (15,10) | 0 von 4, Restzahl 1168 / 1459 / 1636 / 2004 | – |
+| (16,9) | **Startwert 4 gelöst nach 176,3 s** (Restzahl der anderen 416 / 1940 / 2074) | K = 15: 0 von 4, Restzahl 10 600 / 10 600 / 11 562 / 12 690 |
+
+Der Treffer bei K = 16 (`s2c25-8_k16_t16-9_seed4.paar.txt`, `zerl_offen.py` 0 offene Klassen von 8 388 608) ist der Tabellenwert 64, kein Fortschritt.
