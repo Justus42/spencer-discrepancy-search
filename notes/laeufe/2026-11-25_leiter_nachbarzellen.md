@@ -69,3 +69,4 @@ Auch der Tabellenwert 64 wird in keinem Typ erreicht (wie die alte Nebenklassen-
 - K = 16 (64 Wörter), Startwerte 5–8, je 900 s (00:08–00:23 UTC): **Startwert 6 gelöst nach 182,7 s** (`runs/leiter_n/s3c21-6a_k16_t12-9_seed6.paar.txt`, `zerl_offen.py` 0 offene Klassen
   von 524 288); Startwerte 5, 7, 8: Restzahl 576 / 576 / 320. Gleich dem Tabellenwert 64 (kein Fortschritt; Auftrag: Prüfung mit Matrix erst ab 4K < 64).
 - K = 15 (60 Wörter), Startwerte 1–4, je 900 s (00:23–00:38 UTC): 0 von 4, Restzahl 3633 / 3600 / 3343 / 3343.
+- K = 15, Startwerte 5–8, je 900 s (00:38–00:53 UTC): 0 von 4, Restzahl 3642 / 3600 / 3600 / 3600. Zelle (21,6) abgeschlossen: kleinstes erreichtes K = 16 (64 Wörter, nur im Typ (12,9), 1 von 8 Läufen bei 900 s), K = 15 in 8 Startwerten nicht.
