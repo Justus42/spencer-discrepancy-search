@@ -1,0 +1,32 @@
+Ueberdeckung.C18_5_50w.hauptsatz_kern : ∀ (x : Nat),
+  x < 2 ^ 18 →
+    ∃ z,
+      z ∈ Ueberdeckung.C18_5_50w.matrix ++ List.map (List.map fun e => -e) Ueberdeckung.C18_5_50w.matrix ∧
+        Ueberdeckung.abstandZeile 18 x z ≤ 5
+Ueberdeckung.C18_5_52w.hauptsatz_kern : ∀ (x : Nat),
+  x < 2 ^ 18 →
+    ∃ z,
+      z ∈ Ueberdeckung.C18_5_52w.matrix ++ List.map (List.map fun e => -e) Ueberdeckung.C18_5_52w.matrix ∧
+        Ueberdeckung.abstandZeile 18 x z ≤ 5
+Ueberdeckung.C18_5_50w_ohne24.nicht_radius5_kern : ¬∀ (x : Nat),
+    x < 2 ^ 18 → ∃ c, c ∈ Ueberdeckung.code Ueberdeckung.C18_5_50w_ohne24.matrix ∧ Ueberdeckung.abstand 18 x c ≤ 5
+'Ueberdeckung.C18_5_50w.form' does not depend on any axioms
+'Ueberdeckung.C18_5_50w.anzahl_woerter' does not depend on any axioms
+'Ueberdeckung.C18_5_50w.hauptsatz' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.C18_5_50w.pruefe_5._native.native_decide.ax_1_1]
+'Ueberdeckung.C18_5_50w.nicht_radius4' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.C18_5_50w.pruefe_nicht_4._native.native_decide.ax_1_1]
+'Ueberdeckung.C18_5_50w.hauptsatz_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.C18_5_50w.nicht_radius4_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.C18_5_52w.hauptsatz' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.C18_5_52w.pruefe_5._native.native_decide.ax_1_1]
+'Ueberdeckung.C18_5_52w.hauptsatz_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.C18_5_52w.nicht_radius4_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.C18_5_50w_ohne24.nicht_radius5' depends on axioms: [propext,
+ Quot.sound,
+ Ueberdeckung.C18_5_50w_ohne24.pruefe_nicht_5._native.native_decide.ax_1_1]
+'Ueberdeckung.C18_5_50w_ohne24.nicht_radius5_kern' depends on axioms: [propext, Quot.sound]
+'Ueberdeckung.Kern.Swar18.swar_ok' depends on axioms: [propext, Quot.sound]

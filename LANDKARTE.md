@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 26.11.2026 früh (nach Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 26.11.2026 vormittags (nach Auftrag LZ, Lean-Zertifikat für K(18,5) ≤ 50, kein neuer Tabellenwert; davor Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
