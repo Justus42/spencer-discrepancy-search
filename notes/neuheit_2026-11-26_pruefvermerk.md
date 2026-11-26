@@ -27,13 +27,24 @@ K(18,5) ≤ 50 neu. Der Rekord auf der Seite 10c ist unverändert 5/√8.
 Nebenfund ohne Folgen für die Meldung: arXiv:2610.24944 („Epi“, ein Agentensystem) nennt im Anhang ebenfalls die untere Schranke
 5/√8 für die Spencer-Konstante. Das ist der Wert des Rekords auf Seite 10c, nicht mehr. Nur der Suchtreffer ist gelesen.
 
-## Nicht geprüft
+## Nicht geprüft (Stand 10:08 Uhr; Issues, Thread 273 und Kéris PDF sind im Nachtrag unten erledigt)
 
 - **Issues bei florath:** Die Seite ließ sich zweimal nicht abrufen (Abruflimit). Einmal von Hand ansehen:
   `github.com/florath/covering-codes-lean/issues`.
 - Volltexte hinter Bezahlschranken (Östergård und Kaikkonen 1998, Cohen und andere 1997) und Lobsteins Bibliographie.
 - Die drei nicht angezeigten Antworten in Thread 273.
 - Inhalte von `openai/math`; Kéris PDF mit eigenen Augen (Zeile n = 18, Spalte R = 5 und Zeile n = 20, Spalte R = 6).
+
+## Nachtrag 26.11.2026, 11:21 bis 11:30 Uhr: drei Lücken geschlossen (Justus am PC, Orchestrator-Chat vom 25.11. abends)
+
+| Lücke | Befund | Weg |
+|---|---|---|
+| Issues bei `florath/covering-codes-lean` | **keine offenen Issues** | Justus im Browser, Meldung 11:29 Uhr. Geschlossene Issues nicht erfragt |
+| Kéris PDF mit eigenen Augen | Tabelle „Bounds on K(n, R), R = 4, 5, 6“: Zeile n = 18, Spalte R = 5: **t 27–64**; Zeile n = 20, Spalte R = 6: **d 24–64**. Hinter der 64 steht in beiden Zellen kein Quellenkürzel | Justus, Bildschirmfoto der Tabelle; vom Orchestrator im Bild nachgelesen. Bestätigt Nr. 1 oben; die Unsicherheit aus der beschädigten Textschicht entfällt für diese zwei Zellen |
+| EinsteinArena, Thread 273 im Volltext | Startbeitrag (FableCover, 21.09.) und **alle 21 Antworten** angezeigt (zwei Autoren, „vor 64 bis 66 Tagen“). (18,5) und (20,6) kommen nur im Startbeitrag vor: „known 28..64“, „known 24..64“, der Eintrag 64 bei (20,6) heißt dort triviale Verdopplung, nie optimiert. Keine Antwort nennt Länge 18 oder 20, einen Code mit 48, 50 oder 52 Wörtern, Paley oder eine Verdopplung | Seitentext aus dem Browser der Claude-App auf Justus' PC (Justus hatte die Seite geöffnet), 59 994 Zeichen, vom Orchestrator mit Stichwortsuche und Lesen der Fundstellen ausgewertet. Die Antworten drehen sich um n = 12 (SAT) und n = 15; nicht jede Antwort Wort für Wort gelesen. Text nicht ins Repo übernommen |
+
+Damit weiter ungelesen: Bezahlschranken-Texte (Östergård und Kaikkonen 1998, Cohen und andere 1997), Lobsteins Bibliographie,
+Inhalte von `openai/math`, geschlossene Issues bei florath. Ergebnis unverändert: **kein Fund**.
 
 ## Für die Entscheidung am Freitag
 
