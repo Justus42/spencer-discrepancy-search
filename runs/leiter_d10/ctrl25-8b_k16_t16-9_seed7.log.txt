@@ -1,0 +1,30 @@
+  Runde 1 (W frei): Restzahl 95526, bestes 95526, Anforderungsvektoren 7870, Iterationen 321, 10.8 s
+  Runde 2 (U frei): Restzahl 1094, bestes 1094, Anforderungsvektoren 240, Iterationen 973, 104.2 s
+  Runde 3 (W frei): Restzahl 460, bestes 460, Anforderungsvektoren 3291, Iterationen 1787, 108.1 s
+  Runde 4 (U frei): Restzahl 451, bestes 451, Anforderungsvektoren 240, Iterationen 2221, 153.5 s
+  Runde 5 (W frei): Restzahl 451, bestes 451, Anforderungsvektoren 3291, Iterationen 2522, 154.9 s
+  Runde 6 (U frei): Restzahl 451, bestes 451, Anforderungsvektoren 240, Iterationen 2823, 191.1 s
+  Runde 7 (W frei): Restzahl 436, bestes 436, Anforderungsvektoren 3291, Iterationen 3307, 193.7 s
+  Runde 8 (U frei): Restzahl 420, bestes 420, Anforderungsvektoren 240, Iterationen 3609, 231.0 s
+  Runde 9 (W frei): Restzahl 420, bestes 420, Anforderungsvektoren 3291, Iterationen 3910, 232.8 s
+  Runde 10 (U frei): Restzahl 420, bestes 420, Anforderungsvektoren 240, Iterationen 4211, 269.1 s
+  Runde 11 (W frei): Restzahl 420, bestes 420, Anforderungsvektoren 3291, Iterationen 4512, 270.8 s
+  Runde 12 (U frei): Restzahl 420, bestes 420, Anforderungsvektoren 240, Iterationen 4813, 307.8 s
+  Runde 13 (W frei): Restzahl 420, bestes 420, Anforderungsvektoren 3291, Iterationen 5114, 309.5 s
+  Runde 14 (U frei): Restzahl 420, bestes 420, Anforderungsvektoren 240, Iterationen 5415, 344.2 s
+  Runde 15 (W frei): Restzahl 420, bestes 420, Anforderungsvektoren 3291, Iterationen 5716, 345.8 s
+  Runde 16 (U frei): Restzahl 420, bestes 420, Anforderungsvektoren 240, Iterationen 6017, 380.6 s
+  Runde 17 (W frei): Restzahl 420, bestes 420, Anforderungsvektoren 3291, Iterationen 6318, 382.2 s
+  Runde 18 (U frei): Restzahl 420, bestes 420, Anforderungsvektoren 240, Iterationen 6619, 415.2 s
+  Runde 19 (W frei): Restzahl 420, bestes 420, Anforderungsvektoren 3291, Iterationen 6920, 416.7 s
+  Runde 20 (U frei): Restzahl 420, bestes 420, Anforderungsvektoren 240, Iterationen 7221, 450.7 s
+  Runde 21 (W frei): Restzahl 420, bestes 420, Anforderungsvektoren 3291, Iterationen 7522, 452.1 s
+  Runde 22 (U frei): Restzahl 420, bestes 420, Anforderungsvektoren 240, Iterationen 7823, 488.3 s
+  Runde 23 (W frei): Restzahl 420, bestes 420, Anforderungsvektoren 3291, Iterationen 8124, 490.0 s
+  Runde 24 (U frei): Restzahl 420, bestes 420, Anforderungsvektoren 240, Iterationen 8425, 525.9 s
+  Runde 25 (W frei): Restzahl 420, bestes 420, Anforderungsvektoren 3291, Iterationen 8726, 527.4 s
+  Runde 26 (U frei): Restzahl 420, bestes 420, Anforderungsvektoren 240, Iterationen 9027, 562.0 s
+  Runde 27 (W frei): Restzahl 420, bestes 420, Anforderungsvektoren 3291, Iterationen 9328, 563.7 s
+  Runde 28 (U frei): Restzahl 420, bestes 420, Anforderungsvektoren 240, Iterationen 9629, 600.8 s
+  Neustart 1 nach Runde 28 (bestes bisher 420), 600.8 s
+ZEITGRENZE nach 600.8 s, beste Restzahl 420, 9629 Iterationen, 28 Runden, 1 Neustarts
