@@ -1,0 +1,1 @@
+START 19:14:58 dfs m=18 R=5 Typ=11,3,3,1 K=5 SEK=60 SEED=1
