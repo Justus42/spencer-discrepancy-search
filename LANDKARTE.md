@@ -45,6 +45,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Rundlauf Astra 6 Differenzblöcke (20x18, 2 160) | | | | | | | | | | | | 1,342 e |
 | Rundlauf Sol 2 Paley-12-Verkabelung (20x20, 71 280) | | | | | | | | | | | | 0,894 e |
 | Kern-⟨1,a⟩-Paare (U,W) bei (20,6), d = 8, abwechselnde Suche (Auftrag H): K = 10 (40 Wörter) in (11,9), (13,7), (10,10), (12,8) nicht erreicht | | | | | | | | | | | | (1,789) s |
+| Kern ⟨1,a,b⟩, K Nebenklassen zu 8 Wörtern (Auftrag K): (16,4) K = 5 (40 Wörter, N = 20) in allen 55 Typen voll ausgeschlossen, bestes K = 8 (64 Wörter, N = 32, 1,414; Sylvester-Bauregel und Suche); K = 6 in 36 Typen voll ausgeschlossen, 19 offen; (18,5) K = 5 in 31 von 74 Typen voll ausgeschlossen, 43 offen (60 s), bestes K = 8 | | | | | | | | | | | | – (voll bei (16,4)); (1,789) s bei (18,5) |
 | Freie Suche als Evolutionsschleife (Auftrag E), blind: (15,4) 16 Paare (32 Wörter) in 4 von 4 Läufen (Startwert 1: disc 7 dreifach); 15 Paare (30 Wörter, N = 15) nicht erreicht, beste Restzahl 233 offene Klassen |  |  |  |  |  |  | (1,807) s | 1,750 e |  |  |  |  |
 
 ## N ab 21
