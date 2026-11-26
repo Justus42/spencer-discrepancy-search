@@ -52,3 +52,14 @@ K = 16 in allen vier Typen gelöst; das ist der Tabellenwert 64, kein Fortschrit
 
 0 von 8 gelöst, beste Restzahl 28 (sieben Läufe), 36 (ein Lauf); zusammen mit der Stufe (28 / 28 / 28 / 36) kein Treffer in 12 Startwerten (Suche erfolglos).
 Zelle (16,4) abgeschlossen: kleinstes erreichtes K = 16 (64 Wörter) in allen vier Typen, kein Fortschritt gegenüber der Tabelle. Logs `s3c16-4a_*`, `s3c16-4b_*`.
+
+## Schritt 2: Leiter (21,6), d = 9, 4 Startwerte je Stufe, ≤ 300 s (23:47–00:08 UTC, 26.11.), Logs `runs/leiter_n/s2c21-6_k16_t<m1>-<m2>*`
+
+| Typ | K = 16 (64 Wörter) | beste Restzahl der vier Startwerte (von 2^(m1+m2−2) = 524 288) |
+|---|---|---|
+| (11,10) | 0 von 4 | 1056 / 1152 / 1256 / 1256 |
+| (12,9) | 0 von 4 | 384 / 384 / 576 / 576 |
+| (13,8) | 0 von 4 | 384 / 672 / 1401 / 2077 |
+| (14,7) | 0 von 4 | 384 / 576 / 704 / 1280 |
+
+Auch der Tabellenwert 64 wird in keinem Typ erreicht (wie die alte Nebenklassen-Suche: 0 von 12). Die Leiter endet in allen vier Typen an der ersten Stufe; es gibt kein „kleinstes erreichtes K“.
