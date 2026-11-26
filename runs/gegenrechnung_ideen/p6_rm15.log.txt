@@ -1,0 +1,38 @@
+Thu Nov 26 17:59:44 UTC 2026
+Nebenklassen von RM(1,5) je Abstand (Summe muss 2^26 = 67108864 sein):
+  Abstand  0: 1
+  Abstand  1: 32
+  Abstand  2: 496
+  Abstand  3: 4960
+  Abstand  4: 35960
+  Abstand  5: 201376
+  Abstand  6: 906192
+  Abstand  7: 3365856
+  Abstand  8: 10119795
+  Abstand  9: 21288320
+  Abstand 10: 22064064
+  Abstand 11: 8693888
+  Abstand 12: 427924
+  Abstand 13: 0
+  Abstand 14: 0
+  Abstand 15: 0
+  Abstand 16: 0
+  Summe 67108864
+Abstand 12: Spektrum [8^16 0^16]: 219604, [8^12 4^16 0^4]: 208320, anderes: 0
+Abstand 12 nach Grad und Betragsmultimenge der Autokorrelation (a != 0, |r| -> Anzahl):
+  Grad 3, |r|=0:15 |r|=8:16 -> 166656 Nebenklassen (Spektrum 8^16: 166656, 8^12 4^16: 0)
+  Grad 4, |r|=0:24 |r|=8:6 |r|=16:1 -> 208320 Nebenklassen (Spektrum 8^16: 0, 8^12 4^16: 208320)
+  Grad 3, |r|=0:27 |r|=16:4 -> 52080 Nebenklassen (Spektrum 8^16: 52080, 8^12 4^16: 0)
+  Grad 2, |r|=0:30 |r|=32:1 -> 868 Nebenklassen (Spektrum 8^16: 868, 8^12 4^16: 0)
+Gerade Nebenklassen: 33554432; Stellen mit |W| >= 12 je gerader Nebenklasse:
+  0 Stellen: 427924
+  1 Stellen: 5091689
+  2 Stellen: 15643096
+  3 Stellen: 9999360
+  4 Stellen: 2378475
+  6 Stellen: 13888
+
+real	0m3.125s
+user	0m11.870s
+sys	0m0.000s
+Thu Nov 26 17:59:47 UTC 2026
