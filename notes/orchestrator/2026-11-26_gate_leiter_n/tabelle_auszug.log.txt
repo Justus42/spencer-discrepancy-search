@@ -1,0 +1,14 @@
+(16, 4) untere 34 obere 64 | lit_gijswijt_polak_2025 | rule_trivial_upper
+(17, 4) untere 52 obere 112 | lit_li_chen_1994 | lit_honkala_hamalainen_1988
+(17, 5) untere 20 obere 32 | lit_gijswijt_polak_2025 | lit_ostergard_kaikkonen_1998
+(18, 5) untere 28 obere 64 | lit_gijswijt_polak_2025 | rule_trivial_upper
+(19, 5) untere 40 obere 64 | lit_zhang_lo_1992 | lit_graham_sloane_1985
+(19, 6) untere 17 obere 32 | lit_gijswijt_polak_2025 | lit_ostergard_kaikkonen_1998
+(20, 6) untere 24 obere 64 | lit_bhandari_chanduka_lal_1998 | rule_trivial_upper
+(20, 7) untere 12 obere 28 | lit_keri_2009 | lit_cohen_honkala_litsyn_lobstein_1997
+(21, 6) untere 34 obere 64 | lit_gijswijt_polak_2025 | lit_graham_sloane_1985
+(21, 7) untere 15 obere 32 | lit_gijswijt_polak_2025 | lit_ostergard_kaikkonen_1998
+(22, 7) untere 21 obere 64 | lit_gijswijt_polak_2025 | rule_trivial_upper
+(18, 4) untere 83 obere 192 | lit_zhang_1991 | lit_cohen_honkala_litsyn_lobstein_1997
+(18, 6) untere 13 obere 28 | lit_gijswijt_polak_2025 | lit_cohen_honkala_litsyn_lobstein_1997
+(10, 2) untere 24 obere 30 | lit_habsieger_plagne_2000 | lit_hamalainen_rankinen_1991

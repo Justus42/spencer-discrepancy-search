@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 25.11.2026 nachts (nach Auftrag E, Evolutionsschleife; davor Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 26.11.2026 früh (nach Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -81,6 +81,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Kern-⟨1,a⟩-Paare bei d = 9, K = 12 (48 Wörter), (21,6), (23,7), (25,8), sechs Typen (Auftrag H); U = Paley-12 ohne Spalte mit W 12 x 10 voll ausgeschlossen |  |  |  | (1,837) s | (1,800) s |  |  |  |  |  |  |  |  |
 | Freie Suche als Evolutionsschleife (Auftrag E), (20,6): 24 Paare (48 Wörter) blind gefunden (1 von 4, disc 8 dreifach); 23 Paare (46 Wörter, N = 23) nicht erreicht, beste Restzahl 704 offene Klassen (fester Endpunkt) |  |  | (1,668) s | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Kern-⟨1,a⟩-Leiter in den Nachbarzellen mit dem Löser aus H (Auftrag N): (18,5) 52 (K = 13) / 56 / 60 Wörter, 48 nicht (Restzahl 1); (21,6), (23,7), (25,8) 64 Wörter erreicht, 60 nicht (3343 / 548 / 10 598); (16,4) 64 erreicht, 60 nicht (28); (19,5) 64 nicht (768) |  |  |  |  |  | 1,569 e |  | 1,512 e |  | 1,461 e; (1,643) s |  | 1,591 e |  |
+| (18,5) mit 50 Wörtern: Zustand K = 12 mit Restzahl 1 aus Auftrag N plus eine freie Zeile (Gate N, Matrix 25 x 18, Rechnung des Orchestrators) |  |  |  |  | 1,600 e |  |  |  |  |  |  |  |  |
 
 ## Bester Eintrag dieser Karte je N (nur `e`/`r`)
 
@@ -90,7 +91,7 @@ bei N = 18 schon `ctrl_17` mit 7/√18 = 1,650 über dem Tabellenwert.
 
 | N | 6 | 7 | 8 | 9 | 10 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Quotient | 1,225 | 1,134 | 1,768 | 1,667 | 0,949 | 1,336 | 1,291 | 1,750 | 1,698 | 1,414 | 1,606 | 1,565 | 1,528 | 1,492 | 1,460 | 1,633 | 1,400 | 1,569 | 1,155 | 1,512 | 1,300 | 1,461 | 1,257 | 1,591 |
+| Quotient | 1,225 | 1,134 | 1,768 | 1,667 | 0,949 | 1,336 | 1,291 | 1,750 | 1,698 | 1,414 | 1,606 | 1,565 | 1,528 | 1,492 | 1,460 | 1,633 | 1,600 | 1,569 | 1,155 | 1,512 | 1,300 | 1,461 | 1,257 | 1,591 |
 
 ## Zeilen mit einer Null, Einträge in {-1, 0, 1} (Auftrag A, 25.11.2026)
 
@@ -155,6 +156,7 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Zusätzlich n = 10 (Dichte 1,09
   (23,7): (12,11) 16 / 548 (fester Wert in 12 Startwerten), (13,10) 432, (14,9) 128, (15,8) 984 bei K = 16 nicht erreicht. (25,8): (16,9) 16 / 10 598, (13,12) 554, (14,11) 188, (15,10) 1168 bei K = 16 nicht erreicht.
   (20,6) d = 8, K = 11 (Schritt 4): (14,6) 4152, (15,5) 5996, (16,4) 9415, nicht erreicht. Matrizen mit drei Prüfprogrammen: (18,5) K = 13, 14, 15 (26/28/30 x 18, disc 8); K = 16 in (21,6), (23,7), (25,8) (32 x 21/23/25, disc 9). Alle 228 Restzahlen mit `zerl_offen.py` nachgezählt.
   Quotienten: (18,5) 52 Wörter N = 26 gleich dem bestehenden Wert 1,569; neu ist N = 32 mit 9/√32 = 1,591 (64 Wörter bei d = 9). Kein Rekordkandidat (Rekordweg: d = 8 mit K ≤ 10, d = 9 mit K ≤ 12). Belegart: Treffer exakt, Nichterreichtes Suche erfolglos.
+  Gate: `notes/gate_2026-11-26_leiter_n.md` (alle 240 gespeicherten Paare nachgezählt; der 52er über alle 2^18 Punkte geprüft; aus den Zuständen mit Restzahl 1 im Gate ein Code mit 50 Wörtern gebaut, 25 x 18, disc 8 dreifach, N = 25 mit 8/√25 = 1,600).
 - **Evolutionsschleife, Auftrag E (25.11.2026):** Protokoll `notes/laeufe/2026-11-25_evo.md`, Bewerter `src/evo_bewertung.c` (eingefroren), Programme
   `src/evo/p001.c`–`p025.c`, Archiv `runs/evo/archiv.tsv`. 29 Runden zu 4 Startwerten, 4,5 h. Kleinste erreichte Paarzahl: (15,4) 16 (blind, Runde 1),
   (20,6) 24 (blind, Doppelungsform, Runde 5). Beste Restzahl darunter: (15,4) 15 Paare 233; (20,6) 23 Paare **704** offene Klassen (Bonus g = 0,880 gegen

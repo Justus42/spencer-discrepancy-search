@@ -1,0 +1,2 @@
+Startwert 1: 22 Zeilen (44 Woerter), offene Punkte 3868 (= 967 Klassen (y,z)); gierig 3 freie Zeilen dazu -> 50 Woerter
+Startwert 2: 22 Zeilen (44 Woerter), offene Punkte 3868 (= 967 Klassen (y,z)); gierig 3 freie Zeilen dazu -> 50 Woerter
