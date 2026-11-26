@@ -1,0 +1,25 @@
+Fall  0: m=8 R=1 ja1    |P|= 10  brute: f1-Zeilen    2 maxcov  10 f2 ja   | misch_frei:    2  10 ja    OK
+Fall  1: m=8 R=1 ja2    |P|= 22  brute: f1-Zeilen    0 maxcov  12 f2 ja   | misch_frei:    0  12 ja    OK
+Fall  2: m=7 R=2 zufall |P|= 20  brute: f1-Zeilen    0 maxcov  16 f2 ja   | misch_frei:    0  16 ja    OK
+Fall  3: m=7 R=2 gross  |P|= 64  brute: f1-Zeilen    0 maxcov  38 f2 nein | misch_frei:    0  38 nein  OK
+Fall  4: m=9 R=2 ja1    |P|= 56  brute: f1-Zeilen    2 maxcov  56 f2 ja   | misch_frei:    2  56 ja    OK
+Fall  5: m=9 R=1 ja2    |P|=  8  brute: f1-Zeilen    0 maxcov   4 f2 ja   | misch_frei:    0   4 ja    OK
+Fall  6: m=9 R=1 zufall |P|= 22  brute: f1-Zeilen    0 maxcov   4 f2 nein | misch_frei:    0   4 nein  OK
+Fall  7: m=9 R=3 gross  |P|= 50  brute: f1-Zeilen    0 maxcov  40 f2 ja   | misch_frei:    0  40 ja    OK
+Fall  8: m=10 R=1 ja1    |P|= 10  brute: f1-Zeilen    2 maxcov  10 f2 ja   | misch_frei:    2  10 ja    OK
+Fall  9: m=9 R=2 ja2    |P|= 36  brute: f1-Zeilen    0 maxcov  22 f2 ja   | misch_frei:    0  22 ja    OK
+Fall 10: m=10 R=2 zufall |P|= 20  brute: f1-Zeilen    0 maxcov  10 f2 nein | misch_frei:    0  10 nein  OK
+Fall 11: m=9 R=3 gross  |P|= 36  brute: f1-Zeilen    0 maxcov  32 f2 ja   | misch_frei:    0  32 ja    OK
+Fall 12: m=9 R=1 ja1    |P|= 12  brute: f1-Zeilen    2 maxcov  12 f2 ja   | misch_frei:    2  12 ja    OK
+Fall 13: m=8 R=1 ja2    |P|= 34  brute: f1-Zeilen    0 maxcov  18 f2 ja   | misch_frei:    0  18 ja    OK
+Fall 14: m=7 R=1 zufall |P|= 10  brute: f1-Zeilen    0 maxcov   6 f2 ja   | misch_frei:    0   6 ja    OK
+Fall 15: m=8 R=1 gross  |P|= 58  brute: f1-Zeilen    0 maxcov  10 f2 nein | misch_frei:    0  10 nein  OK
+Fall 16: m=7 R=2 ja1    |P|= 56  brute: f1-Zeilen    2 maxcov  56 f2 ja   | misch_frei:    2  56 ja    OK
+Fall 17: m=9 R=2 ja2    |P|= 38  brute: f1-Zeilen    0 maxcov  24 f2 ja   | misch_frei:    0  24 ja    OK
+Fall 18: m=10 R=3 zufall |P|=  4  brute: f1-Zeilen  100 maxcov   4 f2 ja   | misch_frei:  100   4 ja    OK
+Fall 19: m=8 R=2 gross  |P|= 48  brute: f1-Zeilen    0 maxcov  24 f2 nein | misch_frei:    0  24 nein  OK
+Fall 20: m=9 R=2 ja1    |P|= 12  brute: f1-Zeilen    2 maxcov  12 f2 ja   | misch_frei:    2  12 ja    OK
+Fall 21: m=9 R=2 ja2    |P|=126  brute: f1-Zeilen    0 maxcov  66 f2 ja   | misch_frei:    0  66 ja    OK
+Fall 22: m=7 R=1 zufall |P|= 20  brute: f1-Zeilen    0 maxcov   8 f2 nein | misch_frei:    0   8 nein  OK
+Fall 23: m=9 R=3 gross  |P|= 50  brute: f1-Zeilen    0 maxcov  38 f2 ja   | misch_frei:    0  38 ja    OK
+Faelle 24, Abweichungen 0; {'f1 ja': 7, 'f2 ja': 18, 'f2 nein': 6}
