@@ -1,6 +1,6 @@
 # Prüfvermerk zur Gegenprüfung der Ideenliste vom 26.11.2026
 
-Orchestrator, 26.11.2026, 17:03 bis 18:15 Uhr, Abschnitt 6 und die Berichtigung der Notiz bis 18:35 Uhr (Zeiten aus Zeitstempeln und `date`).
+Orchestrator, 26.11.2026, 17:03 bis 18:15 Uhr, Abschnitt 6 und die Berichtigung der Notiz bis 18:25 Uhr (Zeiten aus Zeitstempeln und `date`).
 Geprüft werden zwei Antworten auf den Prompt 5b aus `notes/ideen_2026-11-26.md` und der Deep-Research-Bericht zu Prompt 5a (Abschnitt 6):
 
 - **Gemini** (App, von Justus um 17:03 Uhr geschickt): bricht mitten in Punkt 2 ab. Teilantwort in `notes/gemini/gegenpruefung_2026-11-26_teilantwort.md`.
@@ -11,6 +11,9 @@ Eigene Rechnungen dazu: `notes/orchestrator/2026-11-26_gegenpruefung/`, zusammen
 Die Notiz `notes/ideen_2026-11-26.md` ist nach Freigabe durch Justus (18:20 Uhr) berichtigt; die erste Fassung ist der Stand von `main` nach PR 56 (`ff723e4`).
 
 ## 1. Was an der Notiz falsch ist
+
+Die Nummern der Ideen sind die der ersten Fassung (1 Kern der Dimension 3, 2 Spaltenleiter, 3 freie Suche bei (25,8), 4 Abschlussarbeiten).
+In der berichtigten Notiz sind die Verdopplungszellen als Idee 3 eingeschoben, die freie Suche ist Idee 4, die Abschlussarbeiten sind Idee 5.
 
 | Stelle | Einwand | von | Urteil nach Nachrechnung |
 |---|---|---|---|
@@ -68,7 +71,7 @@ Die Notiz `notes/ideen_2026-11-26.md` ist nach Freigabe durch Justus (18:20 Uhr)
 - **Idee 1** bleibt der beste Kandidat, aber der erste Test wird kleiner: (16,4), die 44 verbliebenen Typen, je Typ ein Zeitlimit, Kontrolle
   „bekannter linearer Code geht als K ≤ 8 durch“.
 - **Neu: Verdopplungszellen** ((19,6) mit 20 Wörtern und die elf weiteren aus Punkt 3.1). Billig zu suchen, die Probe liegt weit weg.
-- **Abschnitt 3e** der Notiz wird zurückgenommen und durch die Tabelle aus Punkt 3.1 ersetzt.
+- **Abschnitt 3e** der Notiz ist zurückgenommen und durch die Tabelle aus Punkt 3.1 ersetzt.
 
 ## 6. Geminis Deep Research zu Prompt 5a (von Justus um 18:20 Uhr geschickt)
 
