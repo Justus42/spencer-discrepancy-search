@@ -1,0 +1,8 @@
+s4c20-6b_k11_t16-4 seed 1: ZEITGRENZE nach 600.7 s, beste Restzahl 9415, 21101 Iterationen, 67 Runden, 2 Neustarts
+runs/leiter_n/s4c20-6b_k11_t16-4_seed1.paar.txt: K=11, Typ (16,4), d=8: offene Klassen 9415 von 262144
+s4c20-6b_k11_t16-4 seed 2: ZEITGRENZE nach 600.1 s, beste Restzahl 9415, 21264 Iterationen, 65 Runden, 2 Neustarts
+runs/leiter_n/s4c20-6b_k11_t16-4_seed2.paar.txt: K=11, Typ (16,4), d=8: offene Klassen 9415 von 262144
+s4c20-6b_k11_t16-4 seed 3: ZEITGRENZE nach 600.3 s, beste Restzahl 9415, 20799 Iterationen, 67 Runden, 2 Neustarts
+runs/leiter_n/s4c20-6b_k11_t16-4_seed3.paar.txt: K=11, Typ (16,4), d=8: offene Klassen 9415 von 262144
+s4c20-6b_k11_t16-4 seed 4: ZEITGRENZE nach 601.1 s, beste Restzahl 9415, 20253 Iterationen, 65 Runden, 1 Neustarts
+runs/leiter_n/s4c20-6b_k11_t16-4_seed4.paar.txt: K=11, Typ (16,4), d=8: offene Klassen 9415 von 262144

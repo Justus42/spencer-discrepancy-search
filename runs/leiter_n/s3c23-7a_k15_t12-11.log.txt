@@ -1,0 +1,8 @@
+s3c23-7a_k15_t12-11 seed 5: ZEITGRENZE nach 900.3 s, beste Restzahl 548, 37679 Iterationen, 111 Runden, 4 Neustarts
+runs/leiter_n/s3c23-7a_k15_t12-11_seed5.paar.txt: K=15, Typ (12,11), d=9: offene Klassen 548 von 2097152
+s3c23-7a_k15_t12-11 seed 6: ZEITGRENZE nach 900.0 s, beste Restzahl 548, 34029 Iterationen, 102 Runden, 4 Neustarts
+runs/leiter_n/s3c23-7a_k15_t12-11_seed6.paar.txt: K=15, Typ (12,11), d=9: offene Klassen 548 von 2097152
+s3c23-7a_k15_t12-11 seed 7: ZEITGRENZE nach 900.1 s, beste Restzahl 548, 38883 Iterationen, 115 Runden, 4 Neustarts
+runs/leiter_n/s3c23-7a_k15_t12-11_seed7.paar.txt: K=15, Typ (12,11), d=9: offene Klassen 548 von 2097152
+s3c23-7a_k15_t12-11 seed 8: ZEITGRENZE nach 900.4 s, beste Restzahl 548, 39131 Iterationen, 116 Runden, 4 Neustarts
+runs/leiter_n/s3c23-7a_k15_t12-11_seed8.paar.txt: K=15, Typ (12,11), d=9: offene Klassen 548 von 2097152

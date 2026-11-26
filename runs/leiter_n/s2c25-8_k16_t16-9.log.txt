@@ -1,0 +1,8 @@
+s2c25-8_k16_t16-9 seed 1: ZEITGRENZE nach 301.6 s, beste Restzahl 416, 4387 Iterationen, 10 Runden, 0 Neustarts
+runs/leiter_n/s2c25-8_k16_t16-9_seed1.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 416 von 8388608
+s2c25-8_k16_t16-9 seed 2: ZEITGRENZE nach 301.8 s, beste Restzahl 1940, 3343 Iterationen, 10 Runden, 0 Neustarts
+runs/leiter_n/s2c25-8_k16_t16-9_seed2.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 1940 von 8388608
+s2c25-8_k16_t16-9 seed 3: ZEITGRENZE nach 300.2 s, beste Restzahl 2074, 3268 Iterationen, 9 Runden, 0 Neustarts
+runs/leiter_n/s2c25-8_k16_t16-9_seed3.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 2074 von 8388608
+s2c25-8_k16_t16-9 seed 4: LOESUNG nach 176.3 s, 2011 Iterationen, 4 Runden, 0 Neustarts
+runs/leiter_n/s2c25-8_k16_t16-9_seed4.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 0 von 8388608

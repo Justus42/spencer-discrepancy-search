@@ -1,6 +1,6 @@
 # STATUS
 
-Stand: 25.11.2026 nachts (nach Auftrag E, Evolutionsschleife für freie Suche: kein Treffer bei (20,6) mit 23 Paaren, beste Restzahl 704, mit Gate; davor Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie: kein Treffer bei K = 11, K = 10 und d = 9, mit Gate; davor Auftrag P, Gegenrechnung der Vortests der Ideensammlung: alle Zahlen bestätigt, kein Kandidat, mit Gate; davor Auftrag R9, Rang 9 bei (15,4): alle neun Klassen ausgeschlossen, mit Gate; davor Auftrag G und Auftrag S, beide ohne Kandidaten, beide mit Gate. E, H und P aus `notes/ideen_2026-11-25.md` sind damit abgeschlossen. Auftragsdateien N (Leiter in den Nachbarzellen) und B2 (zweite Rechnung zu den 48ern unter P) seit 25.11.2026, 22:52 Uhr in `main`, Ergebnisse stehen aus). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
+Stand: 26.11.2026 früh (nach Auftrag N, Leiter in den Nachbarzellen: K(18,5) ≤ 52 aus der Suche, im Gate auf ≤ 50 verbessert (Tabelle 64), kein Rekordkandidat, mit Gate; davor Auftrag E, Evolutionsschleife für freie Suche: kein Treffer bei (20,6) mit 23 Paaren, beste Restzahl 704, mit Gate; davor Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie: kein Treffer bei K = 11, K = 10 und d = 9, mit Gate; davor Auftrag P, Gegenrechnung der Vortests der Ideensammlung: alle Zahlen bestätigt, kein Kandidat, mit Gate; davor Auftrag R9, Rang 9 bei (15,4): alle neun Klassen ausgeschlossen, mit Gate; davor Auftrag G und Auftrag S, beide ohne Kandidaten, beide mit Gate. E, H und P aus `notes/ideen_2026-11-25.md` sind damit abgeschlossen. Auftrag B2 (zweite Rechnung zu den 48ern unter P) hat am 26.11.2026 um 01:23 Uhr zuletzt committet; Bericht und Gate stehen aus). Timebox: 23.11.2026 bis 04.01.2027, danach Entscheidung über Abbruch.
 Vollständige frühere Fassung: `notes/verlauf/STATUS_2026-11-24_vollstaendig.md` (Archiv, eingefroren). Übersicht Familien x N:
 `LANDKARTE.md`. Arbeitsregeln: `CLAUDE.md`. Herkunft externer Dateien: `controls/QUELLEN.md`. Laufprotokolle: `notes/laeufe/`.
 Fundstellen in den Tabellen: „A: …“ = Überschrift im Archiv, „L: …“ = `notes/laeufe/…`, „K“ = `LANDKARTE.md`,
@@ -30,13 +30,13 @@ Dichte = 2B · V(m,R) / 2^m. Alle anderen Zellen mit m ≤ min(B, 33) sind gesch
 |---|---|---|---|---|---|---|
 | 7 | 30 | (13,3) | 28–42 | 1,38 | | C |
 | 7 | 30 | (15,4) | 23–32 | 1,78 | 32 (`ctrl_16`, bekannt) | C; A: Gesichert |
-| 8 | 40 | (16,4) | 34–64 | 1,54 | | C |
-| 8 | 40 | (18,5) | 28–64 | 1,93 | 64 (Suche, bekannt) | C; A: Rundgang Nebenklassen-Suche |
+| 8 | 40 | (16,4) | 34–64 | 1,54 | 64 (Auftrag N, Suche; 60 nicht) | C; L: 2026-11-25_leiter_nachbarzellen |
+| 8 | 40 | (18,5) | 28–64 | 1,93 | **50** (Gate N: Zustand mit K = 12 und Restzahl 1 plus eine freie Zeile, 25 Zeilen; Auftrag N: 52 mit K = 13; Tabelle 64; 48 nicht) | C; L: 2026-11-25_leiter_nachbarzellen; A: Rundgang Nebenklassen-Suche |
 | 8 | 40 | (20,6) | 24–64 | 2,31 | **48** (besser als Tabelle) | C; A: Hadamard-Bauregel und Tests |
 | 9 | 50 | (19,5) | 40–64 | 1,59 | | C |
-| 9 | 50 | (21,6) | 34–64 | 1,96 | | C |
-| 9 | 50 | (23,7) | 29–64 | 2,33 | | C |
-| 9 | 50 | (25,8) | 25–64 | 2,69 | | C |
+| 9 | 50 | (21,6) | 34–64 | 1,96 | 64 (Auftrag N, Suche; 60 nicht) | C; L: 2026-11-25_leiter_nachbarzellen |
+| 9 | 50 | (23,7) | 29–64 | 2,33 | 64 (Auftrag N, Suche; 60 nicht, Restzahl 548) | C; L: 2026-11-25_leiter_nachbarzellen |
+| 9 | 50 | (25,8) | 25–64 | 2,69 | 64 (Auftrag N, Suche; 60 nicht) | C; L: 2026-11-25_leiter_nachbarzellen |
 | 10 | 62 | (20,5) | 62–128 | 1,28 | | C |
 | 10 | 62 | (22,6) | 49–128 | 1,63 | | C |
 | 10 | 62 | (24,7) | 41–128 | 1,98 | | C |
@@ -82,6 +82,13 @@ Eigene bessere Werte außerhalb dieser Tabelle (m > B(8) = 20, also kein Rekordw
   Zwei Wege: `native_decide` (je 2 Min.) und `decide +kernel` (10,4 bzw. 5,8 Min., Achsen nur `propext`, `Quot.sound`). Kontrollen Hamming [7,4], `ctrl_16`,
   Negativkontrolle (48er ohne ein Paar) wie erwartet. Grenzen: Lean liest die Kontrolldatei nicht selbst (Erzeuger + Prüfsumme), Reduktion auf die
   Diskrepanz nicht formalisiert, Neuheit offen. L: 2026-11-24_lean
+- **K(18,5) ≤ 52, d = 8 (Auftrag N, 26.11.2026):** Löser aus Auftrag H, Kern ⟨1,a⟩, Typ (9,9), K = 13 (26 Zeilen, 52 Wörter), 4 von 4 Startwerten in ≤ 1,6 s; K = 14 und 15 ebenso. Matrix 26 x 18
+  (`runs/leiter_n/c18-5_k13_t9-9.matrix.txt`): `zerl_offen.py` und direkte Zählung 0 offen, check_disc, verify_spencer, exakt_disc je Diskrepanz 8. Tabelle K(18,5) 28–64, eigener Wert bisher 64; keine Rekordgrenze (40).
+  K = 12 (48 Wörter): 12 Startwerte, immer Restzahl 1. Neuheit prüft der Orchestrator. K = 16 (64 Wörter) auch in (21,6), (23,7), (25,8): 32 x 21 / 23 / 25, je Diskrepanz 9 mit drei Programmen. L: 2026-11-25_leiter_nachbarzellen
+- **K(18,5) ≤ 50, d = 8 (Gate N, 26.11.2026, Rechnung des Orchestrators, noch von keiner Sitzung gegengerechnet):** Jeder der 12 Zustände mit K = 12 und Restzahl 1 lässt genau die vier Punkte (±y, ±z) offen.
+  Das Wort (y, z') mit z' = z an vier Stellen gewechselt hat Abstand 4 zu (y, z) und 5 zu (y, −z); sein Negativ erledigt die beiden anderen. 24 Zeilen plus diese eine: 25 Zeilen, 50 Wörter (kein Kern-⟨1,a⟩-Code mehr).
+  Matrix 25 x 18 (`notes/orchestrator/2026-11-26_gate_leiter_n/gate_c18-5_50w.matrix.txt`): Radius 5 über alle 2^18 Punkte mit eigenem Zähler, check_disc, verify_spencer, exakt_disc je Diskrepanz 8; in allen 12 Zuständen gelingt es.
+  Neuheit: Post-Kéri-Tabelle (florath, `main` am 26.11.2026, SHA-256 unverändert `5efaf8d9…`) nennt 28–64, obere Schranke aus der trivialen Regel. Eine Websuche ohne Fund. Nicht geprüft: offene PRs und Issues bei florath, Kéris eigene Tabelle, arXiv gründlich. Keine Rekordgrenze (40). `notes/gate_2026-11-26_leiter_n.md`
 
 ## Negativbefunde
 
@@ -131,6 +138,7 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 | Kern-⟨1,a⟩-Paare (U,W) bei (20,6), abwechselnde Suche mit Halbproblem-Löser (Auftrag H): K = 11 (44 Wörter) und K = 10 (40) in den Typen (11,9), (13,7), (10,10), (12,8), Zufallsstart; Kontrolle K = 12 (11,9) 8 von 8 in ≤ 25 s | nicht erreicht; beste Restzahl K = 11: 1288 / 2698 / 1063 / 1836, K = 10: 3234 / 5926 / 1852 / 4280 | Suche | L: 2026-11-25_zerlegung; K |
 | Kern-⟨1,a⟩-Paare bei d = 9, K = 12 (48 Wörter), Zellen (21,6), (23,7), (25,8), sechs Typen, Zufallsstart; dazu U = Paley-12 ohne Spalte, W 12 x 10/12/14 | nicht erreicht (beste Restzahl 1760 bei (12,11)); die besten Zustände bei (12,11) und (12,13) haben als eine Hälfte eine volle Hadamard-Matrix 12 x 12 und liegen damit in dem Fall, den der Zählbeweis (Zeile zu Auftrag P oben) für jede zweite Hälfte ausschließt; W 12 x 10 ausgeschlossen (Zählschranke über alle 880 Anforderungen, bestätigt Sol), 12 x 12 und 12 x 14 unentschieden | Suche (alle Restzahlen im Gate mit eigenem Zähler bestätigt); 12 x 10: Zählschranke, drittes Programm nach Vortest und Auftrag P | L: 2026-11-25_zerlegung |
 | Freie Suche als Evolutionsschleife (Auftrag E: 25 Programme, Inseln A, B, C, Saat; eingefrorener Bewerter) bei (20,6) mit 23 Paaren (46 Wörter), blind und ab dem 48er; Kontrollen (15,4) 16 Paare blind 4 von 4; (20,6) 24 Paare blind 1 von 4 nur in der Doppelungsform (Insel B, Teilung 11 + 9 vorgegeben; disc 8 dreifach), freie Züge (Insel A) in der Sitzung bei 24 Paaren nicht unter 115; im Gate nachgeholt: das Zielprogramm p018 (freie Züge, volle Nachbarschaft) findet bei 24 Paaren blind einen 48er in 2 von 2 Läufen (8 s und 51 s, disc 8 dreifach) | nicht erreicht; beste Restzahl **704** offene Klassen (fester Endpunkt: 19 von 44 Läufen genau 704; 48er ohne Zeile 1297, Spann 886); (15,4) mit 15 Paaren 233 | Suche (alle 116 Restzahlen des Archivs im Gate mit eigenem Zähler bestätigt) | L: 2026-11-25_evo; `notes/gate_2026-11-25_evo.md`; K |
+| Leiter K = 16, 15, … mit dem Löser aus Auftrag H, je Zelle vier Typen (Auftrag N): (16,4) K = 16 (alle Typen), K = 15 nicht (beste Restzahl 28); (18,5) K = 13 (Typ (9,9)), K = 12 Restzahl 1, übrige Typen K = 16; (19,5) K = 16 nicht (768); (21,6) K = 16 nur Typ (12,9) (1 von 8 bei 900 s), K = 15 3343; (23,7) K = 16 nur (12,11), K = 15 fest 548; (25,8) K = 16 nur (16,9), K = 15 ≈ 10 600; (20,6) K = 11 in (14,6), (15,5), (16,4): 4152 / 5996 / 9415 | bester Typ je Zelle in Spalte „eigener Wert“ oben; sonst nicht erreicht | Suche (K = 13 bei (18,5) exakt, drei Prüfprogramme; alle 228 Restzahlen mit `zerl_offen.py` nachgezählt, 0 Abweichungen; im Gate alle 240 gespeicherten Paare mit eigenem Zähler bestätigt) | L: 2026-11-25_leiter_nachbarzellen; `notes/gate_2026-11-26_leiter_n.md`; K |
 
 ## Fehlversuche
 
@@ -195,6 +203,9 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - 25.11.2026, Auftrag E, Doppelungsform bei 23 Paaren, je 4 x 600 s: p007 1276–1286, p016 (11+9) starr 1241, p023 (12+8) starr 1310. L: 2026-11-25_evo.
 - 25.11.2026, Auftrag E, 23 Paare: zehn Runden ohne Verbesserung der 704 (Runden 18–29 ohne Nebenziel, je 4 x 600 s; längeres Tabu, Mindestabstand 7, Zeilenersatz, Doppelzüge, Saat, ohne Gewichte), Abbruch laut Auftrag. L: 2026-11-25_evo.
 - 25.11.2026, Auftrag E, Nebenziel (15,4) 15 Paare, 4 Runden je 4 x 300 s (p001, p013, p018, p016): immer 233 (Doppelungsform 707). L: 2026-11-25_evo.
+- 26.11.2026, Auftrag N, (18,5) K = 12 Typ (9,9): 4 x 300 s und 8 x 900 s (Startwerte 1–12), immer Restzahl 1, ungelöst. L: 2026-11-25_leiter_nachbarzellen.
+- 26.11.2026, Auftrag N, K − 1 nach dem besten K: (16,4) K = 15 Typ (9,7) 4 x 300 + 8 x 900 s, Restzahl 28; (21,6) K = 15 Typ (12,9) 8 x 900 s, 3343; (23,7) K = 15 Typ (12,11) 4 x 300 + 8 x 900 s, immer 548; (25,8) K = 15 Typ (16,9) 4 x 300 + 8 x 900 s, 10 598–13 007; (19,5) K = 16 Typ (10,9) 4 x 300 + 8 x 900 s, 768–1280. L: 2026-11-25_leiter_nachbarzellen.
+- 26.11.2026, Auftrag N, Schritt 4, (20,6) K = 11 (44 Wörter) Typen (14,6), (15,5), (16,4), je 4 x 600 s: nicht gelöst, Restzahl 4152 / 5996 / 9415 (schlechter als (11,9) 1288 und (10,10) 1063). L: 2026-11-25_leiter_nachbarzellen.
 ## Offene Punkte
 
 - Meldung von K(20,6) ≤ 48 (und der Familie): Entscheidung am 27.11.2026 (`notes/zweitmeinung_2026-11-24_auftrag.md`).
@@ -223,7 +234,8 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - Auftrag P, offen: d = 9 mit punktierter Paley-Hälfte bei m2 = 12, 14 (Zählung entscheidet nicht); (15,4) mit 5 gestrichenen Zeilen nicht gerechnet; kozyklisch n = 26–30 nur disc ≤ 8 belegt (weitere Gruppen der Ordnung 40 wie Z5⋊Z8, Z4×D5, Ordnung 60 außer Z60 und Dic15 nicht gerechnet); elf Radius-2-Kugeln bei n = 10 nicht selbst entschieden (nach der Tabelle, K(10,2) ≥ 24, unmöglich) (L: 2026-11-25_pruef_ideen).
 - Auftrag H: Halbproblem-Löser findet den 48er bei (20,6) aus Zufallsstart in Sekunden (8 von 8; Typ (10,10) ebenso); Gleichwertigkeit der Treffer zu 1+3/2+2 offen (Fingerabdruck trennt nicht; alle Positivkontrollen des Lösers sind Hadamard-artig); d = 9 mit Paley-U und W 12 x 12 / 12 x 14 offen (L: 2026-11-25_zerlegung).
 - Nächster Schritt: Entscheidung zur Meldung K(20,6) ≤ 48 am 27.11.2026 (Neuheitsprüfung am 26.11.). Die Ansatzwahl ist erfolgt (`notes/ideen_2026-11-25.md`): Aufträge E (Evolutionsschleife),
-  H (Zerlegung der Kern-Familie) und P (Gegenrechnung der Vortests), freigegeben am 25.11.2026, 18:10 Uhr; danach je ein Gate. P, H und E sind abgeschlossen (Gates bestanden, `notes/gate_2026-11-25_pruef_ideen.md`, `notes/gate_2026-11-25_zerlegung.md`, `notes/gate_2026-11-25_evo.md`). Danach: Aufträge N (`notes/leiter_nachbarzellen_2026-11-25_auftrag.md`) und B2 (`notes/gegenrechnung_bahnen3_2026-11-25_auftrag.md`), je mit Gate; die Entscheidung über (25,8) erst nach N.
+  H (Zerlegung der Kern-Familie) und P (Gegenrechnung der Vortests), freigegeben am 25.11.2026, 18:10 Uhr; danach je ein Gate. P, H und E sind abgeschlossen (Gates bestanden, `notes/gate_2026-11-25_pruef_ideen.md`, `notes/gate_2026-11-25_zerlegung.md`, `notes/gate_2026-11-25_evo.md`). Auftrag N (`notes/leiter_nachbarzellen_2026-11-25_auftrag.md`) ist abgeschlossen (Gate bestanden, `notes/gate_2026-11-26_leiter_n.md`). Offen: Gate zu B2 (`notes/gegenrechnung_bahnen3_2026-11-25_auftrag.md`); Neuheitsprüfung zu K(18,5) ≤ 50 (Literatur); Entscheidung über (25,8): nach N liegt K = 12 bei d = 9 weit entfernt (K = 15 schon nicht erreicht).
+- Auftrag N (abgeschlossen 26.11.2026, Gate bestanden, `notes/gate_2026-11-26_leiter_n.md`; L: 2026-11-25_leiter_nachbarzellen): K(18,5) ≤ 52, im Gate ≤ 50 (gegenüber der Tabelle neu, Literatur noch nicht gründlich geprüft, Gegenrechnung der 50 durch eine Sitzung offen), K = 12 bei Restzahl 1 (Beinahe-Treffer, fester Wert); Typen mit kleiner Restzahl bei K = 16 nicht nachgefasst, weil nicht bester Typ nach Auftragsregel: (23,7) (14,9) 128, (25,8) (14,11) 188, (21,6) (13,8)/(14,7) 384; die Entscheidung über (25,8): K = 16 erreicht, K = 15 weit entfernt; Hadamard-Becken wie bei Auftrag H wurden nicht geprüft.
 - Auftrag E (abgeschlossen, Gate bestanden, `notes/gate_2026-11-25_evo.md`): kein Treffer; Ziele 22–20 Paare nicht begonnen; Gleichwertigkeit und Struktur der 704er sowie des blinden 48ers zu Paley offen (L: 2026-11-25_evo).
 
 ## Prüfrahmen
@@ -263,3 +275,4 @@ Belegart: **voll** = vollständig durchgerechnet, **Gegenbeispiel** = je Fall ei
 - `notes/verlauf/`: Archiv der vollständigen STATUS.md vom 24.11.2026 (eingefroren). `notes/rundlauf_2026-11-24_auftrag.md`: Auftragstext Ansatz 3.
 - `src/zerl_offen.py` (Prüfcode), `src/zerl_halb.c` (Suchcode: `ls`, `dfs`, `alt`, `zaehl`), `src/zerl_eingaben.py`, `src/zerl_test_dfs.py`, `src/zerl_gewichte.py`, `src/run_zerl_{k1,s2,alt,ziel}.sh`: Auftrag H. Logs `runs/zerlegung/`.
 - `src/evo_bewertung.c` (Prüfcode, Bewerter, eingefroren in `runs/evo/BEWERTER.sha256`), `src/evo_bewertung_kontrolle.sh`, `src/evo/p001.c`–`p025.c` (Suchcode), `src/evo/runde.sh`: Auftrag E. Archiv `runs/evo/archiv.tsv`, Ausgaben und Logs `runs/evo/`.
+- `src/run_leiter_n.sh`, `src/run_leiter_typen.sh`, `src/run_leiter_stufen.sh` (Treiber für `zerl_halb alt`), `src/leiter_zusammen.sh` (Zusammenfassung): Auftrag N, kein neuer Suchcode. Logs, Paare, Matrizen `runs/leiter_n/`.

@@ -1,0 +1,11 @@
+== 00:08:22 Start Block s3c21-6a_k16_t12-9
+s3c21-6a_k16_t12-9 seed 5: ZEITGRENZE nach 900.0 s, beste Restzahl 576, 40446 Iterationen, 116 Runden, 4 Neustarts
+runs/leiter_n/s3c21-6a_k16_t12-9_seed5.paar.txt: K=16, Typ (12,9), d=9: offene Klassen 576 von 524288
+s3c21-6a_k16_t12-9 seed 6: LOESUNG nach 182.7 s, 8460 Iterationen, 26 Runden, 1 Neustarts
+runs/leiter_n/s3c21-6a_k16_t12-9_seed6.paar.txt: K=16, Typ (12,9), d=9: offene Klassen 0 von 524288
+s3c21-6a_k16_t12-9 seed 7: ZEITGRENZE nach 900.3 s, beste Restzahl 576, 41320 Iterationen, 120 Runden, 5 Neustarts
+runs/leiter_n/s3c21-6a_k16_t12-9_seed7.paar.txt: K=16, Typ (12,9), d=9: offene Klassen 576 von 524288
+s3c21-6a_k16_t12-9 seed 8: ZEITGRENZE nach 900.5 s, beste Restzahl 320, 47558 Iterationen, 142 Runden, 6 Neustarts
+runs/leiter_n/s3c21-6a_k16_t12-9_seed8.paar.txt: K=16, Typ (12,9), d=9: offene Klassen 320 von 524288
+== 00:23:24 Ende Block s3c21-6a_k16_t12-9
+TREFFER in s3c21-6a_k16_t12-9

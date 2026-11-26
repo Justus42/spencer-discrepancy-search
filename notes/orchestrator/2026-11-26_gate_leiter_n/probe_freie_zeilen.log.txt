@@ -1,0 +1,8 @@
+Thu Nov 26 05:55:23 CET 2026
+a_k11_t10-10_seed1.paar.txt: 22 Zeilen, offene Punkte 4252; erste freie Zeile deckt 1040 davon; gierig 16 freie Zeilen -> 76 Woerter
+a_k11_t11-9_seed1.paar.txt: 22 Zeilen, offene Punkte 5152; erste freie Zeile deckt 1172 davon; gierig 16 freie Zeilen -> 76 Woerter
+b_k10_t10-10_seed1.paar.txt: 20 Zeilen, offene Punkte 7408; erste freie Zeile deckt 1648 davon; gierig 18 freie Zeilen -> 76 Woerter
+k11_s1.paar.txt: 22 Zeilen, offene Punkte 3868; erste freie Zeile deckt 2076 davon; gierig 3 freie Zeilen -> 50 Woerter
+s2c18-5_k12_t9-9_seed1.paar.txt: 24 Zeilen, offene Punkte 4; erste freie Zeile deckt 4 davon; gierig 1 freie Zeilen -> 50 Woerter
+s3c16-4a_k15_t9-7_seed5.paar.txt: 30 Zeilen, offene Punkte 112; erste freie Zeile deckt 56 davon; gierig 4 freie Zeilen -> 68 Woerter
+Thu Nov 26 05:55:34 CET 2026

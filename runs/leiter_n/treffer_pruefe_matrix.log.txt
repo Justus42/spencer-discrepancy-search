@@ -1,0 +1,10 @@
+Matrix runs/leiter_n/c18-5_k15_t9-9.matrix.txt: 30 x 18, aufgefuellt 30 x 30
+  check_disc      Diskrepanz 8  (0.4 s)
+  verify_spencer  Diskrepanz 8  (0.4 s)
+  exakt_disc      Diskrepanz 8  (0.4 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+Matrix runs/leiter_n/c18-5_k14_t9-9.matrix.txt: 28 x 18, aufgefuellt 28 x 28
+  check_disc      Diskrepanz 8  (0.3 s)
+  verify_spencer  Diskrepanz 8  (0.3 s)
+  exakt_disc      Diskrepanz 8  (0.3 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)

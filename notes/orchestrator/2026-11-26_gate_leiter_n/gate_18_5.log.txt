@@ -1,0 +1,28 @@
+Thu Nov 26 05:52:15 CET 2026
+Teil A: Treffer K = 13, Typ (9,9)
+  s2c18-5_k13_t9-9_seed1.paar.txt: Matrix 26 x 18, verschiedene Woerter 52, Ueberdeckungsradius 5, Punkte mit Abstand > 5: 0
+    Zeilenmenge gleich der Matrix der Sitzung: True
+  s2c18-5_k13_t9-9_seed2.paar.txt: Matrix 26 x 18, verschiedene Woerter 52, Ueberdeckungsradius 5, Punkte mit Abstand > 5: 0
+  s2c18-5_k13_t9-9_seed3.paar.txt: Matrix 26 x 18, verschiedene Woerter 52, Ueberdeckungsradius 5, Punkte mit Abstand > 5: 0
+  s2c18-5_k13_t9-9_seed4.paar.txt: Matrix 26 x 18, verschiedene Woerter 52, Ueberdeckungsradius 5, Punkte mit Abstand > 5: 0
+Teil B: 50 Woerter aus den Zustaenden mit K = 12 und Restzahl 1
+  s2c18-5_k12_t9-9_seed1.paar.txt: offene Klasse y=+++---+-+ z=+-++-++-- -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+    gespeichert als gate_c18-5_50w.matrix.txt (aus s2c18-5_k12_t9-9_seed1.paar.txt)
+  s2c18-5_k12_t9-9_seed2.paar.txt: offene Klasse y=+++++++++ z=++++++--- -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+  s2c18-5_k12_t9-9_seed3.paar.txt: offene Klasse y=+--++---- z=+++++--++ -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+  s2c18-5_k12_t9-9_seed4.paar.txt: offene Klasse y=+-+----++ z=+--++++++ -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+  s3c18-5a_k12_t9-9_seed5.paar.txt: offene Klasse y=+-++-+++- z=++----++- -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+  s3c18-5a_k12_t9-9_seed6.paar.txt: offene Klasse y=++---+-++ z=+++-+--+- -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+  s3c18-5a_k12_t9-9_seed7.paar.txt: offene Klasse y=+-+-----+ z=+-+++---+ -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+  s3c18-5a_k12_t9-9_seed8.paar.txt: offene Klasse y=++--+---+ z=+-++-++-- -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+  s3c18-5b_k12_t9-9_seed10.paar.txt: offene Klasse y=+-+++-+++ z=+---++--- -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+  s3c18-5b_k12_t9-9_seed11.paar.txt: offene Klasse y=+--++-+++ z=++++++--+ -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+  s3c18-5b_k12_t9-9_seed12.paar.txt: offene Klasse y=+++--+-++ z=++-+++++- -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+  s3c18-5b_k12_t9-9_seed9.paar.txt: offene Klasse y=++-+-++++ z=+----+--+ -> Matrix 25 x 18, verschiedene Woerter 50, Radius 5, Punkte mit Abstand > 5: 0
+== pruefe_matrix (drei Programme)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+  check_disc      Diskrepanz 8  (0.2 s)
+  verify_spencer  Diskrepanz 8  (0.2 s)
+  exakt_disc      Diskrepanz 8  (0.2 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+Thu Nov 26 05:52:16 CET 2026

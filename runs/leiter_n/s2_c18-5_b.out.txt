@@ -1,0 +1,42 @@
+== 22:11:27 Start s2c18-5_k16_t11-7 (d=8, 300s, Startwerte 1 2 3 4)
+s2c18-5_k16_t11-7 seed 1: LOESUNG nach 12.6 s, 5452 Iterationen, 16 Runden, 0 Neustarts
+runs/leiter_n/s2c18-5_k16_t11-7_seed1.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
+s2c18-5_k16_t11-7 seed 2: LOESUNG nach 27.4 s, 15526 Iterationen, 46 Runden, 1 Neustarts
+runs/leiter_n/s2c18-5_k16_t11-7_seed2.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
+s2c18-5_k16_t11-7 seed 3: LOESUNG nach 17.6 s, 7903 Iterationen, 24 Runden, 0 Neustarts
+runs/leiter_n/s2c18-5_k16_t11-7_seed3.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
+s2c18-5_k16_t11-7 seed 4: LOESUNG nach 8.1 s, 3467 Iterationen, 7 Runden, 0 Neustarts
+runs/leiter_n/s2c18-5_k16_t11-7_seed4.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
+== 22:11:55 Ende s2c18-5_k16_t11-7
+== 22:11:57 Start s2c18-5_k15_t11-7 (d=8, 300s, Startwerte 1 2 3 4)
+s2c18-5_k15_t11-7 seed 1: ZEITGRENZE nach 300.0 s, beste Restzahl 29, 163326 Iterationen, 498 Runden, 15 Neustarts
+runs/leiter_n/s2c18-5_k15_t11-7_seed1.paar.txt: K=15, Typ (11,7), d=8: offene Klassen 29 von 65536
+s2c18-5_k15_t11-7 seed 2: ZEITGRENZE nach 300.0 s, beste Restzahl 9, 157651 Iterationen, 473 Runden, 13 Neustarts
+runs/leiter_n/s2c18-5_k15_t11-7_seed2.paar.txt: K=15, Typ (11,7), d=8: offene Klassen 9 von 65536
+s2c18-5_k15_t11-7 seed 3: ZEITGRENZE nach 300.0 s, beste Restzahl 9, 160609 Iterationen, 497 Runden, 12 Neustarts
+runs/leiter_n/s2c18-5_k15_t11-7_seed3.paar.txt: K=15, Typ (11,7), d=8: offene Klassen 9 von 65536
+s2c18-5_k15_t11-7 seed 4: ZEITGRENZE nach 300.0 s, beste Restzahl 9, 162973 Iterationen, 495 Runden, 16 Neustarts
+runs/leiter_n/s2c18-5_k15_t11-7_seed4.paar.txt: K=15, Typ (11,7), d=8: offene Klassen 9 von 65536
+== 22:16:58 Ende s2c18-5_k15_t11-7
+LEITER ENDET bei K=15 (11-7)
+== 22:17:00 Start s2c18-5_k16_t12-6 (d=8, 300s, Startwerte 1 2 3 4)
+s2c18-5_k16_t12-6 seed 1: LOESUNG nach 60.9 s, 13938 Iterationen, 44 Runden, 1 Neustarts
+runs/leiter_n/s2c18-5_k16_t12-6_seed1.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
+s2c18-5_k16_t12-6 seed 2: LOESUNG nach 14.9 s, 1934 Iterationen, 3 Runden, 0 Neustarts
+runs/leiter_n/s2c18-5_k16_t12-6_seed2.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
+s2c18-5_k16_t12-6 seed 3: LOESUNG nach 48.5 s, 9382 Iterationen, 26 Runden, 1 Neustarts
+runs/leiter_n/s2c18-5_k16_t12-6_seed3.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
+s2c18-5_k16_t12-6 seed 4: LOESUNG nach 8.2 s, 1244 Iterationen, 3 Runden, 0 Neustarts
+runs/leiter_n/s2c18-5_k16_t12-6_seed4.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
+== 22:18:01 Ende s2c18-5_k16_t12-6
+== 22:18:03 Start s2c18-5_k15_t12-6 (d=8, 300s, Startwerte 1 2 3 4)
+s2c18-5_k15_t12-6 seed 1: ZEITGRENZE nach 300.0 s, beste Restzahl 48, 62631 Iterationen, 184 Runden, 6 Neustarts
+runs/leiter_n/s2c18-5_k15_t12-6_seed1.paar.txt: K=15, Typ (12,6), d=8: offene Klassen 48 von 65536
+s2c18-5_k15_t12-6 seed 2: ZEITGRENZE nach 300.1 s, beste Restzahl 43, 62329 Iterationen, 187 Runden, 5 Neustarts
+runs/leiter_n/s2c18-5_k15_t12-6_seed2.paar.txt: K=15, Typ (12,6), d=8: offene Klassen 43 von 65536
+s2c18-5_k15_t12-6 seed 3: ZEITGRENZE nach 300.2 s, beste Restzahl 43, 63719 Iterationen, 190 Runden, 7 Neustarts
+runs/leiter_n/s2c18-5_k15_t12-6_seed3.paar.txt: K=15, Typ (12,6), d=8: offene Klassen 43 von 65536
+s2c18-5_k15_t12-6 seed 4: ZEITGRENZE nach 300.1 s, beste Restzahl 48, 63100 Iterationen, 187 Runden, 6 Neustarts
+runs/leiter_n/s2c18-5_k15_t12-6_seed4.paar.txt: K=15, Typ (12,6), d=8: offene Klassen 48 von 65536
+== 22:23:04 Ende s2c18-5_k15_t12-6
+LEITER ENDET bei K=15 (12-6)

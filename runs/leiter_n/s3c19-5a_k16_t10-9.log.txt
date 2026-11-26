@@ -1,0 +1,8 @@
+s3c19-5a_k16_t10-9 seed 5: ZEITGRENZE nach 900.1 s, beste Restzahl 1024, 122331 Iterationen, 366 Runden, 15 Neustarts
+runs/leiter_n/s3c19-5a_k16_t10-9_seed5.paar.txt: K=16, Typ (10,9), d=9: offene Klassen 1024 von 131072
+s3c19-5a_k16_t10-9 seed 6: ZEITGRENZE nach 900.1 s, beste Restzahl 768, 125267 Iterationen, 365 Runden, 15 Neustarts
+runs/leiter_n/s3c19-5a_k16_t10-9_seed6.paar.txt: K=16, Typ (10,9), d=9: offene Klassen 768 von 131072
+s3c19-5a_k16_t10-9 seed 7: ZEITGRENZE nach 900.0 s, beste Restzahl 1280, 121381 Iterationen, 357 Runden, 14 Neustarts
+runs/leiter_n/s3c19-5a_k16_t10-9_seed7.paar.txt: K=16, Typ (10,9), d=9: offene Klassen 1280 von 131072
+s3c19-5a_k16_t10-9 seed 8: ZEITGRENZE nach 900.0 s, beste Restzahl 1280, 122635 Iterationen, 367 Runden, 15 Neustarts
+runs/leiter_n/s3c19-5a_k16_t10-9_seed8.paar.txt: K=16, Typ (10,9), d=9: offene Klassen 1280 von 131072

@@ -1,0 +1,13 @@
+  Runde 1 (W frei): Restzahl 56671, bestes 56671, Anforderungsvektoren 9075, Iterationen 770, 64.7 s
+  Runde 2 (U frei): Restzahl 2040, bestes 2040, Anforderungsvektoren 288, Iterationen 1137, 101.5 s
+  Runde 3 (W frei): Restzahl 2033, bestes 2033, Anforderungsvektoren 7788, Iterationen 1450, 114.2 s
+  Runde 4 (U frei): Restzahl 2022, bestes 2022, Anforderungsvektoren 288, Iterationen 1761, 147.6 s
+  Runde 5 (W frei): Restzahl 2004, bestes 2004, Anforderungsvektoren 7788, Iterationen 2127, 162.9 s
+  Runde 6 (U frei): Restzahl 2004, bestes 2004, Anforderungsvektoren 288, Iterationen 2428, 192.8 s
+  Runde 7 (W frei): Restzahl 2004, bestes 2004, Anforderungsvektoren 7788, Iterationen 2729, 205.4 s
+  Runde 8 (U frei): Restzahl 2004, bestes 2004, Anforderungsvektoren 288, Iterationen 3030, 236.1 s
+  Runde 9 (W frei): Restzahl 2004, bestes 2004, Anforderungsvektoren 7788, Iterationen 3331, 249.3 s
+  Runde 10 (U frei): Restzahl 2004, bestes 2004, Anforderungsvektoren 288, Iterationen 3632, 280.3 s
+  Runde 11 (W frei): Restzahl 2004, bestes 2004, Anforderungsvektoren 7788, Iterationen 3933, 293.7 s
+  Runde 12 (U frei): Restzahl 2004, bestes 2004, Anforderungsvektoren 288, Iterationen 3996, 301.0 s
+ZEITGRENZE nach 301.0 s, beste Restzahl 2004, 3996 Iterationen, 12 Runden, 0 Neustarts

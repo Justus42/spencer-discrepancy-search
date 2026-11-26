@@ -1,0 +1,27 @@
+  Runde 1 (W frei): Restzahl 42525, bestes 42525, Anforderungsvektoren 2935, Iterationen 797, 15.7 s
+  Runde 2 (U frei): Restzahl 976, bestes 976, Anforderungsvektoren 240, Iterationen 1471, 56.3 s
+  Runde 3 (W frei): Restzahl 672, bestes 672, Anforderungsvektoren 1520, Iterationen 1838, 58.6 s
+  Runde 4 (U frei): Restzahl 672, bestes 672, Anforderungsvektoren 240, Iterationen 2139, 78.1 s
+  Runde 5 (W frei): Restzahl 672, bestes 672, Anforderungsvektoren 1520, Iterationen 2440, 79.7 s
+  Runde 6 (U frei): Restzahl 672, bestes 672, Anforderungsvektoren 240, Iterationen 2741, 98.4 s
+  Runde 7 (W frei): Restzahl 672, bestes 672, Anforderungsvektoren 1520, Iterationen 3042, 100.2 s
+  Runde 8 (U frei): Restzahl 672, bestes 672, Anforderungsvektoren 240, Iterationen 3343, 119.6 s
+  Runde 9 (W frei): Restzahl 672, bestes 672, Anforderungsvektoren 1520, Iterationen 3644, 121.3 s
+  Runde 10 (U frei): Restzahl 672, bestes 672, Anforderungsvektoren 240, Iterationen 3945, 140.7 s
+  Runde 11 (W frei): Restzahl 672, bestes 672, Anforderungsvektoren 1520, Iterationen 4246, 142.5 s
+  Runde 12 (U frei): Restzahl 672, bestes 672, Anforderungsvektoren 240, Iterationen 4547, 161.9 s
+  Runde 13 (W frei): Restzahl 672, bestes 672, Anforderungsvektoren 1520, Iterationen 4848, 163.7 s
+  Runde 14 (U frei): Restzahl 672, bestes 672, Anforderungsvektoren 240, Iterationen 5149, 183.4 s
+  Runde 15 (W frei): Restzahl 672, bestes 672, Anforderungsvektoren 1520, Iterationen 5450, 185.2 s
+  Runde 16 (U frei): Restzahl 672, bestes 672, Anforderungsvektoren 240, Iterationen 5751, 204.3 s
+  Runde 17 (W frei): Restzahl 672, bestes 672, Anforderungsvektoren 1520, Iterationen 6052, 206.0 s
+  Runde 18 (U frei): Restzahl 672, bestes 672, Anforderungsvektoren 240, Iterationen 6353, 225.5 s
+  Runde 19 (W frei): Restzahl 672, bestes 672, Anforderungsvektoren 1520, Iterationen 6654, 227.3 s
+  Runde 20 (U frei): Restzahl 672, bestes 672, Anforderungsvektoren 240, Iterationen 6955, 245.7 s
+  Runde 21 (W frei): Restzahl 672, bestes 672, Anforderungsvektoren 1520, Iterationen 7256, 247.5 s
+  Runde 22 (U frei): Restzahl 672, bestes 672, Anforderungsvektoren 240, Iterationen 7557, 267.6 s
+  Runde 23 (W frei): Restzahl 672, bestes 672, Anforderungsvektoren 1520, Iterationen 7858, 269.3 s
+  Neustart 1 nach Runde 23 (bestes bisher 672), 269.3 s
+  Runde 24 (W frei): Restzahl 40038, bestes 672, Anforderungsvektoren 3026, Iterationen 8671, 284.5 s
+  Runde 25 (U frei): Restzahl 2483, bestes 672, Anforderungsvektoren 240, Iterationen 8942, 300.5 s
+ZEITGRENZE nach 300.5 s, beste Restzahl 672, 8942 Iterationen, 25 Runden, 1 Neustarts

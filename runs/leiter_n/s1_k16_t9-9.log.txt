@@ -1,0 +1,8 @@
+s1_k16_t9-9 seed 1: LOESUNG nach 1.8 s, 595 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t9-9_seed1.paar.txt: K=16, Typ (9,9), d=8: offene Klassen 0 von 65536
+s1_k16_t9-9 seed 2: LOESUNG nach 4.4 s, 3137 Iterationen, 8 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t9-9_seed2.paar.txt: K=16, Typ (9,9), d=8: offene Klassen 0 von 65536
+s1_k16_t9-9 seed 3: LOESUNG nach 2.2 s, 782 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t9-9_seed3.paar.txt: K=16, Typ (9,9), d=8: offene Klassen 0 von 65536
+s1_k16_t9-9 seed 4: LOESUNG nach 2.0 s, 666 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t9-9_seed4.paar.txt: K=16, Typ (9,9), d=8: offene Klassen 0 von 65536

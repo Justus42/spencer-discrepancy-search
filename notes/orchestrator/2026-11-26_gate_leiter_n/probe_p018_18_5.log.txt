@@ -1,0 +1,8 @@
+Probe des Gates (keine Suche mit Anspruch): p018 aus Auftrag E (freie Zuege, blind) bei (18,5) mit 24 Paaren, Startwerte 1 und 2, je 150 s, 2 Kerne
+Start Thu Nov 26 05:56:36 CET 2026  Ende Thu Nov 26 05:59:06 CET 2026
+ENDE best=288 it=878592 t_best=23.5 t=150.0 bumps=426511 neustarts=0
+offen=288 klassen=131072 k=24 m=18 R=5
+ENDE best=288 it=879872 t_best=5.9 t=150.0 bumps=426773 neustarts=0
+offen=288 klassen=131072 k=24 m=18 R=5
+
+Probe: zerl_halb alt 11 9 9 8, Startwerte 1 und 2, je 150 s: beide Restzahl 967 (siehe probe_k11.log.txt)
