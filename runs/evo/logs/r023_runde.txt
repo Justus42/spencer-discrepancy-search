@@ -1,0 +1,6 @@
+2026-11-25 20:52:05 UTC  Runde 23  p020 (Elter p018, Insel A)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=707  (600 s)   [Selbstauskunft: ENDE best=707 it=1547776 t_best=245.8 t=600.1 bumps=0 neustarts=0]
+  Startwert 2: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1557760 t_best=299.4 t=600.0 bumps=0 neustarts=0]
+  Startwert 3: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1576448 t_best=236.4 t=600.1 bumps=0 neustarts=0]
+  Startwert 4: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1567744 t_best=36.8 t=600.1 bumps=0 neustarts=0]
+2026-11-25 21:02:05 UTC  Runde 23 fertig

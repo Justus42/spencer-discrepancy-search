@@ -1,0 +1,6 @@
+2026-11-25 17:57:12 UTC  Runde 5  p005 (Elter p004, Insel B)  m=20 R=6 Paare=24  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=16  (600 s)   [Selbstauskunft: ENDE best=16 it=696832 t_best=31.7 t=600.2 bumps=614987]
+  Startwert 2: offen=16  (600 s)   [Selbstauskunft: ENDE best=16 it=712960 t_best=0.5 t=600.0 bumps=628081]
+  Startwert 3: offen=16  (600 s)   [Selbstauskunft: ENDE best=16 it=699904 t_best=47.4 t=600.1 bumps=616947]
+  Startwert 4: offen=0  (315 s)   [Selbstauskunft: ENDE best=0 it=371338 t_best=314.6 t=314.6 bumps=326173]
+2026-11-25 18:07:13 UTC  Runde 5 fertig

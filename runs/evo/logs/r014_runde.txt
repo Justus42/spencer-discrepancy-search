@@ -1,0 +1,6 @@
+2026-11-25 19:28:29 UTC  Runde 14  p013 (Elter p010, Insel A)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=725  (600 s)   [Selbstauskunft: ENDE best=725 it=1159680 t_best=240.5 t=600.0 bumps=263862 neustarts=16]
+  Startwert 2: offen=732  (600 s)   [Selbstauskunft: ENDE best=732 it=1145088 t_best=551.9 t=600.0 bumps=245398 neustarts=18]
+  Startwert 3: offen=738  (600 s)   [Selbstauskunft: ENDE best=738 it=1155584 t_best=545.2 t=600.1 bumps=254028 neustarts=17]
+  Startwert 4: offen=727  (600 s)   [Selbstauskunft: ENDE best=727 it=1131008 t_best=242.6 t=600.0 bumps=255773 neustarts=16]
+2026-11-25 19:38:29 UTC  Runde 14 fertig

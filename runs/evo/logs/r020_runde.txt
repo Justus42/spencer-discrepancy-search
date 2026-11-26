@@ -1,0 +1,6 @@
+2026-11-25 20:25:28 UTC  Runde 20  p018 (Elter p017, Insel A)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=707  (600 s)   [Selbstauskunft: ENDE best=707 it=1198080 t_best=392.5 t=600.1 bumps=563720 neustarts=0]
+  Startwert 2: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1222144 t_best=336.4 t=600.0 bumps=574976 neustarts=0]
+  Startwert 3: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1214976 t_best=173.5 t=600.1 bumps=571015 neustarts=0]
+  Startwert 4: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1214464 t_best=65.5 t=600.1 bumps=572844 neustarts=0]
+2026-11-25 20:35:28 UTC  Runde 20 fertig

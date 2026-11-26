@@ -1,0 +1,117 @@
+Runde	Programm	Elter	Insel	m	R	Paare	Startwert	Sekunden	offene_Klassen	Kommentar
+1	p001	-	A	15	4	16	1	41	0	K1, Insel A Wurzel, ohne Gewichte
+1	p001	-	A	15	4	16	2	0	0	K1, Insel A Wurzel, ohne Gewichte
+1	p001	-	A	15	4	16	3	37	0	K1, Insel A Wurzel, ohne Gewichte
+1	p001	-	A	15	4	16	4	12	0	K1, Insel A Wurzel, ohne Gewichte
+2	p002	p001	A	20	6	24	1	600	115	K2, Gewichte an
+2	p002	p001	A	20	6	24	2	600	673	K2, Gewichte an
+2	p002	p001	A	20	6	24	3	600	122	K2, Gewichte an
+2	p002	p001	A	20	6	24	4	600	431	K2, Gewichte an
+3	p003	p001	A	20	6	24	1	600	712	K2, ohne Gewichte, doppeltes Tempo
+3	p003	p001	A	20	6	24	2	600	152	K2, ohne Gewichte, doppeltes Tempo
+3	p003	p001	A	20	6	24	3	600	672	K2, ohne Gewichte, doppeltes Tempo
+3	p003	p001	A	20	6	24	4	600	665	K2, ohne Gewichte, doppeltes Tempo
+4	p004	p003	A	20	6	24	1	600	927	K2, Gewichte mit Glaettung
+4	p004	p003	A	20	6	24	2	600	953	K2, Gewichte mit Glaettung
+4	p004	p003	A	20	6	24	3	600	926	K2, Gewichte mit Glaettung
+4	p004	p003	A	20	6	24	4	600	891	K2, Gewichte mit Glaettung
+5	p005	p004	B	20	6	24	1	600	16	K2, Doppelungsform (11,9), Gewichte ohne Glaettung
+5	p005	p004	B	20	6	24	2	600	16	K2, Doppelungsform (11,9), Gewichte ohne Glaettung
+5	p005	p004	B	20	6	24	3	600	16	K2, Doppelungsform (11,9), Gewichte ohne Glaettung
+5	p005	p004	B	20	6	24	4	315	0	K2, Doppelungsform (11,9), Gewichte ohne Glaettung
+6	p007	p005	B	20	6	23	1	600	1286	Ziel 23 Paare, Doppelungsform 11+1 frei, Neustart nach 30 s
+6	p007	p005	B	20	6	23	2	600	1284	Ziel 23 Paare, Doppelungsform 11+1 frei, Neustart nach 30 s
+6	p007	p005	B	20	6	23	3	600	1279	Ziel 23 Paare, Doppelungsform 11+1 frei, Neustart nach 30 s
+6	p007	p005	B	20	6	23	4	600	1276	Ziel 23 Paare, Doppelungsform 11+1 frei, Neustart nach 30 s
+7	p008	p004	S	20	6	23	1	600	1195	Ziel 23 Paare, Saat: 48er ohne Zeile S-1, Insel-A-Zuege, Gewichte ohne Glaettung, Neustart vom Saatpunkt
+7	p008	p004	S	20	6	23	2	600	1170	Ziel 23 Paare, Saat: 48er ohne Zeile S-1, Insel-A-Zuege, Gewichte ohne Glaettung, Neustart vom Saatpunkt
+7	p008	p004	S	20	6	23	3	600	1148	Ziel 23 Paare, Saat: 48er ohne Zeile S-1, Insel-A-Zuege, Gewichte ohne Glaettung, Neustart vom Saatpunkt
+7	p008	p004	S	20	6	23	4	600	1154	Ziel 23 Paare, Saat: 48er ohne Zeile S-1, Insel-A-Zuege, Gewichte ohne Glaettung, Neustart vom Saatpunkt
+8	p006	-	C	20	6	23	1	600	1598	Ziel 23 Paare, Insel C Wurzel: Zeile entfernen, global beste Zeile per WHT
+8	p006	-	C	20	6	23	2	600	1573	Ziel 23 Paare, Insel C Wurzel: Zeile entfernen, global beste Zeile per WHT
+8	p006	-	C	20	6	23	3	600	1569	Ziel 23 Paare, Insel C Wurzel: Zeile entfernen, global beste Zeile per WHT
+8	p006	-	C	20	6	23	4	600	1683	Ziel 23 Paare, Insel C Wurzel: Zeile entfernen, global beste Zeile per WHT
+9	p001	-	A	15	4	15	1	300	233	Nebenziel (15,4) 15 Paare, bestes K1-Programm unveraendert (Auftrag), blind
+9	p001	-	A	15	4	15	2	300	233	Nebenziel (15,4) 15 Paare, bestes K1-Programm unveraendert (Auftrag), blind
+9	p001	-	A	15	4	15	3	300	233	Nebenziel (15,4) 15 Paare, bestes K1-Programm unveraendert (Auftrag), blind
+9	p001	-	A	15	4	15	4	300	233	Nebenziel (15,4) 15 Paare, bestes K1-Programm unveraendert (Auftrag), blind
+10	p009	p008	S	20	6	23	1	600	1115	Ziel 23 Paare, Saat, Neustart vom Bestpunkt mit 6 Stoerbits
+10	p009	p008	S	20	6	23	2	600	917	Ziel 23 Paare, Saat, Neustart vom Bestpunkt mit 6 Stoerbits
+10	p009	p008	S	20	6	23	3	600	1217	Ziel 23 Paare, Saat, Neustart vom Bestpunkt mit 6 Stoerbits
+10	p009	p008	S	20	6	23	4	600	1155	Ziel 23 Paare, Saat, Neustart vom Bestpunkt mit 6 Stoerbits
+11	p010	p009	A	20	6	23	1	600	1270	Ziel 23 Paare, blind (Zufallsstart), sonst wie p009
+11	p010	p009	A	20	6	23	2	600	1212	Ziel 23 Paare, blind (Zufallsstart), sonst wie p009
+11	p010	p009	A	20	6	23	3	600	1207	Ziel 23 Paare, blind (Zufallsstart), sonst wie p009
+11	p010	p009	A	20	6	23	4	600	1005	Ziel 23 Paare, blind (Zufallsstart), sonst wie p009
+12	p011	p009	S	20	6	23	1	600	1129	Ziel 23 Paare, Saat, Neustart vom Abschnittsbesten wenn <= 2 % ueber Bestwert
+12	p011	p009	S	20	6	23	2	600	1217	Ziel 23 Paare, Saat, Neustart vom Abschnittsbesten wenn <= 2 % ueber Bestwert
+12	p011	p009	S	20	6	23	3	600	1139	Ziel 23 Paare, Saat, Neustart vom Abschnittsbesten wenn <= 2 % ueber Bestwert
+12	p011	p009	S	20	6	23	4	600	1271	Ziel 23 Paare, Saat, Neustart vom Abschnittsbesten wenn <= 2 % ueber Bestwert
+13	p012	p011	S	20	6	23	1	600	1120	Ziel 23 Paare, Saat, Stoerung = schwaechste Zeile neu (Streichen und Reparieren)
+13	p012	p011	S	20	6	23	2	600	1240	Ziel 23 Paare, Saat, Stoerung = schwaechste Zeile neu (Streichen und Reparieren)
+13	p012	p011	S	20	6	23	3	600	935	Ziel 23 Paare, Saat, Stoerung = schwaechste Zeile neu (Streichen und Reparieren)
+13	p012	p011	S	20	6	23	4	600	1091	Ziel 23 Paare, Saat, Stoerung = schwaechste Zeile neu (Streichen und Reparieren)
+14	p013	p010	A	20	6	23	1	600	725	Ziel 23 Paare, blind, Zugwahl ueber ganze Nachbarschaft
+14	p013	p010	A	20	6	23	2	600	732	Ziel 23 Paare, blind, Zugwahl ueber ganze Nachbarschaft
+14	p013	p010	A	20	6	23	3	600	738	Ziel 23 Paare, blind, Zugwahl ueber ganze Nachbarschaft
+14	p013	p010	A	20	6	23	4	600	727	Ziel 23 Paare, blind, Zugwahl ueber ganze Nachbarschaft
+15	p013	p010	A	15	4	15	1	300	233	Nebenziel (15,4) 15 Paare, Runde 2/5: p013 (Nachfahre von p001) unveraendert, blind
+15	p013	p010	A	15	4	15	2	300	233	Nebenziel (15,4) 15 Paare, Runde 2/5: p013 (Nachfahre von p001) unveraendert, blind
+15	p013	p010	A	15	4	15	3	300	233	Nebenziel (15,4) 15 Paare, Runde 2/5: p013 (Nachfahre von p001) unveraendert, blind
+15	p013	p010	A	15	4	15	4	300	233	Nebenziel (15,4) 15 Paare, Runde 2/5: p013 (Nachfahre von p001) unveraendert, blind
+16	p014	p013	A	20	6	23	1	600	821	Ziel 23 Paare, blind, Tabu 10-19
+16	p014	p013	A	20	6	23	2	600	761	Ziel 23 Paare, blind, Tabu 10-19
+16	p014	p013	A	20	6	23	3	600	762	Ziel 23 Paare, blind, Tabu 10-19
+16	p014	p013	A	20	6	23	4	600	752	Ziel 23 Paare, blind, Tabu 10-19
+17	p015	p013	A	20	6	23	1	600	717	Ziel 23 Paare, blind, Neustart erst nach 120 s
+17	p015	p013	A	20	6	23	2	600	732	Ziel 23 Paare, blind, Neustart erst nach 120 s
+17	p015	p013	A	20	6	23	3	600	704	Ziel 23 Paare, blind, Neustart erst nach 120 s
+17	p015	p013	A	20	6	23	4	600	722	Ziel 23 Paare, blind, Neustart erst nach 120 s
+18	p016	p007	B	20	6	23	1	600	1241	Ziel 23 Paare, Doppelungsform 11+1, volle Nachbarschaft, Neustart vom Bestpunkt
+18	p016	p007	B	20	6	23	2	600	1241	Ziel 23 Paare, Doppelungsform 11+1, volle Nachbarschaft, Neustart vom Bestpunkt
+18	p016	p007	B	20	6	23	3	600	1241	Ziel 23 Paare, Doppelungsform 11+1, volle Nachbarschaft, Neustart vom Bestpunkt
+18	p016	p007	B	20	6	23	4	600	1241	Ziel 23 Paare, Doppelungsform 11+1, volle Nachbarschaft, Neustart vom Bestpunkt
+19	p017	p015	A	20	6	23	1	600	704	Ziel 23 Paare, blind, ohne Neustart
+19	p017	p015	A	20	6	23	2	600	713	Ziel 23 Paare, blind, ohne Neustart
+19	p017	p015	A	20	6	23	3	600	704	Ziel 23 Paare, blind, ohne Neustart
+19	p017	p015	A	20	6	23	4	600	707	Ziel 23 Paare, blind, ohne Neustart
+20	p018	p017	A	20	6	23	1	600	707	Ziel 23 Paare, blind, ohne Neustart, Rauschen 1 %
+20	p018	p017	A	20	6	23	2	600	704	Ziel 23 Paare, blind, ohne Neustart, Rauschen 1 %
+20	p018	p017	A	20	6	23	3	600	704	Ziel 23 Paare, blind, ohne Neustart, Rauschen 1 %
+20	p018	p017	A	20	6	23	4	600	704	Ziel 23 Paare, blind, ohne Neustart, Rauschen 1 %
+21	p018	p017	A	15	4	15	1	300	233	Nebenziel (15,4) 15 Paare, Runde 3/5: p018 unveraendert, blind
+21	p018	p017	A	15	4	15	2	300	233	Nebenziel (15,4) 15 Paare, Runde 3/5: p018 unveraendert, blind
+21	p018	p017	A	15	4	15	3	300	233	Nebenziel (15,4) 15 Paare, Runde 3/5: p018 unveraendert, blind
+21	p018	p017	A	15	4	15	4	300	233	Nebenziel (15,4) 15 Paare, Runde 3/5: p018 unveraendert, blind
+22	p019	p018	A	20	6	23	1	600	707	Ziel 23 Paare, blind, Neustart nach 60 s: schwaechste Zeile durch WHT-beste ersetzen
+22	p019	p018	A	20	6	23	2	600	709	Ziel 23 Paare, blind, Neustart nach 60 s: schwaechste Zeile durch WHT-beste ersetzen
+22	p019	p018	A	20	6	23	3	600	704	Ziel 23 Paare, blind, Neustart nach 60 s: schwaechste Zeile durch WHT-beste ersetzen
+22	p019	p018	A	20	6	23	4	600	704	Ziel 23 Paare, blind, Neustart nach 60 s: schwaechste Zeile durch WHT-beste ersetzen
+23	p020	p018	A	20	6	23	1	600	707	Ziel 23 Paare, blind, Tabu ohne Gewichte, Aspiration
+23	p020	p018	A	20	6	23	2	600	704	Ziel 23 Paare, blind, Tabu ohne Gewichte, Aspiration
+23	p020	p018	A	20	6	23	3	600	704	Ziel 23 Paare, blind, Tabu ohne Gewichte, Aspiration
+23	p020	p018	A	20	6	23	4	600	704	Ziel 23 Paare, blind, Tabu ohne Gewichte, Aspiration
+24	p021	p018	A	20	6	23	1	600	893	Ziel 23 Paare, blind, Mindest-Paarabstand 7 als Nebenbedingung
+24	p021	p018	A	20	6	23	2	600	940	Ziel 23 Paare, blind, Mindest-Paarabstand 7 als Nebenbedingung
+24	p021	p018	A	20	6	23	3	600	853	Ziel 23 Paare, blind, Mindest-Paarabstand 7 als Nebenbedingung
+24	p021	p018	A	20	6	23	4	600	920	Ziel 23 Paare, blind, Mindest-Paarabstand 7 als Nebenbedingung
+25	p022	p012	S	20	6	23	1	600	704	Ziel 23 Paare, Saat 48er ohne Zeile, volle Nachbarschaft, Rauschen 1 %, kein Neustart
+25	p022	p012	S	20	6	23	2	600	710	Ziel 23 Paare, Saat 48er ohne Zeile, volle Nachbarschaft, Rauschen 1 %, kein Neustart
+25	p022	p012	S	20	6	23	3	600	704	Ziel 23 Paare, Saat 48er ohne Zeile, volle Nachbarschaft, Rauschen 1 %, kein Neustart
+25	p022	p012	S	20	6	23	4	600	706	Ziel 23 Paare, Saat 48er ohne Zeile, volle Nachbarschaft, Rauschen 1 %, kein Neustart
+26	p016	p007	B	15	4	15	1	300	707	Nebenziel (15,4) 15 Paare, Runde 4/5: Doppelungsform p016 unveraendert (7 gekoppelt + 1 frei), blind
+26	p016	p007	B	15	4	15	2	300	707	Nebenziel (15,4) 15 Paare, Runde 4/5: Doppelungsform p016 unveraendert (7 gekoppelt + 1 frei), blind
+26	p016	p007	B	15	4	15	3	300	707	Nebenziel (15,4) 15 Paare, Runde 4/5: Doppelungsform p016 unveraendert (7 gekoppelt + 1 frei), blind
+26	p016	p007	B	15	4	15	4	300	707	Nebenziel (15,4) 15 Paare, Runde 4/5: Doppelungsform p016 unveraendert (7 gekoppelt + 1 frei), blind
+27	p023	p016	B	20	6	23	1	600	1310	Ziel 23 Paare, Doppelungsform 12+8, volle Nachbarschaft, Neustart vom Bestpunkt
+27	p023	p016	B	20	6	23	2	600	1310	Ziel 23 Paare, Doppelungsform 12+8, volle Nachbarschaft, Neustart vom Bestpunkt
+27	p023	p016	B	20	6	23	3	600	1310	Ziel 23 Paare, Doppelungsform 12+8, volle Nachbarschaft, Neustart vom Bestpunkt
+27	p023	p016	B	20	6	23	4	600	1310	Ziel 23 Paare, Doppelungsform 12+8, volle Nachbarschaft, Neustart vom Bestpunkt
+28	p024	p022	S	20	6	23	1	600	704	Ziel 23 Paare, Saat, volle Nachbarschaft, Doppelzuege mit Vorausschau (2 %)
+28	p024	p022	S	20	6	23	2	600	704	Ziel 23 Paare, Saat, volle Nachbarschaft, Doppelzuege mit Vorausschau (2 %)
+28	p024	p022	S	20	6	23	3	600	704	Ziel 23 Paare, Saat, volle Nachbarschaft, Doppelzuege mit Vorausschau (2 %)
+28	p024	p022	S	20	6	23	4	600	704	Ziel 23 Paare, Saat, volle Nachbarschaft, Doppelzuege mit Vorausschau (2 %)
+29	p025	p016	B	20	6	23	1	600	710	Ziel 23 Paare, 120 s Doppelungsform 11+9, dann Kopplung geloest (freie Zuege wie p018)
+29	p025	p016	B	20	6	23	2	600	704	Ziel 23 Paare, 120 s Doppelungsform 11+9, dann Kopplung geloest (freie Zuege wie p018)
+29	p025	p016	B	20	6	23	3	600	704	Ziel 23 Paare, 120 s Doppelungsform 11+9, dann Kopplung geloest (freie Zuege wie p018)
+29	p025	p016	B	20	6	23	4	600	707	Ziel 23 Paare, 120 s Doppelungsform 11+9, dann Kopplung geloest (freie Zuege wie p018)

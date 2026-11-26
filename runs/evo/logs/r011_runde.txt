@@ -1,0 +1,6 @@
+2026-11-25 18:56:42 UTC  Runde 11  p010 (Elter p009, Insel A)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=1270  (600 s)   [Selbstauskunft: ENDE best=1270 it=960000 t_best=30.6 t=600.1 bumps=404754 neustarts=12]
+  Startwert 2: offen=1212  (600 s)   [Selbstauskunft: ENDE best=1212 it=943104 t_best=585.9 t=600.1 bumps=399826 neustarts=10]
+  Startwert 3: offen=1207  (600 s)   [Selbstauskunft: ENDE best=1207 it=970240 t_best=583.4 t=600.0 bumps=411500 neustarts=10]
+  Startwert 4: offen=1005  (600 s)   [Selbstauskunft: ENDE best=1005 it=966656 t_best=119.0 t=600.1 bumps=405146 neustarts=13]
+2026-11-25 19:06:42 UTC  Runde 11 fertig

@@ -1,0 +1,13 @@
+Wed Nov 25 23:07:55 CET 2026
+geloest: Runde 1 p001 (A) m=15 Paare=16 Startwert 1; |Zeilenprodukte| {1: 120}
+geloest: Runde 1 p001 (A) m=15 Paare=16 Startwert 2; |Zeilenprodukte| {1: 120}
+geloest: Runde 1 p001 (A) m=15 Paare=16 Startwert 3; |Zeilenprodukte| {1: 120}
+geloest: Runde 1 p001 (A) m=15 Paare=16 Startwert 4; |Zeilenprodukte| {1: 120}
+geloest: Runde 5 p005 (B) m=20 Paare=24 Startwert 4; |Zeilenprodukte| {0: 108, 2: 144, 4: 24}
+Laeufe im Archiv: 116, Dateien fehlen: 0, Abweichungen: 0
+  m=15, 15 Paare: 233 x 12, 707 x 4
+  m=15, 16 Paare: 0 x 4
+  m=20, 23 Paare: 704 x 19, 706 x 1, 707 x 5, 709 x 1, 710 x 2, 713 x 1, 717 x 1, 722 x 1, 725 x 1, 727 x 1, 732 x 2, 738 x 1, 752 x 1, 761 x 1, 762 x 1, 821 x 1, 853 x 1, 893 x 1, 917 x 1, 920 x 1, 935 x 1, 940 x 1, 1005 x 1, 1091 x 1, 1115 x 1, 1120 x 1, 1129 x 1, 1139 x 1, 1148 x 1, 1154 x 1, 1155 x 1, 1170 x 1, 1195 x 1, 1207 x 1, 1212 x 1, 1217 x 2, 1240 x 1, 1241 x 4, 1270 x 1, 1271 x 1, 1276 x 1, 1279 x 1, 1284 x 1, 1286 x 1, 1310 x 4, 1569 x 1, 1573 x 1, 1598 x 1, 1683 x 1
+  m=20, 24 Paare: 0 x 1, 16 x 3, 115 x 1, 122 x 1, 152 x 1, 431 x 1, 665 x 1, 672 x 1, 673 x 1, 712 x 1, 891 x 1, 926 x 1, 927 x 1, 953 x 1
+real	0m19.274s
+Wed Nov 25 23:08:15 CET 2026

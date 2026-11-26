@@ -1,0 +1,6 @@
+2026-11-25 20:15:00 UTC  Runde 19  p017 (Elter p015, Insel A)  m=20 R=6 Paare=23  Startwerte: 1 2 3 4  je 600 s
+  Startwert 1: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1174528 t_best=584.1 t=600.0 bumps=442846 neustarts=0]
+  Startwert 2: offen=713  (600 s)   [Selbstauskunft: ENDE best=713 it=1186560 t_best=260.3 t=600.0 bumps=448521 neustarts=0]
+  Startwert 3: offen=704  (600 s)   [Selbstauskunft: ENDE best=704 it=1161728 t_best=242.6 t=600.1 bumps=437236 neustarts=0]
+  Startwert 4: offen=707  (600 s)   [Selbstauskunft: ENDE best=707 it=1176576 t_best=592.5 t=600.1 bumps=443753 neustarts=0]
+2026-11-25 20:25:00 UTC  Runde 19 fertig
