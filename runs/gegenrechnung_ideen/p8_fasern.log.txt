@@ -1,0 +1,12 @@
+Thu Nov 26 18:00:22 UTC 2026
+(16,4): 55 Typen, bei K = 5 ausgeschlossen 11: [(14, 1, 1), (13, 2, 1), (12, 2, 2), (11, 3, 2), (10, 4, 2), (8, 6, 2), (13, 1, 1, 1), (12, 2, 1, 1), (11, 3, 1, 1), (11, 2, 2, 1), (10, 2, 2, 2)]
+   |D| zwischen 1471 und 2378, Zaehlschranke 2^13/|D| zwischen 3.44 und 5.57
+(18,5): 74 Typen, bei K = 5 ausgeschlossen 4: [(16, 1, 1), (15, 2, 1), (14, 2, 2), (15, 1, 1, 1)]
+   |D| zwischen 6885 und 11558, Zaehlschranke 2^15/|D| zwischen 2.84 und 4.76
+(20,6): 97 Typen, bei K = 5 ausgeschlossen 1: [(16, 2, 2)]
+   |D| zwischen 31180 und 53372, Zaehlschranke 2^17/|D| zwischen 2.46 und 4.20
+
+real	0m1.071s
+user	0m1.057s
+sys	0m0.004s
+Thu Nov 26 18:00:23 UTC 2026

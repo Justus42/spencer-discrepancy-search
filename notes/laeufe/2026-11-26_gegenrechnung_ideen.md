@@ -40,3 +40,11 @@ had24_1p3_paley12 8, je gleich. Tiefensuche (`gr schwelle`) bei T = disc − 1 �
 Block 1 (17:45 bis 17:59 UTC): Punkte 1 bis 5 und 7, Punkt 6 teilweise. Rechenzeit zusammen etwa 6 Minuten Wandzeit.
 Hinweis zur zweiten Ersatzspalte: Die Positivkontrolle an Paley 12 ist leer (keine flachen x''), sie prüft nichts; geblieben ist die Struktur-
 prüfung (keine kritische Menge über beide Gruppen) und die Kontrolle der Logik mit einer Spalte.
+| 6, RM(1,5), Nebenklassen je Abstand 0..12 | 1, 32, 496, 4960, 35 960, 201 376, 906 192, 3 365 856, 10 119 795, 21 288 320, 22 064 064, 8 693 888, 427 924 (Summe 2^26) | ebenso | ja | `p6_rm15.log.txt` |
+| 6, Abstand 12 | Spektren 219 604 / 208 320; nach Grad und Autokorrelation: Grad 2 868, Grad 3 166 656 (\|r\| 0^15 8^16) und 52 080 (\|r\| 0^27 16^4), Grad 4 208 320 | ebenso | ja | ebd. |
+| 6, Stellen mit \|W\| ≥ 12 je gerader Nebenklasse | 0: 427 924, 1: 5 091 689, 2: 15 643 096, 3: 9 999 360, 4: 2 378 475, 6: 13 888 | ebenso | ja | ebd. |
+| 8, Faserbedingung Kern ⟨1,a,b⟩ | 55 / 74 / 97 Typen; bei K = 5 ausgeschlossen 11 / 4 / 1; bei (20,6) \|D\| 31 180 bis 53 372 (Schranke 2,46 bis 4,20) | 55 / 74 / 97; 11 / 4 / 1 | ja | `p8_fasern.log.txt` |
+| 9, Verdopplungszellen | dieselben zwölf Zellen mit denselben Tabellenwerten; CSV am 26.11. 18:00 UTC neu abgerufen, SHA-256 gleich `5efaf8d9…` | zwölf Zellen aus 3e | ja | `p9_zellen.log.txt` |
+
+Randbemerkung zu Punkt 9: Nach der Regel m + 1 ≤ min(B, 33) käme bei d = 11 auch (32,11) in Frage; die Zeile fehlt in der CSV, also nicht entscheidbar (keine Abweichung, die Notiz nennt sie nicht).
+Zur Faserbedingung: Definition aus Sols Beschreibung (Paritätsklassen modulo Bild des Kerns, ganzzahlige Belegung mit Summe K), nicht aus `kern3_fasern.py`.
