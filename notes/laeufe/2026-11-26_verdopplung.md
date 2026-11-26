@@ -28,3 +28,22 @@ Je Zelle Zielpaarzahl, Startwerte 1–4. „Anteil“ = offene Klassen / 2^(m−
 
 Die ersten beiden Zahlen sind genau die Probe des Orchestrators (26 192 und 8952): fester Endpunkt, nicht streuend. Bei (22,7) und (24,8) streuen die Zahlen um 0,1 %.
 Der Abstand zum Ziel ist groß: etwa 9 bis 14 % aller Klassen bleiben offen; ein Treffer ist bei diesen Paarzahlen mit dieser Suche nicht in Sicht.
+
+## Schritt 2: Leiter abwärts, (19,6) und (17,5) (Block 2, 18:09–18:33 UTC)
+
+Stufe je 4 Startwerte à 120 s; nach zwei nicht erreichten Stufen in der letzten einmal 8 Startwerte à 240 s (Startwerte 1–4 und 5–8, je 4 parallel).
+Alle Zahlen laut Bewerter, alle Läufe einer Stufe enden beim selben Wert (fester Endpunkt, kein Streuen).
+
+| Zelle | Paare | Ergebnis | offene Klassen | Anteil |
+|---|---|---|---|---|
+| (19,6) | 16 | erreicht (Kontrolle, 4 von 4) | 0 | 0 |
+| (19,6) | 15 | nicht erreicht (4 von 4 bei 2236) | 2236 | 0,0085 |
+| (19,6) | 14 | nicht erreicht (4 x 120 s, dann 8 x 240 s: alle 12 Läufe 5312) | 5312 | 0,0203 |
+| (19,6) | 10 (Ziel) | nicht erreicht | 26 192 | 0,0999 |
+| (17,5) | 16 | erreicht (Kontrolle, 4 von 4) | 0 | 0 |
+| (17,5) | 15 | nicht erreicht (4 von 4 bei 722) | 722 | 0,0110 |
+| (17,5) | 14 | nicht erreicht (4 x 120 s, dann 8 x 240 s: alle 12 Läufe 1710) | 1710 | 0,0261 |
+| (17,5) | 10 (Ziel) | nicht erreicht | 8952 | 0,1366 |
+
+Zelle (19,6) und (17,5) beendet (Regel: zwei Stufen nacheinander nicht erreicht, dann 8 Startwerte mit doppelter Zeit in der letzten, ohne Treffer).
+Kleinste erreichte Paarzahl in beiden Zellen: 16 (32 Wörter), das ist der bekannte Tabellenwert; kein Tabellenwert darunter.

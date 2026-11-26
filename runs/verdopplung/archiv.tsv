@@ -30,3 +30,35 @@
 1	18:08:44	24	8	12	2	302	732821	0.08736	20	144	Abstandsprobe Ziel
 1	18:08:44	24	8	12	3	303	733487	0.08744	19	144	Abstandsprobe Ziel
 1	18:08:44	24	8	12	4	311	733510	0.08744	20	144	Abstandsprobe Ziel
+2	18:11:06	19	6	15	1	120	2236	0.00853	1699	6	Leiter (19,6)
+2	18:11:06	19	6	15	2	120	2236	0.00853	1715	6	Leiter (19,6)
+2	18:11:06	19	6	15	3	120	2236	0.00853	1707	6	Leiter (19,6)
+2	18:11:06	19	6	15	4	120	2236	0.00853	1718	6	Leiter (19,6)
+2	18:13:07	19	6	14	1	120	5312	0.02026	1260	6	Leiter (19,6)
+2	18:13:07	19	6	14	2	120	5312	0.02026	1262	6	Leiter (19,6)
+2	18:13:07	19	6	14	3	120	5312	0.02026	1266	6	Leiter (19,6)
+2	18:13:07	19	6	14	4	120	5312	0.02026	1270	6	Leiter (19,6)
+2	18:17:12	19	6	14	1	241	5312	0.02026	1238	6	Leiter (19,6) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	18:17:12	19	6	14	2	240	5312	0.02026	1248	6	Leiter (19,6) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	18:17:12	19	6	14	3	240	5312	0.02026	1249	6	Leiter (19,6) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	18:17:12	19	6	14	4	240	5312	0.02026	1246	6	Leiter (19,6) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	18:21:14	19	6	14	5	241	5312	0.02026	1201	6	Leiter (19,6) 8 Startwerte, doppelte Zeit, Startwerte 5-8
+2	18:21:14	19	6	14	6	240	5312	0.02026	1200	6	Leiter (19,6) 8 Startwerte, doppelte Zeit, Startwerte 5-8
+2	18:21:14	19	6	14	7	240	5312	0.02026	1203	6	Leiter (19,6) 8 Startwerte, doppelte Zeit, Startwerte 5-8
+2	18:21:14	19	6	14	8	240	5312	0.02026	1196	6	Leiter (19,6) 8 Startwerte, doppelte Zeit, Startwerte 5-8
+2	18:23:19	17	5	15	1	120	722	0.01102	5301	2	Leiter (17,5)
+2	18:23:19	17	5	15	2	120	722	0.01102	5378	2	Leiter (17,5)
+2	18:23:19	17	5	15	3	120	722	0.01102	5207	2	Leiter (17,5)
+2	18:23:19	17	5	15	4	120	722	0.01102	5357	2	Leiter (17,5)
+2	18:25:20	17	5	14	1	120	1710	0.02609	4043	2	Leiter (17,5)
+2	18:25:20	17	5	14	2	120	1710	0.02609	4050	2	Leiter (17,5)
+2	18:25:20	17	5	14	3	120	1710	0.02609	4100	2	Leiter (17,5)
+2	18:25:20	17	5	14	4	120	1710	0.02609	4065	2	Leiter (17,5)
+2	18:29:24	17	5	14	1	240	1710	0.02609	4019	2	Leiter (17,5) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	18:29:24	17	5	14	2	240	1710	0.02609	4026	2	Leiter (17,5) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	18:29:25	17	5	14	3	240	1710	0.02609	4034	2	Leiter (17,5) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	18:29:25	17	5	14	4	240	1710	0.02609	4061	2	Leiter (17,5) 8 Startwerte, doppelte Zeit, Startwerte 1-4
+2	18:33:26	17	5	14	5	240	1710	0.02609	4218	2	Leiter (17,5) 8 Startwerte, doppelte Zeit, Startwerte 5-8
+2	18:33:26	17	5	14	6	240	1710	0.02609	4198	2	Leiter (17,5) 8 Startwerte, doppelte Zeit, Startwerte 5-8
+2	18:33:26	17	5	14	7	240	1710	0.02609	4244	2	Leiter (17,5) 8 Startwerte, doppelte Zeit, Startwerte 5-8
+2	18:33:26	17	5	14	8	240	1710	0.02609	4224	2	Leiter (17,5) 8 Startwerte, doppelte Zeit, Startwerte 5-8
