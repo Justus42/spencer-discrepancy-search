@@ -1,0 +1,7 @@
+Thu Nov 26 00:15:43 UTC 2026
+# Matrizen=22 Klassen=2 Knoten=39798
+# Klasse 0: Vertreter 0, |Aut|=576, Anzahl=21
+# Klasse 1: Vertreter 21, |Aut|=576, Anzahl=1
+Abbildungen geprueft: 22, richtig: 22 (Matrizen 22, Klassen 2)
+# R=24 C=20 Knoten=3497 Ordnung=576
+Thu Nov 26 00:15:44 UTC 2026

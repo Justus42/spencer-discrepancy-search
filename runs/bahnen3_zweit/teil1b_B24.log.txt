@@ -1,0 +1,7 @@
+Wed Nov 25 22:19:15 UTC 2026
+B2_KD=1792 b2_zaehl klein P_elemente.txt 24 12 0 100000000 teil1b_B24_liste.txt
+# Aufbau: 58368 Bahnen (1:8 3:160 9:58200), Kugel 60460, 2.1 s
+# klein B=24 split=12 Bereich [0,100000000) Knoten=365216185 Vollpruefungen=115187848 Basisloesungen=19008 Zeit=350.3 s Threads=4 D=1856
+Z Neuner=0 Gewicht=24 Anzahl=19008
+exit 0
+Wed Nov 25 22:25:07 UTC 2026

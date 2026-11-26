@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 26.11.2026 früh (nach Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 26.11.2026 früh (nach Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -24,7 +24,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Hadamard ohne 1 Spalte (alle Spalten, alle Klassen) |  |  |  |  |  |  | |  |  |  |  | 1,565 e |
 | Hadamard 20 ohne 2 / 24 ohne 3 Spalten (alle Paare/Tripel) |  |  |  |  |  |  | |  |  |  |  | 1,342 e |
 | Bahnen unter 5er-Zyklen plus Komplement (n=15: 40 Wörter, alle 525 Vierermengen, `bahn15_40w`) |  |  |  |  |  |  | |  |  |  |  | 1,565 e |
-| Bahnen unter der 3-Sylowgruppe P des 48ers (n=20, R=6; 40 Wörter = Rekord 1,789 ausgeschlossen, voll) | | | | | | | | | | | | – (voll) |
+| Bahnen unter der 3-Sylowgruppe P des 48ers (n=20, R=6; 40 Wörter = Rekord 1,789 ausgeschlossen, voll, zwei Programme) | | | | | | | | | | | | – (voll) |
 | (15,4) unter Spaltensymmetrie Primzahlordnung 7 (7+7+1), 11, 13: 30 Wörter ausgeschlossen, 32 Wörter nur Ordnung 7 (112 Lösungen, 2 Klassen, eine `ctrl_16`; voll) | | | | | | | | 1,750 e | | | | |
 | Zwei-Bahnen-Codes (⟨g⟩ verschiebt zwei Blöcke der Länge q, f Fixspalten; Auftrag Z, voll): (15,4) 7+7+1 und (17,5) 7+7+3 je 32 Wörter, (20,6) mit 40 Wörtern in 10+10 und 9+9+2 (1 oder 2 volle Bahnen, Teilfälle s. u.) ausgeschlossen | | | | | | | | 1,750 e | 1,698 r | | | – (voll) |
 | Paley-Konferenzmatrizen | 1,225 e |  |  |  | 0,949 e | 1,336 e | |  |  | 1,179 e |  |  |
@@ -56,7 +56,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Doppelung [[H,H],[H,-H]], H Hadamard 20, Bauregel 1+3/2+2 (40 x 36) |  |  |  |  |  |  |  |  |  |  |  |  | ≤1,265 g |
 | Paley-12-Doppelung, Bauregel 1+3 und 2+2 (24 x 20) |  |  |  | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Überdeckungscodes aus Nebenklassen-Suche (48/52/56/60 Wörter bei (20,6), 52 bei (22,7), 64 bei (18,5); Auftrag N: 52/56/60 bei (18,5), 64 bei (21,6), (23,7), (25,8)) |  |  |  | 1,633 e |  | 1,569 e |  | 1,512 e |  | 1,461 e |  | 1,591 e |  |
-| Bahnen unter der 3-Sylowgruppe P des 48ers (n=20, R=6; unter P 48 Wörter optimal, ≤ 46 ausgeschlossen, voll) |  |  |  | 1,633 e |  |  |  |  |  |  |  |  |  |
+| Bahnen unter der 3-Sylowgruppe P des 48ers (n=20, R=6; unter P 48 Wörter optimal, ≤ 46 ausgeschlossen, voll, zwei Programme) |  |  |  | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Zwei-Bahnen-Codes (Auftrag Z, 2 volle Bahnen + feste Paare): (25,8) q=11/12, (23,7) mit 50 Wörtern; (30,10), (28,9), (26,8) q=13/11 mit 62 Wörtern ausgeschlossen (voll) |  |  |  |  | – (voll) |  |  |  |  |  | – (voll) |  |  |
 | Nebenklassen-Suche, nicht erreichte Ziele (N = 32, (21,6) mit 64 Wörtern, ist in Auftrag N erreicht, siehe oben) |  |  |  |  |  |  |  |  |  | (1,643) s |  |  |  |
 | zirkulant n x n (Teil C, alle Klassen) | 1,091 e |  | 1,460 e | 1,225 e | 1,400 e | 1,177 e |  |  | 1,300 e | 1,095 e | 1,257 e |  |  |

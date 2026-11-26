@@ -1,0 +1,5 @@
+Wed Nov 25 23:07:29 UTC 2026
+b2_zaehl neun2 P_elemente.txt 23 (4 Tabellen x 24 Probenpunkte)
+# Aufbau: 58368 Bahnen (1:8 3:160 9:58200), Kugel 60460, 2.0 s
+exit 124
+Wed Nov 25 23:36:39 UTC 2026

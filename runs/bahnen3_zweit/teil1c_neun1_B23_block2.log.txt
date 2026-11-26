@@ -1,0 +1,6 @@
+Wed Nov 25 22:39:04 UTC 2026
+B2_KD=512 b2_zaehl neun1 P_elemente.txt 23 29100 58200
+# Aufbau: 58368 Bahnen (1:8 3:160 9:58200), Kugel 60460, 2.2 s
+# neun1 B=23 Neunerbahnen [29100,58200) Knoten=519784840 Vollpruefungen=1844928 Basisloesungen=0 Zeit=692.6 s
+exit 0
+Wed Nov 25 22:50:39 UTC 2026

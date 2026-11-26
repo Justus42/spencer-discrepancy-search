@@ -1,0 +1,43 @@
+Thu Nov 26 06:06:33 CET 2026
+A  P: 9 und 9 Elemente, als Mengen gleich: True
+B  Liste erstes Programm: 19008 Zeilen, 19008 verschiedene Mengen, Groessen [(24, 19008)]
+   Liste B2:              19008 Zeilen, 19008 verschiedene Mengen, Groessen [(24, 19008)]
+   gemeinsam 19008, nur erstes 0, nur B2 0; 1p3 in beiden: True; 2p2 in beiden: False
+   Bahngroessen der vorkommenden Vertreter: [(3, 96)]
+C  Radius ueber 2^20 Punkte, 12 zufaellige der 19 008 (Nummern [439, 1369, 4073, 4371, 6048, 7295, 8848, 9215, 9436, 9440, 11212, 17061]): [(6, 12)]
+   Positivkontrolle mit Neunerbahn: 576 Loesungen, Groessen [(31, 576)]; Radius von Nr. [0, 287, 575]: [6, 6, 6]
+D  Abbildungen auf den Vertreter: richtig 19008, falsch 0; Klassen (Vertreter, |Aut| laut Sitzung, Anzahl): [(0, 576, 432), (1, 36, 6912), (2, 36, 6912), (3, 144, 1728), (8, 144, 1728), (43, 576, 432), (111, 576, 432), (140, 576, 432)]
+   Anzahl * |Aut| je Klasse: [248832]
+E  Zuordnung (b), (c): Vertreterdateien gleich den Loesungen der Liste: True
+   controls/had24_1p3_paley12.txt                       -> Klasse 0 (|Aut| 576 laut Sitzung), Abbildung auf den Vertreter richtig
+   controls/had24_2p2_paley12.txt                       -> Klasse 7 (|Aut| 576 laut Sitzung), Abbildung auf den Vertreter richtig
+   runs/bahnen3/teil4/kontrolle_T24_seed4_matrix.txt    -> Klasse 8 (|Aut| 24 laut Sitzung), Abbildung auf den Vertreter richtig
+   runs/zerlegung/k3_seed1.matrix.txt                   -> Klasse 0 (|Aut| 576 laut Sitzung), Abbildung auf den Vertreter richtig
+   runs/zerlegung/k3_seed2.matrix.txt                   -> Klasse 0 (|Aut| 576 laut Sitzung), Abbildung auf den Vertreter richtig
+   runs/zerlegung/k3_seed3.matrix.txt                   -> Klasse 0 (|Aut| 576 laut Sitzung), Abbildung auf den Vertreter richtig
+   runs/zerlegung/k3_seed4.matrix.txt                   -> Klasse 0 (|Aut| 576 laut Sitzung), Abbildung auf den Vertreter richtig
+   runs/zerlegung/k3_seed5.matrix.txt                   -> Klasse 0 (|Aut| 576 laut Sitzung), Abbildung auf den Vertreter richtig
+   runs/zerlegung/k3_seed6.matrix.txt                   -> Klasse 0 (|Aut| 576 laut Sitzung), Abbildung auf den Vertreter richtig
+   runs/zerlegung/k3_seed7.matrix.txt                   -> Klasse 0 (|Aut| 576 laut Sitzung), Abbildung auf den Vertreter richtig
+   runs/zerlegung/k3_seed8.matrix.txt                   -> Klasse 0 (|Aut| 576 laut Sitzung), Abbildung auf den Vertreter richtig
+   runs/zerlegung/a_k12_t10-10_seed1.matrix.txt         -> Klasse 7 (|Aut| 576 laut Sitzung), Abbildung auf den Vertreter richtig
+F  Zeilen-2  trennt in Gruppen: [[0, 1, 2, 3, 4, 5, 6, 7, 8]]
+F  Zeilen-4  trennt in Gruppen: [[0, 7], [1], [2], [3], [4], [5, 6], [8]]
+F  Spalten-2 trennt in Gruppen: [[0, 1, 2, 3, 4, 5, 6, 7, 8]]
+F  Spalten-4 trennt in Gruppen: [[0, 3, 4, 5, 6, 7, 8], [1], [2]]
+   alle vier zusammen: [[0, 7], [1], [2], [3], [4], [5, 6], [8]]; getrennte Paare 34 von 36
+real	0m7.076s
+Thu Nov 26 06:06:40 CET 2026
+Thu Nov 26 06:06:57 CET 2026
+Vertreter 0: 31 verschiedene Punkttypen, groesster Abstand 6, hoechstens 6 Woerter im Abstand <= 6
+Vertreter 1: 35 verschiedene Punkttypen, groesster Abstand 6, hoechstens 6 Woerter im Abstand <= 6
+Vertreter 2: 35 verschiedene Punkttypen, groesster Abstand 6, hoechstens 6 Woerter im Abstand <= 6
+Vertreter 3: 33 verschiedene Punkttypen, groesster Abstand 6, hoechstens 6 Woerter im Abstand <= 6
+Vertreter 4: 33 verschiedene Punkttypen, groesster Abstand 6, hoechstens 6 Woerter im Abstand <= 6
+Vertreter 5: 31 verschiedene Punkttypen, groesster Abstand 6, hoechstens 6 Woerter im Abstand <= 6
+Vertreter 6: 33 verschiedene Punkttypen, groesster Abstand 6, hoechstens 5 Woerter im Abstand <= 6
+Vertreter 7: 33 verschiedene Punkttypen, groesster Abstand 6, hoechstens 5 Woerter im Abstand <= 6
+Vertreter 8: 34 verschiedene Punkttypen, groesster Abstand 6, hoechstens 6 Woerter im Abstand <= 6
+Gruppen nach dieser Invariante: [[0, 5], [1, 2], [3, 4], [6, 7], [8]]
+trennt 0 von 7: True; trennt 5 von 6: True
+Thu Nov 26 06:07:02 CET 2026

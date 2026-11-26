@@ -1,0 +1,16 @@
+Thu Nov 26 00:15:59 UTC 2026
+
+real	5m2.860s
+user	19m54.674s
+sys	0m1.149s
+# Matrizen=19008 Klassen=8 Knoten=40841280
+# Klasse 0: Vertreter 0, |Aut|=576, Anzahl=432
+# Klasse 1: Vertreter 1, |Aut|=36, Anzahl=6912
+# Klasse 2: Vertreter 2, |Aut|=36, Anzahl=6912
+# Klasse 3: Vertreter 3, |Aut|=144, Anzahl=1728
+# Klasse 4: Vertreter 8, |Aut|=144, Anzahl=1728
+# Klasse 5: Vertreter 43, |Aut|=576, Anzahl=432
+# Klasse 6: Vertreter 111, |Aut|=576, Anzahl=432
+# Klasse 7: Vertreter 140, |Aut|=576, Anzahl=432
+Abbildungen geprueft: 19008, richtig: 19008 (Matrizen 19008, Klassen 8)
+Thu Nov 26 00:21:05 UTC 2026

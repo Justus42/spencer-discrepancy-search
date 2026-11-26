@@ -1,0 +1,10 @@
+runs/bahnen3_zweit/klasse0_vertreter.txt J1 0b2eaae7b0 J2 f0d7bf35c2 J3 {0: 28080, 8: 9576, 16: 1104}
+runs/bahnen3_zweit/klasse1_vertreter.txt J1 d8ccd8d2fb J2 ffd189481b J3 {0: 27000, 8: 11016, 16: 744}
+runs/bahnen3_zweit/klasse2_vertreter.txt J1 17f9ad15f0 J2 5a8daf4e64 J3 {0: 26082, 8: 12240, 16: 438}
+runs/bahnen3_zweit/klasse3_vertreter.txt J1 0b2eaae7b0 J2 f0d7bf35c2 J3 {0: 25920, 8: 12456, 16: 384}
+runs/bahnen3_zweit/klasse4_vertreter.txt J1 0b2eaae7b0 J2 f0d7bf35c2 J3 {0: 26784, 8: 11304, 16: 672}
+runs/bahnen3_zweit/klasse5_vertreter.txt J1 0b2eaae7b0 J2 f0d7bf35c2 J3 {0: 26352, 8: 11880, 16: 528}
+runs/bahnen3_zweit/klasse6_vertreter.txt J1 0b2eaae7b0 J2 f0d7bf35c2 J3 {0: 26352, 8: 11880, 16: 528}
+runs/bahnen3_zweit/klasse7_vertreter.txt J1 0b2eaae7b0 J2 f0d7bf35c2 J3 {0: 28080, 8: 9576, 16: 1104}
+runs/bahnen3/teil4/kontrolle_T24_seed4_matrix.txt J1 0b2eaae7b0 J2 f0d7bf35c2 J3 {0: 25416, 8: 13128, 16: 216}
+verschiedene Schluessel: 7 von 9

@@ -1,0 +1,2 @@
+eigene Liste: 19008 Zeilen, 19008 verschiedene Mengen; erstes Programm: 19008 Zeilen, 19008 verschiedene Mengen
+gemeinsam: 19008, nur eigen: 0, nur erstes Programm: 0
