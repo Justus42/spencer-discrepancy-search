@@ -4,3 +4,6 @@ import Ueberdeckung.Saetze.Ctrl16
 import Ueberdeckung.Saetze.Had24_1p3_ohne0
 import Ueberdeckung.Saetze.Had24_1p3
 import Ueberdeckung.Saetze.Had24_2p2
+import Ueberdeckung.Saetze.C18_5_50w
+import Ueberdeckung.Saetze.C18_5_50w_ohne24
+import Ueberdeckung.Saetze.C18_5_52w

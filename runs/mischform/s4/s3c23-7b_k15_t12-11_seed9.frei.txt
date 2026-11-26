@@ -1,0 +1,6 @@
+# paar runs/leiter_n/s3c23-7b_k15_t12-11_seed9.paar.txt: K=15 (Typ (12,11)), 30 Zeilen
+# m=23 d=9 R=7, 30 Zeilen; offene Punkte 2192 (Klassen 1096)
+maxcov: eine Zeile ueberdeckt hoechstens 808 offene Punkte (404 Klassen) von 2192; Beispiel: -1 -1  1  1 -1  1  1 -1  1 -1 -1  1 -1 -1 -1 -1  1 -1 -1  1 -1 -1  1
+f=1: Zeilen r (alle 2^23), die alle offenen Punkte ueberdecken: 0 (bis auf Vorzeichen 0)
+f=1: NEIN (vollstaendig) (Knoten 1, 0.00 s)
+# Laufzeit 0.82 s

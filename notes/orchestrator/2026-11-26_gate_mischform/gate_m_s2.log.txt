@@ -1,0 +1,11 @@
+Zustaende: 160, Gruppen (Typ, offene Punkte): 9, offene Punkte = Angabe der Sitzung: True, Sitzung f=2 NEIN bei allen: True
+Typ 10-8  offene Punkte 3312 ( 36 Zustaende); eigener Vertreter k11_t10-8_z150_n20_seed1: maxcov 672, beste erste Zeile in der Kugel 584, Kandidaten nach Schnitt 0, f=2 nein (vollstaendig)
+Typ 10-8  offene Punkte 3456 (  3 Zustaende); eigener Vertreter k11_t10-8_z60_n0_seed201: maxcov 702, beste erste Zeile in der Kugel 702, Kandidaten nach Schnitt 0, f=2 nein (vollstaendig)
+Typ 10-8  offene Punkte 4260 (  1 Zustaende); eigener Vertreter k11_t10-8_z60_n0_seed208: maxcov 1770, beste erste Zeile in der Kugel 1770, Kandidaten nach Schnitt 0, f=2 nein (vollstaendig)
+Typ 11-7  offene Punkte 4188 ( 38 Zustaende); eigener Vertreter k11_t11-7_z150_n20_seed1: maxcov 2096, beste erste Zeile in der Kugel 2096, Kandidaten nach Schnitt 1, f=2 nein (vollstaendig)
+Typ 11-7  offene Punkte 4428 (  2 Zustaende); eigener Vertreter k11_t11-7_z20_n5_seed102: maxcov 1322, beste erste Zeile in der Kugel 1210, Kandidaten nach Schnitt 0, f=2 nein (vollstaendig)
+Typ 12-6  offene Punkte 5444 ( 37 Zustaende); eigener Vertreter k11_t12-6_z150_n20_seed1: maxcov 2964, beste erste Zeile in der Kugel 2780, Kandidaten nach Schnitt 7, f=2 nein (vollstaendig)
+Typ 12-6  offene Punkte 6128 (  3 Zustaende); eigener Vertreter k11_t12-6_z20_n5_seed102: maxcov 2816, beste erste Zeile in der Kugel 2816, Kandidaten nach Schnitt 0, f=2 nein (vollstaendig)
+Typ 9-9   offene Punkte 3868 ( 35 Zustaende); eigener Vertreter k11_t9-9_z150_n20_seed1: maxcov 2076, beste erste Zeile in der Kugel 2076, Kandidaten nach Schnitt 1, f=2 nein (vollstaendig)
+Typ 9-9   offene Punkte 4008 (  5 Zustaende); eigener Vertreter k11_t9-9_z20_n5_seed107: maxcov 1720, beste erste Zeile in der Kugel 1464, Kandidaten nach Schnitt 0, f=2 nein (vollstaendig)
+real	0m5.721s

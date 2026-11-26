@@ -1,0 +1,9 @@
+geschrieben: lean/Ueberdeckung/Daten/Hamming7.lean (8 Zeilen, Länge 7, 16 Wörter, 16 verschieden)
+geschrieben: lean/Ueberdeckung/Daten/Ctrl16.lean (16 Zeilen, Länge 15, 32 Wörter, 32 verschieden)
+geschrieben: lean/Ueberdeckung/Daten/Had24_1p3_ohne0.lean (23 Zeilen, Länge 20, 46 Wörter, 46 verschieden)
+geschrieben: lean/Ueberdeckung/Daten/Had24_1p3.lean (24 Zeilen, Länge 20, 48 Wörter, 48 verschieden)
+geschrieben: lean/Ueberdeckung/Daten/Had24_2p2.lean (24 Zeilen, Länge 20, 48 Wörter, 48 verschieden)
+geschrieben: lean/Ueberdeckung/Daten/C18_5_50w.lean (25 Zeilen, Länge 18, 50 Wörter, 50 verschieden)
+geschrieben: lean/Ueberdeckung/Daten/C18_5_50w_ohne24.lean (24 Zeilen, Länge 18, 48 Wörter, 48 verschieden)
+geschrieben: lean/Ueberdeckung/Daten/C18_5_52w.lean (26 Zeilen, Länge 18, 52 Wörter, 52 verschieden)
+Kern-Dateien geschrieben

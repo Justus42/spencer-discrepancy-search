@@ -1,0 +1,22 @@
+# misch_alt m=18 d=8 R=5 K=12 (m1=9, m2=9) f=1 seed=4 sek=600 Klassen 131072, Woerter 50, stag=300 neustart=20
+  Neustart 1 nach Runde 22 (bestes 378), 14.1 s
+  Runde 54: offen 347, bestes 347, Zuege 18583, Neustarts 1, 30.3 s
+  Neustart 2 nach Runde 59 (bestes 347), 32.5 s
+  Neustart 3 nach Runde 79 (bestes 347), 42.6 s
+  Neustart 4 nach Runde 99 (bestes 347), 52.1 s
+  Runde 114: offen 358, bestes 347, Zuege 38919, Neustarts 4, 60.5 s
+  Neustart 5 nach Runde 119 (bestes 347), 63.1 s
+  Neustart 6 nach Runde 139 (bestes 347), 73.8 s
+  Neustart 7 nach Runde 159 (bestes 347), 83.5 s
+  Runde 174: offen 368, bestes 347, Zuege 58428, Neustarts 7, 90.7 s
+  Neustart 8 nach Runde 179 (bestes 347), 93.3 s
+  Neustart 9 nach Runde 199 (bestes 347), 103.7 s
+  Neustart 10 nach Runde 219 (bestes 347), 114.5 s
+  Runde 232: offen 391, bestes 347, Zuege 77112, Neustarts 10, 121.0 s
+  Neustart 11 nach Runde 239 (bestes 347), 124.8 s
+  Neustart 12 nach Runde 259 (bestes 347), 134.8 s
+  Neustart 13 nach Runde 279 (bestes 347), 145.8 s
+  Runde 289: offen 380, bestes 347, Zuege 95451, Neustarts 13, 151.1 s
+  Neustart 14 nach Runde 299 (bestes 347), 155.6 s
+  Runde 310: offen 0, bestes 0, Zuege 102413, Neustarts 14, 161.7 s
+LOESUNG nach 161.7 s: beste Zahl offener Klassen 0 (offene Punkte 0), t_best=161.7, Runden 310, Zuege 102413, Gewichtsschritte 43629, Neustarts 14

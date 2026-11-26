@@ -1,0 +1,8 @@
+--- Mutation (Zeile 24, Spalte 0 gewechselt): Behauptung Radius 5 gilt
+GateMutNein.lean:31:52: error: Tactic `native_decide` evaluated that the proposition
+  pruefe 18 5 (code matrix) = true
+is false
+Rueckgabe: 1
+--- Mutation: Behauptung Radius 5 gilt nicht
+Rueckgabe: 0
+Thu Nov 26 09:32:13 CET 2026

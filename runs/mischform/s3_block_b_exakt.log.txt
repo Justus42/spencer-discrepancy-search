@@ -1,0 +1,8 @@
+seed 1: offene Punkte 4364, maxcov 2022, f=2: NEIN (vollstaendig) (Knoten 1, 0.00 s)
+seed 2: offene Punkte 4344, maxcov 2010, f=2: NEIN (vollstaendig) (Knoten 1, 0.00 s)
+seed 3: offene Punkte 4344, maxcov 2010, f=2: NEIN (vollstaendig) (Knoten 1, 0.00 s)
+seed 4: offene Punkte 4352, maxcov 2014, f=2: NEIN (vollstaendig) (Knoten 1, 0.00 s)
+seed 5: offene Punkte 4580, maxcov 2126, f=2: NEIN (vollstaendig) (Knoten 1, 0.00 s)
+seed 6: offene Punkte 4352, maxcov 2014, f=2: NEIN (vollstaendig) (Knoten 1, 0.00 s)
+seed 7: offene Punkte 4596, maxcov 2118, f=2: NEIN (vollstaendig) (Knoten 1, 0.00 s)
+seed 8: offene Punkte 4364, maxcov 2022, f=2: NEIN (vollstaendig) (Knoten 1, 0.00 s)

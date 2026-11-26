@@ -1,0 +1,8 @@
+# paar runs/zerlegung/k3_seed1.paar.txt: K=11 (Typ (11,9)) nach Streichen, 22 Zeilen
+# gestrichen: Paarzeile 10
+# m=20 d=8 R=6, 22 Zeilen; offene Punkte 6108 (Klassen 3054)
+maxcov: eine Zeile ueberdeckt hoechstens 3514 offene Punkte (1757 Klassen) von 6108; Beispiel:  1 -1 -1 -1 -1 -1 -1  1  1  1  1  1 -1  1  1  1  1  1  1  1
+f=1: Zeilen r (alle 2^20), die alle offenen Punkte ueberdecken: 0 (bis auf Vorzeichen 0)
+f=1: NEIN (vollstaendig) (Knoten 1, 0.00 s)
+f=2: JA (Knoten 21, 0.03 s)
+# Laufzeit 0.36 s

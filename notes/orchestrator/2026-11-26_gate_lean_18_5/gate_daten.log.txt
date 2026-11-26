@@ -1,0 +1,3 @@
+C18_5_50w         Matrix in Lean = Quelle: True (25 Zeilen x 18); Wortliste in Lean = Zeilen und Komplemente (als Menge): True, 50 Woerter, verschieden 50; groesster Abstand 5, Punkte ueber 5: 0 
+C18_5_52w         Matrix in Lean = Quelle: True (26 Zeilen x 18); Wortliste in Lean = Zeilen und Komplemente (als Menge): True, 52 Woerter, verschieden 52; groesster Abstand 5, Punkte ueber 5: 0 
+C18_5_50w_ohne24  Matrix in Lean = Quelle: True (24 Zeilen x 18); Wortliste in Lean = Zeilen und Komplemente (als Menge): True, 48 Woerter, verschieden 48; groesster Abstand 6, Punkte ueber 5: 4 [55992, 56135, 206008, 206151]

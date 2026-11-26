@@ -1,0 +1,107 @@
+# misch_alt m=18 d=8 R=5 K=11 (m1=9, m2=9) f=2 seed=1 sek=900 Klassen 131072, Woerter 48, stag=300 neustart=20
+  Neustart 1 nach Runde 30 (bestes 438), 17.6 s
+  Runde 50: offen 438, bestes 438, Zuege 16497, Neustarts 1, 30.2 s
+  Neustart 2 nach Runde 50 (bestes 438), 30.2 s
+  Neustart 3 nach Runde 70 (bestes 438), 41.1 s
+  Neustart 4 nach Runde 90 (bestes 438), 52.8 s
+  Runde 102: offen 468, bestes 438, Zuege 34137, Neustarts 4, 60.2 s
+  Neustart 5 nach Runde 110 (bestes 438), 64.2 s
+  Neustart 6 nach Runde 130 (bestes 438), 75.7 s
+  Neustart 7 nach Runde 150 (bestes 438), 86.1 s
+  Runde 157: offen 480, bestes 438, Zuege 52257, Neustarts 7, 90.2 s
+  Neustart 8 nach Runde 170 (bestes 438), 97.0 s
+  Neustart 9 nach Runde 197 (bestes 2), 111.2 s
+  Runde 212: offen 474, bestes 2, Zuege 70398, Neustarts 9, 120.7 s
+  Neustart 10 nach Runde 217 (bestes 2), 123.4 s
+  Neustart 11 nach Runde 237 (bestes 2), 134.7 s
+  Neustart 12 nach Runde 257 (bestes 2), 148.3 s
+  Runde 260: offen 476, bestes 2, Zuege 87979, Neustarts 12, 150.9 s
+  Neustart 13 nach Runde 277 (bestes 2), 160.5 s
+  Neustart 14 nach Runde 297 (bestes 2), 173.2 s
+  Runde 309: offen 476, bestes 2, Zuege 105027, Neustarts 14, 181.2 s
+  Neustart 15 nach Runde 317 (bestes 2), 185.6 s
+  Neustart 16 nach Runde 337 (bestes 2), 198.1 s
+  Neustart 17 nach Runde 357 (bestes 2), 209.9 s
+  Runde 359: offen 480, bestes 2, Zuege 122641, Neustarts 17, 211.6 s
+  Neustart 18 nach Runde 377 (bestes 2), 221.2 s
+  Neustart 19 nach Runde 397 (bestes 2), 232.9 s
+  Runde 411: offen 462, bestes 2, Zuege 140179, Neustarts 19, 241.7 s
+  Neustart 20 nach Runde 417 (bestes 2), 244.7 s
+  Neustart 21 nach Runde 437 (bestes 2), 257.0 s
+  Neustart 22 nach Runde 457 (bestes 2), 269.2 s
+  Runde 462: offen 482, bestes 2, Zuege 158087, Neustarts 22, 272.1 s
+  Neustart 23 nach Runde 477 (bestes 2), 279.9 s
+  Neustart 24 nach Runde 497 (bestes 2), 292.4 s
+  Runde 513: offen 438, bestes 2, Zuege 175937, Neustarts 24, 302.2 s
+  Neustart 25 nach Runde 517 (bestes 2), 304.2 s
+  Neustart 26 nach Runde 537 (bestes 2), 315.7 s
+  Neustart 27 nach Runde 557 (bestes 2), 327.2 s
+  Runde 566: offen 468, bestes 2, Zuege 193547, Neustarts 27, 332.6 s
+  Neustart 28 nach Runde 577 (bestes 2), 338.4 s
+  Neustart 29 nach Runde 597 (bestes 2), 350.0 s
+  Neustart 30 nach Runde 617 (bestes 2), 360.6 s
+  Runde 620: offen 466, bestes 2, Zuege 211736, Neustarts 30, 363.4 s
+  Neustart 31 nach Runde 637 (bestes 2), 372.0 s
+  Neustart 32 nach Runde 657 (bestes 2), 384.0 s
+  Runde 672: offen 462, bestes 2, Zuege 229754, Neustarts 32, 393.5 s
+  Neustart 33 nach Runde 677 (bestes 2), 396.0 s
+  Neustart 34 nach Runde 697 (bestes 2), 406.9 s
+  Neustart 35 nach Runde 717 (bestes 2), 417.9 s
+  Runde 724: offen 464, bestes 2, Zuege 247731, Neustarts 35, 423.5 s
+  Neustart 36 nach Runde 737 (bestes 2), 430.0 s
+  Neustart 37 nach Runde 757 (bestes 2), 443.2 s
+  Runde 776: offen 466, bestes 2, Zuege 265651, Neustarts 37, 453.8 s
+  Neustart 38 nach Runde 777 (bestes 2), 454.3 s
+  Neustart 39 nach Runde 797 (bestes 2), 466.3 s
+  Neustart 40 nach Runde 817 (bestes 2), 478.6 s
+  Runde 827: offen 434, bestes 2, Zuege 283883, Neustarts 40, 484.4 s
+  Neustart 41 nach Runde 837 (bestes 2), 489.3 s
+  Neustart 42 nach Runde 857 (bestes 2), 500.7 s
+  Neustart 43 nach Runde 877 (bestes 2), 512.4 s
+  Runde 880: offen 494, bestes 2, Zuege 301841, Neustarts 43, 514.6 s
+  Neustart 44 nach Runde 897 (bestes 2), 523.6 s
+  Neustart 45 nach Runde 917 (bestes 2), 535.1 s
+  Runde 933: offen 462, bestes 2, Zuege 319707, Neustarts 45, 544.9 s
+  Neustart 46 nach Runde 937 (bestes 2), 546.9 s
+  Neustart 47 nach Runde 957 (bestes 2), 559.0 s
+  Neustart 48 nach Runde 977 (bestes 2), 569.9 s
+  Runde 983: offen 470, bestes 2, Zuege 337580, Neustarts 48, 575.2 s
+  Neustart 49 nach Runde 997 (bestes 2), 582.5 s
+  Neustart 50 nach Runde 1017 (bestes 2), 594.3 s
+  Runde 1036: offen 438, bestes 2, Zuege 354815, Neustarts 50, 605.5 s
+  Neustart 51 nach Runde 1037 (bestes 2), 606.0 s
+  Neustart 52 nach Runde 1057 (bestes 2), 617.3 s
+  Neustart 53 nach Runde 1077 (bestes 2), 629.0 s
+  Runde 1089: offen 2, bestes 2, Zuege 372384, Neustarts 53, 635.7 s
+  Neustart 54 nach Runde 1097 (bestes 2), 639.5 s
+  Neustart 55 nach Runde 1117 (bestes 2), 652.1 s
+  Neustart 56 nach Runde 1137 (bestes 2), 664.4 s
+  Runde 1139: offen 472, bestes 2, Zuege 390442, Neustarts 56, 666.0 s
+  Neustart 57 nach Runde 1157 (bestes 2), 674.7 s
+  Neustart 58 nach Runde 1177 (bestes 2), 686.1 s
+  Runde 1196: offen 476, bestes 2, Zuege 408853, Neustarts 58, 696.4 s
+  Neustart 59 nach Runde 1197 (bestes 2), 696.8 s
+  Neustart 60 nach Runde 1217 (bestes 2), 708.2 s
+  Neustart 61 nach Runde 1237 (bestes 2), 720.1 s
+  Runde 1248: offen 470, bestes 2, Zuege 426941, Neustarts 61, 726.6 s
+  Neustart 62 nach Runde 1257 (bestes 2), 731.5 s
+  Neustart 63 nach Runde 1277 (bestes 2), 743.7 s
+  Neustart 64 nach Runde 1297 (bestes 2), 754.3 s
+  Runde 1301: offen 476, bestes 2, Zuege 445134, Neustarts 64, 756.7 s
+  Neustart 65 nach Runde 1317 (bestes 2), 764.9 s
+  Neustart 66 nach Runde 1337 (bestes 2), 777.0 s
+  Runde 1354: offen 466, bestes 2, Zuege 463260, Neustarts 66, 787.1 s
+  Neustart 67 nach Runde 1357 (bestes 2), 788.7 s
+  Neustart 68 nach Runde 1377 (bestes 2), 801.8 s
+  Neustart 69 nach Runde 1397 (bestes 2), 814.5 s
+  Runde 1400: offen 478, bestes 2, Zuege 480874, Neustarts 69, 817.5 s
+  Neustart 70 nach Runde 1417 (bestes 2), 826.4 s
+  Neustart 71 nach Runde 1437 (bestes 2), 839.4 s
+  Runde 1449: offen 438, bestes 2, Zuege 499135, Neustarts 71, 848.1 s
+  Neustart 72 nach Runde 1457 (bestes 2), 852.0 s
+  Neustart 73 nach Runde 1477 (bestes 2), 864.0 s
+  Neustart 74 nach Runde 1497 (bestes 2), 876.4 s
+  Runde 1499: offen 490, bestes 2, Zuege 517493, Neustarts 74, 879.0 s
+  Neustart 75 nach Runde 1517 (bestes 2), 888.4 s
+  Neustart 76 nach Runde 1537 (bestes 2), 900.0 s
+ZEITGRENZE nach 900.0 s: beste Zahl offener Klassen 2 (offene Punkte 4), t_best=101.5, Runden 1537, Zuege 530336, Gewichtsschritte 231840, Neustarts 76

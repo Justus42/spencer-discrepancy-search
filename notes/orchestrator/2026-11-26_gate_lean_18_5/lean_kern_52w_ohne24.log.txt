@@ -1,0 +1,17 @@
+Thu Nov 26 09:28:12 CET 2026
+  ok     Kern/C18_5_52w                   1.0 s 
+Stufe C18_5_52w fertig, 204.8 s Wand, Ende 08:31:37 UTC
+
+real	3m24.821s
+user	5m25.293s
+sys	1m11.868s
+Rueckgabe 52w: 0
+Stufe C18_5_50w_ohne24, n = 18, P = 2, Start 08:31:37 UTC
+  ok     Kern/C18_5_50w_ohne24            0.6 s 
+Stufe C18_5_50w_ohne24 fertig, 0.8 s Wand, Ende 08:31:38 UTC
+
+real	0m0.848s
+user	0m0.540s
+sys	0m0.219s
+Rueckgabe ohne24: 0
+Thu Nov 26 09:31:38 CET 2026

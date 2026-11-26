@@ -5,8 +5,19 @@ Suche nach einer besseren unteren Schranke für die Spencer-Diskrepanzkonstante
 [teorth/optimizationproblems](https://github.com/teorth/optimizationproblems)),
 über selbstkomplementäre binäre Überdeckungscodes.
 
-Bisher enthält dieses Repo **kein neues Resultat**, nur Prüfskripte, Kontrollmatrizen
-bekannter Rekorde und Suchcode. Der aktuelle Stand steht in [STATUS.md](STATUS.md).
+Stand 26.11.2026: Dieses Repo enthält **keinen neuen Rekord** für die Spencer-Konstante
+(bester bekannter Wert 5/√8, nicht von hier). Als Zwischenergebnisse auf dem Weg dorthin gibt es
+obere Schranken für sechs Zellen binärer Überdeckungscodes, kleiner als die Post-Kéri-Tabelle
+([florath/covering-codes-lean](https://github.com/florath/covering-codes-lean), Commit `bbed9a6`):
+
+- K(20,6) ≤ 48 (Konstruktion ohne Suche, in Lean bewiesen), daraus K(22,7), K(24,8), K(26,9)
+  und K(28,10) ≤ 48 (Verdreifachen einer normalen Koordinate); Tabelle 64 bzw. 56.
+- K(18,5) ≤ 50 (aus einer Suche, Überdeckung in Lean bewiesen); Tabelle 64.
+
+Diese Werte sind von Dritten nicht geprüft und bisher nirgends gemeldet. Die Literaturprüfung ist
+unvollständig, für die vier Folgezellen gibt es nur den Tabellenabgleich. Für einen Rekord reicht
+keiner dieser Codes. Stand, Belege und offene Punkte stehen in [STATUS.md](STATUS.md), die
+Lean-Beweise in [lean/README.md](lean/README.md).
 
 ## Prüfen
 

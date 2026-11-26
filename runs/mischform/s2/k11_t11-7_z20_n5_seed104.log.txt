@@ -1,0 +1,22 @@
+  Runde 1 (W frei): Restzahl 3367, bestes 3367, Anforderungsvektoren 433, Iterationen 731, 0.5 s
+  Runde 2 (U frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 53, Iterationen 1044, 2.8 s
+  Runde 3 (W frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 323, Iterationen 1345, 2.9 s
+  Runde 4 (U frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 53, Iterationen 1646, 5.3 s
+  Runde 5 (W frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 323, Iterationen 1947, 5.5 s
+  Runde 6 (U frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 53, Iterationen 2248, 7.7 s
+  Runde 7 (W frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 323, Iterationen 2549, 7.9 s
+  Neustart 1 nach Runde 7 (bestes bisher 1107), 7.9 s
+  Runde 8 (W frei): Restzahl 4655, bestes 1107, Anforderungsvektoren 507, Iterationen 2878, 8.0 s
+  Runde 9 (U frei): Restzahl 1104, bestes 1104, Anforderungsvektoren 53, Iterationen 3189, 9.7 s
+  Runde 10 (W frei): Restzahl 1047, bestes 1047, Anforderungsvektoren 287, Iterationen 4137, 10.1 s
+  Runde 11 (U frei): Restzahl 1047, bestes 1047, Anforderungsvektoren 53, Iterationen 4438, 11.7 s
+  Runde 12 (W frei): Restzahl 1047, bestes 1047, Anforderungsvektoren 287, Iterationen 4739, 11.8 s
+  Runde 13 (U frei): Restzahl 1047, bestes 1047, Anforderungsvektoren 53, Iterationen 5040, 13.6 s
+  Runde 14 (W frei): Restzahl 1047, bestes 1047, Anforderungsvektoren 287, Iterationen 5341, 13.7 s
+  Runde 15 (U frei): Restzahl 1047, bestes 1047, Anforderungsvektoren 53, Iterationen 5642, 15.5 s
+  Neustart 2 nach Runde 15 (bestes bisher 1047), 15.5 s
+  Runde 16 (W frei): Restzahl 4105, bestes 1047, Anforderungsvektoren 480, Iterationen 6590, 16.1 s
+  Runde 17 (U frei): Restzahl 1107, bestes 1047, Anforderungsvektoren 53, Iterationen 6906, 18.2 s
+  Runde 18 (W frei): Restzahl 1107, bestes 1047, Anforderungsvektoren 323, Iterationen 7207, 18.4 s
+  Runde 19 (U frei): Restzahl 1107, bestes 1047, Anforderungsvektoren 53, Iterationen 7478, 20.0 s
+ZEITGRENZE nach 20.0 s, beste Restzahl 1047, 7478 Iterationen, 19 Runden, 2 Neustarts

@@ -1,0 +1,13 @@
+s2c18-5_k12_t9-9_seed1             offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+s2c18-5_k12_t9-9_seed2             offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+s2c18-5_k12_t9-9_seed3             offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+s2c18-5_k12_t9-9_seed4             offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+s3c18-5a_k12_t9-9_seed5            offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+s3c18-5a_k12_t9-9_seed6            offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+s3c18-5a_k12_t9-9_seed7            offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+s3c18-5a_k12_t9-9_seed8            offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+s3c18-5b_k12_t9-9_seed10           offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+s3c18-5b_k12_t9-9_seed11           offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+s3c18-5b_k12_t9-9_seed12           offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+s3c18-5b_k12_t9-9_seed9            offene Punkte 4, Zeilen, die alle ueberdecken: 1008 (bis auf Vorzeichen 504)
+real	0m0.317s
