@@ -1,0 +1,13 @@
+Typ 5,5,5,5 m=20 R=6 ohne 1: Fälle 8, kleinste Restzahl 201, größte 317, alle [201, 202, 240, 270, 271, 280, 310, 317]
+Typ 5,5,5,5 m=20 R=6 ohne 2: Fälle 28, kleinste Restzahl 980, größte 2916
+Typ 5,5,5,5 m=20 R=6 ohne 3: Fälle 56, kleinste Restzahl 3069, größte 7596
+Typ 6,5,5,4 m=20 R=6 ohne 1: Fälle 8, kleinste Restzahl 232, größte 276, alle [232, 236, 240, 254, 262, 265, 272, 276]
+Typ 6,5,5,4 m=20 R=6 ohne 2: Fälle 28, kleinste Restzahl 1035, größte 1951
+Typ 6,5,5,4 m=20 R=6 ohne 3: Fälle 56, kleinste Restzahl 3556, größte 6051
+Typ 6,6,4,4 m=20 R=6 ohne 1: Fälle 8, kleinste Restzahl 445, größte 562, alle [445, 456, 474, 493, 529, 534, 553, 562]
+Typ 6,6,4,4 m=20 R=6 ohne 2: Fälle 28, kleinste Restzahl 1612, größte 2619
+Typ 6,6,4,4 m=20 R=6 ohne 3: Fälle 56, kleinste Restzahl 4646, größte 8358
+Typ 7,5,4,4 m=20 R=6 ohne 1: Fälle 8, kleinste Restzahl 286, größte 343, alle [286, 297, 305, 310, 321, 329, 329, 343]
+Typ 7,5,4,4 m=20 R=6 ohne 2: Fälle 28, kleinste Restzahl 1250, größte 2033
+Typ 7,5,4,4 m=20 R=6 ohne 3: Fälle 56, kleinste Restzahl 3748, größte 5326
+FERTIG

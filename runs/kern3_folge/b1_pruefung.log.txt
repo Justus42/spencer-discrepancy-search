@@ -1,0 +1,16 @@
+== 5,5,5,5
+TREFFER Typ=(5, 5, 5, 5) K=8 offen: direkt=0 nebenklassen=0 suchcode=0 OK
+Matrix runs/kern3_folge/b1_K8lsw_5-5-5-5.matrix.txt: 32 x 20, aufgefuellt 32 x 32
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+== 6,5,5,4
+TREFFER Typ=(6, 5, 5, 4) K=8 offen: direkt=0 nebenklassen=0 suchcode=0 OK
+Matrix runs/kern3_folge/b1_K8lsw_6-5-5-4.matrix.txt: 32 x 20, aufgefuellt 32 x 32
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+== 6,6,4,4
+TREFFER Typ=(6, 6, 4, 4) K=8 offen: direkt=0 nebenklassen=0 suchcode=0 OK
+Matrix runs/kern3_folge/b1_K8lsw_6-6-4-4.matrix.txt: 32 x 20, aufgefuellt 32 x 32
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+== 7,5,4,4
+TREFFER Typ=(7, 5, 4, 4) K=8 offen: direkt=0 nebenklassen=0 suchcode=0 OK
+Matrix runs/kern3_folge/b1_K8lsw_7-5-4-4.matrix.txt: 32 x 20, aufgefuellt 32 x 32
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
