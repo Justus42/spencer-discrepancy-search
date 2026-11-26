@@ -1,0 +1,10 @@
+== 23:32:27 Start Block s3c16-4b_k15_t9-7
+s3c16-4b_k15_t9-7 seed 9: ZEITGRENZE nach 900.0 s, beste Restzahl 28, 1370611 Iterationen, 4168 Runden, 132 Neustarts
+runs/leiter_n/s3c16-4b_k15_t9-7_seed9.paar.txt: K=15, Typ (9,7), d=8: offene Klassen 28 von 16384
+s3c16-4b_k15_t9-7 seed 10: ZEITGRENZE nach 900.0 s, beste Restzahl 36, 1366485 Iterationen, 4151 Runden, 127 Neustarts
+runs/leiter_n/s3c16-4b_k15_t9-7_seed10.paar.txt: K=15, Typ (9,7), d=8: offene Klassen 36 von 16384
+s3c16-4b_k15_t9-7 seed 11: ZEITGRENZE nach 900.0 s, beste Restzahl 28, 1362785 Iterationen, 4181 Runden, 129 Neustarts
+runs/leiter_n/s3c16-4b_k15_t9-7_seed11.paar.txt: K=15, Typ (9,7), d=8: offene Klassen 28 von 16384
+s3c16-4b_k15_t9-7 seed 12: ZEITGRENZE nach 900.0 s, beste Restzahl 28, 1377296 Iterationen, 4193 Runden, 127 Neustarts
+runs/leiter_n/s3c16-4b_k15_t9-7_seed12.paar.txt: K=15, Typ (9,7), d=8: offene Klassen 28 von 16384
+== 23:47:27 Ende Block s3c16-4b_k15_t9-7

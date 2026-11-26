@@ -1,0 +1,21 @@
+  Runde 1 (W frei): Restzahl 44421, bestes 44421, Anforderungsvektoren 2747, Iterationen 732, 40.9 s
+  Runde 2 (U frei): Restzahl 188, bestes 188, Anforderungsvektoren 832, Iterationen 1120, 66.0 s
+  Runde 3 (W frei): Restzahl 188, bestes 188, Anforderungsvektoren 1520, Iterationen 1421, 70.5 s
+  Runde 4 (U frei): Restzahl 188, bestes 188, Anforderungsvektoren 832, Iterationen 1722, 92.2 s
+  Runde 5 (W frei): Restzahl 188, bestes 188, Anforderungsvektoren 1520, Iterationen 2023, 96.9 s
+  Runde 6 (U frei): Restzahl 188, bestes 188, Anforderungsvektoren 832, Iterationen 2324, 117.6 s
+  Runde 7 (W frei): Restzahl 188, bestes 188, Anforderungsvektoren 1520, Iterationen 2625, 122.1 s
+  Runde 8 (U frei): Restzahl 188, bestes 188, Anforderungsvektoren 832, Iterationen 2926, 143.1 s
+  Runde 9 (W frei): Restzahl 188, bestes 188, Anforderungsvektoren 1520, Iterationen 3227, 147.6 s
+  Runde 10 (U frei): Restzahl 188, bestes 188, Anforderungsvektoren 832, Iterationen 3528, 168.5 s
+  Runde 11 (W frei): Restzahl 188, bestes 188, Anforderungsvektoren 1520, Iterationen 3829, 173.3 s
+  Runde 12 (U frei): Restzahl 188, bestes 188, Anforderungsvektoren 832, Iterationen 4130, 195.6 s
+  Runde 13 (W frei): Restzahl 188, bestes 188, Anforderungsvektoren 1520, Iterationen 4431, 200.3 s
+  Runde 14 (U frei): Restzahl 188, bestes 188, Anforderungsvektoren 832, Iterationen 4732, 221.6 s
+  Runde 15 (W frei): Restzahl 188, bestes 188, Anforderungsvektoren 1520, Iterationen 5033, 226.5 s
+  Runde 16 (U frei): Restzahl 188, bestes 188, Anforderungsvektoren 832, Iterationen 5334, 249.1 s
+  Runde 17 (W frei): Restzahl 188, bestes 188, Anforderungsvektoren 1520, Iterationen 5635, 253.9 s
+  Runde 18 (U frei): Restzahl 188, bestes 188, Anforderungsvektoren 832, Iterationen 5936, 275.2 s
+  Runde 19 (W frei): Restzahl 188, bestes 188, Anforderungsvektoren 1520, Iterationen 6237, 279.8 s
+  Runde 20 (U frei): Restzahl 188, bestes 188, Anforderungsvektoren 832, Iterationen 6508, 300.1 s
+ZEITGRENZE nach 300.1 s, beste Restzahl 188, 6508 Iterationen, 20 Runden, 0 Neustarts

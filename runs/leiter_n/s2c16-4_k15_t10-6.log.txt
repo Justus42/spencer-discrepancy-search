@@ -1,0 +1,8 @@
+s2c16-4_k15_t10-6 seed 1: ZEITGRENZE nach 300.0 s, beste Restzahl 82, 250974 Iterationen, 760 Runden, 31 Neustarts
+runs/leiter_n/s2c16-4_k15_t10-6_seed1.paar.txt: K=15, Typ (10,6), d=8: offene Klassen 82 von 16384
+s2c16-4_k15_t10-6 seed 2: ZEITGRENZE nach 300.0 s, beste Restzahl 82, 251628 Iterationen, 755 Runden, 30 Neustarts
+runs/leiter_n/s2c16-4_k15_t10-6_seed2.paar.txt: K=15, Typ (10,6), d=8: offene Klassen 82 von 16384
+s2c16-4_k15_t10-6 seed 3: ZEITGRENZE nach 300.0 s, beste Restzahl 82, 249417 Iterationen, 754 Runden, 31 Neustarts
+runs/leiter_n/s2c16-4_k15_t10-6_seed3.paar.txt: K=15, Typ (10,6), d=8: offene Klassen 82 von 16384
+s2c16-4_k15_t10-6 seed 4: ZEITGRENZE nach 300.0 s, beste Restzahl 82, 253341 Iterationen, 771 Runden, 31 Neustarts
+runs/leiter_n/s2c16-4_k15_t10-6_seed4.paar.txt: K=15, Typ (10,6), d=8: offene Klassen 82 von 16384

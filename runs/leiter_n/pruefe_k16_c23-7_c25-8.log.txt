@@ -1,0 +1,24 @@
+runs/leiter_n/s2c23-7_k16_t12-11_seed3.paar.txt: K=16, Typ (12,11), d=9: offene Klassen 0 von 2097152
+   direkt auf der 32 x 23-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+runs/leiter_n/c23-7_k16.matrix.txt: 32 x 23
+Matrix runs/leiter_n/c23-7_k16.matrix.txt: 32 x 23, aufgefuellt 32 x 32
+  check_disc      Diskrepanz 9  (7.8 s)
+  verify_spencer  Diskrepanz 9  (7.8 s)
+  exakt_disc      Diskrepanz 9  (7.8 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 9 (= erwartet)
+
+real	0m7.844s
+user	0m11.309s
+sys	0m0.943s
+runs/leiter_n/s2c25-8_k16_t16-9_seed4.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 0 von 8388608
+   direkt auf der 32 x 25-Matrix: offene Punkte (x_0=+1) 0, halbiert 0; stimmt
+runs/leiter_n/c25-8_k16.matrix.txt: 32 x 25
+Matrix runs/leiter_n/c25-8_k16.matrix.txt: 32 x 25, aufgefuellt 32 x 32
+  check_disc      Diskrepanz 9  (30.8 s)
+  verify_spencer  Diskrepanz 9  (30.8 s)
+  exakt_disc      Diskrepanz 9  (30.8 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 9 (= erwartet)
+
+real	0m30.850s
+user	0m41.908s
+sys	0m4.029s

@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 25.11.2026 nachts (nach Auftrag E, Evolutionsschleife; davor Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 26.11.2026 früh (nach Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -55,10 +55,10 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Hadamard 20 ohne 2 / 24 ohne 3 Spalten (alle Paare/Tripel) |  |  |  | 1,429 e |  |  |  |  |  |  |  |  |  |
 | Doppelung [[H,H],[H,-H]], H Hadamard 20, Bauregel 1+3/2+2 (40 x 36) |  |  |  |  |  |  |  |  |  |  |  |  | ≤1,265 g |
 | Paley-12-Doppelung, Bauregel 1+3 und 2+2 (24 x 20) |  |  |  | 1,633 e |  |  |  |  |  |  |  |  |  |
-| Überdeckungscodes aus Nebenklassen-Suche (48/52/56/60 Wörter bei (20,6), 52 bei (22,7), 64 bei (18,5)) |  |  |  | 1,633 e |  | 1,569 e |  | 1,512 e |  | 1,461 e |  | 1,414 e |  |
+| Überdeckungscodes aus Nebenklassen-Suche (48/52/56/60 Wörter bei (20,6), 52 bei (22,7), 64 bei (18,5); Auftrag N: 52/56/60 bei (18,5), 64 bei (21,6), (23,7), (25,8)) |  |  |  | 1,633 e |  | 1,569 e |  | 1,512 e |  | 1,461 e |  | 1,591 e |  |
 | Bahnen unter der 3-Sylowgruppe P des 48ers (n=20, R=6; unter P 48 Wörter optimal, ≤ 46 ausgeschlossen, voll, zwei Programme) |  |  |  | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Zwei-Bahnen-Codes (Auftrag Z, 2 volle Bahnen + feste Paare): (25,8) q=11/12, (23,7) mit 50 Wörtern; (30,10), (28,9), (26,8) q=13/11 mit 62 Wörtern ausgeschlossen (voll) |  |  |  |  | – (voll) |  |  |  |  |  | – (voll) |  |  |
-| Nebenklassen-Suche, nicht erreichte Ziele |  |  |  |  |  |  |  |  |  | (1,643) s |  | (1,591) s |  |
+| Nebenklassen-Suche, nicht erreichte Ziele (N = 32, (21,6) mit 64 Wörtern, ist in Auftrag N erreicht, siehe oben) |  |  |  |  |  |  |  |  |  | (1,643) s |  |  |  |
 | zirkulant n x n (Teil C, alle Klassen) | 1,091 e |  | 1,460 e | 1,225 e | 1,400 e | 1,177 e |  |  | 1,300 e | 1,095 e | 1,257 e |  |  |
 | zirkulant + Einser-Zeile + Nullspalte, (n+1) x (n+1) (Teil C) | 1,309 e | 1,492 e |  | 1,429 e | 1,200 e | 1,373 e | 1,155 e |  |  |  |  |  |  |
 | Gruppenmatrizen nichtzyklisch n x n (Auftrag G, alle Klassen; 10 Gruppen der Ordnung 18, 20, 21, 25) | 1,091 e |  |  |  | 1,400 e |  |  |  |  |  |  |  |  |
@@ -80,6 +80,8 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Kern-⟨1,a⟩-Paare (U,W) bei (20,6), d = 8 (Auftrag H): K = 12 aus Zufallsstart in (11,9) und (10,10); K = 11 (44 Wörter) in vier Typen nicht erreicht |  | (1,706) s |  | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Kern-⟨1,a⟩-Paare bei d = 9, K = 12 (48 Wörter), (21,6), (23,7), (25,8), sechs Typen (Auftrag H); U = Paley-12 ohne Spalte mit W 12 x 10 voll ausgeschlossen |  |  |  | (1,837) s | (1,800) s |  |  |  |  |  |  |  |  |
 | Freie Suche als Evolutionsschleife (Auftrag E), (20,6): 24 Paare (48 Wörter) blind gefunden (1 von 4, disc 8 dreifach); 23 Paare (46 Wörter, N = 23) nicht erreicht, beste Restzahl 704 offene Klassen (fester Endpunkt) |  |  | (1,668) s | 1,633 e |  |  |  |  |  |  |  |  |  |
+| Kern-⟨1,a⟩-Leiter in den Nachbarzellen mit dem Löser aus H (Auftrag N): (18,5) 52 (K = 13) / 56 / 60 Wörter, 48 nicht (Restzahl 1); (21,6), (23,7), (25,8) 64 Wörter erreicht, 60 nicht (3343 / 548 / 10 598); (16,4) 64 erreicht, 60 nicht (28); (19,5) 64 nicht (768) |  |  |  |  |  | 1,569 e |  | 1,512 e |  | 1,461 e; (1,643) s |  | 1,591 e |  |
+| (18,5) mit 50 Wörtern: Zustand K = 12 mit Restzahl 1 aus Auftrag N plus eine freie Zeile (Gate N, Matrix 25 x 18, Rechnung des Orchestrators) |  |  |  |  | 1,600 e |  |  |  |  |  |  |  |  |
 
 ## Bester Eintrag dieser Karte je N (nur `e`/`r`)
 
@@ -89,7 +91,7 @@ bei N = 18 schon `ctrl_17` mit 7/√18 = 1,650 über dem Tabellenwert.
 
 | N | 6 | 7 | 8 | 9 | 10 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Quotient | 1,225 | 1,134 | 1,768 | 1,667 | 0,949 | 1,336 | 1,291 | 1,750 | 1,698 | 1,414 | 1,606 | 1,565 | 1,528 | 1,492 | 1,460 | 1,633 | 1,400 | 1,569 | 1,155 | 1,512 | 1,300 | 1,461 | 1,257 | 1,414 |
+| Quotient | 1,225 | 1,134 | 1,768 | 1,667 | 0,949 | 1,336 | 1,291 | 1,750 | 1,698 | 1,414 | 1,606 | 1,565 | 1,528 | 1,492 | 1,460 | 1,633 | 1,600 | 1,569 | 1,155 | 1,512 | 1,300 | 1,461 | 1,257 | 1,591 |
 
 ## Zeilen mit einer Null, Einträge in {-1, 0, 1} (Auftrag A, 25.11.2026)
 
@@ -147,6 +149,14 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Zusätzlich n = 10 (Dichte 1,09
   (10,10) K = 12 (1 Lauf, 39 s, disc 8), K = 11 1063, K = 10 1852; (12,8) K = 12 nicht erreicht (1 Lauf 300 s, Restzahl 180), K = 11 1836, K = 10 4280; (13,7) K = 12 nicht erreicht (300 s, 290), K = 11 2698, K = 10 5926.
   d = 9, K = 12 (keiner erreicht): (11,10) 12 957, (12,9) 11 002, (12,11) 1760, (13,10) 26 360, (12,13) 5280, (11,14) 5280. U = Paley-12 ohne Spalte: W 12 x 10 voll ausgeschlossen (Zählschranke), 12 x 12 und 12 x 14 unentschieden.
   Gate: `notes/gate_2026-11-25_zerlegung.md` (alle 89 gespeicherten Paare mit eigenem Zähler nachgezählt, die acht Kontrolltreffer mit drei Prüfprogrammen; die besten Zustände bei (12,11) und (12,13) liegen in einem bewiesen ausgeschlossenen Fall).
+- **Leiter in den Nachbarzellen, Auftrag N (26.11.2026):** Protokoll `notes/laeufe/2026-11-25_leiter_nachbarzellen.md`, Treiber `src/run_leiter_*.sh` (Suchcode `src/zerl_halb.c` unverändert), Logs, Paare und Matrizen `runs/leiter_n/`.
+  Kleinste erreichte Nebenklassenzahl K je Zelle und Typ (K Nebenklassen = 4K Wörter) und beste Restzahl darunter (4 Startwerte x 300 s je Stufe; im besten Typ je Zelle 12 Startwerte, davon 8 x 900 s):
+  d = 8: (16,4): (8,8) 16 / 56, (9,7) 16 / 28 (12 Startwerte), (10,6) 16 / 82, (11,5) 16 / 78. (18,5): **(9,9) 13** / 1 (12 Startwerte), (10,8) 16 / 28, (11,7) 16 / 9, (12,6) 16 / 43.
+  d = 9: (19,5): K = 16 in keinem Typ erreicht, Restzahl (10,9) 768 (12 Startwerte), (11,8) 1344, (12,7) 1344, (13,6) 1856. (21,6): (12,9) 16 / 3343 (nur 1 von 8 bei 900 s), (11,10) 1056, (13,8) 384, (14,7) 384 bei K = 16 nicht erreicht.
+  (23,7): (12,11) 16 / 548 (fester Wert in 12 Startwerten), (13,10) 432, (14,9) 128, (15,8) 984 bei K = 16 nicht erreicht. (25,8): (16,9) 16 / 10 598, (13,12) 554, (14,11) 188, (15,10) 1168 bei K = 16 nicht erreicht.
+  (20,6) d = 8, K = 11 (Schritt 4): (14,6) 4152, (15,5) 5996, (16,4) 9415, nicht erreicht. Matrizen mit drei Prüfprogrammen: (18,5) K = 13, 14, 15 (26/28/30 x 18, disc 8); K = 16 in (21,6), (23,7), (25,8) (32 x 21/23/25, disc 9). Alle 228 Restzahlen mit `zerl_offen.py` nachgezählt.
+  Quotienten: (18,5) 52 Wörter N = 26 gleich dem bestehenden Wert 1,569; neu ist N = 32 mit 9/√32 = 1,591 (64 Wörter bei d = 9). Kein Rekordkandidat (Rekordweg: d = 8 mit K ≤ 10, d = 9 mit K ≤ 12). Belegart: Treffer exakt, Nichterreichtes Suche erfolglos.
+  Gate: `notes/gate_2026-11-26_leiter_n.md` (alle 240 gespeicherten Paare nachgezählt; der 52er über alle 2^18 Punkte geprüft; aus den Zuständen mit Restzahl 1 im Gate ein Code mit 50 Wörtern gebaut, 25 x 18, disc 8 dreifach, N = 25 mit 8/√25 = 1,600).
 - **Evolutionsschleife, Auftrag E (25.11.2026):** Protokoll `notes/laeufe/2026-11-25_evo.md`, Bewerter `src/evo_bewertung.c` (eingefroren), Programme
   `src/evo/p001.c`–`p025.c`, Archiv `runs/evo/archiv.tsv`. 29 Runden zu 4 Startwerten, 4,5 h. Kleinste erreichte Paarzahl: (15,4) 16 (blind, Runde 1),
   (20,6) 24 (blind, Doppelungsform, Runde 5). Beste Restzahl darunter: (15,4) 15 Paare 233; (20,6) 23 Paare **704** offene Klassen (Bonus g = 0,880 gegen
@@ -177,7 +187,7 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Zusätzlich n = 10 (Dichte 1,09
 - **Paley-12-Doppelung:** `controls/had24_1p3_paley12.txt`, `had24_2p2_paley12.txt`, beide Prüfskripte disc 8.
 - **Überdeckungscodes:** (20,6) mit 48/52/56/60 Wörtern gibt N = 24/26/28/30, (22,7) mit 52 Wörtern N = 26, (18,5) mit
   64 Wörtern N = 32, alle disc 8 mit beiden Prüfskripten. Nicht erreicht: (23,7) mit 60 Wörtern (N = 30, disc 9),
-  (21,6) mit 64 Wörtern (N = 32, disc 9). Nicht gestartet: (25,8) mit 50 Wörtern (N = 25, disc 9, Quotient 1,800),
+  (21,6) mit 64 Wörtern (N = 32, disc 9; in Auftrag N erreicht, siehe unten). Nicht gestartet: (25,8) mit 50 Wörtern (N = 25, disc 9, Quotient 1,800),
   (20,6) mit 40 Wörtern (N = 20, disc 8, Quotient 1,789).
 - **Zirkulant (Teil C):** Protokoll `notes/laeufe/2026-11-24_zirkulant.md`, Matrizen `runs/teilC/beste/`.
   n = 7 ohne Rand ist Kontrolle (Maximum 3); mit Rand ist n = 7 der Hamming-Rekord (N = 8, disc 5).

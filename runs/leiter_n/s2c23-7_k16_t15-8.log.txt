@@ -1,0 +1,8 @@
+s2c23-7_k16_t15-8 seed 1: ZEITGRENZE nach 300.8 s, beste Restzahl 2304, 5578 Iterationen, 10 Runden, 0 Neustarts
+runs/leiter_n/s2c23-7_k16_t15-8_seed1.paar.txt: K=16, Typ (15,8), d=9: offene Klassen 2304 von 2097152
+s2c23-7_k16_t15-8 seed 2: ZEITGRENZE nach 300.0 s, beste Restzahl 984, 7105 Iterationen, 19 Runden, 0 Neustarts
+runs/leiter_n/s2c23-7_k16_t15-8_seed2.paar.txt: K=16, Typ (15,8), d=9: offene Klassen 984 von 2097152
+s2c23-7_k16_t15-8 seed 3: ZEITGRENZE nach 300.0 s, beste Restzahl 1920, 5926 Iterationen, 14 Runden, 0 Neustarts
+runs/leiter_n/s2c23-7_k16_t15-8_seed3.paar.txt: K=16, Typ (15,8), d=9: offene Klassen 1920 von 2097152
+s2c23-7_k16_t15-8 seed 4: ZEITGRENZE nach 300.5 s, beste Restzahl 1152, 7464 Iterationen, 22 Runden, 0 Neustarts
+runs/leiter_n/s2c23-7_k16_t15-8_seed4.paar.txt: K=16, Typ (15,8), d=9: offene Klassen 1152 von 2097152

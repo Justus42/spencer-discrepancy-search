@@ -1,0 +1,44 @@
+== 21:56:53 Start Block s1_k16_t9-9
+s1_k16_t9-9 seed 1: LOESUNG nach 1.8 s, 595 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t9-9_seed1.paar.txt: K=16, Typ (9,9), d=8: offene Klassen 0 von 65536
+s1_k16_t9-9 seed 2: LOESUNG nach 4.4 s, 3137 Iterationen, 8 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t9-9_seed2.paar.txt: K=16, Typ (9,9), d=8: offene Klassen 0 von 65536
+s1_k16_t9-9 seed 3: LOESUNG nach 2.2 s, 782 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t9-9_seed3.paar.txt: K=16, Typ (9,9), d=8: offene Klassen 0 von 65536
+s1_k16_t9-9 seed 4: LOESUNG nach 2.0 s, 666 Iterationen, 2 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t9-9_seed4.paar.txt: K=16, Typ (9,9), d=8: offene Klassen 0 von 65536
+== 21:56:58 Ende Block s1_k16_t9-9
+TREFFER in s1_k16_t9-9
+== 21:57:00 Start Block s1_k16_t10-8
+s1_k16_t10-8 seed 1: LOESUNG nach 47.0 s, 29628 Iterationen, 87 Runden, 2 Neustarts
+runs/leiter_n/s1_k16_t10-8_seed1.paar.txt: K=16, Typ (10,8), d=8: offene Klassen 0 von 65536
+s1_k16_t10-8 seed 2: LOESUNG nach 20.5 s, 9950 Iterationen, 27 Runden, 1 Neustarts
+runs/leiter_n/s1_k16_t10-8_seed2.paar.txt: K=16, Typ (10,8), d=8: offene Klassen 0 von 65536
+s1_k16_t10-8 seed 3: LOESUNG nach 15.6 s, 9073 Iterationen, 26 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t10-8_seed3.paar.txt: K=16, Typ (10,8), d=8: offene Klassen 0 von 65536
+s1_k16_t10-8 seed 4: LOESUNG nach 18.0 s, 11842 Iterationen, 32 Runden, 1 Neustarts
+runs/leiter_n/s1_k16_t10-8_seed4.paar.txt: K=16, Typ (10,8), d=8: offene Klassen 0 von 65536
+== 21:57:47 Ende Block s1_k16_t10-8
+TREFFER in s1_k16_t10-8
+== 21:57:49 Start Block s1_k16_t11-7
+s1_k16_t11-7 seed 1: LOESUNG nach 11.5 s, 5452 Iterationen, 16 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t11-7_seed1.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
+s1_k16_t11-7 seed 2: LOESUNG nach 25.9 s, 15526 Iterationen, 46 Runden, 1 Neustarts
+runs/leiter_n/s1_k16_t11-7_seed2.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
+s1_k16_t11-7 seed 3: LOESUNG nach 18.1 s, 7903 Iterationen, 24 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t11-7_seed3.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
+s1_k16_t11-7 seed 4: LOESUNG nach 7.9 s, 3467 Iterationen, 7 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t11-7_seed4.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
+== 21:58:16 Ende Block s1_k16_t11-7
+TREFFER in s1_k16_t11-7
+== 21:58:18 Start Block s1_k16_t12-6
+s1_k16_t12-6 seed 1: LOESUNG nach 64.5 s, 13938 Iterationen, 44 Runden, 1 Neustarts
+runs/leiter_n/s1_k16_t12-6_seed1.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
+s1_k16_t12-6 seed 2: LOESUNG nach 14.3 s, 1934 Iterationen, 3 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t12-6_seed2.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
+s1_k16_t12-6 seed 3: LOESUNG nach 48.5 s, 9382 Iterationen, 26 Runden, 1 Neustarts
+runs/leiter_n/s1_k16_t12-6_seed3.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
+s1_k16_t12-6 seed 4: LOESUNG nach 7.0 s, 1244 Iterationen, 3 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t12-6_seed4.paar.txt: K=16, Typ (12,6), d=8: offene Klassen 0 von 65536
+== 21:59:23 Ende Block s1_k16_t12-6
+TREFFER in s1_k16_t12-6

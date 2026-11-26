@@ -1,0 +1,16 @@
+  Runde 1 (W frei): Restzahl 44948, bestes 44948, Anforderungsvektoren 2897, Iterationen 446, 57.2 s
+  Runde 2 (U frei): Restzahl 1003, bestes 1003, Anforderungsvektoren 832, Iterationen 937, 74.7 s
+  Runde 3 (W frei): Restzahl 998, bestes 998, Anforderungsvektoren 2654, Iterationen 1462, 110.3 s
+  Runde 4 (U frei): Restzahl 986, bestes 986, Anforderungsvektoren 832, Iterationen 1870, 125.9 s
+  Runde 5 (W frei): Restzahl 986, bestes 986, Anforderungsvektoren 2654, Iterationen 2171, 145.6 s
+  Runde 6 (U frei): Restzahl 985, bestes 985, Anforderungsvektoren 832, Iterationen 2695, 165.8 s
+  Runde 7 (W frei): Restzahl 985, bestes 985, Anforderungsvektoren 2654, Iterationen 2996, 185.9 s
+  Runde 8 (U frei): Restzahl 985, bestes 985, Anforderungsvektoren 832, Iterationen 3297, 196.1 s
+  Runde 9 (W frei): Restzahl 985, bestes 985, Anforderungsvektoren 2654, Iterationen 3598, 215.4 s
+  Runde 10 (U frei): Restzahl 985, bestes 985, Anforderungsvektoren 832, Iterationen 3899, 226.4 s
+  Runde 11 (W frei): Restzahl 985, bestes 985, Anforderungsvektoren 2654, Iterationen 4200, 245.4 s
+  Runde 12 (U frei): Restzahl 985, bestes 985, Anforderungsvektoren 832, Iterationen 4501, 255.8 s
+  Runde 13 (W frei): Restzahl 985, bestes 985, Anforderungsvektoren 2654, Iterationen 4802, 274.5 s
+  Runde 14 (U frei): Restzahl 985, bestes 985, Anforderungsvektoren 832, Iterationen 5103, 285.0 s
+  Runde 15 (W frei): Restzahl 985, bestes 985, Anforderungsvektoren 2654, Iterationen 5342, 300.1 s
+ZEITGRENZE nach 300.1 s, beste Restzahl 985, 5342 Iterationen, 15 Runden, 0 Neustarts

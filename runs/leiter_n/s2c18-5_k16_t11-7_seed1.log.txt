@@ -1,0 +1,17 @@
+  Runde 1 (W frei): Restzahl 546, bestes 546, Anforderungsvektoren 323, Iterationen 488, 0.4 s
+  Runde 2 (U frei): Restzahl 8, bestes 8, Anforderungsvektoren 48, Iterationen 1020, 2.4 s
+  Runde 3 (W frei): Restzahl 8, bestes 8, Anforderungsvektoren 159, Iterationen 1321, 2.5 s
+  Runde 4 (U frei): Restzahl 8, bestes 8, Anforderungsvektoren 48, Iterationen 1622, 3.5 s
+  Runde 5 (W frei): Restzahl 8, bestes 8, Anforderungsvektoren 159, Iterationen 1923, 3.6 s
+  Runde 6 (U frei): Restzahl 7, bestes 7, Anforderungsvektoren 48, Iterationen 2265, 5.5 s
+  Runde 7 (W frei): Restzahl 7, bestes 7, Anforderungsvektoren 159, Iterationen 2566, 5.6 s
+  Runde 8 (U frei): Restzahl 7, bestes 7, Anforderungsvektoren 48, Iterationen 2867, 7.0 s
+  Runde 9 (W frei): Restzahl 7, bestes 7, Anforderungsvektoren 159, Iterationen 3168, 7.2 s
+  Runde 10 (U frei): Restzahl 7, bestes 7, Anforderungsvektoren 48, Iterationen 3469, 8.6 s
+  Runde 11 (W frei): Restzahl 7, bestes 7, Anforderungsvektoren 159, Iterationen 3770, 8.7 s
+  Runde 12 (U frei): Restzahl 7, bestes 7, Anforderungsvektoren 48, Iterationen 4071, 9.7 s
+  Runde 13 (W frei): Restzahl 7, bestes 7, Anforderungsvektoren 159, Iterationen 4372, 9.8 s
+  Runde 14 (U frei): Restzahl 7, bestes 7, Anforderungsvektoren 48, Iterationen 4673, 10.9 s
+  Runde 15 (W frei): Restzahl 7, bestes 7, Anforderungsvektoren 159, Iterationen 4974, 11.0 s
+  Runde 16 (U frei): Restzahl 0, bestes 0, Anforderungsvektoren 48, Iterationen 5452, 12.6 s
+LOESUNG nach 12.6 s, 5452 Iterationen, 16 Runden, 0 Neustarts

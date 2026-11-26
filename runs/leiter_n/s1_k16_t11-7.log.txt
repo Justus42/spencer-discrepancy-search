@@ -1,0 +1,8 @@
+s1_k16_t11-7 seed 1: LOESUNG nach 11.5 s, 5452 Iterationen, 16 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t11-7_seed1.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
+s1_k16_t11-7 seed 2: LOESUNG nach 25.9 s, 15526 Iterationen, 46 Runden, 1 Neustarts
+runs/leiter_n/s1_k16_t11-7_seed2.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
+s1_k16_t11-7 seed 3: LOESUNG nach 18.1 s, 7903 Iterationen, 24 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t11-7_seed3.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
+s1_k16_t11-7 seed 4: LOESUNG nach 7.9 s, 3467 Iterationen, 7 Runden, 0 Neustarts
+runs/leiter_n/s1_k16_t11-7_seed4.paar.txt: K=16, Typ (11,7), d=8: offene Klassen 0 von 65536
