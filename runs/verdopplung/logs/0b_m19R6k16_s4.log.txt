@@ -1,0 +1,1 @@
+ENDE best=0 it=497 t_best=0.2 t=0.2 bumps=52 neustarts=0

@@ -1,0 +1,12 @@
+t=10 it=7168 offen=27204 lokal=26246 best=26246 neustarts=0
+t=20 it=13824 offen=26499 lokal=26246 best=26246 neustarts=0
+t=31 it=20224 offen=26685 lokal=26192 best=26192 neustarts=0
+t=41 it=26112 offen=27363 lokal=26192 best=26192 neustarts=0
+t=51 it=32256 offen=27043 lokal=26192 best=26192 neustarts=0
+t=61 it=38656 offen=26905 lokal=26192 best=26192 neustarts=0
+t=71 it=44800 offen=26484 lokal=26192 best=26192 neustarts=0
+t=82 it=50944 offen=26696 lokal=26192 best=26192 neustarts=0
+t=92 it=57344 offen=27099 lokal=26192 best=26192 neustarts=0
+t=102 it=63488 offen=27051 lokal=26192 best=26192 neustarts=0
+t=112 it=69632 offen=26823 lokal=26192 best=26192 neustarts=0
+ENDE best=26192 it=74496 t_best=20.6 t=120.3 bumps=32565 neustarts=0

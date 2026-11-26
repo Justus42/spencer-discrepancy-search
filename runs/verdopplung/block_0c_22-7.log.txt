@@ -1,0 +1,6 @@
+2026-11-26 17:46:14 UTC  Block 0c  m=22 R=7 Paare=24  Startwerte: 1 2 3 4  je 300 s  (Kontrolle (22,7) blind)
+  Startwert 1: offen=0  Anteil=0.00000  (178 s, 606 Schritte/s, 34 MB)
+  Startwert 2: offen=0  Anteil=0.00000  (81 s, 577 Schritte/s, 34 MB)
+  Startwert 3: offen=0  Anteil=0.00000  (34 s, 562 Schritte/s, 34 MB)
+  Startwert 4: offen=0  Anteil=0.00000  (81 s, 585 Schritte/s, 34 MB)
+2026-11-26 17:49:12 UTC  Block 0c fertig

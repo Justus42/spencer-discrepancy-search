@@ -1,0 +1,6 @@
+2026-11-26 17:46:04 UTC  Block 0b  m=17 R=5 Paare=16  Startwerte: 1 2 3 4  je 60 s  (Kontrolle (17,5))
+  Startwert 1: offen=0  Anteil=0.00000  (1 s, 5320 Schritte/s, 2 MB)
+  Startwert 2: offen=0  Anteil=0.00000  (1 s, 0 Schritte/s, 2 MB)
+  Startwert 3: offen=0  Anteil=0.00000  (1 s, 3230 Schritte/s, 2 MB)
+  Startwert 4: offen=0  Anteil=0.00000  (1 s, 2990 Schritte/s, 2 MB)
+2026-11-26 17:46:04 UTC  Block 0b fertig

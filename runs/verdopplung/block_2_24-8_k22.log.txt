@@ -1,0 +1,6 @@
+2026-11-26 19:09:13 UTC  Block 2  m=24 R=8 Paare=22  Startwerte: 1 2 3 4  je 300 s  (Leiter (24,8))
+  Startwert 1: offen=2448  Anteil=0.00029  (301 s, 95 Schritte/s, 140 MB)
+  Startwert 2: offen=2577  Anteil=0.00031  (301 s, 100 Schritte/s, 140 MB)
+  Startwert 3: offen=2748  Anteil=0.00033  (302 s, 97 Schritte/s, 140 MB)
+  Startwert 4: offen=2493  Anteil=0.00030  (302 s, 92 Schritte/s, 140 MB)
+2026-11-26 19:14:15 UTC  Block 2 fertig
