@@ -1,0 +1,3 @@
+s1_30-10 seed 1: ZEITGRENZE nach 308.2 s, beste Restzahl 2864898, 127 Iterationen, 1 Runden, 0 Neustarts | Speicher max 1323652 kB
+runs/leiter_d10/s1_30-10_seed1.paar.txt: K=16, Typ (16,14), d=10: offene Klassen 2864898 von 268435456
+  zerl_offen.py Dauer 24.295725652 s

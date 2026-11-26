@@ -14,5 +14,5 @@ for TYP in "$@"; do
 
 Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_0119JzQZ5Ynx3h6z915jAnbF" >/dev/null 2>&1; git push -q origin HEAD >/dev/null 2>&1
-  if grep -q "offene Klassen 0 " $O/${NAME}.log.txt; then echo "TREFFER in $NAME"; fi
+  if grep -q "offene Klassen 0 " $O/${NAME}.log.txt; then echo "TREFFER in $NAME"; [ "$STOPP" = 1 ] && exit 5; fi
 done
