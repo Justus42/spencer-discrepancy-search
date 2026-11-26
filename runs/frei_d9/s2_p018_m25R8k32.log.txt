@@ -1,0 +1,6 @@
+2026-11-26 17:57:28 UTC  Start s2_p018_m25R8k32: p018 m=25 R=8 Paare=32 je 1500 s, Startwerte 1 2 3 4, Zusatz: 
+  Startwert 1: Bewerter: offen=5775 klassen=16777216 k=32 m=25 R=8 | 1502 s | Speicher (VmHWM) 258612 kB | ENDE best=5775 it=85248 t_best=840.9 t=1501.7 bumps=9803 neustarts=0
+  Startwert 2: Bewerter: offen=5536 klassen=16777216 k=32 m=25 R=8 | 1506 s | Speicher (VmHWM) 258516 kB | ENDE best=5536 it=84736 t_best=1287.0 t=1504.1 bumps=9651 neustarts=0
+  Startwert 3: Bewerter: offen=5246 klassen=16777216 k=32 m=25 R=8 | 1502 s | Speicher (VmHWM) 258632 kB | ENDE best=5246 it=85760 t_best=1479.6 t=1501.8 bumps=9866 neustarts=0
+  Startwert 4: Bewerter: offen=6007 klassen=16777216 k=32 m=25 R=8 | 1502 s | Speicher (VmHWM) 258464 kB | ENDE best=6007 it=84992 t_best=1343.7 t=1502.1 bumps=9817 neustarts=0
+2026-11-26 18:22:35 UTC  Ende s2_p018_m25R8k32

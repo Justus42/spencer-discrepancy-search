@@ -1,0 +1,9 @@
+Kontrolle p026 gegen p022 mit fester Schrittzahl (Testbau ausserhalb src/: Zeile 'if (t - t0 > sek) break;' in beiden Kopien durch 'if (it > (int64_t)sek) break;' ersetzt, SEKUNDEN=30000 Schritte), 20 6 23, 18:22-18:23 UTC
+Startwert 1, p026-Zeile 0:
+ p022: Saat: 1 Zeilen gestrichen, Start offen=1297 | ENDE best=1112 it=30208 t_best=0.0 t=15.4 bumps=5843 neustarts=0 | Bewerter: offen=1112 klassen=524288 k=23 m=20 R=6
+ p026: Saat: 1 Zeilen gestrichen, Start offen=1297 | ENDE best=1112 it=30208 t_best=0.0 t=16.2 bumps=5843 neustarts=0 | Bewerter: offen=1112 klassen=524288 k=23 m=20 R=6
+ Ausgabedateien byte-identisch
+Startwert 7, p026-Zeile 6:
+ p022: Saat: 1 Zeilen gestrichen, Start offen=1297 | ENDE best=1112 it=30208 t_best=0.0 t=15.4 bumps=5775 neustarts=0 | Bewerter: offen=1112 klassen=524288 k=23 m=20 R=6
+ p026: Saat: 1 Zeilen gestrichen, Start offen=1297 | ENDE best=1112 it=30208 t_best=0.0 t=16.3 bumps=5775 neustarts=0 | Bewerter: offen=1112 klassen=524288 k=23 m=20 R=6
+ Ausgabedateien byte-identisch
