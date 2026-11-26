@@ -97,3 +97,8 @@ Zelle (19,5) abgeschlossen: der Tabellenwert 64 wird nicht erreicht; beste Restz
 | (15,8) | 0 von 4, Restzahl 2304 / 984 / 1920 / 1152 | – |
 
 Der Treffer bei K = 16 (`s2c23-7_k16_t12-11_seed3.paar.txt`, `zerl_offen.py` 0 offene Klassen) ist der Tabellenwert 64, kein Fortschritt. (Die alte Nebenklassen-Suche erreichte hier K = 15 nicht, 0 von 8, und K = 16 nicht versucht.)
+
+## Schritt 3: (23,7), Typ (12,11), K = 15 (60 Wörter), 8 neue Startwerte (5–12), je 900 s, zwei Blöcke (02:10–02:41 UTC)
+
+0 von 8 gelöst, **beste Restzahl in allen acht Läufen genau 548** (von 2 097 152); mit den vier Läufen der Stufe (680 / 548 / 672 / 548) in 12 Startwerten kein Treffer (Suche erfolglos).
+Wie bei (18,5) K = 12 (Restzahl 1) ein fester bester Wert der Suche. Zelle (23,7) abgeschlossen: kleinstes erreichtes K = 16 (64 Wörter, Tabellenwert) nur im Typ (12,11).
