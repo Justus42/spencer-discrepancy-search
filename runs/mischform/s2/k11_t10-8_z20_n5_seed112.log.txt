@@ -1,0 +1,38 @@
+  Runde 1 (W frei): Restzahl 3211, bestes 3211, Anforderungsvektoren 280, Iterationen 810, 0.8 s
+  Runde 2 (U frei): Restzahl 1023, bestes 1023, Anforderungsvektoren 110, Iterationen 1253, 2.3 s
+  Runde 3 (W frei): Restzahl 896, bestes 896, Anforderungsvektoren 227, Iterationen 1770, 2.6 s
+  Runde 4 (U frei): Restzahl 828, bestes 828, Anforderungsvektoren 22, Iterationen 2080, 3.3 s
+  Runde 5 (W frei): Restzahl 828, bestes 828, Anforderungsvektoren 199, Iterationen 2381, 3.4 s
+  Runde 6 (U frei): Restzahl 828, bestes 828, Anforderungsvektoren 22, Iterationen 2682, 4.1 s
+  Runde 7 (W frei): Restzahl 828, bestes 828, Anforderungsvektoren 199, Iterationen 2983, 4.2 s
+  Runde 8 (U frei): Restzahl 828, bestes 828, Anforderungsvektoren 22, Iterationen 3284, 4.9 s
+  Runde 9 (W frei): Restzahl 828, bestes 828, Anforderungsvektoren 199, Iterationen 3585, 5.1 s
+  Neustart 1 nach Runde 9 (bestes bisher 828), 5.1 s
+  Runde 10 (W frei): Restzahl 4637, bestes 828, Anforderungsvektoren 265, Iterationen 4550, 6.0 s
+  Runde 11 (U frei): Restzahl 873, bestes 828, Anforderungsvektoren 60, Iterationen 4866, 7.2 s
+  Runde 12 (W frei): Restzahl 864, bestes 828, Anforderungsvektoren 197, Iterationen 5195, 7.3 s
+  Runde 13 (U frei): Restzahl 864, bestes 828, Anforderungsvektoren 36, Iterationen 5496, 8.3 s
+  Runde 14 (W frei): Restzahl 864, bestes 828, Anforderungsvektoren 197, Iterationen 5797, 8.5 s
+  Runde 15 (U frei): Restzahl 864, bestes 828, Anforderungsvektoren 36, Iterationen 6098, 9.7 s
+  Runde 16 (W frei): Restzahl 864, bestes 828, Anforderungsvektoren 197, Iterationen 6399, 9.9 s
+  Runde 17 (U frei): Restzahl 864, bestes 828, Anforderungsvektoren 36, Iterationen 6700, 10.6 s
+  Neustart 2 nach Runde 17 (bestes bisher 828), 10.6 s
+  Runde 18 (W frei): Restzahl 4061, bestes 828, Anforderungsvektoren 237, Iterationen 7030, 10.9 s
+  Runde 19 (U frei): Restzahl 864, bestes 828, Anforderungsvektoren 36, Iterationen 7531, 12.3 s
+  Runde 20 (W frei): Restzahl 864, bestes 828, Anforderungsvektoren 197, Iterationen 7832, 12.4 s
+  Runde 21 (U frei): Restzahl 864, bestes 828, Anforderungsvektoren 36, Iterationen 8133, 13.2 s
+  Runde 22 (W frei): Restzahl 864, bestes 828, Anforderungsvektoren 197, Iterationen 8434, 13.4 s
+  Runde 23 (U frei): Restzahl 864, bestes 828, Anforderungsvektoren 36, Iterationen 8735, 14.1 s
+  Runde 24 (W frei): Restzahl 864, bestes 828, Anforderungsvektoren 197, Iterationen 9036, 14.3 s
+  Neustart 3 nach Runde 24 (bestes bisher 828), 14.3 s
+  Runde 25 (W frei): Restzahl 3672, bestes 828, Anforderungsvektoren 288, Iterationen 9768, 15.0 s
+  Runde 26 (U frei): Restzahl 828, bestes 828, Anforderungsvektoren 22, Iterationen 10150, 16.4 s
+  Runde 27 (W frei): Restzahl 828, bestes 828, Anforderungsvektoren 199, Iterationen 10451, 16.5 s
+  Runde 28 (U frei): Restzahl 828, bestes 828, Anforderungsvektoren 22, Iterationen 10752, 17.3 s
+  Runde 29 (W frei): Restzahl 828, bestes 828, Anforderungsvektoren 199, Iterationen 11053, 17.5 s
+  Runde 30 (U frei): Restzahl 828, bestes 828, Anforderungsvektoren 22, Iterationen 11354, 18.5 s
+  Runde 31 (W frei): Restzahl 828, bestes 828, Anforderungsvektoren 199, Iterationen 11655, 18.7 s
+  Neustart 4 nach Runde 31 (bestes bisher 828), 18.7 s
+  Runde 32 (W frei): Restzahl 3850, bestes 828, Anforderungsvektoren 274, Iterationen 12097, 19.1 s
+  Runde 33 (U frei): Restzahl 915, bestes 828, Anforderungsvektoren 46, Iterationen 12416, 20.0 s
+ZEITGRENZE nach 20.0 s, beste Restzahl 828, 12416 Iterationen, 33 Runden, 4 Neustarts

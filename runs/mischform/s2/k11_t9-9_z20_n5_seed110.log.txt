@@ -1,0 +1,47 @@
+  Runde 1 (W frei): Restzahl 3753, bestes 3753, Anforderungsvektoren 170, Iterationen 548, 0.9 s
+  Runde 2 (U frei): Restzahl 1002, bestes 1002, Anforderungsvektoren 146, Iterationen 870, 1.5 s
+  Runde 3 (W frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 1268, 2.2 s
+  Runde 4 (U frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 1569, 2.8 s
+  Runde 5 (W frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 1870, 3.3 s
+  Runde 6 (U frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 2171, 3.7 s
+  Runde 7 (W frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 2472, 4.1 s
+  Runde 8 (U frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 2773, 4.5 s
+  Neustart 1 nach Runde 8 (bestes bisher 967), 4.5 s
+  Runde 9 (W frei): Restzahl 2241, bestes 967, Anforderungsvektoren 159, Iterationen 3092, 5.0 s
+  Runde 10 (U frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 3413, 5.4 s
+  Runde 11 (W frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 3714, 5.8 s
+  Runde 12 (U frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 4015, 6.2 s
+  Runde 13 (W frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 4316, 6.5 s
+  Runde 14 (U frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 4868, 7.3 s
+  Runde 15 (W frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 5169, 7.6 s
+  Runde 16 (U frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 5470, 8.0 s
+  Runde 17 (W frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 5771, 8.4 s
+  Runde 18 (U frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 6072, 8.7 s
+  Runde 19 (W frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 6373, 9.1 s
+  Neustart 2 nach Runde 19 (bestes bisher 967), 9.1 s
+  Runde 20 (W frei): Restzahl 2685, bestes 967, Anforderungsvektoren 158, Iterationen 6830, 9.8 s
+  Runde 21 (U frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 7306, 10.4 s
+  Runde 22 (W frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 7607, 10.7 s
+  Runde 23 (U frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 7908, 11.1 s
+  Runde 24 (W frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 8209, 11.5 s
+  Runde 25 (U frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 8510, 11.9 s
+  Runde 26 (W frei): Restzahl 967, bestes 967, Anforderungsvektoren 146, Iterationen 8811, 12.2 s
+  Neustart 3 nach Runde 26 (bestes bisher 967), 12.2 s
+  Runde 27 (W frei): Restzahl 3341, bestes 967, Anforderungsvektoren 170, Iterationen 9147, 12.8 s
+  Runde 28 (U frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 9479, 13.2 s
+  Runde 29 (W frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 9780, 13.6 s
+  Runde 30 (U frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 10081, 14.0 s
+  Runde 31 (W frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 10382, 14.4 s
+  Runde 32 (U frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 10683, 14.8 s
+  Runde 33 (W frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 10984, 15.3 s
+  Neustart 4 nach Runde 33 (bestes bisher 967), 15.3 s
+  Runde 34 (W frei): Restzahl 3160, bestes 967, Anforderungsvektoren 165, Iterationen 11552, 16.6 s
+  Runde 35 (U frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 12047, 17.3 s
+  Runde 36 (W frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 12348, 17.7 s
+  Runde 37 (U frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 12649, 18.0 s
+  Runde 38 (W frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 12950, 18.4 s
+  Runde 39 (U frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 13251, 18.8 s
+  Runde 40 (W frei): Restzahl 1002, bestes 967, Anforderungsvektoren 146, Iterationen 13552, 19.2 s
+  Neustart 5 nach Runde 40 (bestes bisher 967), 19.2 s
+  Runde 41 (W frei): Restzahl 3055, bestes 967, Anforderungsvektoren 162, Iterationen 14047, 20.0 s
+ZEITGRENZE nach 20.0 s, beste Restzahl 967, 14047 Iterationen, 41 Runden, 5 Neustarts

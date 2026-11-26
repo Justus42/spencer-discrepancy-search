@@ -1,0 +1,28 @@
+s2c16-4_k15_t10-6_seed1 (16,4) d=8: Restzahl 82, offene Punkte 328, maxcov 100, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t10-6_seed2 (16,4) d=8: Restzahl 82, offene Punkte 328, maxcov 100, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t10-6_seed3 (16,4) d=8: Restzahl 82, offene Punkte 328, maxcov 100, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t10-6_seed4 (16,4) d=8: Restzahl 82, offene Punkte 328, maxcov 100, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t11-5_seed1 (16,4) d=8: Restzahl 78, offene Punkte 312, maxcov 164, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t11-5_seed2 (16,4) d=8: Restzahl 78, offene Punkte 312, maxcov 164, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t11-5_seed3 (16,4) d=8: Restzahl 84, offene Punkte 336, maxcov 68, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t11-5_seed4 (16,4) d=8: Restzahl 78, offene Punkte 312, maxcov 164, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t8-8_seed1 (16,4) d=8: Restzahl 56, offene Punkte 224, maxcov 168, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t8-8_seed2 (16,4) d=8: Restzahl 56, offene Punkte 224, maxcov 168, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t8-8_seed3 (16,4) d=8: Restzahl 56, offene Punkte 224, maxcov 168, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t8-8_seed4 (16,4) d=8: Restzahl 56, offene Punkte 224, maxcov 168, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t9-7_seed1 (16,4) d=8: Restzahl 36, offene Punkte 144, maxcov 72, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t9-7_seed2 (16,4) d=8: Restzahl 28, offene Punkte 112, maxcov 56, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t9-7_seed3 (16,4) d=8: Restzahl 28, offene Punkte 112, maxcov 56, f=1-Zeilen 0, f=1: NEIN
+s2c16-4_k15_t9-7_seed4 (16,4) d=8: Restzahl 28, offene Punkte 112, maxcov 56, f=1-Zeilen 0, f=1: NEIN
+s3c16-4a_k15_t9-7_seed5 (16,4) d=8: Restzahl 28, offene Punkte 112, maxcov 56, f=1-Zeilen 0, f=1: NEIN
+s3c16-4a_k15_t9-7_seed6 (16,4) d=8: Restzahl 28, offene Punkte 112, maxcov 56, f=1-Zeilen 0, f=1: NEIN
+s3c16-4a_k15_t9-7_seed7 (16,4) d=8: Restzahl 28, offene Punkte 112, maxcov 56, f=1-Zeilen 0, f=1: NEIN
+s3c16-4a_k15_t9-7_seed8 (16,4) d=8: Restzahl 28, offene Punkte 112, maxcov 56, f=1-Zeilen 0, f=1: NEIN
+s3c16-4b_k15_t9-7_seed10 (16,4) d=8: Restzahl 36, offene Punkte 144, maxcov 72, f=1-Zeilen 0, f=1: NEIN
+s3c16-4b_k15_t9-7_seed11 (16,4) d=8: Restzahl 28, offene Punkte 112, maxcov 56, f=1-Zeilen 0, f=1: NEIN
+s3c16-4b_k15_t9-7_seed12 (16,4) d=8: Restzahl 28, offene Punkte 112, maxcov 56, f=1-Zeilen 0, f=1: NEIN
+s3c16-4b_k15_t9-7_seed9 (16,4) d=8: Restzahl 28, offene Punkte 112, maxcov 56, f=1-Zeilen 0, f=1: NEIN
+
+real	0m0.378s
+user	0m0.394s
+sys	0m0.099s

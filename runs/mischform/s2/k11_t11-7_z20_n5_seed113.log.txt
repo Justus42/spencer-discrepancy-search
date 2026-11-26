@@ -1,0 +1,21 @@
+  Runde 1 (W frei): Restzahl 3400, bestes 3400, Anforderungsvektoren 466, Iterationen 780, 0.4 s
+  Runde 2 (U frei): Restzahl 1134, bestes 1134, Anforderungsvektoren 53, Iterationen 1161, 2.4 s
+  Runde 3 (W frei): Restzahl 1122, bestes 1122, Anforderungsvektoren 329, Iterationen 1627, 2.6 s
+  Runde 4 (U frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 53, Iterationen 2006, 4.6 s
+  Runde 5 (W frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 323, Iterationen 2307, 4.7 s
+  Runde 6 (U frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 53, Iterationen 2608, 6.7 s
+  Runde 7 (W frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 323, Iterationen 2909, 6.8 s
+  Runde 8 (U frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 53, Iterationen 3210, 8.7 s
+  Runde 9 (W frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 323, Iterationen 3511, 8.8 s
+  Neustart 1 nach Runde 9 (bestes bisher 1107), 8.8 s
+  Runde 10 (W frei): Restzahl 4880, bestes 1107, Anforderungsvektoren 520, Iterationen 3974, 9.2 s
+  Runde 11 (U frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 53, Iterationen 4300, 11.5 s
+  Runde 12 (W frei): Restzahl 1107, bestes 1107, Anforderungsvektoren 323, Iterationen 4601, 11.7 s
+  Runde 13 (U frei): Restzahl 1051, bestes 1051, Anforderungsvektoren 53, Iterationen 5329, 15.4 s
+  Runde 14 (W frei): Restzahl 1051, bestes 1051, Anforderungsvektoren 287, Iterationen 5630, 15.5 s
+  Runde 15 (U frei): Restzahl 1047, bestes 1047, Anforderungsvektoren 53, Iterationen 5945, 17.2 s
+  Runde 16 (W frei): Restzahl 1047, bestes 1047, Anforderungsvektoren 287, Iterationen 6246, 17.4 s
+  Runde 17 (U frei): Restzahl 1047, bestes 1047, Anforderungsvektoren 53, Iterationen 6547, 18.8 s
+  Runde 18 (W frei): Restzahl 1047, bestes 1047, Anforderungsvektoren 287, Iterationen 6848, 18.9 s
+  Runde 19 (U frei): Restzahl 1047, bestes 1047, Anforderungsvektoren 53, Iterationen 7071, 20.0 s
+ZEITGRENZE nach 20.0 s, beste Restzahl 1047, 7071 Iterationen, 19 Runden, 1 Neustarts
