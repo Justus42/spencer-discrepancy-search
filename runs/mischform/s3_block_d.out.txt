@@ -1,1 +1,26 @@
 Block 3d Start 09:56:34
+ziel48_k10_f4_t10-8 seed 1: ZEITGRENZE nach 900.1 s: beste Zahl offener Klassen 408 (offene Punkte 816), t_best=36.9, Runden 1028, Zuege 376000, Gewichtsschritte 179544, Neustarts 50
+    # runs/mischform/s3/ziel48_k10_f4_t10-8_seed1.matrix.txt: 24 Zeilen x 18 Spalten, 48 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 816
+ziel48_k10_f4_t10-8 seed 2: ZEITGRENZE nach 900.1 s: beste Zahl offener Klassen 408 (offene Punkte 816), t_best=183.1, Runden 1021, Zuege 376032, Gewichtsschritte 178629, Neustarts 49
+    # runs/mischform/s3/ziel48_k10_f4_t10-8_seed2.matrix.txt: 24 Zeilen x 18 Spalten, 48 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 816
+ziel48_k10_f4_t10-8 seed 3: ZEITGRENZE nach 900.1 s: beste Zahl offener Klassen 408 (offene Punkte 816), t_best=20.4, Runden 1041, Zuege 379744, Gewichtsschritte 182908, Neustarts 51
+    # runs/mischform/s3/ziel48_k10_f4_t10-8_seed3.matrix.txt: 24 Zeilen x 18 Spalten, 48 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 816
+ziel48_k10_f4_t10-8 seed 4: ZEITGRENZE nach 900.1 s: beste Zahl offener Klassen 408 (offene Punkte 816), t_best=16.6, Runden 1027, Zuege 377264, Gewichtsschritte 180020, Neustarts 50
+    # runs/mischform/s3/ziel48_k10_f4_t10-8_seed4.matrix.txt: 24 Zeilen x 18 Spalten, 48 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 816
+ziel48_k10_f4_t10-8 seed 5: ZEITGRENZE nach 900.1 s: beste Zahl offener Klassen 408 (offene Punkte 816), t_best=14.5, Runden 1047, Zuege 378480, Gewichtsschritte 179158, Neustarts 51
+    # runs/mischform/s3/ziel48_k10_f4_t10-8_seed5.matrix.txt: 24 Zeilen x 18 Spalten, 48 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 816
+ziel48_k10_f4_t10-8 seed 6: ZEITGRENZE nach 900.1 s: beste Zahl offener Klassen 408 (offene Punkte 816), t_best=36.2, Runden 1041, Zuege 378112, Gewichtsschritte 180213, Neustarts 51
+    # runs/mischform/s3/ziel48_k10_f4_t10-8_seed6.matrix.txt: 24 Zeilen x 18 Spalten, 48 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 816
+ziel48_k10_f4_t10-8 seed 7: ZEITGRENZE nach 900.1 s: beste Zahl offener Klassen 408 (offene Punkte 816), t_best=118.1, Runden 1035, Zuege 374896, Gewichtsschritte 176254, Neustarts 51
+    # runs/mischform/s3/ziel48_k10_f4_t10-8_seed7.matrix.txt: 24 Zeilen x 18 Spalten, 48 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 816
+ziel48_k10_f4_t10-8 seed 8: ZEITGRENZE nach 900.1 s: beste Zahl offener Klassen 408 (offene Punkte 816), t_best=32.2, Runden 1051, Zuege 377504, Gewichtsschritte 179770, Neustarts 51
+    # runs/mischform/s3/ziel48_k10_f4_t10-8_seed8.matrix.txt: 24 Zeilen x 18 Spalten, 48 verschiedene Woerter, d = 8
+    offene Punkte (von 2^18 = 262144): 816
+Ende 10:26:39
