@@ -1,0 +1,74 @@
+Neuheitsprüfung 26.11.2026, Abfragen des Orchestrators (Shell, git und curl). Beginn der Prüfung 10:01 Uhr, dieser Lauf 10:07:30 CET.
+
+== git ls-remote florath/covering-codes-lean
+bbed9a690e HEAD
+87c1bd5d62 refs/heads/gp2025-k2-13-1-sdp
+bbed9a690e refs/heads/main
+6d5263edaf refs/heads/native_decide
+ad5699ba21 refs/heads/sat-lrat-partition-scaling
+60bdb376a6 refs/tags/v0.1.0
+d1a40697c9 refs/tags/v0.1.0^{}
+== git ls-remote florath/covering-codes
+46ba806191 HEAD
+46ba806191 refs/heads/master
+== Post-Kéri-CSV, main: SHA-256 und Zeilen
+5efaf8d94a3ef15e9efc052233259697fc5f0b5e51389bcc5c8c108b6c3ad1d6
+q,n,r,lower_bound,upper_bound,lower_bound_reference,upper_bound_reference
+2,15,4,23,32,lit_gijswijt_polak_2025,lit_ostergard_kaikkonen_1998
+2,17,5,20,32,lit_gijswijt_polak_2025,lit_ostergard_kaikkonen_1998
+2,18,5,28,64,lit_gijswijt_polak_2025,rule_trivial_upper
+2,19,5,40,64,lit_zhang_lo_1992,lit_graham_sloane_1985
+2,20,6,24,64,lit_bhandari_chanduka_lal_1998,rule_trivial_upper
+2,22,7,21,64,lit_gijswijt_polak_2025,rule_trivial_upper
+2,24,8,19,64,lit_gijswijt_polak_2025,rule_trivial_upper
+2,25,8,25,64,lit_li_chen_1994,lit_graham_sloane_1985
+2,26,9,17,56,lit_gijswijt_polak_2025,lit_ostergard_kaikkonen_1998
+2,28,10,15,56,lit_habsieger_plagne_2000,lit_ostergard_kaikkonen_1998
+== teorth/optimizationproblems
+main: 83e93c3 2026-11-23 15:56:20 -0800 C_42: restore the [R2026a] marker, and record three replays that were missed
+letzte Änderung an constants/10c.md: 8f39d99 2026-11-21 23:14:49 -0800 check_pages.py: W5, the asterisk must agree between README and page
+Zeilen der Tabelle der unteren Schranken:
+46:| $1$ | Trivial | $A=[1]$. Also achieved by Hadamard matrices [Band2024]. |
+47:| $\sqrt{2}\approx 1.414214$ | [Band2024] | The 2 by 2 sign matrix with rows $(1,1)$ and $(1,-1)$. |
+48:| $4/\sqrt{6}\approx 1.632993$ | [G2026] | A 6 by 6 sign matrix with exact discrepancy $4$. |
+49:| $5/3\approx 1.666667$ | [X2026] | A 9 by 9 sign matrix with exact discrepancy $5$. |
+50:| $7/\sqrt{17}\approx 1.697749$ | [L2026] | A 17 by 17 sign matrix with exact discrepancy $7$ ($16$ distinc
+51:| $5/\sqrt{8}=\tfrac{5\sqrt2}{4}\approx 1.767767$ | [H2026] | An 8 by 8 matrix over $\{-1,0,1\}$ with exact
+PR-Köpfe: 379, höchste Nummer 407
+PRs, die constants/10c.md gegenüber ihrer Basis ändern:
+  #173 2026-09-06 13:35:37 +0800 Update C_10c upper bound for published erratum
+  #199 2026-09-30 07:52:01 +0530 Remove withdrawn PV2022 upper bound from C10c table
+PR-Köpfe mit Commit seit 22.11.2026: 39, davon mit Änderung an 10c: 0
+== arhancanli/quantavane-benchmark
+Stand: deeaac3 2026-11-21 16:25:05 +0400
+Familien: 33: bipartite-degree-diameter cayley-degree-diameter circle-packing circle-packing-sum circulant-degree-diameter circulant-weighing-matrix complete-arc constant-weight-code covering-array covering-design degree-diameter difference-set ea-quantum-code flexible-job-shop golomb-ruler grassmannian-packing growing-circle-packing job-shop linear-code lj-cluster mols mslib-scheduling multi-mode-scheduling ordered-orthogonal-array orthogonal-array polygon-circle-packing project-scheduling quantum-code signed-difference-set spherical-code strongly-regular-graph unequal-circle-packing unrestricted-code 
+Treffer 'Theorem D': 0
+== openai/math
+Stand: 3344da5 2026-11-24 16:18:47 -0800
+Preprint-Ordner: 761
+Titel mit Stichwort (cover|code|discrepan|spencer|hadamard|paley|sign-matri|hypercube|dominat):
+  A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026
+  A-Counterexample-to-the-Infinite-Matroid-Packing-Covering-Conjecture-September-24-2026
+  A-nine-dimensional-counterexample-to-Borsuks-covering-assertion-September-23-2026
+  A-projective-fourfold-with-large-fundamental-group-and-non-Stein-universal-cover-October-5-2026
+  A-single-lattice-covering-bound-of-order-n-log-n-September-23-2026
+  Abelian-covers-Gale-correspondences-and-the-Hodge-conjecture-for-powers-October-6-2026
+  Abelian-covers-Gale-correspondences-and-the-Hodge-conjecture-for-powers-September-30-2026
+  Bounded-recovery-for-modular-spectral-averages-September-23-2026
+  Etale-covers-with-a-prescribed-exterior-sheet-September-24-2026
+  Exact-Fourier-certificates-for-complex-Hadamard-matrices-of-order-six-September-24-2026
+  Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026
+  Finite-angular-cylinder-covers-below-the-half-area-bound-September-27-2026
+  Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026
+  Mass-and-covering-exponents-for-fixed-length-honeycomb-walks-September-26-2026
+  Projection-moments-positive-cap-domination-and-Riesz-estimates-on-the-sphere-September-27-2026
+  Semialgebraic-universal-covers-of-normal-projective-varieties-September-24-2026
+  Single-Exponential-Recovery-and-Bounded-Price-Strictness-for-Metric-k-Median-September-24-2026
+  Slope-field-perturbations-of-the-two-cylinder-covering-September-27-2026
+  The-Factor-Two-Hardness-Threshold-for-Vertex-Cover-September-23-2026
+  The-arithmetic-category-and-stable-recovery-of-lattice-factors-September-23-2026
+  The-circulant-Hadamard-conjecture-September-23-2026
+  The-hypercube-Ramsey-number-has-linear-order-September-23-2026
+  The-sharp-singularity-rate-for-biased-symmetric-sign-matrices-October-4-2026
+  Translative-covering-densities-of-order-n-log-n-September-23-2026
+  Universal-cover-splitting-for-compact-Kahler-manifolds-September-23-2026

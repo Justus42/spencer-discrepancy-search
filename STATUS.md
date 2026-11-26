@@ -77,6 +77,9 @@ Eigene bessere Werte außerhalb dieser Tabelle (m > B(8) = 20, also kein Rekordw
   Originalkonstruktion Östergård–Kaikkonen 1998 nicht einsehbar (A: Literaturstand). Nichts nach außen gemeldet.
   Thread 273 (abgerufen 24.11.2026) enthält auch die Umformulierung als selbstkomplementärer Überdeckungscode und die 466 bei
   n = 15; der Zellenrahmen ist also nicht neu, K(20,6) ≤ 48 nach diesem Stand schon (Prüfvermerk, A4).
+- **Neuheit erneut geprüft (26.11.2026, Regel 3):** kein Fund für K(20,6) ≤ 48 und K(18,5) ≤ 50. Kéris Primärtabelle (Stand 21.11.2011, erstmals gelesen) und die Post-Kéri-Tabelle
+  (florath `bbed9a6`, kein PR) nennen 64 in beiden Zellen; Seite 10c unverändert 5/√8; EinsteinArena, arXiv seit 01.09., Quantavane, `openai/math` ohne Treffer. Nicht gelesen: Issues bei florath,
+  Bezahlschranken-Texte. `notes/neuheit_2026-11-26_pruefvermerk.md`
 - **K(20,6) ≤ 48 in Lean bewiesen (24.11.2026):** Lean 4.30.0-rc2, nur Kernbibliothek, `lean/`. Satz: jedes x < 2^20 liegt im Abstand ≤ 6
   von einer Zeile von M oder −M (`had24_1p3_paley12` und `had24_2p2_paley12`); Radius 5 abgelehnt; Prüfschleife als korrekt bewiesen, ohne `sorry`.
   Zwei Wege: `native_decide` (je 2 Min.) und `decide +kernel` (10,4 bzw. 5,8 Min., Achsen nur `propext`, `Quot.sound`). Kontrollen Hamming [7,4], `ctrl_16`,
