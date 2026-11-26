@@ -1,0 +1,15 @@
+Thu Nov 26 17:52:44 UTC 2026
+GESAMT c = 2, T = 6: 7420 von 33120 Faellen ohne x mit max|s| <= 6
+
+real	0m29.580s
+user	1m42.064s
+sys	0m0.030s
+Thu Nov 26 17:53:14 UTC 2026
+      6 2       4 6       2 8       2 10       2 16       2 18       2 20       2 34       2 40       2 42       6 156       4 204       2 240      16 264       2 276 Thu Nov 26 17:54:35 UTC 2026
+Gegenprobe c = 2 mit Gray-Code (exakte disc je Fall):
+GESAMT c = 2: disc 6: 25700 disc 8: 7420
+
+real	0m59.226s
+user	3m53.991s
+sys	0m0.007s
+Thu Nov 26 17:55:34 UTC 2026

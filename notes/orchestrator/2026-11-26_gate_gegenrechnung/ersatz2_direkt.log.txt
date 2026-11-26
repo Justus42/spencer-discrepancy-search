@@ -1,0 +1,15 @@
+# ersatz2_direkt: direkte Zaehlung guter Ersatzspaltenpaare, und gr ersatz2 (Programm der Sitzung) auf denselben Matrizen; 2026-11-26 18:48:00 UTC
+## Paley 12, Ziel 6, alle 66 Paare, alle 2^22 (v,w)
+N=12 Ziel 6 voll: 1 Matrizen, 66 Paare je Matrix, 276824064 (v,w) geprueft, gute insgesamt 0
+gr ersatz2:
+GESAMT 66 Paare, flache x'' 20..20, Bedingungen je Gruppe 10..10, x'' mit S ueber beide Gruppen oder leer: 0, ausgeschlossen 66
+## Sylvester 8, Ziel 4, alle 28 Paare, alle 2^14 (v,w)
+     28 4310 gute (v,w)
+      1 N=8 Ziel 4 voll: 1 Matrizen, 28 Paare je Matrix, 458752 (v,w) geprueft, gute insgesamt 120680
+gr ersatz2:
+GESAMT 28 Paare, flache x'' 0..0, Bedingungen je Gruppe 0..0, x'' mit S ueber beide Gruppen oder leer: 0, ausgeschlossen 0
+## Hadamard 20, Ziel 8, Zufallsprobe (drei Saaten)
+N=20 Ziel 8 Probe: 6 Matrizen x 5 Paare x 100000 zufaellige (v,w): gute 0; Kontrolle Originalspalten: bei Ziel 8 nicht gut in 30, bei Ziel 6 gut in 30 von 30 Faellen
+N=20 Ziel 8 Probe: 6 Matrizen x 5 Paare x 100000 zufaellige (v,w): gute 0; Kontrolle Originalspalten: bei Ziel 8 nicht gut in 30, bei Ziel 6 gut in 30 von 30 Faellen
+N=20 Ziel 8 Probe: 6 Matrizen x 5 Paare x 100000 zufaellige (v,w): gute 0; Kontrolle Originalspalten: bei Ziel 8 nicht gut in 30, bei Ziel 6 gut in 30 von 30 Faellen
+18:48:24 UTC
