@@ -384,9 +384,11 @@ static void print_sol(FILE *f, const Sol *s) {
 static int KD_DEFAULT = 512;
 
 /* ---------------- klein ---------------- */
+static int POS_O = -1;  /* >= 0: Universum = Punkte, die Neunerbahn POS_O nicht ueberdeckt; Gewicht +9 */
 static int run_klein(int B, int split, long long lo, long long hi, const char *liste, int countonly) {
   u64 *U0 = malloc(sizeof(u64) * NWF); memset(U0, 0, sizeof(u64) * NWF);
   for (int x = 0; x < NP; x++) U0[x >> 6] |= 1ULL << (x & 63);
+  if (POS_O >= 0) for (int i = 0; i < NWF; i++) U0[i] &= ~COV(POS_O)[i];
   int T = omp_get_max_threads();
   long long ticket = lo;
   Eng **es = malloc(sizeof(Eng *) * T);
@@ -397,7 +399,8 @@ static int run_klein(int B, int split, long long lo, long long hi, const char *l
     int tid = omp_get_thread_num();
     Eng *e = eng_new(); es[tid] = e;
     eng_setup(e, U0, KD_DEFAULT);
-    e->B = B; e->wbase = 0; e->nn = 0; e->split = split; e->lo = lo; e->hi = countonly ? -1 : hi;
+    e->B = B; e->wbase = 0; e->nn = 0; e->split = split;
+    if (POS_O >= 0) { e->wbase = 9; e->nn = 1; e->o[0] = POS_O; } e->lo = lo; e->hi = countonly ? -1 : hi;
     e->ticket = countonly ? NULL : &ticket;
     e->top_owner = (tid == 0 && lo == 0 && !countonly) ? 1 : (countonly && tid == 0);
     if (!countonly) e->myticket = __atomic_fetch_add(&ticket, 1, __ATOMIC_SEQ_CST);
@@ -482,7 +485,9 @@ static void gen_small(int bmax) {
   gs_rec(0, 0);
 }
 
+static int K1lo = 0, K1hi = 1 << 30;
 static int run_neun2(int B, const u64 *Uq, int quiet, u64 out[3][128], const char *liste, int Tt, int q) {
+  if (K1hi > N9) K1hi = N9;
   double t0 = now();
   int bs = B - 18;
   u64 c[3][128]; memset(c, 0, sizeof c);
@@ -506,15 +511,19 @@ static int run_neun2(int B, const u64 *Uq, int quiet, u64 out[3][128], const cha
   int nu = 0; for (int x = 0; x < NP; x++) if (tb(U0, x)) nu++;
   int *pts = malloc(sizeof(int) * nu); nu = 0;
   for (int x = 0; x < NP; x++) if (tb(U0, x)) pts[nu++] = x;
-  /* sortieren nach n9 aufsteigend */
-  for (int i = 1; i < nu; i++) { int v = pts[i], j = i - 1; while (j >= 0 && (n9[pts[j]] > n9[v] || (n9[pts[j]] == n9[v] && pts[j] > v))) { pts[j + 1] = pts[j]; j--; } pts[j + 1] = v; }
+  /* Probenpunkte sortieren: Modus 0 nach n9, Modus 1 nach Zahl kleiner Ueberdecker (dann n9), Modus 2 nach n9 + 100*nsmall */
+  int pm = getenv("B2_PROBE") ? atoi(getenv("B2_PROBE")) : 1;
+  long long *sc = malloc(sizeof(long long) * NP);
+  for (int x = 0; x < NP; x++) sc[x] = pm == 0 ? n9[x] : (pm == 1 ? (long long)nsmall[x] * 100000 + n9[x] : n9[x] + 100LL * nsmall[x]);
+  for (int i = 1; i < nu; i++) { int v = pts[i], j = i - 1; while (j >= 0 && (sc[pts[j]] > sc[v] || (sc[pts[j]] == sc[v] && pts[j] > v))) { pts[j + 1] = pts[j]; j--; } pts[j + 1] = v; }
+  free(sc);
   int npr = Tt * q; if (npr > nu) npr = nu;
   int T = (npr + q - 1) / q; if (T < 1) T = 1;
-  int qt[16], probe[16][32];
+  int qt[64], probe[64][32];
   for (int t = 0; t < T; t++) qt[t] = 0;
   for (int i = 0; i < npr; i++) { int t = i % T; probe[t][qt[t]++] = pts[i]; }
   /* Tabellen: good_t[r] = es gibt S mit r Teilmenge von msk_t(S) */
-  unsigned char *good[16];
+  unsigned char *good[64]; long long stage[65]; memset(stage, 0, sizeof stage);
   for (int t = 0; t < T; t++) {
     size_t sz = (size_t)1 << qt[t];
     good[t] = calloc(sz, 1);
@@ -525,7 +534,7 @@ static int run_neun2(int B, const u64 *Uq, int quiet, u64 out[3][128], const cha
     }
     for (int i = 0; i < qt[t]; i++) for (size_t r = 0; r < sz; r++) if ((r >> i) & 1) if (good[t][r]) good[t][r ^ ((size_t)1 << i)] = 1;
   }
-  unsigned *sig[16];
+  unsigned *sig[64];
   for (int t = 0; t < T; t++) {
     sig[t] = malloc(sizeof(unsigned) * N9);
     for (int k = 0; k < N9; k++) { unsigned m = 0; const u64 *co = COV(NSM + k); for (int i = 0; i < qt[t]; i++) if (tb(co, probe[t][i])) m |= 1u << i; sig[t][k] = m; }
@@ -538,8 +547,9 @@ static int run_neun2(int B, const u64 *Uq, int quiet, u64 out[3][128], const cha
   {
     int tid = omp_get_thread_num();
     u64 *Rr = malloc(sizeof(u64) * NWF);
+    long long st[65]; memset(st, 0, sizeof st);
     #pragma omp for schedule(dynamic, 8)
-    for (int k1 = 0; k1 < N9; k1++) {
+    for (int k1 = K1lo; k1 < K1hi; k1++) {
       const u64 *c1 = COV(NSM + k1);
       for (int k2 = k1 + 1; k2 < N9; k2++) {
         pairs++;
@@ -548,6 +558,7 @@ static int run_neun2(int B, const u64 *Uq, int quiet, u64 out[3][128], const cha
           unsigned full = qt[t] == 32 ? 0xffffffffu : ((1u << qt[t]) - 1);
           unsigned r = ~(sig[t][k1] | sig[t][k2]) & full;
           if (!good[t][r]) { ok = 0; break; }
+          st[t]++;
         }
         if (!ok) continue;
         surv++;
@@ -571,6 +582,8 @@ static int run_neun2(int B, const u64 *Uq, int quiet, u64 out[3][128], const cha
       }
     }
     free(Rr);
+    #pragma omp critical
+    for (int t = 0; t < 65; t++) stage[t] += st[t];
   }
   if (fl) fclose(fl);
   for (int t = 0; t < nth; t++) for (int a = 0; a < 3; a++) for (int w = 0; w < 128; w++) c[a][w] += cc[t][a][w];
@@ -578,10 +591,149 @@ static int run_neun2(int B, const u64 *Uq, int quiet, u64 out[3][128], const cha
   if (!quiet) {
     printf("# neun2 B=%d kleine Mengen=%d Tabellen=%d x %d Probenpunkte, Paare=%lld Ueberlebende=%lld Loesungen=%lld Zeit=%.1f s\n",
            B, nSS, T, qt[0], pairs, surv, nsol, now() - t0);
+    printf("# Bereich k1 [%d,%d); nach Tabelle t ueberlebend:", K1lo, K1hi);
+    for (int t = 0; t < T; t++) printf(" %lld", stage[t]);
+    printf("\n");
     print_counts("Z", c);
   }
   for (int t = 0; t < T; t++) { free(good[t]); free(sig[t]); }
   free(SR); free(n9); free(pts); free(U0); free(cc);
+  return 0;
+}
+
+/* ---------------- neun2 (Verfahren B): o1 ueber alle Neunerbahnen, T ueber Dreier-Teilmengen, Einser gebuendelt ----------------
+ * Gezaehlt werden alle Mengen {o1,o2} u T u O (o1 < o2 Neunerbahnen, T Dreierbahnen, O Einserbahnen) mit 18 + 3|T| + |O| <= B,
+ * die das Universum U0 ueberdecken. Fuer feste (T, o1): Q1 = U0 \ (cov T u cov o1 u cov(alle 8 Einser)); jeder Punkt aus Q1
+ * muss von o2 ueberdeckt werden. Kandidaten o2 > o1: UND der Mengen {o2 : o2 ueberdeckt q} = cov[q] (Symmetrie, in `info`
+ * geprueft) fuer die ersten Punkte q aus Q1; danach volle Pruefung Q1 Teilmenge cov(o2) und exakte Zaehlung der O:
+ * R = U0 \ (cov T u cov o1 u cov o2); O muss jede Einser-Ueberdeckermaske der Punkte aus R treffen.               */
+static int run_neun2b(int B, const u64 *Uq, int quiet, u64 out[3][128], const char *liste) {
+  double t0 = now();
+  int bs = B - 18;
+  u64 c[3][128]; memset(c, 0, sizeof c);
+  if (bs < 0) { if (out) memcpy(out, c, sizeof c); return 0; }
+  u64 *U0 = malloc(sizeof(u64) * NWF);
+  for (int i = 0; i < NWF; i++) U0[i] = Uq ? Uq[i] : ~0ULL;
+  if (NP % 64) U0[NWF - 1] &= (1ULL << (NP % 64)) - 1;
+  /* Dreier-Teilmengen mit Gewicht <= bs */
+  int maxt = bs / 3;
+  int ntl = 0, cap = 256; int (*tl)[8] = malloc(sizeof(int[8]) * cap); int *tn = malloc(sizeof(int) * cap);
+  { int cur[8]; int d = 0;
+    /* rekursiv ueber aufsteigende Dreier-Ids */
+    int stackc[8]; int sp = 0; (void)stackc; (void)sp; (void)d;
+    /* einfache Aufzaehlung fuer maxt <= 2 (genuegt fuer B <= 26) */
+    if (maxt > 2) { fprintf(stderr, "neun2b: hoechstens 2 Dreierbahnen vorgesehen\n"); exit(3); }
+    tn[ntl] = 0; ntl++;
+    if (maxt >= 1) for (int a = N1; a < NSM; a++) { if (ntl == cap) { cap *= 2; tl = realloc(tl, sizeof(int[8]) * cap); tn = realloc(tn, sizeof(int) * cap); } tl[ntl][0] = a; tn[ntl] = 1; ntl++; }
+    if (maxt >= 2) for (int a = N1; a < NSM; a++) for (int b2 = a + 1; b2 < NSM; b2++) { if (ntl == cap) { cap *= 2; tl = realloc(tl, sizeof(int[8]) * cap); tn = realloc(tn, sizeof(int) * cap); } tl[ntl][0] = a; tl[ntl][1] = b2; tn[ntl] = 2; ntl++; }
+    (void)cur;
+  }
+  u64 *ONESCOV = calloc(NWF, sizeof(u64));
+  for (int o = 0; o < N1; o++) for (int i = 0; i < NWF; i++) ONESCOV[i] |= COV(o)[i];
+  /* A_T = U0 \ cov(T) \ ONESCOV */
+  u64 *AT = malloc(sizeof(u64) * NWF * (size_t)ntl);
+  u64 *RT = malloc(sizeof(u64) * NWF * (size_t)ntl);   /* U0 \ cov(T) */
+  for (int t = 0; t < ntl; t++) {
+    u64 *r = RT + (size_t)t * NWF, *a = AT + (size_t)t * NWF;
+    memcpy(r, U0, sizeof(u64) * NWF);
+    for (int k = 0; k < tn[t]; k++) { const u64 *cv = COV(tl[t][k]); for (int i = 0; i < NWF; i++) r[i] &= ~cv[i]; }
+    for (int i = 0; i < NWF; i++) a[i] = r[i] & ~ONESCOV[i];
+  }
+  u64 NINE[1024]; memset(NINE, 0, sizeof NINE);
+  for (int o = NSM; o < NP; o++) NINE[o >> 6] |= 1ULL << (o & 63);
+  long long steps = 0, cands = 0, surv = 0, nsol = 0;
+  int nth = omp_get_max_threads();
+  u64 (*cc)[3][128] = calloc(nth, sizeof *cc);
+  FILE *fl = liste ? fopen(liste, "w") : NULL;
+  int lo = K1lo, hi = K1hi > N9 ? N9 : K1hi;
+  #pragma omp parallel reduction(+:steps,cands,surv,nsol)
+  {
+    int tid = omp_get_thread_num();
+    u64 *Q1 = malloc(sizeof(u64) * NWF), *M = malloc(sizeof(u64) * NWF), *R = malloc(sizeof(u64) * NWF);
+    #pragma omp for schedule(dynamic, 4)
+    for (int k1 = lo; k1 < hi; k1++) {
+      int o1 = NSM + k1; const u64 *c1 = COV(o1);
+      for (int t = 0; t < ntl; t++) {
+        steps++;
+        const u64 *a = AT + (size_t)t * NWF;
+        int any = 0;
+        for (int i = 0; i < NWF; i++) { Q1[i] = a[i] & ~c1[i]; any |= Q1[i] != 0; }
+        /* Kandidatenmaske: Neunerbahnen mit Id > o1 */
+        for (int i = 0; i < NWF; i++) M[i] = NINE[i];
+        for (int i = 0; i < (o1 >> 6); i++) M[i] = 0;
+        M[o1 >> 6] &= ~((2ULL << (o1 & 63)) - 1);
+        if (any) {
+          /* Filterpunkte gestreut ueber Q1: je Durchgang hoechstens ein Punkt je Wort-Schritt */
+          int used = 0, nzw = 0, zw[1024];
+          for (int i = 0; i < NWF; i++) if (Q1[i]) zw[nzw++] = i;
+          int step = nzw / 32 + 1;
+          for (int pass = 0; pass < step && used < 32; pass++)
+            for (int j = pass; j < nzw && used < 32; j += step) {
+              int q = zw[j] * 64 + __builtin_ctzll(Q1[zw[j]]);
+              const u64 *cq = COV(q);
+              for (int k = o1 >> 6; k < NWF; k++) M[k] &= cq[k];
+              used++;
+              if ((used & 7) == 0) { int pc = 0; for (int k = o1 >> 6; k < NWF && pc <= 32; k++) pc += __builtin_popcountll(M[k]); if (pc <= 32) { used = 99; break; } }
+            }
+        }
+        for (int i = o1 >> 6; i < NWF; i++) {
+          u64 m = M[i];
+          while (m) {
+            int o2 = i * 64 + __builtin_ctzll(m); m &= m - 1;
+            cands++;
+            const u64 *c2 = COV(o2);
+            int ok = 1;
+            for (int k = 0; k < NWF; k++) if (Q1[k] & ~c2[k]) { ok = 0; break; }
+            if (!ok) continue;
+            surv++;
+            /* exakt: Einser-Teilmengen O mit |O| <= bs - 3 tn */
+            const u64 *rt = RT + (size_t)t * NWF;
+            unsigned need[256]; int nneed = 0; unsigned seen[8] = {0}; int bad = 0;
+            for (int k = 0; k < NWF; k++) {
+              u64 x = rt[k] & ~c1[k] & ~c2[k];
+              while (x) {
+                int q = k * 64 + __builtin_ctzll(x); x &= x - 1;
+                unsigned om = (unsigned)(smk[q][0] & ((1ULL << N1) - 1));
+                if (!om) { bad = 1; break; }
+                if (!((seen[om >> 5] >> (om & 31)) & 1)) { seen[om >> 5] |= 1u << (om & 31); need[nneed++] = om; }
+              }
+              if (bad) break;
+            }
+            if (bad) continue;
+            int maxo = bs - 3 * tn[t];
+            for (unsigned O = 0; O < (1u << N1); O++) {
+              int no = __builtin_popcount(O);
+              if (no > maxo) continue;
+              int okk = 1;
+              for (int j = 0; j < nneed; j++) if (!(need[j] & O)) { okk = 0; break; }
+              if (!okk) continue;
+              cc[tid][2][18 + 3 * tn[t] + no]++; nsol++;
+              if (fl) {
+                #pragma omp critical
+                {
+                  Sol so; memset(&so, 0, sizeof so); so.nn = 2; so.o[0] = o1; so.o[1] = o2;
+                  for (int k = 0; k < tn[t]; k++) so.I[tl[t][k] >> 6] |= 1ULL << (tl[t][k] & 63);
+                  for (int k = 0; k < N1; k++) if ((O >> k) & 1) so.I[0] |= 1ULL << k;
+                  so.w = 18 + 3 * tn[t] + no; so.nsup = 1;
+                  print_sol(fl, &so);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    free(Q1); free(M); free(R);
+  }
+  if (fl) fclose(fl);
+  for (int t = 0; t < nth; t++) for (int a = 0; a < 3; a++) for (int w = 0; w < 128; w++) c[a][w] += cc[t][a][w];
+  if (out) memcpy(out, c, sizeof c);
+  if (!quiet) {
+    printf("# neun2b B=%d Dreier-Teilmengen=%d k1 [%d,%d) Schritte=%lld Kandidaten=%lld volle Treffer=%lld Loesungen=%lld Zeit=%.1f s\n",
+           B, ntl, lo, hi, steps, cands, surv, nsol, now() - t0);
+    print_counts("Z", c);
+  }
+  free(AT); free(RT); free(ONESCOV); free(cc); free(U0); free(tl); free(tn);
   return 0;
 }
 
@@ -697,7 +849,7 @@ static int run_test2(u64 seed, int K, int b) {
   int *pts; u64 *U = random_universe(K, &pts);
   u64 c[3][128];
   double t0 = now();
-  run_neun2(b, U, 1, c, NULL, 2, (K < 24 ? (K + 1) / 2 : 12));
+  if (getenv("B2_ALT")) run_neun2(b, U, 1, c, NULL, 2, (K < 24 ? (K + 1) / 2 : 12)); else run_neun2b(b, U, 1, c, NULL);
   double t1 = now();
   /* Durchprobieren: alle Paare, alle kleinen Mengen mit Gewicht <= b-18 */
   int bs = b - 18;
@@ -711,7 +863,7 @@ static int run_test2(u64 seed, int K, int b) {
   {
     u64 loc[128]; memset(loc, 0, sizeof loc);
     #pragma omp for schedule(dynamic, 64)
-    for (int k1 = 0; k1 < N9; k1++) for (int k2 = k1 + 1; k2 < N9; k2++) {
+    for (int k1 = K1lo; k1 < (K1hi < N9 ? K1hi : N9); k1++) for (int k2 = k1 + 1; k2 < N9; k2++) {
       u64 r = ~(m9[k1] | m9[k2]) & full;
       if (bs < 0) continue;
       for (int s = 0; s < nSS; s++) if ((r & ~ms[s]) == 0) loc[18 + SS[s].w]++;
@@ -720,7 +872,7 @@ static int run_test2(u64 seed, int K, int b) {
     for (int w = 0; w < 128; w++) tot[w] += loc[w];
   }
   double t2 = now();
-  char nm[200]; snprintf(nm, sizeof nm, "test2 seed=%llu K=%d B=%d (%.1f s / Durchprobieren %.1f s)", seed, K, b, t1 - t0, t2 - t1);
+  char nm[200]; snprintf(nm, sizeof nm, "test2 seed=%llu K=%d B=%d k1 [%d,%d) (%.1f s / Durchprobieren %.1f s)", seed, K, b, K1lo, K1hi < N9 ? K1hi : N9, t1 - t0, t2 - t1);
   return cmp_counts(nm, c[2], tot);
 }
 
@@ -770,10 +922,14 @@ int main(int argc, char **argv) {
   if (!strcmp(m, "klein")) return run_klein(atoi(argv[3]), atoi(argv[4]), atoll(argv[5]), atoll(argv[6]), argc > 7 ? argv[7] : NULL, 0);
   if (!strcmp(m, "teilbaeume")) return run_klein(atoi(argv[3]), atoi(argv[4]), 0, 0, NULL, 1);
   if (!strcmp(m, "neun1")) return run_neun1(atoi(argv[3]), atoll(argv[4]), atoll(argv[5]), NULL, 0, NULL, argc > 6 ? argv[6] : NULL);
+  if (getenv("B2_K1LO")) K1lo = atoi(getenv("B2_K1LO"));
+  if (getenv("B2_K1HI")) K1hi = atoi(getenv("B2_K1HI"));
+  if (!strcmp(m, "neun2b")) return run_neun2b(atoi(argv[3]), NULL, 0, NULL, argc > 4 ? argv[4] : NULL);
   if (!strcmp(m, "neun2")) return run_neun2(atoi(argv[3]), NULL, 0, NULL, argc > 4 ? argv[4] : NULL, argc > 5 ? atoi(argv[5]) : 4, argc > 6 ? atoi(argv[6]) : 24);
   if (!strcmp(m, "test0")) return run_test0(atoll(argv[3]), atoi(argv[4]), atoi(argv[5]), atoi(argv[6])) ? 1 : 0;
   if (!strcmp(m, "test1")) return run_test1(atoll(argv[3]), atoi(argv[4]), atoi(argv[5])) ? 1 : 0;
   if (!strcmp(m, "test2")) return run_test2(atoll(argv[3]), atoi(argv[4]), atoi(argv[5])) ? 1 : 0;
+  if (!strcmp(m, "positiv1p")) { POS_O = NSM + atoi(argv[3]); return run_klein(atoi(argv[4]), atoi(argv[5]), 0, 100000000, argc > 6 ? argv[6] : NULL, 0); }
   if (!strcmp(m, "positiv1")) {
     long long o = atoll(argv[3]); int bsm = atoi(argv[4]);
     return run_neun1(9 + bsm, o, o + 1, NULL, 0, NULL, argc > 5 ? argv[5] : NULL);

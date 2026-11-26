@@ -1,0 +1,6 @@
+Wed Nov 25 23:59:29 UTC 2026
+b2_zaehl neun2b P_elemente.txt 23
+# Aufbau: 58368 Bahnen (1:8 3:160 9:58200), Kugel 60460, 2.0 s
+# neun2b B=23 Dreier-Teilmengen=161 k1 [0,58200) Schritte=9370200 Kandidaten=545474618 volle Treffer=0 Loesungen=0 Zeit=27.5 s
+exit 0
+Wed Nov 25 23:59:59 UTC 2026

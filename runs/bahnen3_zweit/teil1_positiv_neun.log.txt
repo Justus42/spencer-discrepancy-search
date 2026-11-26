@@ -1,0 +1,12 @@
+Thu Nov 26 00:11:49 UTC 2026
+B2_KD=1792 b2_zaehl positiv1p P 0 22 12 (Neunerbahn Index 0 = Bahn-Id 168, kleine Bahnen Gewicht <= 22)
+# Aufbau: 58368 Bahnen (1:8 3:160 9:58200), Kugel 60460, 2.0 s
+# klein B=22 split=12 Bereich [0,100000000) Knoten=43069187 Vollpruefungen=7998778 Basisloesungen=576 Zeit=54.7 s Threads=4 D=1856
+Z Neuner=1 Gewicht=31 Anzahl=576
+L 31 1 | 168 1 37 86 91 119 122 144 156 | Vertreter 4 77977 2045 93094 93275 119151 120466 238136 239044
+L 31 1 | 168 1 37 86 91 114 127 144 156 | Vertreter 4 77977 2045 93094 93275 119070 120547 238136 239044
+Python-Nachpruefung aller Loesungen:
+geprueft 576, in Ordnung 576 (Gewicht = Zahl der Paare, Radius <= 6)
+Python-Nachpruefung 30 Zufallseintraege der 19 008:
+geprueft 30, in Ordnung 30 (Gewicht = Zahl der Paare, Radius <= 6)
+Thu Nov 26 00:14:33 UTC 2026
