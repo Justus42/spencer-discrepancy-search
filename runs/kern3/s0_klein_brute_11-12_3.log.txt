@@ -1,0 +1,49 @@
+(11,3) Typ (9, 1, 1, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (8, 2, 1, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (8, 1, 1, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (7, 3, 1, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (7, 2, 2, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (7, 2, 1, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (6, 4, 1, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (6, 3, 2, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (6, 3, 1, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (6, 2, 2, 1) brute Kmin=2 | dfs K=2: GEFUNDEN, K=1: KEINE OK
+(11,3) Typ (5, 5, 1, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (5, 4, 2, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (5, 4, 1, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (5, 3, 3, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (5, 3, 2, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (5, 2, 2, 2) brute Kmin=2 | dfs K=2: GEFUNDEN, K=1: KEINE OK
+(11,3) Typ (4, 4, 3, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (4, 4, 2, 1) brute Kmin=2 | dfs K=2: GEFUNDEN, K=1: KEINE OK
+(11,3) Typ (4, 3, 3, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(11,3) Typ (4, 3, 2, 2) brute Kmin=2 | dfs K=2: GEFUNDEN, K=1: KEINE OK
+(11,3) Typ (3, 3, 3, 2) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (10, 1, 1, 0) brute: kein K <= 4 | dfs K=4: KEINE OK
+(12,3) Typ (9, 2, 1, 0) brute: kein K <= 4 | dfs K=4: KEINE OK
+(12,3) Typ (9, 1, 1, 1) brute: kein K <= 4 | dfs K=4: KEINE OK
+(12,3) Typ (8, 3, 1, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (8, 2, 2, 0) brute: kein K <= 4 | dfs K=4: KEINE OK
+(12,3) Typ (8, 2, 1, 1) brute: kein K <= 4 | dfs K=4: KEINE OK
+(12,3) Typ (7, 4, 1, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (7, 3, 2, 0) brute: kein K <= 4 | dfs K=4: KEINE OK
+(12,3) Typ (7, 3, 1, 1) brute: kein K <= 4 | dfs K=4: KEINE OK
+(12,3) Typ (7, 2, 2, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (6, 5, 1, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (6, 4, 2, 0) brute: kein K <= 4 | dfs K=4: KEINE OK
+(12,3) Typ (6, 4, 1, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (6, 3, 3, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (6, 3, 2, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (6, 2, 2, 2) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (5, 5, 2, 0) brute: kein K <= 4 | dfs K=4: KEINE OK
+(12,3) Typ (5, 5, 1, 1) brute: kein K <= 4 | dfs K=4: KEINE OK
+(12,3) Typ (5, 4, 3, 0) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (5, 4, 2, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (5, 3, 3, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (5, 3, 2, 2) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (4, 4, 4, 0) brute: kein K <= 4 | dfs K=4: KEINE OK
+(12,3) Typ (4, 4, 3, 1) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (4, 4, 2, 2) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (4, 3, 3, 2) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+(12,3) Typ (3, 3, 3, 3) brute Kmin=4 | dfs K=4: GEFUNDEN, K=3: KEINE OK
+ABWEICHUNGEN 0

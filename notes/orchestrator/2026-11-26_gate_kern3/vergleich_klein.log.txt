@@ -1,0 +1,5 @@
+# vergleich_klein.py; 26.11.2026 19:33 UTC
+(10,2): 17 Typen verglichen
+(11,3): 21 Typen verglichen
+(12,3): 27 Typen verglichen
+Typen der Sitzung: 65, verglichen: 65, Abweichungen: 0

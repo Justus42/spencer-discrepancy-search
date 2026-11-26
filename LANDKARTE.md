@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 26.11.2026 abends (nach Auftrag F, freie Suche bei d = 9, kein Treffer, kein neuer Wert; davor Auftrag C, Gegenrechnung der Ideenrunde, neue Zeilen zu Hadamard, Konferenzmatrizen und Zirkulanten, kein neuer Bestwert; davor Auftrag D, Leiter bei d = 10, kein Treffer, kein neuer Wert; davor Auftrag M, Mischform bei (18,5), kein neuer Tabellenwert; davor Auftrag LZ, Lean-Zertifikat für K(18,5) ≤ 50, kein neuer Tabellenwert; davor Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 26.11.2026 abends (nach Auftrag K, Kern der Dimension 3, kein neuer Wert; davor Auftrag F, freie Suche bei d = 9, kein Treffer, kein neuer Wert; davor Auftrag C, Gegenrechnung der Ideenrunde, neue Zeilen zu Hadamard, Konferenzmatrizen und Zirkulanten, kein neuer Bestwert; davor Auftrag D, Leiter bei d = 10, kein Treffer, kein neuer Wert; davor Auftrag M, Mischform bei (18,5), kein neuer Tabellenwert; davor Auftrag LZ, Lean-Zertifikat für K(18,5) ≤ 50, kein neuer Tabellenwert; davor Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -45,6 +45,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Rundlauf Astra 6 Differenzblöcke (20x18, 2 160) | | | | | | | | | | | | 1,342 e |
 | Rundlauf Sol 2 Paley-12-Verkabelung (20x20, 71 280) | | | | | | | | | | | | 0,894 e |
 | Kern-⟨1,a⟩-Paare (U,W) bei (20,6), d = 8, abwechselnde Suche (Auftrag H): K = 10 (40 Wörter) in (11,9), (13,7), (10,10), (12,8) nicht erreicht | | | | | | | | | | | | (1,789) s |
+| Kern ⟨1,a,b⟩, K Nebenklassen zu 8 Wörtern (Auftrag K): (16,4) K = 5 (40 Wörter, N = 20) in allen 55 Typen voll ausgeschlossen, bestes K = 8 (64 Wörter, N = 32, 1,414; Sylvester-Bauregel und Suche); K = 6 in 36 Typen voll ausgeschlossen, 19 offen; (18,5) K = 5 in 31 von 74 Typen voll ausgeschlossen, 43 offen (60 s), bestes K = 8 | | | | | | | | | | | | – (voll bei (16,4), zwei Programme); (1,789) s bei (18,5) |
 | Freie Suche als Evolutionsschleife (Auftrag E), blind: (15,4) 16 Paare (32 Wörter) in 4 von 4 Läufen (Startwert 1: disc 7 dreifach); 15 Paare (30 Wörter, N = 15) nicht erreicht, beste Restzahl 233 offene Klassen |  |  |  |  |  |  | (1,807) s | 1,750 e |  |  |  |  |
 
 ## N ab 21

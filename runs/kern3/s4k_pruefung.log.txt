@@ -1,0 +1,10 @@
+TREFFER Typ=(5, 5, 4, 4) K=8 offen: direkt=0 nebenklassen=0 suchcode=0 OK
+5-5-4-4 ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+TREFFER Typ=(6, 5, 4, 3) K=8 offen: direkt=0 nebenklassen=0 suchcode=0 OK
+6-5-4-3 ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+TREFFER Typ=(6, 6, 3, 3) K=8 offen: direkt=0 nebenklassen=0 suchcode=0 OK
+6-6-3-3 ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+TREFFER Typ=(7, 4, 4, 3) K=8 offen: direkt=0 nebenklassen=0 suchcode=0 OK
+7-4-4-3 ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 8 (= erwartet)
+ Typ=(9, 5, 2, 2) K=3 offen: direkt=94520 nebenklassen=94520 suchcode=94520 OK
+ Typ=(6, 6, 6, 0) K=5 offen: direkt=27944 nebenklassen=27944 suchcode=27944 OK

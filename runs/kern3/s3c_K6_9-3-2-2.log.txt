@@ -1,0 +1,4 @@
+START 18:42:12 dfs m=16 R=4 Typ=9,3,2,2 K=6 SEK=300 SEED=1
+INFO |S| = 2054, Q = 8192, Bahnen = 40, offen nach c_1 = 6138, Summe der 5 groessten g = 8790, Schwelle = -894
+ERGEBNIS KEINE knoten=1158807 blatt=0 zeit=34.46 c2_bahnen=39
+ENDE 18:42:47
