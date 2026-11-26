@@ -81,3 +81,8 @@ Auch der Tabellenwert 64 wird in keinem Typ erreicht (wie die alte Nebenklassen-
 | (13,6) | 0 von 4 | 1856 / 1856 / 1856 / 1912 |
 
 Tabellenwert 64 in keinem Typ erreicht; es gibt kein „kleinstes erreichtes K“.
+
+## Schritt 3: (19,5), Typ (10,9), K = 16 (64 Wörter), 8 neue Startwerte (5–12), je 900 s, zwei Blöcke (01:14–01:45 UTC)
+
+0 von 8 gelöst; beste Restzahl 1024 / 768 / 1280 / 1280 (Startwerte 5–8) und 1280 viermal (9–12). Mit den vier Läufen der Stufe (1280) kein Treffer in 12 Startwerten (Suche erfolglos).
+Zelle (19,5) abgeschlossen: der Tabellenwert 64 wird nicht erreicht; beste Restzahl 768 bei K = 16 im Typ (10,9).
