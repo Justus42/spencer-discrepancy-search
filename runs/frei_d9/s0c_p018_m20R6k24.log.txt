@@ -1,0 +1,4 @@
+2026-11-26 17:46:18 UTC  Start s0c_p018_m20R6k24: p018 m=20 R=6 Paare=24 je 120 s, Startwerte 1 2, Zusatz: 
+  Startwert 1: Bewerter: offen=0 klassen=524288 k=24 m=20 R=6 | 8 s | Speicher (VmHWM) 9804 kB | ENDE best=0 it=15956 t_best=6.4 t=6.4 bumps=3921 neustarts=0
+  Startwert 2: Bewerter: offen=0 klassen=524288 k=24 m=20 R=6 | 38 s | Speicher (VmHWM) 9876 kB | ENDE best=0 it=87865 t_best=36.7 t=36.7 bumps=36502 neustarts=0
+2026-11-26 17:46:56 UTC  Ende s0c_p018_m20R6k24

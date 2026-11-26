@@ -1,6 +1,6 @@
 # LANDKARTE
 
-Stand 26.11.2026 nachmittags (nach Auftrag D, Leiter bei d = 10, kein Treffer, kein neuer Wert; davor Auftrag M, Mischform bei (18,5), kein neuer Tabellenwert; davor Auftrag LZ, Lean-Zertifikat für K(18,5) ≤ 50, kein neuer Tabellenwert; davor Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
+Stand 26.11.2026 abends (nach Auftrag F, freie Suche bei d = 9, kein Treffer, kein neuer Wert; davor Auftrag C, Gegenrechnung der Ideenrunde, neue Zeilen zu Hadamard, Konferenzmatrizen und Zirkulanten, kein neuer Bestwert; davor Auftrag D, Leiter bei d = 10, kein Treffer, kein neuer Wert; davor Auftrag M, Mischform bei (18,5), kein neuer Tabellenwert; davor Auftrag LZ, Lean-Zertifikat für K(18,5) ≤ 50, kein neuer Tabellenwert; davor Auftrag B2, zweite Rechnung zu den 48ern unter P, und Auftrag N, Leiter in den Nachbarzellen; davor Auftrag E, Evolutionsschleife, Auftrag H, Zerlegung der Kern-⟨1,a⟩-Familie, Auftrag P, Gegenrechnung der Ideensammlung, Auftrag R9, Rang 9 bei (15,4), Auftrag G, Gruppenmatrizen, und Auftrag S, Suche im affinen Spann). Bester Quotient disc / √N je Matrixfamilie (Zeile) und Größe N (Spalte), N = max(n, Zeilen).
 Ziel: Quotient > 5/√8 = 1,7678 (Rekord: Hamming + Nullspalte, N = 8). Für d gilt die Parität nicht in der Schwellenzeile;
 bei ±1-Zeilen mit gerader Länge sind nur gerade d möglich.
 
@@ -23,6 +23,9 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Hadamard voll (Ordnung 20: 3 Klassen, 24: 60 Klassen, je mit Transponierten) |  |  |  |  |  |  | |  |  |  |  | 1,342 e |
 | Hadamard ohne 1 Spalte (alle Spalten, alle Klassen) |  |  |  |  |  |  | |  |  |  |  | 1,565 e |
 | Hadamard 20 ohne 2 / 24 ohne 3 Spalten (alle Paare/Tripel) |  |  |  |  |  |  | |  |  |  |  | 1,342 e |
+| Hadamard ohne c Spalten, alle Spaltenmengen, c ≤ 4 (Ideenrunde 26.11., voll, zwei Programme: Orchestrator, Sitzung): Sylvester 8, 16, Klasse von `ctrl_16` mit Transponierter, Ordnung 20; dazu Paley 12 (Spalte fehlt): bestes d 5, 1,443 e |  |  | 1,768 e |  |  |  |  | 1,750 e |  |  |  | 1,565 e |
+| Hadamard 20 mit einer oder zwei beliebig ersetzten Spalten (auch reell; 120 Fälle / 1140 Paare; disc 8 ausgeschlossen, voll, zwei Programme) |  |  |  |  |  |  |  |  |  |  |  | – (voll) |
+| zirkulant 15 (alle 2^14 ersten Zeilen, Ideenrunde 26.11., voll, zwei Programme) |  |  |  |  |  |  | 1,291 e |  |  |  |  |  |
 | Bahnen unter 5er-Zyklen plus Komplement (n=15: 40 Wörter, alle 525 Vierermengen, `bahn15_40w`) |  |  |  |  |  |  | |  |  |  |  | 1,565 e |
 | Bahnen unter der 3-Sylowgruppe P des 48ers (n=20, R=6; 40 Wörter = Rekord 1,789 ausgeschlossen, voll, zwei Programme) | | | | | | | | | | | | – (voll) |
 | (15,4) unter Spaltensymmetrie Primzahlordnung 7 (7+7+1), 11, 13: 30 Wörter ausgeschlossen, 32 Wörter nur Ordnung 7 (112 Lösungen, 2 Klassen, eine `ctrl_16`; voll) | | | | | | | | 1,750 e | | | | |
@@ -53,6 +56,9 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | Hadamard voll (Ordnung 20: 3 Klassen, 24: 60 Klassen, je mit Transponierten) |  |  |  | 1,225 e |  |  |  |  |  |  |  |  |  |
 | Hadamard ohne 1 Spalte (alle Spalten, alle Klassen) |  |  |  | 1,429 e |  |  |  |  |  |  |  |  |  |
 | Hadamard 20 ohne 2 / 24 ohne 3 Spalten (alle Paare/Tripel) |  |  |  | 1,429 e |  |  |  |  |  |  |  |  |  |
+| Hadamard ohne c Spalten (Ideenrunde 26.11., voll, zwei Programme): 24 alle 60 Klassen mit Transponierten, c ≤ 5 (d = 8 bei c = 2, 4); Paley II 28 voll; Sylvester 32 ohne 1 / 2 Spalten (9 / 8) |  |  |  | 1,633 e |  |  |  | 1,134 e |  |  |  | 1,591 e |  |
+| Hadamard 24 ohne 1 / 3 / 5 Spalten plus eine freie ±1-Zeile, d = 9 (alle 2880 / 242 880 / 5 100 480 Fälle; c = 1 zwei Programme, c = 3, 5 nur Sitzung) |  |  |  |  | – (voll) |  |  |  |  |  |  |  |  |
+| Paley-Konferenzmatrizen 26 und 30 (Ideenrunde 26.11., voll, zwei Programme) |  |  |  |  |  | 0,981 e |  |  |  | 1,278 e |  |  |  |
 | Doppelung [[H,H],[H,-H]], H Hadamard 20, Bauregel 1+3/2+2 (40 x 36) |  |  |  |  |  |  |  |  |  |  |  |  | ≤1,265 g |
 | Paley-12-Doppelung, Bauregel 1+3 und 2+2 (24 x 20) |  |  |  | 1,633 e |  |  |  |  |  |  |  |  |  |
 | Überdeckungscodes aus Nebenklassen-Suche (48/52/56/60 Wörter bei (20,6), 52 bei (22,7), 64 bei (18,5); Auftrag N: 52/56/60 bei (18,5), 64 bei (21,6), (23,7), (25,8)) |  |  |  | 1,633 e |  | 1,569 e |  | 1,512 e |  | 1,461 e |  | 1,591 e |  |
@@ -84,6 +90,7 @@ Bei Familien mit mehreren Mitgliedern gilt der beste Wert; bei Teil C ist das Ma
 | (18,5) mit 50 Wörtern: Zustand K = 12 mit Restzahl 1 aus Auftrag N plus eine freie Zeile (Gate N, Matrix 25 x 18, Rechnung des Orchestrators; in Lean bewiesen, Auftrag LZ) |  |  |  |  | 1,600 e |  |  |  |  |  |  |  |  |
 | Mischform Nebenklassen plus freie Zeilen bei (18,5), d = 8 (Auftrag M, gemeinsame Suche `misch_alt`): (K, f) = (12, 1) 50 Wörter aus Zufallsstart 8 von 8 (disc 8 dreifach); 48 Wörter nicht erreicht: (11,2), (10,4), (9,6) bester Stand 4 offene Punkte (Typ (9,9)), laut Gate in allen 44 Läufen reine Paarzustände K = 12; 46 und 44 nicht begonnen |  |  |  | (1,633) s | 1,600 e |  |  |  |  |  |  |  |  |
 | Kern-⟨1,a⟩-Leiter bei d = 10 mit dem Löser aus H (Auftrag D, K = 16 = 64 Wörter = N 32 mit Quotient 5/√8 = 1,768, kein Rekord; K = 15 = 60 Wörter = N 30, 1,826, nicht begonnen): Zellen (26,8), (28,9), (30,10), (24,7), (22,6), je 2–4 Typen, 4 Startwerte, 600 s ((30,10), (28,9): 1200 s) kein Treffer; beste Restzahl bei K = 16: (26,8) 115 136 (Typ (16,10); 8 weitere Startwerte 20 min: gleich), (28,9) 125 632 (Typ (15,13); 8 weitere Startwerte 30 min), (30,10) 1 911 391 (Typ (15,15), nur eine Runde in 1200 s), (24,7) 81 536 (Typ (16,8)), (22,6) 55 648 (Typ (13,9)); Kontrolle (25,8) d = 9 2 von 8 |  |  |  |  |  |  |  |  |  |  |  | (1,768) s |  |
+| Freie Suche bei d = 9 (Auftrag F, p018 blind und p026 ab dem 64er aus N ohne schwächste Zeile): (25,8) 32 Paare (64 Wörter) blind nicht erreicht, beste Restzahl 5246; 31 Paare (62 Wörter, N = 31) nicht erreicht, 4727 (Start 6521); (23,7) 32 Paare blind 5539, 31 Paare 4072 (= Start, keine Verbesserung) |  |  |  |  |  |  |  |  |  |  | (1,616) s | (1,591) s |  |
 
 ## Bester Eintrag dieser Karte je N (nur `e`/`r`)
 
@@ -135,6 +142,10 @@ Fett: unter 1, also n = 8, 9, 12 ausgeschlossen. Zusätzlich n = 10 (Dichte 1,09
   Bei allen Typen mit q = 9, 11 und 13 überdecken 2 volle Bahnen mit keiner Zahl fester Paare (bei q = 7 dagegen schon mit zwei). Für q = 11 und 13
   ist damit auch „1 volle Bahn + feste Paare“ ausgeschlossen, also jede Zusammensetzung innerhalb der Rekordgrenze. Nicht gezählt: kurze Bahnen > 1 bei q=12.
   Gate: `notes/gate_2026-11-25_zweibahn.md` (q = 11 mit zweitem Programm voll nachgezählt, q = 13 nur Stichprobe).
+- **Hadamard, Ideenrunde 26.11.2026:** Zahlen aus `notes/ideen_2026-11-26.md` (3a, 3d, 3f), von Auftrag C mit eigenen Programmen gegengerechnet,
+  keine Abweichung (`notes/laeufe/2026-11-26_gegenrechnung_ideen.md`, Logs `runs/gegenrechnung_ideen/`). Ordnung 24: disc 8 ohne 2 Spalten in 7420 von 33 120
+  und ohne 4 Spalten in 42 304 von 1 275 120 Fällen (alle starr, Alleinanteil 1264 bis 1354); ohne 5 Spalten nie 9.
+  Gate (`notes/gate_2026-11-26_gegenrechnung_ideen.md`): Trefferlisten fallweise gleich; die Fallzahlen zählen Originale und Transponierte, bis auf Äquivalenz sind es 3710 von 16 560 und 21 152 von 637 560.
 - **32-Wörter-Codes:** N = 16, 17, 19 aus `controls/` (beide Prüfskripte, disc 7); N = 21, 23 nur Radius per Brute-Force (STATUS).
 - **Hadamard:** volle Matrizen `controls/had20_klasse*.txt`, McKay-60 (`controls/had24_mckay_hex.txt`); ohne 1 Spalte:
   `runs/teilA/zusatz_ohne_eine_spalte.log.txt`; ohne 2/3 Spalten: `runs/teilA/a1*`, `a2*` (alle 1140 bzw. 242 880 Fälle).

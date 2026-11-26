@@ -1,0 +1,3 @@
+2026-11-26 18:51:11 UTC  Start s4_1b_p018_m23R7k32: p018 m=23 R=7 Paare=32 je 300 s, Startwerte 1, Zusatz: 
+  Startwert 1: Bewerter: offen=5846 klassen=4194304 k=32 m=23 R=7 | 302 s | Speicher (VmHWM) 63260 kB | ENDE best=5846 it=68352 t_best=93.5 t=300.2 bumps=13210 neustarts=0
+2026-11-26 18:56:13 UTC  Ende s4_1b_p018_m23R7k32

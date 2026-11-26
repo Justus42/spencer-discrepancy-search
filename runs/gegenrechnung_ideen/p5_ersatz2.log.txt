@@ -1,0 +1,10 @@
+Thu Nov 26 17:57:47 UTC 2026
+GESAMT 1140 Paare, flache x'' 1272..1272, Bedingungen je Gruppe 488..600, x'' mit S ueber beide Gruppen oder leer: 0, ausgeschlossen 1140
+
+real	0m3.746s
+user	0m14.594s
+sys	0m0.008s
+Thu Nov 26 17:57:51 UTC 2026
+Positivkontrolle ersatz2 auf Paley 12 (Original hat disc 4 = Ziel N/2-2, also muss jede Gruppe >= 1 Belegung haben):
+     66 4096 / 4096  UEBERLEBT
+GESAMT 66 Paare, flache x'' 0..0, Bedingungen je Gruppe 0..0, x'' mit S ueber beide Gruppen oder leer: 0, ausgeschlossen 0

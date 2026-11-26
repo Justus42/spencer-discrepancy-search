@@ -1,0 +1,52 @@
+Thu Nov 26 18:00:48 UTC 2026
+Abruf: curl https://raw.githubusercontent.com/florath/covering-codes-lean/bbed9a690e6c54f8bba423031d4d516f70d267b9/reference-data/post-keri/non_mixed_covering_codes.csv (18:00 UTC)
+SHA-256 5efaf8d94a3ef15e9efc052233259697fc5f0b5e51389bcc5c8c108b6c3ad1d6: gleich
+d = 8, B = 20, Woerter <= 20: (9,1) Tabelle 62-62: zu
+d = 8, B = 20, Woerter <= 20: (11,2) Tabelle 37-44: zu
+d = 8, B = 20, Woerter <= 20: (13,3) Tabelle 28-42: zu
+d = 8, B = 20, Woerter <= 20: (15,4) Tabelle 23-32: zu
+d = 8, B = 20, Woerter <= 20: (17,5) Tabelle 20-32: offen
+d = 8, B = 20, Woerter <= 20: (19,6) Tabelle 17-32: offen
+d = 9, B = 25, Woerter <= 24: (10,1) Tabelle 107-120: zu
+d = 9, B = 25, Woerter <= 24: (12,2) Tabelle 62-78: zu
+d = 9, B = 25, Woerter <= 24: (14,3) Tabelle 44-64: zu
+d = 9, B = 25, Woerter <= 24: (16,4) Tabelle 34-64: zu
+d = 9, B = 25, Woerter <= 24: (18,5) Tabelle 28-64: zu
+d = 9, B = 25, Woerter <= 24: (20,6) Tabelle 24-64: offen
+d = 9, B = 25, Woerter <= 24: (22,7) Tabelle 21-64: offen
+d = 9, B = 25, Woerter <= 24: (24,8) Tabelle 19-64: offen
+d = 10, B = 31, Woerter <= 30: (11,1) Tabelle 180-192: zu
+d = 10, B = 31, Woerter <= 30: (13,2) Tabelle 101-128: zu
+d = 10, B = 31, Woerter <= 30: (15,3) Tabelle 70-112: zu
+d = 10, B = 31, Woerter <= 30: (17,4) Tabelle 52-112: zu
+d = 10, B = 31, Woerter <= 30: (19,5) Tabelle 40-64: zu
+d = 10, B = 31, Woerter <= 30: (21,6) Tabelle 34-64: zu
+d = 10, B = 31, Woerter <= 30: (23,7) Tabelle 29-64: offen
+d = 10, B = 31, Woerter <= 30: (25,8) Tabelle 25-64: offen
+d = 10, B = 31, Woerter <= 30: (27,9) Tabelle 22-64: offen
+d = 10, B = 31, Woerter <= 30: (29,10) Tabelle 20-64: offen
+d = 11, B = 38, Woerter <= 38: (12,1) Tabelle 348-380: zu
+d = 11, B = 38, Woerter <= 38: (14,2) Tabelle 170-248: zu
+d = 11, B = 38, Woerter <= 38: (16,3) Tabelle 115-192: zu
+d = 11, B = 38, Woerter <= 38: (18,4) Tabelle 83-192: zu
+d = 11, B = 38, Woerter <= 38: (20,5) Tabelle 62-128: zu
+d = 11, B = 38, Woerter <= 38: (22,6) Tabelle 49-128: zu
+d = 11, B = 38, Woerter <= 38: (24,7) Tabelle 41-128: zu
+d = 11, B = 38, Woerter <= 38: (26,8) Tabelle 36-128: offen
+d = 11, B = 38, Woerter <= 38: (28,9) Tabelle 30-128: offen
+d = 11, B = 38, Woerter <= 38: (30,10) Tabelle 27-128: offen
+d = 11: Zelle (32,11) fehlt in der Tabelle
+offene Verdopplungszellen: 12
+  d = 8: (17,5) 20-32
+  d = 8: (19,6) 17-32
+  d = 9: (20,6) 24-64
+  d = 9: (22,7) 21-64
+  d = 9: (24,8) 19-64
+  d = 10: (23,7) 29-64
+  d = 10: (25,8) 25-64
+  d = 10: (27,9) 22-64
+  d = 10: (29,10) 20-64
+  d = 11: (26,8) 36-128
+  d = 11: (28,9) 30-128
+  d = 11: (30,10) 27-128
+Thu Nov 26 18:00:48 UTC 2026
