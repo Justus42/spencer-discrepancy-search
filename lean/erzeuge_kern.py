@@ -14,14 +14,20 @@ HIER = os.path.dirname(os.path.abspath(__file__))
 KOPF = "-- ERZEUGT von lean/erzeuge_kern.py. Nicht von Hand ändern.\n"
 
 # Bitzahl m -> (Blockexponent s, Anzahl Teildateien)
-SWAR = {7: (7, 1), 15: (8, 2), 20: (8, 64)}
-# Modul, Länge n, Radius ja (oder None), Radius nein, Blockexponent s, Teildateien
+SWAR = {7: (7, 1), 15: (8, 2), 18: (8, 16), 20: (8, 64)}
+# Modul, Länge n, Radius ja (oder None), Radius nein, Blockexponent s, Teildateien [, Zeuge x0]
+# Zeuge (nur bei ja = None, Auftrag LZ): ein Punkt x0 < 2^n ohne Wort im Abstand <= nein. Die Schleife `pruefe` stößt dort erst
+# nach vielen Punkten auf einen unüberdeckten (Kernel-Speicher), deshalb prüft der Kernel nur `nahe n nein x0 woerter = false`.
+# Lean prüft den Zeugen selbst; die Zahl kommt aus einer Vorrechnung und wird nicht vorausgesetzt.
 DATEN = [
     ("Hamming7", 7, 1, 0, 7, 1),
     ("Ctrl16", 15, 4, 3, 8, 2),
     ("Had24_1p3_ohne0", 20, None, 6, None, 0),
     ("Had24_1p3", 20, 6, 5, 8, 64),
     ("Had24_2p2", 20, 6, 5, 8, 64),
+    ("C18_5_50w", 18, 5, 4, 8, 16),
+    ("C18_5_50w_ohne24", 18, None, 5, None, 0, 55992),
+    ("C18_5_52w", 18, 5, 4, 8, 16),
 ]
 
 
@@ -92,7 +98,8 @@ def main():
                  "    have := n_0_%d b hb; rwa [Nat.zero_add] at this)\n\nend %s\n" % (m, m, m, m, s, anzahl, ns))
         schreibe(mod.replace(".", "/") + ".lean", text)
 
-    for name, n, ja, nein, s, td in DATEN:
+    for name, n, ja, nein, s, td, *rest in DATEN:
+        zeuge = rest[0] if rest else None
         ns = "Ueberdeckung.Kern.%s" % name
         mod = "Kern.%s" % name
         importe = ["Ueberdeckung.Basis", "Ueberdeckung.Daten.%s" % name]
@@ -124,10 +131,20 @@ def main():
             text += ("theorem hauptsatz_kern : ∀ x, x < 2 ^ %d →\n"
                      "    ∃ z ∈ matrix ++ matrix.map (List.map (fun e => -e)), abstandZeile %d x z ≤ %d :=\n"
                      "  (code_iff_matrix %d %d matrix).1 radius%d_kern\n\n" % (n, n, ja, n, ja, ja))
-        text += "/-- Prüfschleife lehnt Radius %d ab (Kernel). -/\n" % nein
-        text += "theorem pruefe_nicht_%d_kern : pruefe %d %d (code matrix) = false := by decide +kernel\n\n" % (nein, n, nein)
-        text += ("theorem nicht_radius%d_kern : ¬ ∀ x, x < 2 ^ %d → ∃ c ∈ code matrix, abstand %d x c ≤ %d := by\n"
-                 "  rw [← pruefe_iff, pruefe_nicht_%d_kern]; decide\n\nend Ueberdeckung.%s\n" % (nein, n, n, nein, nein, name))
+        if zeuge is not None:
+            text += "/-- Zeuge: `x0 = %d` hat kein Wort der Liste im Abstand höchstens %d (Kernel). -/\n" % (zeuge, nein)
+            text += "theorem zeuge_kern : nahe %d %d %d woerter = false := by decide +kernel\n\n" % (n, nein, zeuge)
+            text += ("theorem nicht_radius%d_kern : ¬ ∀ x, x < 2 ^ %d → ∃ c ∈ code matrix, abstand %d x c ≤ %d := by\n"
+                     "  intro h\n"
+                     "  obtain ⟨c, hc, hle⟩ := h %d (by decide)\n"
+                     "  have h1 := (nahe_iff %d %d %d woerter).2 ⟨c, by rw [← woerter_eq_kern]; exact hc, hle⟩\n"
+                     "  rw [zeuge_kern] at h1\n"
+                     "  exact absurd h1 (by decide)\n\nend Ueberdeckung.%s\n" % (nein, n, n, nein, zeuge, n, nein, zeuge, name))
+        else:
+            text += "/-- Prüfschleife lehnt Radius %d ab (Kernel). -/\n" % nein
+            text += "theorem pruefe_nicht_%d_kern : pruefe %d %d (code matrix) = false := by decide +kernel\n\n" % (nein, n, nein)
+            text += ("theorem nicht_radius%d_kern : ¬ ∀ x, x < 2 ^ %d → ∃ c ∈ code matrix, abstand %d x c ≤ %d := by\n"
+                     "  rw [← pruefe_iff, pruefe_nicht_%d_kern]; decide\n\nend Ueberdeckung.%s\n" % (nein, n, n, nein, nein, name))
         schreibe(mod.replace(".", "/") + ".lean", text)
     print("Kern-Dateien geschrieben")
 

@@ -1,0 +1,15 @@
+Thu Nov 26 09:22:02 CET 2026
+✔ [1/6] Built Ueberdeckung.Daten.C18_5_50w (1.1s)
+✔ [3/8] Built Ueberdeckung.Basis (1.5s)
+✔ [4/8] Built Ueberdeckung.Daten.C18_5_52w (605ms)
+✔ [5/8] Built Ueberdeckung.Daten.C18_5_50w_ohne24 (778ms)
+✔ [6/8] Built Ueberdeckung.Saetze.C18_5_50w (38s)
+✔ [7/8] Built Ueberdeckung.Saetze.C18_5_52w (38s)
+✔ [8/8] Built Ueberdeckung.Saetze.C18_5_50w_ohne24 (3.6s)
+Build completed successfully (8 jobs).
+
+real	0m44.142s
+user	1m22.060s
+sys	0m1.854s
+Rueckgabe lake: 0
+Thu Nov 26 09:22:46 CET 2026

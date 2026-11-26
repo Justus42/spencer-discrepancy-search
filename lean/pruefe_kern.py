@@ -2,7 +2,7 @@
 """Teil 5: prüft eine Kern-Stufe (decide +kernel), höchstens P Lean-Prozesse gleichzeitig (Speicher, siehe erzeuge_kern.py).
 
 Aufruf aus lean/:  python3 -I pruefe_kern.py NAME [P]
-NAME = Hamming7 | Ctrl16 | Had24_1p3_ohne0 | Had24_1p3 | Had24_2p2.  Voraussetzung: `lean`, `lake` im PATH.
+NAME = Hamming7 | Ctrl16 | Had24_1p3_ohne0 | Had24_1p3 | Had24_2p2 | C18_5_50w | C18_5_50w_ohne24 | C18_5_52w.  Voraussetzung: `lean`, `lake` im PATH.
 Reihenfolge: Basis und Daten über lake, dann Kern/Swar<n>/Q, Kern/<NAME>/Q, alle Teile parallel, dann Swar<n>, dann Kern/<NAME>.
 Ein schon gebautes Modul (olean neuer als seine Quelle und als Basis.olean) wird übersprungen.
 Ausgabe je Modul mit Zeit; Ende mit Fehlercode 1 beim ersten Fehler.
@@ -47,7 +47,7 @@ def schicht(mods, P):
 def main():
     name = sys.argv[1]
     P = int(sys.argv[2]) if len(sys.argv) > 2 else 4
-    n = {"Hamming7": 7, "Ctrl16": 15}.get(name, 20)
+    n = {"Hamming7": 7, "Ctrl16": 15}.get(name, 18 if name.startswith("C18_5_") else 20)
     t0 = time.time()
     print("Stufe %s, n = %d, P = %d, Start %s UTC" % (name, n, P, time.strftime("%H:%M:%S", time.gmtime())), flush=True)
     r = subprocess.run(["lake", "build", "Ueberdeckung.Basis", "Ueberdeckung.Daten." + name], capture_output=True, text=True)

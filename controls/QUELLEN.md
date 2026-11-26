@@ -52,3 +52,10 @@ Das passt dazu, dass die Datei schon am 23.11.2026, 16:05 +0100 (15:05 UTC, also
 `83e93c3` ist also eine Fassung, in der die Matrix steht, nicht ihre Erstveröffentlichung.
 
 Frühere Fassung dieses Abschnitts (Stand Prüfrahmen, „Quelle nicht rekonstruierbar“): siehe Git-Geschichte dieser Datei.
+
+## `c18_5_50w.txt`, `c18_5_52w.txt` (Auftrag LZ, 26.11.2026)
+
+| Datei | Herkunft | SHA-256 (gleich der Quelle) |
+|---|---|---|
+| `c18_5_50w.txt` (25 x 18, 50 Wörter) | Kopie von `notes/orchestrator/2026-11-26_gate_leiter_n/gate_c18-5_50w.matrix.txt` (Gate N, 26.11.2026) | `602863c85dfbff1b5e9f405021c6121ebb553223780fef3e6046f58fe8598d2d` |
+| `c18_5_52w.txt` (26 x 18, 52 Wörter) | Kopie von `runs/leiter_n/c18-5_k13_t9-9.matrix.txt` (Auftrag N, 26.11.2026) | `5c816e6954c099012f193e722db2385b26b5d4cc29b26a0e7ebf20856ecbb782` |
