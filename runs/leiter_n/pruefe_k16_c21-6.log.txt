@@ -1,0 +1,10 @@
+runs/leiter_n/c21-6_k16.matrix.txt: 32 x 21
+Matrix runs/leiter_n/c21-6_k16.matrix.txt: 32 x 21, aufgefuellt 32 x 32
+  check_disc      Diskrepanz 9  (2.0 s)
+  verify_spencer  Diskrepanz 9  (2.0 s)
+  exakt_disc      Diskrepanz 9  (2.0 s)
+ERGEBNIS: alle 3 Programme melden exakt dieselbe Diskrepanz 9 (= erwartet)
+
+real	0m2.078s
+user	0m3.322s
+sys	0m0.442s

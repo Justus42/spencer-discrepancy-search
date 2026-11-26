@@ -119,3 +119,34 @@ Der Treffer bei K = 16 (`s2c25-8_k16_t16-9_seed4.paar.txt`, `zerl_offen.py` 0 of
 0 von 8 gelöst; beste Restzahl 10 958 / 10 598 / 11 120 / 10 656 und 10 598 / 10 872 / 13 007 / 10 754 (von 8 388 608); mit der Stufe (10 600 / 10 600 / 11 562 / 12 690) kein Treffer in 12 Startwerten.
 Zelle (25,8) abgeschlossen: kleinstes erreichtes K = 16 (64 Wörter, Tabellenwert) nur im Typ (16,9); K = 15 weit entfernt (Restzahl ≈ 10 600).
 Hinweis: Typ (16,9) liegt an der Grenze des Programms (m1 = 16, Auftrag: m1 und m2 ≤ 16); der Typ (14,11) kam bei K = 16 auf Restzahl 188.
+
+## Schritt 4: (20,6), d = 8, K = 11 (44 Wörter), Typen (14,6), (15,5), (16,4), je 4 Startwerte x 600 s (03:37–04:08 UTC), Logs `runs/leiter_n/s4c20-6*`
+
+Alle 12 Läufe ungelöst. Beste Restzahl (von 2^(m1+m2−2) = 262 144): (14,6) 4152 (alle vier), (15,5) 5996 (alle vier), (16,4) 9415 (alle vier). Zum Vergleich Auftrag H: (11,9) 1288, (10,10) 1063, (12,8) 1836, (13,7) 2698.
+Je weiter der Typ von (10,10) abweicht, desto größer die Restzahl. Suche erfolglos, nichts ausgeschlossen.
+
+## Auswertung (ohne Zuruf, 04:08–04:20 UTC)
+
+- **Abgleich Restzahlen:** alle 228 Läufe der Stufenlogs (`runs/leiter_n/*.log.txt` ohne `_seed`): die Restzahl der Suche (Zeile „beste Restzahl“) gleich der Nachzählung des gespeicherten Paares mit `zerl_offen.py`; 63 gelöste Läufe mit 0 offenen Klassen; **0 Abweichungen**
+  (`runs/leiter_n/abgleich_restzahlen.log.txt`). Hinweis: das gleiche Programm `zerl_offen.py` zählt in der Treiberschleife nach; das Zählen der Suche selbst ist ein zweites, getrenntes Programm (`zerl_halb.c`).
+- **Treffer unter 64 Wörtern (Auftrag: alle K ≤ 15):** (18,5), Typ (9,9), K = 15, 14, 13, je alle 4 Startwerte: `zerl_offen.py offen … 8 --direkt` 0 offene Klassen und direkte Zählung auf der 30 / 28 / 26 x 18-Matrix 0 (12 von 12, `runs/leiter_n/treffer_direkt.log.txt`).
+  Je K eine Matrix (Startwert 1) mit `pruefe_matrix.py --erwartet 8`: check_disc, verify_spencer, exakt_disc je Diskrepanz 8 (`runs/leiter_n/treffer_pruefe_matrix.log.txt`, K = 13 im Protokoll oben). Unter 4K < 64 Wörtern gab es sonst keine Treffer.
+- **Zusatz (nicht verlangt):** die drei K = 16-Treffer in (21,6), (23,7), (25,8) als Matrix 32 x 21 / 23 / 25: drei Prüfprogramme je Diskrepanz 9 (`runs/leiter_n/pruefe_k16_*.log.txt`; 2,1 s, 7,8 s, 30,8 s). Damit ist N = 32 mit d = 9 (Quotient 1,591) erreicht, vorher in LANDKARTE „nicht erreicht“.
+- **Prüfsummen (Regel 8):** `sha256sum -c verifiers/SHA256SUMS` am Anfang (21:55 UTC) und am Ende (04:08 UTC): alle drei OK (`runs/leiter_n/sha256_anfang.log.txt`, `sha256_ende.log.txt`).
+- `main` geholt (`fe088c7`, enthält Auftrag E und Gate E) und in den Branch gemerged; nicht nach `main` zusammengeführt.
+
+## Zusammenfassung
+
+- Kontrollen (K3 8/8, `ctrl_17`-Struktur 4/4, Schritt 1 16/16) bestanden; Löser aus H wie im Gate beschrieben.
+- **Ergebnis:** (18,5): **K = 13 (52 Wörter, Tabelle 64)**, drei Prüfprogramme Diskrepanz 8; K = 12 bleibt bei Restzahl 1 in 12 Startwerten. Die vier Zellen (16,4), (21,6), (23,7), (25,8) erreichen 64 Wörter (= Tabelle), 60 nicht; (19,5) erreicht 64 nicht.
+- **Kein Rekordkandidat** (Rekordgrenze d = 8: K ≤ 10, d = 9: K ≤ 12). Für (25,8) ist K = 12 weit entfernt: K = 15 liegt bei Restzahl ≈ 10 600 (der Typ (14,11) kam bei K = 16 auf 188 und wurde nach Auftragsregel nicht nachgefasst).
+- Auffälliger fester Endpunkt wie bei Auftrag H: (18,5) K = 12 immer Restzahl 1; (23,7) K = 15 immer 548; (16,4) K = 15 meist 28. Struktur dieser Zustände nicht untersucht (Hadamard-Becken wie im Gate H nicht geprüft).
+- Belegart: Treffer exakt; alles andere Suche erfolglos. Ob K(18,5) ≤ 52 neu ist, prüft der Orchestrator (nichts nach außen gemeldet).
+- Rechenzeit (Wanduhr, 4 Kerne): 21:55–04:08 UTC = ca. 6 h 13 Min. von 7 h. Alle Zellen und Schritt 4 gerechnet; Reihenfolge der Zellen (18,5), (16,4), (21,6), (19,5), (23,7), (25,8) eingehalten.
+
+## Abweichungen und Fehlversuche (für STATUS.md)
+
+- Zellen ohne erreichtes K (alle vier Typen K = 16 ungelöst): Schritt 3 auf der ersten ungelösten Stufe K = 16 im Typ mit kleinster Restzahl ((21,6): (12,9) bei Gleichstand der besten Restzahl 384 mit (13,8), (14,7); (19,5): (10,9)); Auftragsformulierung „K − 1“ hier auf die Stufe K = 16 selbst angewendet.
+- In (21,6) (12,9) und (25,8) (16,9) gelang K = 16 erst nach 183 s bzw. 176 s; bei (21,6) lösten 4 x 300 s der Stufe nichts (nur Startwert 6 der 900-s-Wiederholung).
+- Nach einem Treffer in Schritt 3 (21,6) K = 16 wurde nach Auftrag mit K = 15 und 8 neuen Startwerten weitergerechnet (kein Treffer).
+- Alle Wartebefehle liefen als Hintergrundjobs (Werkzeuggrenze 10 Min. im Vordergrund); gerechnet wurde in Blöcken von höchstens 31 Min., nach jedem Block Commit und Push.
