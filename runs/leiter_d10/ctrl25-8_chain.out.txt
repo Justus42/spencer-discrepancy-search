@@ -1,0 +1,23 @@
+== 07:19:49 Start Block ctrl25-8a_k16_t16-9
+ctrl25-8a_k16_t16-9 seed 1: ZEITGRENZE nach 600.8 s, beste Restzahl 416, 9881 Iterationen, 26 Runden, 1 Neustarts
+runs/leiter_d10/ctrl25-8a_k16_t16-9_seed1.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 416 von 8388608
+ctrl25-8a_k16_t16-9 seed 2: ZEITGRENZE nach 600.8 s, beste Restzahl 1929, 6732 Iterationen, 20 Runden, 0 Neustarts
+runs/leiter_d10/ctrl25-8a_k16_t16-9_seed2.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 1929 von 8388608
+ctrl25-8a_k16_t16-9 seed 3: ZEITGRENZE nach 601.2 s, beste Restzahl 2073, 7206 Iterationen, 22 Runden, 0 Neustarts
+runs/leiter_d10/ctrl25-8a_k16_t16-9_seed3.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 2073 von 8388608
+ctrl25-8a_k16_t16-9 seed 4: LOESUNG nach 169.4 s, 2011 Iterationen, 4 Runden, 0 Neustarts
+runs/leiter_d10/ctrl25-8a_k16_t16-9_seed4.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 0 von 8388608
+== 07:29:54 Ende Block ctrl25-8a_k16_t16-9
+TREFFER in ctrl25-8a_k16_t16-9
+== 07:29:56 Start Block ctrl25-8b_k16_t16-9
+ctrl25-8b_k16_t16-9 seed 5: ZEITGRENZE nach 602.3 s, beste Restzahl 328, 5896 Iterationen, 14 Runden, 0 Neustarts
+runs/leiter_d10/ctrl25-8b_k16_t16-9_seed5.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 328 von 8388608
+ctrl25-8b_k16_t16-9 seed 6: LOESUNG nach 214.2 s, 2325 Iterationen, 5 Runden, 0 Neustarts
+runs/leiter_d10/ctrl25-8b_k16_t16-9_seed6.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 0 von 8388608
+ctrl25-8b_k16_t16-9 seed 7: ZEITGRENZE nach 600.8 s, beste Restzahl 420, 9629 Iterationen, 28 Runden, 1 Neustarts
+runs/leiter_d10/ctrl25-8b_k16_t16-9_seed7.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 420 von 8388608
+ctrl25-8b_k16_t16-9 seed 8: ZEITGRENZE nach 601.2 s, beste Restzahl 254, 8732 Iterationen, 26 Runden, 1 Neustarts
+runs/leiter_d10/ctrl25-8b_k16_t16-9_seed8.paar.txt: K=16, Typ (16,9), d=9: offene Klassen 254 von 8388608
+== 07:40:02 Ende Block ctrl25-8b_k16_t16-9
+TREFFER in ctrl25-8b_k16_t16-9
+07:40:05
