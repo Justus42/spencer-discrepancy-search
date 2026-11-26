@@ -125,7 +125,7 @@ Hinweis: Typ (16,9) liegt an der Grenze des Programms (m1 = 16, Auftrag: m1 und 
 Alle 12 Läufe ungelöst. Beste Restzahl (von 2^(m1+m2−2) = 262 144): (14,6) 4152 (alle vier), (15,5) 5996 (alle vier), (16,4) 9415 (alle vier). Zum Vergleich Auftrag H: (11,9) 1288, (10,10) 1063, (12,8) 1836, (13,7) 2698.
 Je weiter der Typ von (10,10) abweicht, desto größer die Restzahl. Suche erfolglos, nichts ausgeschlossen.
 
-## Auswertung (ohne Zuruf, 04:08–04:20 UTC)
+## Auswertung (ohne Zuruf, 04:08–04:11 UTC)
 
 - **Abgleich Restzahlen:** alle 228 Läufe der Stufenlogs (`runs/leiter_n/*.log.txt` ohne `_seed`): die Restzahl der Suche (Zeile „beste Restzahl“) gleich der Nachzählung des gespeicherten Paares mit `zerl_offen.py`; 63 gelöste Läufe mit 0 offenen Klassen; **0 Abweichungen**
   (`runs/leiter_n/abgleich_restzahlen.log.txt`). Hinweis: das gleiche Programm `zerl_offen.py` zählt in der Treiberschleife nach; das Zählen der Suche selbst ist ein zweites, getrenntes Programm (`zerl_halb.c`).
