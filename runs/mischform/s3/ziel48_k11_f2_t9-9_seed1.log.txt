@@ -1,0 +1,2 @@
+# misch_alt m=18 d=8 R=5 K=11 (m1=9, m2=9) f=2 seed=1 sek=900 Klassen 131072, Woerter 48, stag=300 neustart=20
+  Neustart 1 nach Runde 30 (bestes 438), 17.6 s
