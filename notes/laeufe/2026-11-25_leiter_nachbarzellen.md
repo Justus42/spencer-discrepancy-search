@@ -86,3 +86,14 @@ Tabellenwert 64 in keinem Typ erreicht; es gibt kein „kleinstes erreichtes K�
 
 0 von 8 gelöst; beste Restzahl 1024 / 768 / 1280 / 1280 (Startwerte 5–8) und 1280 viermal (9–12). Mit den vier Läufen der Stufe (1280) kein Treffer in 12 Startwerten (Suche erfolglos).
 Zelle (19,5) abgeschlossen: der Tabellenwert 64 wird nicht erreicht; beste Restzahl 768 bei K = 16 im Typ (10,9).
+
+## Schritt 2: Leiter (23,7), d = 9, 4 Startwerte je Stufe, ≤ 300 s (01:45–02:10 UTC), Logs `runs/leiter_n/s2c23-7_k<K>_t<m1>-<m2>*`
+
+| Typ | K = 16 (64 Wörter) | Stufe darunter |
+|---|---|---|
+| (12,11) | **Startwert 3 gelöst nach 78,9 s**; Startwerte 1, 2, 4: Restzahl 288 / 112 / 384 (von 2 097 152) | K = 15: 0 von 4, Restzahl 680 / 548 / 672 / 548 |
+| (13,10) | 0 von 4, Restzahl 1315 / 432 / 608 / 448 | – |
+| (14,9) | 0 von 4, Restzahl 128 / 672 / 736 / 480 | – |
+| (15,8) | 0 von 4, Restzahl 2304 / 984 / 1920 / 1152 | – |
+
+Der Treffer bei K = 16 (`s2c23-7_k16_t12-11_seed3.paar.txt`, `zerl_offen.py` 0 offene Klassen) ist der Tabellenwert 64, kein Fortschritt. (Die alte Nebenklassen-Suche erreichte hier K = 15 nicht, 0 von 8, und K = 16 nicht versucht.)
