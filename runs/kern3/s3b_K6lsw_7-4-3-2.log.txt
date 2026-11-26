@@ -1,0 +1,1 @@
+START 18:37:54 lsw m=16 R=4 Typ=7,4,3,2 K=6 SEK=120 SEED=1
