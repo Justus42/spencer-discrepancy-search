@@ -1,0 +1,4 @@
+t=10 it=22528 offen=1094 lokal=699 best=699 neustarts=0
+t=20 it=45824 offen=378 lokal=26 best=26 neustarts=0
+t=30 it=71680 offen=253 lokal=8 best=8 neustarts=0
+ENDE best=0 it=87865 t_best=36.7 t=36.7 bumps=36502 neustarts=0

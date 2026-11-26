@@ -1,0 +1,1 @@
+2026-11-26 17:52:17 UTC  Start s1c_p018_m25R8k31: p018 m=25 R=8 Paare=31 je 300 s, Startwerte 1 2 3 4, Zusatz: 

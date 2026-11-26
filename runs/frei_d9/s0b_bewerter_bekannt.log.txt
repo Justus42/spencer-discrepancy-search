@@ -1,0 +1,4 @@
+offen=0 klassen=16777216 k=32 m=25 R=8
+Dauer .054028654 s (runs/leiter_n/c25-8_k16.matrix.txt)
+offen=0 klassen=4194304 k=32 m=23 R=7
+Dauer .016439376 s (runs/leiter_n/c23-7_k16.matrix.txt)
