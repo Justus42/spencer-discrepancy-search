@@ -1,0 +1,4 @@
+# gate_f_nachbarn.py, 2026-11-26 19:24 bis 19:25 UTC
+c23-7_k16.matrix.txt ohne Zeile 17: 31 x 23, R=7, offen 4072; 713 Nachbarn mit einem umgedrehten Eintrag: 0 besser, 0 gleich, bester 4488 (Zeile 29, Spalte 21)
+c25-8_k16.matrix.txt ohne Zeile 5: 31 x 25, R=8, offen 6521; 775 Nachbarn mit einem umgedrehten Eintrag: 11 besser, 0 gleich, bester 6313 (Zeile 5, Spalte 24)
+s3_p026_m25R8k31_s1.txt: 31 x 25, R=8, offen 4727; 775 Nachbarn mit einem umgedrehten Eintrag: 0 besser, 0 gleich, bester 4920 (Zeile 9, Spalte 19)

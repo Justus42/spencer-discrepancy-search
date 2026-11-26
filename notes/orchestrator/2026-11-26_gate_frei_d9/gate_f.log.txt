@@ -1,0 +1,47 @@
+# gate_f.py, 2026-11-26 19:24 UTC
+1. Ausgabedateien: 32 im Ordner, 32 im Log der Sitzung, gleiche Namen: True
+   s0c_p018_m20R6k24_s1.txt                 k=24 m=20 R=6  eigen 0  Sitzung 0  gleich
+   s0c_p018_m20R6k24_s2.txt                 k=24 m=20 R=6  eigen 0  Sitzung 0  gleich
+   s1b_p018_m25R8k32_s1.txt                 k=32 m=25 R=8  eigen 6500  Sitzung 6500  gleich
+   s1c_p018_m25R8k31_s1.txt                 k=31 m=25 R=8  eigen 8712  Sitzung 8712  gleich
+   s1c_p018_m25R8k31_s2.txt                 k=31 m=25 R=8  eigen 8928  Sitzung 8928  gleich
+   s1c_p018_m25R8k31_s3.txt                 k=31 m=25 R=8  eigen 8484  Sitzung 8484  gleich
+   s1c_p018_m25R8k31_s4.txt                 k=31 m=25 R=8  eigen 8523  Sitzung 8523  gleich
+   s2_p018_m25R8k32_s1.txt                  k=32 m=25 R=8  eigen 5775  Sitzung 5775  gleich
+   s2_p018_m25R8k32_s2.txt                  k=32 m=25 R=8  eigen 5536  Sitzung 5536  gleich
+   s2_p018_m25R8k32_s3.txt                  k=32 m=25 R=8  eigen 5246  Sitzung 5246  gleich
+   s2_p018_m25R8k32_s4.txt                  k=32 m=25 R=8  eigen 6007  Sitzung 6007  gleich
+   s3_kontrolle_p022_m20R6k23_s1.txt        k=23 m=20 R=6  eigen 721  Sitzung 721  gleich
+   s3_kontrolle_p022_m20R6k23_s2.txt        k=23 m=20 R=6  eigen 728  Sitzung 728  gleich
+   s3_kontrolle_p026_m20R6k23_z0_s1.txt     k=23 m=20 R=6  eigen 721  Sitzung 721  gleich
+   s3_kontrolle_p026_m20R6k23_z1_s2.txt     k=23 m=20 R=6  eigen 728  Sitzung 728  gleich
+   s3_p026_m25R8k31_s1.txt                  k=31 m=25 R=8  eigen 4727  Sitzung 4727  gleich
+   s3_p026_m25R8k31_s2.txt                  k=31 m=25 R=8  eigen 5117  Sitzung 5117  gleich
+   s3_p026_m25R8k31_s3.txt                  k=31 m=25 R=8  eigen 5081  Sitzung 5081  gleich
+   s3_p026_m25R8k31_s4.txt                  k=31 m=25 R=8  eigen 5293  Sitzung 5293  gleich
+   s4_1b_p018_m23R7k32_s1.txt               k=32 m=23 R=7  eigen 5846  Sitzung 5846  gleich
+   s4_1c_p018_m23R7k31_s1.txt               k=31 m=23 R=7  eigen 7238  Sitzung 7238  gleich
+   s4_1c_p018_m23R7k31_s2.txt               k=31 m=23 R=7  eigen 7706  Sitzung 7706  gleich
+   s4_1c_p018_m23R7k31_s3.txt               k=31 m=23 R=7  eigen 7598  Sitzung 7598  gleich
+   s4_1c_p018_m23R7k31_s4.txt               k=31 m=23 R=7  eigen 7539  Sitzung 7539  gleich
+   s4_2_p018_m23R7k32_s1.txt                k=32 m=23 R=7  eigen 5539  Sitzung 5539  gleich
+   s4_2_p018_m23R7k32_s2.txt                k=32 m=23 R=7  eigen 5885  Sitzung 5885  gleich
+   s4_2_p018_m23R7k32_s3.txt                k=32 m=23 R=7  eigen 5792  Sitzung 5792  gleich
+   s4_2_p018_m23R7k32_s4.txt                k=32 m=23 R=7  eigen 5815  Sitzung 5815  gleich
+   s4_3_p026_m23R7k31_s1.txt                k=31 m=23 R=7  eigen 4072  Sitzung 4072  gleich
+   s4_3_p026_m23R7k31_s2.txt                k=31 m=23 R=7  eigen 4072  Sitzung 4072  gleich
+   s4_3_p026_m23R7k31_s3.txt                k=31 m=23 R=7  eigen 4072  Sitzung 4072  gleich
+   s4_3_p026_m23R7k31_s4.txt                k=31 m=23 R=7  eigen 4072  Sitzung 4072  gleich
+   gleich: 32 von 32
+2. Messlatte: bekannter 64er ohne je eine Zeile (Zeilen 1-basiert)
+   c25-8_k16 (32 x 25, R=8): voll 0 offen; ohne Zeile: min 6521 (Zeilen [5, 6, 13, 14]), max 6889, Mittel 6729
+   c23-7_k16 (32 x 23, R=7): voll 0 offen; ohne Zeile: min 4072 (Zeilen [17, 18, 29, 30]), max 4504, Mittel 4352
+3. Schritt 3: geaenderte Eintraege gegenueber der Startmatrix (64er ohne die genannte Zeile, gleiche Zeilenfolge)
+   s3_p026_m25R8k31_s1: 12 Eintraege in 4 Zeilen geaendert
+   s3_p026_m25R8k31_s2: 14 Eintraege in 5 Zeilen geaendert
+   s3_p026_m25R8k31_s3: 14 Eintraege in 5 Zeilen geaendert
+   s3_p026_m25R8k31_s4: 10 Eintraege in 3 Zeilen geaendert
+   s4_3_p026_m23R7k31_s1: 0 Eintraege in 0 Zeilen geaendert
+   s4_3_p026_m23R7k31_s2: 0 Eintraege in 0 Zeilen geaendert
+   s4_3_p026_m23R7k31_s3: 0 Eintraege in 0 Zeilen geaendert
+   s4_3_p026_m23R7k31_s4: 0 Eintraege in 0 Zeilen geaendert
